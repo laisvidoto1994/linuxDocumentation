@@ -1,0 +1,1003 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: Guia Foca GNU/Linux - Sistema de gerenciamento de pacotes
+Date: Mon, 6 Aug 2007 11:23:12 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-dpkg.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Sistema de gerenciamento de =
+pacotes</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-dpkg></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ 20 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 20 - Sistema de gerenciamento de =
+pacotes=20
+</H1>
+<HR>
+
+<P>Este cap=EDtulo ensina a opera=E7=E3o b=E1sica do programa de =
+manipula=E7=E3o de pacotes=20
+<CODE>Debian</CODE>, a instala=E7=E3o, remo=E7=E3o, consulta e checagem =
+de arquivos=20
+<CODE>.deb</CODE>.=20
+<HR>
+<A name=3Ds-dpkg-introducao></A>
+<H2>20.1 dpkg</H2>
+<P>O <CODE>dpkg</CODE> (Debian Package) =E9 o programa respons=E1vel =
+pelo=20
+gerenciamento de pacotes em sistemas <CODE>Debian</CODE>. Sua =
+opera=E7=E3o =E9 feita=20
+em modo texto e funciona atrav=E9s de comandos, assim caso deseje uma =
+ferramenta=20
+mais amig=E1vel para a sele=E7=E3o e instala=E7=E3o de pacotes, prefira =
+o=20
+<CODE>dselect</CODE> (que =E9 um front-end para o <CODE>dpkg</CODE>) ou =
+o=20
+<CODE>apt</CODE> (veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-apt">apt,=20
+Se=E7=E3o 20.2</A>).=20
+<P><CODE>dpkg</CODE> =E9 muito usado por usu=E1rios avan=E7ados da =
+<CODE>Debian</CODE>=20
+e desenvolvedores para fins de instala=E7=E3o, manuten=E7=E3o e =
+constru=E7=E3o de pacotes.=20
+<HR>
+<A name=3Ds-dpkg-pacotes></A>
+<H3>20.1.1 Pacotes</H3>
+<P>Pacotes <CODE>Debian</CODE> s=E3o programas colocados dentro de um =
+arquivo=20
+identificados pela extens=E3o <CODE>.deb</CODE> incluindo arquivos =
+necess=E1rios=20
+para a instala=E7=E3o do programa, um sistemas de listagem/checagem de =
+depend=EAncias,=20
+scripts de automatiza=E7=E3o para remo=E7=E3o parcial/total do pacote, =
+listagem de=20
+arquivos, etc.=20
+<P>Um nome de pacote tem a forma =
+<CODE>nome-vers=E3o_revis=E3o.deb</CODE>=20
+<HR>
+<A name=3Ds-dpkg-instalar></A>
+<H3>20.1.2 Instalar pacotes</H3>
+<P>Use o comando: <SAMP>dpkg -i [<CODE>NomedoPacote</CODE>]</SAMP> (ou=20
+<EM>--install</EM>) para instalar um pacote em seu sistema. Talvez ele =
+pe=E7a que=20
+seja instalado algum pacote que depende para seu funcionamento. Para =
+detalhes=20
+sobre depend=EAncias veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-dependencias">Depend=EAnc=
+ias,=20
+Se=E7=E3o 20.1.3</A>. =C9 preciso especificar o nome completo do pacote =
+(com a vers=E3o=20
+e revis=E3o).=20
+<HR>
+<A name=3Ds-dpkg-dependencias></A>
+<H3>20.1.3 Depend=EAncias</H3>
+<P>Depend=EAncias s=E3o pacotes requeridos para a instala=E7=E3o de =
+outro pacote. Na=20
+<CODE>Debian</CODE> cada pacote cont=E9m um programa com uma certa =
+fun=E7=E3o. Por=20
+exemplo, se voc=EA tentar instalar o pacote de edi=E7=E3o de textos=20
+<CODE>supertext</CODE> que usa o programa <CODE>sed</CODE>, voc=EA =
+precisar=E1=20
+verificar se o pacote <CODE>sed</CODE> est=E1 instalado em seu sistema =
+antes de=20
+tentar instalar o <CODE>supertext</CODE>, caso contr=E1rio, o pacote=20
+<CODE>supertext</CODE> pedir=E1 o <CODE>sed</CODE> e n=E3o funcionar=E1 =
+corretamente.=20
+Note que o pacote <CODE>supertext</CODE> =E9 apenas um exemplo e n=E3o =
+existe (pelo=20
+menos at=E9 agora :-). O programa <CODE>dselect</CODE> faz o trabalho de =
+checagem=20
+de depend=EAncias automaticamente durante a instala=E7=E3o dos pacotes.=20
+<P>A coloca=E7=E3o de cada programa em seu pr=F3prio pacote parece ser =
+uma dificuldade=20
+a mais para a instala=E7=E3o manual de um certo programa. Mas para os=20
+desenvolvedores que mant=E9m os mais de <STRONG>8710</STRONG> pacotes =
+existentes=20
+na distribui=E7=E3o <CODE>Debian</CODE>, =E9 um ponto fundamental, =
+porque n=E3o =E9=20
+preciso esperar uma nova vers=E3o do <CODE>supertext</CODE> ser =
+lan=E7ada para=20
+instalar a vers=E3o mais nova do pacote <CODE>sed</CODE>. Por este =
+motivo tamb=E9m =E9=20
+uma vantagem para o usu=E1rio.=20
+<HR>
+<A name=3Ds-dpkg-l></A>
+<H3>20.1.4 Listar pacotes existentes no sistema</H3>
+<P>Use o comando: <SAMP>dpkg -l [pacote]</SAMP> (<EM>--list</EM>) para =
+isto.=20
+<P>Na listagem de pacotes tamb=E9m ser=E1 mostrado o "status" de cada um =
+na coluna=20
+da esquerda, acompanhado do nome do pacote, vers=E3o e descri=E7=E3o =
+b=E1sica. Caso o=20
+nome do [pacote] seja omitido, todos os pacotes ser=E3o listados.=20
+<P>=C9 recomendado usar "dpkg -l|less" para ter um melhor controle da =
+listagem=20
+(pode ser longa dependendo da quantidade de programas instalados).=20
+<HR>
+<A name=3Ds-dpkg-r></A>
+<H3>20.1.5 Removendo pacotes do sistema</H3>
+<P>Use o comando: <SAMP>dpkg -r <CODE>NomedoPacote</CODE></SAMP>=20
+(<EM>--remove</EM>) para remover um pacote do sistema completamente. =
+Somente =E9=20
+necess=E1rio digitar o nome e vers=E3o do pacote que deseja remover, =
+n=E3o sendo=20
+necess=E1rio a revis=E3o do pacote.=20
+<P>O comando <SAMP>dpkg -r</SAMP> n=E3o remove os arquivos de =
+configura=E7=E3o criados=20
+pelo programa. Para uma remo=E7=E3o completa do programa veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-purge">Removendo=20
+completamente um pacote, Se=E7=E3o 20.1.6</A>.=20
+<HR>
+<A name=3Ds-dpkg-purge></A>
+<H3>20.1.6 Removendo completamente um pacote</H3>
+<P>Use o comando: <SAMP>dpkg -P [<CODE>NomedoPacote</CODE>|-a]</SAMP>=20
+(<EM>--purge</EM>) para remover um pacote e todos os diret=F3rios e =
+arquivos de=20
+configura=E7=E3o criados. N=E3o =E9 necess=E1rio especificar a revis=E3o =
+do pacote. O=20
+comando <SAMP>dpkg--purge</SAMP> pode ser usado ap=F3s uma remo=E7=E3o =
+normal do=20
+pacote (usando <SAMP>dpkg -r</SAMP>).=20
+<P>Caso voc=EA usar diretamente o comando <SAMP>dpkg --purge</SAMP>,=20
+<CODE>dpkg</CODE> primeiro remover=E1 o pacote normalmente (como =
+explicado em <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-r">Removendo=20
+pacotes do sistema, Se=E7=E3o 20.1.5</A>) e ap=F3s removido apagar=E1 =
+todos os arquivos=20
+de configura=E7=E3o.=20
+<P>Caso especifique a op=E7=E3o <EM>-a</EM> (ou sua equivalente =
+<EM>--pending</EM>)=20
+no lugar do nome do pacote, todos os pacotes marcados para remo=E7=E3o =
+ser=E3o=20
+removidos completamente do sistema.=20
+<P>Note que o <SAMP>dpkg --purge</SAMP> somente remove arquivos de =
+configura=E7=E3o=20
+conhecidos pelo pacote. Em especial, os arquivos de configura=E7=E3o =
+criados para=20
+cada usu=E1rio do sistema devem ser removidos manualmente. Seria pedir =
+demais que=20
+o <CODE>dpkg</CODE> tamb=E9m conhecesse os usu=E1rios de nosso sistema =
+;-).=20
+<HR>
+<A name=3Ds-dpkg-I></A>
+<H3>20.1.7 Mostrar descri=E7=E3o do pacote</H3>
+<P>Use o comando: <SAMP>dpkg -I <CODE>NomedoPacote</CODE></SAMP>=20
+(<EM>--info</EM>) para mostrar a descri=E7=E3o do pacote. Entre a =
+descri=E7=E3o s=E3o=20
+mostradas as depend=EAncias do pacote, pacotes sugeridos, recomendados, =
+descri=E7=E3o=20
+do que o pacote faz, tamanho e n=FAmero de arquivos que cont=E9m.=20
+<HR>
+<A name=3Ds-dpkg-S></A>
+<H3>20.1.8 Procura de pacotes atrav=E9s do nome de um arquivo</H3>
+<P>Use o comando: <SAMP>dpkg -S <CODE>arquivo</CODE></SAMP> =
+(<EM>--search</EM>)=20
+para saber de qual <CODE>pacote</CODE> existente no sistema o=20
+<CODE>arquivo</CODE> pertence.=20
+<HR>
+<A name=3Ds-dpkg-s></A>
+<H3>20.1.9 Status do pacote</H3>
+<P>Use o comando: <SAMP>dpkg -s <CODE>pacote</CODE></SAMP> =
+(<EM>--status</EM>)=20
+para verificar o status de um pacote em seu sistema, se esta ou n=E3o =
+instalado,=20
+configurado, tamanho, depend=EAncias, maintainer, etc.=20
+<P>Se o pacote estiver instalado no sistema, o resultado ser=E1 parecido =
+com o do=20
+comando <SAMP>dpkg -c [pacote]</SAMP> (<EM>--contents</EM>).=20
+<HR>
+<A name=3Ds-dpkg-C></A>
+<H3>20.1.10 Procurando pacotes com problemas de instala=E7=E3o</H3>
+<P>A checagem de pacotes com este tipo de problema pode ser feita =
+atrav=E9s do=20
+comando:=20
+<P><SAMP>dpkg -C</SAMP> (<EM>--audit</EM>)=20
+<P>Ser=E1 listado todos os pacotes com algum tipo de problema, verifique =
+os=20
+detalhes do pacote com <SAMP>"dpkg -s"</SAMP> para decidir como corrigir =
+o=20
+problema.=20
+<HR>
+<A name=3Ds-dpkg-get-selections></A>
+<H3>20.1.11 Mostrando a lista de pacotes do sistema</H3>
+<P>Use o comando:=20
+<P><SAMP>dpkg --get-selections</SAMP>=20
+<P>para obter uma lista de sele=E7=E3o dos pacotes em seu sistema. A =
+listagem =E9=20
+mostrada na sa=EDda padr=E3o, que pode ser facilmente redirecionada para =
+um arquivo=20
+usando <SAMP>dpkg --get-selections &gt;dpkg.lista</SAMP>.=20
+<P>A listagem obtida com este comando =E9 muito =FAtil para repetir os =
+pacotes=20
+usados no sistema usando o <SAMP>dpkg --set-selections</SAMP>.=20
+<HR>
+<A name=3Ds-dpkg-set-selections></A>
+<H3>20.1.12 Obtendo uma lista de pacotes para instalar no sistema</H3>
+<P>Use o comando:=20
+<P><SAMP>dpkg --set-selections &lt;arquivo</SAMP>=20
+<P>para obter a lista de pacotes que ser=E3o instalados no sistema. O =
+uso do=20
+<SAMP>dpkg --get-selections</SAMP> e <SAMP>dpkg --set-selections</SAMP> =
+=E9 muito=20
+=FAtil durante uma necessidade de reinstala=E7=E3o do sistema =
+<CODE>GNU/Linux</CODE>=20
+ou repetir a instala=E7=E3o em v=E1rias m=E1quinas sem precisar =
+selecionar algumas=20
+dezenas entre os milhares de pacotes no <CODE>dselect</CODE>.=20
+<P>Ap=F3s obter a lista com <SAMP>dpkg --get-selections</SAMP>, use =
+<SAMP>dpkg=20
+--set-selections &lt;arquivo</SAMP> e ent=E3o entre no =
+<CODE>dselect</CODE> e=20
+escolha a op=E7=E3o <SAMP>INSTALL</SAMP>, todos os pacotes obtidos via =
+<SAMP>dpkg=20
+--set-selections</SAMP> ser=E3o automaticamente instalados.=20
+<HR>
+<A name=3Ds-dpkg-configure></A>
+<H3>20.1.13 Configurando pacotes desconfigurados</H3>
+<P>Pacotes est=E3o desconfigurados quando, por algum motivo, a =
+instala=E7=E3o do mesmo=20
+n=E3o foi conclu=EDda com sucesso. Pode ter faltado alguma =
+depend=EAncia, acontecido=20
+algum erro de leitura do arquivo de pacote, etc. Quando um erro deste =
+tipo=20
+acontece, os arquivos necess=E1rios pelo pacote podem ter sido =
+instalados, mas os=20
+scripts de configura=E7=E3o p=F3s-instala=E7=E3o n=E3o s=E3o executados. =
+
+<P>Use o comando:=20
+<P><SAMP>dpkg --configure [<EM>NomedoPacote</EM>]</SAMP>=20
+<P>Para configurar um pacote. O <EM>NomedoPacote</EM> n=E3o precisa =
+conter a=20
+revis=E3o do pacote e extens=E3o.=20
+<HR>
+<A name=3Ds-dpkg-c></A>
+<H3>20.1.14 Listando arquivos de um pacote</H3>
+<P>Use o comando: <SAMP>dpkg -c <CODE>arquivo</CODE></SAMP>=20
+(<EM>--contents</EM>) para obter a listagem dos arquivos contidos no =
+pacote. =C9=20
+necess=E1rio digitar o nome completo do pacote. O comando <SAMP>dpkg =
+-c</SAMP> =E9=20
+=FAtil para listarmos arquivos de pacotes que n=E3o est=E3o instalados =
+no sistema.=20
+<P>Para obter a listagem de arquivos de pacotes j=E1 instalados no =
+sistema, use o=20
+comando: <SAMP>dpkg -L <CODE>arquivo</CODE></SAMP>. =C9 necess=E1rio =
+digitar somente=20
+o nome do pacote (sem a revis=E3o e extens=E3o).=20
+<HR>
+<A name=3Ds-dpkg-apt></A>
+<H2>20.2 apt</H2>
+<P>O <CODE>apt</CODE> =E9 sistema de gerenciamento de pacotes de =
+programas que=20
+possui resolu=E7=E3o autom=E1tica de depend=EAncias entre pacotes, =
+m=E9todo f=E1cil de=20
+instala=E7=E3o de pacotes, facilidade de opera=E7=E3o, permite atualizar =
+facilmente sua=20
+distribui=E7=E3o, etc. Ele funciona atrav=E9s de linha de comando sendo =
+bastante f=E1cil=20
+de usar. Mesmo assim, existem interfaces gr=E1ficas para o =
+<CODE>apt</CODE> como o=20
+<CODE>synaptic</CODE> (modo gr=E1fico) e o <CODE>aptitude</CODE> (modo =
+texto) que=20
+permitem poderosas manipula=E7=F5es de pacotes sugeridos, etc.=20
+<P>O <CODE>apt</CODE> pode utilizar tanto com arquivos locais como =
+remotos na=20
+instala=E7=E3o ou atualiza=E7=E3o, desta maneira =E9 poss=EDvel =
+atualizar toda a sua=20
+distribui=E7=E3o <CODE>Debian</CODE> via <CODE>ftp</CODE> ou =
+<CODE>http</CODE> com=20
+apenas 2 simples comandos!=20
+<P>=C9 recomend=E1vel o uso do m=E9todo <CODE>apt</CODE> no programa=20
+<CODE>dselect</CODE> pois ele permite a ordem correta de instala=E7=E3o =
+de pacotes e=20
+checagem e resolu=E7=E3o de depend=EAncias, etc. Devido a sua facilidade =
+de opera=E7=E3o,=20
+o <CODE>apt</CODE> =E9 o m=E9todo preferido para os usu=E1rios =
+manipularem pacotes da=20
+<CODE>Debian</CODE>.=20
+<P>O <CODE>apt</CODE> =E9 exclusivo da distribui=E7=E3o =
+<CODE>Debian</CODE> e=20
+distribui=E7=F5es baseadas nela e tem por objetivo tornar a =
+manipula=E7=E3o de pacotes=20
+poderosa por qualquer pessoa e tem dezenas de op=E7=F5es que podem ser =
+usadas em sua=20
+execu=E7=E3o ou configuradas no arquivo <CODE>/etc/apt/apt.conf</CODE>. =
+Explicarei=20
+aqui como fazer as a=E7=F5es b=E1sicas com o <CODE>apt</CODE>, portanto =
+se desejar=20
+maiores detalhes sobre suas op=E7=F5es, veja a p=E1gina de manual=20
+<CODE>apt-get</CODE>.=20
+<HR>
+<A name=3Ds20.2.1></A>
+<H3>20.2.1 O arquivo <CODE>/etc/apt/sources.list</CODE></H3>
+<P>Este arquivo cont=E9m os locais onde o <CODE>apt</CODE> encontrar=E1 =
+os pacotes,=20
+a distribui=E7=E3o que ser=E1 verificada (stable, testing, unstable, =
+Woody, Sarge) e a=20
+se=E7=E3o que ser=E1 copiada (main, non-free, contrib, non-US).=20
+<P><EM>Woody</EM>(Debian 3.0) e <EM>Sarge</EM>(Debian 3.1) s=E3o os =
+nomes das=20
+vers=F5es enquanto <EM>stable</EM> e <EM>unstable</EM> s=E3o links para =
+as vers=F5es=20
+<EM>est=E1vel</EM> e <EM>testing</EM> respectivamente. Se desejar usar =
+sempre uma=20
+distribui=E7=E3o est=E1vel (como a <EM>Woody</EM>), modifique o arquivo=20
+<CODE>sources.list</CODE> e coloque <EM>Woody</EM> como =
+distribui=E7=E3o. Caso voc=EA=20
+desejar estar sempre atualizado mas =E9 uma pessoa cuidadosa e deseja =
+ter sempre a=20
+=FAltima distribui=E7=E3o est=E1vel da <CODE>Debian</CODE>, coloque =
+<EM>stable</EM> como=20
+vers=E3o. Assim que a nova vers=E3o for lan=E7ada, os links que apontam =
+de=20
+<EM>stable</EM> para <EM>Woody</EM> ser=E3o alterados apontando para=20
+<EM>Sarge</EM> e voc=EA ter=E1 seu sistema atualizado.=20
+<P>Abaixo um exemplo simples de arquivo =
+<CODE>/etc/apt/sources.list</CODE> com=20
+explica=E7=E3o das se=E7=F5es: <PRE>     deb =
+http://www.debian.org/debian stable main contrib non-free
+     deb http://nonus.debian.org/debian-non-US stable non-US
+</PRE>
+<P>Voc=EA pode interpretar cada parte da seguinte maneira:=20
+<UL>
+  <LI><SAMP>deb</SAMP> - Identifica um pacote da Debian. A palavra=20
+  <SAMP>deb-src</SAMP> identifica o c=F3digo fonte.=20
+  <LI><SAMP>http://www.debian.org/debian</SAMP> - M=E9todo de acesso aos =
+arquivos=20
+  da <CODE>Debian</CODE>, site e diret=F3rio principal. O caminho pode =
+ser=20
+  <SAMP>http://</SAMP>, <SAMP>ftp://</SAMP>, <SAMP>file:/</SAMP>.=20
+  <LI><SAMP>stable</SAMP> - Local onde ser=E3o procurados arquivos para=20
+  atualiza=E7=E3o. Voc=EA pode tanto usar o nome de sua distribui=E7=E3o =
+(<EM>Woody</EM>,=20
+  <EM>Sarge</EM>) ou sua classifica=E7=E3o (<EM>stable</EM>, =
+<EM>testing</EM> ou=20
+  <EM>unstable</EM>. Note que <EM>unstable</EM> =E9 recomendada somente =
+para=20
+  desenvolvedores, m=E1quinas de testes e se voc=EA tem conhecimentos =
+para corrigir=20
+  problemas. Nunca utilize <EM>unstable</EM> em ambientes de =
+produ=E7=E3o ou=20
+  servidores cr=EDticos, use a <EM>stable</EM>.=20
+  <LI><SAMP>main contrib non-us</SAMP> - Se=E7=F5es que ser=E3o =
+verificadas no site=20
+  remoto. </LI></UL>
+<P>Note que tudo especificado ap=F3s o nome da distribui=E7=E3o ser=E1 =
+interpretado como=20
+sendo as se=E7=F5es dos arquivos (main, non-free, contrib, non-US). As =
+linhas s=E3o=20
+processadas na ordem que est=E3o no arquivo, ent=E3o =E9 recomend=E1vel =
+colocar as=20
+linhas que fazem refer=EAncia a pacotes locais primeiro e mirrors mais =
+perto de=20
+voc=EA para ter um melhor aproveitamento de banda. O caminho percorrido =
+pelo=20
+<CODE>apt</CODE> para chegar aos arquivos ser=E1 o seguinte: <PRE>     =
+http://www.debian.org/debian/dists/stable/main/binary-i386
+     http://www.debian.org/debian/dists/stable/non-free/binary-i386
+     http://www.debian.org/debian/dists/stable/contrib/binary-i386
+</PRE>
+<P>Voc=EA notou que o diret=F3rio <CODE>dists</CODE> foi adicionado =
+entre=20
+<CODE>http://www.debian.org/debian</CODE> e <CODE>stable</CODE>, =
+enquanto as=20
+se=E7=F5es <EM>main</EM>, <EM>non-free</EM> e <EM>contrib</EM> s=E3o =
+processadas=20
+separadamente e finalizando com o caminho =
+<CODE>binary-[arquitetura]</CODE>,=20
+onde <EM>[arquitetura]</EM> pode ser <EM>i386, alpha, sparc, powerpc, =
+arm</EM>,=20
+etc. dependendo do seu sistema. Entendendo isto, voc=EA poder=E1 =
+manipular o arquivo=20
+<CODE>sources.list</CODE> facilmente.=20
+<P><STRONG>OBS:</STRONG> Caso tenha mais de uma linha em seu arquivo=20
+<CODE>sources.list</CODE> de onde um pacote pode ser instalado, ele =
+ser=E1 baixado=20
+da primeira encontrada no arquivo. =CB recomend=E1vel colocar primeiro =
+reposit=F3rios=20
+locais ou mais perto de voc=EA, como recomendado nesta se=E7=E3o.=20
+<HR>
+<A name=3Ds20.2.1.1></A>
+<H4>20.2.1.1 Endere=E7os de servidores e mirrors nacionais da=20
+<CODE>Debian</CODE></H4>
+<P>Segue abaixo uma rela=E7=E3o de servidores que podem ser colocados em =
+seu arquivo=20
+<CODE>sources.list</CODE>: <PRE>     Endere=E7o                          =
+     Diret=F3rio Principal
+     --------                               --------- ---------
+     ftp://ftp.debian.org.br                /debian
+     ftp://ftp.br.debian.org                /debian
+     ftp://ftp.debian.org                   /debian
+     ftp://download.sourceforge.net         /debian
+     ftp://ftp.quimica.ufpr.br              /debian
+     ftp://download.unesp.br                /linux/debian
+</PRE>
+<HR>
+<A name=3Ds20.2.1.2></A>
+<H4>20.2.1.2 Um modelo de arquivo <CODE>sources.list</CODE></H4>
+<P>Voc=EA pode copiar o modelo do <CODE>sources.list</CODE> abaixo para =
+ser usado=20
+em sua distribui=E7=E3o <SAMP>Stable</SAMP> ou personaliza-lo =
+modificando a=20
+distribui=E7=E3o utilizada e servidores: <PRE>     # Arquivos principais =
+da stable
+     deb ftp://ftp.debian.org.br/debian stable main non-free contrib
+    =20
+     # Non-US da Stable
+     deb ftp://ftp.debian.org.br/debian-non-US stable/non-US main =
+non-free contrib
+    =20
+     # Atualiza=E7=F5es propostas para Stable main e non-US
+     deb ftp://ftp.debian.org.br/debian dists/proposed-updates/
+     deb ftp://ftp.debian.org.br/debian-non-US dists/proposed-updates/
+    =20
+     # Atualiza=E7=F5es de seguran=E7a da Stable
+     deb ftp://nonus.debian.org/debian-security stable/updates main
+    =20
+     # Ximian =E9 um conjunto de pacotes atualizados freq=FCentemente e =
+compat=EDveis=20
+     # com a distribui=E7=E3o Debian. Entre estes programas est=E3o o =
+Gimp 1.2 e outros
+     # mais atuais e compat=EDveis com a Debian. Para usa-los inclua a =
+seguinte linha no=20
+     # seu sources.list
+     # deb =
+ftp://spidermonkey.ximian.com/pub/red-carpet/binary/debian-22-i386/ ./
+    =20
+     # Kde 1 e 2
+     # deb ftp://kde.tdyc.com/pub/kde/debian woody main crypto optional =
+qt1apps
+</PRE>
+<HR>
+<A name=3Ds20.2.2></A>
+<H3>20.2.2 O arquivo <CODE>/etc/apt/apt.conf</CODE></H3>
+<P>Voc=EA pode especificar op=E7=F5es neste arquivo que modificar=E3o o =
+comportamento do=20
+programa <CODE>apt</CODE> durante a manipula=E7=E3o de pacotes (ao =
+inv=E9s de=20
+especificar na linha de comando). Se estiver satisfeito com o =
+funcionamento do=20
+programa <CODE>apt</CODE>, n=E3o =E9 necess=E1rio modifica-lo. Para =
+detalhes sobre o=20
+formato do arquivo, veja a p=E1gina de manual do <CODE>apt.conf</CODE>. =
+Na p=E1gina=20
+de manual do <CODE>apt-get</CODE> s=E3o feitas refer=EAncias a =
+par=E2metros que podem=20
+ser especificados neste arquivo ao inv=E9s da linha de comando.=20
+<HR>
+<A name=3Ds20.2.3></A>
+<H3>20.2.3 Copiando a lista de pacotes dispon=EDveis</H3>
+<P>O <CODE>apt</CODE> utiliza uma lista de pacotes para verificar se os =
+pacotes=20
+existentes no sistema precisam ou n=E3o ser atualizados. A lista mais =
+nova de=20
+pacotes =E9 copiada atrav=E9s do comando <SAMP>apt-get update</SAMP>.=20
+<P>Este comando pode ser usado com alguma freq=FC=EAncia se estiver =
+usando a=20
+distribui=E7=E3o stable e sempre se estiver usando a unstable (os =
+pacotes s=E3o=20
+modificados com muita freq=FC=EAncia). Sempre utilize o <SAMP>apt-get =
+update</SAMP>=20
+antes de atualizar toda a distribui=E7=E3o.=20
+<HR>
+<A name=3Ds20.2.4></A>
+<H3>20.2.4 Utilizando CDs oficiais/n=E3o-oficiais/terceiros com o =
+apt</H3>
+<P>Para usar CDs da <CODE>Debian</CODE> ou de programas de terceiros, =
+use o=20
+seguinte comando com cada um dos CDs que possui: <PRE>     apt-cdrom add
+</PRE>
+<P>Este comando adicionar=E1 automaticamente uma linha para cada CD no =
+arquivo=20
+<CODE>/etc/apt/sources.list</CODE> e atualizar=E1 a lista de pacotes em=20
+<CODE>/var/state/apt/lists</CODE>. Por padr=E3o, a unidade acessada =
+atrav=E9s de=20
+<CODE>/cdrom</CODE> =E9 usada. Use a op=E7=E3o <SAMP>-d /dev/scd?</SAMP> =
+para=20
+especificar um outra unidade de CDs (veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-id">Identifica=E7=E3o=20
+de discos e parti=E7=F5es em sistemas Linux, Se=E7=E3o 5.12</A> para =
+detalhes sobre essa=20
+identifica=E7=E3o).=20
+<P>Durante a instala=E7=E3o de um novo programa, o <CODE>apt</CODE> pede =
+que o CD=20
+correspondente seja inserido na unidade e pressionado &lt;Enter&gt; para =
+
+continuar. O m=E9todo acesso do <CODE>apt</CODE> atrav=E9s de CDs =E9 =
+inteligente o=20
+bastante para instalar todos os pacotes necess=E1rios daquele CD, =
+instalar os=20
+pacotes do pr=F3ximo CD e iniciar a configura=E7=E3o ap=F3s instalar =
+todos os pacotes=20
+necess=E1rios.=20
+<P><SAMP>Observa=E7=E3o:</SAMP> - CDs de terceiros ou contendo programas =
+adicionais=20
+tamb=E9m podem ser usados com o comando "apt-cdrom add".=20
+<HR>
+<A name=3Ds20.2.5></A>
+<H3>20.2.5 Instalando novos pacotes</H3>
+<P>Use o comando <SAMP>apt-get install [pacotes]</SAMP> para instalar =
+novos=20
+pacotes em sua distribui=E7=E3o. Podem ser instalados mais de um pacotes =
+ao mesmo=20
+tempo separando os nomes por espa=E7os. Somente =E9 preciso especificar =
+o nome do=20
+pacote (sem a vers=E3o e revis=E3o).=20
+<P>Se preciso, o <CODE>apt</CODE> instalar=E1 automaticamente as =
+depend=EAncias=20
+necess=E1rias para o funcionamento correto do pacote. Quando pacotes =
+al=E9m do=20
+solicitado pelo usu=E1rio s=E3o requeridos para a instala=E7=E3o, o =
+<CODE>apt</CODE>=20
+mostrar=E1 o espa=E7o total que ser=E1 usado no disco e perguntar=E1 ao =
+usu=E1rio se ele=20
+deseja continuar. Ap=F3s a instala=E7=E3o, o pacote ser=E1 =
+automaticamente configurado=20
+pelo <CODE>dpkg</CODE> para ser executado corretamente em seu sistema.=20
+<HR>
+<A name=3Ds20.2.6></A>
+<H3>20.2.6 Removendo pacotes instalado</H3>
+<P>Use o comando <SAMP>apt-get remove [pacotes]</SAMP> para remover=20
+completamente um pacote do sistema. Podem ser removidos mais de um =
+pacote ao=20
+mesmo tempo separando os nomes dos pacotes com espa=E7os. O =
+<SAMP>apt-get=20
+remove</SAMP> remove completamente o pacote mas mant=E9m os arquivos de=20
+configura=E7=E3o, exceto se for adicionada a op=E7=E3o =
+<SAMP>--purge</SAMP>.=20
+<P>=C9 preciso especificar somente o nome do pacote (sem a vers=E3o e =
+revis=E3o).=20
+<HR>
+<A name=3Ds20.2.7></A>
+<H3>20.2.7 Atualizando sua distribui=E7=E3o</H3>
+<P>O <CODE>apt</CODE> tem uma grande caracter=EDstica: Atualizar toda a =
+sua=20
+distribui=E7=E3o de uma forma inteligente e segura. O <CODE>apt</CODE> =
+l=EA a listagem=20
+de pacotes dispon=EDveis no servidor remoto, verifica quais est=E3o =
+instalados e=20
+suas vers=F5es, caso a vers=E3o do pacote seja mais nova que a j=E1 =
+instalada em seu=20
+sistema, o pacote ser=E1 imediatamente atualizado.=20
+<P>A c=F3pia dos arquivos pelo <CODE>apt</CODE> pode ser feita via=20
+<SAMP>FTP</SAMP>, <SAMP>HTTP</SAMP> ou atrav=E9s de uma c=F3pia local =
+dos arquivos=20
+no disco r=EDgido (um <EM>mirror</EM> local). Em nenhuma circunst=E2ncia =
+os pacotes=20
+existentes em seu sistema ser=E3o removidos ou sua configura=E7=E3o =
+apagada durante um=20
+<SAMP>upgrade</SAMP> na distribui=E7=E3o.=20
+<P>Os arquivos de configura=E7=E3o em <CODE>/etc</CODE> que foram =
+modificados s=E3o=20
+identificados e podem ser mantidos ou substitu=EDdos por vers=F5es =
+existentes nos=20
+pacotes que est=E3o sendo instalado, esta escolha =E9 feita por voc=EA. =
+Se estiver=20
+atualizando a Debian Potato (2.2) para Woody (3.0) (ou vers=E3o =
+superior), execute=20
+os seguintes comandos antes de iniciar a atualiza=E7=E3o: <PRE>     =
+export LANG=3DC
+     export LC_ALL=3DC
+     export LC_MESSAGES=3DC
+</PRE>
+<P>para retornar as vari=E1veis de localiza=E7=E3o ao valor padr=E3o =
+(ingl=EAs). Isto =E9=20
+necess=E1rio por causa de modifica=E7=F5es no sistema de locales, e o =
+excesso de=20
+mensagens de erro do perl causaram alguns problemas em meus testes.=20
+<P>Ap=F3s isto, a atualiza=E7=E3o da distribui=E7=E3o =
+<CODE>Debian</CODE> pode ser feita=20
+atrav=E9s de dois simples comandos: <PRE>     apt-get update          =
+#Para atualizar a lista de pacotes (obrigat=F3rio)
+     apt-get -f dist-upgrade #Para atualizar a distribui=E7=E3o
+</PRE>
+<P>A op=E7=E3o <SAMP>-f</SAMP> faz com que o <CODE>apt</CODE> verifique =
+e corrija=20
+automaticamente problemas de depend=EAncias entre pacotes. Recomendo =
+executa o=20
+comando <SAMP>apt-get -f --dry-run dist-upgrade|less</SAMP> para ver o =
+que vai=20
+acontecer sem atualizar a distribui=E7=E3o, se tudo ocorrer bem, retire =
+o=20
+<SAMP>--dry-run</SAMP> e v=E1 em frente.=20
+<P>A distribui=E7=E3o usada na atualiza=E7=E3o pode ser:=20
+<UL>
+  <LI><SAMP>Para a mesma vers=E3o que utiliza</SAMP> - Para quem deseja =
+manter os=20
+  pacotes sempre atualizados entre revis=F5es, copiar pacotes que =
+cont=E9m corre=E7=F5es=20
+  para falhas de seguran=E7a (veja a p=E1gina web em <CODE><A=20
+  href=3D"http://www.debian.org/">http://www.debian.org/</A></CODE> para =
+
+  acompanhar o boletim de seguran=E7a).=20
+  <LI><SAMP>Para uma distribui=E7=E3o stable</SAMP> - Mesmo que o acima, =
+mas quando=20
+  uma nova distribui=E7=E3o for lan=E7ada, o link simb=F3lico de stable =
+ser=E1 apontado=20
+  para pr=F3xima distribui=E7=E3o, atualizando instantaneamente seu =
+sistema.=20
+  <LI><SAMP>Para a distribui=E7=E3o testing</SAMP> - Atualiza para a =
+futura=20
+  distribui=E7=E3o <CODE>Debian</CODE> que ser=E1 lan=E7ada, =E9 como a =
+<EM>unstable</EM>,=20
+  mas seus pacotes passam por um per=EDodo de testes de 2 semanas na=20
+  <EM>unstable</EM> antes de serem copiados para esta.=20
+  <LI><SAMP>unstable</SAMP> - Vers=E3o em desenvolvimento, recomendada =
+somente=20
+  para desenvolvedores ou usu=E1rios que conhecem a fundo o sistema=20
+  <CODE>GNU/Linux</CODE> e saibam resolver eventuais problemas que =
+apare=E7am.=20
+  <P>A unstable =E9 uma distribui=E7=E3o em constante desenvolvimento e =
+podem haver=20
+  pacotes problem=E1ticos ou com falhas de seguran=E7a. Ap=F3s o =
+per=EDodo de=20
+  desenvolvimento, a distribui=E7=E3o unstable se tornar=E1 frozen. </P>
+  <LI><SAMP>frozen</SAMP> - Vers=E3o congelada, nenhum pacote novo =E9 =
+aceito e=20
+  somente s=E3o feitas corre=E7=F5es de falhas. Ap=F3s todas as falhas =
+estarem=20
+  corrigidas, a distribui=E7=E3o <SAMP>frozen</SAMP> se tornar=E1 =
+<SAMP>stable</SAMP>=20
+  </LI></UL>
+<P>A distribui=E7=E3o que ser=E1 usada na atualiza=E7=E3o pode ser =
+especificada no arquivo=20
+<CODE>/etc/apt/sources.list</CODE> (veja a se=E7=E3o correspondente =
+acima). Caso o=20
+m=E9todo de atualiza=E7=E3o usado seja via HTTP ou FTP, ser=E1 =
+necess=E1rio usar o comando=20
+<SAMP>apt-get clean</SAMP> para remover os pacotes copiados para seu =
+sistema=20
+(para detalhes veja a se=E7=E3o seguinte).=20
+<HR>
+<A name=3Ds20.2.8></A>
+<H3>20.2.8 Removendo pacotes baixados pelo <CODE>apt</CODE></H3>
+<P>Use o comando <SAMP>apt-get clean</SAMP> para apagar qualquer arquivo =
+baixado=20
+durante uma atualiza=E7=E3o ou instala=E7=E3o de arquivos com o =
+<CODE>apt</CODE>. Os=20
+arquivos baixados residem em <CODE>/var/cache/apt/archives</CODE> =
+(download=20
+completo) e <CODE>/var/cache/apt/archives/partial</CODE> (arquivos sendo =
+
+baixados - parciais).=20
+<P>Este local de armazenamento =E9 especialmente usado com o m=E9todo =
+http e ftp=20
+para armazenamento de arquivos durante o download para instala=E7=E3o =
+(todos os=20
+arquivos s=E3o primeiro copiados para serem instalados e configurados).=20
+<P>O <SAMP>apt-get clean</SAMP> =E9 automaticamente executado caso seja =
+usado o=20
+m=E9todo de acesso <CODE>apt</CODE> do <CODE>dselect</CODE>.=20
+<HR>
+<A name=3Ds20.2.9></A>
+<H3>20.2.9 Procurando por pacotes atrav=E9s da descri=E7=E3o</H3>
+<P>O utilit=E1rio <CODE>apt-cache</CODE> pode ser usado para esta =
+fun=E7=E3o. Ele=20
+tamb=E9m possui outras utilidades interessante para a procura e =
+manipula=E7=E3o da=20
+lista de pacotes.=20
+<P>Por exemplo, o comando <SAMP>apt-cache search clock</SAMP> mostrar=E1 =
+todos os=20
+pacotes que possuem a palavra <VAR>clock</VAR> na descri=E7=E3o do =
+pacote.=20
+<HR>
+<A name=3Ds20.2.10></A>
+<H3>20.2.10 Procurando um pacote que cont=E9m determinado arquivo</H3>
+<P>Suponha que algum programa esteja lhe pedindo o arquivo =
+<SAMP>perlcc</SAMP> e=20
+voc=EA n=E3o tem a m=EDnima id=E9ia de que pacote instalar no seu =
+sistema. O utilit=E1rio=20
+<SAMP>auto-apt</SAMP> pode resolver esta situa=E7=E3o. Primeiro instale =
+o pacote=20
+<CODE>auto-apt</CODE> e execute o comando <SAMP>auto-apt update</SAMP> =
+para que=20
+ele copie o arquivo <CODE>Contents-i386.gz</CODE> que ser=E1 usado na =
+busca desses=20
+dados.=20
+<P>Agora, basta executar o comando: <PRE>      auto-apt search perlcc
+</PRE>
+<P>para que ele retorne o resultado: <PRE>     usr/bin/perlcc   =
+interpreters/perl
+</PRE>
+<P>O pacote que cont=E9m este arquivo =E9 o <CODE>perl</CODE> e se =
+encontra na se=E7=E3o=20
+<CODE>interpreters</CODE> dos arquivos da <CODE>Debian</CODE>. Para uma =
+pesquisa=20
+que mostra mais resultados (como <SAMP>auto-apt search a2ps</SAMP>), =E9 =
+
+interessante usar o grep para filtrar a sa=EDda: <PRE>     auto-apt =
+search a2ps|grep bin/
+    =20
+     usr/bin/psmandup        text/a2ps
+     usr/bin/pdiff   text/a2ps
+     usr/bin/psset   text/a2ps
+     usr/bin/composeglyphs   text/a2ps
+     usr/bin/a2psj   text/a2ps-perl-ja
+     usr/bin/a2ps    text/a2ps
+     usr/bin/fixps   text/a2ps
+     usr/bin/ogonkify        text/a2ps
+     usr/bin/fixnt   text/a2ps
+     usr/bin/card    text/a2ps
+     usr/bin/texi2dvi4a2ps   text/a2ps
+</PRE>
+<P>Ser=E3o mostrados somente os bin=E1rios, diret=F3rios de =
+documenta=E7=E3o, manpages,=20
+etc. n=E3o ser=E3o mostradas.=20
+<HR>
+<A name=3Ds20.2.11></A>
+<H3>20.2.11 Modos eficazes de compila=E7=E3o do c=F3digo fonte para a =
+Debian</H3>
+<P>O <CODE>Debian</CODE> como qualquer distribui=E7=E3o de Linux, possui =
+o diret=F3rio=20
+<CODE>/usr/local</CODE> que segundo a FHS =E9 o local apropriado para =
+coloca=E7=E3o de=20
+programas que n=E3o fazem parte da distribui=E7=E3o, que seria no caso o =
+de fontes=20
+compilados manualmente. Um dos grandes trabalhos de quem pega o c=F3digo =
+fonte=20
+para compila=E7=E3o =E9 a instala=E7=E3o de bibliotecas de =
+desenvolvimento para a=20
+compila=E7=E3o ocorrer com sucesso.=20
+<P>O <CODE>auto-apt</CODE> facilita magicamente o processo de =
+compila=E7=E3o da=20
+seguinte forma: durante o passo <SAMP>./configure</SAMP> no momento que =
+=E9 pedida=20
+uma bibliotecas, depend=EAncia, etc. o <CODE>auto-apt</CODE> para o =
+processo,=20
+busca por pacotes no reposit=F3rio da <CODE>Debian</CODE>, pergunta qual =
+pacote=20
+ser=E1 instalado (caso tenha mais de uma op=E7=E3o), instala e retorna o =
+
+<SAMP>./configure</SAMP> do ponto onde havia parado.=20
+<P>Para fazer isso, execute o comando: <PRE>     auto-apt run =
+./configure
+</PRE>
+<P>E ele se encarregar=E1 do resto :-)=20
+<HR>
+<A name=3Ds20.2.12></A>
+<H3>20.2.12 Verificando pacotes corrompidos</H3>
+<P>Use o comando <SAMP>apt-get check</SAMP> para verificar arquivos =
+corrompidos.=20
+A corre=E7=E3o =E9 feita automaticamente. A lista de pacotes tamb=E9m =
+=E9 atualizada=20
+quando utiliza este comando.=20
+<HR>
+<A name=3Ds20.2.13></A>
+<H3>20.2.13 Corrigindo problemas de depend=EAncias e outros erros</H3>
+<P>Use o comando <SAMP>apt-get -f install</SAMP> (sem o nome do pacote) =
+para que=20
+o <CODE>apt-get</CODE> verifique e corrija problemas com depend=EAncias =
+de pacotes=20
+e outros problemas conhecidos.=20
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ 20 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

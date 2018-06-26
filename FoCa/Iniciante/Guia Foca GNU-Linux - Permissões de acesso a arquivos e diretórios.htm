@@ -1,0 +1,661 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Permissões de acesso a arquivos e diretórios</TITLE>
+<META http-equiv=content-type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2900.3059" name=GENERATOR></HEAD>
+<BODY><A name=ch-perm></A>
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10</A> 
+] [ 11 ] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">próximo</A> 
+] 
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Capítulo 11 - Permissões de acesso a arquivos e 
+diretórios </H1>
+<HR>
+
+<P>A permissão de acesso protege o sistema de arquivos Linux do acesso indevido 
+de pessoas ou programas não autorizados. 
+<P>A permissão de acesso do <CODE>GNU/Linux</CODE> também impede que um programa 
+mal intencionado, por exemplo, apague um arquivo que não deve, envie arquivos 
+para outra pessoa ou forneça acesso da rede para que outros usuários invadam o 
+sistema. O sistema <CODE>GNU/Linux</CODE> é muito seguro e como qualquer outro 
+sistema seguro e confiável impede que usuários iniciantes (ou mal intencionados) 
+instalem programas enviados por terceiros sem saber para que eles realmente 
+servem e causem danos irreversíveis em seus arquivos, seu micro ou sua empresa. 
+<P>Esta seção pode se tornar um pouco difícil de se entender, então recomendo 
+ler e ao mesmo tempo prática-la para uma ótima compreensão. Não se preocupe, 
+também coloquei exemplos para ajuda-lo a entender o sistema de permissões de 
+acesso do ambiente <CODE>GNU/Linux</CODE>. 
+<HR>
+<A name=s-perm-user-group></A>
+<H2>11.1 Donos, grupos e outros usuários</H2>
+<P>O princípio da segurança no sistema de arquivos <CODE>GNU/Linux</CODE> é 
+definir o acesso aos arquivos por donos, grupos e outros usuários: 
+<DL>
+  <DT><EM>dono</EM> 
+  <DD>É a pessoa que criou o arquivo ou o diretório. O nome do dono do 
+  arquivo/diretório é o mesmo do usuário usado para entrar no sistema 
+  <CODE>GNU/Linux</CODE>. Somente o dono pode modificar as permissões de acesso 
+  do arquivo. 
+  <P>As permissões de acesso do dono de um arquivo somente se aplicam ao dono do 
+  arquivo/diretório. A identificação do dono também é chamada de user id (UID). 
+  <P>A identificação de usuário e o nome do grupo que pertence são armazenadas 
+  respectivamente nos arquivos <CODE>/etc/passwd</CODE> e 
+  <CODE>/etc/group</CODE>. Estes são arquivos textos comuns e podem ser editados 
+  em qualquer editor de texto, mas tenha cuidado para não modificar o campo que 
+  contém a senha do usuário encriptada (que pode estar armazenada neste arquivo 
+  caso não estiver usando senhas ocultas). </P>
+  <DT><EM>grupo</EM> 
+  <DD>Para permitir que vários usuários diferentes tivessem acesso a um mesmo 
+  arquivo (já que somente o dono poderia ter acesso ao arquivo), este recurso 
+  foi criado. Cada usuário pode fazer parte de um ou mais grupos e então acessar 
+  arquivos que pertençam ao mesmo grupo que o seu (mesmo que estes arquivos 
+  tenham outro <EM>dono</EM>). 
+  <P>Por padrão, quando um novo usuário é criado, o grupo ele pertencerá será o 
+  mesmo de seu grupo primário (exceto pelas condições que explicarei adiante) 
+  (veja isto através do comando <CODE>id</CODE>, veja <A 
+  href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html#s-cmdc-id">id, 
+  Seção 10.10</A>). A identificação do grupo é chamada de <SAMP>gid (<EM>group 
+  id</EM>)</SAMP>. 
+  <P>Um usuário pode pertencer a um ou mais grupos. Para detalhes de como 
+  incluir o usuário em mais grupos veja <A 
+  href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html#s-cmdc-incluirgrupo">Adicionando 
+  o usuário a um grupo extra, Seção 10.8</A>. </P>
+  <DT><EM>outros</EM> 
+  <DD>É a categoria de usuários que não são donos ou não pertencem ao grupo do 
+  arquivo. </DD></DL>
+<P>Cada um dos tipos acima possuem três tipos básicos de permissões de acesso 
+que serão vistas na próxima seção. 
+<HR>
+<A name=s-perm-tipos></A>
+<H2>11.2 Tipos de Permissões de acesso</H2>
+<P>Quanto aos tipos de permissões que se aplicam ao <EM>dono</EM>, 
+<EM>grupo</EM> e <EM>outros usuários</EM>, temos 3 permissões básicas: 
+<UL>
+  <LI><SAMP>r</SAMP> - Permissão de leitura para arquivos. Caso for um 
+  diretório, permite listar seu conteúdo (através do comando <CODE>ls</CODE>, 
+  por exemplo). 
+  <LI><SAMP>w</SAMP> - Permissão de gravação para arquivos. Caso for um 
+  diretório, permite a gravação de arquivos ou outros diretórios dentro dele. 
+  <P>Para que um arquivo/diretório possa ser apagado, é necessário o acesso a 
+  gravação. </P>
+  <LI><SAMP>x</SAMP> - Permite executar um arquivo (caso seja um programa 
+  executável). Caso seja um diretório, permite que seja acessado através do 
+  comando <CODE>cd</CODE> (veja <A 
+  href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html#s-comando-cd">cd, 
+  Seção 6.2</A> para detalhes). </LI></UL>
+<P>As permissões de acesso a um arquivo/diretório podem ser visualizadas com o 
+uso do comando <SAMP>ls -la</SAMP>. Para maiores detalhes veja <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html#s-comando-ls">ls, 
+Seção 6.1</A>. As 3 letras (rwx) são agrupadas da seguinte forma: <PRE>     -rwxrwxrwx   gleydson   users  teste
+</PRE>
+<P>Virou uma bagunça não? Vou explicar cada parte para entender o que quer dizer 
+as 10 letras acima (da esquerda para a direita): 
+<UL>
+  <LI>A primeira letra diz qual é o tipo do arquivo. Caso tiver um "d" é um 
+  diretório, um "l" um link a um arquivo no sistema (veja <A 
+  href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-ln">ln, 
+  Seção 8.4</A> para detalhes) , um "-" quer dizer que é um arquivo comum, etc. 
+  </LI></UL>
+<UL>
+  <LI>Da segunda a quarta letra (rwx) dizem qual é a permissão de acesso ao 
+  <EM>dono</EM> do arquivo. Neste caso <EM>gleydson</EM> ele tem a permissão de 
+  ler (r - read), gravar (w - write) e executar (x - execute) o arquivo 
+  <CODE>teste</CODE>. </LI></UL>
+<UL>
+  <LI>Da quinta a sétima letra (rwx) diz qual é a permissão de acesso ao 
+  <EM>grupo</EM> do arquivo. Neste caso todos os usuários que pertencem ao grupo 
+  <EM>users</EM> tem a permissão de ler (r), gravar (w), e também executar (x) o 
+  arquivo <CODE>teste</CODE>. </LI></UL>
+<UL>
+  <LI>Da oitava a décima letra (rwx) diz qual é a permissão de acesso para os 
+  <EM>outros usuários</EM>. Neste caso todos os usuários que não são donos do 
+  arquivo <CODE>teste</CODE> tem a permissão para ler, gravar e executar o 
+  programa. </LI></UL>
+<P>Veja o comando <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html#s-perm-chmod">chmod, 
+Seção 11.7</A> para detalhes sobre a mudança das permissões de acesso de 
+arquivos/diretórios. 
+<HR>
+<A name=s-perm-acessando></A>
+<H2>11.3 Etapas para acesso a um arquivo/diretório</H2>
+<P>O acesso a um arquivo/diretório é feito verificando primeiro se o usuário que 
+acessará o arquivo é o seu <EM>dono</EM>, caso seja, as permissões de dono do 
+arquivo são aplicadas. Caso não seja o <EM>dono</EM> do arquivo/diretório, é 
+verificado se ele pertence ao grupo correspondente, caso pertença, as permissões 
+do <EM>grupo</EM> são aplicadas. Caso não pertença ao <EM>grupo</EM>, são 
+verificadas as permissões de acesso para os outros usuários que não são 
+<EM>donos</EM> e não pertencem ao <EM>grupo</EM> correspondente ao 
+arquivo/diretório. 
+<P>Após verificar aonde o usuário se encaixa nas permissões de acesso do arquivo 
+(se ele é o <EM>dono</EM>, pertence ao <EM>grupo</EM>, ou <EM>outros 
+usuários</EM>), é verificado se ele terá permissão acesso para o que deseja 
+fazer (ler, gravar ou executar o arquivo), caso não tenha, o acesso é negado, 
+mostrando uma mensagem do tipo: "Permission denied" (permissão negada). 
+<P>O que isto que dizer é que mesmo que você seja o dono do arquivo e definir o 
+acesso do <EM>dono</EM> (através do comando <CODE>chmod</CODE>) como somente 
+leitura (r) mas o acesso dos <EM>outros usuários</EM> como leitura e gravação, 
+você somente poderá ler este arquivo mas os outros usuários poderão 
+ler/grava-lo. 
+<P>As permissões de acesso (leitura, gravação, execução) para donos, grupos e 
+outros usuários são independentes, permitindo assim um nível de acesso 
+diferenciado. Para maiores detalhes veja <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html#s-perm-tipos">Tipos 
+de Permissões de acesso, Seção 11.2</A>. 
+<P>Lembre-se: Somente o dono pode modificar um arquivo/diretório! 
+<P>Para mais detalhes veja os comandos <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html#s-perm-chown">chown, 
+Seção 11.9</A> e <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html#s-perm-chgrp">chgrp, 
+Seção 11.8</A>. 
+<HR>
+<A name=s-perm-exemplo></A>
+<H2>11.4 Exemplos práticos de permissões de acesso</H2>
+<P>Abaixo dois exemplos práticos de permissão de acesso: <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html#s-perm-exemplo-a">Exemplo 
+de acesso a um arquivo, Seção 11.4.1</A> e a <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html#s-perm-exemplo-d">Exemplo 
+de acesso a um diretório, Seção 11.4.2</A>. Os dois exemplos são explicados 
+passo a passo para uma perfeita compreensão do assunto. Vamos a prática! 
+<HR>
+<A name=s-perm-exemplo-a></A>
+<H3>11.4.1 Exemplo de acesso a um arquivo</H3>
+<P>Abaixo um exemplo e explicação das permissões de acesso a um arquivo no 
+<CODE>GNU/Linux</CODE> (obtido com o comando <SAMP>ls -la</SAMP>, explicarei 
+passo a passo cada parte: 
+<P>-rwxr-xr-- 1 gleydson user 8192 nov 4 16:00 teste 
+<DL>
+  <DT><SAMP>-rwxr-xr--</SAMP> 
+  <DD>Estas são as permissões de acesso ao arquivo <CODE>teste</CODE>. Um 
+  conjunto de 10 letras que especificam o tipo do arquivo, permissão do dono do 
+  arquivo, grupo do arquivo e outros usuários. Veja a explicação detalhada sobre 
+  cada uma abaixo: 
+  <DL>
+    <DT><STRONG>-</STRONG>rwxr-xr-- 
+    <DD>A primeira letra (do conjunto das 10 letras) determina o tipo do 
+    arquivos. Se a letra for um <STRONG>d</STRONG> é um diretório, e você poderá 
+    acessa-lo usando o comando <CODE>cd</CODE>. Caso for um <STRONG>l</STRONG> é 
+    um link simbólico para algum arquivo ou diretório no sistema (para detalhes 
+    veja o comando <A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-ln">ln, 
+    Seção 8.4</A> . Um <STRONG>-</STRONG> significa que é um arquivo normal. 
+    <DT>-<STRONG>rwx</STRONG>r-xr-- 
+    <DD>Estas 3 letras (da segunda a quarta do conjunto das 10 letras) são as 
+    permissões de acesso do <EM>dono</EM> do arquivo <CODE>teste</CODE>. O dono 
+    (neste caso <EM>gleydson</EM>) tem a permissão para ler (r), gravar (w) e 
+    executar (x) o arquivo <CODE>teste</CODE>. 
+    <DT>-rwx<STRONG>r-x</STRONG>r-- 
+    <DD>Estas 3 letras (da quinta a sétima do conjunto das 10 letras) são as 
+    permissões de acesso dos usuários que pertencem ao <EM>grupo user</EM> do 
+    arquivo <CODE>teste</CODE>. Os usuários que pertencem ao grupo <EM>user</EM> 
+    tem a permissão somente para ler (r) e executar (x) o arquivo 
+    <CODE>teste</CODE> não podendo modifica-lo ou apaga-lo. 
+    <DT>-rwxr-x<STRONG>r--</STRONG> 
+    <DD>Estas 3 letras (da oitava a décima) são as permissões de acesso para 
+    usuários que <STRONG>não</STRONG> são <EM>donos</EM> do arquivo 
+    <CODE>teste</CODE> e que <STRONG>não</STRONG> pertencem ao grupo 
+    <EM>user</EM>. Neste caso, estas pessoas somente terão a permissão para ver 
+    o conteúdo do arquivo <CODE>teste</CODE>. </DD></DL>
+  <DT><EM>gleydson</EM> 
+  <DD>Nome do dono do arquivo <CODE>teste</CODE>. 
+  <DT><EM>user</EM> 
+  <DD>Nome do grupo que o arquivo <CODE>teste</CODE> pertence. 
+  <DT><CODE>teste</CODE> 
+  <DD>Nome do arquivo. </DD></DL>
+<HR>
+<A name=s-perm-exemplo-d></A>
+<H3>11.4.2 Exemplo de acesso a um diretório</H3>
+<P>Abaixo um exemplo com explicações das permissões de acesso a um diretório no 
+<CODE>GNU/Linux</CODE>: 
+<P>drwxr-x--- 2 gleydson user 1024 nov 4 17:55 exemplo 
+<DL>
+  <DT><SAMP>drwxr-x---</SAMP> 
+  <DD>Permissões de acesso ao diretório <CODE>exemplo</CODE>. É um conjunto de 
+  10 letras que especificam o tipo de arquivo, permissão do dono do diretório, 
+  grupo que o diretório pertence e permissão de acesso a outros usuários. Veja 
+  as explicações abaixo: 
+  <DL>
+    <DT><STRONG>d</STRONG>rwxr-x--- 
+    <DD>A primeira letra (do conjunto das 10) determina o tipo do arquivo. Neste 
+    caso é um diretório porque tem a letra <STRONG>d</STRONG>. 
+    <DT>d<STRONG>rwx</STRONG>r-x--- 
+    <DD>Estas 3 letras (da segunda a quarta) são as permissões de acesso do 
+    <EM>dono</EM> do diretório <CODE>exemplo</CODE>. O dono do diretório (neste 
+    caso <EM>gleydson</EM>) tem a permissão para listar arquivos do diretório 
+    (r), gravar arquivos no diretório (w) e entrar no diretório (x). 
+    <DT>drwx<STRONG>r-x</STRONG>--- 
+    <DD>Estas 3 letras (da quinta a sétima) são as permissões de acesso dos 
+    usuários que pertencem ao <EM>grupo user</EM>. Os usuários que pertencem ao 
+    grupo <EM>user</EM> tem a permissão somente para listar arquivos do 
+    diretório (r) e entrar no diretório (x) <CODE>exemplo</CODE>. 
+    <DT>drwxr-x<STRONG>---</STRONG> 
+    <DD>Estas 3 letras (da oitava a décima) são as permissões de acesso para 
+    usuários que <STRONG>não</STRONG> são <EM>donos</EM> do diretório 
+    <CODE>exemplo</CODE> e que <STRONG>não</STRONG> pertencem ao grupo 
+    <EM>user</EM>. Com as permissões acima, nenhum usuário que se encaixe nas 
+    condições de <EM>dono</EM> e <EM>grupo</EM> do diretório tem a permissão de 
+    acessa-lo. </DD></DL>
+  <DT><EM>gleydson</EM> 
+  <DD>Nome do dono do diretório <CODE>exemplo</CODE>. 
+  <DT><EM>user</EM> 
+  <DD>Nome do grupo que diretório <CODE>exemplo</CODE> pertence. 
+  <DT><CODE>exemplo</CODE> 
+  <DD>Nome do diretório. </DD></DL>
+<P>Para detalhes de como alterar o dono/grupo de um arquivo/diretório, veja os 
+comandos <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html#s-perm-chmod">chmod, 
+Seção 11.7</A>, <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html#s-perm-chgrp">chgrp, 
+Seção 11.8</A> e <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html#s-perm-chown">chown, 
+Seção 11.9</A>. 
+<P><STRONG>OBSERVAÇÕES</STRONG>: 
+<UL>
+  <LI>O usuário <SAMP>root</SAMP> não tem nenhuma restrição de acesso ao 
+  sistema. 
+  <LI>Se você tem permissões de gravação no diretório e tentar apagar um arquivo 
+  que você não tem permissão de gravação, o sistema perguntará se você confirma 
+  a exclusão do arquivo apesar do modo leitura. Caso você tenha permissões de 
+  gravação no arquivo, o arquivo será apagado por padrão sem mostrar nenhuma 
+  mensagem de erro (a não ser que seja especificada a opção -i com o comando 
+  <CODE>rm</CODE>). 
+  <LI>Por outro lado, mesmo que você tenha permissões de gravação em um arquivo 
+  mas não tenha permissões de gravação em um diretório, a exclusão do arquivo 
+  será negada. </LI></UL>
+<P>Isto mostra que é levado mais em consideração a permissão de acesso do 
+diretório do que as permissões dos arquivos e sub-diretórios que ele contém. 
+Este ponto é muitas vezes ignorado por muitas pessoas e expõem seu sistema a 
+riscos de segurança. Imagine o problema que algum usuário que não tenha 
+permissão de gravação em um arquivo mas que a tenha no diretório pode causar em 
+um sistema mal administrado. 
+<HR>
+<A name=s-perm-especiais></A>
+<H2>11.5 Permissões de Acesso Especiais</H2>
+<P>Em adição as três permissões básicas (rwx), existem permissões de acesso 
+especiais (stX) que afetam arquivos executáveis e diretórios: 
+<UL>
+  <LI><SAMP>s</SAMP> - Quando é usado na permissão de acesso do <EM>Dono</EM>, 
+  ajusta a identificação efetiva do usuário do processo durante a execução de um 
+  programa, também chamado de <EM>bit setuid</EM>. Não tem efeito em diretórios. 
+
+  <P>Quando <SAMP>s</SAMP> é usado na permissão de acesso do <EM>Grupo</EM>, 
+  ajusta a identificação efetiva do grupo do processo durante a execução de um 
+  programa, chamado de <EM>bit setgid</EM>. É identificado pela letra 
+  <SAMP>s</SAMP> no lugar da permissão de execução do grupo do 
+  arquivo/diretório. Em diretórios, força que os arquivos criados dentro dele 
+  pertençam ao mesmo grupo do diretório, ao invés do grupo primário que o 
+  usuário pertence. 
+  <P>Ambos <EM>setgid</EM> e <EM>setuid</EM> podem aparecer ao mesmo tempo no 
+  mesmo arquivo/diretório. A permissão de acesso especial <SAMP>s</SAMP> somente 
+  pode aparecer no campo <EM>Dono</EM> e <EM>Grupo</EM>. </P>
+  <LI><SAMP>S</SAMP> - Idêntico a "s". Significa que não existe a permissão "x" 
+  (execução ou entrar no diretório) naquele lugar. Um exemplo é o chmod 2760 em 
+  um diretório. 
+  <LI><SAMP>t</SAMP> - Salva a imagem do texto do programa no dispositivo swap, 
+  assim ele será carregado mais rapidamente quando executado, também chamado de 
+  <EM>stick bit</EM>. 
+  <P>Em diretórios, impede que outros usuários removam arquivos dos quais não 
+  são donos. Isto é chamado de colocar o diretório em modo 
+  <SAMP>append-only</SAMP>. Um exemplo de diretório que se encaixa perfeitamente 
+  nesta condição é o <CODE>/tmp</CODE>, todos os usuários devem ter acesso para 
+  que seus programas possam criar os arquivos temporários lá, mas nenhum pode 
+  apagar arquivos dos outros. A permissão especial <SAMP>t</SAMP>, pode ser 
+  especificada somente no campo outros usuários das permissões de acesso. </P>
+  <LI><SAMP>T</SAMP> - Idêntico a "t". Significa que não existe a permissão "x" 
+  naquela posição (por exemplo, em um chmod 1776 em um diretório). 
+  <LI><SAMP>X</SAMP> - Se você usar <SAMP>X</SAMP> ao invés de <SAMP>x</SAMP>, a 
+  permissão de execução somente é afetada se o arquivo já tiver permissões de 
+  execução. Em diretórios ela tem o mesmo efeito que a permissão de execução 
+  <SAMP>x</SAMP>. </LI></UL>
+<UL>
+  <LI>Exemplo da permissão de acesso especial <SAMP>X</SAMP>: 
+  <OL type=1>
+    <LI>Crie um arquivo <CODE>teste</CODE> (digitando <SAMP>touch teste</SAMP>) 
+    e defina sua permissão para <SAMP>rw-rw-r--</SAMP> (<SAMP>chmod ug=rw,o=r 
+    teste</SAMP> ou <SAMP>chmod 664 teste</SAMP>). 
+    <LI>Agora use o comando <SAMP>chmod a+X teste</SAMP> 
+    <LI>digite <SAMP>ls -l</SAMP> 
+    <LI>Veja que as permissões do arquivo não foram afetadas. 
+    <LI>agora digite <SAMP>chmod o+x teste</SAMP> 
+    <LI>digite <SAMP>ls -l</SAMP>, você colocou a permissão de execução para os 
+    outros usuários. 
+    <LI>Agora use novamente o comando <SAMP>chmod a+X teste</SAMP> 
+    <LI>digite <SAMP>ls -l</SAMP> 
+    <LI>Veja que agora a permissão de execução foi concedida a todos os 
+    usuários, pois foi verificado que o arquivo era executável (tinha permissão 
+    de execução para outros usuários). 
+    <LI>Agora use o comando <SAMP>chmod a-X teste</SAMP> 
+    <LI>Ele também funcionará e removerá as permissões de execução de todos os 
+    usuários, porque o arquivo <CODE>teste</CODE> tem permissão de execução 
+    (confira digitando <SAMP>ls -l</SAMP>). 
+    <LI>Agora tente novamente o <SAMP>chmod a+X teste</SAMP> 
+    <LI>Você deve ter reparado que a permissão de acesso especial <SAMP>X</SAMP> 
+    é semelhante a <SAMP>x</SAMP>, mas somente faz efeito quanto o arquivo já 
+    tem permissão de execução para o dono, grupo ou outros usuários. </LI></OL>
+  <P>Em diretórios, a permissão de acesso especial <SAMP>X</SAMP> funciona da 
+  mesma forma que <SAMP>x</SAMP>, até mesmo se o diretório não tiver nenhuma 
+  permissão de acesso (<SAMP>x</SAMP>). </P></LI></UL>
+<HR>
+<A name=s-perm-root></A>
+<H2>11.6 A conta root</H2>
+<P><EM>Esta seção foi retirada do Manual de Instalação da Debian</EM>. 
+<P>A conta root é também chamada de <EM>super usuário</EM>, este é um login que 
+não possui restrições de segurança. A conta root somente deve ser usada para 
+fazer a administração do sistema, e usada o menor tempo possível. 
+<P>Qualquer senha que criar deverá conter de 6 a 8 caracteres (em sistemas 
+usando crypto) ou até frases inteiras (caso esteja usando MD5, que garante maior 
+segurança), e também poderá conter letras maiúsculas e minúsculas, e também 
+caracteres de pontuação. Tenha um cuidado especial quando escolher sua senha 
+root, porque ela é a conta mais poderosa. Evite palavras de dicionário ou o uso 
+de qualquer outros dados pessoais que podem ser adivinhados. 
+<P>Se qualquer um lhe pedir senha root, seja extremamente cuidadoso. Você 
+normalmente nunca deve distribuir sua conta root, a não ser que esteja 
+administrando um computador com mais de um administrador do sistema. 
+<P>Utilize uma conta de usuário normal ao invés da conta root para operar seu 
+sistema. Porque não usar a conta root? Bem, uma razão para evitar usar 
+privilégios root é por causa da facilidade de se cometer danos irreparáveis como 
+root. Outra razão é que você pode ser enganado e rodar um programa <EM>Cavalo de 
+Tróia</EM> -- que é um programa que obtém poderes do <EM>super usuário</EM> para 
+comprometer a segurança do seu sistema sem que você saiba. 
+<HR>
+<A name=s-perm-chmod></A>
+<H2>11.7 chmod</H2>
+<P>Muda a permissão de acesso a um arquivo ou diretório. Com este comando você 
+pode escolher se usuário ou grupo terá permissões para ler, gravar, executar um 
+arquivo ou arquivos. Sempre que um arquivo é criado, seu dono é o usuário que o 
+criou e seu grupo é o grupo do usuário (exceto para diretórios configurados com 
+a permissão de grupo <SAMP>"s"</SAMP>, será visto adiante). 
+<P><SAMP>chmod [<EM>opções</EM>] [<EM>permissões</EM>] 
+[<EM>diretório/arquivo</EM>]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT><EM>diretório/arquivo</EM> 
+  <DD>Diretório ou arquivo que terá sua permissão mudada. 
+  <DT><EM>opções</EM> 
+  <DT>-v, --verbose 
+  <DD>Mostra todos os arquivos que estão sendo processados. 
+  <DT>-f, --silent 
+  <DD>Não mostra a maior parte das mensagens de erro. 
+  <DT>-c, --change 
+  <DD>Semelhante a opção -v, mas só mostra os arquivos que tiveram as permissões 
+  alteradas. 
+  <DT>-R, --recursive 
+  <DD>Muda permissões de acesso do <EM>diretório/arquivo</EM> no diretório atual 
+  e sub-diretórios. 
+  <DT>ugoa+-=rwxXst 
+  <DD>
+  <UL>
+    <LI><EM>ugoa</EM> - Controla que nível de acesso será mudado. Especificam, 
+    em ordem, usuário (u), grupo (g), outros (o), todos (a). 
+    <LI><EM>+-=</EM> - <EM>+</EM> coloca a permissão, <EM>-</EM> retira a 
+    permissão do arquivo e <EM>=</EM> define a permissão exatamente como 
+    especificado. 
+    <LI>rwx - <EM>r</EM> permissão de leitura do arquivo. <EM>w</EM> permissão 
+    de gravação. <EM>x</EM> permissão de execução (ou acesso a diretórios). 
+  </LI></UL></DD></DL>
+<P><CODE>chmod</CODE> não muda permissões de links simbólicos, as permissões 
+devem ser mudadas no arquivo alvo do link. Também podem ser usados códigos 
+numéricos octais para a mudança das permissões de acesso a arquivos/diretórios. 
+Para detalhes veja <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html#s-perm-octal">Modo 
+de permissão octal, Seção 11.10</A>. 
+<P>DICA: É possível copiar permissões de acesso do arquivo/diretório, por 
+exemplo, se o arquivo <CODE>teste.txt</CODE> tiver a permissão de acesso 
+<SAMP>r-xr-----</SAMP> e você digitar <SAMP>chmod o=u</SAMP>, as permissões de 
+acesso dos outros usuários (o) serão idênticas ao do dono (u). Então a nova 
+permissão de acesso do arquivo <CODE>teste.txt</CODE> será 
+<SAMP>r-xr--r-x</SAMP> 
+<P>Exemplos de permissões de acesso: 
+<DL>
+  <DT><SAMP>chmod g+r *</SAMP> 
+  <DD>Permite que todos os usuários que pertençam ao grupo dos arquivos (g) 
+  tenham (+) permissões de leitura (r) em todos os arquivos do diretório atual. 
+  <DT><SAMP>chmod o-r teste.txt</SAMP> 
+  <DD>Retira (-) a permissão de leitura (r) do arquivo <CODE>teste.txt</CODE> 
+  para os outros usuários (usuários que não são donos e não pertencem ao grupo 
+  do arquivo <CODE>teste.txt</CODE>). 
+  <DT><SAMP>chmod uo+x teste.txt</SAMP> 
+  <DD>Inclui (+) a permissão de execução do arquivo <CODE>teste.txt</CODE> para 
+  o dono e outros usuários do arquivo. 
+  <DT><SAMP>chmod a+x teste.txt</SAMP> 
+  <DD>Inclui (+) a permissão de execução do arquivo <CODE>teste.txt</CODE> para 
+  o dono, grupo e outros usuários. 
+  <DT><SAMP>chmod a=rw teste.txt</SAMP> 
+  <DD>Define a permissão de todos os usuários exatamente (=) para leitura e 
+  gravação do arquivo <CODE>teste.txt</CODE>. </DD></DL>
+<HR>
+<A name=s-perm-chgrp></A>
+<H2>11.8 chgrp</H2>
+<P>Muda o grupo de um arquivo/diretório. 
+<P><SAMP>chgrp [<EM>opções</EM>] [grupo] [arquivo/diretório]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT><EM>grupo</EM> 
+  <DD>Novo grupo do <EM>arquivo/diretório</EM>. 
+  <DT><EM>arquivo/diretório</EM> 
+  <DD>Arquivo/diretório que terá o grupo alterado. 
+  <DT><EM>opções</EM> 
+  <DT>-c, --changes 
+  <DD>Somente mostra os arquivos/grupos que forem alterados. 
+  <DT>-f, --silent 
+  <DD>Não mostra mensagens de erro para arquivos/diretórios que não puderam ser 
+  alterados. 
+  <DT>-v, --verbose 
+  <DD>Mostra todas as mensagens e arquivos sendo modificados. 
+  <DT>-R, --recursive 
+  <DD>Altera os grupos de arquivos/sub-diretórios do diretório atual. </DD></DL>
+<HR>
+<A name=s-perm-chown></A>
+<H2>11.9 chown</H2>
+<P>Muda dono de um arquivo/diretório. Opcionalmente pode também ser usado para 
+mudar o grupo. 
+<P><SAMP>chown [<EM>opções</EM>] [dono.grupo] [diretório/arquivo]</SAMP> 
+<P>onde: 
+<DL>
+  <DT><EM>dono.grupo</EM> 
+  <DD>Nome do <EM>dono.grupo</EM> que será atribuído ao 
+  <EM>diretório/arquivo</EM>. O grupo é opcional. 
+  <DT><EM>diretório/arquivo</EM> 
+  <DD>Diretório/arquivo que o dono.grupo será modificado. 
+  <DT><EM>opções</EM> 
+  <DT>-v, --verbose 
+  <DD>Mostra os arquivos enquanto são alterados. 
+  <DT>-f, --supress 
+  <DD>Não mostra mensagens de erro durante a execução do programa. 
+  <DT>-c, --changes 
+  <DD>Mostra somente arquivos que forem alterados. 
+  <DT>-R, --recursive 
+  <DD>Altera dono e grupo de arquivos no diretório atual e sub-diretórios. 
+</DD></DL>
+<P>O <EM>dono.grupo</EM> pode ser especificado usando o nome de grupo ou o 
+código numérico correspondente ao grupo (GID). 
+<P>Você deve ter permissões de gravação no diretório/arquivo para alterar seu 
+dono/grupo. 
+<UL>
+  <LI><SAMP>chown joao teste.txt</SAMP> - Muda o dono do arquivo 
+  <CODE>teste.txt</CODE> para <SAMP>joao</SAMP>. 
+  <LI><SAMP>chown joao.users teste.txt</SAMP> - Muda o dono do arquivo 
+  <CODE>teste.txt</CODE> para <SAMP>joao</SAMP> e seu grupo para 
+  <SAMP>users</SAMP>. 
+  <LI><SAMP>chown -R joao.users *</SAMP> - Muda o dono/grupo dos arquivos do 
+  diretório atual e sub-diretórios para <SAMP>joao/users</SAMP> (desde que você 
+  tenha permissões de gravação no diretórios e sub-diretórios). </LI></UL>
+<HR>
+<A name=s-perm-octal></A>
+<H2>11.10 Modo de permissão octal</H2>
+<P>Ao invés de utilizar os modos de permissão <SAMP>+r</SAMP>, <SAMP>-r</SAMP>, 
+etc, pode ser usado o modo octal para se alterar a permissão de acesso a um 
+arquivo. O modo octal é um conjunto de oito números onde cada número define um 
+tipo de acesso diferente. 
+<P>É mais flexível gerenciar permissões de acesso usando o modo octal ao invés 
+do comum, pois você especifica diretamente a permissão do dono, grupo, outros ao 
+invés de gerenciar as permissões de cada um separadamente. Abaixo a lista de 
+permissões de acesso octal: 
+<UL>
+  <LI><SAMP>0</SAMP> - Nenhuma permissão de acesso. Equivalente a -rwx. 
+  <LI><SAMP>1</SAMP> - Permissão de execução (x). 
+  <LI><SAMP>2</SAMP> - Permissão de gravação (w). 
+  <LI><SAMP>3</SAMP> - Permissão de gravação e execução (wx). 
+  <LI><SAMP>4</SAMP> - Permissão de leitura (r). 
+  <LI><SAMP>5</SAMP> - Permissão de leitura e execução (rx). 
+  <LI><SAMP>6</SAMP> - Permissão de leitura e gravação (rw). 
+  <LI><SAMP>7</SAMP> - Permissão de leitura, gravação e execução. Equivalente a 
+  +rwx. </LI></UL>
+<P>O uso de um deste números define a permissão de acesso do <EM>dono</EM>, 
+<EM>grupo</EM> ou <EM>outros usuários</EM>. Um modo fácil de entender como as 
+permissões de acesso octais funcionam, é através da seguinte tabela: <PRE>     1 = Executar
+     2 = Gravar
+     4 = Ler
+     
+     * Para Dono e Grupo, multiplique as permissões acima por x100 e x10.
+</PRE>
+<P>Basta agora fazer o seguinte: 
+<UL>
+  <LI>Somente permissão de execução, use 1. 
+  <LI>Somente a permissão de leitura, use 4. 
+  <LI>Somente permissão de gravação, use 2. 
+  <LI>Permissão de leitura/gravação, use 6 (equivale a 2+4 / Gravar+Ler). 
+  <LI>Permissão de leitura/execução, use 5 (equivale a 1+4 / Executar+Ler). 
+  <LI>Permissão de execução/gravação, use 3 (equivale a 1+2 / Executar+Gravar). 
+  <LI>Permissão de leitura/gravação/execução, use 7 (equivale a 1+2+4 / 
+  Executar+Gravar+Ler). </LI></UL>
+<P>Vamos a prática com alguns exemplos: <PRE>     "chmod 764 teste"
+</PRE>
+<P>Os números são interpretados da <STRONG>direita para a esquerda</STRONG> como 
+permissão de acesso aos <EM>outros usuários</EM> (4), <EM>grupo</EM> (6), e 
+<EM>dono</EM> (7). O exemplo acima faz os <EM>outros usuários</EM> (4) terem 
+acesso somente leitura (r) ao arquivo <CODE>teste</CODE>, o <EM>grupo</EM> (6) 
+ter a permissão de leitura e gravação (w), e o <EM>dono</EM> (7) ter permissão 
+de leitura, gravação e execução (rwx) ao arquivo <CODE>teste</CODE>. 
+<P>Outro exemplo: <PRE>     "chmod 40 teste"
+</PRE>
+<P>O exemplo acima define a permissão de acesso dos <EM>outros usuários</EM> (0) 
+como nenhuma, e define a permissão de acesso do <EM>grupo</EM> (4) como somente 
+leitura (r). Note usei somente dois números e então a permissão de acesso do 
+<EM>dono</EM> do arquivo <SAMP>não</SAMP> é modificada (leia as permissões de 
+acesso da direita para a esquerda!). Para detalhes veja a lista de permissões de 
+acesso em modo octal no inicio desta seção. <PRE>     "chmod 751 teste"
+</PRE>
+<P>O exemplo acima define a permissão de acesso dos <EM>outros usuários</EM> (1) 
+para somente execução (x), o acesso do <EM>grupo</EM> (5) como leitura e 
+execução (rx) e o acesso do <EM>dono</EM> (7) como leitura, gravação e execução 
+(rwx). 
+<HR>
+<A name=s-perm-umask></A>
+<H2>11.11 umask</H2>
+<P>A umask (<EM>user mask</EM>) são 3 números que definem as permissões iniciais 
+do <SAMP>dono</SAMP>, <SAMP>grupo</SAMP> e <SAMP>outros usuários</SAMP> que o 
+arquivo/diretório receberá quando for criado ou copiado. Digite 
+<SAMP>umask</SAMP> sem parâmetros para retornar o valor de sua umask atual. 
+<P>A umask tem efeitos diferentes caso o arquivo que estiver sendo criado for 
+<EM>binário</EM> (um programa executável) ou <EM>texto</EM> (<A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-arquivo-bintext">Arquivo 
+texto e binário, Seção 2.2.3</A>) . Veja a tabela a seguir para ver qual é a 
+mais adequada a sua situação: <PRE>     ---------------------------------------------
+     |       |        ARQUIVO       | DIRETÓRIO  |
+     | UMASK |----------------------|            |
+     |       |   Binário  |  Texto  |            |
+     |------------------------------|------------|
+     |   0   |    r-x     |   rw-   |    rwx     |
+     |   1   |    r--     |   rw-   |    rw-     |
+     |   2   |    r-x     |   r--   |    r-x     |
+     |   3   |    r--     |   r--   |    r--     |
+     |   4   |    --x     |   -w-   |    -wx     |
+     |   5   |    ---     |   -w-   |    -w-     |
+     |   6   |    --x     |   ---   |    --x     |
+     |   7   |    ---     |   ---   |    ---     |
+     ---------------------------------------------
+</PRE>
+<P>Um <EM>arquivo texto</EM> criado com o comando <SAMP>umask 012;touch 
+texto.txt</SAMP> receberá as permissões <SAMP>-rw-rw-r--</SAMP>, pois 0 (dono) 
+terá permissões <SAMP>rw-</SAMP>, 1 (grupo), terá permissões <SAMP>rw-</SAMP> e 
+2 (outros usuários) terão permissões <SAMP>r--</SAMP>. Um <EM>arquivo 
+binário</EM> copiado com o comando <SAMP>umask 012;cp /bin/ls /tmp/ls</SAMP> 
+receberá as permissões <SAMP>-r-xr--r-x</SAMP> (confira com a tabela acima). 
+<P>Por este motivo é preciso um pouco de atenção antes de escolher a umask, um 
+valor mal escolhido poderia causar problemas de acesso a arquivos, diretórios ou 
+programas não sendo executados. O valor padrão da umask na maioria das 
+distribuições atuais é 022. A umask padrão no sistema Debian é a 022 . 
+<P>A umask é de grande utilidade para programas que criam arquivos/diretórios 
+temporários, desta forma pode-se bloquear o acesso de outros usuários desde a 
+criação do arquivo, evitando recorrer ao <CODE>chmod</CODE>. 
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10</A> 
+] [ 11 ] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">próximo</A> 
+] 
+<HR>
+
+<P>Guia Foca GNU/Linux 
+<ADDRESS>Versão 3.99 - segunda, 30 de outubro de 2006<BR><BR>Gleydson Mazioli da 
+Silva <CODE><A 
+href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR><BR></ADDRESS>
+<HR>
+</BODY></HTML>

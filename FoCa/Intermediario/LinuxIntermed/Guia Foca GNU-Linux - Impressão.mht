@@ -1,0 +1,685 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: =?iso-8859-1?Q?Guia_Foca_GNU/Linux_-_Impress=E3o?=
+Date: Mon, 6 Aug 2007 11:24:07 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-impr.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Impress=E3o</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-impr></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ 22 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 22 - Impress=E3o </H1>
+<HR>
+
+<P>Este capitulo descreve como imprimir em seu sistema =
+<CODE>GNU/Linux</CODE> e=20
+as formas de impress=E3o via spool, rede, gr=E1fica, etc.=20
+<P>Antes de seguir os passos descritos neste cap=EDtulo, tenha certeza =
+que seu=20
+kernel foi compilado com o suporte a impressora paralela ativado, caso =
+contr=E1rio=20
+at=E9 mesmo a impress=E3o direta para a porta de impressora falhar=E1. =
+Para detalhes=20
+veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-recompilando">Recompiland=
+o=20
+o Kernel, Se=E7=E3o 16.11</A> .=20
+<HR>
+<A name=3Ds-impr-portas></A>
+<H2>22.1 Portas de impressora</H2>
+<P>Uma porta de impressora =E9 o local do sistema usado para se =
+comunicar com a=20
+impressora. Em sistemas <CODE>GNU/Linux</CODE>, a porta de impressora =
+=E9=20
+identificada como <CODE>lp0, lp1, lp2</CODE> no diret=F3rio =
+<CODE>/dev</CODE>,=20
+correspondendo respectivamente a <CODE>LPT1</CODE>, <CODE>LPT2</CODE> e=20
+<CODE>LPT3</CODE> no <CODE>DOS</CODE> e <CODE>Windows</CODE>. Recomendo =
+que o=20
+suporte a porta paralela esteja compilado como m=F3dulo no kernel.=20
+<HR>
+<A name=3Ds-impr-direta></A>
+<H2>22.2 Imprimindo diretamente para a porta de impressora</H2>
+<P>Isto =E9 feito direcionando a sa=EDda ou o texto com =
+<SAMP>&gt;</SAMP>=20
+diretamente para a porta de impressora no diret=F3rio <CODE>/dev</CODE>. =
+
+<P>Supondo que voc=EA quer imprimir o texto contido do arquivo=20
+<CODE>trabalho.txt</CODE> e a porta de impressora em seu sistema =E9=20
+<CODE>/dev/lp0</CODE>, voc=EA pode usar os seguintes comandos:=20
+<UL>
+  <LI><SAMP>cat trabalho.txt &gt;/dev/lp0</SAMP> - Direciona a sa=EDda =
+do comando=20
+  <CODE>cat</CODE> para a impressora.=20
+  <LI><SAMP>cat &lt;trabalho.txt &gt;/dev/lp0</SAMP>. Faz a mesma coisa =
+que o=20
+  acima.=20
+  <LI><SAMP>cat -n trabalho.txt &gt;/dev/lp0</SAMP> - Numera as linhas =
+durante a=20
+  impress=E3o.=20
+  <LI><SAMP>head -n 30 trabalho.txt &gt;/dev/lp0</SAMP> - Imprime as 30 =
+linhas=20
+  iniciais do arquivo.=20
+  <LI><SAMP>cat trabalho.txt|tee /dev/lp0</SAMP> - Mostra o conte=FAdo =
+do=20
+  <CODE>cat</CODE> na tela e envia tamb=E9m para a impressora. =
+</LI></UL>
+<P>Os m=E9todos acima servem somente para imprimir em modo texto =
+(letras, n=FAmeros=20
+e caracteres semi-gr=E1ficos).=20
+<HR>
+<A name=3Ds-impr-spool></A>
+<H2>22.3 Imprimindo via spool</H2>
+<P>A impress=E3o via spool tem por objetivo liberar logo o programa do =
+servi=E7o de=20
+impress=E3o deixando um outro programa especifico tomar conta. Este =
+programa =E9=20
+chamado de <EM>daemon de impress=E3o</EM>, normalmente =E9 o =
+<CODE>lpr</CODE> ou o=20
+<CODE>lprng</CODE> (recomendado) em sistemas <CODE>GNU/Linux</CODE>.=20
+<P>Logo ap=F3s receber o arquivo que ser=E1 impresso, o programa de =
+spool gera um=20
+arquivo tempor=E1rio (normalmente localizado em =
+<CODE>/var/spool/lpd</CODE>) que=20
+ser=E1 colocado em fila para a impress=E3o (um trabalho ser=E1 impresso =
+ap=F3s o outro,=20
+em seq=FC=EAncia). O arquivo tempor=E1rio gerado pelo programa de spool =
+=E9 apagado logo=20
+ap=F3s concluir a impress=E3o.=20
+<P>Antes de se imprimir qualquer coisa usando os daemons de impress=E3o, =
+=E9 preciso=20
+configurar os par=E2metros de sua impressora no arquivo=20
+<CODE>/etc/printcap</CODE>. Um arquivo <CODE>/etc/printcap</CODE> para =
+uma=20
+impressora local padr=E3o se parece com o seguinte: <PRE>     =
+lp|Impressora compat=EDvel com Linux
+      :lp=3D/dev/lp0
+      :sd=3D/var/spool/lpd/lp
+      :af=3D/var/log/lp-acct
+      :lf=3D/var/log/lp-errs
+      :pl#66
+      :pw#80
+      :pc#150
+      :mx#0
+      :sh
+</PRE>
+<P>=C9 poss=EDvel tamb=E9m compartilhar a impressora para a impress=E3o =
+em sistemas=20
+remotos, isto ser=E1 visto em uma se=E7=E3o separada neste guia.=20
+<P>Usando os exemplos anteriores da se=E7=E3o <SAMP>Imprimindo =
+diretamente para uma=20
+porta de impressora</SAMP>, vamos acelerar as coisas:=20
+<UL>
+  <LI><SAMP>cat trabalho.txt |lpr</SAMP> - Direciona a sa=EDda do =
+comando=20
+  <CODE>cat</CODE> para o programa de spool <CODE>lpr</CODE>.=20
+  <LI><SAMP>cat &lt;trabalho.txt |lpr</SAMP>. Faz a mesma coisa que o =
+acima.=20
+  <LI><SAMP>cat -n trabalho.txt |lpr</SAMP> - Numera as linhas durante a =
+
+  impress=E3o.=20
+  <LI><SAMP>head -n 30 trabalho.txt |lpr</SAMP> - Imprime as 30 linhas =
+iniciais=20
+  do arquivo. </LI></UL>
+<P>A fila de impress=E3o pode ser controlada com os comandos:=20
+<UL>
+  <LI><SAMP>lpq</SAMP> - Mostra os trabalhos de impress=E3o atuais=20
+  <LI><SAMP>lprm</SAMP> - Remove um trabalho de impress=E3o </LI></UL>
+<P>Ou usado o programa de administra=E7=E3o <CODE>lpc</CODE> para =
+gerenciar a fila=20
+de impress=E3o (veja a p=E1gina de manual do <CODE>lpc</CODE> ou digite=20
+<SAMP>?</SAMP> ao iniciar o programa para detalhes).=20
+<P>OBS1: Se a impressora n=E3o imprimir ou n=E3o for poss=EDvel =
+compartilhar a porta=20
+de impressora paralela com outros dispositivos (tal como o =
+<EM>plip</EM>),=20
+verifique se o m=F3dulo <EM>parport_pc</EM> foi carregado e com os =
+valores de irq=20
+e I/O corretos (por exemplo, <SAMP>modprobe parport_pc io=3D0x378 =
+irq=3D7</SAMP>).=20
+Muitas vezes sua porta paralela pode funcionar sem problemas durante a=20
+impress=E3o, mas se ao utilizar plip ocorrerem erros, a causa pode ser =
+essa. Na=20
+distribui=E7=E3o <CODE>Debian</CODE>, use o programa =
+<CODE>modconf</CODE> para=20
+configurar os valores permanentemente para o m=F3dulo parport_pc.=20
+<P>OBS2: Se tiver mais de uma impressora instalada na m=E1quina, ser=E1 =
+necess=E1rio=20
+especificar a op=E7=E3o "-P impressora" para especificar qual impressora =
+deseja=20
+imprimir/controlar.=20
+<HR>
+<A name=3Ds-impr-graficos></A>
+<H2>22.4 Impress=E3o em modo gr=E1fico</H2>
+<P>A impress=E3o em modo gr=E1fico requer que conhe=E7a a marca e modelo =
+de sua=20
+impressora e os m=E9todos usados para imprimir seus documentos. Este =
+guia abordar=E1=20
+somente a segunda recomenda=E7=E3o :-)=20
+<HR>
+<A name=3Ds-impr-ghostscript></A>
+<H3>22.4.1 Ghost Script</H3>
+<P>O m=E9todo mais usados pelos aplicativos do <CODE>GNU/Linux</CODE> =
+para a=20
+impress=E3o de gr=E1ficos do <EM>Ghost Script</EM>. O Ghost Script =
+(chamado de=20
+<EM>gs</EM>) =E9 um interpretador do formato <EM>Pos Script</EM> =
+(arquivos=20
+<CODE>.ps</CODE>) e pode enviar o resultado de processamento tanto para =
+a tela=20
+como impressora. Ele est=E1 dispon=EDvel para diversas plataformas e =
+sistema=20
+operacionais al=E9m do <CODE>GNU/Linux</CODE>, inclusive o =
+<CODE>DOS</CODE>,=20
+<CODE>Windows</CODE>, <CODE>OS/2</CODE>, etc.=20
+<P>O formato <CODE>.ps</CODE> esta se tornando uma padroniza=E7=E3o para =
+a impress=E3o=20
+de gr=E1ficos em <CODE>GNU/Linux</CODE> devido a boa qualidade da =
+impress=E3o,=20
+liberdade de configura=E7=E3o, gerenciamento de impress=E3o feito pelo =
+<EM>gs</EM> e=20
+por ser um formato universal, compat=EDveis com outros sistemas =
+operacionais.=20
+<P>Para imprimir um documento via Ghost Script, voc=EA precisar=E1 do =
+pacote=20
+<CODE>gs</CODE>, <CODE>gsfonts</CODE> (para a distribui=E7=E3o =
+<CODE>Debian</CODE> e=20
+distribui=E7=F5es baseadas, ou outros de acordo com sua distribui=E7=E3o =
+Linux) e suas=20
+depend=EAncias. A distribui=E7=E3o <CODE>Debian</CODE> vem com v=E1rios =
+exemplos Pos=20
+Script no diret=F3rio <CODE>/usr/share/doc/gs/example</CODE> que s=E3o =
+=FAteis para o=20
+aprendizado e testes com o Ghost Script.=20
+<P>Hora da divers=E3o:=20
+<UL>
+  <LI>Copie os arquivos <CODE>tiger.ps.gz</CODE> e =
+<CODE>alphabet.ps.gz</CODE>=20
+  do diret=F3rio <CODE>/usr/share/doc/gs/examples</CODE> (sistemas=20
+  <CODE>Debian</CODE>) para <CODE>/tmp</CODE> e descompacte-os com o =
+comando=20
+  <CODE>gzip -d tiger.ps.gz e gzip -d alphabet.ps.gz</CODE>. Se a sua=20
+  distribui=E7=E3o n=E3o possui arquivos de exemplo ou voc=EA n=E3o =
+encontra nenhuma=20
+  refer=EAncia de onde se localizam, mande um e-mail que os envio os 2 =
+arquivos=20
+  acima (s=E3o 32Kb).=20
+  <LI>O Ghost Script requer um monitor EGA, VGA ou superior para a =
+visualiza=E7=E3o=20
+  dos seus arquivos (n=E3o tenho certeza se ele funciona com monitores =
+CGA ou=20
+  H=E9rcules Monocrom=E1tico) .=20
+  <P>Para visualizar os arquivos na tela digite: <PRE>     gs tiger.ps=20
+     gs alphabet.ps
+</PRE>
+  <P>Para sair do <CODE>Ghost Script</CODE> pressione =
+<SAMP>CTRL+C</SAMP>. Neste=20
+  ponto voc=EA deve ter visto um desenho de um tigre e (talvez) letras =
+do=20
+  alfabeto.=20
+  <P>Se o comando <SAMP>gs alphabet.ps</SAMP> mostrou somente uma tela =
+em=20
+  branco, voc=EA se esqueceu de instalar as fontes do Ghost Script =
+(est=E3o=20
+  localizadas no pacote <CODE>gsfonts</CODE> na distribui=E7=E3o =
+Debian). </P>
+  <LI>Para imprimir o arquivo <CODE>alphabet.ps</CODE> use o comando: =
+<PRE>     gs -q -dSAFER -dNOPAUSE -sDEVICE=3Depson -r240x72 =
+-sPAPERSIZE=3Dlegal -sOutputFile=3D/dev/lp0=20
+     alphabet.ps
+</PRE>
+  <P>O arquivo <CODE>alphabet.ps</CODE> deve ser impresso. Caso =
+aparecerem=20
+  mensagens como <SAMP>Error: /invalidfont in findfont</SAMP> no lugar =
+das=20
+  letras, voc=EA se esqueceu de instalar ou configurar as fontes do =
+Ghost Script.=20
+  Instale o pacote de fontes (<CODE>gsfonts</CODE> na =
+<CODE>Debian</CODE>) ou=20
+  verifique a documenta=E7=E3o sobre como configurar as fontes.=20
+  <P>Cada uma das op=E7=F5es acima descrevem o seguinte:=20
+  <UL>
+    <LI><SAMP>-q, -dQUIET</SAMP> - N=E3o mostra mensagens de =
+inicializa=E7=E3o do=20
+    Ghost Script.=20
+    <LI><SAMP>-dSAFER</SAMP> - =C9 uma op=E7=E3o para ambientes seguros, =
+pois desativa=20
+    a opera=E7=E3o de mudan=E7a de nome e dele=E7=E3o de arquivo e =
+permite somente a=20
+    abertura dos arquivos no modo somente leitura.=20
+    <LI><SAMP>-dNOPAUSE</SAMP> - Desativa a pausa no final de cada =
+p=E1gina=20
+    processada.=20
+    <LI><SAMP>-sDEVICE=3Ddispositivo</SAMP> - Dispositivo que receber=E1 =
+a sa=EDda do=20
+    Ghost Script. Neste local pode ser especificada a marca o modelo de =
+sua=20
+    impressora ou um formato de arquivo diferente (como pcxmono, bmp256) =
+para=20
+    que o arquivo <CODE>.ps</CODE> seja convertido para o formato =
+designado.=20
+    <P>Para detalhes sobre os dispositivos dispon=EDveis em seu Ghost =
+Script,=20
+    digite <SAMP>gs --help|less</SAMP> ou veja a p=E1gina de manual. =
+Normalmente=20
+    os nomes de impressoras e modelos s=E3o concatenados, por exemplo, =
+bjc600 para=20
+    a impressora <EM>Canon BJC 600</EM>, epson para impressoras padr=E3o =
+epson,=20
+    stcolor para <EM>Epson Stylus color</EM>, etc.=20
+    <P>O Hardware-HOWTO cont=E9m refer=EAncias sobre hardware suportados =
+pelo=20
+    <CODE>GNU/Linux</CODE>, tal como impressoras e sua leitura pode ser =
+=FAtil.=20
+    </P>
+    <LI><SAMP>-r&lt;ResH&gt;x&lt;ResV&gt;</SAMP> - Define a =
+resolu=E7=E3o de=20
+    impress=E3o (em dpi) Horizontal e Vertical. Os valores dependem de =
+sua=20
+    impressora.=20
+    <LI><SAMP>-sPAPERSIZE=3Dtamanho</SAMP> - Tamanho do papel. Podem ser =
+usados=20
+    a4, legal, letter, etc. Veja a p=E1gina de manual do gs para ver os =
+outros=20
+    tipos suportados e suas medidas.=20
+    <LI><SAMP>-sOutputFile=3Ddispositivo</SAMP> - Dispositivo que =
+receber=E1 a sa=EDda=20
+    de processamento do gs. Voc=EA pode especificar=20
+    <UL>
+      <LI><SAMP>arquivo.epson</SAMP> - Nome do arquivo que receber=E1 =
+todo o=20
+      resultado do processamento. O <CODE>arquivo.epson</CODE> ter=E1 =
+toda a=20
+      impress=E3o codificada no formato entendido por impressoras epson =
+e poder=E1=20
+      ser impresso com o comando <SAMP>cat arquivo.epson =
+&gt;/dev/lp0</SAMP>.=20
+      <P>Uma curiosidade =FAtil: =C9 poss=EDvel imprimir este arquivo em =
+outros=20
+      sistemas operacionais, tal como o <CODE>DOS</CODE> digitando: =
+<SAMP>copy=20
+      /b arquivo.eps prn</SAMP> (lembre-se que o <CODE>DOS</CODE> tem um =
+limite=20
+      de 8 letras no nome do arquivo e 3 na extens=E3o. Voc=EA deve =
+estar=20
+      compreendendo a flexibilidade que o <CODE>GNU/Linux</CODE> e suas=20
+      ferramentas permitem, isso =E9 s=F3 o come=E7o. </P>
+      <LI><SAMP>impressao%d.epson</SAMP> - Nome do arquivo que =
+receber=E1 o=20
+      resultado do processamento. Cada p=E1gina ser=E1 gravada em =
+arquivos separados=20
+      como <CODE>impressao1.epson</CODE>, <CODE>impressao2.epson</CODE>. =
+
+      <P>Os arquivos podem ser impressos usando os mesmos m=E9todos =
+acima. </P>
+      <LI><SAMP>/dev/lp0</SAMP> para uma impressora em =
+<CODE>/dev/lp0</CODE>=20
+      <LI><SAMP>-</SAMP> para redirecionar a sa=EDda de processamento do =
+
+      <CODE>gs</CODE> para a sa=EDda padr=E3o. =C9 =FAtil para usar o gs =
+com pipes=20
+      <SAMP>|</SAMP>.=20
+      <LI><SAMP>\|lpr</SAMP> - Envia a sa=EDda do Ghost Script para o =
+daemon de=20
+      impress=E3o. O objetivo =E9 deixar a impress=E3o mais r=E1pida. =
+</LI></UL>
+    <P>Se voc=EA =E9 curioso ou n=E3o esta satisfeito com as op=E7=F5es =
+mostradas acima,=20
+    veja a p=E1gina de manual do <CODE>gs</CODE>. =
+</P></LI></UL></LI></UL>
+<HR>
+<A name=3Ds-impr-magicfilter></A>
+<H2>22.5 Magic Filter</H2>
+<P>O <EM>Magic Filter</EM> =E9 um filtro de impress=E3o inteligente. Ele =
+funciona=20
+acionado pelo spool de impress=E3o (mais especificamente o arquivo=20
+<CODE>/etc/printcap</CODE>) e permite identificar e imprimir arquivos de =
+
+diversos tipos diretamente atrav=E9s do comando <SAMP>lpr =
+arquivo</SAMP>.=20
+<P>=C9 um =F3timo programa e <STRONG>ALTAMENTE RECOMENDADO</STRONG> se =
+voc=EA deseja=20
+apenas clicar no bot=E3o imprimir e deixar os programas fazerem o resto =
+:-) A=20
+inten=E7=E3o do programa =E9 justamente automatizar os trabalhos de =
+impress=E3o e spool.=20
+
+<P>A maioria dos programas para ambiente gr=E1fico X11, incluindo o =
+Netscape, Word=20
+Perfect, Gimp e Star Office trabalham nativamente com o=20
+<CODE>magicfilter</CODE>.=20
+<HR>
+<A name=3Ds-impr-magicfilter-i></A>
+<H3>22.5.1 Instala=E7=E3o e configura=E7=E3o do Magic Filter</H3>
+<P>O Magic Filter =E9 encontrado no pacote <CODE>magicfilter</CODE> da=20
+distribui=E7=E3o <CODE>Debian</CODE> e baseadas.=20
+<P>Sua configura=E7=E3o pode ser feita com o programa =
+<CODE>magicfilterconfig</CODE>=20
+que torna o processo de configura=E7=E3o r=E1pido e f=E1cil para quem =
+n=E3o conhece a=20
+sintaxe do arquivo <CODE>/etc/printcap</CODE> ou n=E3o tem muitas =
+exig=EAncias sobre=20
+a configura=E7=E3o detalhada da impressora.=20
+<P>Ap=F3s instalar o <CODE>magicfilter</CODE> reinicie o daemon de =
+impress=E3o (se=20
+estiver usando a <CODE>Debian</CODE>, entre no diret=F3rio=20
+<CODE>/etc/init.d</CODE> e como usu=E1rio <SAMP>root</SAMP> digite =
+<SAMP>./lpr=20
+restart</SAMP> ou <SAMP>./lprng restart</SAMP>).=20
+<P>Para testar o funcionamento do <CODE>magicfilter</CODE>, digite =
+<SAMP>lpr=20
+alphabet.ps</SAMP> e <SAMP>lpr tiger.ps</SAMP>, os arquivos ser=E3o =
+enviados para=20
+o <CODE>magicfilter</CODE> que identificar=E1 o arquivo como <EM>Pos =
+Script</EM>,=20
+executar=E1 o Ghost Script e retornar=E1 o resultado do processamento =
+para o daemon=20
+de impress=E3o. O resultado ser=E1 visto na impressora.=20
+<P>Se tiver problemas, verifique se a configura=E7=E3o feita com o=20
+<CODE>magicfilterconfig</CODE> est=E1 correta. Caso precise =
+re-configurar o=20
+<CODE>magicfilter</CODE>, digite <SAMP>magicfilterconfig --force</SAMP>=20
+(lembre-se que a op=E7=E3o --force substitui qualquer configura=E7=E3o =
+personalizada que=20
+tenha adicionado ao arquivo <CODE>/etc/printcap</CODE>).=20
+<HR>
+<A name=3Ds-impr-magicfilter-c></A>
+<H3>22.5.2 Outros detalhes t=E9cnicos sobre o Magic Filter</H3>
+<P>Durante a configura=E7=E3o do <CODE>magicfilter</CODE>, a seguinte =
+linha =E9=20
+adicionada ao arquivo <CODE>/etc/printcap</CODE>: <PRE>     =
+:if=3D/etc/magicfilter/epson9-filter
+</PRE>
+<P>N=E3o tenho nenhum contrato de divulga=E7=E3o com a <EM>epson</EM> =
+:-) estou usando=20
+esta marca de impressora porque =E9 a mais tradicional e facilmente =
+encontrada. A=20
+linha que come=E7a com <SAMP>:if</SAMP> no <CODE>magicfilter</CODE> =
+identifica um=20
+arquivo de filtro de impress=E3o.=20
+<P>O arquivo <CODE>/etc/magicfilter/epson9-filter</CODE> =E9 criado =
+usando o=20
+formato do magicfilter, e n=E3o =E9 dif=EDcil entender seu conte=FAdo e =
+fazer algumas=20
+modifica=E7=F5es: <PRE>     #! /usr/sbin/magicfilter
+     #
+     # Magic filter setup file for 9-pin Epson (or compatible) printers
+     #
+     # This file is in the public domain.
+     #
+     # This file has been automatically adapted to your system.
+     #
+     # wild guess: native control codes start with ESC
+     0       \033            cat
+    =20
+     # PostScript
+     0 %! filter /usr/bin/gs -q -dSAFER -dNOPAUSE -r120x72 =
+-sDEVICE=3Depson -sOutputFile=3D- - -c quit=20
+     0 \004%! filter	/usr/bin/gs -q -dSAFER -dNOPAUSE -r120x72 =
+-sDEVICE=3Depson -sOutputFile=3D- - -c quit=20
+    =20
+     # PDF
+     0 %PDF fpipe /usr/bin/gs -q -dSAFER -dNOPAUSE -r120x72 =
+-sDEVICE=3Depson -sOutputFile=3D- $FILE -c quit=20
+    =20
+     # TeX DVI
+     0 \367\002 fpipe /usr/bin/dvips -X 120  -Y 72  -R -q -f=20
+    =20
+     # compress'd data
+     0 \037\235 pipe	/bin/gzip  -cdq=20
+    =20
+     # packed, gzipped, frozen and SCO LZH data
+     0 \037\036 pipe	/bin/gzip  -cdq=20
+     0 \037\213 pipe	/bin/gzip  -cdq=20
+     0 \037\236 pipe	/bin/gzip  -cdq=20
+     0 \037\240 pipe	/bin/gzip  -cdq=20
+    =20
+     0 BZh	pipe	/usr/bin/bzip2  -cdq=20
+    =20
+     # troff documents
+     0 .\?\?\040	fpipe 	`/usr/bin/grog  -Tps $FILE`=20
+     0 .\\\"		fpipe 	`/usr/bin/grog  -Tps $FILE`=20
+     0 '\\\"		fpipe 	`/usr/bin/grog  -Tps $FILE`=20
+     0 '.\\\"		fpipe 	`/usr/bin/grog  -Tps $FILE`=20
+     0  \\\"		fpipe 	`/usr/bin/grog  -Tps $FILE`
+</PRE>
+<P>Voc=EA deve ter notado que para cada tipo de arquivo existe o =
+respectivo=20
+programa que =E9 executado, basta voc=EA modificar as op=E7=F5es usadas =
+nos programas=20
+neste arquivo (como faria na linha de comando) para afetar o =
+comportamento da=20
+impress=E3o.=20
+<P>Por exemplo, modificando a resolu=E7=E3o para -r240x72 no =
+processamento de=20
+arquivos Pos Script (gs), a impressora passar=E1 a usar esta =
+resolu=E7=E3o.=20
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ 22 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

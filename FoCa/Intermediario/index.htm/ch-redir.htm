@@ -1,0 +1,264 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Guia Foca GNU/Linux - Redirecionamentos e Pipe</title>
+
+</head>
+
+<body>
+
+<a name="ch-redir"></a>
+<hr>
+
+[ <a href="ch-perm.htm">anterior</a> ]
+[ <a href="index.htm#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ <a href="ch-hardw.htm">3</a> ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ <a href="ch-cmdd.htm">8</a> ]
+[ <a href="ch-cmd.htm">9</a> ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ <a href="ch-cmdc.htm">12</a> ]
+[ <a href="ch-perm.htm">13</a> ]
+[ 14 ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ <a href="ch-cpctd.htm">18</a> ]
+[ <a href="ch-deb.htm">19</a> ]
+[ <a href="ch-dpkg.htm">20</a> ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ <a href="ch-cfg.htm">23</a> ]
+[ <a href="ch-tasks.htm">24</a> ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ <a href="ch-etc.htm">27</a> ]
+[ <a href="ch-inter.htm">28</a> ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ <a href="ch-apend.htm">32</a> ]
+[ <a href="ch-rede.htm">próximo</a> ]
+
+<hr>
+
+<h1>
+Guia Foca GNU/Linux
+<br>Capítulo 14 - Redirecionamentos e Pipe
+</h1>
+
+<hr>
+
+<p>
+Esta seção explica o funcionamento dos recursos de direcionamento de entrada e
+saída do sistema <code>GNU/Linux</code>.
+
+<hr>
+
+<a name="s-redir-maior"></a>
+<h2>14.1 &gt;</h2>
+
+<p>
+Redireciona a saída de um programa/comando/script para algum dispositivo ou
+arquivo ao invés do dispositivo de saída padrão (tela).  Quando é usado com
+arquivos, este redirecionamento cria ou substitui o conteúdo do arquivo.
+
+<p>
+Por exemplo, você pode usar o comando <code>ls</code> para listar arquivos e
+usar <samp>ls &gt;listagem</samp> para enviar a saída do comando para o arquivo
+<code>listagem</code>.  Use o comando <code>cat</code> para visualizar o
+conteúdo do arquivo <code>listagem</code>.
+
+<p>
+O mesmo comando pode ser redirecionado para o segundo console
+<code>/dev/tty2</code> usando: <samp>ls &gt;/dev/tty2</samp>, o resultado do
+comando <code>ls</code> será mostrado no segundo console (pressione
+<samp>ALT</samp> e <samp>F2</samp> para mudar para o segundo console e
+<samp>ALT</samp> e <samp>F1</samp> para retornar ao primeiro).
+
+<hr>
+
+<a name="s-redir-maior2"></a>
+<h2>14.2 &gt;&gt;</h2>
+
+<p>
+Redireciona a saída de um programa/comando/script para algum dispositivo ou
+final de arquivo ao invés do dispositivo de saída padrão (tela).  A diferença
+entre este redirecionamento duplo e o simples, é se caso for usado com
+arquivos, adiciona a saída do comando ao final do arquivo existente ao invés de
+substituir seu conteúdo.  .
+
+<p>
+Por exemplo, você pode acrescentar a saída do comando <code>ls</code> ao
+arquivo <code>listagem</code> do capítulo anterior usando <samp>ls /
+&gt;&gt;listagem</samp>.  Use o comando <code>cat</code> para visualizar o
+conteúdo do arquivo <code>listagem</code>.
+
+<hr>
+
+<a name="s-redir-menor"></a>
+<h2>14.3 &lt;</h2>
+
+<p>
+Direciona a entrada padrão de arquivo/dispositivo para um comando.  Este
+comando faz o contrário do anterior, ele envia dados ao comando.
+
+<p>
+Você pode usar o comando <samp>cat &lt;teste.txt</samp> para enviar o conteúdo
+do arquivo <code>teste.txt</code> ao comando <code>cat</code> que mostrará seu
+conteúdo (é claro que o mesmo resultado pode ser obtido com <samp>cat
+teste.txt</samp> mas este exemplo serviu para mostrar a funcionalidade do
+&lt;).
+
+<hr>
+
+<a name="s-redir-menor2"></a>
+<h2>14.4 &lt;&lt;</h2>
+
+<p>
+Este redirecionamento serve principalmente para marcar o fim de exibição de um
+bloco.  Este é especialmente usado em conjunto com o comando <code>cat</code>,
+mas também tem outras aplicações.  Por exemplo:
+
+<pre>
+      cat &lt;&lt; final
+     este arquivo
+     será mostrado
+     até que a palavra final seja 
+     localizada no inicio da linha
+     final
+</pre>
+
+<hr>
+
+<a name="s-redir-pipe"></a>
+<h2>14.5 | (pipe)</h2>
+
+<p>
+Envia a saída de um comando para a entrada do próximo comando para continuidade
+do processamento.  Os dados enviados são processados pelo próximo comando que
+mostrará o resultado do processamento.
+
+<p>
+Por exemplo: <samp>ls -la|more</samp>, este comando faz a listagem longa de
+arquivos que é enviado ao comando <code>more</code> (que tem a função de
+efetuar uma pausa a cada 25 linhas do arquivo).
+
+<p>
+Outro exemplo é o comando <samp>&quot;locate find|grep bin/&quot;</samp>, neste
+comando todos os caminhos/arquivos que contém <em>find</em> na listagem serão
+mostrados (inclusive man pages, bibliotecas, etc.), então enviamos a saída
+deste comando para <samp>grep bin/</samp> para mostrar somente os diretórios
+que contém binários.  Mesmo assim a listagem ocupe mais de uma tela, podemos
+acrescentar o <code>more</code>: <samp>locate find|grep bin/|more</samp>.
+
+<p>
+Podem ser usados mais de um comando de redirecionamento (&lt;, &gt;, |) em um
+mesmo comando.
+
+<hr>
+
+<a name="s14.6"></a>
+<h2>14.6 Diferença entre o &quot;|&quot; e o &quot;&gt;&quot;</h2>
+
+<p>
+A principal diferença entre o &quot;|&quot; e o &quot;&gt;&quot;, é que o Pipe
+envolve processamento entre comandos, ou seja, a saída de um comando é enviado
+a entrada do próximo e o &quot;&gt;&quot; redireciona a saída de um comando
+para um arquivo/dispositivo.
+
+<p>
+Você pode notar pelo exemplo acima (<samp>ls -la|more</samp>) que ambos
+<samp>ls</samp> e <samp>more</samp> são comandos porque estão separados por um
+&quot;|&quot;!  Se um deles não existir ou estiver digitado incorretamente,
+será mostrada uma mensagem de erro.
+
+<p>
+Um resultado diferente seria obtido usando um <samp>&quot;&gt;&quot;</samp> no
+lugar do <samp>&quot;|&quot;</samp>; A saída do comando <samp>ls -la</samp>
+seria gravada em um arquivo chamado <code>more</code>.
+
+<hr>
+
+<a name="s-redir-tee"></a>
+<h2>14.7 tee</h2>
+
+<p>
+Envia o resultado do programa para a saída padrão (tela) e para um arquivo ao
+mesmo tempo.  Este comando deve ser usado com o pipe &quot;|&quot;.
+
+<p>
+<samp><em>comando</em>|tee [<em>arquivo</em>]</samp>
+
+<p>
+Exemplo: <samp>ls -la|tee listagem.txt</samp>, a saída do comando será mostrada
+normalmente na tela e ao mesmo tempo gravada no arquivo
+<code>listagem.txt</code>.
+
+<hr>
+
+[ <a href="ch-perm.htm">anterior</a> ]
+[ <a href="index.htm#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ <a href="ch-hardw.htm">3</a> ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ <a href="ch-cmdd.htm">8</a> ]
+[ <a href="ch-cmd.htm">9</a> ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ <a href="ch-cmdc.htm">12</a> ]
+[ <a href="ch-perm.htm">13</a> ]
+[ 14 ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ <a href="ch-cpctd.htm">18</a> ]
+[ <a href="ch-deb.htm">19</a> ]
+[ <a href="ch-dpkg.htm">20</a> ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ <a href="ch-cfg.htm">23</a> ]
+[ <a href="ch-tasks.htm">24</a> ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ <a href="ch-etc.htm">27</a> ]
+[ <a href="ch-inter.htm">28</a> ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ <a href="ch-apend.htm">32</a> ]
+[ <a href="ch-rede.htm">próximo</a> ]
+
+<hr>
+
+<p>
+Guia Foca GNU/Linux
+
+<address>
+Versão 5.45 - segunda, 30 de outubro de 2006<br>
+<br>
+Gleydson Mazioli da Silva <code><a href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</a></code><br>
+<br>
+</address>
+
+<hr>
+
+</body>
+
+</html>
+

@@ -1,0 +1,1688 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: Guia Foca GNU/Linux - Rede
+Date: Mon, 6 Aug 2007 11:33:38 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-rede.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Rede</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-rede></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ 15 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 15 - Rede </H1>
+<HR>
+
+<P>Este cap=EDtulo descreve o que =E9 uma rede, os principais =
+dispositivos de rede=20
+no <CODE>GNU/Linux</CODE>, a identifica=E7=E3o de cada um, como =
+configurar os=20
+dispositivos, escolha de endere=E7os IP, roteamento.=20
+<P>Parte deste cap=EDtulo, uns 70% pelo menos, =E9 baseado no documento=20
+NET3-4-HOWTO. (seria perda de tempo reescrever este assunto pois existe =
+um=20
+material desta qualidade j=E1 dispon=EDvel).=20
+<HR>
+<A name=3Ds-rede-oque></A>
+<H2>15.1 O que =E9 uma rede</H2>
+<P>Rede =E9 a conex=E3o de duas ou mais m=E1quinas com o objetivo de =
+compartilhar=20
+recursos entre uma m=E1quina e outra. Os recursos podem ser:=20
+<UL>
+  <LI>Compartilhamento do conte=FAdo de seu disco r=EDgido (ou parte =
+dele) com=20
+  outros usu=E1rios. Os outros usu=E1rios poder=E3o acessar o disco como =
+se estivesse=20
+  instalado na pr=F3pria m=E1quina). Tamb=E9m chamado de servidor de =
+arquivos.=20
+  <LI>Compartilhamento de uma impressora com outros usu=E1rios. Os =
+outros usu=E1rios=20
+  poder=E3o enviar seus trabalhos para uma impressora da rede. Tamb=E9m =
+chamado de=20
+  servidor de impress=E3o.=20
+  <LI>Compartilhamento de acesso a Internet. Outros usu=E1rios poder=E3o =
+navegar na=20
+  Internet, pegar seus e-mails, ler noticias, bate-papo no IRC, ICQ =
+atrav=E9s do=20
+  servidor de acesso Internet. Tamb=E9m chamado de servidor Proxy.=20
+  <LI>Servidor de Internet/Intranet. Outros usu=E1rios poder=E3o navegar =
+nas p=E1ginas=20
+  Internet localizadas em seu computador, pegar e-mails, usar um =
+servidor de IRC=20
+  para chat na rede, servidor de ICQ, etc </LI></UL>
+<P>Com os =EDtens acima funcionando =E9 poss=EDvel criar permiss=F5es de =
+acesso da rede,=20
+definindo quem ter=E1 ou n=E3o permiss=E3o para acessar cada =
+compartilhamento ou=20
+servi=E7o existente na m=E1quina (www, ftp, irc, icq, etc), e =
+registrando/avisando=20
+sobre eventuais tentativas de violar a seguran=E7a do sistema, =
+firewalls, pontes,=20
+etc.=20
+<P>Entre outras ilimitadas possibilidades que dependem do conhecimento =
+do=20
+indiv=EDduo no ambiente <CODE>GNU/Linux</CODE>, j=E1 que ele permite =
+muita=20
+flexibilidade para fazer qualquer coisa funcionar em rede.=20
+<P>A comunica=E7=E3o entre computadores em uma rede =E9 feita atrav=E9s =
+do <EM>Protocolo=20
+de Rede</EM>.=20
+<HR>
+<A name=3Ds-rede-protocolo></A>
+<H2>15.2 Protocolo de Rede</H2>
+<P>O protocolo de rede =E9 a linguagem usada para a comunica=E7=E3o =
+entre um=20
+computador e outro. Existem v=E1rios tipos de protocolos usados para a =
+comunica=E7=E3o=20
+de dados, alguns s=E3o projetados para pequenas redes (como =E9 o caso =
+do NetBios)=20
+outros para redes mundiais (TCP/IP que possui caracter=EDsticas de =
+roteamento).=20
+<P>Dentre os protocolos, o que mais se destaca atualmente =E9 o TCP/IP =
+devido ao=20
+seu projeto, velocidade e capacidade de roteamento.=20
+<HR>
+<A name=3Ds-rede-ip></A>
+<H2>15.3 Endere=E7o IP</H2>
+<P>O <EM>endere=E7o IP</EM> s=E3o n=FAmeros que identificam seu =
+computador em uma=20
+rede. Inicialmente voc=EA pode imaginar o IP como um n=FAmero de =
+telefone. O IP =E9=20
+compostos por quatro bytes e a conven=E7=E3o de escrita dos n=FAmeros =
+=E9 chamada de=20
+"nota=E7=E3o decimal pontuada". Por conven=E7=E3o, cada interface (placa =
+usada p/ rede)=20
+do computador ou roteador tem um endere=E7o IP. Tamb=E9m =E9 permitido =
+que o mesmo=20
+endere=E7o IP seja usado em mais de uma interface de uma mesma m=E1quina =
+mas=20
+normalmente cada interface tem seu pr=F3prio endere=E7o IP.=20
+<P>As Redes do Protocolo Internet s=E3o seq=FC=EAncias cont=EDnuas de =
+endere=E7os IP's.=20
+Todos os endere=E7os dentro da rede tem um n=FAmero de d=EDgitos dentro =
+dos endere=E7os=20
+em comum. A por=E7=E3o dos endere=E7os que s=E3o comuns entre todos os =
+endere=E7os de uma=20
+rede s=E3o chamados de <EM>por=E7=E3o da rede</EM>. Os d=EDgitos =
+restantes s=E3o chamados=20
+de <EM>por=E7=E3o dos hosts</EM>. O n=FAmero de bits que s=E3o =
+compartilhados por todos=20
+os endere=E7os dentro da rede s=E3o chamados de <EM>netmask</EM> =
+(m=E1scara da rede) e=20
+o papel da <EM>netmask</EM> =E9 determinar quais endere=E7os pertencem =
+ou n=E3o a=20
+rede. Por exemplo, considere o seguinte: <PRE>     -----------------  =
+---------------
+     Endere=E7o do Host   192.168.110.23
+     M=E1scara da Rede    255.255.255.0
+     Por=E7=E3o da Rede     192.168.110.
+     Por=E7=E3o do Host                .23
+     -----------------  ---------------
+     Endere=E7o da Rede   192.168.110.0
+     Endere=E7o Broadcast 192.168.110.255
+     -----------------  ---------------
+</PRE>
+<P>Qualquer endere=E7o que =E9 finalizado em zero em sua =
+<EM>netmask</EM>, revelar=E1=20
+o <EM>endere=E7o da rede</EM> que pertence. O endere=E7o e rede =E9 =
+ent=E3o sempre o=20
+menor endere=E7o num=E9rico dentro da escalas de endere=E7os da rede e =
+sempre possui a=20
+<EM>por=E7=E3o host</EM> dos endere=E7os codificada como zeros.=20
+<P>O endere=E7o de <EM>broadcast</EM> =E9 um endere=E7o especial que =
+cada computador=20
+em uma rede "escuta" em adi=E7=E3o a seu pr=F3prio endere=E7o. Este =E9 =
+um endere=E7o onde=20
+os datagramas enviados s=E3o recebidos por todos os computadores da =
+rede. Certos=20
+tipos de dados como informa=E7=F5es de roteamento e mensagens de alerta =
+s=E3o=20
+transmitidos para o endere=E7o <EM>broadcast</EM>, assim todo computador =
+na rede=20
+pode recebe-las simultaneamente.=20
+<P>Existe dois padr=F5es normalmente usados para especificar o =
+endere=E7o de=20
+<EM>broadcast</EM>. O mais amplamente aceito =E9 para usar o endere=E7o =
+<SAMP>mais=20
+alto</SAMP> da rede como endere=E7o broadcast. No exemplo acima este =
+seria=20
+192.168.110.255. Por algumas raz=F5es outros sites tem adotado a =
+conven=E7=E3o de usar=20
+o <SAMP>endere=E7o de rede</SAMP> como o endere=E7o broadcast. Na =
+pr=E1tica n=E3o=20
+importa muito se usar este endere=E7o, mas voc=EA deve ter certeza que =
+todo=20
+computador na rede esteja configurado para escutar o mesmo =
+<EM>endere=E7o=20
+broadcast</EM>.=20
+<HR>
+<A name=3Ds-rede-ip-classes></A>
+<H3>15.3.1 Classes de Rede IP</H3>
+<P>Por raz=F5es administrativas ap=F3s algum pouco tempo no =
+desenvolvimento do=20
+protocolo IP alguns grupos arbitr=E1rios de endere=E7os foram formados =
+em redes e=20
+estas redes foram agrupadas no que foram chamadas de <EM>classes</EM>. =
+Estas=20
+classes armazenam um tamanho padr=E3o de redes que podem ser usadas. As =
+faixas=20
+alocadas s=E3o: <PRE>     =
++--------------------------------------------------------+
+     | Classe  | M=E1scara de    | Endere=E7o da Rede             |
+     |         | Rede          |                              |
+     +--------------------------------------------------------+
+     |    A    | 255.0.0.0     | 0.0.0.0    - 127.255.255.255 |
+     |    B    | 255.255.0.0   | 128.0.0.0  - 191.255.255.255 |
+     |    C    | 255.255.255.0 | 192.0.0.0  - 223.255.255.255 |
+     |Multicast| 240.0.0.0     | 224.0.0.0  - 239.255.255.255 |
+     +--------------------------------------------------------+
+</PRE>
+<P>O tipo de endere=E7o que voc=EA deve utilizar depende exatamente do =
+que estiver=20
+fazendo.=20
+<HR>
+<A name=3Ds-rede-ip-nova></A>
+<H3>15.3.2 Para instalar uma m=E1quina usando o Linux em uma rede =
+existente</H3>
+<P>Se voc=EA quiser instalar uma m=E1quina <CODE>GNU/Linux</CODE> em uma =
+rede TCP/IP=20
+existente ent=E3o voc=EA deve contactar qualquer um dos administradores =
+da sua rede=20
+e perguntar o seguinte:=20
+<UL>
+  <LI>Endere=E7o IP de sua m=E1quina=20
+  <LI>Endere=E7o IP da rede=20
+  <LI>Endere=E7o IP de broadcast=20
+  <LI>M=E1scara da Rede IP=20
+  <LI>Endere=E7o do Roteador=20
+  <LI>Endere=E7o do Servidor de Nomes (DNS) </LI></UL>
+<P>Voc=EA deve ent=E3o configurar seu dispositivo de rede =
+<CODE>GNU/Linux</CODE> com=20
+estes detalhes. Voc=EA n=E3o pode simplesmente escolhe-los e esperar que =
+sua=20
+configura=E7=E3o funcione.=20
+<HR>
+<A name=3Ds-rede-ip-privada></A>
+<H3>15.3.3 Endere=E7os reservados para uso em uma rede Privada</H3>
+<P>Se voc=EA estiver construindo uma rede privada que nunca ser=E1 =
+conectada a=20
+Internet, ent=E3o voc=EA pode escolher qualquer endere=E7o que quiser. =
+No entanto,=20
+para sua seguran=E7a e padroniza=E7=E3o, existem alguns endere=E7os IP's =
+que foram=20
+reservados especificamente para este prop=F3sito. Eles est=E3o =
+especificados no=20
+RFC1597 e s=E3o os seguintes: <PRE>     =
++---------------------------------------------------------+
+     |       ENDERE=C7OS RESERVADOS PARA REDES PRIVADAS          |
+     +---------------------------------------------------------+
+     | Classe  | M=E1scara de    | Endere=E7o da Rede              |
+     | de Rede | Rede          |                               |
+     +---------+---------------+-------------------------------+
+     |    A    | 255.0.0.0     | 10.0.0.0    - 10.255.255.255  |
+     |    B    | 255.255.0.0   | 172.16.0.0  - 172.31.255.255  |
+     |    C    | 255.255.255.0 | 192.168.0.0 - 192.168.255.255 |
+     +---------------------------------------------------------+
+</PRE>
+<P>Voc=EA deve decidir primeiro qual ser=E1 a largura de sua rede e =
+ent=E3o escolher a=20
+classe de rede que ser=E1 usada.=20
+<HR>
+<A name=3Ds-rede-interfaces></A>
+<H2>15.4 Interface de rede</H2>
+<P>As interfaces de rede no <CODE>GNU/Linux</CODE> est=E3o localizadas =
+no=20
+diret=F3rio <CODE>/dev</CODE> e a maioria =E9 criada dinamicamente pelos =
+softwares=20
+quando s=E3o requisitadas. Este =E9 o caso das interfaces =
+<SAMP>ppp</SAMP> e=20
+<SAMP>plip</SAMP> que s=E3o criadas dinamicamente pelos softwares.=20
+<P>Abaixo a identifica=E7=E3o de algumas interfaces de rede no Linux (a=20
+<SAMP>?</SAMP> significa um n=FAmero que identifica as interfaces =
+seq=FCencialmente,=20
+iniciando em 0):=20
+<UL>
+  <LI><CODE>eth?</CODE> - Placa de rede Ethernet e WaveLan.=20
+  <LI><CODE>ppp?</CODE> - Interface de rede PPP (protocolo ponto a =
+ponto).=20
+  <LI><CODE>slip?</CODE> - Interface de rede serial=20
+  <LI><CODE>eql</CODE> - Balanceador de tr=E1fego para m=FAltiplas =
+linhas=20
+  <LI><CODE>plip?</CODE> - Interface de porta paralela=20
+  <LI><CODE>arc?e, arc?s</CODE> - Interfaces Arcnet=20
+  <LI><CODE>sl?, ax?</CODE> - Interfaces de rede AX25 (respectivamente =
+para=20
+  kernels 2.0.xx e 2.2.xx.=20
+  <LI><CODE>fddi?</CODE> - Interfaces de rede FDDI.=20
+  <LI><CODE>dlci??, sdla?</CODE> - Interfaces Frame Relay, =
+respectivamente para=20
+  para dispositivos de encapsulamento DLCI e FRAD.=20
+  <LI><CODE>nr?</CODE> - Interface Net Rom=20
+  <LI><CODE>rs?</CODE> - Interfaces Rose=20
+  <LI><CODE>st?</CODE> - Interfaces Strip (Starmode Radio IP)=20
+  <LI><CODE>tr?</CODE> - Token Ring </LI></UL>
+<P>Para maiores detalhes sobre as interfaces acima, consulte o documento =
+
+<EM>NET3-4-HOWTO</EM>.=20
+<HR>
+<A name=3Ds-rede-interfaces-lo></A>
+<H3>15.4.1 A interface loopback</H3>
+<P>A interface <EM>loopback</EM> =E9 um tipo especial de interface que =
+permite=20
+fazer conex=F5es com voc=EA mesmo. Todos os computadores que usam o =
+protocolo TCP/IP=20
+utilizam esta interface e existem v=E1rias raz=F5es porque precisa fazer =
+isto, por=20
+exemplo, voc=EA pode testar v=E1rios programas de rede sem interferir =
+com ningu=E9m em=20
+sua rede. Por conven=E7=E3o, o endere=E7o IP 127.0.0.1 foi escolhido =
+especificamente=20
+para a loopback, assim se abrir uma conex=E3o telnet para 127.0.0.1, =
+abrir=E1 uma=20
+conex=E3o para o pr=F3prio computador local.=20
+<P>A configura=E7=E3o da interface loopback =E9 simples e voc=EA deve =
+ter certeza que=20
+fez isto (mas note que esta tarefa =E9 normalmente feita pelos scripts =
+padr=F5es de=20
+inicializa=E7=E3o existentes em sua distribui=E7=E3o). <PRE>     =
+ifconfig lo 127.0.0.1
+</PRE>
+<P>Caso a interface loopback n=E3o esteja configurada, voc=EA poder=E1 =
+ter problemas=20
+quando tentar qualquer tipo de conex=E3o com as interfaces locais, tendo =
+problemas=20
+at=E9 mesmo com o comando <CODE>ping</CODE>.=20
+<HR>
+<A name=3Ds-rede-interfaces-c></A>
+<H3>15.4.2 Atribuindo um endere=E7o de rede a uma interface =
+(ifconfig)</H3>
+<P>Ap=F3s configurada fisicamente, a interface precisa receber um =
+endere=E7o IP para=20
+ser identificada na rede e se comunicar com outros computadores, al=E9m =
+de outros=20
+par=E2metros como o endere=E7o de <EM>broadcast</EM> e a <EM>m=E1scara =
+de rede</EM>. O=20
+comando usado para fazer isso =E9 o <CODE>ifconfig</CODE> (interface =
+configure).=20
+<P>Para configurar a interface de rede Ethernet (<CODE>eth0</CODE>) com =
+o=20
+endere=E7o 192.168.1.1, m=E1scara de rede 255.255.255.0, podemos usar o =
+comando: <PRE>     ifconfig eth0 192.168.1.1 netmask 255.255.255.0 up
+</PRE>
+<P>O comando acima ativa a interface de rede. A palavra <SAMP>up</SAMP> =
+pode ser=20
+omitida, pois a ativa=E7=E3o da interface de rede =E9 o padr=E3o. Para =
+desativar a mesma=20
+interface de rede, basta usar usar o comando: <PRE>     ifconfig eth0 =
+down
+</PRE>
+<P>Digitando <SAMP>ifconfig</SAMP> s=E3o mostradas todas as interfaces =
+ativas no=20
+momento, pacotes enviados, recebidos e colis=F5es de datagramas. Para =
+mostrar a=20
+configura=E7=E3o somente da interface eth0, use o comando: =
+<SAMP>ifconfig=20
+eth0</SAMP> Em sistemas <CODE>Debian</CODE>, o arquivo correto para =
+especificar=20
+os dados das interfaces =E9 o <CODE>/etc/network/interfaces</CODE> (veja =
+<A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-network-interfaces">Arquivo=
+=20
+<CODE>/etc/network/interfaces</CODE>, Se=E7=E3o 27.8</A>).=20
+<P>Para mais detalhes, veja a p=E1gina de manual do =
+<CODE>ifconfig</CODE> ou o=20
+<EM>NET3-4-HOWTO</EM>.=20
+<HR>
+<A name=3Ds-rede-rota></A>
+<H2>15.5 Roteamento</H2>
+<P>Roteamento =E9 quando uma m=E1quina com m=FAltiplas conex=F5es de =
+rede decide onde=20
+entregar os pacotes IP que recebeu, para que cheguem ao seu destino.=20
+<P>Pode ser =FAtil ilustrar isto com um exemplo. Imagine um simples =
+roteador de=20
+escrit=F3rio, ele pode ter um link intermitente com a Internet, um =
+n=FAmero de=20
+segmentos ethernet alimentando as esta=E7=F5es de trabalho e outro link =
+PPP=20
+intermitente fora de outro escrit=F3rio. Quando o roteador recebe um =
+datagrama de=20
+qualquer de suas conex=F5es de rede, o mecanismo que usa determina qual =
+a pr=F3xima=20
+interface deve enviar o datagrama. Computadores simples tamb=E9m =
+precisam rotear,=20
+todos os computadores na Internet tem dois dispositivos de rede, um =E9 =
+a=20
+interface <EM>loopback</EM> (explicada acima) o outro =E9 um usado para =
+falar com=20
+o resto da rede, talvez uma ethernet, talvez uma interface serial PPP ou =
+SLIP.=20
+<P>OK, viu como o roteamento funciona? cada computador mant=E9m uma =
+lista de=20
+regras especiais de roteamento, chamada <EM>tabela de roteamento</EM>. =
+Esta=20
+tabela cont=E9m colunas que tipicamente cont=E9m no m=EDnimo tr=EAs =
+campos, o primeiro =E9=20
+o <EM>endere=E7o de destino</EM>, o segundo =E9 o <EM>nome da =
+interface</EM> que o=20
+datagrama deve ser roteado e o terceiro =E9 opcionalmente o =
+<EM>endere=E7o IP</EM>=20
+da outra m=E1quina que levar=E1 o datagrama em seu pr=F3ximo passo =
+atrav=E9s da rede. No=20
+<CODE>GNU/Linux</CODE> voc=EA pode ver a tabela de roteamento usando um =
+dos=20
+seguintes comandos: <PRE>     cat /proc/net/route
+     route -n
+     netstat -r
+</PRE>
+<P>O processo de roteamento =E9 muito simples: um datagrama (pacote IP) =
+=E9=20
+recebido, o endere=E7o de destino (para quem ele =E9) =E9 examinado e =
+comparado com=20
+cada item da tabela de roteamento. O item que mais corresponder com o =
+endere=E7o =E9=20
+selecionado e o datagrama =E9 direcionado a interface especificada.=20
+<P>Se o campo <EM>gateway</EM> estiver preenchido, ent=E3o o datagrama =
+=E9=20
+direcionado para aquele computador pela interface especificada, caso =
+contr=E1rio o=20
+endere=E7o de destino =E9 assumido sendo uma rede suportada pela =
+interface.=20
+<HR>
+<A name=3Ds-rede-rota-c></A>
+<H3>15.5.1 Configurando uma rota no Linux</H3>
+<P>A configura=E7=E3o da rota =E9 feita atrav=E9s da ferramenta =
+<CODE>route</CODE>. Para=20
+adicionar uma rota para a rede 192.168.1.0 acess=EDvel atrav=E9s da =
+interface eth0=20
+basta digitar o comando: <PRE>     route add -net 192.168.1.0 eth0
+</PRE>
+<P>Para apagar a rota acima da <EM>tabela de roteamento</EM>, basta =
+substituir a=20
+palavra <SAMP>add</SAMP> por <SAMP>del</SAMP>. A palavra =
+<SAMP>net</SAMP> quer=20
+dizer que 192.168.1.0 =E9 um endere=E7o de rede (lembra-se das =
+explica=E7=F5es em <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-ip">Endere=E7o=20
+IP, Se=E7=E3o 15.3</A>?)) para especificar uma m=E1quina de destino, =
+basta usar a=20
+palavra <SAMP>-host</SAMP>. Endere=E7os de m=E1quina de destino s=E3o =
+muito usadas em=20
+conex=F5es de rede apenas entre dois pontos (como ppp, plip, slip). Por =
+padr=E3o, a=20
+interface =E9 especificada como =FAltimo argumento. Caso a interface =
+precise=20
+especifica-la em outro lugar, ela dever=E1 ser precedida da op=E7=E3o=20
+<SAMP>-dev</SAMP>.=20
+<P>Para adicionar uma rota padr=E3o para um endere=E7o que n=E3o se =
+encontre na tabela=20
+de roteamento, utiliza-se o <EM>gateway padr=E3o da rede</EM>. Atrav=E9s =
+do gateway=20
+padr=E3o =E9 poss=EDvel especificar um computador (normalmente outro =
+gateway) que os=20
+pacotes de rede ser=E3o enviados caso o endere=E7o n=E3o confira com os =
+da tabela de=20
+roteamento. Para especificar o computador 192.168.1.1 como <EM>gateway=20
+padr=E3o</EM> usamos: <PRE>     route add default gw 192.168.1.1 eth0
+</PRE>
+<P>O <EM>gateway padr=E3o</EM> pode ser visualizado atrav=E9s do comando =
+<SAMP>route=20
+-n</SAMP> e verificando o campo <SAMP>gateway</SAMP>. A op=E7=E3o =
+<SAMP>gw</SAMP>=20
+acima, especifica que o pr=F3ximo argumento =E9 um endere=E7o IP (de uma =
+rede j=E1=20
+acess=EDvel atrav=E9s das tabelas de roteamento).=20
+<P>O computador <EM>gateway</EM> est=E1 conectado a duas ou mais redes =
+ao mesmo=20
+tempo. Quando seus dados precisam ser enviados para computadores fora da =
+rede,=20
+eles s=E3o enviados atrav=E9s do computador <EM>gateway</EM> e o =
+<EM>gateway</EM> os=20
+encaminham ao endere=E7o de destino. Desta forma, a resposta do servidor =
+tamb=E9m =E9=20
+enviada atrav=E9s do <EM>gateway</EM> para seu computador (=E9 o caso de =
+uma t=EDpica=20
+conex=E3o com a Internet).=20
+<P>A nossa configura=E7=E3o ficaria assim: <PRE>     route add -net =
+192.168.1.0 eth0
+     route add default gw 192.168.1.1 eth0
+</PRE>
+<P>Para mais detalhes, veja a p=E1gina de manual do <CODE>route</CODE> =
+ou o=20
+<EM>NET3-4-HOWTO</EM>.=20
+<HR>
+<A name=3Ds-rede-dns></A>
+<H2>15.6 Resolvedor de nomes (DNS)</H2>
+<P><EM>DNS</EM> significa Domain Name System (sistema de nomes de =
+dom=EDnio). O=20
+<EM>DNS</EM> converte os nomes de m=E1quinas para endere=E7os IPs que =
+todas as=20
+m=E1quinas da Internet possuem. Ele faz o mapeamento do nome para o =
+endere=E7o e do=20
+endere=E7o para o nome e algumas outras coisas. Um mapeamento =E9 =
+simplesmente uma=20
+associa=E7=E3o entre duas coisas, neste caso um nome de computador, como =
+
+www.cipsga.org.br, e o endere=E7o IP desta m=E1quina (ou endere=E7os) =
+como=20
+200.245.157.9.=20
+<P>O <EM>DNS</EM> foi criado com o objetivo de tornar as coisas mais =
+f=E1ceis para=20
+o usu=E1rio, permitindo assim, a identifica=E7=E3o de computadores na =
+Internet ou=20
+redes locais atrav=E9s de nomes (=E9 como se tiv=E9ssemos apenas que =
+decorar o nome da=20
+pessoa ao inv=E9s de um n=FAmero de telefone). A parte respons=E1vel por =
+traduzir os=20
+nomes como <SAMP>www.nome.com.br</SAMP> em um endere=E7o IP =E9 chamada =
+de=20
+<EM>resolvedor de nomes</EM>.=20
+<P>O <EM>resolvedor de nomes</EM> pode ser um banco de dados local =
+(controlador=20
+por um arquivo ou programa) que converte automaticamente os nomes em =
+endere=E7os=20
+IP ou atrav=E9s de <EM>servidores DNS</EM> que fazem a busca em um banco =
+de dados=20
+na Internet e retornam o endere=E7o IP do computador desejado. Um =
+servidor DNS=20
+mais difundido na Internet =E9 o <CODE>bind</CODE>.=20
+<P>Atrav=E9s do DNS =E9 necess=E1rio apenas decorar o endere=E7o sem =
+precisar se=20
+preocupar com o endere=E7o IP (alguns usu=E1rios simplesmente n=E3o =
+sabem que isto=20
+existe...). Se desejar mais detalhes sobre <EM>DNS</EM>, veja o =
+documento=20
+DNS-HOWTO.=20
+<HR>
+<A name=3Ds-rede-dns-oque></A>
+<H3>15.6.1 O que =E9 um nome?</H3>
+<P>Voc=EA deve estar acostumado com o uso dos nomes de computadores na =
+Internet,=20
+mas pode n=E3o entender como eles s=E3o organizados. Os nomes de =
+dom=EDnio na Internet=20
+s=E3o uma estrutura hier=E1rquica, ou seja, eles tem uma estrutura =
+semelhante aos=20
+diret=F3rios de seu sistema.=20
+<P>Um <EM>dom=EDnio</EM> =E9 uma fam=EDlia ou grupo de nomes. Um =
+dom=EDnio pode ser=20
+colocado em um <EM>sub-dom=EDnio</EM>. Um <EM>dom=EDnio principal</EM> =
+=E9 um dom=EDnio=20
+que n=E3o =E9 um sub-dom=EDnio. Os dom=EDnios principais s=E3o =
+especificados na RFC-920.=20
+Alguns exemplos de dom=EDnios principais comuns s=E3o:=20
+<UL>
+  <LI><SAMP>COM</SAMP> - Organiza=E7=F5es Comerciais=20
+  <LI><SAMP>EDU</SAMP> - Organiza=E7=F5es Educacionais=20
+  <LI><SAMP>GOV</SAMP> - Organiza=E7=F5es Governamentais=20
+  <LI><SAMP>MIL</SAMP> - Organiza=E7=F5es Militares=20
+  <LI><SAMP>ORG</SAMP> - Outras Organiza=E7=F5es=20
+  <LI><SAMP>NET</SAMP> - Organiza=E7=F5es relacionadas com a Internet=20
+  <LI><SAMP>Identificador do Pa=EDs</SAMP> - S=E3o duas letras que =
+representam um=20
+  pa=EDs em particular. </LI></UL>
+<P>Cada um dos dom=EDnios principais tem sub-dom=EDnios. Os dom=EDnios =
+principais=20
+baseados no nome do pa=EDs s=E3o freq=FCentemente divididos em =
+sub-dom=EDnios baseado=20
+nos dom=EDnios <SAMP>.com</SAMP>, <SAMP>.edu</SAMP>, <SAMP>.gov</SAMP>,=20
+<SAMP>.mil</SAMP> e <SAMP>.org</SAMP>. Assim, por exemplo, voc=EA pode =
+finaliza-lo=20
+com: <SAMP>com.au</SAMP> e <SAMP>gov.au</SAMP> para organiza=E7=F5es =
+comerciais e=20
+governamentais na Austr=E1lia; note que isto n=E3o =E9 uma regra geral, =
+as=20
+organiza=E7=F5es de dom=EDnio atuais dependem da autoridade na escolha =
+de nomes de=20
+cada dom=EDnio. Quando o endere=E7o n=E3o especifica o dom=EDnio =
+principal, como o=20
+endere=E7o <SAMP>www.unicamp.br</SAMP>, isto quer dizer que =E9 uma =
+organiza=E7=E3o=20
+acad=EAmica.=20
+<P>O pr=F3ximo n=EDvel da divis=E3o representa o nome da =
+organiza=E7=E3o. Subdom=EDnios=20
+futuros variam em natureza, freq=FCentemente o pr=F3ximo n=EDvel do =
+sub-dom=EDnio =E9=20
+baseado na estrutura departamental da organiza=E7=E3o mas ela pode ser =
+baseada em=20
+qualquer crit=E9rio considerado razo=E1vel e significantes pelos =
+administradores de=20
+rede para a organiza=E7=E3o.=20
+<P>A por=E7=E3o mais a esquerda do nome =E9 sempre o nome =FAnico da =
+m=E1quina chamado=20
+<EM>hostname</EM>, a por=E7=E3o do nome a direita do hostname =E9 =
+chamado <EM>nome de=20
+dom=EDnio</EM> e o nome completo =E9 chamado <EM>nome do dom=EDnio =
+completamente=20
+qualificado</EM> (<EM>Fully Qualified Domain Name</EM>).=20
+<P>Usando o computador <SAMP>www.debian.org.br</SAMP> como exemplo:=20
+<UL>
+  <LI><SAMP>br</SAMP> - Pa=EDs onde o computador se encontra=20
+  <LI><SAMP>org</SAMP> - Dom=EDnio principal=20
+  <LI><SAMP>debian</SAMP> - Nome de Dom=EDnio=20
+  <LI><SAMP>www</SAMP> - Nome do computador </LI></UL>
+<P>A localiza=E7=E3o do computador <SAMP>www.debian.org.br</SAMP> =
+atrav=E9s de=20
+servidores DNS na Internet obedece exatamente a seq=FC=EAncia de procura =
+acima. Os=20
+administradores do dom=EDnio <SAMP>debian.org.br</SAMP> podem cadastrar =
+quantos=20
+sub-dom=EDnios e computadores quiserem (como =
+<SAMP>www.non-us.debian.org.br</SAMP>=20
+ou <SAMP>cvs.debian.org.br</SAMP>).=20
+<HR>
+<A name=3Ds-rede-dns-a></A>
+<H3>15.6.2 Arquivos de configura=E7=E3o usados na resolu=E7=E3o de =
+nomes</H3>
+<P>Abaixo a descri=E7=E3o dos arquivos usados no processo de resolver um =
+nome no=20
+sistema <CODE>GNU/Linux</CODE>.=20
+<HR>
+<A name=3Ds-rede-dns-a-resolv></A>
+<H4>15.6.2.1 /etc/resolv.conf</H4>
+<P>O <CODE>/etc/resolv.conf</CODE> =E9 o arquivo de configura=E7=E3o =
+principal do=20
+c=F3digo do resolvedor de nomes. Seu formato =E9 um arquivo texto =
+simples com um=20
+par=E2metro por linha e o endere=E7o de servidores DNS externos s=E3o =
+especificados=20
+nele. Existem tr=EAs palavras chaves normalmente usadas que s=E3o:=20
+<DL>
+  <DT>domain=20
+  <DD>Especifica o nome do dom=EDnio local.=20
+  <DT>search=20
+  <DD>Especifica uma lista de nomes de dom=EDnio alternativos ao =
+procurar por um=20
+  computador, separados por espa=E7os. A linha search pode conter no =
+m=E1ximo 6=20
+  dom=EDnios ou 256 caracteres.=20
+  <DT>nameserver=20
+  <DD>Especifica o endere=E7o IP de um servidor de nomes de dom=EDnio =
+para resolu=E7=E3o=20
+  de nomes. Pode ser usado v=E1rias vezes. </DD></DL>
+<P>Como exemplo, o <CODE>/etc/resolv.conf</CODE> se parece com isto: =
+<PRE>     domain maths.wu.edu.au
+     search maths.wu.edu.au wu.edu.au
+     nameserver 192.168.10.1
+     nameserver 192.168.12.1
+</PRE>
+<P>Este exemplo especifica que o nome de dom=EDnio a adicionar ao nome =
+n=E3o=20
+qualificado (i.e. hostnames sem o dom=EDnio) =E9 =
+<SAMP>maths.wu.edu.au</SAMP> e que=20
+se o computador n=E3o for encontrado naquele dom=EDnio ent=E3o a procura =
+segue para o=20
+dom=EDnio <SAMP>wu.edu.au</SAMP> diretamente. Duas linhas de nomes de =
+servidores=20
+foram especificadas, cada uma pode ser chamada pelo c=F3digo resolvedor =
+de nomes=20
+para resolver o nome.=20
+<HR>
+<A name=3Ds-rede-dns-a-hostconf></A>
+<H4>15.6.2.2 /etc/host.conf</H4>
+<P>O arquivo <CODE>/etc/host.conf</CODE> =E9 o local onde =E9 poss=EDvel =
+configurar=20
+alguns =EDtens que gerenciam o c=F3digo do resolvedor de nomes. O =
+formato deste=20
+arquivo =E9 descrito em detalhes na p=E1gina de manual resolv+. Em quase =
+todas as=20
+situa=E7=F5es, o exemplo seguinte funcionar=E1: <PRE>     order =
+hosts,bind
+     multi on
+</PRE>
+<P>Este arquivo de configura=E7=E3o diz ao resolvedor de nomes para =
+checar o arquivo=20
+<CODE>/etc/hosts</CODE> (par=E2metro <SAMP>hosts</SAMP>) antes de tentar =
+verificar=20
+um <EM>servidor de nomes</EM> (par=E2metro <SAMP>bind</SAMP>) e retornar =
+um=20
+endere=E7o IP v=E1lido para o computador procurado e <EM>multi on</EM> =
+retornar=E1=20
+todos os endere=E7os IP resolvidos no arquivo <CODE>/etc/hosts</CODE> ao =
+inv=E9s do=20
+primeiro.=20
+<P>Os seguintes par=E2metros podem ser adicionados para evitar ataques =
+de IP=20
+spoofing: <PRE>     nospoof on
+     spoofalert on
+</PRE>
+<P>O par=E2metro <EM>nospoof on</EM> ativa a resolu=E7=E3o reversa do =
+nome da=20
+biblioteca resolv (para checar se o endere=E7o pertence realmente =
+=E0quele nome) e o=20
+<EM>spoofalert on</EM> registra falhas desta opera=E7=E3o no =
+<CODE>syslog</CODE>.=20
+<HR>
+<A name=3Ds-rede-dns-a-hosts></A>
+<H4>15.6.2.3 /etc/hosts</H4>
+<P>O arquivo <CODE>/etc/hosts</CODE> faz o relacionamento entre um nome =
+de=20
+computador e endere=E7o IP local. Recomendado para IPs constantemente =
+acessados e=20
+para coloca=E7=E3o de endere=E7os de virtual hosts (quando deseja =
+referir pelo nome ao=20
+inv=E9s de IP). A inclus=E3o de um computador neste arquivo dispenda a =
+consulta de=20
+um servidor de nomes para obter um endere=E7o IP, sendo muito =FAtil =
+para m=E1quinas=20
+que s=E3o acessadas frequentemente. A desvantagem de fazer isto =E9 que =
+voc=EA mesmo=20
+precisar=E1 manter este arquivo atualizado e se o endere=E7o IP de algum =
+computador=20
+for modificado, esta altera=E7=E3o dever=E1 ser feita em cada um dos =
+arquivos=20
+<CODE>hosts</CODE> das m=E1quinas da rede. Em um sistema bem gerenciado, =
+os =FAnicos=20
+endere=E7os de computadores que aparecer=E3o neste arquivo ser=E3o da =
+interface=20
+loopback e os nomes de computadores. <PRE>     # /etc/hosts
+     127.0.0.1      localhost loopback
+     192.168.0.1    maquina.dominio.com.br
+</PRE>
+<P>Voc=EA pode especificar mais que um nome de computador por linha como =
+
+demonstrada pela primeira linha, a que identifica a interface loopback.=20
+Certifique-se de que a entrada do nome de dom=EDnio neste arquivo aponta =
+para a=20
+interface de rede e n=E3o para a interface loopback, ou ter=E1 problema =
+com o=20
+comportamento de alguns servi=E7os.=20
+<P><STRONG>OBS:</STRONG> Caso encontre problemas de lentid=E3o para =
+resolver nomes=20
+e at=E9 para executar os aplicativos (como o <CODE>mc</CODE>, etc), =
+verifique se=20
+existem erros neste arquivo de configura=E7=E3o.=20
+<P>Estes sintomas se confundem com erros de mem=F3ria ou outro erro =
+qualquer de=20
+configura=E7=E3o de hardware, e somem quando a interface de rede =E9 =
+desativada (a com=20
+o IP n=E3o loopback). Isto =E9 causados somente pela m=E1 =
+configura=E7=E3o do arquivo=20
+<CODE>/etc/hosts</CODE>. O bom funcionamento do <CODE>Unix</CODE> =
+depende da boa=20
+aten=E7=E3o do administrador de sistemas para configurar os detalhes de =
+seu=20
+servidor.=20
+<HR>
+<A name=3Ds-rede-dns-a-networks></A>
+<H4>15.6.2.4 /etc/networks</H4>
+<P>O arquivo <CODE>/etc/networks</CODE> tem uma fun=E7=E3o similar ao =
+arquivo=20
+<CODE>/etc/hosts</CODE>. Ele cont=E9m um banco de dados simples de nomes =
+de redes=20
+contra endere=E7os de redes. Seu formato se difere por dois campos por =
+linha e=20
+seus campos s=E3o identificados como: <PRE>      Nome_da_Rede      =
+Endere=E7o_da_Rede
+</PRE>
+<P>Abaixo um exemplo de como se parece este arquivo: <PRE>     loopnet   =
+ 127.0.0.0
+     localnet   192.168.1.0
+     amprnet    44.0.0.0
+</PRE>
+<P>Quando usar comandos como <SAMP>route</SAMP>, se um destino =E9 uma =
+rede e esta=20
+rede se encontra no arquivo <CODE>/etc/networks</CODE>, ent=E3o o =
+comando=20
+<SAMP>route</SAMP> mostrar=E1 o <EM>nome da rede</EM> ao inv=E9s de seu =
+endere=E7o.=20
+<HR>
+<A name=3Ds-rede-dns-servdns></A>
+<H3>15.6.3 Executando um servidor de nomes</H3>
+<P>Se voc=EA planeja executar um servidor de nomes, voc=EA pode fazer =
+isto=20
+facilmente. Por favor veja o documento <SAMP>DNS-HOWTO</SAMP> e =
+quaisquer=20
+documentos inclu=EDdos em sua vers=E3o do BIND (Berkeley Internet Name =
+Domain).=20
+<HR>
+<A name=3Ds-rede-servicos></A>
+<H2>15.7 Servi=E7os de Rede</H2>
+<P><EM>Servi=E7os de rede</EM> =E9 o que est=E1 dispon=EDvel para ser =
+acessado pelo=20
+usu=E1rio. No TCP/IP, cada servi=E7o =E9 associado a um n=FAmero chamado =
+<EM>porta</EM>=20
+que =E9 onde o servidor espera pelas conex=F5es dos computadores =
+clientes. Uma porta=20
+de rede pode se referenciada tanto pelo n=FAmero como pelo nome do =
+servi=E7o.=20
+<P>Abaixo, alguns exemplos de portas padr=F5es usadas em servi=E7os =
+TCP/IP:=20
+<UL>
+  <LI><SAMP>21</SAMP> - FTP (transfer=EAncia de arquivos)=20
+  <LI><SAMP>23</SAMP> - Telnet (terminal virtual remoto)=20
+  <LI><SAMP>25</SAMP> - Smtp (envio de e-mails)=20
+  <LI><SAMP>53</SAMP> - DNS (resolvedor de nomes)=20
+  <LI><SAMP>79</SAMP> - Finger (detalhes sobre usu=E1rios do sistema)=20
+  <LI><SAMP>80</SAMP> - http (protocolo www - transfer=EAncia de =
+p=E1ginas Internet)=20
+
+  <LI><SAMP>110</SAMP> - Pop-3 (recebimento de mensagens)=20
+  <LI><SAMP>119</SAMP> - NNTP (usado por programas de noticias) =
+</LI></UL>
+<P>O arquivo padr=E3o respons=E1vel pelo mapeamento do nome dos =
+servi=E7os e das=20
+portas mais utilizadas =E9 o <CODE>/etc/services</CODE> (para detalhes =
+sobre o seu=20
+formato, veja a <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-outros-services">/etc/ser=
+vices,=20
+Se=E7=E3o 15.9.1</A>).=20
+<HR>
+<A name=3Ds-rede-servicos-daemon></A>
+<H3>15.7.1 Servi=E7os iniciados como Daemons de rede</H3>
+<P>Servi=E7os de rede iniciados como <EM>daemons</EM> ficam residente o =
+tempo todo=20
+na mem=F3ria <SAMP>esperando</SAMP> que algu=E9m se conecte (tamb=E9m =
+chamado de=20
+<EM>modo standalone</EM>). Um exemplo de <EM>daemon</EM> =E9 o servidor =
+proxy=20
+<CODE>squid</CODE> e o servidor web <CODE>Apache</CODE> operando no modo =
+
+<EM>daemon</EM>.=20
+<P>Alguns programas servidores oferecem a op=E7=E3o de serem executados =
+como=20
+<EM>daemons</EM> ou atrav=E9s do <EM>inetd</EM>. =C9 recomend=E1vel =
+escolher=20
+<EM>daemon</EM> se o servi=E7o for solicitado freq=FCentemente (como =E9 =
+o caso dos=20
+servidores web ou proxy).=20
+<P>Para verificar se um programa est=E1 rodando como <EM>daemon</EM>, =
+basta=20
+digitar <SAMP>ps ax</SAMP> e procurar o nome do programa, em caso =
+positivo ele =E9=20
+um <EM>daemon</EM>.=20
+<P>Normalmente os programas que s=E3o iniciados como daemons possuem =
+seus pr=F3prios=20
+recursos de seguran=E7a/autentica=E7=E3o para decidir quem tem ou n=E3o =
+permiss=E3o de se=20
+conectar.=20
+<HR>
+<A name=3Ds-rede-servicos-inetd></A>
+<H3>15.7.2 Servi=E7os iniciados atrav=E9s do inetd</H3>
+<P>Servi=E7os iniciados pelo <EM>inetd</EM> s=E3o carregados para a =
+mem=F3ria somente=20
+quando s=E3o solicitados. O controle de quais servi=E7os podem ser =
+carregados e seus=20
+par=E2metros, s=E3o feitos atrav=E9s do arquivo =
+<CODE>/etc/inetd.conf</CODE>.=20
+<P>Um <EM>daemon</EM> chamado <SAMP>inetd</SAMP> l=EA as =
+configura=E7=F5es deste=20
+arquivo e permanece residente na mem=F3ria, esperando pela conex=E3o dos =
+clientes.=20
+Quando uma conex=E3o =E9 solicitada, o daemon <EM>inetd</EM> verifica as =
+permiss=F5es=20
+de acesso nos arquivos <CODE>/etc/hosts.allow</CODE> e=20
+<CODE>/etc/hosts.deny</CODE> e carrega o programa servidor =
+correspondente no=20
+arquivo <CODE>/etc/inetd.conf</CODE>. Um arquivo tamb=E9m importante =
+neste=20
+processo =E9 o <CODE>/etc/services</CODE> que faz o mapeamento das =
+portas e nomes=20
+dos servi=E7os.=20
+<P>Alguns programas servidores oferecem a op=E7=E3o de serem executados =
+como=20
+<EM>daemons</EM> ou atrav=E9s do <EM>inetd</EM>. =C9 recomend=E1vel =
+escolher=20
+<EM>inetd</EM> se o servi=E7o n=E3o for solicitado freq=FCentemente =
+(como =E9 o caso de=20
+servidores <SAMP>ftp</SAMP>, <SAMP>telnet</SAMP>, <SAMP>talk</SAMP>, =
+etc).=20
+<HR>
+<A name=3Ds-rede-servicos-inetd-c></A>
+<H4>15.7.2.1 /etc/inetd.conf</H4>
+<P>O arquivo <CODE>/etc/inetd.conf</CODE> =E9 um arquivo de =
+configura=E7=E3o para o=20
+daemon servidor <EM>inetd</EM>. Sua fun=E7=E3o =E9 dizer ao =
+<CODE>inetd</CODE> o que=20
+fazer quando receber uma requisi=E7=E3o de conex=E3o para um servi=E7o =
+em particular.=20
+Para cada servi=E7o que deseja aceitar conex=F5es, voc=EA precisa dizer =
+ao=20
+<EM>inetd</EM> qual daemon servidor executar e como executa-lo.=20
+<P>Seu formato =E9 tamb=E9m muito simples. =C9 um arquivo texto com cada =
+linha=20
+descrevendo um servi=E7o que deseja oferecer. Qualquer texto em uma =
+linha seguindo=20
+uma "#" =E9 ignorada e considerada um coment=E1rio. Cada linha cont=E9m =
+sete campos=20
+separados por qualquer n=FAmero de espa=E7os em branco (tab ou =
+espa=E7os). O formato=20
+geral =E9 o seguinte: <PRE>     servi=E7o  tipo_soquete  proto  =
+op=E7=F5es.num  usu=E1rio  caminho_serv. op=E7=F5es_serv.
+</PRE>
+<DL>
+  <DT>servi=E7o=20
+  <DD>=C9 o servi=E7o relevante a este arquivo de configura=E7=E3o pego =
+do arquivo=20
+  <CODE>/etc/services</CODE>.=20
+  <DT>tipo_soquete=20
+  <DD>Este campo descreve o tipo do soquete que este item utilizar=E1, =
+valores=20
+  permitidos s=E3o: <SAMP>stream</SAMP>, <SAMP>dgram</SAMP>, =
+<SAMP>raw</SAMP>,=20
+  <SAMP>rdm</SAMP>, ou <SAMP>seqpacket</SAMP>. Isto =E9 um pouco =
+t=E9cnico de=20
+  natureza, mas como uma regra geral, todos os servi=E7os baseados em =
+<EM>tcp</EM>=20
+  usam <SAMP>stream</SAMP> e todos os protocolos baseados em =
+<EM>udp</EM> usam=20
+  <SAMP>dgram</SAMP>. Somente alguns tipos de daemons especiais de =
+servidores=20
+  usam os outros valores.=20
+  <DT>protocolo=20
+  <DD>O protocolo =E9 considerado v=E1lido para esta item. Isto deve =
+bater com um=20
+  item apropriado no arquivo <CODE>/etc/services</CODE> e tipicamente =
+ser=E1 tcp=20
+  ou udp. Servidores baseados no Sun RPC (<EM>Remote Procedure =
+Call</EM>),=20
+  utilizam rpc/tcp ou rpc/udp.=20
+  <DT>op=E7=F5es=20
+  <DD>Existem somente duas configura=E7=F5es para este campo. A =
+configura=E7=E3o deste=20
+  campo diz ao <EM>inetd</EM> se o programa servidor de rede libera o =
+soquete=20
+  ap=F3s ele ser iniciado e ent=E3o se inetd pode iniciar outra c=F3pia =
+na pr=F3xima=20
+  requisi=E7=E3o de conex=E3o, ou se o inetd deve aguardar e assumir que =
+qualquer=20
+  servidor j=E1 em execu=E7=E3o pegar=E1 a nova requisi=E7=E3o de =
+conex=E3o.=20
+  <P>Este =E9 um pequeno truque de trabalho, mas como uma regra, todos =
+os=20
+  servidores tcp devem ter este par=E2metro ajustado para =
+<EM>nowait</EM> e a=20
+  maior parte dos servidores udp deve t=EA-lo ajustado para =
+<EM>wait</EM>. Foi=20
+  alertado que existem algumas excess=F5es a isto, assim deixo isto como =
+exemplo=20
+  se n=E3o estiver seguro.=20
+  <P>O <EM>n=FAmero</EM> especificado ap=F3s o "." =E9 opcional e define =
+a quantidade=20
+  m=E1xima de vezes que o servi=E7o poder=E1 ser executado durante 1 =
+minuto. Se o=20
+  servi=E7o for executado mais vezes do que este valor, ele ser=E1 =
+automaticamente=20
+  desativado pelo inetd e uma mensagem ser=E1 mostrada no log do sistema =
+avisando=20
+  sobre o fato.=20
+  <P>Para reativar o servi=E7o interrompido, reinicie o =
+<CODE>inetd</CODE> com:=20
+  <SAMP>killall -HUP inetd</SAMP>. O valor padr=E3o =E9 <SAMP>40</SAMP>. =
+</P>
+  <DT>usu=E1rio=20
+  <DD>Este campo descreve que conta de usu=E1rio usu=E1rio no arquivo=20
+  <CODE>/etc/passwd</CODE> ser=E1 escolhida como <EM>dono</EM> do daemon =
+de rede=20
+  quando este for iniciado. Isto =E9 muito =FAtil se voc=EA deseja =
+diminuir os riscos=20
+  de seguran=E7a. Voc=EA pode ajustar o usu=E1rio de qualquer item para =
+o usu=E1rio=20
+  <EM>nobody</EM>, assim se a seguran=E7a do servidor de redes =E9 =
+quebrada, a=20
+  possibilidade de problemas =E9 minimizada. Normalmente este campo =E9 =
+ajustado=20
+  para <EM>root</EM>, porque muitos servidores requerem privil=E9gios de =
+usu=E1rio=20
+  root para funcionarem corretamente.=20
+  <DT>caminho_servidor=20
+  <DD>Este campo =E9 o caminho para o programa servidor atual que ser=E1 =
+executado.=20
+  <DT>argumentos_servidor=20
+  <DD>Este campo inclui o resto da linha e =E9 opcional. Voc=EA pode =
+colocar neste=20
+  campo qualquer argumento da linha de comando que deseje passar para o =
+daemon=20
+  servidor quando for iniciado. </DD></DL>
+<P>Uma dica que pode aumentar significativamente a seguran=E7a de seu =
+sistema =E9=20
+comentar (colocar uma <SAMP>#</SAMP>no inicio da linha) os servi=E7os =
+que n=E3o=20
+ser=E3o utilizados.=20
+<P>Abaixo um modelo de arquivo <CODE>/etc/inetd.conf</CODE> usado em =
+sistemas=20
+<CODE>Debian</CODE>: <PRE>     # /etc/inetd.conf:  veja inetd(8) para =
+mais detalhes.
+     #
+     # Banco de Dados de configura=E7=F5es do servidor Internet
+     #
+     #
+     # Linhas iniciando com "#:LABEL:" ou "#&lt;off&gt;#" n=E3o devem=20
+     # ser alteradas a n=E3o ser que saiba o que est=E1 fazendo!
+     #
+     #
+     # Os pacotes devem modificar este arquivo usando update-inetd(8)
+     #
+     # &lt;nome_servi=E7o&gt; &lt;tipo_soquete&gt; &lt;proto&gt; =
+&lt;op=E7=F5es&gt; &lt;usu=E1rio&gt; &lt;caminho_servidor&gt; =
+&lt;args&gt;
+     #
+     #:INTERNO: Servi=E7os internos
+     #echo           stream  tcp nowait  root    internal
+     #echo           dgram   udp wait    root    internal
+     #chargen        stream  tcp nowait  root    internal
+     #chargen        dgram   udp wait    root    internal
+     #discard        stream  tcp nowait  root    internal
+     #discard        dgram   udp wait    root    internal
+     #daytime        stream  tcp nowait  root    internal
+     #daytime        dgram   udp wait    root    internal
+     time		stream	tcp nowait  root    internal
+     #time		dgram	udp wait    root    internal
+    =20
+     #:PADR=D5ES: Estes s=E3o servi=E7os padr=F5es.
+    =20
+     #:BSD: Shell, login, exec e talk s=E3o protocolos BSD.
+     #shell          stream  tcp nowait  root     /usr/sbin/tcpd  =
+/usr/sbin/in.rshd
+     #login          stream  tcp nowait  root     /usr/sbin/tcpd  =
+/usr/sbin/in.rlogind
+     #exec           stream  tcp nowait  root     /usr/sbin/tcpd  =
+/usr/sbin/in.rexecd
+     talk            dgram   udp wait.10    nobody.tty  /usr/sbin/tcpd  =
+/usr/sbin/in.talkd
+     ntalk           dgram   udp wait.10    nobody.tty  /usr/sbin/tcpd  =
+/usr/sbin/in.ntalkd
+    =20
+     #:MAIL: Mail, news e servi=E7os uucp.
+     smtp		stream	tcp	nowait.60	mail	/usr/sbin/exim exim -bs
+    =20
+     #:INFO: Servi=E7os informativos
+    =20
+     #:BOOT: O servi=E7o Tftp =E9 oferecido primariamente para a =
+inicializa=E7=E3o. Alguns sites
+     # o executam somente em m=E1quinas atuando como "servidores de =
+inicializa=E7=E3o".
+    =20
+     #:RPC: Servi=E7os baseados em RPC
+    =20
+     #:HAM-RADIO: servi=E7os de r=E1dio amador
+    =20
+     #:OTHER: Outros servi=E7os
+</PRE>
+<HR>
+<A name=3Ds-rede-seg></A>
+<H2>15.8 Seguran=E7a da Rede e controle de Acesso</H2>
+<P>Deixe-me iniciar esta se=E7=E3o lhe alertando que a seguran=E7a da =
+rede em sua=20
+m=E1quina e ataques maliciosos s=E3o uma arte complexa. Uma regra =
+importante =E9: "N=E3o=20
+ofere=E7a servi=E7os de rede que n=E3o deseja utilizar".=20
+<P>Muitas distribui=E7=F5es vem configuradas com v=E1rios tipos de =
+servi=E7os que s=E3o=20
+iniciados automaticamente. Para melhorar, mesmo que insignificantemente, =
+o n=EDvel=20
+de seguran=E7a em seu sistema voc=EA deve editar se arquivo=20
+<CODE>/etc/inetd.conf</CODE> e comentar (colocar uma "#") as linhas que =
+cont=E9m=20
+servi=E7os que n=E3o utiliza.=20
+<P>Bons candidatos s=E3o servi=E7os tais como: <SAMP>shell</SAMP>,=20
+<SAMP>login</SAMP>, <SAMP>exec</SAMP>, <SAMP>uucp</SAMP>, =
+<SAMP>ftp</SAMP> e=20
+servi=E7os de informa=E7=E3o tais como <SAMP>finger</SAMP>, =
+<SAMP>netstat</SAMP> e=20
+<SAMP>sysstat</SAMP>.=20
+<P>Existem todos os tipos de mecanismos de seguran=E7a e controle de =
+acesso, eu=20
+descreverei os mais importantes deles.=20
+<HR>
+<A name=3Ds-rede-seg-ftpusers></A>
+<H3>15.8.1 /etc/ftpusers</H3>
+<P>O arquivo <CODE>/etc/ftpusers</CODE> =E9 um mecanismo simples que lhe =
+permite=20
+bloquear a conex=E3o de certos usu=E1rios via <EM>ftp</EM>. O arquivo=20
+<CODE>/etc/ftpusers</CODE> =E9 lido pelo programa daemon ftp =
+(<EM>ftpd</EM>)=20
+quando um pedido de conex=E3o =E9 recebido. O arquivo =E9 uma lista =
+simples de=20
+usu=E1rios que n=E3o tem permiss=E3o de se conectar. Ele se parece com: =
+<PRE>     # /etc/ftpusers - login de usu=E1rios bloqueados via ftp
+     root
+     uucp
+     bin
+     mail
+</PRE>
+<HR>
+<A name=3Ds-rede-seg-securetty></A>
+<H3>15.8.2 /etc/securetty</H3>
+<P>O arquivo <CODE>/etc/securetty</CODE> lhe permite especificar que=20
+dispositivos <CODE>tty</CODE> que o usu=E1rio <EM>root</EM> pode se =
+conectar. O=20
+arquivo /etc/securetty =E9 lido pelo programa login (normalmente=20
+<CODE>/bin/login</CODE>). Seu formato =E9 uma lista de dispositivos=20
+<CODE>tty</CODE> onde a conex=E3o =E9 permitida, em todos os outros, a =
+entrada do=20
+usu=E1rio <EM>root</EM> =E9 bloqueada. <PRE>     # /etc/securetty - =
+terminais que o usu=E1rio root pode se conectar
+     tty1
+     tty2
+     tty3
+     tty4
+</PRE>
+<HR>
+<A name=3Ds-rede-seg-tcpd></A>
+<H3>15.8.3 O mecanismo de controle de acessos tcpd</H3>
+<P>O programa <CODE>tcpd</CODE> que voc=EA deve ter visto listado no =
+mesmo arquivo=20
+<CODE>/etc/inetd.conf</CODE>, oferece mecanismos de registro e controle =
+de=20
+acesso para os servi=E7os que esta configurado para proteger. Ele =E9 um =
+tipo de=20
+firewall simples e f=E1cil de configurar que pode evitar tipos =
+indesejados de=20
+ataques e registrar poss=EDveis tentativas de invas=E3o.=20
+<P>Quando =E9 executado pelo programa inetd, ele l=EA dos arquivos =
+contendo regras=20
+de acesso e permite ou bloqueia o acesso ao servidor protegendo =
+adequadamente.=20
+<P>Ele procura nos arquivos de regras at=E9 que uma regra confira. Se =
+nenhuma=20
+regra conferir, ent=E3o ele assume que o acesso deve ser permitido a =
+qualquer um.=20
+Os arquivos que ele procura em seq=FC=EAncia s=E3o: =
+<CODE>/etc/hosts.allow</CODE> e=20
+<CODE>/etc/hosts.deny</CODE>. Eu descreverei cada um destes arquivos=20
+separadamente.=20
+<P>Para uma descri=E7=E3o completa desta facilidade, voc=EA deve =
+verificar a p=E1gina de=20
+manual apropriada (hosts_access (5) =E9 um bom ponto de partida).=20
+<HR>
+<A name=3Ds-rede-seg-tcpd-a></A>
+<H4>15.8.3.1 /etc/hosts.allow</H4>
+<P>O arquivo <CODE>/etc/hosts.allow</CODE> =E9 um arquivo de =
+configura=E7=E3o do=20
+programa <CODE>/usr/sbin/tcpd</CODE>. O arquivo <CODE>hosts.allow</CODE> =
+cont=E9m=20
+regras descrevendo que hosts tem permiss=E3o de acessar um servi=E7o em =
+sua m=E1quina.=20
+
+<P>O formato do arquivo =E9 muito simples: <PRE>     # /etc/hosts.allow
+     #
+     # lista de servi=E7os: lista de hosts : comando
+</PRE>
+<DL>
+  <DT>lista de servi=E7os=20
+  <DD>=C9 uma lista de nomes de servi=E7os separados por v=EDrgula que =
+esta regra se=20
+  aplica. Exemplos de nomes de servi=E7os s=E3o: <SAMP>ftpd</SAMP>,=20
+  <SAMP>telnetd</SAMP> e <SAMP>fingerd</SAMP>.=20
+  <DT>lista de hosts=20
+  <DD>=C9 uma lista de nomes de hosts separada por v=EDrgula. Voc=EA =
+tamb=E9m pode usar=20
+  endere=E7os IP's aqui. Adicionalmente, voc=EA pode especificar nomes =
+de=20
+  computadores ou endere=E7o IP usando caracteres coringas para atingir =
+grupos de=20
+  hosts.=20
+  <P>Exemplos incluem: <SAMP>gw.vk2ktj.ampr.org</SAMP> para conferir com =
+um=20
+  endere=E7o de computador espec=EDfico, <SAMP>.uts.edu.au</SAMP> para =
+atingir=20
+  qualquer endere=E7o de computador finalizando com aquele string. Use=20
+  200.200.200. para conferir com qualquer endere=E7o IP iniciando com =
+estes=20
+  d=EDgitos. Existem alguns par=E2metros especiais para simplificar a =
+configura=E7=E3o,=20
+  alguns destes s=E3o: <SAMP>ALL</SAMP> atinge todos endere=E7os, =
+<SAMP>LOCAL</SAMP>=20
+  atinge qualquer computador que n=E3o cont=E9m um "." (ie. est=E1 no =
+mesmo dom=EDnio de=20
+  sua m=E1quina) e <SAMP>PARANOID</SAMP> atinge qualquer computador que =
+o nome n=E3o=20
+  confere com seu endere=E7o (falsifica=E7=E3o de nome). Existe tamb=E9m =
+um =FAltimo=20
+  par=E2metro que =E9 tamb=E9m =FAtil: o par=E2metro <SAMP>EXCEPT</SAMP> =
+lhe permite fazer=20
+  uma lista de exce=E7=F5es. Isto ser=E1 coberto em um exemplo adiante. =
+</P>
+  <DT>comando=20
+  <DD>=C9 um par=E2metro opcional. Este par=E2metro =E9 o caminho =
+completo de um comando=20
+  que dever=E1 ser executado toda a vez que esta regra conferir. Ele =
+pode executar=20
+  um comando para tentar identificar quem esta conectado pelo host =
+remoto, ou=20
+  gerar uma mensagem via E-Mail ou algum outro alerta para um =
+administrador de=20
+  rede que algu=E9m est=E1 tentando se conectar.=20
+  <P>Existem um n=FAmero de expans=F5es que podem ser inclu=EDdas, =
+alguns exemplos=20
+  comuns s=E3o: %h expande o endere=E7o do computador que est=E1 =
+conectado ou endere=E7o=20
+  se ele n=E3o possuir um nome, %d o nome do daemon sendo chamado. =
+</P></DD></DL>
+<P>Se o computador tiver permiss=E3o de acessar um servi=E7o atrav=E9s =
+do=20
+<CODE>/etc/hosts.allow</CODE>, ent=E3o o <CODE>/etc/hosts.deny</CODE> =
+n=E3o ser=E1=20
+consultado e o acesso ser=E1 permitido.=20
+<P>Como exemplo: <PRE>     # /etc/hosts.allow
+     #
+     # Permite que qualquer um envie e-mails
+     in.smtpd: ALL
+     # Permitir telnet e ftp somente para hosts locais e =
+myhost.athome.org.au
+     in.telnetd, in.ftpd: LOCAL, myhost.athome.org.au
+     # Permitir finger para qualquer um mas manter um registro de quem =
+=E9
+     in.fingerd: ALL: (finger @%h | mail -s "finger from %h" root)
+</PRE>
+<P>Qualquer modifica=E7=E3o no arquivo <CODE>/etc/hosts.allow</CODE> =
+entrar=E1 em a=E7=E3o=20
+ap=F3s reiniciar o daemon <EM>inetd</EM>. Isto pode ser feito com o =
+comando=20
+<SAMP>kill -HUP [pid do inetd]</SAMP>, o <SAMP>pid</SAMP> do =
+<EM>inetd</EM> pode=20
+ser obtido com o comando <SAMP>ps ax|grep inetd</SAMP>.=20
+<HR>
+<A name=3Ds-rede-seg-tcpd-d></A>
+<H4>15.8.3.2 /etc/hosts.deny</H4>
+<P>O arquivo <CODE>/etc/hosts.deny</CODE> =E9 um arquivo de =
+configura=E7=E3o das=20
+regras descrevendo quais computadores n=E3o tem a permiss=E3o de acessar =
+um servi=E7o=20
+em sua m=E1quina.=20
+<P>Um modelo simples deste arquivo se parece com isto: <PRE>     # =
+/etc/hosts.deny
+     #
+     # Bloqueia o acesso de computadores com endere=E7os suspeitos
+     ALL: PARANOID
+     #
+     # Bloqueia todos os computadores
+     ALL: ALL
+</PRE>
+<P>A entrada <SAMP>PARANOID</SAMP> =E9 realmente redundante porque a =
+outra entrada=20
+nega tudo. Qualquer uma destas linhas pode fazer uma seguran=E7a =
+padr=E3o dependendo=20
+de seu requerimento em particular.=20
+<P>Tendo um padr=E3o <EM>ALL: ALL</EM> no arquivo =
+<EM>/etc/hosts.deny</EM> e ent=E3o=20
+ativando especificamente os servi=E7os e permitindo computadores que =
+voc=EA deseja=20
+no arquivo <CODE>/etc/hosts.allow</CODE> =E9 a configura=E7=E3o mais =
+segura.=20
+<P>Qualquer modifica=E7=E3o no arquivo <CODE>/etc/hosts.deny</CODE> =
+entrar=E1 em a=E7=E3o=20
+ap=F3s reiniciar o daemon <EM>inetd</EM>. Isto pode ser feito com o =
+comando=20
+<SAMP>kill -HUP [pid do inetd]</SAMP>, o <SAMP>pid</SAMP> do =
+<EM>inetd</EM> pode=20
+ser obtido com o comando <SAMP>ps ax|grep inetd</SAMP>.=20
+<HR>
+<A name=3Ds-rede-seg-tcpd-e></A>
+<H4>15.8.3.3 /etc/hosts.equiv e /etc/shosts.equiv</H4>
+<P>O arquivo <CODE>/etc/hosts.equiv</CODE> =E9 usado para =
+garantir/bloquear certos=20
+computadores e usu=E1rios o direito de acesso aos servi=E7os "r*" (rsh, =
+rexec, rcp,=20
+etc) sem precisar fornecer uma senha. O <CODE>/etc/shosts.equiv</CODE> =
+=E9=20
+equivalente mas =E9 lido somente pelo servi=E7o ssh. Esta fun=E7=E3o =E9 =
+=FAtil em um=20
+ambiente seguro onde voc=EA controla todas as m=E1quinas, mesmo assim =
+isto =E9 um=20
+perigo de seguran=E7a (veja nas observa=E7=F5es). O formato deste =
+arquivo =E9 o=20
+seguinte: <PRE>     #Acesso  M=E1quina                   Usu=E1rio
+     -        maquina2.dominio.com.br   usuario2
+     -        maquina4.dominio.com.br   usuario2
+     +        maquina1.dominio.com.br   +@usuarios
+</PRE>
+<P>O primeiro campo especifica se o acesso ser=E1 permitido ou negado =
+caso o=20
+segundo e terceiro campo confiram. Por raz=F5es de seguran=E7a deve ser =
+especificado=20
+o FQDN no caso de nomes de m=E1quinas. Grupos de rede podem ser =
+especificados=20
+usando a sintaxe "+@grupo".=20
+<P>Para aumentar a seguran=E7a, n=E3o use este mecanismo e encoraje seus =
+usu=E1rios a=20
+tamb=E9m n=E3o usar o arquivo <CODE>.rhosts</CODE>.=20
+<P><STRONG>ATEN=C7=C3O</STRONG> O uso do sinal "+" sozinho significa =
+permitir acesso=20
+livre a qualquer pessoa de qualquer lugar. Se este mecanismo for mesmo=20
+necess=E1rio, tenha muita aten=E7=E3o na especifica=E7=E3o de seus =
+campos.=20
+<P>Evita tamb=E9m A TODO CUSTO uso de nomes de usu=E1rios (a n=E3o ser =
+para negar o=20
+acesso), pois =E9 f=E1cil forjar o login, entrar no sistema tomar conta =
+de processos=20
+(como por exemplo do servidor <CODE>Apache</CODE> rodando sob o =
+usu=E1rio=20
+<SAMP>www-data</SAMP> ou at=E9 mesmo o <STRONG>root</STRONG>), causando =
+enormes=20
+estragos.=20
+<HR>
+<A name=3Ds-rede-seg-tcpd-v></A>
+<H4>15.8.3.4 Verificando a seguran=E7a do TCPD e a sintaxe dos =
+arquivos</H4>
+<P>O utilit=E1rio <CODE>tcpdchk</CODE> =E9 =FAtil para verificar =
+problemas nos=20
+arquivos <CODE>hosts.allow</CODE> e <CODE>hosts.deny</CODE>. Quando =E9 =
+executado=20
+ele verifica a sintaxe destes arquivos e relata problemas, caso eles =
+existam.=20
+<P>Outro utilit=E1rio =FAtil =E9 o <CODE>tcpdmatch</CODE>, o que ele faz =
+=E9 permitir=20
+que voc=EA simule a tentativa de conex=F5es ao seu sistema e observar =
+ser ela ser=E1=20
+permitida ou bloqueada pelos arquivos <CODE>hosts.allow</CODE> e=20
+<CODE>hosts.deny</CODE>.=20
+<P>=C9 importante mostrar na pr=E1tica como o <CODE>tcpdmatch</CODE> =
+funciona=20
+atrav=E9s de um exemplo simulando um teste simples em um sistema com a=20
+configura=E7=E3o padr=E3o de acesso restrito:=20
+<UL>
+  <LI>O arquivo <CODE>hosts.allow</CODE> cont=E9m as seguintes linhas: =
+<PRE>     ALL: 127.0.0.1
+     in.talkd, in.ntalkd: ALL
+     in.fingerd: 192.168.1. EXCEPT 192.168.1.30
+</PRE>
+  <P>A primeira linha permite o loopback (127.0.0.1) acessar qualquer =
+servi=E7o=20
+  TCP/UDP em nosso computador, a segunda linha permite qualquer um =
+acessar os=20
+  servidor TALK (n=F3s desejamos que o sistema nos avise quando algu=E9m =
+desejar=20
+  conversar) e a terceira somente permite enviar dados do =
+<CODE>finger</CODE>=20
+  para computadores dentro de nossa rede privada (exceto para =
+192.168.1.30).=20
+  </P></LI></UL>
+<UL>
+  <LI>O arquivo <CODE>hosts.deny</CODE> cont=E9m a seguinte linha: <PRE> =
+    ALL: ALL
+</PRE>
+  <P>Qualquer outra conex=E3o ser=E1 explicitamente derrubada. =
+</P></LI></UL>
+<P>Vamos aos testes, digitando: "tcpdmatch in.fingerd 127.0.0.1" =
+(verificar se o=20
+endere=E7o 127.0.0.1 tem acesso ao finger): <PRE>     client:   address  =
+127.0.0.1
+     server:   process  in.fingerd
+     matched:  /etc/hosts.allow line 1
+     access:   granted
+</PRE>
+<P>Ok, temos acesso garantido com especificado pela linha 1 do=20
+<CODE>hosts.allow</CODE> (a primeira linha que confere =E9 usada). Agora =
+
+"tcpdmatch in.fingerd 192.168.1.29": <PRE>     client:   address  =
+192.168.1.29
+     server:   process  in.fingerd
+     matched:  /etc/hosts.allow line 3
+     access:   granted
+</PRE>
+<P>O acesso foi permitido atrav=E9s da linha 3 do =
+<CODE>hosts.allow</CODE>. Agora=20
+"tcpdmatch in.fingerd 192.168.1.29": <PRE>     client:   address  =
+192.168.1.30
+     server:   process  in.fingerd
+     matched:  /etc/hosts.deny line 1
+     access:   denied
+</PRE>
+<P>O que aconteceu? como a linha 2 do <CODE>hosts.allow</CODE> permite o =
+acesso=20
+a todos os computadores 192.168.1.* exceto 192.168.1.30, ela n=E3o =
+bateu, ent=E3o o=20
+processamento partiu para o <CODE>hosts.deny</CODE> que nega todos os =
+servi=E7os=20
+para qualquer endere=E7o. Agora um =FAltimo exemplo: "tcpdmatch in.talkd =
+
+www.debian.org" <PRE>     client:   address  www.debian.org
+     server:   process  in.talkd
+     matched:  /etc/hosts.allow line 2
+     access:   granted
+</PRE>
+<P>Ok, na linha 2 qualquer computador pode te chamar para conversar via =
+talk na=20
+rede, mas para o endere=E7o DNS conferir com um IP especificado, o=20
+<CODE>GNU/Linux</CODE> faz a resolu=E7=E3o DNS, convertendo o endere=E7o =
+para IP e=20
+verificando se ele possui acesso.=20
+<P>No lugar do endere=E7o tamb=E9m pode ser usado a forma=20
+<SAMP>daemon@computador</SAMP> ou <SAMP>cliente@computador</SAMP> para =
+verificar=20
+respectivamente o acesso de daemons e cliente de determinados =
+computadores aos=20
+servi=E7os da rede.=20
+<P>Como pode ver o TCPD ajuda a aumentar a seguran=E7a do seu sistema, =
+mas n=E3o=20
+confie nele al=E9m do uso em um sistema simples, =E9 necess=E1rio o uso =
+de um firewall=20
+verdadeiro para controlar minuciosamente a seguran=E7a do seu sistema e =
+dos=20
+pacotes que atravessam os protocolos, roteamento e as interfaces de =
+rede. Se=20
+este for o caso aprenda a trabalhar a fundo com firewalls e implemente a =
+
+seguran=E7a da sua rede da forma que melhor planejar.=20
+<HR>
+<A name=3Ds-rede-seg-firewall></A>
+<H3>15.8.4 Firewall</H3>
+<P>Dentre todos os m=E9todos de seguran=E7a, o <EM>Firewall</EM> =E9 o =
+mais seguro. A=20
+fun=E7=E3o do Firewall =E9 bloquear determinados tipos de tr=E1fego de =
+um endere=E7o ou=20
+para uma porta local ou permitir o acesso de determinados usu=E1rios mas =
+bloquear=20
+outros, bloquear a falsifica=E7=E3o de endere=E7os, redirecionar =
+tr=E1fego da rede, ping=20
+da morte, etc.=20
+<P>A implementa=E7=E3o de um bom firewall depender=E1 da experi=EAncia, =
+conhecimentos de=20
+rede (protocolos, roteamento, interfaces, endere=E7amento, masquerade, =
+etc), da=20
+rede local, e sistema em geral do Administrador de redes, a seguran=E7a =
+de sua=20
+rede e seus dados dependem da escolha do profissional correto, que =
+entenda a=20
+fundo o TCP/IP, roteamento, protocolos, servi=E7os e outros assuntos =
+ligados a=20
+rede.=20
+<P>Freq=FCentemente tem se ouvido falar de empresas que tiveram seus =
+sistemas=20
+invadidos, em parte isto =E9 devido a escolha do sistema operacional =
+indevido mas=20
+na maioria das vezes o motivo =E9 a falta de investimento da empresa em =
+pol=EDticas=20
+de seguran=E7a, que algumas simplesmente consideram a seguran=E7a de =
+seus dados e=20
+sigilo interno como uma <SAMP>despesa a mais</SAMP>.=20
+<P>Um bom firewall que recomendo =E9 o <CODE>ipchains</CODE>, =
+<CODE>Sinus</CODE> e=20
+o <CODE>TIS</CODE>. Particularmente gosto muito de usar o =
+<CODE>ipchains</CODE>=20
+e o <CODE>Sinus</CODE> e =E9 poss=EDvel fazer coisas inimagin=E1veis =
+programando=20
+scripts para interagirem com estes programas...=20
+<HR>
+<A name=3Ds-rede-outros></A>
+<H2>15.9 Outros arquivos de configura=E7=E3o relacionados com a =
+rede</H2>
+<HR>
+<A name=3Ds-rede-outros-services></A>
+<H3>15.9.1 /etc/services</H3>
+<P>O arquivo <CODE>/etc/services</CODE> =E9 um banco de dados simples =
+que associa=20
+um nome amig=E1vel a humanos a uma porta de servi=E7o amig=E1vel a =
+m=E1quinas. =C9 um=20
+arquivo texto de formato muito simples, cada linha representa um item no =
+banco=20
+de dados. Cada item =E9 dividido em tr=EAs campos separados por qualquer =
+n=FAmero de=20
+espa=E7os em branco (tab ou espa=E7os). Os campos s=E3o: <PRE>       =
+nome      porta/protocolo        apelido     # coment=E1rio
+</PRE>
+<DL>
+  <DT>name=20
+  <DD>Uma palavra simples que representa o nome do servi=E7o sendo =
+descrito.=20
+  <DT>porta/protocolo=20
+  <DD>Este campo =E9 dividido em dois sub-campos.=20
+  <UL>
+    <LI><SAMP>porta</SAMP> - Um n=FAmero que especifica o n=FAmero da =
+porta em que o=20
+    servi=E7o estar=E1 dispon=EDvel. Muitos dos servi=E7os comuns tem =
+designados um=20
+    n=FAmero de servi=E7o. Estes est=E3o descritos no RFC-1340.=20
+    <LI><SAMP>protocolo</SAMP> - Este sub-campo pode ser ajustado para=20
+    <EM>tcp</EM> ou <EM>udp</EM>. =C9 importante notar que o item =
+<EM>18/tcp</EM>=20
+    =E9 muito diferente do item <EM>18/udp</EM> e que n=E3o existe =
+raz=E3o t=E9cnica=20
+    porque o mesmo servi=E7o precisa existir em ambos. Normalmente o =
+senso comum=20
+    prevalece e que somente se um servi=E7o esta dispon=EDvel em ambos =
+os protocolos=20
+    <EM>tcp</EM> e <EM>udp</EM>, voc=EA precisar=E1 especificar ambos. =
+</LI></UL>
+  <DT>apelidos=20
+  <DD>Outros nomes podem ser usados para se referir a entrada deste =
+servi=E7o.=20
+  <DT>coment=E1rio=20
+  <DD>Qualquer texto aparecendo em uma linha ap=F3s um caracter "#" =E9 =
+ignorado e=20
+  tratado como coment=E1rio. </DD></DL>
+<HR>
+<A name=3Ds-rede-outros-protocols></A>
+<H3>15.9.2 /etc/protocols</H3>
+<P>O arquivo <CODE>/etc/protocols</CODE> =E9 um banco de dados que =
+mapeia n=FAmeros=20
+de identifica=E7=E3o de protocolos novamente em nomes de protocolos. =
+Isto =E9 usado=20
+por programadores para permiti-los especificar protocolos por nomes em =
+seus=20
+programas e tamb=E9m por alguns programas tal como <EM>tcpdump</EM> =
+permitindo-os=20
+mostrar <EM>nomes</EM> ao inv=E9s de <EM>n=FAmeros</EM> em sua sa=EDda. =
+A sintaxe=20
+geral deste arquivo =E9: <PRE>        nomeprotocolo  n=FAmero  apelidos
+</PRE>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ 15 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

@@ -1,0 +1,971 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Guia Foca GNU/Linux</title>
+
+</head>
+
+<body>
+
+<a name="index"></a>
+<hr>
+
+[ <a href="ch-apend.htm">anterior</a> ]
+[ <a href="#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ <a href="ch-hardw.htm">3</a> ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ <a href="ch-cmdd.htm">8</a> ]
+[ <a href="ch-cmd.htm">9</a> ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ <a href="ch-cmdc.htm">12</a> ]
+[ <a href="ch-perm.htm">13</a> ]
+[ <a href="ch-redir.htm">14</a> ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ <a href="ch-cpctd.htm">18</a> ]
+[ <a href="ch-deb.htm">19</a> ]
+[ <a href="ch-dpkg.htm">20</a> ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ <a href="ch-cfg.htm">23</a> ]
+[ <a href="ch-tasks.htm">24</a> ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ <a href="ch-etc.htm">27</a> ]
+[ <a href="ch-inter.htm">28</a> ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ <a href="ch-apend.htm">32</a> ]
+[ <a href="ch-intro.htm">próximo</a> ]
+
+<hr>
+
+<h1>
+Guia Foca GNU/Linux
+<br></h1>
+
+<hr>
+
+<a name="abstract"></a>
+<h2>Resumo</h2>
+
+<p>
+Este documento tem por objetivo ser uma referência ao aprendizado do usuário e
+um guia de consulta, operação e configuração de sistemas Linux (e outros tipos
+de *ix).  A última versão deste guia pode ser encontrada na <code><a
+href="http://www.guiafoca.org">Página Oficial do Foca GNU/Linux</a></code>.
+Novas versões são lançadas com uma freqüência mensal e você pode receber avisos
+de novos lançamentos deste guia preenchendo um formulário na página Web.
+
+<hr>
+
+<a name="copyright"></a>
+<h2>Nota de Copyright</h2>
+
+<p>
+Copyright &copy; 1999-2006 - Gleydson Mazioli da Silva.
+
+<p>
+Permission is granted to copy, distribute and/or modify this document under the
+terms of the GNU Free Documentation License, Version 1.1 or any later version
+published by the Free Software Foundation; A copy of the license is included in
+the section entitled &quot;GNU Free Documentation License&quot;.
+
+<hr>
+
+<a name="contents"></a>
+<h2>Conteúdo</h2>
+
+<ul>
+<li><a href="ch-intro.htm">1 Introdução</a></li>
+<ul>
+<li><a href="ch-intro.htm#s-introducao-palavras">1.1 Antes de começar</a></li>
+<li><a href="ch-intro.htm#s-introducao-requisitos">1.2 Pré-requisitos para a utilização deste guia</a></li>
+<li><a href="ch-intro.htm#s-introducao-so">1.3 Sistema Operacional</a></li>
+<li><a href="ch-intro.htm#s-introducao-linux">1.4 O Linux</a></li>
+<ul>
+<li><a href="ch-intro.htm#s-introducao-linux-carac">1.4.1 Algumas Características do Linux</a></li>
+</ul>
+<li><a href="ch-intro.htm#s-introducao-distrib">1.5 Distribuições do Linux</a></li>
+<li><a href="ch-intro.htm#s-introducao-software-livre">1.6 Software Livre</a></li>
+<li><a href="ch-intro.htm#s-introducao-processamento">1.7 Processamento de Dados</a></li>
+<li><a href="ch-intro.htm#s-introducao-computador">1.8 O Computador</a></li>
+<li><a href="ch-intro.htm#s-introducao-conhecendo">1.9 Conhecendo o Computador</a></li>
+<ul>
+<li><a href="ch-intro.htm#s-introducao-conhecendo-tipo">1.9.1 Tipos de Gabinete</a></li>
+<li><a href="ch-intro.htm#s-introducao-conhecendo-painel">1.9.2 Painel Frontal</a></li>
+<li><a href="ch-intro.htm#s-introducao-conhecendo-monitor">1.9.3 Monitor de Vídeo</a></li>
+</ul>
+<li><a href="ch-intro.htm#s-introducao-placamae">1.10 Placa Mãe</a></li>
+<ul>
+<li><a href="ch-intro.htm#s-introducao-placamae-outros">1.10.1 Alguns componentes da placa mãe</a></li>
+</ul>
+<li><a href="ch-intro.htm#s-introducao-memoria">1.11 Memória do Computador</a></li>
+<ul>
+<li><a href="ch-intro.htm#s-introducao-memoria-principal">1.11.1 Memória Principal</a></li>
+<li><a href="ch-intro.htm#s-introducao-memoria-auxiliar">1.11.2 Memória Auxiliar</a></li>
+</ul>
+<li><a href="ch-intro.htm#s-introducao-discos">1.12 Discos</a></li>
+<ul>
+<li><a href="ch-intro.htm#s-introducao-discos-flexiveis">1.12.1 Discos Flexíveis</a></li>
+<li><a href="ch-intro.htm#s-introducao-discos-rigidos">1.12.2 Disco Rígido</a></li>
+<li><a href="ch-intro.htm#s-introducao-discos-cd">1.12.3 CD</a></li>
+</ul>
+<li><a href="ch-intro.htm#s-introducao-cuidados">1.13 Cuidados Básicos com o Computador e Disquetes</a></li>
+<li><a href="ch-intro.htm#s-introducao-disp-e-s">1.14 Dispositivos de Entrada e Saída</a></li>
+<li><a href="ch-intro.htm#s-introducao-ligando">1.15 Ligando o computador</a></li>
+<li><a href="ch-intro.htm#s-introducao-desligando">1.16 Desligando o computador</a></li>
+<li><a href="ch-intro.htm#s-introducao-reiniciando">1.17 Reiniciando o computador</a></li>
+</ul>
+<li><a href="ch-bas.htm">2 Explicações Básicas</a></li>
+<ul>
+<li><a href="ch-bas.htm#s-basico-hardsoft">2.1 Hardware e Software</a></li>
+<li><a href="ch-bas.htm#s-basico-arquivo">2.2 Arquivos</a></li>
+<ul>
+<li><a href="ch-bas.htm#s-basico-arquivo-tipos">2.2.1 Extensão de arquivos</a></li>
+<li><a href="ch-bas.htm#s-basico-arquivo-tamanho">2.2.2 Tamanho de arquivos</a></li>
+<li><a href="ch-bas.htm#s-basico-arquivo-bintext">2.2.3 Arquivo texto e binário</a></li>
+</ul>
+<li><a href="ch-bas.htm#s-basico-diretorio">2.3 Diretório</a></li>
+<ul>
+<li><a href="ch-bas.htm#s-basico-diretorio-raiz">2.3.1 Diretório Raíz</a></li>
+<li><a href="ch-bas.htm#s-basico-diretorio-atual">2.3.2 Diretório atual</a></li>
+<li><a href="ch-bas.htm#s-basico-diretorio-home">2.3.3 Diretório home</a></li>
+<li><a href="ch-bas.htm#s-basico-diretorio-superior">2.3.4 Diretório Superior</a></li>
+<li><a href="ch-bas.htm#s-basico-diretorio-anterior">2.3.5 Diretório Anterior</a></li>
+<li><a href="ch-bas.htm#s-basico-diretorio-caminho">2.3.6 Caminho na estrutura de diretórios</a></li>
+<li><a href="ch-bas.htm#s-basico-diretorio-exemplo">2.3.7 Exemplo de diretório</a></li>
+<li><a href="ch-bas.htm#s-basico-diretorio-estrutura">2.3.8 Estrutura básica de diretórios do Sistema Linux</a></li>
+</ul>
+<li><a href="ch-bas.htm#s-basico-nomeando">2.4 Nomeando Arquivos e Diretórios</a></li>
+<li><a href="ch-bas.htm#s-basico-comandos">2.5 Comandos</a></li>
+<ul>
+<li><a href="ch-bas.htm#s-basico-comandos-internos">2.5.1 Comandos Internos</a></li>
+</ul>
+<li><a href="ch-bas.htm#s-basico-comandos-externos">2.6 Comandos Externos</a></li>
+<li><a href="ch-bas.htm#s-basico-avisocmd">2.7 Aviso de comando (Prompt)</a></li>
+<li><a href="ch-bas.htm#s-basico-interpcmd">2.8 Interpretador de comandos</a></li>
+<li><a href="ch-bas.htm#s-basico-terminal">2.9 Terminal Virtual (console)</a></li>
+<li><a href="ch-bas.htm#s-basico-login">2.10 Login</a></li>
+<li><a href="ch-bas.htm#s-basico-logout">2.11 Logout</a></li>
+<li><a href="ch-bas.htm#s-basico-curingas">2.12 Curingas</a></li>
+</ul>
+<li><a href="ch-hardw.htm">3 Hardware</a></li>
+<ul>
+<li><a href="ch-hardw.htm#s-hardw-placas">3.1 Placa de expansão</a></li>
+<li><a href="ch-hardw.htm#s-hardw-nomesdisp">3.2 Nomes de dispositivos</a></li>
+<li><a href="ch-hardw.htm#s-hardw-cfg">3.3 Configuração de Hardware</a></li>
+<ul>
+<li><a href="ch-hardw.htm#s-hardw-cfg-irq">3.3.1 IRQ - Requisição de Interrupção</a></li>
+<ul>
+<li><a href="ch-hardw.htm#s3.3.1.1">3.3.1.1 Prioridade das Interrupções</a></li>
+</ul>
+<li><a href="ch-hardw.htm#s-hardw-cfg-dma">3.3.2 DMA - Acesso Direto a Memória</a></li>
+<ul>
+<li><a href="ch-hardw.htm#s3.3.2.1">3.3.2.1 Conflitos de DMA</a></li>
+</ul>
+<li><a href="ch-hardw.htm#s-hardw-cfg-io">3.3.3 I/O - Porta de Entrada/Saída</a></li>
+</ul>
+<li><a href="ch-hardw.htm#s-hardw-metodoscfg">3.4 Hardwares configuráveis por jumpers, dip-switches, jumperless e Plug-and-Play.</a></li>
+<ul>
+<li><a href="ch-hardw.htm#s-hardw-metodoscfg-jumpers">3.4.1 Jumpers</a></li>
+<li><a href="ch-hardw.htm#s-hardw-metodoscfg-dipswitche">3.4.2 Dip-Switches</a></li>
+<li><a href="ch-hardw.htm#s-hardw-metodoscfg-jumperless">3.4.3 Jumperless (sem jumper)</a></li>
+<li><a href="ch-hardw.htm#s-hardw-metodoscfg-plug-and-play">3.4.4 Plug-and-Play</a></li>
+<ul>
+<li><a href="ch-hardw.htm#s-hardw-metodoscfg-plug-and-play-e">3.4.4.1 Entendendo o arquivo de configuração <code>isapnp.conf</code></a></li>
+</ul>
+</ul>
+<li><a href="ch-hardw.htm#s-hardw-findhw">3.5 Listando as placas e outros hardwares em um computador</a></li>
+<li><a href="ch-hardw.htm#s-hardw-conflitos">3.6 Conflitos de hardware</a></li>
+<li><a href="ch-hardw.htm#s-hard-barramento">3.7 Barramento</a></li>
+<li><a href="ch-hardw.htm#s-hard-onoffboard">3.8 Placas on-board / off-board</a></li>
+<li><a href="ch-hardw.htm#s-hard-forwindows">3.9 Hardwares específicos ou &quot;For Windows&quot;</a></li>
+<li><a href="ch-hardw.htm#s3.10">3.10 Dispositivos específicos para GNU/Linux</a></li>
+<li><a href="ch-hardw.htm#s-hardw-cfgdisp">3.11 Configurações de Dispositivos</a></li>
+<ul>
+<li><a href="ch-hardw.htm#s-hardw-cfgdisp-rede">3.11.1 Configurando uma placa de rede</a></li>
+<li><a href="ch-hardw.htm#s-hardw-cfgdisp-som">3.11.2 Configurando uma placa de SOM no Linux</a></li>
+<ul>
+<li><a href="ch-hardw.htm#s-hardw-cfgdisp-som-hwreq">3.11.2.1 Reservando os recursos de hardware para sua placa de som</a></li>
+<li><a href="ch-hardw.htm#s-hardw-cfgdisp-som-oss">3.11.2.2 Configurando uma placa de som usando o padrão OSS</a></li>
+</ul>
+<li><a href="ch-hardw.htm#s-hardw-cfgdisp-cdwritter">3.11.3 Configurando um gravador de CD no Linux</a></li>
+<ul>
+<li><a href="ch-hardw.htm#s-hardw-cfgdisp-cdwritter-ide">3.11.3.1 Configurando o suporte a um gravador IDE</a></li>
+<li><a href="ch-hardw.htm#s-hardw-cfgdisp-cdwritter-scsi">3.11.3.2 Configurando o suporte a um gravador SCSI</a></li>
+<li><a href="ch-hardw.htm#s-hardw-cfgdisp-cdwritter-teste">3.11.3.3 Testando o funcionamento</a></li>
+</ul>
+<li><a href="ch-hardw.htm#s-hardw-cfgdisp-apm">3.11.4 Configurando o gerenciamento de energia usando o APM</a></li>
+<li><a href="ch-hardw.htm#s-hardw-cfgdisp-acpi">3.11.5 Configurando o gerenciamento de energia usando ACPI</a></li>
+<li><a href="ch-hardw.htm#s-hardw-cfgdisp-wol">3.11.6 Ativando WakeUP on Lan</a></li>
+</ul>
+</ul>
+<li><a href="ch-d-l.htm">4 Para quem esta migrando (ou pensando em migrar) do DOS/Windows para o Linux</a></li>
+<ul>
+<li><a href="ch-d-l.htm#s-d-l-compar">4.1 Quais as diferenças iniciais</a></li>
+<li><a href="ch-d-l.htm#s-d-l-comandos">4.2 Comandos equivalentes entre DOS e Linux</a></li>
+<ul>
+<li><a href="ch-d-l.htm#s4.2.1">4.2.1 Arquivos de configuração</a></li>
+</ul>
+<li><a href="ch-d-l.htm#s-d-l-mtools">4.3 Usando a sintaxe de comandos DOS no Linux</a></li>
+<li><a href="ch-d-l.htm#s-d-l-programas">4.4 Programas equivalentes entre Windows/DOS e o Linux</a></li>
+</ul>
+<li><a href="ch-disc.htm">5 Discos e Partições</a></li>
+<ul>
+<li><a href="ch-disc.htm#s-disc-particoes">5.1 Partições</a></li>
+<li><a href="ch-disc.htm#s-disc-sistarq">5.2 Sistema de Arquivos</a></li>
+<li><a href="ch-disc.htm#s-disc-ext2">5.3 Partição EXT2 (Linux Native)</a></li>
+<ul>
+<li><a href="ch-disc.htm#s-disc-ext2-criando-p">5.3.1 Criando um sistema de arquivos EXT2 em uma partição</a></li>
+<li><a href="ch-disc.htm#s-disc-ext2-criando-a">5.3.2 Criando um sistema de arquivos EXT2 em um arquivo</a></li>
+</ul>
+<li><a href="ch-disc.htm#s-disc-journal">5.4 Journaling</a></li>
+<li><a href="ch-disc.htm#s-disc-ext3">5.5 Partição EXT3 (Linux Native)</a></li>
+<ul>
+<li><a href="ch-disc.htm#s-disc-ext3-criando-p">5.5.1 Criando um sistema de arquivos EXT3 em uma partição</a></li>
+<li><a href="ch-disc.htm#s-disc-ext3-criando-a">5.5.2 Criando um sistema de arquivos EXT3 em um arquivo</a></li>
+<li><a href="ch-disc.htm#s-disc-ext3-conv2-3">5.5.3 Fazendo a conversão do sistema de arquivos EXT2 para EXT3</a></li>
+<li><a href="ch-disc.htm#s-disc-ext3-conv3-2">5.5.4 Convertendo de EXT3 para EXT2</a></li>
+</ul>
+<li><a href="ch-disc.htm#s-disc-reiserfs">5.6 Sistema de arquivos reiserfs</a></li>
+<ul>
+<li><a href="ch-disc.htm#s-disc-reiserfs-criando-p">5.6.1 Criando um sistema de arquivos reiserfs em uma partição</a></li>
+<li><a href="ch-disc.htm#s-disc-reiserfs-criando-a">5.6.2 Criando um sistema de arquivos reiserfs em um arquivo</a></li>
+<li><a href="ch-disc.htm#s-disc-e2label">5.6.3 Nomeando uma partição de disco</a></li>
+<li><a href="ch-disc.htm#s-disc-mklost+found">5.6.4 Criando o diretório especial <code>lost+found</code></a></li>
+<li><a href="ch-disc.htm#s-disc-dumpe2fs">5.6.5 dumpe2fs</a></li>
+<li><a href="ch-disc.htm#s-disc-ext2xarquivo">5.6.6 Partição EXT2 ou Arquivo?</a></li>
+</ul>
+<li><a href="ch-disc.htm#s-disc-swap">5.7 Partição Linux Swap (Memória Virtual)</a></li>
+<ul>
+<li><a href="ch-disc.htm#s-disc-swap-criando-p">5.7.1 Criando sistema de arquivos Swap em uma partição</a></li>
+<li><a href="ch-disc.htm#s-disc-swap-criando-a">5.7.2 Criando um sistema de arquivos Swap em um arquivo</a></li>
+<li><a href="ch-disc.htm#s-disc-swap-swapxarquivo">5.7.3 Partição Swap ou Arquivo?</a></li>
+</ul>
+<li><a href="ch-disc.htm#s-disc-proc">5.8 O sistema de arquivos <code>/proc</code></a></li>
+<li><a href="ch-disc.htm#s-disc-lvm">5.9 LVM - Logical Volume Manager</a></li>
+<ul>
+<li><a href="ch-disc.htm#s-disc-lvm-graph">5.9.1 Representação gráfica do LVM</a></li>
+<li><a href="ch-disc.htm#s-disc-lvm-perf">5.9.2 Performance do LVM</a></li>
+<li><a href="ch-disc.htm#s-disc-lvm-install">5.9.3 Colocando LVM em seu sistema</a></li>
+<li><a href="ch-disc.htm#s-disc-lvm-grow">5.9.4 Aumentando o tamanho de um volume lógico</a></li>
+<li><a href="ch-disc.htm#s-disc-lvm-shrink">5.9.5 Diminuindo um volume lógico</a></li>
+</ul>
+<li><a href="ch-disc.htm#s-disc-formatando">5.10 Formatando disquetes</a></li>
+<ul>
+<li><a href="ch-disc.htm#s-disc-formatando-l">5.10.1 Formatando disquetes para serem usados no Linux</a></li>
+<li><a href="ch-disc.htm#s-disc-formatando-d">5.10.2 Formatando disquetes compatíveis com o DOS/Windows</a></li>
+<li><a href="ch-disc.htm#s-disc-formatando-g">5.10.3 Programas de Formatação Gráficos</a></li>
+</ul>
+<li><a href="ch-disc.htm#s-disc-pontomontagem">5.11 Pontos de Montagem</a></li>
+<li><a href="ch-disc.htm#s-disc-id">5.12 Identificação de discos e partições em sistemas Linux</a></li>
+<li><a href="ch-disc.htm#s-disc-montagem">5.13 Montando (acessando) uma partição de disco</a></li>
+<ul>
+<li><a href="ch-disc.htm#s-disc-fstab">5.13.1 fstab</a></li>
+</ul>
+<li><a href="ch-disc.htm#s-disc-desmontagem">5.14 Desmontando uma partição de disco</a></li>
+</ul>
+<li><a href="ch-boot.htm">6 Gerenciadores de Partida (boot loaders)</a></li>
+<ul>
+<li><a href="ch-boot.htm#s-boot-lilo">6.1 LILO</a></li>
+<ul>
+<li><a href="ch-boot.htm#s-boot-lilo-cfg">6.1.1 Criando o arquivo de configuração do LILO</a></li>
+<li><a href="ch-boot.htm#s-boot-lilo-opcoes">6.1.2 Opções usadas no LILO</a></li>
+<li><a href="ch-boot.htm#s-boot-lilo-exemplo">6.1.3 Um exemplo do arquivo de configuração lilo.conf</a></li>
+</ul>
+<li><a href="ch-boot.htm#s-boot-grub">6.2 GRUB</a></li>
+<ul>
+<li><a href="ch-boot.htm#s-boot-grub-part">6.2.1 Como o GRUB trabalha com discos e partições</a></li>
+<li><a href="ch-boot.htm#s-boot-grub-install">6.2.2 Instalando o GRUB</a></li>
+<ul>
+<li><a href="ch-boot.htm#s-boot-grub-install-mbr">6.2.2.1 No MBR</a></li>
+</ul>
+<li><a href="ch-boot.htm#s-boot-grub-install-fd-cmd">6.2.3 No disco flexível (somente linha de comando)</a></li>
+<li><a href="ch-boot.htm#s-boot-grub-install-fd-menu">6.2.4 No disco flexível (com interface de menu)</a></li>
+<li><a href="ch-boot.htm#s-boot-grub-opcoescfg">6.2.5 Opções do arquivo de configuração</a></li>
+<li><a href="ch-boot.htm#s-boot-grub-exemplo">6.2.6 Um exemplo de arquivo de configuração</a></li>
+<li><a href="ch-boot.htm#s-boot-grub-cmdline">6.2.7 Usando a linha de comandos do GRUB</a></li>
+<li><a href="ch-boot.htm#s-boot-grub-removendo">6.2.8 Removendo o GRUB do MBR</a></li>
+<li><a href="ch-boot.htm#s-boot-grub-detalhes">6.2.9 Como obter informações mais detalhadas</a></li>
+</ul>
+<li><a href="ch-boot.htm#s-boot-kernelparam">6.3 Parâmetros de inicialização passados ao kernel</a></li>
+<li><a href="ch-boot.htm#s-boot-loadlin">6.4 LOADLIN</a></li>
+<ul>
+<li><a href="ch-boot.htm#s-boot-loadlin-opcoes">6.4.1 Opções do LOADLIN</a></li>
+<li><a href="ch-boot.htm#s-boot-loadlin-exemplo">6.4.2 Exemplo de inicialização com o LOADLIN</a></li>
+</ul>
+<li><a href="ch-boot.htm#s-boot-syslinux">6.5 syslinux</a></li>
+<ul>
+<li><a href="ch-boot.htm#s-boot-syslinux-criando">6.5.1 Criando um disquete de inicialização com o syslinux</a></li>
+<li><a href="ch-boot.htm#s-boot-syslinux-opcoes">6.5.2 O arquivo SYSLINUX.CFG</a></li>
+<li><a href="ch-boot.htm#s-boot-syslinux-formatacao">6.5.3 Formatação dos arquivos de tela do syslinux</a></li>
+</ul>
+</ul>
+<li><a href="ch-run.htm">7 Execução de programas</a></li>
+<ul>
+<li><a href="ch-run.htm#s-run-prgn">7.1 Executando um comando/programa</a></li>
+<li><a href="ch-run.htm#s-run-path">7.2 path</a></li>
+<li><a href="ch-run.htm#s-run-tipos">7.3 Tipos de Execução de comandos/programas</a></li>
+<li><a href="ch-run.htm#s-run-seq">7.4 Executando programas em seqüência</a></li>
+<li><a href="ch-run.htm#s-run-ps">7.5 ps</a></li>
+<li><a href="ch-run.htm#s-run-top">7.6 top</a></li>
+<li><a href="ch-run.htm#s-run-controle">7.7 Controle de execução de processos</a></li>
+<ul>
+<li><a href="ch-run.htm#s-run-break">7.7.1 Interrompendo a execução de um processo</a></li>
+<li><a href="ch-run.htm#s-run-pausa">7.7.2 Parando momentaneamente a execução de um processo</a></li>
+<li><a href="ch-run.htm#s-run-ver-backgrounds">7.7.3 jobs</a></li>
+<li><a href="ch-run.htm#s-run-fg">7.7.4 fg</a></li>
+<li><a href="ch-run.htm#s-run-bg">7.7.5 bg</a></li>
+<li><a href="ch-run.htm#s-run-kill">7.7.6 kill</a></li>
+<li><a href="ch-run.htm#s-run-killall">7.7.7 killall</a></li>
+<li><a href="ch-run.htm#s-run-killall5">7.7.8 killall5</a></li>
+<li><a href="ch-run.htm#s-run-sinais">7.7.9 Sinais do Sistema</a></li>
+</ul>
+<li><a href="ch-run.htm#s-run-nohup">7.8 nohup</a></li>
+<li><a href="ch-run.htm#s-run-nice">7.9 nice</a></li>
+<li><a href="ch-run.htm#s-run-fuser">7.10 fuser</a></li>
+<li><a href="ch-run.htm#s-run-tload">7.11 tload</a></li>
+<li><a href="ch-run.htm#s-run-vmstat">7.12 vmstat</a></li>
+<li><a href="ch-run.htm#s-run-pidof">7.13 pidof</a></li>
+<li><a href="ch-run.htm#s-run-pstree">7.14 pstree</a></li>
+<li><a href="ch-run.htm#s-run-fechando">7.15 Fechando um programa quando não se sabe como sair</a></li>
+<li><a href="ch-run.htm#s-run-reset">7.16 Eliminando caracteres estranhos</a></li>
+</ul>
+<li><a href="ch-cmdd.htm">8 Comandos para manipulação de diretório</a></li>
+<ul>
+<li><a href="ch-cmdd.htm#s-comando-ls">8.1 ls</a></li>
+<li><a href="ch-cmdd.htm#s-comando-cd">8.2 cd</a></li>
+<li><a href="ch-cmdd.htm#s-comando-pwd">8.3 pwd</a></li>
+<li><a href="ch-cmdd.htm#s-comando-mkdir">8.4 mkdir</a></li>
+<li><a href="ch-cmdd.htm#s-comando-rmdir">8.5 rmdir</a></li>
+</ul>
+<li><a href="ch-cmd.htm">9 Comandos para manipulação de Arquivos</a></li>
+<ul>
+<li><a href="ch-cmd.htm#s-comandos-cat">9.1 cat</a></li>
+<li><a href="ch-cmd.htm#s-comando-tac">9.2 tac</a></li>
+<li><a href="ch-cmd.htm#s-comando-rm">9.3 rm</a></li>
+<li><a href="ch-cmd.htm#s-comando-cp">9.4 cp</a></li>
+<li><a href="ch-cmd.htm#s-comando-mv">9.5 mv</a></li>
+</ul>
+<li><a href="ch-cmdv.htm">10 Comandos Diversos</a></li>
+<ul>
+<li><a href="ch-cmdv.htm#s-cmdv-clear">10.1 clear</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-date">10.2 date</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-df">10.3 df</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-ln">10.4 ln</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-du">10.5 du</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-find">10.6 find</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-free">10.7 free</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-grep">10.8 grep</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-head">10.9 head</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-nl">10.10 nl</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-more">10.11 more</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-less">10.12 less</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-sort">10.13 sort</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-tail">10.14 tail</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-time">10.15 time</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-touch">10.16 touch</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-uptime">10.17 uptime</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-dmesg">10.18 dmesg</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-mesg">10.19 mesg</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-echo">10.20 echo</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-su">10.21 su</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-sync">10.22 sync</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-uname">10.23 uname</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-reboot">10.24 reboot</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-shutdown">10.25 shutdown</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-wc">10.26 wc</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-seq">10.27 seq</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-chattr">10.28 chattr</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-lsattr">10.29 lsattr</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-cut">10.30 cut</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-cmp">10.31 cmp</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-dirname">10.32 dirname</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-diff">10.33 diff</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-pr">10.34 pr</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-patch">10.35 patch</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-whereis">10.36 whereis</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-which">10.37 which</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-zforce">10.38 zforce</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-gzexe">10.39 gzexe</a></li>
+<li><a href="ch-cmdv.htm#s-cmdv-znew">10.40 znew</a></li>
+</ul>
+<li><a href="ch-cmdn.htm">11 Comandos de rede</a></li>
+<ul>
+<li><a href="ch-cmdn.htm#s-cmdn-who">11.1 who</a></li>
+<li><a href="ch-cmdn.htm#s-cmdn-telnet">11.2 Telnet</a></li>
+<li><a href="ch-cmdn.htm#s-cmdn-finger">11.3 finger</a></li>
+<li><a href="ch-cmdn.htm#s-cmdn-ftp">11.4 ftp</a></li>
+<li><a href="ch-cmdn.htm#s-cmdn-whoami">11.5 whoami</a></li>
+<li><a href="ch-cmdn.htm#s-cmdn-dnsdomainname">11.6 dnsdomainname</a></li>
+<li><a href="ch-cmdn.htm#s-cmdn-hostname">11.7 hostname</a></li>
+<li><a href="ch-cmdn.htm#s-cmdn-talk">11.8 talk</a></li>
+<li><a href="ch-cmdn.htm#s-cmdn-ping">11.9 ping</a></li>
+<li><a href="ch-cmdn.htm#s-cmdn-rlogin">11.10 rlogin</a></li>
+<li><a href="ch-cmdn.htm#s-cmdn-rsh">11.11 rsh</a></li>
+<li><a href="ch-cmdn.htm#s-cmdn-w">11.12 w</a></li>
+<li><a href="ch-cmdn.htm#s-cmdn-traceroute">11.13 traceroute</a></li>
+<li><a href="ch-cmdn.htm#s-cmdn-netstat">11.14 netstat</a></li>
+<li><a href="ch-cmdn.htm#s-cmdv-wall">11.15 wall</a></li>
+</ul>
+<li><a href="ch-cmdc.htm">12 Comandos para manipulação de contas</a></li>
+<ul>
+<li><a href="ch-cmdc.htm#s-cmdc-adduser">12.1 adduser</a></li>
+<li><a href="ch-cmdc.htm#s-cmdc-addgroup">12.2 addgroup</a></li>
+<li><a href="ch-cmdc.htm#s-cmdc-passwd">12.3 passwd</a></li>
+<li><a href="ch-cmdc.htm#s-cmdc-newgrp">12.4 newgrp</a></li>
+<li><a href="ch-cmdc.htm#s-cmdc-userdel">12.5 userdel</a></li>
+<li><a href="ch-cmdc.htm#s-cmdc-groupdel">12.6 groupdel</a></li>
+<li><a href="ch-cmdc.htm#s-cmdc-lastlog">12.7 lastlog</a></li>
+<li><a href="ch-cmdc.htm#s-cmdc-last">12.8 last</a></li>
+<li><a href="ch-cmdc.htm#s-cmdc-sg">12.9 sg</a></li>
+<li><a href="ch-cmdc.htm#s-cmdc-incluirgrupo">12.10 Adicionando o usuário a um grupo extra</a></li>
+<li><a href="ch-cmdc.htm#s-cmdc-chfn">12.11 chfn</a></li>
+<li><a href="ch-cmdc.htm#s-cmdc-id">12.12 id</a></li>
+<li><a href="ch-cmdc.htm#s-cmdc-logname">12.13 logname</a></li>
+<li><a href="ch-cmdc.htm#s-cmdc-users">12.14 users</a></li>
+<li><a href="ch-cmdc.htm#s-cmdc-groups">12.15 groups</a></li>
+</ul>
+<li><a href="ch-perm.htm">13 Permissões de acesso a arquivos e diretórios</a></li>
+<ul>
+<li><a href="ch-perm.htm#s-perm-user-group">13.1 Donos, grupos e outros usuários</a></li>
+<li><a href="ch-perm.htm#s-perm-tipos">13.2 Tipos de Permissões de acesso</a></li>
+<li><a href="ch-perm.htm#s-perm-acessando">13.3 Etapas para acesso a um arquivo/diretório</a></li>
+<li><a href="ch-perm.htm#s-perm-exemplo">13.4 Exemplos práticos de permissões de acesso</a></li>
+<ul>
+<li><a href="ch-perm.htm#s-perm-exemplo-a">13.4.1 Exemplo de acesso a um arquivo</a></li>
+<li><a href="ch-perm.htm#s-perm-exemplo-d">13.4.2 Exemplo de acesso a um diretório</a></li>
+</ul>
+<li><a href="ch-perm.htm#s-perm-especiais">13.5 Permissões de Acesso Especiais</a></li>
+<li><a href="ch-perm.htm#s-perm-root">13.6 A conta root</a></li>
+<li><a href="ch-perm.htm#s-perm-chmod">13.7 chmod</a></li>
+<li><a href="ch-perm.htm#s-perm-chgrp">13.8 chgrp</a></li>
+<li><a href="ch-perm.htm#s-perm-chown">13.9 chown</a></li>
+<li><a href="ch-perm.htm#s-perm-octal">13.10 Modo de permissão octal</a></li>
+<li><a href="ch-perm.htm#s-perm-umask">13.11 umask</a></li>
+</ul>
+<li><a href="ch-redir.htm">14 Redirecionamentos e Pipe</a></li>
+<ul>
+<li><a href="ch-redir.htm#s-redir-maior">14.1 &gt;</a></li>
+<li><a href="ch-redir.htm#s-redir-maior2">14.2 &gt;&gt;</a></li>
+<li><a href="ch-redir.htm#s-redir-menor">14.3 &lt;</a></li>
+<li><a href="ch-redir.htm#s-redir-menor2">14.4 &lt;&lt;</a></li>
+<li><a href="ch-redir.htm#s-redir-pipe">14.5 | (pipe)</a></li>
+<li><a href="ch-redir.htm#s14.6">14.6 Diferença entre o &quot;|&quot; e o &quot;&gt;&quot;</a></li>
+<li><a href="ch-redir.htm#s-redir-tee">14.7 tee</a></li>
+</ul>
+<li><a href="ch-rede.htm">15 Rede</a></li>
+<ul>
+<li><a href="ch-rede.htm#s-rede-oque">15.1 O que é uma rede</a></li>
+<li><a href="ch-rede.htm#s-rede-protocolo">15.2 Protocolo de Rede</a></li>
+<li><a href="ch-rede.htm#s-rede-ip">15.3 Endereço IP</a></li>
+<ul>
+<li><a href="ch-rede.htm#s-rede-ip-classes">15.3.1 Classes de Rede IP</a></li>
+<li><a href="ch-rede.htm#s-rede-ip-nova">15.3.2 Para instalar uma máquina usando o Linux em uma rede existente</a></li>
+<li><a href="ch-rede.htm#s-rede-ip-privada">15.3.3 Endereços reservados para uso em uma rede Privada</a></li>
+</ul>
+<li><a href="ch-rede.htm#s-rede-interfaces">15.4 Interface de rede</a></li>
+<ul>
+<li><a href="ch-rede.htm#s-rede-interfaces-lo">15.4.1 A interface loopback</a></li>
+<li><a href="ch-rede.htm#s-rede-interfaces-c">15.4.2 Atribuindo um endereço de rede a uma interface (ifconfig)</a></li>
+</ul>
+<li><a href="ch-rede.htm#s-rede-rota">15.5 Roteamento</a></li>
+<ul>
+<li><a href="ch-rede.htm#s-rede-rota-c">15.5.1 Configurando uma rota no Linux</a></li>
+</ul>
+<li><a href="ch-rede.htm#s-rede-dns">15.6 Resolvedor de nomes (DNS)</a></li>
+<ul>
+<li><a href="ch-rede.htm#s-rede-dns-oque">15.6.1 O que é um nome?</a></li>
+<li><a href="ch-rede.htm#s-rede-dns-a">15.6.2 Arquivos de configuração usados na resolução de nomes</a></li>
+<ul>
+<li><a href="ch-rede.htm#s-rede-dns-a-resolv">15.6.2.1 /etc/resolv.conf</a></li>
+<li><a href="ch-rede.htm#s-rede-dns-a-hostconf">15.6.2.2 /etc/host.conf</a></li>
+<li><a href="ch-rede.htm#s-rede-dns-a-hosts">15.6.2.3 /etc/hosts</a></li>
+<li><a href="ch-rede.htm#s-rede-dns-a-networks">15.6.2.4 /etc/networks</a></li>
+</ul>
+<li><a href="ch-rede.htm#s-rede-dns-servdns">15.6.3 Executando um servidor de nomes</a></li>
+</ul>
+<li><a href="ch-rede.htm#s-rede-servicos">15.7 Serviços de Rede</a></li>
+<ul>
+<li><a href="ch-rede.htm#s-rede-servicos-daemon">15.7.1 Serviços iniciados como Daemons de rede</a></li>
+<li><a href="ch-rede.htm#s-rede-servicos-inetd">15.7.2 Serviços iniciados através do inetd</a></li>
+<ul>
+<li><a href="ch-rede.htm#s-rede-servicos-inetd-c">15.7.2.1 /etc/inetd.conf</a></li>
+</ul>
+</ul>
+<li><a href="ch-rede.htm#s-rede-seg">15.8 Segurança da Rede e controle de Acesso</a></li>
+<ul>
+<li><a href="ch-rede.htm#s-rede-seg-ftpusers">15.8.1 /etc/ftpusers</a></li>
+<li><a href="ch-rede.htm#s-rede-seg-securetty">15.8.2 /etc/securetty</a></li>
+<li><a href="ch-rede.htm#s-rede-seg-tcpd">15.8.3 O mecanismo de controle de acessos tcpd</a></li>
+<ul>
+<li><a href="ch-rede.htm#s-rede-seg-tcpd-a">15.8.3.1 /etc/hosts.allow</a></li>
+<li><a href="ch-rede.htm#s-rede-seg-tcpd-d">15.8.3.2 /etc/hosts.deny</a></li>
+<li><a href="ch-rede.htm#s-rede-seg-tcpd-e">15.8.3.3 /etc/hosts.equiv e /etc/shosts.equiv</a></li>
+<li><a href="ch-rede.htm#s-rede-seg-tcpd-v">15.8.3.4 Verificando a segurança do TCPD e a sintaxe dos arquivos</a></li>
+</ul>
+<li><a href="ch-rede.htm#s-rede-seg-firewall">15.8.4 Firewall</a></li>
+</ul>
+<li><a href="ch-rede.htm#s-rede-outros">15.9 Outros arquivos de configuração relacionados com a rede</a></li>
+<ul>
+<li><a href="ch-rede.htm#s-rede-outros-services">15.9.1 /etc/services</a></li>
+<li><a href="ch-rede.htm#s-rede-outros-protocols">15.9.2 /etc/protocols</a></li>
+</ul>
+</ul>
+<li><a href="ch-kern.htm">16 Kernel e Módulos</a></li>
+<ul>
+<li><a href="ch-kern.htm#s-kern-kernel">16.1 O Kernel</a></li>
+<li><a href="ch-kern.htm#s-kern-modulos">16.2 Módulos</a></li>
+<li><a href="ch-kern.htm#s-kern-suporte">16.3 Como adicionar suporte a Hardwares e outros dispositivos no kernel</a></li>
+<li><a href="ch-kern.htm#s-kern-kmod">16.4 kmod</a></li>
+<li><a href="ch-kern.htm#s-kern-lsmod">16.5 lsmod</a></li>
+<li><a href="ch-kern.htm#s-kern-insmod">16.6 insmod</a></li>
+<li><a href="ch-kern.htm#s-kern-rmmod">16.7 rmmod</a></li>
+<li><a href="ch-kern.htm#s-kern-modprobe">16.8 modprobe</a></li>
+<li><a href="ch-kern.htm#s-kern-depmod">16.9 depmod</a></li>
+<li><a href="ch-kern.htm#s-kern-modconf">16.10 modconf</a></li>
+<li><a href="ch-kern.htm#s-kern-recompilando">16.11 Recompilando o Kernel</a></li>
+<li><a href="ch-kern.htm#s-kern-arquivos">16.12 Arquivos relacionados com o Kernel e Módulos</a></li>
+<ul>
+<li><a href="ch-kern.htm#s-kern-arquivos-modules">16.12.1 /etc/modules</a></li>
+<li><a href="ch-kern.htm#s-kern-arquivos-modulesconf">16.12.2 modules.conf</a></li>
+</ul>
+<li><a href="ch-kern.htm#s-kern-patches">16.13 Aplicando Patches no kernel</a></li>
+</ul>
+<li><a href="ch-log.htm">17 Arquivos e daemons de Log</a></li>
+<ul>
+<li><a href="ch-log.htm#s17.1">17.1 Formato do arquivo de log</a></li>
+<li><a href="ch-log.htm#s17.2">17.2 Daemons de log do sistema</a></li>
+<ul>
+<li><a href="ch-log.htm#s-log-syslogd">17.2.1 syslogd</a></li>
+<ul>
+<li><a href="ch-log.htm#s-log-syslogd-exemplo">17.2.1.1 Arquivo de configuração <code>syslog.conf</code></a></li>
+</ul>
+<li><a href="ch-log.htm#s-log-klogd">17.2.2 klogd</a></li>
+</ul>
+<li><a href="ch-log.htm#s-log-logger">17.3 logger</a></li>
+</ul>
+<li><a href="ch-cpctd.htm">18 Compactadores</a></li>
+<ul>
+<li><a href="ch-cpctd.htm#s-cpctd-oque">18.1 O que fazem os compactadores/descompactadores?</a></li>
+<ul>
+<li><a href="ch-cpctd.htm#s-cpctd-tipos">18.1.1 Tipos de compactação</a></li>
+</ul>
+<li><a href="ch-cpctd.htm#s-cpctd-extensoes">18.2 Extensões de arquivos compactados</a></li>
+<li><a href="ch-cpctd.htm#s-cpctd-gzip">18.3 gzip</a></li>
+<li><a href="ch-cpctd.htm#s-cpctd-zip">18.4 zip</a></li>
+<li><a href="ch-cpctd.htm#s-cpctd-unzip">18.5 unzip</a></li>
+<li><a href="ch-cpctd.htm#s-cpctd-tar">18.6 tar</a></li>
+<li><a href="ch-cpctd.htm#s-cpctd-bzip2">18.7 bzip2</a></li>
+<li><a href="ch-cpctd.htm#s-cpctd-rar">18.8 rar</a></li>
+</ul>
+<li><a href="ch-deb.htm">19 A distribuição Debian GNU/Linux</a></li>
+<ul>
+<li><a href="ch-deb.htm#s-deb-carac">19.1 Porque usar a Debian?</a></li>
+<li><a href="ch-deb.htm#s-deb-pacotes">19.2 Pacotes existentes na Debian</a></li>
+<li><a href="ch-deb.htm#s-deb-suf">19.3 O que é sid/testing/frozen/stable?</a></li>
+<li><a href="ch-deb.htm#s-deb-obtendo">19.4 Como obter a Debian</a></li>
+<li><a href="ch-deb.htm#s-deb-prgnconfig">19.5 Programas de configuração</a></li>
+<li><a href="ch-deb.htm#s-deb-startup">19.6 Arquivos de inicialização</a></li>
+<li><a href="ch-deb.htm#s-deb-runlevels">19.7 Níveis de Execução</a></li>
+<ul>
+<li><a href="ch-deb.htm#s-deb-runlevels-e">19.7.1 Entendendo o funcionamento dos níveis de execução do sistema (runlevels)</a></li>
+</ul>
+<li><a href="ch-deb.htm#s-deb-rede">19.8 Rede no sistema Debian</a></li>
+<li><a href="ch-deb.htm#s-deb-bts">19.9 Bug tracking system</a></li>
+<li><a href="ch-deb.htm#s-deb-download">19.10 Onde encontrar a Debian para Download?</a></li>
+<li><a href="ch-deb.htm#s-deb-lista-pacotes">19.11 Lista de pacotes para uma instalação rápida e manual</a></li>
+<ul>
+<li><a href="ch-deb.htm#s19.11.1">19.11.1 Pacotes Básicos (Altamente Recomendado)</a></li>
+<li><a href="ch-deb.htm#s19.11.2">19.11.2 Compilação do Kernel e programas em linguagem C</a></li>
+<li><a href="ch-deb.htm#s19.11.3">19.11.3 X11 (básico)</a></li>
+<li><a href="ch-deb.htm#s19.11.4">19.11.4 Window Managers para o X</a></li>
+<li><a href="ch-deb.htm#s19.11.5">19.11.5 Impressão (texto e gráfico com sistema de spool)</a></li>
+<li><a href="ch-deb.htm#s19.11.6">19.11.6 Som (mixer, mp3, Midi, wav, CD-Player)</a></li>
+<li><a href="ch-deb.htm#s19.11.7">19.11.7 Programas de Internet (clientes)</a></li>
+<li><a href="ch-deb.htm#s19.11.8">19.11.8 Acessórios</a></li>
+<li><a href="ch-deb.htm#s19.11.9">19.11.9 Rede</a></li>
+</ul>
+</ul>
+<li><a href="ch-dpkg.htm">20 Sistema de gerenciamento de pacotes</a></li>
+<ul>
+<li><a href="ch-dpkg.htm#s-dpkg-introducao">20.1 dpkg</a></li>
+<ul>
+<li><a href="ch-dpkg.htm#s-dpkg-pacotes">20.1.1 Pacotes</a></li>
+<li><a href="ch-dpkg.htm#s-dpkg-instalar">20.1.2 Instalar pacotes</a></li>
+<li><a href="ch-dpkg.htm#s-dpkg-dependencias">20.1.3 Dependências</a></li>
+<li><a href="ch-dpkg.htm#s-dpkg-l">20.1.4 Listar pacotes existentes no sistema</a></li>
+<li><a href="ch-dpkg.htm#s-dpkg-r">20.1.5 Removendo pacotes do sistema</a></li>
+<li><a href="ch-dpkg.htm#s-dpkg-purge">20.1.6 Removendo completamente um pacote</a></li>
+<li><a href="ch-dpkg.htm#s-dpkg-I">20.1.7 Mostrar descrição do pacote</a></li>
+<li><a href="ch-dpkg.htm#s-dpkg-S">20.1.8 Procura de pacotes através do nome de um arquivo</a></li>
+<li><a href="ch-dpkg.htm#s-dpkg-s">20.1.9 Status do pacote</a></li>
+<li><a href="ch-dpkg.htm#s-dpkg-C">20.1.10 Procurando pacotes com problemas de instalação</a></li>
+<li><a href="ch-dpkg.htm#s-dpkg-get-selections">20.1.11 Mostrando a lista de pacotes do sistema</a></li>
+<li><a href="ch-dpkg.htm#s-dpkg-set-selections">20.1.12 Obtendo uma lista de pacotes para instalar no sistema</a></li>
+<li><a href="ch-dpkg.htm#s-dpkg-configure">20.1.13 Configurando pacotes desconfigurados</a></li>
+<li><a href="ch-dpkg.htm#s-dpkg-c">20.1.14 Listando arquivos de um pacote</a></li>
+</ul>
+<li><a href="ch-dpkg.htm#s-dpkg-apt">20.2 apt</a></li>
+<ul>
+<li><a href="ch-dpkg.htm#s20.2.1">20.2.1 O arquivo <code>/etc/apt/sources.list</code></a></li>
+<ul>
+<li><a href="ch-dpkg.htm#s20.2.1.1">20.2.1.1 Endereços de servidores e mirrors nacionais da <code>Debian</code></a></li>
+<li><a href="ch-dpkg.htm#s20.2.1.2">20.2.1.2 Um modelo de arquivo <code>sources.list</code></a></li>
+</ul>
+<li><a href="ch-dpkg.htm#s20.2.2">20.2.2 O arquivo <code>/etc/apt/apt.conf</code></a></li>
+<li><a href="ch-dpkg.htm#s20.2.3">20.2.3 Copiando a lista de pacotes disponíveis</a></li>
+<li><a href="ch-dpkg.htm#s20.2.4">20.2.4 Utilizando CDs oficiais/não-oficiais/terceiros com o apt</a></li>
+<li><a href="ch-dpkg.htm#s20.2.5">20.2.5 Instalando novos pacotes</a></li>
+<li><a href="ch-dpkg.htm#s20.2.6">20.2.6 Removendo pacotes instalado</a></li>
+<li><a href="ch-dpkg.htm#s20.2.7">20.2.7 Atualizando sua distribuição</a></li>
+<li><a href="ch-dpkg.htm#s20.2.8">20.2.8 Removendo pacotes baixados pelo <code>apt</code></a></li>
+<li><a href="ch-dpkg.htm#s20.2.9">20.2.9 Procurando por pacotes através da descrição</a></li>
+<li><a href="ch-dpkg.htm#s20.2.10">20.2.10 Procurando um pacote que contém determinado arquivo</a></li>
+<li><a href="ch-dpkg.htm#s20.2.11">20.2.11 Modos eficazes de compilação do código fonte para a Debian</a></li>
+<li><a href="ch-dpkg.htm#s20.2.12">20.2.12 Verificando pacotes corrompidos</a></li>
+<li><a href="ch-dpkg.htm#s20.2.13">20.2.13 Corrigindo problemas de dependências e outros erros</a></li>
+</ul>
+</ul>
+<li><a href="ch-pers.htm">21 Personalização do Sistema</a></li>
+<ul>
+<li><a href="ch-pers.htm#s-pers-varamb">21.1 Variáveis de Ambientes</a></li>
+<li><a href="ch-pers.htm#s-pers-idioma">21.2 Modificando o Idioma usado em seu sistema</a></li>
+<li><a href="ch-pers.htm#s-pers-alias">21.3 alias</a></li>
+<li><a href="ch-pers.htm#s-pers-profile">21.4 Arquivo <code>/etc/profile</code></a></li>
+<li><a href="ch-pers.htm#s-pers-bashprofile">21.5 Arquivo <code>.bash_profile</code></a></li>
+<li><a href="ch-pers.htm#s-pers-bashrc">21.6 Arquivo <code>.bashrc</code></a></li>
+<li><a href="ch-pers.htm#s-pers-hushlogin">21.7 Arquivo <code>.hushlogin</code></a></li>
+<li><a href="ch-pers.htm#s-pers-environment">21.8 Arquivo <code>/etc/environment</code></a></li>
+<li><a href="ch-pers.htm#s-pers-conf-skel">21.9 Diretório <code>/etc/skel</code></a></li>
+</ul>
+<li><a href="ch-impr.htm">22 Impressão</a></li>
+<ul>
+<li><a href="ch-impr.htm#s-impr-portas">22.1 Portas de impressora</a></li>
+<li><a href="ch-impr.htm#s-impr-direta">22.2 Imprimindo diretamente para a porta de impressora</a></li>
+<li><a href="ch-impr.htm#s-impr-spool">22.3 Imprimindo via spool</a></li>
+<li><a href="ch-impr.htm#s-impr-graficos">22.4 Impressão em modo gráfico</a></li>
+<ul>
+<li><a href="ch-impr.htm#s-impr-ghostscript">22.4.1 Ghost Script</a></li>
+</ul>
+<li><a href="ch-impr.htm#s-impr-magicfilter">22.5 Magic Filter</a></li>
+<ul>
+<li><a href="ch-impr.htm#s-impr-magicfilter-i">22.5.1 Instalação e configuração do Magic Filter</a></li>
+<li><a href="ch-impr.htm#s-impr-magicfilter-c">22.5.2 Outros detalhes técnicos sobre o Magic Filter</a></li>
+</ul>
+</ul>
+<li><a href="ch-cfg.htm">23 Configuração do sistema</a></li>
+<ul>
+<li><a href="ch-cfg.htm#s-cfg-acentuacao">23.1 Acentuação</a></li>
+<ul>
+<li><a href="ch-cfg.htm#s-cfg-acentuacao-t">23.1.1 Acentuação em modo Texto</a></li>
+<li><a href="ch-cfg.htm#s-cfg-acentuacao-g">23.1.2 Acentuação em modo gráfico</a></li>
+</ul>
+<li><a href="ch-cfg.htm#s-cfg-cores">23.2 Número de Cores do ambiente gráfico</a></li>
+<ul>
+<li><a href="ch-cfg.htm#s-cfg-cores-t">23.2.1 Configurando o número de cores para quem inicia pelo prompt</a></li>
+<li><a href="ch-cfg.htm#s-cfg-configurando-g">23.2.2 Configurando o número de cores para quem inicia pelo XDM</a></li>
+<li><a href="ch-cfg.htm#s23.2.3">23.2.3 Ajustando o alinhamento da imagem no X e outras configurações</a></li>
+<li><a href="ch-cfg.htm#s23.2.4">23.2.4 Sobre o número de cores para jogos que funcionam no X</a></li>
+</ul>
+</ul>
+<li><a href="ch-tasks.htm">24 Executando tarefas diversas no Linux</a></li>
+<ul>
+<li><a href="ch-tasks.htm#s-tasks-cdwriting">24.1 Gravando CDs no Linux</a></li>
+<ul>
+<li><a href="ch-tasks.htm#s-tasks-cdwriting-data">24.1.1 Gravando CDs de dados</a></li>
+<li><a href="ch-tasks.htm#s-tasks-cdwriting-audio">24.1.2 Gravando um CD de audio</a></li>
+<li><a href="ch-tasks.htm#s-tasks-cdwriting-cdcd">24.1.3 Cópia de CD para CD</a></li>
+<li><a href="ch-tasks.htm#s-tasks-cdwriting-massivewrite">24.1.4 Gravação massiva de CDs</a></li>
+<li><a href="ch-tasks.htm#s-tasks-cdwriting-cdfrommp3">24.1.5 Gravação de CDs diretamente através de arquivos mp3 ou Ogg</a></li>
+<li><a href="ch-tasks.htm#s-tasks-cdwriting-backupcd">24.1.6 Backup de dados para 1 ou mais CDs</a></li>
+<li><a href="ch-tasks.htm#s-tasks-cdwriting-graphicapps">24.1.7 Aplicações gráficas para gravação de CDs</a></li>
+<li><a href="ch-tasks.htm#s-tasks-cdwriting-cover">24.1.8 Fazendo a capa de frente e verso do CD</a></li>
+</ul>
+<li><a href="ch-tasks.htm#s-tasks-cdwriting-rundivx">24.2 Executando vídeos DIVX</a></li>
+<ul>
+<li><a href="ch-tasks.htm#s-tasks-cdwriting-rundivx-sub">24.2.1 Colocando legendas nos filmes</a></li>
+</ul>
+<li><a href="ch-tasks.htm#s-tasks-rundvd">24.3 Assistindo DVDs</a></li>
+<li><a href="ch-tasks.htm#s-tasks-wavtomp3">24.4 Convertendo músicas no formato wav para mp3</a></li>
+<li><a href="ch-tasks.htm#s-tasks-mp3cdr">24.5 Convertendo músicas do formato mp3 para cdr</a></li>
+</ul>
+<li><a href="ch-compil.htm">25 Compilação</a></li>
+<ul>
+<li><a href="ch-compil.htm#s-compil-descricao">25.1 O que é compilação?</a></li>
+<li><a href="ch-compil.htm#s-compil-compilador">25.2 Compilador</a></li>
+</ul>
+<li><a href="ch-manut.htm">26 Manutenção do Sistema</a></li>
+<ul>
+<li><a href="ch-manut.htm#s-manut-checagem">26.1 Checagem dos sistemas de arquivos</a></li>
+<ul>
+<li><a href="ch-manut.htm#s-manut-checagem-ext2">26.1.1 fsck.ext2</a></li>
+</ul>
+<li><a href="ch-manut.htm#s-manut-checagem-reiserfsck">26.2 reiserfsck</a></li>
+<li><a href="ch-manut.htm#s-manut-checagem-minix">26.3 fsck.minix</a></li>
+<li><a href="ch-manut.htm#s-manut-badblocks">26.4 badblocks</a></li>
+<li><a href="ch-manut.htm#s-manut-defrag">26.5 defrag</a></li>
+<li><a href="ch-manut.htm#s-manut-hdbadblocks">26.6 Verificando e marcando setores danificados em um HD</a></li>
+<li><a href="ch-manut.htm#s-manut-logs-l">26.7 Limpando arquivos de LOGS</a></li>
+<li><a href="ch-manut.htm#s-manut-recpart">26.8 Recuperando partições apagadas</a></li>
+<li><a href="ch-manut.htm#s-manut-senhaperdida">26.9 Recuperando a senha de root perdida</a></li>
+<li><a href="ch-manut.htm#s-manut-tarefas">26.10 Tarefas automáticas de manutenção do sistema</a></li>
+<li><a href="ch-manut.htm#s-manut-cron">26.11 cron</a></li>
+<ul>
+<li><a href="ch-manut.htm#s-manut-cron-formato">26.11.1 O formato de um arquivo crontab</a></li>
+</ul>
+<li><a href="ch-manut.htm#s-manut-at">26.12 at</a></li>
+</ul>
+<li><a href="ch-etc.htm">27 Principais arquivos de configuração do diretório <code>/etc</code></a></li>
+<ul>
+<li><a href="ch-etc.htm#s-etc-alternatives">27.1 Diretório <code>/etc/alternatives</code></a></li>
+<li><a href="ch-etc.htm#s-etc-devpts">27.2 Arquivo <code>/etc/default/devpts</code></a></li>
+<li><a href="ch-etc.htm#s-etc-rcs">27.3 Arquivo <code>/etc/default/rcs</code></a></li>
+<li><a href="ch-etc.htm#s-etc-config">27.4 Arquivo <code>/etc/kbd/config</code></a></li>
+<li><a href="ch-etc.htm#s-etc-menu-methods">27.5 Diretório <code>/etc/menu-methods</code></a></li>
+<li><a href="ch-etc.htm#s-etc-menu-translate">27.6 Arquivo <code>/etc/menu-methods/menu-translate</code></a></li>
+<li><a href="ch-etc.htm#s-etc-networks">27.7 Arquivo <code>/etc/networks</code></a></li>
+<li><a href="ch-etc.htm#s-etc-network-interfaces">27.8 Arquivo <code>/etc/network/interfaces</code></a></li>
+<li><a href="ch-etc.htm#s-etc-networks-options">27.9 Arquivo <code>/etc/networks/options</code></a></li>
+<li><a href="ch-etc.htm#s-etc-spoof-protect">27.10 Arquivo <code>/etc/networks/spoof-protect</code></a></li>
+<li><a href="ch-etc.htm#s-etc-pam">27.11 Diretório <code>/etc/pam.d</code></a></li>
+<li><a href="ch-etc.htm#s-etc-ppp">27.12 Diretório <code>/etc/ppp</code></a></li>
+<li><a href="ch-etc.htm#s-etc-security">27.13 Diretório <code>/etc/security</code></a></li>
+<li><a href="ch-etc.htm#s-etc-security-access">27.14 Arquivo <code>/etc/security/access.conf</code></a></li>
+<li><a href="ch-etc.htm#s-etc-securith-limits">27.15 Arquivo <code>/etc/security/limits.conf</code></a></li>
+<li><a href="ch-etc.htm#s-etc-crontab">27.16 Arquivo <code>/etc/crontab</code></a></li>
+<li><a href="ch-etc.htm#s27.17">27.17 Arquivo <code>/etc/fstab</code></a></li>
+<li><a href="ch-etc.htm#s27.18">27.18 Arquivo <code>/etc/group</code></a></li>
+<li><a href="ch-etc.htm#s-etc-gshadow">27.19 Arquivo <code>/etc/gshadow</code></a></li>
+<li><a href="ch-etc.htm#s27.20">27.20 Arquivo <code>/etc/host.conf</code></a></li>
+<li><a href="ch-etc.htm#s27.21">27.21 Arquivo <code>/etc/hostname</code></a></li>
+<li><a href="ch-etc.htm#s27.22">27.22 Arquivo <code>/etc/hosts</code></a></li>
+<li><a href="ch-etc.htm#s27.23">27.23 Arquivo <code>/etc/hosts.allow</code></a></li>
+<li><a href="ch-etc.htm#s27.24">27.24 Arquivo <code>/etc/hosts.deny</code></a></li>
+<li><a href="ch-etc.htm#s27.25">27.25 Arquivo <code>/etc/hosts.equiv</code></a></li>
+<li><a href="ch-etc.htm#s27.26">27.26 Arquivo <code>/etc/inetd.conf</code></a></li>
+<li><a href="ch-etc.htm#s-etc-inittab">27.27 Arquivo <code>/etc/inittab</code></a></li>
+<li><a href="ch-etc.htm#s-etc-inputrc">27.28 Arquivo <code>/etc/inputrc</code></a></li>
+<li><a href="ch-etc.htm#s-etc-isapnp-c">27.29 Arquivo <code>/etc/isapnp.conf</code></a></li>
+<li><a href="ch-etc.htm#s-etc-isapnp-g">27.30 Arquivo <code>/etc/isapnp.gone</code></a></li>
+<li><a href="ch-etc.htm#s-etc-issue">27.31 Arquivo <code>/etc/issue</code></a></li>
+<li><a href="ch-etc.htm#s-etc-issue-n">27.32 Arquivo <code>/etc/issue.net</code></a></li>
+<li><a href="ch-etc.htm#s27.33">27.33 Arquivo <code>/etc/lilo.conf</code></a></li>
+<li><a href="ch-etc.htm#s-etc-login-d">27.34 Arquivo <code>/etc/login.defs</code></a></li>
+<li><a href="ch-etc.htm#s27.35">27.35 Arquivo <code>/etc/modules</code></a></li>
+<li><a href="ch-etc.htm#s27.36">27.36 Arquivo <code>/etc/modules.conf</code></a></li>
+<li><a href="ch-etc.htm#s-etc-motd">27.37 Arquivo <code>/etc/motd</code></a></li>
+<li><a href="ch-etc.htm#s-etc-mtab">27.38 Arquivo <code>/etc/mtab</code></a></li>
+<li><a href="ch-etc.htm#s27.39">27.39 Arquivo <code>/etc/networks</code></a></li>
+<li><a href="ch-etc.htm#s-etc-passwd">27.40 Arquivo <code>/etc/passwd</code></a></li>
+<li><a href="ch-etc.htm#s-etc-printcap">27.41 Arquivo <code>/etc/printcap</code></a></li>
+<li><a href="ch-etc.htm#s27.42">27.42 Arquivo <code>/etc/protocols</code></a></li>
+<li><a href="ch-etc.htm#s27.43">27.43 Arquivo <code>/etc/resolv.conf</code></a></li>
+<li><a href="ch-etc.htm#s-serial-c">27.44 Arquivo <code>/etc/serial.conf</code></a></li>
+<li><a href="ch-etc.htm#s27.45">27.45 Arquivo <code>/etc/services</code></a></li>
+<li><a href="ch-etc.htm#s-etc-shadow">27.46 Arquivo <code>/etc/shadow</code></a></li>
+<li><a href="ch-etc.htm#s-etc-shells">27.47 Arquivo <code>/etc/shells</code></a></li>
+<li><a href="ch-etc.htm#s-etc-syslog-c">27.48 Arquivo <code>/etc/syslog.conf</code></a></li>
+<li><a href="ch-etc.htm#s-etc-timezones">27.49 Arquivo <code>/etc/timezone</code></a></li>
+</ul>
+<li><a href="ch-inter.htm">28 Conectando seu computador a Internet</a></li>
+<ul>
+<li><a href="ch-inter.htm#s-inter-conectando">28.1 Conectando-se a Internet</a></li>
+<li><a href="ch-inter.htm#s-inter-navegando">28.2 Navegando na Internet</a></li>
+<li><a href="ch-inter.htm#s-inter-emails-r">28.3 Recebimento de E-Mails através do <code>fetchmail</code></a></li>
+<ul>
+<li><a href="ch-inter.htm#s-inter-procmail">28.3.1 Processamento de mensagens através do procmail</a></li>
+</ul>
+</ul>
+<li><a href="ch-x11.htm">29 X Window (ambiente gráfico)</a></li>
+<ul>
+<li><a href="ch-x11.htm#s-x11-descricao">29.1 O que é X Window?</a></li>
+<li><a href="ch-x11.htm#s-x11-estrutura">29.2 A organização do ambiente gráfico X Window</a></li>
+<li><a href="ch-x11.htm#s-x11-iniciando">29.3 Iniciando o X</a></li>
+<li><a href="ch-x11.htm#s-x11-servidor">29.4 Servidor X</a></li>
+</ul>
+<li><a href="ch-aplic.htm">30 Aplicativos para Linux</a></li>
+<ul>
+<li><a href="ch-aplic.htm#s-aplic-b">30.1 Aplicativos Básicos</a></li>
+<ul>
+<li><a href="ch-aplic.htm#s-aplic-b-editores">30.1.1 Editores de Texto</a></li>
+<li><a href="ch-aplic.htm#s-aplic-b-escritorio">30.1.2 Aplicativos para Escritório</a></li>
+<li><a href="ch-aplic.htm#s-aplic-b-internet">30.1.3 Internet</a></li>
+<li><a href="ch-aplic.htm#s-aplic-b-emuladores">30.1.4 Emuladores</a></li>
+<li><a href="ch-aplic.htm#s-aplic-b-utils">30.1.5 Utilitários</a></li>
+<li><a href="ch-aplic.htm#s-aplic-b-admin">30.1.6 Administração do Sistema</a></li>
+</ul>
+<li><a href="ch-aplic.htm#s30.2">30.2 Listagem de Aplicativos para <code>GNU/Linux</code></a></li>
+<ul>
+<li><a href="ch-aplic.htm#s-aplic-l-perifericos">30.2.1 Periféricos / Gerenciamento de Hardware</a></li>
+<li><a href="ch-aplic.htm#s-aplic-l-internet">30.2.2 Internet</a></li>
+<li><a href="ch-aplic.htm#s-aplic-l-conferencia">30.2.3 Conferência de audio/vídeo via Internet/Intranet</a></li>
+<li><a href="ch-aplic.htm#s-aplic-l-webhtml">30.2.4 Gerenciamento de WebSites / Linguagem HTML</a></li>
+<li><a href="ch-aplic.htm#s-aplic-l-multimidia">30.2.5 Multimídia</a></li>
+<li><a href="ch-aplic.htm#s-aplic-l-som">30.2.6 Som</a></li>
+<li><a href="ch-aplic.htm#s-aplic-l-comm">30.2.7 Comunicação/Fax</a></li>
+<li><a href="ch-aplic.htm#s-aplic-l-x11">30.2.8 X Window</a></li>
+<li><a href="ch-aplic.htm#s-aplic-l-edicao">30.2.9 Editoração Gráfica/Visualizadores</a></li>
+<li><a href="ch-aplic.htm#s-aplic-l-emul">30.2.10 Emuladores/Ferramentas p/ Interação com outros SO</a></li>
+<li><a href="ch-aplic.htm#s-aplic-l-prog">30.2.11 Programação / Bancos de Dados / Acesso a Dados</a></li>
+<li><a href="ch-aplic.htm#s-aplic-l-impressao">30.2.12 Impressão</a></li>
+<li><a href="ch-aplic.htm#s-aplic-l-texto">30.2.13 Texto</a></li>
+<li><a href="ch-aplic.htm#s-aplic-l-kernel">30.2.14 Kernel</a></li>
+<li><a href="ch-aplic.htm#s-aplic-l-notebooks">30.2.15 Notebooks</a></li>
+<li><a href="ch-aplic.htm#s-aplic-l-cdrec">30.2.16 Gravação de CD/DVD</a></li>
+<li><a href="ch-aplic.htm#s-aplic-l-cluster">30.2.17 Computação Paralela/Clusters</a></li>
+<li><a href="ch-aplic.htm#s-aplic-l-handhelds">30.2.18 PalmTop / Palm Pilot / Computadores de Mão</a></li>
+<li><a href="ch-aplic.htm#s-aplic-l-backup">30.2.19 Backup</a></li>
+<li><a href="ch-aplic.htm#s-aplic-l-uteis">30.2.20 Utilitários</a></li>
+<li><a href="ch-aplic.htm#s-aplic-l-compactadores">30.2.21 Compactadores/Descompactadores/Arquivadores</a></li>
+<li><a href="ch-aplic.htm#s-aplic-l-x10">30.2.22 Dispositivos X-10 (Controle de eletrodomésticos e aparelhos via PC)</a></li>
+<li><a href="ch-aplic.htm#s-aplic-l-outros">30.2.23 Outros</a></li>
+</ul>
+</ul>
+<li><a href="ch-ajuda.htm">31 Como obter ajuda no sistema</a></li>
+<ul>
+<li><a href="ch-ajuda.htm#s-ajuda-man">31.1 Páginas de Manual</a></li>
+<li><a href="ch-ajuda.htm#s-ajuda-info">31.2 Info Pages</a></li>
+<li><a href="ch-ajuda.htm#s-ajuda-helponline">31.3 Help on line</a></li>
+<li><a href="ch-ajuda.htm#s-ajuda-help">31.4 help</a></li>
+<li><a href="ch-ajuda.htm#s-ajuda-apropos">31.5 apropos/whatis</a></li>
+<li><a href="ch-ajuda.htm#s-ajuda-locate">31.6 locate</a></li>
+<li><a href="ch-ajuda.htm#s-ajuda-which">31.7 which</a></li>
+<li><a href="ch-ajuda.htm#s-ajuda-howto">31.8 Documentos HOWTO's</a></li>
+<ul>
+<li><a href="ch-ajuda.htm#s-ajuda-howto-listagem">31.8.1 Listagem de HOWTO's</a></li>
+<ul>
+<li><a href="ch-ajuda.htm#s31.8.1.1">31.8.1.1 Introdução ao Sistema / Instalação / Configurações / Kernel</a></li>
+<li><a href="ch-ajuda.htm#s31.8.1.2">31.8.1.2 Adaptação do <code>GNU/Linux</code> para idiomas específicos</a></li>
+<li><a href="ch-ajuda.htm#s31.8.1.3">31.8.1.3 Discos / Sistemas de Arquivos / Desempenho</a></li>
+<li><a href="ch-ajuda.htm#s31.8.1.4">31.8.1.4 Escrita de Documentação / Editores</a></li>
+<li><a href="ch-ajuda.htm#s31.8.1.5">31.8.1.5 Hardware</a></li>
+<li><a href="ch-ajuda.htm#s31.8.1.6">31.8.1.6 Software</a></li>
+<li><a href="ch-ajuda.htm#s31.8.1.7">31.8.1.7 Plataformas não Intel (x86)</a></li>
+<li><a href="ch-ajuda.htm#s31.8.1.8">31.8.1.8 Programação / Compiladores / Banco de Dados</a></li>
+<li><a href="ch-ajuda.htm#s31.8.1.9">31.8.1.9 Computação Paralela / Clusters</a></li>
+<li><a href="ch-ajuda.htm#s31.8.1.10">31.8.1.10 Configuração de Teclado / Vídeo / Console</a></li>
+<li><a href="ch-ajuda.htm#s31.8.1.11">31.8.1.11 Ambiente Gráfico</a></li>
+<li><a href="ch-ajuda.htm#s31.8.1.12">31.8.1.12 Suporte ao Sistema / Grupos de Usuários / Listas de Discussão</a></li>
+<li><a href="ch-ajuda.htm#s31.8.1.13">31.8.1.13 Migração / Convivência com Outras Plataformas</a></li>
+<li><a href="ch-ajuda.htm#s31.8.1.14">31.8.1.14 Tarefas Específicas</a></li>
+<li><a href="ch-ajuda.htm#s31.8.1.15">31.8.1.15 Rede / Administração / Firewall / Proxy / Segurança</a></li>
+<li><a href="ch-ajuda.htm#s31.8.1.16">31.8.1.16 Outros</a></li>
+</ul>
+<li><a href="ch-ajuda.htm#s-ajuda-howto-listagem-m">31.8.2 Listagem de Mini-HOWTO's</a></li>
+<ul>
+<li><a href="ch-ajuda.htm#s31.8.2.1">31.8.2.1 Introdução ao Sistema / Instalação / Configuração / Kernel</a></li>
+<li><a href="ch-ajuda.htm#s31.8.2.2">31.8.2.2 Discos / Sistema de Arquivos / Desempenho</a></li>
+<li><a href="ch-ajuda.htm#s31.8.2.3">31.8.2.3 Escrita de Documentação / Editores</a></li>
+<li><a href="ch-ajuda.htm#s31.8.2.4">31.8.2.4 Hardware</a></li>
+<li><a href="ch-ajuda.htm#s31.8.2.5">31.8.2.5 Software</a></li>
+<li><a href="ch-ajuda.htm#s31.8.2.6">31.8.2.6 Plataformas não Intel (x86)</a></li>
+<li><a href="ch-ajuda.htm#s31.8.2.7">31.8.2.7 Programação / Compiladores / Banco de Dados</a></li>
+<li><a href="ch-ajuda.htm#s31.8.2.8">31.8.2.8 Configuração de Teclado / Video / Console</a></li>
+<li><a href="ch-ajuda.htm#s31.8.2.9">31.8.2.9 Ambiente Gráfico</a></li>
+<li><a href="ch-ajuda.htm#s31.8.2.10">31.8.2.10 Migração/Convivência com outras plataformas</a></li>
+<li><a href="ch-ajuda.htm#s31.8.2.11">31.8.2.11 Tarefas Específicas</a></li>
+<li><a href="ch-ajuda.htm#s31.8.2.12">31.8.2.12 Rede / Administração / Firewall / Segurança</a></li>
+<li><a href="ch-ajuda.htm#s31.8.2.13">31.8.2.13 Outros</a></li>
+</ul>
+</ul>
+<li><a href="ch-ajuda.htm#s-ajuda-docs">31.9 Documentação de Programas</a></li>
+<li><a href="ch-ajuda.htm#s-ajuda-faq">31.10 FAQ</a></li>
+<li><a href="ch-ajuda.htm#s-ajuda-rfcs">31.11 RFC's</a></li>
+<li><a href="ch-ajuda.htm#s-ajuda-internet">31.12 Internet</a></li>
+<ul>
+<li><a href="ch-ajuda.htm#s-ajuda-paginas">31.12.1 Páginas Internet de Referência</a></li>
+<li><a href="ch-ajuda.htm#s-ajuda-listas">31.12.2 Listas de discussão</a></li>
+</ul>
+<li><a href="ch-ajuda.htm#s-ajuda-netiqueta">31.13 Netiqueta</a></li>
+<ul>
+<li><a href="ch-ajuda.htm#s-ajuda-netiqueta-geral">31.13.1 Recomendações Gerais sobre a Comunicação Eletrônica</a></li>
+<li><a href="ch-ajuda.htm#s-ajuda-netiqueta-email">31.13.2 Email</a></li>
+<li><a href="ch-ajuda.htm#s-ajuda-netiqueta-talk">31.13.3 Talk</a></li>
+<li><a href="ch-ajuda.htm#s-ajuda-netiqueta-icq">31.13.4 ICQ</a></li>
+<li><a href="ch-ajuda.htm#s-ajuda-netiqueta-listas">31.13.5 Listas de Discussão via Email</a></li>
+</ul>
+</ul>
+<li><a href="ch-apend.htm">32 Apêndice</a></li>
+<ul>
+<li><a href="ch-apend.htm#s-apend-sobre">32.1 Sobre este guia</a></li>
+<li><a href="ch-apend.htm#s-apend-autor">32.2 Sobre o Autor</a></li>
+<li><a href="ch-apend.htm#s-apend-ref">32.3 Referências de auxílio ao desenvolvimento do guia</a></li>
+<li><a href="ch-apend.htm#s-apend-homepage">32.4 Onde encontrar a versão mais nova do guia?</a></li>
+<li><a href="ch-apend.htm#s-apend-colaboradores">32.5 Colaboradores do Guia</a></li>
+<li><a href="ch-apend.htm#s-apend-mr">32.6 Marcas Registradas</a></li>
+<li><a href="ch-apend.htm#s-apend-new">32.7 Futuras versões</a></li>
+<li><a href="ch-apend.htm#s-apend-pgp">32.8 Chave Pública PGP</a></li>
+</ul>
+</ul>
+
+<hr>
+
+[ <a href="ch-apend.htm">anterior</a> ]
+[ <a href="#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ <a href="ch-hardw.htm">3</a> ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ <a href="ch-cmdd.htm">8</a> ]
+[ <a href="ch-cmd.htm">9</a> ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ <a href="ch-cmdc.htm">12</a> ]
+[ <a href="ch-perm.htm">13</a> ]
+[ <a href="ch-redir.htm">14</a> ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ <a href="ch-cpctd.htm">18</a> ]
+[ <a href="ch-deb.htm">19</a> ]
+[ <a href="ch-dpkg.htm">20</a> ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ <a href="ch-cfg.htm">23</a> ]
+[ <a href="ch-tasks.htm">24</a> ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ <a href="ch-etc.htm">27</a> ]
+[ <a href="ch-inter.htm">28</a> ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ <a href="ch-apend.htm">32</a> ]
+[ <a href="ch-intro.htm">próximo</a> ]
+
+<hr>
+
+<p>
+Guia Foca GNU/Linux
+
+<address>
+Versão 5.45 - segunda, 30 de outubro de 2006<br>
+<br>
+Gleydson Mazioli da Silva <code><a href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</a></code><br>
+<br>
+</address>
+
+<hr>
+
+</body>
+
+</html>
+

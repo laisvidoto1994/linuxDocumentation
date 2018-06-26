@@ -1,0 +1,1111 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: =?iso-8859-1?Q?Guia_Foca_GNU/Linux_-_Permiss=F5es_de_acesso_a_arquivos_e_?=
+	=?iso-8859-1?Q?diret=F3rios?=
+Date: Mon, 6 Aug 2007 11:33:14 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-perm.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Permiss=F5es de acesso a =
+arquivos e diret=F3rios</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-perm></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ 13 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 13 - Permiss=F5es de acesso a =
+arquivos e=20
+diret=F3rios </H1>
+<HR>
+
+<P>A permiss=E3o de acesso protege o sistema de arquivos Linux do acesso =
+indevido=20
+de pessoas ou programas n=E3o autorizados.=20
+<P>A permiss=E3o de acesso do <CODE>GNU/Linux</CODE> tamb=E9m impede que =
+um programa=20
+mal intencionado, por exemplo, apague um arquivo que n=E3o deve, envie =
+arquivos=20
+para outra pessoa ou forne=E7a acesso da rede para que outros usu=E1rios =
+invadam o=20
+sistema. O sistema <CODE>GNU/Linux</CODE> =E9 muito seguro e como =
+qualquer outro=20
+sistema seguro e confi=E1vel impede que usu=E1rios iniciantes (ou mal =
+intencionados)=20
+instalem programas enviados por terceiros sem saber para que eles =
+realmente=20
+servem e causem danos irrevers=EDveis em seus arquivos, seu micro ou sua =
+empresa.=20
+<P>Esta se=E7=E3o pode se tornar um pouco dif=EDcil de se entender, =
+ent=E3o recomendo=20
+ler e ao mesmo tempo pr=E1tica-la para uma =F3tima compreens=E3o. N=E3o =
+se preocupe,=20
+tamb=E9m coloquei exemplos para ajuda-lo a entender o sistema de =
+permiss=F5es de=20
+acesso do ambiente <CODE>GNU/Linux</CODE>.=20
+<HR>
+<A name=3Ds-perm-user-group></A>
+<H2>13.1 Donos, grupos e outros usu=E1rios</H2>
+<P>O princ=EDpio da seguran=E7a no sistema de arquivos =
+<CODE>GNU/Linux</CODE> =E9=20
+definir o acesso aos arquivos por donos, grupos e outros usu=E1rios:=20
+<DL>
+  <DT><EM>dono</EM>=20
+  <DD>=C9 a pessoa que criou o arquivo ou o diret=F3rio. O nome do dono =
+do=20
+  arquivo/diret=F3rio =E9 o mesmo do usu=E1rio usado para entrar no =
+sistema=20
+  <CODE>GNU/Linux</CODE>. Somente o dono pode modificar as permiss=F5es =
+de acesso=20
+  do arquivo.=20
+  <P>As permiss=F5es de acesso do dono de um arquivo somente se aplicam =
+ao dono do=20
+  arquivo/diret=F3rio. A identifica=E7=E3o do dono tamb=E9m =E9 chamada =
+de user id (UID).=20
+  <P>A identifica=E7=E3o de usu=E1rio e o nome do grupo que pertence =
+s=E3o armazenadas=20
+  respectivamente nos arquivos <CODE>/etc/passwd</CODE> e=20
+  <CODE>/etc/group</CODE>. Estes s=E3o arquivos textos comuns e podem =
+ser editados=20
+  em qualquer editor de texto, mas tenha cuidado para n=E3o modificar o =
+campo que=20
+  cont=E9m a senha do usu=E1rio encriptada (que pode estar armazenada =
+neste arquivo=20
+  caso n=E3o estiver usando senhas ocultas). </P>
+  <DT><EM>grupo</EM>=20
+  <DD>Para permitir que v=E1rios usu=E1rios diferentes tivessem acesso a =
+um mesmo=20
+  arquivo (j=E1 que somente o dono poderia ter acesso ao arquivo), este =
+recurso=20
+  foi criado. Cada usu=E1rio pode fazer parte de um ou mais grupos e =
+ent=E3o acessar=20
+  arquivos que perten=E7am ao mesmo grupo que o seu (mesmo que estes =
+arquivos=20
+  tenham outro <EM>dono</EM>).=20
+  <P>Por padr=E3o, quando um novo usu=E1rio =E9 criado, o grupo ele =
+pertencer=E1 ser=E1 o=20
+  mesmo de seu grupo prim=E1rio (exceto pelas condi=E7=F5es que =
+explicarei adiante)=20
+  (veja isto atrav=E9s do comando <CODE>id</CODE>, veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm#s-cmdc-id">id,=20
+  Se=E7=E3o 12.12</A>). A identifica=E7=E3o do grupo =E9 chamada de =
+<SAMP>gid (<EM>group=20
+  id</EM>)</SAMP>.=20
+  <P>Um usu=E1rio pode pertencer a um ou mais grupos. Para detalhes de =
+como=20
+  incluir o usu=E1rio em mais grupos veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm#s-cmdc-incluirgrupo">Adicionando=
+=20
+  o usu=E1rio a um grupo extra, Se=E7=E3o 12.10</A>. </P>
+  <DT><EM>outros</EM>=20
+  <DD>=C9 a categoria de usu=E1rios que n=E3o s=E3o donos ou n=E3o =
+pertencem ao grupo do=20
+  arquivo. </DD></DL>
+<P>Cada um dos tipos acima possuem tr=EAs tipos b=E1sicos de =
+permiss=F5es de acesso=20
+que ser=E3o vistas na pr=F3xima se=E7=E3o.=20
+<HR>
+<A name=3Ds-perm-tipos></A>
+<H2>13.2 Tipos de Permiss=F5es de acesso</H2>
+<P>Quanto aos tipos de permiss=F5es que se aplicam ao <EM>dono</EM>,=20
+<EM>grupo</EM> e <EM>outros usu=E1rios</EM>, temos 3 permiss=F5es =
+b=E1sicas:=20
+<UL>
+  <LI><SAMP>r</SAMP> - Permiss=E3o de leitura para arquivos. Caso for um =
+
+  diret=F3rio, permite listar seu conte=FAdo (atrav=E9s do comando =
+<CODE>ls</CODE>,=20
+  por exemplo).=20
+  <LI><SAMP>w</SAMP> - Permiss=E3o de grava=E7=E3o para arquivos. Caso =
+for um=20
+  diret=F3rio, permite a grava=E7=E3o de arquivos ou outros diret=F3rios =
+dentro dele.=20
+  <P>Para que um arquivo/diret=F3rio possa ser apagado, =E9 necess=E1rio =
+o acesso a=20
+  grava=E7=E3o. </P>
+  <LI><SAMP>x</SAMP> - Permite executar um arquivo (caso seja um =
+programa=20
+  execut=E1vel). Caso seja um diret=F3rio, permite que seja acessado =
+atrav=E9s do=20
+  comando <CODE>cd</CODE> (veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm#s-comando-cd">cd,=20
+  Se=E7=E3o 8.2</A> para detalhes). </LI></UL>
+<P>As permiss=F5es de acesso a um arquivo/diret=F3rio podem ser =
+visualizadas com o=20
+uso do comando <SAMP>ls -la</SAMP>. Para maiores detalhes veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm#s-comando-ls">ls,=20
+Se=E7=E3o 8.1</A>. As 3 letras (rwx) s=E3o agrupadas da seguinte forma: =
+<PRE>     -rwxrwxrwx   gleydson   users  teste
+</PRE>
+<P>Virou uma bagun=E7a n=E3o? Vou explicar cada parte para entender o =
+que quer dizer=20
+as 10 letras acima (da esquerda para a direita):=20
+<UL>
+  <LI>A primeira letra diz qual =E9 o tipo do arquivo. Caso tiver um "d" =
+=E9 um=20
+  diret=F3rio, um "l" um link a um arquivo no sistema (veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-ln">ln,=20
+  Se=E7=E3o 10.4</A> para detalhes) , um "-" quer dizer que =E9 um =
+arquivo comum, etc.=20
+  </LI></UL>
+<UL>
+  <LI>Da segunda a quarta letra (rwx) dizem qual =E9 a permiss=E3o de =
+acesso ao=20
+  <EM>dono</EM> do arquivo. Neste caso <EM>gleydson</EM> ele tem a =
+permiss=E3o de=20
+  ler (r - read), gravar (w - write) e executar (x - execute) o arquivo=20
+  <CODE>teste</CODE>. </LI></UL>
+<UL>
+  <LI>Da quinta a s=E9tima letra (rwx) diz qual =E9 a permiss=E3o de =
+acesso ao=20
+  <EM>grupo</EM> do arquivo. Neste caso todos os usu=E1rios que =
+pertencem ao grupo=20
+  <EM>users</EM> tem a permiss=E3o de ler (r), gravar (w), e tamb=E9m =
+executar (x) o=20
+  arquivo <CODE>teste</CODE>. </LI></UL>
+<UL>
+  <LI>Da oitava a d=E9cima letra (rwx) diz qual =E9 a permiss=E3o de =
+acesso para os=20
+  <EM>outros usu=E1rios</EM>. Neste caso todos os usu=E1rios que n=E3o =
+s=E3o donos do=20
+  arquivo <CODE>teste</CODE> tem a permiss=E3o para ler, gravar e =
+executar o=20
+  programa. </LI></UL>
+<P>Veja o comando <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm#s-perm-chmod">chmod,=20
+Se=E7=E3o 13.7</A> para detalhes sobre a mudan=E7a das permiss=F5es de =
+acesso de=20
+arquivos/diret=F3rios.=20
+<HR>
+<A name=3Ds-perm-acessando></A>
+<H2>13.3 Etapas para acesso a um arquivo/diret=F3rio</H2>
+<P>O acesso a um arquivo/diret=F3rio =E9 feito verificando primeiro se o =
+usu=E1rio que=20
+acessar=E1 o arquivo =E9 o seu <EM>dono</EM>, caso seja, as permiss=F5es =
+de dono do=20
+arquivo s=E3o aplicadas. Caso n=E3o seja o <EM>dono</EM> do =
+arquivo/diret=F3rio, =E9=20
+verificado se ele pertence ao grupo correspondente, caso perten=E7a, as =
+permiss=F5es=20
+do <EM>grupo</EM> s=E3o aplicadas. Caso n=E3o perten=E7a ao =
+<EM>grupo</EM>, s=E3o=20
+verificadas as permiss=F5es de acesso para os outros usu=E1rios que =
+n=E3o s=E3o=20
+<EM>donos</EM> e n=E3o pertencem ao <EM>grupo</EM> correspondente ao=20
+arquivo/diret=F3rio.=20
+<P>Ap=F3s verificar aonde o usu=E1rio se encaixa nas permiss=F5es de =
+acesso do arquivo=20
+(se ele =E9 o <EM>dono</EM>, pertence ao <EM>grupo</EM>, ou <EM>outros=20
+usu=E1rios</EM>), =E9 verificado se ele ter=E1 permiss=E3o acesso para o =
+que deseja=20
+fazer (ler, gravar ou executar o arquivo), caso n=E3o tenha, o acesso =
+=E9 negado,=20
+mostrando uma mensagem do tipo: "Permission denied" (permiss=E3o =
+negada).=20
+<P>O que isto que dizer =E9 que mesmo que voc=EA seja o dono do arquivo =
+e definir o=20
+acesso do <EM>dono</EM> (atrav=E9s do comando <CODE>chmod</CODE>) como =
+somente=20
+leitura (r) mas o acesso dos <EM>outros usu=E1rios</EM> como leitura e =
+grava=E7=E3o,=20
+voc=EA somente poder=E1 ler este arquivo mas os outros usu=E1rios =
+poder=E3o=20
+ler/grava-lo.=20
+<P>As permiss=F5es de acesso (leitura, grava=E7=E3o, execu=E7=E3o) para =
+donos, grupos e=20
+outros usu=E1rios s=E3o independentes, permitindo assim um n=EDvel de =
+acesso=20
+diferenciado. Para maiores detalhes veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm#s-perm-tipos">Tipos=20
+de Permiss=F5es de acesso, Se=E7=E3o 13.2</A>.=20
+<P>Lembre-se: Somente o dono pode modificar um arquivo/diret=F3rio!=20
+<P>Para mais detalhes veja os comandos <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm#s-perm-chown">chown,=20
+Se=E7=E3o 13.9</A> e <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm#s-perm-chgrp">chgrp,=20
+Se=E7=E3o 13.8</A>.=20
+<HR>
+<A name=3Ds-perm-exemplo></A>
+<H2>13.4 Exemplos pr=E1ticos de permiss=F5es de acesso</H2>
+<P>Abaixo dois exemplos pr=E1ticos de permiss=E3o de acesso: <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm#s-perm-exemplo-a">Exemplo=20
+de acesso a um arquivo, Se=E7=E3o 13.4.1</A> e a <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm#s-perm-exemplo-d">Exemplo=20
+de acesso a um diret=F3rio, Se=E7=E3o 13.4.2</A>. Os dois exemplos s=E3o =
+explicados=20
+passo a passo para uma perfeita compreens=E3o do assunto. Vamos a =
+pr=E1tica!=20
+<HR>
+<A name=3Ds-perm-exemplo-a></A>
+<H3>13.4.1 Exemplo de acesso a um arquivo</H3>
+<P>Abaixo um exemplo e explica=E7=E3o das permiss=F5es de acesso a um =
+arquivo no=20
+<CODE>GNU/Linux</CODE> (obtido com o comando <SAMP>ls -la</SAMP>, =
+explicarei=20
+passo a passo cada parte:=20
+<P>-rwxr-xr-- 1 gleydson user 8192 nov 4 16:00 teste=20
+<DL>
+  <DT><SAMP>-rwxr-xr--</SAMP>=20
+  <DD>Estas s=E3o as permiss=F5es de acesso ao arquivo =
+<CODE>teste</CODE>. Um=20
+  conjunto de 10 letras que especificam o tipo do arquivo, permiss=E3o =
+do dono do=20
+  arquivo, grupo do arquivo e outros usu=E1rios. Veja a explica=E7=E3o =
+detalhada sobre=20
+  cada uma abaixo:=20
+  <DL>
+    <DT><STRONG>-</STRONG>rwxr-xr--=20
+    <DD>A primeira letra (do conjunto das 10 letras) determina o tipo do =
+
+    arquivos. Se a letra for um <STRONG>d</STRONG> =E9 um diret=F3rio, e =
+voc=EA poder=E1=20
+    acessa-lo usando o comando <CODE>cd</CODE>. Caso for um =
+<STRONG>l</STRONG> =E9=20
+    um link simb=F3lico para algum arquivo ou diret=F3rio no sistema =
+(para detalhes=20
+    veja o comando <A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-ln">ln,=20
+    Se=E7=E3o 10.4</A> . Um <STRONG>-</STRONG> significa que =E9 um =
+arquivo normal.=20
+    <DT>-<STRONG>rwx</STRONG>r-xr--=20
+    <DD>Estas 3 letras (da segunda a quarta do conjunto das 10 letras) =
+s=E3o as=20
+    permiss=F5es de acesso do <EM>dono</EM> do arquivo =
+<CODE>teste</CODE>. O dono=20
+    (neste caso <EM>gleydson</EM>) tem a permiss=E3o para ler (r), =
+gravar (w) e=20
+    executar (x) o arquivo <CODE>teste</CODE>.=20
+    <DT>-rwx<STRONG>r-x</STRONG>r--=20
+    <DD>Estas 3 letras (da quinta a s=E9tima do conjunto das 10 letras) =
+s=E3o as=20
+    permiss=F5es de acesso dos usu=E1rios que pertencem ao <EM>grupo =
+user</EM> do=20
+    arquivo <CODE>teste</CODE>. Os usu=E1rios que pertencem ao grupo =
+<EM>user</EM>=20
+    tem a permiss=E3o somente para ler (r) e executar (x) o arquivo=20
+    <CODE>teste</CODE> n=E3o podendo modifica-lo ou apaga-lo.=20
+    <DT>-rwxr-x<STRONG>r--</STRONG>=20
+    <DD>Estas 3 letras (da oitava a d=E9cima) s=E3o as permiss=F5es de =
+acesso para=20
+    usu=E1rios que <STRONG>n=E3o</STRONG> s=E3o <EM>donos</EM> do =
+arquivo=20
+    <CODE>teste</CODE> e que <STRONG>n=E3o</STRONG> pertencem ao grupo=20
+    <EM>user</EM>. Neste caso, estas pessoas somente ter=E3o a =
+permiss=E3o para ver=20
+    o conte=FAdo do arquivo <CODE>teste</CODE>. </DD></DL>
+  <DT><EM>gleydson</EM>=20
+  <DD>Nome do dono do arquivo <CODE>teste</CODE>.=20
+  <DT><EM>user</EM>=20
+  <DD>Nome do grupo que o arquivo <CODE>teste</CODE> pertence.=20
+  <DT><CODE>teste</CODE>=20
+  <DD>Nome do arquivo. </DD></DL>
+<HR>
+<A name=3Ds-perm-exemplo-d></A>
+<H3>13.4.2 Exemplo de acesso a um diret=F3rio</H3>
+<P>Abaixo um exemplo com explica=E7=F5es das permiss=F5es de acesso a um =
+diret=F3rio no=20
+<CODE>GNU/Linux</CODE>:=20
+<P>drwxr-x--- 2 gleydson user 1024 nov 4 17:55 exemplo=20
+<DL>
+  <DT><SAMP>drwxr-x---</SAMP>=20
+  <DD>Permiss=F5es de acesso ao diret=F3rio <CODE>exemplo</CODE>. =C9 um =
+conjunto de=20
+  10 letras que especificam o tipo de arquivo, permiss=E3o do dono do =
+diret=F3rio,=20
+  grupo que o diret=F3rio pertence e permiss=E3o de acesso a outros =
+usu=E1rios. Veja=20
+  as explica=E7=F5es abaixo:=20
+  <DL>
+    <DT><STRONG>d</STRONG>rwxr-x---=20
+    <DD>A primeira letra (do conjunto das 10) determina o tipo do =
+arquivo. Neste=20
+    caso =E9 um diret=F3rio porque tem a letra <STRONG>d</STRONG>.=20
+    <DT>d<STRONG>rwx</STRONG>r-x---=20
+    <DD>Estas 3 letras (da segunda a quarta) s=E3o as permiss=F5es de =
+acesso do=20
+    <EM>dono</EM> do diret=F3rio <CODE>exemplo</CODE>. O dono do =
+diret=F3rio (neste=20
+    caso <EM>gleydson</EM>) tem a permiss=E3o para listar arquivos do =
+diret=F3rio=20
+    (r), gravar arquivos no diret=F3rio (w) e entrar no diret=F3rio (x). =
+
+    <DT>drwx<STRONG>r-x</STRONG>---=20
+    <DD>Estas 3 letras (da quinta a s=E9tima) s=E3o as permiss=F5es de =
+acesso dos=20
+    usu=E1rios que pertencem ao <EM>grupo user</EM>. Os usu=E1rios que =
+pertencem ao=20
+    grupo <EM>user</EM> tem a permiss=E3o somente para listar arquivos =
+do=20
+    diret=F3rio (r) e entrar no diret=F3rio (x) <CODE>exemplo</CODE>.=20
+    <DT>drwxr-x<STRONG>---</STRONG>=20
+    <DD>Estas 3 letras (da oitava a d=E9cima) s=E3o as permiss=F5es de =
+acesso para=20
+    usu=E1rios que <STRONG>n=E3o</STRONG> s=E3o <EM>donos</EM> do =
+diret=F3rio=20
+    <CODE>exemplo</CODE> e que <STRONG>n=E3o</STRONG> pertencem ao grupo =
+
+    <EM>user</EM>. Com as permiss=F5es acima, nenhum usu=E1rio que se =
+encaixe nas=20
+    condi=E7=F5es de <EM>dono</EM> e <EM>grupo</EM> do diret=F3rio tem a =
+permiss=E3o de=20
+    acessa-lo. </DD></DL>
+  <DT><EM>gleydson</EM>=20
+  <DD>Nome do dono do diret=F3rio <CODE>exemplo</CODE>.=20
+  <DT><EM>user</EM>=20
+  <DD>Nome do grupo que diret=F3rio <CODE>exemplo</CODE> pertence.=20
+  <DT><CODE>exemplo</CODE>=20
+  <DD>Nome do diret=F3rio. </DD></DL>
+<P>Para detalhes de como alterar o dono/grupo de um arquivo/diret=F3rio, =
+veja os=20
+comandos <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm#s-perm-chmod">chmod,=20
+Se=E7=E3o 13.7</A>, <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm#s-perm-chgrp">chgrp,=20
+Se=E7=E3o 13.8</A> e <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm#s-perm-chown">chown,=20
+Se=E7=E3o 13.9</A>.=20
+<P><STRONG>OBSERVA=C7=D5ES</STRONG>:=20
+<UL>
+  <LI>O usu=E1rio <SAMP>root</SAMP> n=E3o tem nenhuma restri=E7=E3o de =
+acesso ao=20
+  sistema.=20
+  <LI>Se voc=EA tem permiss=F5es de grava=E7=E3o no diret=F3rio e tentar =
+apagar um arquivo=20
+  que voc=EA n=E3o tem permiss=E3o de grava=E7=E3o, o sistema =
+perguntar=E1 se voc=EA confirma=20
+  a exclus=E3o do arquivo apesar do modo leitura. Caso voc=EA tenha =
+permiss=F5es de=20
+  grava=E7=E3o no arquivo, o arquivo ser=E1 apagado por padr=E3o sem =
+mostrar nenhuma=20
+  mensagem de erro (a n=E3o ser que seja especificada a op=E7=E3o -i com =
+o comando=20
+  <CODE>rm</CODE>).=20
+  <LI>Por outro lado, mesmo que voc=EA tenha permiss=F5es de =
+grava=E7=E3o em um arquivo=20
+  mas n=E3o tenha permiss=F5es de grava=E7=E3o em um diret=F3rio, a =
+exclus=E3o do arquivo=20
+  ser=E1 negada. </LI></UL>
+<P>Isto mostra que =E9 levado mais em considera=E7=E3o a permiss=E3o de =
+acesso do=20
+diret=F3rio do que as permiss=F5es dos arquivos e sub-diret=F3rios que =
+ele cont=E9m.=20
+Este ponto =E9 muitas vezes ignorado por muitas pessoas e exp=F5em seu =
+sistema a=20
+riscos de seguran=E7a. Imagine o problema que algum usu=E1rio que n=E3o =
+tenha=20
+permiss=E3o de grava=E7=E3o em um arquivo mas que a tenha no diret=F3rio =
+pode causar em=20
+um sistema mal administrado.=20
+<HR>
+<A name=3Ds-perm-especiais></A>
+<H2>13.5 Permiss=F5es de Acesso Especiais</H2>
+<P>Em adi=E7=E3o as tr=EAs permiss=F5es b=E1sicas (rwx), existem =
+permiss=F5es de acesso=20
+especiais (stX) que afetam arquivos execut=E1veis e diret=F3rios:=20
+<UL>
+  <LI><SAMP>s</SAMP> - Quando =E9 usado na permiss=E3o de acesso do =
+<EM>Dono</EM>,=20
+  ajusta a identifica=E7=E3o efetiva do usu=E1rio do processo durante a =
+execu=E7=E3o de um=20
+  programa, tamb=E9m chamado de <EM>bit setuid</EM>. N=E3o tem efeito em =
+diret=F3rios.=20
+
+  <P>Quando <SAMP>s</SAMP> =E9 usado na permiss=E3o de acesso do =
+<EM>Grupo</EM>,=20
+  ajusta a identifica=E7=E3o efetiva do grupo do processo durante a =
+execu=E7=E3o de um=20
+  programa, chamado de <EM>bit setgid</EM>. =C9 identificado pela letra=20
+  <SAMP>s</SAMP> no lugar da permiss=E3o de execu=E7=E3o do grupo do=20
+  arquivo/diret=F3rio. Em diret=F3rios, for=E7a que os arquivos criados =
+dentro dele=20
+  perten=E7am ao mesmo grupo do diret=F3rio, ao inv=E9s do grupo =
+prim=E1rio que o=20
+  usu=E1rio pertence.=20
+  <P>Ambos <EM>setgid</EM> e <EM>setuid</EM> podem aparecer ao mesmo =
+tempo no=20
+  mesmo arquivo/diret=F3rio. A permiss=E3o de acesso especial =
+<SAMP>s</SAMP> somente=20
+  pode aparecer no campo <EM>Dono</EM> e <EM>Grupo</EM>. </P>
+  <LI><SAMP>S</SAMP> - Id=EAntico a "s". Significa que n=E3o existe a =
+permiss=E3o "x"=20
+  (execu=E7=E3o ou entrar no diret=F3rio) naquele lugar. Um exemplo =E9 =
+o chmod 2760 em=20
+  um diret=F3rio.=20
+  <LI><SAMP>t</SAMP> - Salva a imagem do texto do programa no =
+dispositivo swap,=20
+  assim ele ser=E1 carregado mais rapidamente quando executado, tamb=E9m =
+chamado de=20
+  <EM>stick bit</EM>.=20
+  <P>Em diret=F3rios, impede que outros usu=E1rios removam arquivos dos =
+quais n=E3o=20
+  s=E3o donos. Isto =E9 chamado de colocar o diret=F3rio em modo=20
+  <SAMP>append-only</SAMP>. Um exemplo de diret=F3rio que se encaixa =
+perfeitamente=20
+  nesta condi=E7=E3o =E9 o <CODE>/tmp</CODE>, todos os usu=E1rios devem =
+ter acesso para=20
+  que seus programas possam criar os arquivos tempor=E1rios l=E1, mas =
+nenhum pode=20
+  apagar arquivos dos outros. A permiss=E3o especial <SAMP>t</SAMP>, =
+pode ser=20
+  especificada somente no campo outros usu=E1rios das permiss=F5es de =
+acesso. </P>
+  <LI><SAMP>T</SAMP> - Id=EAntico a "t". Significa que n=E3o existe a =
+permiss=E3o "x"=20
+  naquela posi=E7=E3o (por exemplo, em um chmod 1776 em um diret=F3rio). =
+
+  <LI><SAMP>X</SAMP> - Se voc=EA usar <SAMP>X</SAMP> ao inv=E9s de =
+<SAMP>x</SAMP>, a=20
+  permiss=E3o de execu=E7=E3o somente =E9 afetada se o arquivo j=E1 =
+tiver permiss=F5es de=20
+  execu=E7=E3o. Em diret=F3rios ela tem o mesmo efeito que a permiss=E3o =
+de execu=E7=E3o=20
+  <SAMP>x</SAMP>. </LI></UL>
+<UL>
+  <LI>Exemplo da permiss=E3o de acesso especial <SAMP>X</SAMP>:=20
+  <OL type=3D1>
+    <LI>Crie um arquivo <CODE>teste</CODE> (digitando <SAMP>touch =
+teste</SAMP>)=20
+    e defina sua permiss=E3o para <SAMP>rw-rw-r--</SAMP> (<SAMP>chmod =
+ug=3Drw,o=3Dr=20
+    teste</SAMP> ou <SAMP>chmod 664 teste</SAMP>).=20
+    <LI>Agora use o comando <SAMP>chmod a+X teste</SAMP>=20
+    <LI>digite <SAMP>ls -l</SAMP>=20
+    <LI>Veja que as permiss=F5es do arquivo n=E3o foram afetadas.=20
+    <LI>agora digite <SAMP>chmod o+x teste</SAMP>=20
+    <LI>digite <SAMP>ls -l</SAMP>, voc=EA colocou a permiss=E3o de =
+execu=E7=E3o para os=20
+    outros usu=E1rios.=20
+    <LI>Agora use novamente o comando <SAMP>chmod a+X teste</SAMP>=20
+    <LI>digite <SAMP>ls -l</SAMP>=20
+    <LI>Veja que agora a permiss=E3o de execu=E7=E3o foi concedida a =
+todos os=20
+    usu=E1rios, pois foi verificado que o arquivo era execut=E1vel =
+(tinha permiss=E3o=20
+    de execu=E7=E3o para outros usu=E1rios).=20
+    <LI>Agora use o comando <SAMP>chmod a-X teste</SAMP>=20
+    <LI>Ele tamb=E9m funcionar=E1 e remover=E1 as permiss=F5es de =
+execu=E7=E3o de todos os=20
+    usu=E1rios, porque o arquivo <CODE>teste</CODE> tem permiss=E3o de =
+execu=E7=E3o=20
+    (confira digitando <SAMP>ls -l</SAMP>).=20
+    <LI>Agora tente novamente o <SAMP>chmod a+X teste</SAMP>=20
+    <LI>Voc=EA deve ter reparado que a permiss=E3o de acesso especial =
+<SAMP>X</SAMP>=20
+    =E9 semelhante a <SAMP>x</SAMP>, mas somente faz efeito quanto o =
+arquivo j=E1=20
+    tem permiss=E3o de execu=E7=E3o para o dono, grupo ou outros =
+usu=E1rios. </LI></OL>
+  <P>Em diret=F3rios, a permiss=E3o de acesso especial <SAMP>X</SAMP> =
+funciona da=20
+  mesma forma que <SAMP>x</SAMP>, at=E9 mesmo se o diret=F3rio n=E3o =
+tiver nenhuma=20
+  permiss=E3o de acesso (<SAMP>x</SAMP>). </P></LI></UL>
+<HR>
+<A name=3Ds-perm-root></A>
+<H2>13.6 A conta root</H2>
+<P><EM>Esta se=E7=E3o foi retirada do Manual de Instala=E7=E3o da =
+Debian</EM>.=20
+<P>A conta root =E9 tamb=E9m chamada de <EM>super usu=E1rio</EM>, este =
+=E9 um login que=20
+n=E3o possui restri=E7=F5es de seguran=E7a. A conta root somente deve =
+ser usada para=20
+fazer a administra=E7=E3o do sistema, e usada o menor tempo poss=EDvel.=20
+<P>Qualquer senha que criar dever=E1 conter de 6 a 8 caracteres (em =
+sistemas=20
+usando crypto) ou at=E9 frases inteiras (caso esteja usando MD5, que =
+garante maior=20
+seguran=E7a), e tamb=E9m poder=E1 conter letras mai=FAsculas e =
+min=FAsculas, e tamb=E9m=20
+caracteres de pontua=E7=E3o. Tenha um cuidado especial quando escolher =
+sua senha=20
+root, porque ela =E9 a conta mais poderosa. Evite palavras de =
+dicion=E1rio ou o uso=20
+de qualquer outros dados pessoais que podem ser adivinhados.=20
+<P>Se qualquer um lhe pedir senha root, seja extremamente cuidadoso. =
+Voc=EA=20
+normalmente nunca deve distribuir sua conta root, a n=E3o ser que esteja =
+
+administrando um computador com mais de um administrador do sistema.=20
+<P>Utilize uma conta de usu=E1rio normal ao inv=E9s da conta root para =
+operar seu=20
+sistema. Porque n=E3o usar a conta root? Bem, uma raz=E3o para evitar =
+usar=20
+privil=E9gios root =E9 por causa da facilidade de se cometer danos =
+irrepar=E1veis como=20
+root. Outra raz=E3o =E9 que voc=EA pode ser enganado e rodar um programa =
+<EM>Cavalo de=20
+Tr=F3ia</EM> -- que =E9 um programa que obt=E9m poderes do <EM>super =
+usu=E1rio</EM> para=20
+comprometer a seguran=E7a do seu sistema sem que voc=EA saiba.=20
+<HR>
+<A name=3Ds-perm-chmod></A>
+<H2>13.7 chmod</H2>
+<P>Muda a permiss=E3o de acesso a um arquivo ou diret=F3rio. Com este =
+comando voc=EA=20
+pode escolher se usu=E1rio ou grupo ter=E1 permiss=F5es para ler, =
+gravar, executar um=20
+arquivo ou arquivos. Sempre que um arquivo =E9 criado, seu dono =E9 o =
+usu=E1rio que o=20
+criou e seu grupo =E9 o grupo do usu=E1rio (exceto para diret=F3rios =
+configurados com=20
+a permiss=E3o de grupo <SAMP>"s"</SAMP>, ser=E1 visto adiante).=20
+<P><SAMP>chmod [<EM>op=E7=F5es</EM>] [<EM>permiss=F5es</EM>]=20
+[<EM>diret=F3rio/arquivo</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>diret=F3rio/arquivo</EM>=20
+  <DD>Diret=F3rio ou arquivo que ter=E1 sua permiss=E3o mudada.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-v, --verbose=20
+  <DD>Mostra todos os arquivos que est=E3o sendo processados.=20
+  <DT>-f, --silent=20
+  <DD>N=E3o mostra a maior parte das mensagens de erro.=20
+  <DT>-c, --change=20
+  <DD>Semelhante a op=E7=E3o -v, mas s=F3 mostra os arquivos que tiveram =
+as permiss=F5es=20
+  alteradas.=20
+  <DT>-R, --recursive=20
+  <DD>Muda permiss=F5es de acesso do <EM>diret=F3rio/arquivo</EM> no =
+diret=F3rio atual=20
+  e sub-diret=F3rios.=20
+  <DT>ugoa+-=3DrwxXst=20
+  <DD>
+  <UL>
+    <LI><EM>ugoa</EM> - Controla que n=EDvel de acesso ser=E1 mudado. =
+Especificam,=20
+    em ordem, usu=E1rio (u), grupo (g), outros (o), todos (a).=20
+    <LI><EM>+-=3D</EM> - <EM>+</EM> coloca a permiss=E3o, <EM>-</EM> =
+retira a=20
+    permiss=E3o do arquivo e <EM>=3D</EM> define a permiss=E3o =
+exatamente como=20
+    especificado.=20
+    <LI>rwx - <EM>r</EM> permiss=E3o de leitura do arquivo. <EM>w</EM> =
+permiss=E3o=20
+    de grava=E7=E3o. <EM>x</EM> permiss=E3o de execu=E7=E3o (ou acesso a =
+diret=F3rios).=20
+  </LI></UL></DD></DL>
+<P><CODE>chmod</CODE> n=E3o muda permiss=F5es de links simb=F3licos, as =
+permiss=F5es=20
+devem ser mudadas no arquivo alvo do link. Tamb=E9m podem ser usados =
+c=F3digos=20
+num=E9ricos octais para a mudan=E7a das permiss=F5es de acesso a =
+arquivos/diret=F3rios.=20
+Para detalhes veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm#s-perm-octal">Modo=20
+de permiss=E3o octal, Se=E7=E3o 13.10</A>.=20
+<P>DICA: =C9 poss=EDvel copiar permiss=F5es de acesso do =
+arquivo/diret=F3rio, por=20
+exemplo, se o arquivo <CODE>teste.txt</CODE> tiver a permiss=E3o de =
+acesso=20
+<SAMP>r-xr-----</SAMP> e voc=EA digitar <SAMP>chmod o=3Du</SAMP>, as =
+permiss=F5es de=20
+acesso dos outros usu=E1rios (o) ser=E3o id=EAnticas ao do dono (u). =
+Ent=E3o a nova=20
+permiss=E3o de acesso do arquivo <CODE>teste.txt</CODE> ser=E1=20
+<SAMP>r-xr--r-x</SAMP>=20
+<P>Exemplos de permiss=F5es de acesso:=20
+<DL>
+  <DT><SAMP>chmod g+r *</SAMP>=20
+  <DD>Permite que todos os usu=E1rios que perten=E7am ao grupo dos =
+arquivos (g)=20
+  tenham (+) permiss=F5es de leitura (r) em todos os arquivos do =
+diret=F3rio atual.=20
+  <DT><SAMP>chmod o-r teste.txt</SAMP>=20
+  <DD>Retira (-) a permiss=E3o de leitura (r) do arquivo =
+<CODE>teste.txt</CODE>=20
+  para os outros usu=E1rios (usu=E1rios que n=E3o s=E3o donos e n=E3o =
+pertencem ao grupo=20
+  do arquivo <CODE>teste.txt</CODE>).=20
+  <DT><SAMP>chmod uo+x teste.txt</SAMP>=20
+  <DD>Inclui (+) a permiss=E3o de execu=E7=E3o do arquivo =
+<CODE>teste.txt</CODE> para=20
+  o dono e outros usu=E1rios do arquivo.=20
+  <DT><SAMP>chmod a+x teste.txt</SAMP>=20
+  <DD>Inclui (+) a permiss=E3o de execu=E7=E3o do arquivo =
+<CODE>teste.txt</CODE> para=20
+  o dono, grupo e outros usu=E1rios.=20
+  <DT><SAMP>chmod a=3Drw teste.txt</SAMP>=20
+  <DD>Define a permiss=E3o de todos os usu=E1rios exatamente (=3D) para =
+leitura e=20
+  grava=E7=E3o do arquivo <CODE>teste.txt</CODE>. </DD></DL>
+<HR>
+<A name=3Ds-perm-chgrp></A>
+<H2>13.8 chgrp</H2>
+<P>Muda o grupo de um arquivo/diret=F3rio.=20
+<P><SAMP>chgrp [<EM>op=E7=F5es</EM>] [grupo] =
+[arquivo/diret=F3rio]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>grupo</EM>=20
+  <DD>Novo grupo do <EM>arquivo/diret=F3rio</EM>.=20
+  <DT><EM>arquivo/diret=F3rio</EM>=20
+  <DD>Arquivo/diret=F3rio que ter=E1 o grupo alterado.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-c, --changes=20
+  <DD>Somente mostra os arquivos/grupos que forem alterados.=20
+  <DT>-f, --silent=20
+  <DD>N=E3o mostra mensagens de erro para arquivos/diret=F3rios que =
+n=E3o puderam ser=20
+  alterados.=20
+  <DT>-v, --verbose=20
+  <DD>Mostra todas as mensagens e arquivos sendo modificados.=20
+  <DT>-R, --recursive=20
+  <DD>Altera os grupos de arquivos/sub-diret=F3rios do diret=F3rio =
+atual. </DD></DL>
+<HR>
+<A name=3Ds-perm-chown></A>
+<H2>13.9 chown</H2>
+<P>Muda dono de um arquivo/diret=F3rio. Opcionalmente pode tamb=E9m ser =
+usado para=20
+mudar o grupo.=20
+<P><SAMP>chown [<EM>op=E7=F5es</EM>] [dono.grupo] =
+[diret=F3rio/arquivo]</SAMP>=20
+<P>onde:=20
+<DL>
+  <DT><EM>dono.grupo</EM>=20
+  <DD>Nome do <EM>dono.grupo</EM> que ser=E1 atribu=EDdo ao=20
+  <EM>diret=F3rio/arquivo</EM>. O grupo =E9 opcional.=20
+  <DT><EM>diret=F3rio/arquivo</EM>=20
+  <DD>Diret=F3rio/arquivo que o dono.grupo ser=E1 modificado.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-v, --verbose=20
+  <DD>Mostra os arquivos enquanto s=E3o alterados.=20
+  <DT>-f, --supress=20
+  <DD>N=E3o mostra mensagens de erro durante a execu=E7=E3o do programa. =
+
+  <DT>-c, --changes=20
+  <DD>Mostra somente arquivos que forem alterados.=20
+  <DT>-R, --recursive=20
+  <DD>Altera dono e grupo de arquivos no diret=F3rio atual e =
+sub-diret=F3rios.=20
+</DD></DL>
+<P>O <EM>dono.grupo</EM> pode ser especificado usando o nome de grupo ou =
+o=20
+c=F3digo num=E9rico correspondente ao grupo (GID).=20
+<P>Voc=EA deve ter permiss=F5es de grava=E7=E3o no diret=F3rio/arquivo =
+para alterar seu=20
+dono/grupo.=20
+<UL>
+  <LI><SAMP>chown joao teste.txt</SAMP> - Muda o dono do arquivo=20
+  <CODE>teste.txt</CODE> para <SAMP>joao</SAMP>.=20
+  <LI><SAMP>chown joao.users teste.txt</SAMP> - Muda o dono do arquivo=20
+  <CODE>teste.txt</CODE> para <SAMP>joao</SAMP> e seu grupo para=20
+  <SAMP>users</SAMP>.=20
+  <LI><SAMP>chown -R joao.users *</SAMP> - Muda o dono/grupo dos =
+arquivos do=20
+  diret=F3rio atual e sub-diret=F3rios para <SAMP>joao/users</SAMP> =
+(desde que voc=EA=20
+  tenha permiss=F5es de grava=E7=E3o no diret=F3rios e =
+sub-diret=F3rios). </LI></UL>
+<HR>
+<A name=3Ds-perm-octal></A>
+<H2>13.10 Modo de permiss=E3o octal</H2>
+<P>Ao inv=E9s de utilizar os modos de permiss=E3o <SAMP>+r</SAMP>, =
+<SAMP>-r</SAMP>,=20
+etc, pode ser usado o modo octal para se alterar a permiss=E3o de acesso =
+a um=20
+arquivo. O modo octal =E9 um conjunto de oito n=FAmeros onde cada =
+n=FAmero define um=20
+tipo de acesso diferente.=20
+<P>=C9 mais flex=EDvel gerenciar permiss=F5es de acesso usando o modo =
+octal ao inv=E9s=20
+do comum, pois voc=EA especifica diretamente a permiss=E3o do dono, =
+grupo, outros ao=20
+inv=E9s de gerenciar as permiss=F5es de cada um separadamente. Abaixo a =
+lista de=20
+permiss=F5es de acesso octal:=20
+<UL>
+  <LI><SAMP>0</SAMP> - Nenhuma permiss=E3o de acesso. Equivalente a =
+-rwx.=20
+  <LI><SAMP>1</SAMP> - Permiss=E3o de execu=E7=E3o (x).=20
+  <LI><SAMP>2</SAMP> - Permiss=E3o de grava=E7=E3o (w).=20
+  <LI><SAMP>3</SAMP> - Permiss=E3o de grava=E7=E3o e execu=E7=E3o (wx).=20
+  <LI><SAMP>4</SAMP> - Permiss=E3o de leitura (r).=20
+  <LI><SAMP>5</SAMP> - Permiss=E3o de leitura e execu=E7=E3o (rx).=20
+  <LI><SAMP>6</SAMP> - Permiss=E3o de leitura e grava=E7=E3o (rw).=20
+  <LI><SAMP>7</SAMP> - Permiss=E3o de leitura, grava=E7=E3o e =
+execu=E7=E3o. Equivalente a=20
+  +rwx. </LI></UL>
+<P>O uso de um deste n=FAmeros define a permiss=E3o de acesso do =
+<EM>dono</EM>,=20
+<EM>grupo</EM> ou <EM>outros usu=E1rios</EM>. Um modo f=E1cil de =
+entender como as=20
+permiss=F5es de acesso octais funcionam, =E9 atrav=E9s da seguinte =
+tabela: <PRE>     1 =3D Executar
+     2 =3D Gravar
+     4 =3D Ler
+    =20
+     * Para Dono e Grupo, multiplique as permiss=F5es acima por x100 e =
+x10.
+</PRE>
+<P>e para as permiss=F5es de acesso especiais: <PRE>     1000 =3D Salva =
+imagem do texto no dispositivo de troca
+     2000 =3D Ajusta o bit setgid na execu=E7=E3o
+     4000 =3D Ajusta o bit setuid na execu=E7=E3o
+</PRE>
+<P>Basta agora fazer o seguinte:=20
+<UL>
+  <LI>Somente permiss=E3o de execu=E7=E3o, use 1.=20
+  <LI>Somente a permiss=E3o de leitura, use 4.=20
+  <LI>Somente permiss=E3o de grava=E7=E3o, use 2.=20
+  <LI>Permiss=E3o de leitura/grava=E7=E3o, use 6 (equivale a 2+4 / =
+Gravar+Ler).=20
+  <LI>Permiss=E3o de leitura/execu=E7=E3o, use 5 (equivale a 1+4 / =
+Executar+Ler).=20
+  <LI>Permiss=E3o de execu=E7=E3o/grava=E7=E3o, use 3 (equivale a 1+2 / =
+Executar+Gravar).=20
+  <LI>Permiss=E3o de leitura/grava=E7=E3o/execu=E7=E3o, use 7 (equivale =
+a 1+2+4 /=20
+  Executar+Gravar+Ler).=20
+  <LI>Salvar texto no dispositivo de troca, use 1000.=20
+  <LI>Ajustar bit setgid, use 2000.=20
+  <LI>Ajustar bip setuid, use 4000.=20
+  <LI>Salvar texto e ajustar bit setuid, use 5000 (equivale a 1000+4000 =
+/ Salvar=20
+  texto + bit setuid).=20
+  <LI>Ajustar bit setuid e setgid, use 6000 (equivale a 4000+2000 / =
+setuid +=20
+  setgid). </LI></UL>
+<P>Vamos a pr=E1tica com alguns exemplos: <PRE>     "chmod 764 teste"
+</PRE>
+<P>Os n=FAmeros s=E3o interpretados da <STRONG>direita para a =
+esquerda</STRONG> como=20
+permiss=E3o de acesso aos <EM>outros usu=E1rios</EM> (4), <EM>grupo</EM> =
+(6), e=20
+<EM>dono</EM> (7). O exemplo acima faz os <EM>outros usu=E1rios</EM> (4) =
+terem=20
+acesso somente leitura (r) ao arquivo <CODE>teste</CODE>, o =
+<EM>grupo</EM> (6)=20
+ter a permiss=E3o de leitura e grava=E7=E3o (w), e o <EM>dono</EM> (7) =
+ter permiss=E3o=20
+de leitura, grava=E7=E3o e execu=E7=E3o (rwx) ao arquivo =
+<CODE>teste</CODE>.=20
+<P>Outro exemplo: <PRE>     "chmod 40 teste"
+</PRE>
+<P>O exemplo acima define a permiss=E3o de acesso dos <EM>outros =
+usu=E1rios</EM> (0)=20
+como nenhuma, e define a permiss=E3o de acesso do <EM>grupo</EM> (4) =
+como somente=20
+leitura (r). Note usei somente dois n=FAmeros e ent=E3o a permiss=E3o de =
+acesso do=20
+<EM>dono</EM> do arquivo <SAMP>n=E3o</SAMP> =E9 modificada (leia as =
+permiss=F5es de=20
+acesso da direita para a esquerda!). Para detalhes veja a lista de =
+permiss=F5es de=20
+acesso em modo octal no inicio desta se=E7=E3o. <PRE>     "chmod 751 =
+teste"
+</PRE>
+<P>O exemplo acima define a permiss=E3o de acesso dos <EM>outros =
+usu=E1rios</EM> (1)=20
+para somente execu=E7=E3o (x), o acesso do <EM>grupo</EM> (5) como =
+leitura e=20
+execu=E7=E3o (rx) e o acesso do <EM>dono</EM> (7) como leitura, =
+grava=E7=E3o e execu=E7=E3o=20
+(rwx). <PRE>     "chmod 4751 teste"
+</PRE>
+<P>O exemplo acima define a permiss=E3o de acesso dos <EM>outros =
+usu=E1rios</EM> (1)=20
+para somente execu=E7=E3o (x), acesso do <EM>grupo</EM> (5) como leitura =
+e execu=E7=E3o=20
+(rx), o acesso do <EM>dono</EM> (7) como leitura, grava=E7=E3o e =
+execu=E7=E3o (rwx) e=20
+ajusta o bit setgid (4) para o arquivo <CODE>teste</CODE>.=20
+<HR>
+<A name=3Ds-perm-umask></A>
+<H2>13.11 umask</H2>
+<P>A umask (<EM>user mask</EM>) s=E3o 3 n=FAmeros que definem as =
+permiss=F5es iniciais=20
+do <SAMP>dono</SAMP>, <SAMP>grupo</SAMP> e <SAMP>outros =
+usu=E1rios</SAMP> que o=20
+arquivo/diret=F3rio receber=E1 quando for criado ou copiado. Digite=20
+<SAMP>umask</SAMP> sem par=E2metros para retornar o valor de sua umask =
+atual.=20
+<P>A umask tem efeitos diferentes caso o arquivo que estiver sendo =
+criado for=20
+<EM>bin=E1rio</EM> (um programa execut=E1vel) ou <EM>texto</EM> . Veja a =
+tabela a=20
+seguir para ver qual =E9 a mais adequada a sua situa=E7=E3o: <PRE>     =
+---------------------------------------------
+     |       |        ARQUIVO       | DIRET=D3RIO  |
+     | UMASK |----------------------|            |
+     |       |   Bin=E1rio  |  Texto  |            |
+     |------------------------------|------------|
+     |   0   |    r-x     |   rw-   |    rwx     |
+     |   1   |    r--     |   rw-   |    rw-     |
+     |   2   |    r-x     |   r--   |    r-x     |
+     |   3   |    r--     |   r--   |    r--     |
+     |   4   |    --x     |   -w-   |    -wx     |
+     |   5   |    ---     |   -w-   |    -w-     |
+     |   6   |    --x     |   ---   |    --x     |
+     |   7   |    ---     |   ---   |    ---     |
+     ---------------------------------------------
+</PRE>
+<P>Um <EM>arquivo texto</EM> criado com o comando <SAMP>umask 012;touch=20
+texto.txt</SAMP> receber=E1 as permiss=F5es <SAMP>-rw-rw-r--</SAMP>, =
+pois 0 (dono)=20
+ter=E1 permiss=F5es <SAMP>rw-</SAMP>, 1 (grupo), ter=E1 permiss=F5es =
+<SAMP>rw-</SAMP> e=20
+2 (outros usu=E1rios) ter=E3o permiss=F5es <SAMP>r--</SAMP>. Um =
+<EM>arquivo=20
+bin=E1rio</EM> copiado com o comando <SAMP>umask 012;cp /bin/ls =
+/tmp/ls</SAMP>=20
+receber=E1 as permiss=F5es <SAMP>-r-xr--r-x</SAMP> (confira com a tabela =
+acima).=20
+<P>Por este motivo =E9 preciso um pouco de aten=E7=E3o antes de escolher =
+a umask, um=20
+valor mal escolhido poderia causar problemas de acesso a arquivos, =
+diret=F3rios ou=20
+programas n=E3o sendo executados. O valor padr=E3o da umask na maioria =
+das=20
+distribui=E7=F5es atuais =E9 022. A umask padr=E3o no sistema Debian =E9 =
+a 022 .=20
+<P>A umask =E9 de grande utilidade para programas que criam =
+arquivos/diret=F3rios=20
+tempor=E1rios, desta forma pode-se bloquear o acesso de outros =
+usu=E1rios desde a=20
+cria=E7=E3o do arquivo, evitando recorrer ao <CODE>chmod</CODE>.=20
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ 13 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

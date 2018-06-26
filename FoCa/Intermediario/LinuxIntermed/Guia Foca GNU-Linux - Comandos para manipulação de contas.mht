@@ -1,0 +1,750 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: =?iso-8859-1?Q?Guia_Foca_GNU/Linux_-_Comandos_para_manipula=E7=E3o_de_con?=
+	=?iso-8859-1?Q?tas?=
+Date: Mon, 6 Aug 2007 11:20:52 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-cmdc.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Comandos para manipula=E7=E3o =
+de contas</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-cmdc></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ 12 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 12 - Comandos para =
+manipula=E7=E3o de contas=20
+</H1>
+<HR>
+
+<P>Este cap=EDtulo traz comandos usados para manipula=E7=E3o de conta de =
+usu=E1rios e=20
+grupos em sistemas <CODE>GNU/Linux</CODE>. Entre os assuntos descritos =
+aqui=20
+est=E3o adicionar usu=E1rios ao sistema, adicionar grupos, incluir =
+usu=E1rios=20
+existente em novos grupos, etc.=20
+<HR>
+<A name=3Ds-cmdc-adduser></A>
+<H2>12.1 adduser</H2>
+<P>Adiciona um usu=E1rio ou grupo no sistema. Por padr=E3o, quando um =
+novo usu=E1rio =E9=20
+adicionado, =E9 criado um grupo com o mesmo nome do usu=E1rio. =
+Opcionalmente o=20
+<CODE>adduser</CODE> tamb=E9m pode ser usado para adicionar um usu=E1rio =
+a um grupo=20
+(veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm#s-cmdc-incluirgrupo">Adicionando=
+=20
+o usu=E1rio a um grupo extra, Se=E7=E3o 12.10</A>). Ser=E1 criado um =
+diret=F3rio home com=20
+o nome do usu=E1rio (a n=E3o ser que o novo usu=E1rio criado seja um =
+usu=E1rio do=20
+sistema) e este receber=E1 uma identifica=E7=E3o. A identifica=E7=E3o do =
+usu=E1rio (UID)=20
+escolhida ser=E1 a primeira dispon=EDvel no sistema especificada de =
+acordo com a=20
+faixa de UIDS de usu=E1rios permitidas no arquivo de configura=E7=E3o=20
+<CODE>/etc/adduser.conf</CODE>. Este =E9 o arquivo que cont=E9m os =
+padr=F5es para a=20
+cria=E7=E3o de novos usu=E1rios no sistema.=20
+<P><SAMP>adduser [<EM>op=E7=F5es</EM>] [<EM>usu=E1rio/grupo</EM>]</SAMP> =
+
+<P>Onde:=20
+<DL>
+  <DT><EM>usu=E1rio/grupo</EM>=20
+  <DD>Nome do novo usu=E1rio que ser=E1 adicionado ao sistema.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-disable-passwd=20
+  <DD>N=E3o executa o programa <CODE>passwd</CODE> para escolher a senha =
+e somente=20
+  permite o uso da conta ap=F3s o usu=E1rio escolher uma senha.=20
+  <DT>--force-badname=20
+  <DD>Desativa a checagem de senhas ruins durante a adi=E7=E3o do novo =
+usu=E1rio. Por=20
+  padr=E3o o <CODE>adduser</CODE> checa se a senha pode ser facilmente =
+adivinhada.=20
+
+  <DT>--group=20
+  <DD>Cria um novo grupo ao inv=E9s de um novo usu=E1rio. A cria=E7=E3o =
+de grupos tamb=E9m=20
+  pode ser feita pelo comando <CODE>addgroup</CODE>.=20
+  <DT>-uid [num]=20
+  <DD>Cria um novo usu=E1rio com a identifica=E7=E3o [num] ao inv=E9s de =
+procurar o=20
+  pr=F3ximo UID dispon=EDvel.=20
+  <DT>-gid [num]=20
+  <DD>Faz com que o usu=E1rio seja parte do grupo [gid] ao inv=E9s de =
+pertencer a um=20
+  novo grupo que ser=E1 criado com seu nome. Isto =E9 =FAtil caso deseje =
+permitir que=20
+  grupos de usu=E1rios possam ter acesso a arquivos comuns.=20
+  <P>Caso estiver criando um novo grupo com <CODE>adduser</CODE>, a=20
+  identifica=E7=E3o do novo grupo ser=E1 [num]. </P>
+  <DT>--home [dir]=20
+  <DD>Usa o diret=F3rio [dir] para a cria=E7=E3o do diret=F3rio home do =
+usu=E1rio ao inv=E9s=20
+  de usar o especificado no arquivo de configura=E7=E3o=20
+  <CODE>/etc/adduser.conf</CODE>.=20
+  <DT>--ingroup [nome]=20
+  <DD>Quando adicionar um novo usu=E1rio no sistema, coloca o usu=E1rio =
+no grupo=20
+  [nome] ao inv=E9s de criar um novo grupo.=20
+  <DT>--quiet=20
+  <DD>N=E3o mostra mensagens durante a opera=E7=E3o.=20
+  <DT>--system=20
+  <DD>Cria um usu=E1rio de sistema ao inv=E9s de um usu=E1rio normal. =
+</DD></DL>
+<P>Os dados do usu=E1rio s=E3o colocados no arquivo =
+<CODE>/etc/passwd</CODE> ap=F3s=20
+sua cria=E7=E3o e os dados do grupo s=E3o colocados no arquivo=20
+<CODE>/etc/group</CODE>.=20
+<P>OBSERVA=C7=C3O: Caso esteja usando senhas ocultas (shadow passwords), =
+as senhas=20
+dos usu=E1rios ser=E3o colocadas no arquivo <CODE>/etc/shadow</CODE> e =
+as senhas dos=20
+grupos no arquivo <CODE>/etc/gshadow</CODE>. Isto aumenta mais a =
+seguran=E7a do=20
+sistema porque somente o usu=E1rio <SAMP>root</SAMP> pode ter acesso a =
+estes=20
+arquivos, ao contr=E1rio do arquivo <CODE>/etc/passwd</CODE> que possui =
+os dados=20
+de usu=E1rios e devem ser lidos por todos.=20
+<HR>
+<A name=3Ds-cmdc-addgroup></A>
+<H2>12.2 addgroup</H2>
+<P>Adiciona um novo grupo de usu=E1rios no sistema. As op=E7=F5es usadas =
+s=E3o as mesmas=20
+do <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm#s-cmdc-adduser">adduser,=20
+Se=E7=E3o 12.1</A>.=20
+<P><SAMP>addgroup [<EM>usu=E1rio/grupo</EM>] =
+[<EM>op=E7=F5es</EM>]</SAMP>=20
+<HR>
+<A name=3Ds-cmdc-passwd></A>
+<H2>12.3 passwd</H2>
+<P>Muda a senha do usu=E1rio ou grupo. Um usu=E1rio somente pode alterar =
+a senha de=20
+sua conta, mas o superusu=E1rio (<SAMP>root</SAMP>) pode alterar a senha =
+de=20
+qualquer conta de usu=E1rio, inclusive a data de validade da conta, etc. =
+Os donos=20
+de grupos tamb=E9m podem alterar a senha do grupo com este comando.=20
+<P>Os dados da conta do usu=E1rio como nome, endere=E7o, telefone, =
+tamb=E9m podem ser=20
+alterados com este comando.=20
+<P><SAMP>passwd [<EM>usu=E1rio/grupo</EM>] [<EM>op=E7=F5es</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>usu=E1rio</EM>=20
+  <DD>Nome do usu=E1rio/grupo que ter=E1 sua senha alterada.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-g=20
+  <DD>Se especificada, a senha do grupo ser=E1 alterada. Somente o root =
+ou o=20
+  administrador do grupo pode alterar sua senha. A op=E7=E3o -r pode ser =
+usada com=20
+  esta para remover a senha do grupo. A op=E7=E3o -R pode ser usada para =
+restringir=20
+  o acesso do grupo para outros usu=E1rios.=20
+  <DT>-x [dias]=20
+  <DD>Especifica o n=FAmero m=E1ximo de dias que a senha poder=E1 ser =
+usada. Ap=F3s=20
+  terminar o prazo, a senha dever=E1 ser modificada.=20
+  <DT>-i=20
+  <DD>Desativa a conta caso o usu=E1rio n=E3o tenha alterado sua senha =
+ap=F3s o tempo=20
+  especificado por -x.=20
+  <DT>-n [dias]=20
+  <DD>Especifica o n=FAmero m=EDnimo de dias para a senha ser alterada. =
+O usu=E1rio=20
+  n=E3o poder=E1 mudar sua senha at=E9 que [dias] sejam atingidos desde =
+a =FAltima=20
+  altera=E7=E3o de senha.=20
+  <DT>-w [num]=20
+  <DD>N=FAmero de dias antecedentes que o usu=E1rio receber=E1 o alerta =
+para mudar sua=20
+  senha. O alerta ocorre [num] dias antes do limite da op=E7=E3o -x, =
+avisando ao=20
+  usu=E1rios quantos dias restam para a troca de sua senha.=20
+  <DT>-l [nome]=20
+  <DD>Bloqueia a conta do usu=E1rio [nome]. Deve ser usada pelo root. O =
+bloqueio=20
+  da conta =E9 feito acrescentando um caracter a senha para que n=E3o =
+confira com a=20
+  senha original.=20
+  <DT>-u [nome]=20
+  <DD>Desbloqueia a conta de um usu=E1rio bloqueada com a op=E7=E3o -l.=20
+  <DT>-S [nome]=20
+  <DD>Mostra o status da conta do usu=E1rio [nome]. A primeira parte =E9 =
+o nome do=20
+  usu=E1rio seguido de L(conta bloqueada), NP(sem senha), ou P (com =
+senha), a=20
+  terceira parte =E9 a data da =FAltima modifica=E7=E3o da senha, a =
+quarta parte =E9 a=20
+  per=EDodo m=EDnimo, m=E1ximo, alerta e o per=EDodo de inatividade para =
+a senha.=20
+</DD></DL>
+<P>Procure sempre combinar letras mai=FAsculas, min=FAsculas, e =
+n=FAmeros ao escolher=20
+suas senhas. N=E3o =E9 recomendado escolher palavras normais como sua =
+senha pois=20
+podem ser vulner=E1veis a ataques de dicion=E1rios cracker. Outra =
+recomenda=E7=E3o =E9=20
+utilizar <EM>senhas ocultas</EM> em seu sistema (<EM>shadow =
+password</EM>).=20
+<P>Voc=EA deve ser o dono da conta para poder modificar a senhas. O =
+usu=E1rio root=20
+pode modificar/apagar a senha de qualquer usu=E1rio.=20
+<P>Exemplo: <SAMP>passwd root</SAMP>.=20
+<HR>
+<A name=3Ds-cmdc-newgrp></A>
+<H2>12.4 newgrp</H2>
+<P>Altera a identifica=E7=E3o de grupo do usu=E1rio. Para retornar a =
+identifica=E7=E3o=20
+anterior, digite <SAMP>exit</SAMP> e tecle <SAMP>Enter</SAMP>. Para =
+executar um=20
+comando com outra identifica=E7=E3o de grupo de usu=E1rio, use o comando =
+<A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm#s-cmdc-sg">sg,=20
+Se=E7=E3o 12.9</A>.=20
+<P><SAMP>newgrp <EM>-</EM> [<EM>grupo</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>-</EM>=20
+  <DD>Se usado, inicia um novo ambiente ap=F3s o uso do comando=20
+  <CODE>newgrp</CODE> (semelhante a um novo login no sistema), caso =
+contr=E1rio, o=20
+  ambiente atual do usu=E1rio =E9 mantido.=20
+  <DT><EM>grupo</EM>=20
+  <DD>Nome do grupo ou n=FAmero do grupo que ser=E1 inclu=EDdo. =
+</DD></DL>
+<P>Quando este comando =E9 usado, =E9 pedida a senha do grupo que deseja =
+acessar.=20
+Caso a senha do grupo esteja incorreta ou n=E3o exista senha definida, a =
+execu=E7=E3o=20
+do comando =E9 negada. A listagem dos grupos que pertence atualmente =
+pode ser=20
+feita usando o comando <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm#s-cmdc-id">id,=20
+Se=E7=E3o 12.12</A>.=20
+<HR>
+<A name=3Ds-cmdc-userdel></A>
+<H2>12.5 userdel</H2>
+<P>Apaga um usu=E1rio do sistema. Quando =E9 usado, este comando apaga =
+todos os=20
+dados da conta especificado dos arquivos de contas do sistema.=20
+<P><SAMP>userdel [<EM>-r</EM>] [<EM>usu=E1rio</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT>-r=20
+  <DD>Apaga tamb=E9m o diret=F3rio HOME do usu=E1rio. </DD></DL>
+<P>OBS: Note que uma conta de usu=E1rio n=E3o poder=E1 ser removida caso =
+ele estiver=20
+no sistema, pois os programas podem precisar ter acesso aos dados dele =
+(como=20
+UID, GID) no <CODE>/etc/passwd</CODE>.=20
+<HR>
+<A name=3Ds-cmdc-groupdel></A>
+<H2>12.6 groupdel</H2>
+<P>Apaga um grupo do sistema. Quando =E9 usado, este comando apaga todos =
+os dados=20
+do grupo especificado dos arquivos de contas do sistema.=20
+<P><SAMP>groupdel [<EM>grupo</EM>]</SAMP>=20
+<P>Tenha certeza que n=E3o existem arquivos/diret=F3rios criados com o =
+grupo apagado=20
+atrav=E9s do comando <CODE>find</CODE>.=20
+<P>OBS: Voc=EA n=E3o pode remover o grupo prim=E1rio de um usu=E1rio. =
+Remova o usu=E1rio=20
+primeiro.=20
+<HR>
+<A name=3Ds-cmdc-lastlog></A>
+<H2>12.7 lastlog</H2>
+<P>Mostra o =FAltimo login dos usu=E1rios cadastrados no sistema. =C9 =
+mostrado o nome=20
+usado no login, o terminal onde ocorreu a conex=E3o e a hora da =FAltima =
+conex=E3o.=20
+Estes dados s=E3o obtidos atrav=E9s da pesquisa e formata=E7=E3o do =
+arquivo=20
+<CODE>/var/log/lastlog</CODE>. Caso o usu=E1rio n=E3o tenha feito login, =
+=E9 mostrada=20
+a mensagem <SAMP>** Never logged in **</SAMP>=20
+<P><SAMP>lastlog [<EM>op=E7=F5es</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-t [dias]=20
+  <DD>Mostra somente os usu=E1rios que se conectaram ao sistema nos =
+=FAltimos=20
+  [dias].=20
+  <DT>-u [nome]=20
+  <DD>Mostra somente detalhes sobre o usu=E1rio [nome]. </DD></DL>
+<P>A op=E7=E3o -t substitui a op=E7=E3o -u caso sejam usadas.=20
+<HR>
+<A name=3Ds-cmdc-last></A>
+<H2>12.8 last</H2>
+<P>Mostra uma listagem de entrada e sa=EDda de usu=E1rios no sistema. =
+S=E3o mostrados=20
+os seguintes campos na listagem:=20
+<UL>
+  <LI>Nome do usu=E1rio </LI></UL>
+<UL>
+  <LI>Terminal onde ocorreu a conex=E3o/desconex=E3o </LI></UL>
+<UL>
+  <LI>O hostname (caso a conex=E3o tenha ocorrido remotamente) ou =
+console (caso=20
+  tenha ocorrido localmente). </LI></UL>
+<UL>
+  <LI>A data do login/logout, a hora do login/down se estiver fora do =
+sistema/=20
+  still logged in se ainda estiver usando o sistema </LI></UL>
+<UL>
+  <LI>Tempo (em Horas:Minutos) que esteve conectado ao sistema. =
+</LI></UL>
+<P>A listagem =E9 mostrada em ordem inversa, ou seja, da data mais atual =
+para a=20
+mais antiga. A listagem feita pelo <CODE>last</CODE> =E9 obtida de=20
+<CODE>/var/log/wtmp</CODE>.=20
+<P><SAMP>last [<EM>op=E7=F5es</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-n [num]=20
+  <DD>Mostra [num] linhas. Caso n=E3o seja usada, todas as linhas s=E3o =
+mostradas.=20
+  <DT>-R=20
+  <DD>N=E3o mostra o campo HostName.=20
+  <DT>-a=20
+  <DD>Mostra o hostname na =FAltima coluna. Ser=E1 muito =FAtil se =
+combinada com a=20
+  op=E7=E3o -d.=20
+  <DT>-d=20
+  <DD>Usa o DNS para resolver o IP de sistemas remotos para nomes DNS.=20
+  <DT>-x=20
+  <DD>Mostra as entradas de desligamento do sistema e altera=E7=F5es do =
+n=EDvel de=20
+  execu=E7=E3o do sistema. </DD></DL>
+<P>O comando <CODE>last</CODE> pode ser seguido de um argumento que =
+ser=E1=20
+pesquisado como uma express=E3o regular durante a listagem.=20
+<P>O comando <CODE>last</CODE> usa o arquivo <CODE>/var/log/wtmp</CODE> =
+para=20
+gerar sua listagem, mas alguns sistemas podem n=E3o possuir este =
+arquivo. O=20
+arquivo <CODE>/var/log/wtmp</CODE> somente =E9 usado caso existir. =
+Voc=EA pode=20
+cria-lo com o comando <SAMP>"echo -n &gt;/var/log/wtmp"</SAMP> ou =
+<SAMP>touch=20
+/var/log/wtmp</SAMP>.=20
+<UL>
+  <LI><SAMP>last</SAMP> - Mostra a listagem geral=20
+  <LI><SAMP>last -a</SAMP> - Mostra a listagem geral incluindo o nome da =
+m=E1quina=20
+
+  <LI><SAMP>last gleydson</SAMP> - Mostra somente atividades do =
+usu=E1rio gleydson=20
+
+  <LI><SAMP>last reboot</SAMP> - Mostra as reinicializa=E7=F5es do =
+sistema=20
+  <LI><SAMP>last tty1</SAMP> - Mostra todas as atividades no tty1 =
+</LI></UL>
+<HR>
+<A name=3Ds-cmdc-sg></A>
+<H2>12.9 sg</H2>
+<P>Executa um comando com outra identifica=E7=E3o de grupo. A =
+identifica=E7=E3o do grupo=20
+de usu=E1rio =E9 modificada somente durante a execu=E7=E3o do comando. =
+Para alterar a=20
+identifica=E7=E3o de grupo durante sua se=E7=E3o shell, use o comando <A =
+
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm#s-cmdc-newgrp">newgrp,=20
+Se=E7=E3o 12.4</A>.=20
+<P><SAMP>sg [<EM>-</EM>] [<EM>grupo</EM>] [<EM>comando</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><SAMP>-</SAMP>=20
+  <DD>Se usado, inicia um novo ambiente durante o uso do comando =
+(semelhante a=20
+  um novo login e execu=E7=E3o do comando), caso contr=E1rio, o ambiente =
+atual do=20
+  usu=E1rio =E9 mantido.=20
+  <DT><SAMP>grupo</SAMP>=20
+  <DD>Nome do grupo que o comando ser=E1 executado.=20
+  <DT><SAMP>comando</SAMP>=20
+  <DD>Comando que ser=E1 executado. O comando ser=E1 executado pelo =
+bash. </DD></DL>
+<P>Quando este comando =E9 usado, =E9 pedida a senha do grupo que deseja =
+acessar.=20
+Caso a senha do grupo esteja incorreta ou n=E3o exista senha definida, a =
+execu=E7=E3o=20
+do comando =E9 negada.=20
+<P>Exemplo: <SAMP>sg root ls /root</SAMP>=20
+<HR>
+<A name=3Ds-cmdc-incluirgrupo></A>
+<H2>12.10 Adicionando o usu=E1rio a um grupo extra</H2>
+<P>Para adicionar um usu=E1rio em um novo grupo e assim permitir que ele =
+acesse os=20
+arquivos/diret=F3rios que pertencem =E0quele grupo, voc=EA deve estar =
+como root e=20
+editar o arquivo <CODE>/etc/group</CODE> com o comando =
+<CODE>vigr</CODE>. Este=20
+arquivo possui o seguinte formato:=20
+<P>NomedoGrupo:senha:GID:usu=E1rios=20
+<P>Onde:=20
+<DL>
+  <DT>NomedoGrupo=20
+  <DD>=C9 o nome daquele grupo de usu=E1rios. </DD></DL>
+<DL>
+  <DT>senha=20
+  <DD>Senha para ter acesso ao grupo. Caso esteja utilizando senhas =
+ocultas para=20
+  grupos, as senhas estar=E3o em <CODE>/etc/gshadow</CODE>. </DD></DL>
+<DL>
+  <DT>GID=20
+  <DD>Identifica=E7=E3o num=E9rica do grupo de usu=E1rio. </DD></DL>
+<DL>
+  <DT>usuarios=20
+  <DD>Lista de usu=E1rios que tamb=E9m fazem parte daquele grupo. Caso =
+exista mais=20
+  de um nome de usu=E1rio, eles devem estar separados por v=EDrgula. =
+</DD></DL>
+<P>Deste modo para acrescentar o usu=E1rio "joao" ao grupo =
+<SAMP>audio</SAMP> para=20
+ter acesso aos dispositivos de som do Linux, acrescente o nome no final =
+da=20
+linha: "audio:x:100:joao". Pronto, basta digitar <SAMP>logout</SAMP> e =
+entrar=20
+novamente com seu nome e senha, voc=EA estar=E1 fazendo parte do grupo=20
+<SAMP>audio</SAMP> (confira digitando <SAMP>groups</SAMP> ou =
+<SAMP>id</SAMP>).=20
+<P>Outros nomes de usu=E1rios podem ser acrescentados ao grupo =
+<SAMP>audio</SAMP>=20
+bastando separar os nomes com v=EDrgula. Voc=EA tamb=E9m pode usar o =
+comando=20
+<CODE>adduser</CODE> da seguinte forma para adicionar automaticamente um =
+usu=E1rio=20
+a um grupo: <PRE>     adduser joao audio
+</PRE>
+<P>Isto adicionaria o usu=E1rio "joao" ao grupo <SAMP>audio</SAMP> da =
+mesma forma=20
+que fazendo-se a edi=E7=E3o manualmente.=20
+<HR>
+<A name=3Ds-cmdc-chfn></A>
+<H2>12.11 chfn</H2>
+<P>Muda os dados usados pelo comando <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-finger">finger,=20
+Se=E7=E3o 11.3</A>.=20
+<P><SAMP>chfn [<EM>usu=E1rio</EM>] [<EM>op=E7=F5es</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>usu=E1rio</EM>=20
+  <DD>Nome do usu=E1rio.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-f [nome]=20
+  <DD>Muda o nome completo do usu=E1rio.=20
+  <DT>-r [nome]=20
+  <DD>Muda o n=FAmero da sala do usu=E1rio.=20
+  <DT>-w [tel]=20
+  <DD>Muda o telefone de trabalho do usu=E1rio.=20
+  <DT>-h [tel]=20
+  <DD>Muda o telefone residencial do usu=E1rio.=20
+  <DT>-o [outros]=20
+  <DD>Muda outros dados do usu=E1rio. </DD></DL>
+<P>Caso o nome que acompanha as op=E7=F5es (como o nome completo) =
+contenha espa=E7os,=20
+use "" para identifica-lo.=20
+<P>Exemplo: <SAMP>chfn -f "Nome do Usu=E1rio root" root</SAMP>=20
+<HR>
+<A name=3Ds-cmdc-id></A>
+<H2>12.12 id</H2>
+<P>Mostra a identifica=E7=E3o atual do usu=E1rio, grupo prim=E1rio e =
+outros grupos que=20
+pertence.=20
+<P><SAMP>id [<EM>op=E7=F5es</EM>] [<EM>usu=E1rio</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>usu=E1rio</EM>=20
+  <DD>=C9 o usu=E1rio que desejamos ver a identifica=E7=E3o, grupos =
+prim=E1rios e=20
+  complementares.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-g, --group=20
+  <DD>Mostra somente a identifica=E7=E3o do grupo prim=E1rio.=20
+  <DT>-G, --groups=20
+  <DD>Mostra a identifica=E7=E3o de outros grupos que pertence.=20
+  <DT>-n, --name=20
+  <DD>Mostra o nome do usu=E1rio e grupo ao inv=E9s da identifica=E7=E3o =
+num=E9rica.=20
+  <DT>-u, --user=20
+  <DD>Mostra somente a identifica=E7=E3o do usu=E1rio (user ID).=20
+  <DT>-r, --real=20
+  <DD>Mostra a identifica=E7=E3o real de usu=E1rio e grupo, ao inv=E9s =
+da efetiva. Esta=20
+  op=E7=E3o deve ser usada junto com uma das op=E7=F5es: -u, -g, ou -G. =
+</DD></DL>
+<P>Caso n=E3o sejam especificadas op=E7=F5es, <CODE>id</CODE> mostrar=E1 =
+todos os dados=20
+do usu=E1rio.=20
+<P>Exemplo: <SAMP>id</SAMP>, <SAMP>id --user</SAMP>, <SAMP>id -r =
+-u</SAMP>.=20
+<HR>
+<A name=3Ds-cmdc-logname></A>
+<H2>12.13 logname</H2>
+<P>Mostra seu login (username).=20
+<P><SAMP>logname</SAMP>=20
+<HR>
+<A name=3Ds-cmdc-users></A>
+<H2>12.14 users</H2>
+<P>Mostra os nomes de usu=E1rios usando atualmente o sistema. Os nomes =
+de usu=E1rios=20
+s=E3o mostrados atrav=E9s de espa=E7os sem detalhes adicionais, para ver =
+maiores=20
+detalhes sobre os usu=E1rios, veja os comandos <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm#s-cmdc-id">id,=20
+Se=E7=E3o 12.12</A> e <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-who">who,=20
+Se=E7=E3o 11.1</A>.=20
+<P><SAMP>users</SAMP>=20
+<P>Os nomes de usu=E1rios atualmente conectados ao sistema s=E3o obtidos =
+do arquivo=20
+<CODE>/var/log/wtmp</CODE>.=20
+<HR>
+<A name=3Ds-cmdc-groups></A>
+<H2>12.15 groups</H2>
+<P>Mostra os grupos que o usu=E1rio pertence.=20
+<P><SAMP>groups [<EM>usu=E1rio</EM>]</SAMP>=20
+<P>Exemplo: <SAMP>groups</SAMP>, <SAMP>groups root</SAMP>=20
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ 12 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

@@ -1,0 +1,471 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: =?iso-8859-1?Q?Guia_Foca_GNU/Linux_-_Comandos_para_manipula=E7=E3o_de_Arq?=
+	=?iso-8859-1?Q?uivos?=
+Date: Mon, 6 Aug 2007 11:20:32 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-cmd.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Comandos para manipula=E7=E3o =
+de Arquivos</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-cmd></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ 9 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 9 - Comandos para manipula=E7=E3o =
+de Arquivos=20
+</H1>
+<HR>
+
+<P>Abaixo, comandos utilizados para manipula=E7=E3o de arquivos.=20
+<HR>
+<A name=3Ds-comandos-cat></A>
+<H2>9.1 cat</H2>
+<P>Mostra o conte=FAdo de um arquivo bin=E1rio ou texto.=20
+<P><SAMP>cat [op=E7=F5es] [<EM>diret=F3rio/arquivo</EM>]=20
+[<EM>diret=F3rio1/arquivo1</EM>]</SAMP>=20
+<DL>
+  <DT><EM>diret=F3rio/arquivo</EM>=20
+  <DD>Localiza=E7=E3o do arquivo que deseja visualizar o conte=FAdo.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-n, --number=20
+  <DD>Mostra o n=FAmero das linhas enquanto o conte=FAdo do arquivo =E9 =
+mostrado.=20
+  <DT>-s, --squeeze-blank=20
+  <DD>N=E3o mostra mais que uma linha em branco entre um par=E1grafo e =
+outro.=20
+  <DT>-=20
+  <DD>L=EA a entrada padr=E3o. </DD></DL>
+<P>O comando <CODE>cat</CODE> trabalha com arquivos texto. Use o comando =
+
+<CODE>zcat</CODE> para ver diretamente arquivos compactados com=20
+<CODE>gzip</CODE>.=20
+<P>Exemplo: <SAMP>cat /usr/doc/copyright/GPL</SAMP>=20
+<HR>
+<A name=3Ds-comando-tac></A>
+<H2>9.2 tac</H2>
+<P>Mostra o conte=FAdo de um arquivo bin=E1rio ou texto (como o =
+<CODE>cat</CODE>) s=F3=20
+que em ordem inversa.=20
+<P><SAMP>tac [op=E7=F5es] [<EM>diret=F3rio/arquivo</EM>]=20
+[<EM>diret=F3rio1/arquivo1</EM>]</SAMP>=20
+<DL>
+  <DT><EM>diret=F3rio/arquivo</EM>=20
+  <DD>Localiza=E7=E3o do arquivo que deseja visualizar o conte=FAdo=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-s [string]=20
+  <DD>Usa o [string] como separador de registros.=20
+  <DT>-=20
+  <DD>L=EA a entrada padr=E3o. </DD></DL>
+<P>Exemplo: <SAMP>tac /usr/doc/copyright/GPL</SAMP>.=20
+<HR>
+<A name=3Ds-comando-rm></A>
+<H2>9.3 rm</H2>
+<P>Apaga arquivos. Tamb=E9m pode ser usado para apagar diret=F3rios e =
+sub-diret=F3rios=20
+vazios ou que contenham arquivos.=20
+<P><SAMP>rm =
+[<EM>op=E7=F5es</EM>][<EM>caminho</EM>][<EM>arquivo/diret=F3rio</EM>]=20
+[<EM>caminho1</EM>][<EM>arquivo1/diret=F3rio1</EM>]</SAMP>=20
+<P>onde:=20
+<DL>
+  <DT><EM>caminho</EM>=20
+  <DD>Localiza=E7=E3o do arquivo que deseja apagar. Se omitido, assume =
+que o arquivo=20
+  esteja no diret=F3rio atual.=20
+  <DT><EM>arquivo/diret=F3rio</EM>=20
+  <DD>Arquivo que ser=E1 apagado.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-i, --interactive=20
+  <DD>Pergunta antes de remover, esta =E9 ativada por padr=E3o.=20
+  <DT>-v, --verbose=20
+  <DD>Mostra os arquivos na medida que s=E3o removidos.=20
+  <DT>-r, --recursive=20
+  <DD>Usado para remover arquivos em sub-diret=F3rios. Esta op=E7=E3o =
+tamb=E9m pode ser=20
+  usada para remover sub-diret=F3rios.=20
+  <DT>-f, --force=20
+  <DD>Remove os arquivos sem perguntar.=20
+  <DT>-- arquivo=20
+  <DD>Remove arquivos/diret=F3rios que cont=E9m caracteres especiais. O =
+separador=20
+  "--" funciona com todos os comandos do shell e permite que os =
+caracteres=20
+  especiais como "*", "?", "-", etc. sejam interpretados como caracteres =
+comuns.=20
+  </DD></DL>
+<P>Use com aten=E7=E3o o comando <CODE>rm</CODE>, uma vez que os =
+arquivos e=20
+diret=F3rios forem apagados, eles n=E3o poder=E3o ser mais recuperados.=20
+<P>Exemplos:=20
+<UL>
+  <LI><SAMP>rm teste.txt</SAMP> - Apaga o arquivo <CODE>teste.txt</CODE> =
+no=20
+  diret=F3rio atual.=20
+  <LI><SAMP>rm *.txt</SAMP> - Apaga todos os arquivos do diret=F3rio =
+atual que=20
+  terminam com <CODE>.txt</CODE>.=20
+  <LI><SAMP>rm *.txt teste.novo</SAMP> - Apaga todos os arquivos do =
+diret=F3rio=20
+  atual que terminam com <CODE>.txt</CODE> e tamb=E9m o arquivo=20
+  <CODE>teste.novo</CODE>.=20
+  <LI><SAMP>rm -rf /tmp/teste/*</SAMP> - Apaga todos os arquivos e=20
+  sub-diret=F3rios do diret=F3rio <CODE>/tmp/teste</CODE> mas mant=E9m o =
+sub-diret=F3rio=20
+  <CODE>/tmp/teste</CODE>.=20
+  <LI><SAMP>rm -rf /tmp/teste</SAMP> - Apaga todos os arquivos e =
+sub-diret=F3rios=20
+  do diret=F3rio <CODE>/tmp/teste</CODE>, inclusive =
+<CODE>/tmp/teste</CODE>.=20
+  <LI><SAMP>rm -f -- --arquivo--</SAMP> - Remove o arquivo de nome=20
+  <CODE>--arquivo--</CODE>. </LI></UL>
+<HR>
+<A name=3Ds-comando-cp></A>
+<H2>9.4 cp</H2>
+<P>Copia arquivos.=20
+<P><SAMP>cp [<EM>op=E7=F5es</EM>] [<EM>origem</EM>] =
+[<EM>destino</EM>]</SAMP>=20
+<P>onde:=20
+<DL>
+  <DT><EM>origem</EM>=20
+  <DD>Arquivo que ser=E1 copiado. Podem ser especificados mais de um =
+arquivo para=20
+  ser copiado usando "Curingas" (veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm#s-basico-curingas">Curingas,=20
+  Se=E7=E3o 2.3</A>).=20
+  <DT><EM>destino</EM>=20
+  <DD>O caminho ou nome de arquivo onde ser=E1 copiado. Se o destino for =
+um=20
+  diret=F3rio, os arquivos de origem ser=E3o copiados para dentro do =
+diret=F3rio.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>i, --interactive=20
+  <DD>Pergunta antes de substituir um arquivo existente.=20
+  <DT>-f, --force=20
+  <DD>N=E3o pergunta, substitui todos os arquivos caso j=E1 exista.=20
+  <DT>-r=20
+  <DD>Copia arquivos dos diret=F3rios e subdiret=F3rios da origem para o =
+destino. =C9=20
+  recomend=E1vel usar -R ao inv=E9s de -r.=20
+  <DT>-R, --recursive=20
+  <DD>Copia arquivos e sub-diret=F3rios (como a op=E7=E3o -r) e tamb=E9m =
+os arquivos=20
+  especiais FIFO e dispositivos.=20
+  <DT>-v, --verbose=20
+  <DD>Mostra os arquivos enquanto est=E3o sendo copiados.=20
+  <DT>-s, --simbolic-link=20
+  <DD>Cria link simb=F3lico ao inv=E9s de copiar.=20
+  <DT>-l, --link=20
+  <DD>Faz o link no destino ao inv=E9s de copiar os arquivos.=20
+  <DT>-p, --preserve=20
+  <DD>Preserva atributos do arquivo, se for poss=EDvel.=20
+  <DT>-u, --update=20
+  <DD>Copia somente se o arquivo de origem =E9 mais novo que o arquivo =
+de destino=20
+  ou quando o arquivo de destino n=E3o existe.=20
+  <DT>-x=20
+  <DD>N=E3o copia arquivos que est=E3o localizados em um sistema de =
+arquivos=20
+  diferente de onde a c=F3pia iniciou. </DD></DL>
+<P>O comando <CODE>cp</CODE> copia arquivos da ORIGEM para o DESTINO. =
+Ambos=20
+origem e destino ter=E3o o mesmo conte=FAdo ap=F3s a c=F3pia.=20
+<P>Exemplos:=20
+<DL>
+  <DT><SAMP>cp teste.txt teste1.txt</SAMP>=20
+  <DD>Copia o arquivo <CODE>teste.txt</CODE> para =
+<CODE>teste1.txt</CODE>.=20
+  <DT><SAMP>cp teste.txt /tmp</SAMP>=20
+  <DD>Copia o arquivo <CODE>teste.txt</CODE> para dentro do diret=F3rio=20
+  <CODE>/tmp</CODE>.=20
+  <DT><SAMP>cp * /tmp</SAMP>=20
+  <DD>Copia todos os arquivos do diret=F3rio atual para =
+<CODE>/tmp</CODE>.=20
+  <DT><SAMP>cp /bin/* .</SAMP>=20
+  <DD>Copia todos os arquivos do diret=F3rio <CODE>/bin</CODE> para o =
+diret=F3rio em=20
+  que nos encontramos no momento.=20
+  <DT><SAMP>cp -R /bin /tmp</SAMP>=20
+  <DD>Copia o diret=F3rio <CODE>/bin</CODE> e todos os =
+arquivos/sub-diret=F3rios=20
+  existentes para o diret=F3rio <CODE>/tmp</CODE>.=20
+  <DT><SAMP>cp -R /bin/* /tmp</SAMP>=20
+  <DD>Copia todos os arquivos do diret=F3rio <CODE>/bin</CODE> (exceto o =
+diret=F3rio=20
+  <CODE>/bin</CODE>) e todos os arquivos/sub-diret=F3rios existentes =
+dentro dele=20
+  para <CODE>/tmp</CODE>.=20
+  <DT><SAMP>cp -R /bin /tmp</SAMP>=20
+  <DD>Copia todos os arquivos e o diret=F3rio <CODE>/bin</CODE> para=20
+  <CODE>/tmp</CODE>. </DD></DL>
+<HR>
+<A name=3Ds-comando-mv></A>
+<H2>9.5 mv</H2>
+<P>Move ou renomeia arquivos e diret=F3rios. O processo =E9 semelhante =
+ao do comando=20
+<CODE>cp</CODE> mas o arquivo de origem =E9 apagado ap=F3s o t=E9rmino =
+da c=F3pia.=20
+<P><SAMP>mv [<EM>op=E7=F5es</EM>] [<EM>origem</EM>] =
+[<EM>destino</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>origem</EM>=20
+  <DD>Arquivo/diret=F3rio de origem.=20
+  <DT><EM>destino</EM>=20
+  <DD>Local onde ser=E1 movido ou novo nome do arquivo/diret=F3rio.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-f, --force=20
+  <DD>Substitui o arquivo de destino sem perguntar.=20
+  <DT>-i, --interactive=20
+  <DD>Pergunta antes de substituir. =C9 o padr=E3o.=20
+  <DT>-v, --verbose=20
+  <DD>Mostra os arquivos que est=E3o sendo movidos.=20
+  <DT>-u, --update=20
+  <DD>Move somente arquivos antigos, ou novos arquivos. </DD></DL>
+<P>O comando <CODE>mv</CODE> copia um arquivo da <EM>ORIGEM</EM> para o=20
+<EM>DESTINO</EM> (semelhante ao <CODE>cp</CODE>), mas ap=F3s a c=F3pia, =
+o arquivo de=20
+<EM>ORIGEM</EM> =E9 apagado.=20
+<P>Exemplos:=20
+<DL>
+  <DT><SAMP>mv teste.txt teste1.txt</SAMP>=20
+  <DD>Muda o nome do arquivo <CODE>teste.txt</CODE> para=20
+  <CODE>teste1.txt</CODE>.=20
+  <DT><SAMP>mv teste.txt /tmp</SAMP>=20
+  <DD>Move o arquivo teste.txt para <CODE>/tmp</CODE>. Lembre-se que o =
+arquivo=20
+  de origem =E9 apagado ap=F3s ser movido.=20
+  <DT><SAMP>mv teste.txt teste.new</SAMP> (supondo que =
+<CODE>teste.new</CODE> j=E1=20
+  exista)=20
+  <DD>Copia o arquivo <CODE>teste.txt</CODE> por cima de =
+<CODE>teste.new</CODE>=20
+  e apaga <CODE>teste.txt</CODE> ap=F3s terminar a c=F3pia. </DD></DL>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ 9 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

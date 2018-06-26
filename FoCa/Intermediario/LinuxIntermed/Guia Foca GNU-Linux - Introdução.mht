@@ -1,0 +1,980 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: =?iso-8859-1?Q?Guia_Foca_GNU/Linux_-_Introdu=E7=E3o?=
+Date: Mon, 6 Aug 2007 11:32:30 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-intro.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Introdu=E7=E3o</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-intro></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ 1 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 1 - Introdu=E7=E3o </H1>
+<HR>
+
+<P>Bem vindo ao guia <EM>Foca GNU/Linux</EM>. O nome <EM>FOCA</EM> =
+significa=20
+<EM>FO</EM>nte de <EM>C</EM>onsulta e <EM>A</EM>prendizado. Este guia =
+=E9 dividido=20
+em 3 n=EDveis de aprendizado e vers=E3o que esta lendo agora cont=E9m =
+o(s) n=EDvel(is)=20
+de aprendizado:=20
+<UL>
+  <LI>Intermedi=E1rio </LI></UL>
+<P>Entre o conte=FAdo do guia, voc=EA encontrar=E1:=20
+<UL>
+  <LI>Explica=E7=F5es necess=E1rias para conhecer, operar, configurar, =
+desenvolver,=20
+  personalizar seus programas e arquivos. </LI></UL>
+<UL>
+  <LI>Uma lista de aplicativos clientes para serem usados em seu sistema =
+
+  <CODE>GNU/Linux</CODE>, com suas caracter=EDsticas, equipamento =
+m=EDnimo requerido=20
+  e espa=E7o em disco recomendado para instala=E7=E3o. </LI></UL>
+<UL>
+  <LI>Cria=E7=E3o de parti=E7=F5es e arquivos contendo o sistema de =
+arquivos=20
+  <EM>ext2</EM> (para grava=E7=E3o de dados) e swap (mem=F3ria virtual) =
+e as=20
+  vantagens/desvantagens de se utilizar um arquivo ou parti=E7=E3o para=20
+  armazenamento de dados. </LI></UL>
+<UL>
+  <LI>Compila=E7=E3o de programas/kernel, com explica=E7=F5es sobre cada =
+uma das op=E7=F5es=20
+  ajudando-o a decidir sobre a inclus=E3o ou n=E3o. </LI></UL>
+<UL>
+  <LI>Manipula=E7=E3o de m=F3dulos do kernel </LI></UL>
+<UL>
+  <LI>Explica=E7=F5es sobre hardwares (Interrup=E7=F5es, DMA, Jumpers, =
+Jumperless,=20
+  Plug-and-Play) e como configura-los no Linux, valores padr=F5es e =
+resolu=E7=E3o de=20
+  conflitos entre hardwares. </LI></UL>
+<UL>
+  <LI>Dicas de como avaliar e comprar bons hardwares para que seu =
+computador=20
+  tenha o melhor desempenho (tamb=E9m v=E1lido para <CODE>DOS</CODE>,=20
+  <CODE>Windows</CODE> e outras plataformas). Desta maneira voc=EA =
+saber=E1 porque=20
+  algumas placas de fax-modens custam 3 vezes mais caro que outras e o =
+que a=20
+  placa traz de especial para ter este diferencial. </LI></UL>
+<UL>
+  <LI>Como modificar facilmente o idioma usado em seu sistema =
+(localiza=E7=E3o) para=20
+  o modo texto e modo gr=E1fico. </LI></UL>
+<UL>
+  <LI>Utiliza=E7=E3o de compactadores de disco </LI></UL>
+<UL>
+  <LI>Mais op=E7=F5es para os comandos existentes na vers=E3o =
+<EM>Iniciante</EM> do=20
+  guia e novos comandos. </LI></UL>
+<UL>
+  <LI>Conhecer os arquivos de configura=E7=E3o e arquivos b=E1sicos de =
+seguran=E7a e=20
+  aprender para que eles servem e como usa-los. </LI></UL>
+<UL>
+  <LI>Dicas de como saber escolher bons perif=E9ricos para uso no=20
+  <CODE>GNU/Linux</CODE> e outros sistemas operacionais </LI></UL>
+<UL>
+  <LI>Manuten=E7=E3o b=E1sica do computador (verifica=E7=E3o do disco, =
+desfragmenta=E7=E3o) e=20
+  manuten=E7=E3o autom=E1tica feita atrav=E9s dos programas de e scripts =
+configurados.=20
+  </LI></UL>
+<UL>
+  <LI>Introdu=E7=E3o a rede no Linux (com a configura=E7=E3o de =
+dispositivos de rede,=20
+  etc.). </LI></UL>
+<UL>
+  <LI>Configura=E7=F5es b=E1sicas de seguran=E7a de Rede </LI></UL>
+<UL>
+  <LI>Gerenciadores de inicializa=E7=E3o, o que s=E3o e como funcionam e =
+como criar um=20
+  arquivo de inicializa=E7=E3o para inicializar o <CODE>GNU/Linux</CODE> =
+pelo disco=20
+  r=EDgido ou mais de um Sistema Operacional. </LI></UL>
+<UL>
+  <LI>Particionamento de disco </LI></UL>
+<UL>
+  <LI>Cria=E7=E3o de Mem=F3ria virtual no disco r=EDgido e em arquivo. =
+</LI></UL>
+<UL>
+  <LI>Os materiais contidos na vers=E3o intermedi=E1rio s=E3o ideais =
+para quem j=E1 tem=20
+  um conhecimento b=E1sico do sistema <CODE>GNU/Linux</CODE> mas que =
+deseja se=20
+  aprofundar neste sistema conhecendo os arquivos necess=E1rios para o=20
+  funcionamento do <CODE>GNU/Linux</CODE>, como modifica-los e como =
+estas=20
+  modifica=E7=F5es afetam o funcionamento do sistema. </LI></UL>
+<P>Para melhor organiza=E7=E3o, dividi o guia em 3 vers=F5es: =
+<EM>Iniciante</EM>,=20
+<EM>Intermedi=E1rio</EM> e <EM>Avan=E7ado</EM>. Sendo que a vers=E3o=20
+<EM>Iniciante</EM> =E9 voltada para o usu=E1rio que n=E3o tem =
+<SAMP>nenhuma</SAMP>=20
+experi=EAncia no <CODE>GNU/Linux</CODE>. A =FAltima vers=E3o deste guia =
+pode ser=20
+encontrada em: <CODE><A href=3D"http://www.guiafoca.org/">P=E1gina =
+Oficial do guia=20
+Foca GNU/Linux</A></CODE>.=20
+<P>Caso tiver alguma sugest=E3o, corre=E7=E3o, cr=EDtica para a melhoria =
+deste guia,=20
+envie um e-mail para <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE>.=20
+<P>O <EM>Foca GNU/Linux</EM> =E9 atualizado freq=FCentemente, por este =
+motivo=20
+recomendo que preencha a ficha do aviso de atualiza=E7=F5es na p=E1gina =
+web em=20
+<CODE><A href=3D"http://www.guiafoca.org/">P=E1gina Oficial do guia Foca =
+
+GNU/Linux</A></CODE> no fim da p=E1gina principal. Ap=F3s preencher a =
+ficha do aviso=20
+de atualiza=E7=F5es, voc=EA receber=E1 um e-mail sobre o lan=E7amento de =
+novas vers=F5es do=20
+guia e o que foi modificado, desta forma voc=EA poder=E1 decidir em =
+copia-la caso a=20
+nova vers=E3o contenha modifica=E7=F5es que considera importantes.=20
+<P>Venho recebendo muitos elegios de pessoas do Brasil (e de paises de =
+fora=20
+tamb=E9m) elogiando o trabalho e a qualidade da documenta=E7=E3o. =
+Agrade=E7o a todos=20
+pelo apoio, tenham certeza que este trabalho =E9 desenvolvido pensando =
+em repassar=20
+um pouco do conhecimento que adquiri ao come=E7ar o uso do Linux.=20
+<P>Tamb=E9m venho recebendo muitos e-mails de pessoas que passaram na =
+prova LPI=20
+n=EDvel 1 e 2 ap=F3s estudar usando o guia Foca GNU/Linux. Fico bastante =
+feliz por=20
+saber disso, pois nunca tive a inten=E7=E3o de tornar o guia uma =
+refer=EAncia livre=20
+para estudo da LPI e hoje =E9 usado para estudo desta dif=EDcil =
+certifica=E7=E3o que=20
+aborda comandos, servi=E7os, configura=E7=F5es, seguran=E7a, =
+empacotamento,=20
+criptografia, etc.=20
+<HR>
+<A name=3Ds-introducao-palavras></A>
+<H2>1.1 Antes de come=E7ar</H2>
+<P>Os cap=EDtulos <EM>Introdu=E7=E3o</EM> e <EM>b=E1sico</EM> cont=E9m =
+explica=E7=F5es=20
+te=F3ricas sobre o computador, <CODE>GNU/Linux</CODE>, etc., voc=EA pode =
+pular este=20
+cap=EDtulos caso j=E1 conhe=E7a estas explica=E7=F5es ou se desejar =
+partir para a pr=E1tica=20
+e quiser v=EA-los mais tarde, se lhe interessar.=20
+<P>Se voc=EA j=E1 =E9 um usu=E1rio do <CODE>DOS</CODE> e =
+<CODE>Windows</CODE>, recomendo=20
+ler <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">Para=20
+quem esta migrando (ou pensando em migrar) do DOS/Windows para o Linux, =
+Cap=EDtulo=20
+4</A>. L=E1 voc=EA vai encontrar compara=E7=F5es de comandos e programas =
+
+<CODE>DOS/Windows</CODE> e <CODE>GNU/Linux</CODE>.=20
+<P>Para quem est=E1 come=E7ando, muita teoria pode atrapalhar o =
+aprendizado, =E9 mais=20
+produtivo ver na pr=E1tica o que o computador faz e depois porque ele =
+faz isto.=20
+Mesmo assim, recomendo ler estes cap=EDtulos pois seu conte=FAdo pode =
+ser =FAtil...=20
+<P>Coloquei abaixo algumas dicas para um bom come=E7o:=20
+<UL>
+  <LI>Recomendo que fa=E7a a leitura deste guia e pratique imediatamente =
+o que=20
+  aprendeu. Isto facilita o entendimento do =
+programa/comando/configura=E7=E3o.=20
+  <LI>=C9 preciso ter interesse em aprender, se voc=EA tiver vontade em =
+aprender=20
+  algo, voc=EA ter=E1 menos dificuldade do que em algo que n=E3o gosta e =
+est=E1 se=20
+  obrigando a aprender.=20
+  <LI>Decorar n=E3o adianta, pelo contr=E1rio, s=F3 atrapalha no =
+aprendizado. Voc=EA=20
+  precisa entender o que o comando faz, deste modo voc=EA estar=E1 =
+tamb=E9m usando e=20
+  desenvolvendo sua interpreta=E7=E3o, e entender=E1 melhor o assunto =
+(talvez at=E9 me=20
+  de uma for=E7a para melhorar o guia ;-)=20
+  <LI>Curiosidade tamb=E9m =E9 importante. Voc=EA talvez possa estar =
+procurando um=20
+  comando que mostre os arquivos que cont=E9m um certo texto, e isto =
+far=E1 voc=EA=20
+  chegar at=E9 o comando <CODE>grep</CODE>, depois voc=EA conhecer=E1 =
+suas op=E7=F5es,=20
+  etc.=20
+  <LI>N=E3o desanime vendo outras pessoas que sabem mais que voc=EA, =
+lembre-se que=20
+  ningu=E9m nasce sabendo :-). Uma pessoa pode ter mais experi=EAncia em =
+um assunto=20
+  no sistema como compila=E7=E3o de programas, configura=E7=E3o, etc., e =
+voc=EA pode ter=20
+  mais interesse em redes.=20
+  <LI>Ningu=E9m pode saber tudo da noite para o dia, n=E3o procure saber =
+tudo sobre=20
+  o sistema de uma s=F3 vez sen=E3o n=E3o entender=E1 NADA. Caso tenha =
+d=FAvidas sobre o=20
+  sistema, procure ler novamente a se=E7=E3o do guia, e caso ainda n=E3o =
+tenha=20
+  entendido procure ajuda nas p=E1gina de manual (veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-man">P=E1ginas=20
+  de Manual, Se=E7=E3o 31.1</A>), ou nas listas de discuss=E3o (veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-listas">Listas=20
+  de discuss=E3o, Se=E7=E3o 31.12.2</A>) ou me envie uma mensagem =
+<CODE><A=20
+  =
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE>.=20
+  <LI>Certamente voc=EA buscar=E1 documentos na Internet que falem sobre =
+algum=20
+  assunto que este guia ainda n=E3o explica. Muito cuidado! O=20
+  <CODE>GNU/Linux</CODE> =E9 um sistema que cresce muito rapidamente, a =
+cada=20
+  semana uma nova vers=E3o =E9 lan=E7ada, novos recursos s=E3o =
+adicionados, seria=20
+  maravilhoso se a documenta=E7=E3o fosse atualizada com a mesma =
+freq=FC=EAncia.=20
+  <P>Infelizmente a atualiza=E7=E3o da documenta=E7=E3o n=E3o segue o =
+mesmo ritmo=20
+  (principalmente aqui no Brasil). =C9 comum voc=EA encontrar na =
+Internet documentos=20
+  da =E9poca quando o kernel estava na vers=E3o 2.0.20, 2.0.30, etc. =
+Estes=20
+  documentos s=E3o =FAteis para pessoas que usem as vers=F5es antigas do =
+Kernel Linux,=20
+  mas pode trazer problemas ou causar m=E1 impress=E3o do =
+<CODE>GNU/Linux</CODE> em=20
+  outras pessoas.=20
+  <P>Por exemplo, voc=EA pode esbarrar pela Internet com um documento =
+que diz que=20
+  o Kernel n=E3o tem suporte aos "nomes extensos" da VFAT (Windows 95), =
+isto =E9=20
+  verdade para kernels anteriores ao 2.0.31, mas as vers=F5es mais novas =
+que a=20
+  2.0.31 reconhecem sem problemas os nomes extensos da parti=E7=E3o =
+Windows VFAT.=20
+  <P>Uma pessoa desavisada pode ter receio de instalar o =
+<CODE>GNU/Linux</CODE>=20
+  em uma mesma m=E1quina com Windows por causa de um documento como =
+este. Para=20
+  evitar problemas deste tipo, verifique a data de atualiza=E7=E3o do =
+documento, se=20
+  verificar que o documento est=E1 obsoleto, contacte o autor original e =
+pe=E7a para=20
+  que ele retire aquela se=E7=E3o na pr=F3xima vers=E3o que ser=E1 =
+lan=E7ada. </P>
+  <LI>O <CODE>GNU/Linux</CODE> =E9 considerado um sistema mais dif=EDcil =
+do que os=20
+  outros, mas isto =E9 porque ele requer que a pessoa realmente aprenda =
+e conhe=E7a=20
+  computadores e seus perif=E9ricos antes de fazer qualquer coisa =
+(principalmente=20
+  se voc=EA =E9 um t=E9cnico em manuten=E7=E3o, redes, instala=E7=F5es, =
+etc., e deseja=20
+  oferecer suporte profissional a este sistema).=20
+  <P>Voc=EA conhecer=E1 mais sobre computadores, redes, hardware, =
+software, discos,=20
+  saber=E1 avaliar os problemas e a buscar a melhor solu=E7=E3o, enfim =
+as=20
+  possibilidades de crescimento neste sistema operacional depende do=20
+  conhecimento, interesse e capacidade de cada um. </P>
+  <LI>A interface gr=E1fica existe, mas os melhores recursos e =
+flexibilidade est=E3o=20
+  na linha de comando. Voc=EA pode ter certeza que o aprendizado no=20
+  <CODE>GNU/Linux</CODE> ajudar=E1 a ter sucesso e menos dificuldade em =
+usar=20
+  qualquer outro sistema operacional.=20
+  <LI>Pe=E7a ajuda a outros usu=E1rios do <CODE>GNU/Linux</CODE> quando =
+estiver em=20
+  d=FAvida ou n=E3o souber fazer alguma coisa no sistema. Voc=EA pode =
+entrar em=20
+  contato diretamente com outros usu=E1rios ou atrav=E9s de listas de =
+discuss=E3o=20
+  (veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-listas">Listas=20
+  de discuss=E3o, Se=E7=E3o 31.12.2</A>). </LI></UL>
+<P>Boa Sorte e bem vindo ao <CODE>GNU/Linux</CODE>!=20
+<P>gleydson (<CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE>). =
+
+<HR>
+<A name=3Ds-introducao-requisitos></A>
+<H2>1.2 Pr=E9-requisitos para a utiliza=E7=E3o deste guia</H2>
+<P>=C9 assumido que voc=EA tenha entendido a fun=E7=E3o de boa parte dos =
+comandos que=20
+consta na vers=E3o iniciante do Foca Linux, arquivos e permiss=F5es de =
+acesso. Em=20
+resumo, que saiba decidir quando e qual(is) comando(s) deve usar em cada =
+
+situa=E7=E3o.=20
+<P>Caso n=E3o entenda as explica=E7=F5es da vers=E3o INTERMEDI=C1RIO, =
+recomendo que fa=E7a a=20
+leitura da vers=E3o INICIANTE do Foca Linux que pode ser encontrada em =
+<CODE><A=20
+href=3D"http://www.guiafoca.org/">http://www.guiafoca.org/</A></CODE>.=20
+<P>Este guia n=E3o cobre a instala=E7=E3o do sistema. Para detalhes =
+sobre instala=E7=E3o,=20
+consulte a documenta=E7=E3o que acompanha sua distribui=E7=E3o =
+<CODE>GNU/Linux</CODE>.=20
+<HR>
+<A name=3Ds-introducao-linux></A>
+<H2>1.3 O Linux</H2>
+<P>O <CODE>Linux</CODE> =E9 um sistema operacional criado em 1991 por =
+<EM>Linus=20
+Torvalds</EM> na universidade de Helsinki na Finl=E2ndia. =C9 um sistema =
+Operacional=20
+de c=F3digo aberto distribu=EDdo gratuitamente pela Internet. Seu =
+c=F3digo fonte =E9=20
+liberado como <EM>Free Software</EM> (software livre) o aviso de =
+copyright do=20
+kernel feito por Linus descreve detalhadamente isto e mesmo ele n=E3o =
+pode fechar=20
+o sistema para que seja usado apenas comercialmente.=20
+<P>Isto quer dizer que voc=EA n=E3o precisa pagar nada para usar o =
+Linux, e n=E3o =E9=20
+crime fazer c=F3pias para instalar em outros computadores, n=F3s =
+inclusive=20
+incentivamos voc=EA a fazer isto. Ser um sistema de c=F3digo aberto pode =
+explicar a=20
+performance, estabilidade e velocidade em que novos recursos s=E3o =
+adicionados ao=20
+sistema.=20
+<P>Para rodar o <CODE>Linux</CODE> voc=EA precisa, no m=EDnimo, de um =
+computador 386=20
+SX com 2 MB de mem=F3ria (para um kernel at=E9 a s=E9rie 2.2.x) ou 4MB =
+(para kernels=20
+2.4 e superiores) e 40MB dispon=EDveis em seu disco r=EDgido para uma =
+instala=E7=E3o=20
+b=E1sica e funcional.=20
+<P>O sistema segue o padr=E3o <EM>POSIX</EM> que =E9 o mesmo usado por =
+sistemas=20
+<EM>UNIX</EM> e suas variantes. Assim, aprendendo o <CODE>Linux</CODE> =
+voc=EA n=E3o=20
+encontrar=E1 muita dificuldade em operar um sistema do tipo <CODE>UNIX, =
+FreeBSD,=20
+HPUX, SunOS,</CODE> etc., bastando apenas aprender alguns detalhes =
+encontrados=20
+em cada sistema.=20
+<P>O c=F3digo fonte aberto permite que qualquer pessoa veja como o =
+sistema=20
+funciona (=FAtil para aprendizado), corrija alguma problema ou fa=E7a =
+alguma=20
+sugest=E3o sobre sua melhoria, esse =E9 um dos motivos de seu r=E1pido =
+crescimento, do=20
+aumento da compatibilidade de perif=E9ricos (como novas placas sendo =
+suportadas=20
+logo ap=F3s seu lan=E7amento) e de sua estabilidade.=20
+<P>Outro ponto em que ele se destaca =E9 o suporte que oferece a placas, =
+CD-Roms e=20
+outros tipos de dispositivos de =FAltima gera=E7=E3o e mais antigos (a =
+maioria deles=20
+j=E1 ultrapassados e sendo completamente suportados pelo sistema =
+operacional).=20
+Este =E9 um ponto forte para empresas que desejam manter seus micros em=20
+funcionamento e pretendem investir em avan=E7os tecnol=F3gicos com as =
+m=E1quinas que=20
+possui.=20
+<P>Hoje o <CODE>Linux</CODE> =E9 desenvolvido por milhares de pessoas =
+espalhadas=20
+pelo mundo, cada uma fazendo sua contribui=E7=E3o ou mantendo alguma =
+parte do kernel=20
+gratuitamente. <EM>Linus Torvalds</EM> ainda trabalha em seu =
+desenvolvimento e=20
+tamb=E9m ajuda na coordena=E7=E3o entre os desenvolvedores.=20
+<P>O suporte ao sistema tamb=E9m se destaca como sendo o mais eficiente =
+e r=E1pido=20
+do que qualquer programa comercial dispon=EDvel no mercado. Existem =
+centenas de=20
+consultores especializados espalhados ao redor do mundo. Voc=EA pode se =
+inscrever=20
+em uma lista de discuss=E3o e relatar sua d=FAvida ou alguma falha, e =
+sua mensagem=20
+ser=E1 vista por centenas de usu=E1rios na Internet e algum ir=E1 te =
+ajudar ou avisar=E1=20
+as pessoas respons=E1veis sobre a falha encontrada para devida =
+corre=E7=E3o. Para=20
+detalhes, veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-listas">Listas=20
+de discuss=E3o, Se=E7=E3o 31.12.2</A>.=20
+<HR>
+<A name=3Ds-introducao-linux-carac></A>
+<H3>1.3.1 Algumas Caracter=EDsticas do Linux</H3>
+<UL>
+  <LI>=C9 livre e desenvolvido voluntariamente por programadores =
+experientes,=20
+  hackers, e contribuidores espalhados ao redor do mundo que tem como =
+objetivo a=20
+  contribui=E7=E3o para a melhoria e crescimento deste sistema =
+operacional.=20
+  <P>Muitos deles estavam cansados do excesso de propaganda (Marketing) =
+e baixa=20
+  qualidade de sistemas comerciais existentes </P>
+  <LI>Convivem sem nenhum tipo de conflito com outros sistemas =
+operacionais (com=20
+  o <CODE>DOS</CODE>, <CODE>Windows</CODE>, <CODE>OS/2</CODE>) no mesmo=20
+  computador.=20
+  <LI>Multitarefa real=20
+  <LI>Multiusu=E1rio=20
+  <LI>Suporte a nomes extensos de arquivos e diret=F3rios (255 =
+caracteres)=20
+  <LI>Conectividade com outros tipos de plataformas como <EM>Apple, Sun, =
+
+  Macintosh, Sparc, Alpha, PowerPc, ARM, Unix, Windows, DOS, etc</EM>.=20
+  <LI>Prote=E7=E3o entre processos executados na mem=F3ria RAM=20
+  <LI>Suporte a mais de 63 terminais virtuais (consoles)=20
+  <LI>Modulariza=E7=E3o - O <CODE>GNU/Linux</CODE> somente carrega para =
+a mem=F3ria o=20
+  que =E9 usado durante o processamento, liberando totalmente a =
+mem=F3ria assim que=20
+  o programa/dispositivo =E9 finalizado=20
+  <LI>Devido a modulariza=E7=E3o, os drivers dos perif=E9ricos e =
+recursos do sistema=20
+  podem ser carregados e removidos completamente da mem=F3ria RAM a =
+qualquer=20
+  momento. Os drivers (m=F3dulos) ocupam pouco espa=E7o quando =
+carregados na mem=F3ria=20
+  RAM (cerca de 6Kb para a Placa de rede NE 2000, por exemplo)=20
+  <LI>N=E3o h=E1 a necessidade de se reiniciar o sistema ap=F3s a =
+modificar a=20
+  configura=E7=E3o de qualquer perif=E9rico ou par=E2metros de rede. =
+Somente =E9=20
+  necess=E1rio reiniciar o sistema no caso de uma instala=E7=E3o interna =
+de um novo=20
+  perif=E9rico, falha em algum hardware (queima do processador, placa =
+m=E3e, etc.).=20
+  <LI>N=E3o precisa de um processador potente para funcionar. O sistema =
+roda bem=20
+  em computadores 386Sx 25 com 4MB de mem=F3ria RAM (sem rodar o sistema =
+gr=E1fico=20
+  X, que =E9 recomendado 8MB de RAM). J=E1 pensou no seu desempenho em =
+um 486 ou=20
+  Pentium ;-)=20
+  <LI>O crescimento e novas vers=F5es do sistema n=E3o provocam =
+lentid=E3o, pelo=20
+  contr=E1rio, a cada nova vers=E3o os desenvolvedores procuram buscar =
+maior=20
+  compatibilidade, acrescentar recursos =FAteis e melhor desempenho do =
+sistema=20
+  (como o que aconteceu na passagem do kernel 2.0.x para 2.2.x).=20
+  <LI>N=E3o =E9 requerida uma licen=E7a para seu uso. O =
+<CODE>GNU/Linux</CODE> =E9=20
+  licenciado de acordo com os termos da GPL.=20
+  <LI>Acessa corretamente discos formatados pelo <CODE>DOS, Windows, =
+Novell,=20
+  OS/2, NTFS, SunOS, Amiga, Atari, Mac,</CODE> etc.=20
+  <LI>Utiliza permiss=F5es de acesso a arquivos, diret=F3rios e =
+programas em=20
+  execu=E7=E3o na mem=F3ria RAM.=20
+  <LI>O LINUX N=C3O =C9 VULNER=C1VEL A V=CDRUS! Devido a separa=E7=E3o =
+de privil=E9gios entre=20
+  processos e respeitadas as recomenda=E7=F5es padr=E3o de pol=EDtica de =
+seguran=E7a e uso=20
+  de contas privilegiadas (como a de root, como veremos adiante), =
+programas como=20
+  v=EDrus tornam-se in=FAteis pois tem sua a=E7=E3o limitada pelas =
+restri=E7=F5es de acesso=20
+  do sistema de arquivos e execu=E7=E3o.=20
+  <P>Frequentemente s=E3o criados exploits que tentam se aproveitar de =
+falhas=20
+  existentes em sistemas desatualizados e usa-las para danificar o =
+sistema.=20
+  <EM>Erroneamente</EM> este tipo de ataque =E9 classificado como =
+v=EDrus por=20
+  pessoas mal informadas e s=E3o resolvidas com sistemas bem mantidos. =
+Em geral,=20
+  usando uma boa distribui=E7=E3o que tenha um bom sistema de =
+atualiza=E7=E3o resolve em=20
+  99.9% os problemas com exploits. Qualquer programa (nocivo ou n=E3o) =
+poder=E1=20
+  alterar partes do sistema que possui permiss=F5es (ser=E1 abordado =
+como alterar=20
+  permiss=F5es e tornar seu sistema mais restrito no decorrer do guia). =
+</P>
+  <LI>Rede TCP/IP mais r=E1pida que no Windows e tem sua pilha =
+constantemente=20
+  melhorada. O <CODE>GNU/Linux</CODE> tem suporte nativo a redes TCP/IP =
+e n=E3o=20
+  depende de uma camada intermedi=E1ria como o WinSock. Em acessos via =
+modem a=20
+  Internet, a velocidade de transmiss=E3o =E9 10% maior.=20
+  <P>Jogadores do <CODE>Quake</CODE> ou qualquer outro tipo de jogo via =
+Internet=20
+  preferem o <CODE>GNU/Linux</CODE> por causa da maior velocidade do =
+Jogo em=20
+  rede. =C9 f=E1cil rodar um servidor <CODE>Quake</CODE> em seu =
+computador e assim=20
+  jogar contra v=E1rios advers=E1rios via Internet. </P>
+  <LI>Roda aplica=E7=F5es <EM>DOS</EM> atrav=E9s do <CODE>DOSEMU</CODE>, =
+
+  <CODE>QEMU</CODE>, <CODE>BOCHS</CODE>. Para se ter uma id=E9ia, =E9 =
+poss=EDvel dar o=20
+  boot em um sistema <EM>DOS</EM> qualquer dentro dele e ao mesmo tempo =
+usar a=20
+  multitarefa deste sistema.=20
+  <LI>Roda aplica=E7=F5es <EM>Windows</EM> atrav=E9s do =
+<CODE>WINE</CODE>.=20
+  <LI>Suporte a dispositivos infravermelho.=20
+  <LI>Suporte a rede via r=E1dio amador.=20
+  <LI>Suporte a dispositivos Plug-and-Play.=20
+  <LI>Suporte a dispositivos USB.=20
+  <LI>Suporte a Fireware.=20
+  <LI>Dispositivos Wireless.=20
+  <LI>V=E1rios tipos de firewalls de alta qualidade e com grande poder =
+de=20
+  seguran=E7a de gra=E7a.=20
+  <LI>Roteamento est=E1tico e din=E2mico de pacotes.=20
+  <LI>Ponte entre Redes.=20
+  <LI>Proxy Tradicional e Transparente.=20
+  <LI>Possui recursos para atender a mais de um endere=E7o IP na mesma =
+placa de=20
+  rede, sendo muito =FAtil para situa=E7=F5es de manuten=E7=E3o em =
+servidores de redes ou=20
+  para a emula=E7=E3o de "mais computadores" virtualmente.=20
+  <P>O servidor WEB e FTP podem estar localizados no mesmo computador, =
+mas o=20
+  usu=E1rio que se conecta tem a impress=E3o que a rede possui =
+servidores=20
+  diferentes. </P>
+  <LI>O sistema de arquivos usado pelo <CODE>GNU/Linux</CODE>=20
+  (<SAMP>Ext2</SAMP>) organiza os arquivos de forma inteligente evitando =
+a=20
+  fragmenta=E7=E3o e fazendo-o um poderoso sistema para aplica=E7=F5es =
+multi-usu=E1rias=20
+  exigentes e grava=E7=F5es intensivas.=20
+  <LI>Permite a montagem de um servidor Web, E-mail, News, etc. com um =
+baixo=20
+  custo e alta performance. O melhor servidor Web do mercado, o=20
+  <CODE>Apache</CODE>, =E9 distribu=EDdo gratuitamente junto com a =
+maioria das=20
+  distribui=E7=F5es Linux. O mesmo acontece com o <CODE>Sendmail</CODE>. =
+
+  <LI>Por ser um sistema operacional de c=F3digo aberto, voc=EA pode ver =
+o que o=20
+  c=F3digo fonte (instru=E7=F5es digitadadas pelo programador) faz e =
+adapta-lo as suas=20
+  necessidades ou de sua empresa. Esta caracter=EDstica =E9 uma =
+seguran=E7a a mais=20
+  para empresas s=E9rias e outros que n=E3o querem ter seus dados =
+roubados (voc=EA n=E3o=20
+  sabe o que um sistema sem c=F3digo fonte faz na realidade enquanto =
+esta=20
+  processando o programa).=20
+  <LI>Suporte a diversos dispositivos e perif=E9ricos dispon=EDveis no =
+mercado,=20
+  tanto os novos como obsoletos.=20
+  <LI>Pode ser executado em 10 arquiteturas diferentes (Intel, =
+Macintosh, Alpha,=20
+  Arm, etc.).=20
+  <LI>Consultores t=E9cnicos especializados no suporte ao sistema =
+espalhados por=20
+  todo o mundo.=20
+  <LI>Entre muitas outras caracter=EDsticas que voc=EA descobrir=E1 =
+durante o uso do=20
+  sistema. </LI></UL>
+<P>TODOS OS =CDTENS DESCRITOS ACIMA S=C3O VERDADEIROS E TESTADOS PARA =
+QUE TIVESSE=20
+PLENA CERTEZA DE SEU FUNCIONAMENTO.=20
+<HR>
+<A name=3Ds-introducao-software-livre></A>
+<H2>1.4 Software Livre</H2>
+<P>(tradu=E7=E3o do texto <SAMP>Linux e o Sistema GNU</SAMP> de =
+<SAMP>Richard=20
+Stallman</SAMP> obtido no site do CIPSGA: <CODE><A=20
+href=3D"http://www.cipsga.org.br/">http://www.cipsga.org.br/</A></CODE>).=
+ O=20
+projeto <EM>GNU</EM> come=E7ou h=E1 12 anos atr=E1s com o objetivo de =
+desenvolver um=20
+sistema operacional Unix-like totalmente livre. <SAMP>Livre</SAMP> se =
+refere =E0=20
+liberdade, e n=E3o ao pre=E7o; significa que voc=EA est=E1 livre para =
+executar,=20
+distribuir, estudar, mudar e melhorar o software.=20
+<P>Um sistema Unix-like consiste de muitos programas diferentes. N=F3s =
+achamos=20
+alguns componentes j=E1 dispon=EDveis como softwares livres -- por =
+exemplo, <CODE>X=20
+Window</CODE> e <CODE>TeX</CODE>. Obtemos outros componentes ajudando a=20
+convencer seus desenvolvedores a tornarem eles livres -- por exemplo, o =
+Berkeley=20
+network utilities. Outros componentes n=F3s escrevemos especificamente =
+para o GNU=20
+-- por exemplo, <CODE>GNU Emacs</CODE>, o compilador <CODE>GNU C</CODE>, =
+o=20
+<CODE>GNU C library</CODE>, <CODE>Bash</CODE> e =
+<CODE>Ghostscript</CODE>. Os=20
+componentes desta =FAltima categoria s=E3o "software GNU". O sistema GNU =
+consiste de=20
+todas as tr=EAs categorias reunidas.=20
+<P>O projeto GNU n=E3o =E9 somente desenvolvimento e distribui=E7=E3o de =
+alguns=20
+softwares livres =FAteis. O cora=E7=E3o do projeto GNU =E9 uma id=E9ia: =
+que software deve=20
+ser <EM>livre</EM>, e que a liberdade do usu=E1rio vale a pena ser =
+defendida. Se=20
+as pessoas t=EAm liberdade mas n=E3o a apreciam conscientemente, n=E3o =
+ir=E3o mant=EA-la=20
+por muito tempo. Se queremos que a liberdade dure, precisamos chamar a =
+aten=E7=E3o=20
+das pessoas para a liberdade que elas t=EAm em programas livres.=20
+<P>O m=E9todo do projeto GNU =E9 que programas livres e a id=E9ia da =
+liberdade dos=20
+usu=E1rios ajudam-se mutuamente. N=F3s desenvolvemos software GNU, e =
+conforme as=20
+pessoas encontrem programas GNU ou o sistema GNU e comecem a us=E1-los, =
+elas=20
+tamb=E9m pensam sobre a filosofia GNU. O software mostra que a id=E9ia =
+funciona na=20
+pr=E1tica. Algumas destas pessoas acabam concordando com a id=E9ia, e =
+ent=E3o escrevem=20
+mais programas livres. Ent=E3o, o software carrega a id=E9ia, dissemina =
+a id=E9ia e=20
+cresce da id=E9ia.=20
+<P>Em 1992, n=F3s encontramos ou criamos todos os componentes principais =
+do=20
+sistema exceto o kernel, que n=F3s est=E1vamos escrevendo. (Este kernel =
+consiste do=20
+microkernel Mach mais o GNU HURD. Atualmente ele est=E1 funcionando, mas =
+n=E3o est=E1=20
+preparado para os usu=E1rios. Uma vers=E3o alfa dever=E1 estar pronta em =
+breve.)=20
+<P>Ent=E3o o kernel do Linux tornou-se dispon=EDvel. Linux =E9 um kernel =
+livre escrito=20
+por Linus Torvalds compat=EDvel com o Unix. Ele n=E3o foi escrito para o =
+projeto=20
+GNU, mas o Linux e o quase completo sistema GNU fizeram uma =
+combina=E7=E3o =FAtil.=20
+Esta combina=E7=E3o disponibilizou todos os principais componentes de um =
+sistema=20
+operacional compat=EDvel com o Unix, e, com algum trabalho, as pessoas o =
+tornaram=20
+um sistema funcional. Foi um sistema GNU variante, baseado no kernel do=20
+<CODE>Linux</CODE>.=20
+<P>Ironicamente, a popularidade destes sistemas desmerece nosso m=E9todo =
+de=20
+comunicar a id=E9ia GNU para as pessoas que usam GNU. Estes sistemas =
+s=E3o=20
+praticamente iguais ao sistema GNU -- a principal diferen=E7a =E9 a =
+escolha do=20
+kernel. Por=E9m as pessoas normalmente os chamam de "sistemas Linux =
+(Linux=20
+systems)". A primeira impress=E3o que se tem =E9 a de que um "sistema =
+Linux" soa=20
+como algo completamente diferente de "sistema GNU", e =E9 isto que a =
+maioria dos=20
+usu=E1rios pensam que acontece.=20
+<P>A maioria das introdu=E7=F5es para o "sistema Linux" reconhece o =
+papel=20
+desempenhado pelos componentes de software GNU. Mas elas n=E3o dizem que =
+o sistema=20
+como um todo =E9 uma variante do sistema GNU que o projeto GNU vem =
+compondo por=20
+uma d=E9cada. Elas n=E3o dizem que o objetivo de um sistema Unix-like =
+livre como=20
+este veio do projeto GNU. Da=ED a maioria dos usu=E1rios n=E3o saber =
+estas coisas.=20
+<P>Como os seres humanos tendem a corrigir as suas primeiras =
+impress=F5es menos do=20
+que as informa=E7=F5es subseq=FCentes tentam dizer-lhes, estes =
+usu=E1rios que depois=20
+aprendem sobre a rela=E7=E3o entre estes sistemas e o projeto GNU ainda =
+geralmente o=20
+subestima.=20
+<P>Isto faz com que muitos usu=E1rios se identifiquem como uma =
+comunidade separada=20
+de "usu=E1rios de Linux", distinta da comunidade de usu=E1rios GNU. Eles =
+usam todos=20
+os softwares GNU; de fato, eles usam quase todo o sistema GNU; mas eles =
+n=E3o=20
+pensam neles como usu=E1rios GNU, e freq=FCentemente n=E3o pensam que a =
+filosofia GNU=20
+est=E1 relacionada a eles.=20
+<P>Isto leva a outros problemas tamb=E9m -- mesmo dificultando =
+coopera=E7=E3o com a=20
+manuten=E7=E3o de programas. Normalmente quando usu=E1rios mudam um =
+programa GNU para=20
+fazer ele funcionar melhor em um sistema espec=EDfico, eles mandam a =
+mudan=E7a para=20
+o mantenedor do programa; ent=E3o eles trabalham com o mantenedor =
+explicando a=20
+mudan=E7a, perguntando por ela, e =E0s vezes reescrevendo-a para manter =
+a coer=EAncia=20
+e mantenebilidade do pacote, para ter o patch instalado.=20
+<P>Mas as pessoas que pensam nelas como "usu=E1rios Linux" tendem a =
+lan=E7ar uma=20
+vers=E3o "Linux-only" do programa GNU, e consideram o trabalho =
+terminado. N=F3s=20
+queremos cada e todos os programas GNU que funcionem "out of the box" em =
+
+sistemas baseados em Linux; mas se os usu=E1rios n=E3o ajudarem, este =
+objetivo se=20
+torna muito mais dif=EDcil de atingir.=20
+<P>Como deve o projeto GNU lidar com este problema? O que n=F3s devemos =
+fazer=20
+agora para disseminar a id=E9ia de que a liberdade para os usu=E1rios de =
+computador=20
+=E9 importante?=20
+<P>N=F3s devemos continuar a falar sobre a liberdade de compartilhar e =
+modificar=20
+software -- e ensinar outros usu=E1rios o valor destas liberdades. Se =
+n=F3s nos=20
+beneficiamos por ter um sistema operacional livre, faz sentido para =
+n=F3s pensar=20
+em preservar estas liberdades por um longo tempo. Se n=F3s nos =
+beneficiamos por=20
+ter uma variedade de software livres, faz sentido pensar sobre encorajar =
+outras=20
+pessoas a escrever mais software livre, em vez de software =
+propriet=E1rio.=20
+<P>N=F3s n=E3o devemos aceitar a id=E9ia de duas comunidades separadas =
+para GNU e=20
+Linux. Ao contr=E1rio, devemos disseminar o entendimento de que =
+"sistemas Linux"=20
+s=E3o variantes do sistema GNU, e que os usu=E1rios destes sistemas =
+s=E3o tanto=20
+usu=E1rios GNU como usu=E1rios Linux (usu=E1rios do kernel do Linux). =
+Usu=E1rios que t=EAm=20
+conhecimento disto ir=E3o naturalmente dar uma olhada na filosofia GNU =
+que fez=20
+estes sistemas existirem.=20
+<P>Eu escrevi este artigo como um meio de fazer isto. Outra maneira =E9 =
+usar os=20
+termos "sistema GNU baseado em Linux (Linux-based GNU system)" ou =
+"sistema=20
+GNU/Linux (GNU/Linux system)", em vez de "sistema Linux", quando voc=EA =
+escreve=20
+sobre ou menciona este sistema.=20
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ 1 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

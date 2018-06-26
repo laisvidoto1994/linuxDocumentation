@@ -1,0 +1,468 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Guia Foca GNU/Linux - Apêndice</title>
+
+</head>
+
+<body>
+
+<a name="ch-apend"></a>
+<hr>
+
+[ <a href="ch-ajuda.htm">anterior</a> ]
+[ <a href="index.htm#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ <a href="ch-hardw.htm">3</a> ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ <a href="ch-cmdd.htm">8</a> ]
+[ <a href="ch-cmd.htm">9</a> ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ <a href="ch-cmdc.htm">12</a> ]
+[ <a href="ch-perm.htm">13</a> ]
+[ <a href="ch-redir.htm">14</a> ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ <a href="ch-cpctd.htm">18</a> ]
+[ <a href="ch-deb.htm">19</a> ]
+[ <a href="ch-dpkg.htm">20</a> ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ <a href="ch-cfg.htm">23</a> ]
+[ <a href="ch-tasks.htm">24</a> ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ <a href="ch-etc.htm">27</a> ]
+[ <a href="ch-inter.htm">28</a> ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ 32 ]
+[ <a href="index.htm">próximo</a> ]
+
+<hr>
+
+<h1>
+Guia Foca GNU/Linux
+<br>Capítulo 32 - Apêndice
+</h1>
+
+<hr>
+
+<p>
+Este capítulo contém considerações sobre o guia Foca GNU/Linux.
+
+<hr>
+
+<a name="s-apend-sobre"></a>
+<h2>32.1 Sobre este guia</h2>
+
+<p>
+Esta guia foi criado com a intenção de servir como referência a usuários
+<em>Iniciantes</em> e que estão tendo o primeiro contato com o sistema
+operacional <code>GNU/Linux</code>, <em>Intermediários</em> que já conhecem o
+básico sobre o funcionamento deste sistema operacional e já estão acostumados
+com os comandos, execução de programas e diretórios, ou com referência de
+consulta rápida.
+
+<p>
+A versão que esta lendo agora foi gerada com as seguintes opções:
+<ul>
+<li>
+Descrição detalhada de comandos
+</li>
+<li>
+Opções usadas em comandos e programas
+</li>
+<li>
+Observações
+</li>
+<li>
+Exemplos para a melhor compreensão do assunto discutido.
+</li>
+</ul>
+
+<p>
+e contém o(s) nível(is) de aprendizado (Iniciante, Intermediário e Avançado):
+<ul>
+<li>
+Iniciante
+</li>
+<li>
+Intermediário
+</li>
+</ul>
+
+<p>
+O <em>Foca GNU/Linux</em> é atualizado freqüentemente, por este motivo
+recomendo que preencha a ficha do aviso de atualizações na página web em
+<code><a href="http://www.guiafoca.org">Página Oficial do guia Foca
+GNU/Linux</a></code> no fim da página principal.  Após preencher a ficha do
+aviso de atualizações, eu te enviarei um e-mail sobre o lançamento de novas
+versões do guia e o que foi modificado, desta forma você poderá decidir em
+copia-la caso a nova versão contém modificações que considera importantes.
+
+<p>
+Versões diferentes deste guia podem ser geradas a partir do código fonte SGML
+ou obtidas através da home page principal (para detalhes veja <a
+href="#s-apend-homepage">Onde encontrar a versão mais nova do guia?, Seção
+32.4</a>).
+
+<hr>
+
+<a name="s-apend-autor"></a>
+<h2>32.2 Sobre o Autor</h2>
+
+<p>
+Gleydson Mazili da Silva é Capixaba, nascido em Vila Velha, tem 25 anos.
+Amante de eletrônica desde criança, foi atraido para a informática através da
+curiosidade em hardware, não demorando muito para recupera-los ou especificar
+corretamente dimensionamento e outras características.
+
+<p>
+Se dedica ao sistema <code>Linux</code> desde 1997.  Curioso por natureza e
+determinado a testar ferramentas a fundo avaliando pontos fortes e fracos de
+cada uma.  Logo que iniciou em <code>Linux</code> passou a estudar
+exaustivamente aspectos técnicos de distribuições e rede em
+<code>Linux</code>/<code>BSD</code> e largando de vez o Windows (que só usava
+para rodar mais de uma seção DOS e ter rede na máquina).
+
+<p>
+Entre coisas que gosta de fazer/implementar em <code>Linux</code>:
+possibilidade de pesquisa e atualização de conhecimento constante, níveis de
+segurança da informação (tanto físico e lógico), firewalls, redes virtuais,
+integração de sistemas, forense computacional, documentação de processos,
+desenvolvimento de ferramentas GPL para a comunidade, depuração, hacks baseados
+em sniffing para facilitar a vida dos outros, desenvolvimento de documentações,
+etc.
+
+<p>
+Um dos desenvolvedores da distribuição <em>Liberdade</em>, <em>CAETECT</em>,
+<em>Debian-BR</em> e desenvolvedor oficial da distribuição <em>Debian</em>.
+Atuou como tradutor do LDP-BR, traduzindo vários HOW-TOs importantes para a
+comunidade Linux Brasileira.  É um dos administradores do projeto CIPSGA,
+cuidando de uma infinidade de serviços que o projeto oferece a comunidade que
+deseja estrutura para hospedar, fortalecer e manter projetos em software livre.
+
+<p>
+Trabalhou para algumas empresas do Espírito Santo na implantação de sistemas em
+software livre e seu último trabalho foi atuando como consultor em servidores
+GNU/Linux para a compania e processamento de dados de Campinas (IMA), sediada
+no CPQD.
+
+<p>
+Não concorda totalmente com certificações, acreditando que a pessoa deva tem em
+mente procurar pontos fracos quando notar dificuldade na avaliação e
+melhora-los.  Mesmo assim possui certificação LPI nível 2 e um ISO9001
+internacional, obtendo 2o lugar no ranking Brasileiro.
+
+<hr>
+
+<a name="s-apend-ref"></a>
+<h2>32.3 Referências de auxílio ao desenvolvimento do guia</h2>
+
+<ul>
+<li>
+As seções sobre comandos/programas foram construídas após uso, teste e
+observação das opções dos comandos/programas, help on line, páginas de manual,
+info pages e documentação técnica do sistema.
+</li>
+<li>
+How-tos do Linux (principalmente o <em>Networking Howto</em>,
+<em>Security-Howto</em>) ajudaram a formar a base de desenvolvimento do guia e
+desenvolver algumas seções (versões <em>Intermediário</em> e <em>Avançado</em>
+somente).
+</li>
+<li>
+Todos os exemplos e seções descritivas do guia são de minha autoria.
+</li>
+<li>
+Manual de Instalação da <em>Debian GNU/Linux</em> - Os capítulos contendo
+materiais extraídos do manual de instalação da Debian são muito úteis e
+explicativos, seria desnecessário reescrever um material como este.  O texto é
+claro e didaticamente organizado, o documento aborda detalhes técnicos úteis
+sobre hardwares em geral e o Linux ausentes nos manuais de outras distribuições
+Linux.
+</li>
+</ul>
+
+<hr>
+
+<a name="s-apend-homepage"></a>
+<h2>32.4 Onde encontrar a versão mais nova do guia?</h2>
+
+<p>
+Novas versões deste guia, avisos de lançamento, outros níveis de aprendizado
+(Iniciante, Intermediário e Avançado), versões para outras distribuições Linux
+podem ser encontradas em: <code><a href="http://www.guiafoca.org">Página
+Oficial do guia Foca GNU/Linux</a></code>.
+
+<p>
+Se quiser receber notificações de novas versões por E-Mail, envie uma mensagem
+para <code><a
+href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</a></code> pedindo
+para ser incluído na lista de atualizações do guia ou preencha o formulário
+encontrado no final da Home Page do guia (recomendado).
+
+<hr>
+
+<a name="s-apend-colaboradores"></a>
+<h2>32.5 Colaboradores do Guia</h2>
+
+<p>
+Entre as principais colaborações até a versão atual, posso citar as seguintes:
+<ul>
+<li>
+<samp>Djalma Valois <code><a
+href="mailto:djalma@cipsga.org.br">djalma@cipsga.org.br</a></code></samp> -
+Pela recente hospedagem do Foca GNU/Linux.  Estou muito feliz vendo o Foca
+GNU/Linux fazendo parte de um projeto tão positivo como o CIPSGA é para o
+crescimento e desenvolvimento do software livre nacional.
+</li>
+</ul>
+<ul>
+<li>
+<samp>Bakurih <code><a
+href="mailto:bakurih@yahoo.com">bakurih@yahoo.com</a></code></samp> - Revisão
+inicial do documento.
+</li>
+</ul>
+<ul>
+<li>
+<samp>Eduardo Marcel Maçan <code><a
+href="mailto:macan@debian.org">macan@debian.org</a></code></samp> - Pela antiga
+hospedagem na página do metainfo.
+</li>
+</ul>
+<ul>
+<li>
+<samp>Michelle Ribeiro <code><a
+href="mailto:michelle@cipsga.org.br">michelle@cipsga.org.br</a></code></samp> -
+Por dispensar parte de seu atencioso tempo enviando revisões e sugestões que
+estão melhorando bastante a qualidade do guia.  Entre eles detalhes que
+passaram despercebidos durante muito tempo no guia e página principal.
+
+<p>
+E também por cuidar do fonte do guia ;-)
+</li>
+</ul>
+<ul>
+<li>
+<samp>Augusto Campos <code><a
+href="mailto:brain@matrix.com.br">brain@matrix.com.br</a></code></samp> -
+Descrição sobre a distribuição <code>Suse</code> em <a
+href="ch-intro.htm#s-introducao-distrib">Distribuições do Linux, Seção 1.5</a>
+.
+</li>
+</ul>
+<ul>
+<li>
+<samp>Paulo Henrique Baptista de Oliveira <code><a
+href="mailto:baptista@linuxsolutions.com.br">baptista@linuxsolutions.com.br</a></code></samp>
+- Pelo apoio moral oferecido durante os freqüentes lançamentos do guia,
+acompanhamento e divulgação.
+</li>
+</ul>
+<ul>
+<li>
+<samp>Diego Abadan <code><a
+href="mailto:diego@hipernet.ufsc.br">diego@hipernet.ufsc.br</a></code></samp> -
+Envio de correções significativas, novos endereços de listas de discussão.
+</li>
+</ul>
+<ul>
+<li>
+<samp>Alexandre Costa <code><a
+href="mailto:alebyte@bol.com.br">alebyte@bol.com.br</a></code></samp> - Envio
+de centenas de patches ortográficos nas versões Iniciante e Intermediário do
+guia que passaram desapercebidas durante várias versões do guia...
+</li>
+</ul>
+<ul>
+<li>
+<samp>Christoph Simon <code><a
+href="mailto:ciccio@prestonet.com.br">ciccio@prestonet.com.br</a></code></samp>
+- Pela pesquisa e a gigantesca coletânea de textos sobre o Linux enviada.  Eles
+estão sendo muito úteis tanto para mim quanto no desenvolvimento do guia.
+</li>
+</ul>
+<ul>
+<li>
+<samp>Gustavo Noronha <code><a
+href="mailto:dockov@zaz.com.br">dockov@zaz.com.br</a></code></samp> - Vem
+enviando freqüentes correções, contribuições construtivas ao desenvolvimento
+além de apoio ao desenvolvimento do guia .  Vale a pena destaca-lo por sua
+atual dedicação junto a distribuição Debian/GNU, sua tradução e a comunidade
+Open Source.
+</li>
+</ul>
+<ul>
+<li>
+<samp>Pedro Zorzenon Neto <code><a
+href="mailto:pzn@debian.org">pzn@debian.org</a></code></samp> - Envio de
+diversas atualizações para o nível Avançado, principalmente sobre o firewall
+iptables.
+</li>
+</ul>
+
+<hr>
+
+<a name="s-apend-mr"></a>
+<h2>32.6 Marcas Registradas</h2>
+
+<p>
+Todas as marcas registradas citadas neste guia são propriedades de seus
+respectivos autores.
+
+<hr>
+
+<a name="s-apend-new"></a>
+<h2>32.7 Futuras versões</h2>
+
+<p>
+Estes são os materiais que pretendo adicionar em futuras versões do guia:
+<ul>
+<li>
+Acrescentar mais detalhes sobre o sistema gráfico X-Window.
+</li>
+</ul>
+<ul>
+<li>
+Entre outros ítens que venho estudando para verificar se encaixam no perfil do
+guia.
+</li>
+</ul>
+
+<p>
+Esta é uma futura implementação que venho estudando para acompanhar o
+crescimento do guia.  Sugestões são bem vindas e podem ser enviadas para
+<code><a href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</a></code>.
+
+<hr>
+
+<a name="s-apend-pgp"></a>
+<h2>32.8 Chave Pública PGP</h2>
+
+<p>
+Chaves PGP são usadas para criptografar arquivos, e-mails ou qualquer outra
+coisa que desejamos que somente uma pessoa tenha acesso.  O PGP segue o padrão
+de chave pública/privada; a chave pública é distribuída a todos e a chave
+privada permanece na posse do criador para que ele seja o único a ter acesso
+aos dados criptografados após digitar a &quot;frase de acesso&quot; correta.
+
+<p>
+Minha chave PGP segue abaixo, ela também pode ser encontrada em <code><a
+href="http://pgp.ai.mit.edu">http://pgp.ai.mit.edu</a></code>.  Se você deseja
+saber mais sobre o PGP, recomendo um excelente documento encontrado na seção
+<samp>Apostilas</samp> em <code><a
+href="http://www.cipsga.org.br/">http://www.cipsga.org.br/</a></code>
+
+<pre>
+     -----BEGIN PGP PUBLIC KEY BLOCK-----
+     Version: GnuPG v1.0.6 (GNU/Linux)
+     Comment: For info see http://www.gnupg.org
+     
+     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
+     =bvnT
+     -----END PGP PUBLIC KEY BLOCK-----
+</pre>
+
+<hr>
+
+[ <a href="ch-ajuda.htm">anterior</a> ]
+[ <a href="index.htm#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ <a href="ch-hardw.htm">3</a> ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ <a href="ch-cmdd.htm">8</a> ]
+[ <a href="ch-cmd.htm">9</a> ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ <a href="ch-cmdc.htm">12</a> ]
+[ <a href="ch-perm.htm">13</a> ]
+[ <a href="ch-redir.htm">14</a> ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ <a href="ch-cpctd.htm">18</a> ]
+[ <a href="ch-deb.htm">19</a> ]
+[ <a href="ch-dpkg.htm">20</a> ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ <a href="ch-cfg.htm">23</a> ]
+[ <a href="ch-tasks.htm">24</a> ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ <a href="ch-etc.htm">27</a> ]
+[ <a href="ch-inter.htm">28</a> ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ 32 ]
+[ <a href="index.htm">próximo</a> ]
+
+<hr>
+
+<p>
+Guia Foca GNU/Linux
+
+<address>
+Versão 5.45 - segunda, 30 de outubro de 2006<br>
+<br>
+Gleydson Mazioli da Silva <code><a href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</a></code><br>
+<br>
+</address>
+
+<hr>
+
+</body>
+
+</html>
+

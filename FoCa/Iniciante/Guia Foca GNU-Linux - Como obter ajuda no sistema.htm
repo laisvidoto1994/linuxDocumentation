@@ -1,0 +1,824 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Como obter ajuda no sistema</TITLE>
+<META http-equiv=content-type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2900.3059" name=GENERATOR></HEAD>
+<BODY><A name=ch-ajuda></A>
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14</A> 
+] [ 15 ] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">próximo</A> 
+] 
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Capítulo 15 - Como obter ajuda no sistema </H1>
+<HR>
+
+<P>Dúvidas são comuns durante o uso do <CODE>GNU/Linux</CODE> e existem várias 
+maneiras de se obter ajuda e encontrar a resposta para algum problema. O 
+<CODE>GNU/Linux</CODE> é um sistema bem documentado, provavelmente tudo o que 
+imaginar fazer ou aprender já esta disponível para leitura e aprendizado. Abaixo 
+segue algumas formas úteis para encontrar a solução de sua dúvida, vale a pena 
+conhece-las. 
+<HR>
+<A name=s-ajuda-man></A>
+<H2>15.1 Páginas de Manual</H2>
+<P>As <EM>páginas de manual</EM> acompanham quase todos os programas 
+<CODE>GNU/Linux</CODE>. Elas trazem uma descrição básica do comando/programa e 
+detalhes sobre o funcionamento de opção. Uma página de manual é visualizada na 
+forma de texto único com rolagem vertical. Também documenta parâmetros usados em 
+alguns arquivos de configuração. 
+<P>A utilização da página de manual é simples, digite: 
+<P><SAMP>man [<EM>seção</EM>] [<EM>comando/arquivo</EM>]</SAMP> 
+<P><EM>onde:</EM> 
+<DL>
+  <DT><EM>seção</EM> 
+  <DD>É a seção de manual que será aberta, se omitido, mostra a 
+  <EM>primeira</EM> seção sobre o comando encontrada (em ordem crescente). 
+  <DT><EM>comando/arquivo</EM> 
+  <DD>Comando/arquivo que deseja pesquisar. </DD></DL>
+<P>A navegação dentro das páginas de manual é feita usando-se as teclas: 
+<UL>
+  <LI>q - Sai da página de manual 
+  <LI>PageDown ou f - Rola 25 linhas abaixo 
+  <LI>PageUP ou w - Rola 25 linhas acima 
+  <LI>SetaAcima ou k - Rola 1 linha acima 
+  <LI>SetaAbaixo ou e - Rola 1 linha abaixo 
+  <LI>r - Redesenha a tela (refresh) 
+  <LI>p ou g - Inicio da página 
+  <LI>h - Ajuda sobre as opções da página de manual 
+  <LI>s - Salva a página de manual em formato texto no arquivo especificado (por 
+  exemplo: <CODE>/tmp/ls</CODE>). </LI></UL>
+<P>Exemplo, <SAMP>man ls</SAMP>, <SAMP>man 5 hosts_access</SAMP>. 
+<HR>
+<A name=s-ajuda-info></A>
+<H2>15.2 Info Pages</H2>
+<P>Idêntico as páginas de manual, mas é usada navegação entre as páginas. Se 
+pressionarmos &lt;Enter&gt; em cima de uma palavra destacada, a <CODE>info 
+pages</CODE> nos levará a seção correspondente. A <EM>info pages</EM> é útil 
+quando sabemos o nome do comando e queremos saber para o que ele serve. Também 
+traz explicações detalhadas sobre uso, opções e comandos. 
+<P>Para usar a info pages, digite: 
+<P><SAMP>info [<EM>comando/programa</EM>]</SAMP> 
+<P>Se o nome do <EM>comando/programa</EM> não for digitado, a info pages mostra 
+a lista de todos os manuais de <EM>comandos/programas</EM> disponíveis. A 
+navegação da info pages é feita através de nomes marcados com um "*" 
+(hipertextos) que se pressionarmos &lt;Enter&gt;, nos levará até a seção 
+correspondente. A <EM>info pages</EM> possui algumas teclas de navegação úteis: 
+<UL>
+  <LI>q - Sai da info pages 
+  <LI>? - Mostra a tela de ajuda (que contém a lista completa de teclas de 
+  navegação e muitos outras opções). 
+  <LI>n - Avança para a próxima página 
+  <LI>p - Volta uma página 
+  <LI>u - Sobre um nível do conteúdo (até checar ao índice de documentos) 
+  <LI>m - Permite usar a localização para encontrar uma página do 
+  <CODE>info</CODE>. Pressione <SAMP>m</SAMP>, digite o comando e tecle 
+  &lt;Enter&gt; que será levado automaticamente a página correspondente. 
+  <LI>d - Volta ao índice de documentos. </LI></UL>
+<P>Existem muitos outras teclas de navegação úteis na info pages, mas estas são 
+as mais usadas. Para mais detalhes, entre no programa <CODE>info</CODE> e 
+pressione <SAMP>?</SAMP>. 
+<P>Exemplo, <SAMP>info cvs</SAMP>. 
+<HR>
+<A name=s-ajuda-helponline></A>
+<H2>15.3 Help on line</H2>
+<P>Ajuda rápida, é útil para sabermos quais opções podem ser usadas com o 
+comando/programa. Quase todos os comandos/programas <CODE>GNU/Linux</CODE> 
+oferecem este recurso que é útil para consultas rápidas (e quando não precisamos 
+dos detalhes das páginas de manual). É útil quando se sabe o nome do programa 
+mas deseja saber quais são as opções disponíveis e para o que cada uma serve. 
+Para acionar o <EM>help on line</EM>, digite: 
+<P><SAMP>[<EM>comando</EM>] --help</SAMP> 
+<P><EM>comando</EM> - é o comando/programa que desejamos ter uma explicação 
+rápida. 
+<P>O Help on Line não funciona com comandos internos (embutidos no Bash), para 
+ter uma ajuda rápida sobre os comandos internos, veja <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html#s-ajuda-help">help, 
+Seção 15.4</A>. 
+<P>Por exemplo, <SAMP>ls --help</SAMP>. 
+<HR>
+<A name=s-ajuda-help></A>
+<H2>15.4 help</H2>
+<P>Ajuda rápida, útil para saber que opções podem ser usadas com os <EM>comandos 
+internos</EM> do interpretador de comandos. O comando <CODE>help</CODE> somente 
+mostra a ajuda para comandos internos, para ter uma ajuda similar para comandos 
+externos, veja <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html#s-ajuda-helponline">Help 
+on line, Seção 15.3</A>. Para usar o <CODE>help</CODE> digite: 
+<P><SAMP>help [<EM>comando</EM>]</SAMP> 
+<P>Por exemplo, <SAMP>help echo</SAMP>, <SAMP>help exit</SAMP> 
+<HR>
+<A name=s-ajuda-apropos></A>
+<H2>15.5 apropos/whatis</H2>
+<P>Apropos procura por <EM>programas/comandos</EM> através da descrição. É útil 
+quando precisamos fazer alguma coisa mas não sabemos qual comando usar. Ele faz 
+sua pesquisa nas páginas de manual existentes no sistema e lista os 
+comandos/programas que atendem a consulta. Para usar o comando 
+<CODE>apropos</CODE> digite: 
+<P><SAMP>apropos [<EM>descrição</EM>]</SAMP> 
+<P>Digitando <SAMP>apropos copy</SAMP>, será mostrado todos os comandos que tem 
+a palavra <SAMP>copy</SAMP> em sua descrição (provavelmente os programas que 
+copiam arquivos, mas podem ser mostrados outros também). 
+<HR>
+<A name=s-ajuda-locate></A>
+<H2>15.6 locate</H2>
+<P>Localiza uma palavra na estrutura de arquivos/diretórios do sistema. É útil 
+quando queremos localizar onde um comando ou programa se encontra (para 
+copia-lo, curiosidade, etc). A pesquisa é feita em um banco de dados construído 
+com o comando <CODE>updatedb</CODE> sendo feita a partir do diretório raíz 
+<SAMP>/</SAMP> e sub-diretórios. Para fazer uma consulta com o 
+<CODE>locate</CODE> usamos: 
+<P><SAMP>locate [<EM>expressão</EM>]</SAMP> 
+<P>A <EM>expressão</EM> deve ser o nome de um arquivo diretório ou ambos que 
+serão procurados na estrutura de diretórios do sistema. Como a consulta por um 
+programa costuma localizar também sua página de manual, é recomendável usar 
+<EM>"pipes"</EM> para filtrar a saída do comando (para detalhes veja <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html#s-redir-pipe">| 
+(pipe), Seção 12.5</A> . 
+<P>Por exemplo, para listar os diretórios que contém o nome "<EM>cp</EM>": 
+<SAMP>locate cp</SAMP>. Agora mostrar somente arquivos binários, usamos: 
+<SAMP>locate cp|grep bin/</SAMP> 
+<HR>
+<A name=s-ajuda-which></A>
+<H2>15.7 which</H2>
+<P>Localiza um programa na estrutura de diretórios do path. É muito semelhante 
+ao <CODE>locate</CODE>, mas a busca é feita no <SAMP>path</SAMP> do sistema e 
+somente são mostrados arquivos executáveis . 
+<P><SAMP>which [<EM>programa/comando</EM>]</SAMP>. 
+<HR>
+<A name=s-ajuda-howto></A>
+<H2>15.8 Documentos HOWTO's</H2>
+<P>São documentos em formato <EM>texto</EM>, <EM>html</EM>, etc, que explicam 
+como fazer determinada tarefa ou como um programa funciona. Normalmente são 
+feitos na linguagem <CODE>SGML</CODE> e convertidos para outros formatos (como o 
+texto, HTML, Pos Script) depois de prontos. 
+<P>Estes trazem explicações detalhadas desde como usar o <CODE>bash</CODE> até 
+sobre como funciona o modem ou como montar um <EM>servidor internet 
+completo</EM>. Os HOWTO´s podem ser encontrados no diretório do projeto de 
+documentação do <CODE>GNU/Linux</CODE> (LDP) em <CODE><A 
+href="ftp://metalab.unc.edu/pub/Linux/docs/HOWTO/">ftp://metalab.unc.edu/pub/Linux/docs/HOWTO/</A></CODE> 
+ou traduzidos para o Português pelo LDP-BR em <CODE><A 
+href="http://www.tldp.org/projetos/howto/traduzidos.php">http://www.tldp.org/projetos/howto/traduzidos.php</A></CODE>. 
+Caso tenha optado por instalar o pacote de HOWTO's de sua distribuição 
+<CODE>GNU/Linux</CODE>, eles podem ser encontrados em: 
+<CODE>/usr/doc/how-to</CODE> 
+<HR>
+<A name=s-ajuda-docs></A>
+<H2>15.9 Documentação de Programas</H2>
+<P>São documentos instalados junto com os programas. Alguns programas também 
+trazem o <EM>aviso de copyright, changelogs, modelos, scripts, exemplos e FAQs 
+(perguntas freqüêntes)</EM> junto com a documentação normal. 
+<P>Seu princípio é o mesmo do How-to; documentar o programa. Estes arquivos 
+estão localizados em: 
+<P><CODE>/usr/doc/<CODE>[<EM>programa</EM>]</CODE></CODE>. 
+<P><EM>Programa</EM> é o nome do programa ou comando procurado. 
+<HR>
+<A name=s-ajuda-faq></A>
+<H2>15.10 FAQ</H2>
+<P><EM>FAQ</EM> é um arquivo de perguntas e respostas mais freqüêntes sobre o 
+programa. Os arquivos de FAQ estão localizados em: 
+<P><CODE>/usr/doc/FAQ/<CODE>[<EM>programa</EM>]</CODE></CODE>. 
+<P><EM>Programa</EM> é o nome do programa ou comando procurado. 
+<HR>
+<A name=s-ajuda-internet></A>
+<H2>15.11 Internet</H2>
+<P>Certamente o melhor suporte ao <CODE>GNU/Linux</CODE> é via Internet, veja 
+abaixo alguns locais úteis de onde pode obter ajuda ou se atualizar. 
+<HR>
+<A name=s-ajuda-paginas></A>
+<H3>15.11.1 Páginas Internet de Referência</H3>
+<P>Existem boas páginas Internet Nacionais e Internacionais sobre o 
+<CODE>GNU/Linux</CODE> e assuntos relacionados com este sistema. A maioria 
+trazem documentos e explicações sobre configuração, instalação, manutenção, 
+documentação, suporte, etc. 
+<P>Estas páginas podem ser encontradas através de ferramentas de busca. Entre 
+outras páginas, posso citar as seguintes: 
+<UL>
+  <LI><SAMP><CODE><A 
+  href="http://debian-br.cipsga.org.br/">http://debian-br.cipsga.org.br/</A></CODE></SAMP> 
+  Projeto Debian-Br. A <CODE>Debian</CODE> é uma distribuição de 
+  <CODE>Linux</CODE> conhecida por sua qualidade, grande número de pacotes, 
+  estabilidade, facilidade de atualização, desenvolvimento aberto, segurança, 
+  ferramentas de gerenciamento de servidores e comprometimento com o software 
+  livre. 
+  <P>A Debian é feita originalmente em inglês e traduzida por grupos em vários 
+  lugares do mundo. O projeto <STRONG>Debian-br</STRONG> destina-se a colaborar 
+  na tradução da <CODE>Debian</CODE> para o Português (nossa língua-mãe). 
+  Através desse projeto, todos poderão, da forma colaborativa como na 
+  <CODE>Debian</CODE>, trazer essa excelente distribuição em nosso idioma! 
+  <P>Participe: 
+  <UL>
+    <LI>Você pode pegar um documento pra traduzir 
+    <LI>Reformular a página do projeto 
+    <LI>Programando para o projeto 
+    <LI>Sendo um desenvolvedor da Debian 
+    <LI>A pagina do projeto é a <CODE><A 
+    href="http://debian-br.cipsga.org.br/">http://debian-br.cipsga.org.br/</A></CODE> 
+
+    <LI>Revisar documentação 
+    <LI>Ou participar de outras tarefas do seu interesse! </LI></UL>
+  <P>Entre em contato com o responsável pelo projeto pelo email <CODE><A 
+  href="mailto:debian-br@listas.cipsga.org.br">debian-br@listas.cipsga.org.br</A></CODE> 
+  para saber como entrar no projeto ou visite a página <CODE><A 
+  href="http://debian-br.cipsga.org.br/">http://debian-br.cipsga.org.br/</A></CODE>. 
+  Todos os interessados estão convidados a participar do projeto! </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A 
+  href="http://debian-br.cipsga.org.br/contador-debian/contador.html">http://debian-br.cipsga.org.br/contador-debian/contador.html</A></CODE></SAMP> 
+  - O contador Debian é uma página idealizada para que fossem geradas 
+  estatísticas fáceis de se aplicar quanto ao número e características próprias 
+  de cada grupo de usuários Debian no Brasil. 
+  <P>Sua base é construída em PHP com uso do banco de dados MySQL, hospedado no 
+  Source Forge é mantido pelo pessoal do projeto Debian-BR o contador tem também 
+  a facilidade de integrar-se com o bot apt-br facilitando a vida dos usuários 
+  do canal IRC do projeto. 
+  <P>Responsável pela página: Gustavo Noronha <CODE><A 
+  href="mailto:dockov@zaz.com.br">dockov@zaz.com.br</A></CODE> endereço: 
+  <CODE><A 
+  href="http://debian-br.cipsga.org.br/contador-debian/contador.html">http://debian-br.cipsga.org.br/contador-debian/contador.html</A></CODE> 
+  </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A 
+  href="http://www.linux.trix.net/">http://www.linux.trix.net/</A></CODE></SAMP> 
+  - Boletim diário com as noticias mais recentes sobre <CODE>GNU/Linux</CODE>, 
+  testes, redes, descrição/configuração/ avaliação de programas, entrevistas, 
+  downloads, dica do dia, mecanismo de busca no site, links, etc. Em Português. 
+  <P>Responsável pela página: Augusto Campos <CODE><A 
+  href="mailto:brain@matrix.com.br">brain@matrix.com.br</A></CODE> endereço: 
+  <CODE><A 
+  href="http://www.linux.trix.net/">http://www.linux.trix.net/</A></CODE>. 
+  </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A 
+  href="http://www.olinux.com.br/">http://www.olinux.com.br/</A></CODE></SAMP> - 
+  Trata o <CODE>GNU/Linux</CODE> com o foco jornalístico e tem a intenção de 
+  prover informações eficazes e esclarecedoras capazes de instruir, reciclar e 
+  tornar acessível aos usuários o conhecimento e aprofundamento de temas 
+  relacionados a plataforma <CODE>GNU/Linux</CODE>. 
+  <P>Publicação diária de Artigos que são feitos para que o usuário possa 
+  resolver problemas e tirar dúvidas deste sistema. Assuntos diversos sobre 
+  programas, serviços e utilitários. Também conta com seções de programação, 
+  jogos, segurança e entrevistas com personalidades do cenário <EM>software 
+  livre/código aberto</EM>. Atualização diária. 
+  <P>Responsável pela página: Linux Solutions <CODE><A 
+  href="mailto:baptista@linuxsolutions.com.br">baptista@linuxsolutions.com.br</A></CODE> 
+  endereço: <CODE><A 
+  href="http://www.olinux.com.br/">http://www.olinux.com.br/</A></CODE>. 
+  </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A 
+  href="http://come.to/linuxworld/">http://come.to/linuxworld/</A></CODE></SAMP> 
+  - Informações sobre distribuições Linux, downloads, gerenciadores de janelas 
+  (Enlightenment, Window Maker, etc) temas com fotos ilustrativas, seção 
+  programa do mês (onde é falado sobre um programa interessante), seção sobre 
+  jogos (para as pessoas enviarem suas dúvidas de jogos). Em Português. 
+  <P>Esta home page também traz uma seção onde as pessoas escrevem suas dúvidas, 
+  que são recebidas pelo responsável pela página, solucionadas e respondidas. 
+  <P>Responsável pela página: Luiz Estevão Baptista de Oliveira <CODE><A 
+  href="mailto:luizestevao@yahoo.com">luizestevao@yahoo.com</A></CODE> endereço: 
+  <CODE><A 
+  href="http://come.to/linuxworld/">http://come.to/linuxworld/</A></CODE>. 
+  </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A 
+  href="http://www.linuxsecurity.com.br/">http://www.linuxsecurity.com.br/</A></CODE></SAMP> 
+  - Boletins de segurança, publicações de textos nacionais, traduções de sites 
+  especializados em segurança, programas relacionados com criptografia e 
+  segurança no ambiente <CODE>Linux</CODE>. A página requer um navegador com 
+  suporte a Java. 
+  <P>Endereço: <CODE><A 
+  href="http://www.linuxsecurity.com.br/">http://www.linuxsecurity.com.br/</A></CODE>. 
+  </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A 
+  href="http://www.tldp.org/">http://www.tldp.org/</A></CODE></SAMP> - Projeto 
+  de documentação do <CODE>GNU/Linux</CODE> no Brasil. Toda a documentação 
+  traduzida para o Português do Brasil pode ser encontrada lá. 
+  <P>Responsável pela página: <CODE><A 
+  href="mailto:ricardo@conectiva.com.br">ricardo@conectiva.com.br</A></CODE> 
+  endereço: <CODE><A 
+  href="http://www.tldp.org/">http://www.tldp.org/</A></CODE>. </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A 
+  href="http://expansion.onweb.cx/">http://expansion.onweb.cx/</A></CODE></SAMP> 
+  - Site que visa juntar e divulgar principalmente a documentação do 
+  <CODE>GNU/Linux</CODE>, sejam HOW-TOs ou simples dicas. 
+  <P>Responsável pela página: <CODE><A 
+  href="mailto:netstart@linuxbr.com.br">netstart@linuxbr.com.br</A></CODE> 
+  endereço: <CODE><A 
+  href="http://expansion.onweb.cx/">http://expansion.onweb.cx/</A></CODE>. 
+  </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A 
+  href="http://www.guiadohardware.net/">http://www.guiadohardware.net/</A></CODE></SAMP> 
+  - Site de Hardware, conta com notícias diárias, cursos on-line, artigos, 
+  tutoriais, análises de equipamentos, fórum, dicionário de termos, dicas sobre 
+  overclock, palm pilot e sessão FAQ com mais de 300 dúvidas respondidas. 
+  <P>Atualizações diárias, possui um serviço de envio de dicas por e-mail. 
+  <P>Responsável pela página: Carlos E. Morimoto <CODE><A 
+  href="mailto:morimoto@guiadohardware.net">morimoto@guiadohardware.net</A></CODE> 
+  endereço: <CODE><A 
+  href="http://www.guiadohardware.net/">http://www.guiadohardware.net/</A></CODE>. 
+  </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A 
+  href="http://br.linuxchix.org/">http://br.linuxchix.org/</A></CODE></SAMP> - 
+  <P>O <EM>LinuxChix Brasil</EM>, assim como o Projeto <EM>LinuxChix 
+  internacional</EM>, é uma comunidade para mulheres que gostam de Linux, e para 
+  apoiar as mulheres na computação em geral. As participantes vão desde novatas 
+  à usuárias experientes, e incluem programadoras profissionais e amadoras, 
+  administradoras de sistemas e documentadoras técnicas. 
+  <P>Responsável pela página: Lista LinuxChix <CODE><A 
+  href="mailto:linuxchix@listas.cipsga.org.br">linuxchix@listas.cipsga.org.br</A></CODE> 
+  endereço: <CODE><A 
+  href="http://www.guiadohardware.net/">http://www.guiadohardware.net/</A></CODE>. 
+  </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A 
+  href="http://www.noticiaslinux.com.br/">http://www.noticiaslinux.com.br/</A></CODE></SAMP> 
+  - 
+  <P>Notícias diárias sobre GNU/Linux e Software Livre no site, por e-mail ou 
+  RSS. 
+  <P>Responsável pela página: <CODE><A 
+  href="mailto:deivison@noticiaslinux.com.br">deivison@noticiaslinux.com.br</A></CODE> 
+  endereço: <CODE><A 
+  href="http://www.noticiaslinux.com.br/">http://www.noticiaslinux.com.br/</A></CODE> 
+  </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A 
+  href="http://www.linux.org/">http://www.linux.org/</A></CODE></SAMP> - Página 
+  oficial do <CODE>GNU/Linux</CODE> mantida pela <EM>Transmeta</EM> (a empresa 
+  que Linus Torvalds vem trabalhando atualmente). Muita referência sobre 
+  <CODE>GNU/Linux</CODE>, distribuições, hardwares, softwares, downloads, etc. 
+  <P>Responsável pela página: <CODE><A 
+  href="mailto:webmaster@linux.org">webmaster@linux.org</A></CODE> endereço: 
+  <CODE><A href="http://www.linux.org/">http://www.linux.org/</A></CODE>. 
+  </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A 
+  href="http://counter.li.org/">http://counter.li.org/</A></CODE></SAMP> - Este 
+  é um serviço que tem o objetivo de contar os usuários, máquinas, grupos de 
+  usuários <CODE>Linux</CODE> existentes ao redor do mundo. Te encorajo a se 
+  registrar neste site e indica-lo aos seus amigos, é de <STRONG>graça</STRONG>, 
+  você estará contribuindo para o aumento das estatísticas do número de usuários 
+  no mundo, país, sua cidade, etc. 
+  <P>O site também conta com um sistema de estatísticas de usuários, máquinas e 
+  grupos de usuários espalhados ao redor do mundo. Você pode saber em poucos 
+  segundos a quantidade de usuários Linux em seu país, cidade, etc. 
+  <P>Responsável pela página: Harald T. Alvestrand <CODE><A 
+  href="mailto:harald@alvestrand.no">harald@alvestrand.no</A></CODE> endereço: 
+  <CODE><A href="http://counter.li.org/">http://counter.li.org/</A></CODE>. 
+  </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A 
+  href="http://metalab.unc.edu/">http://metalab.unc.edu/</A></CODE></SAMP> - O 
+  ponto de referência mais tradicional de softwares <CODE>GNU/Linux</CODE> do 
+  mundo. Você pode encontrar desde dicas, documentação (todos os How-Tos) até 
+  diversas distribuições <CODE>GNU/Linux</CODE>. 
+  <P>Responsável pelo site: <CODE><A 
+  href="mailto:webmaster@sunsite.unc.edu">webmaster@sunsite.unc.edu</A></CODE> 
+  endereço: <CODE><A 
+  href="http://metalab.unc.edu/">http://metalab.unc.edu/</A></CODE>. 
+</P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A 
+  href="http://www.themes.org/">http://www.themes.org/</A></CODE></SAMP> - Neste 
+  site você encontra milhares de temas divididos em categorias para os mais 
+  diversos gerenciadores de janelas no <CODE>GNU/Linux</CODE>. O site é muito 
+  pesado, por causa das fotos, é recomendável um bom fax-modem ou muita 
+  paciência. 
+  <P>Responsável pela página: <CODE><A 
+  href="mailto:webmaster@themes.org">webmaster@themes.org</A></CODE> endereço: 
+  <CODE><A href="http://www.themes.org/">http://www.themes.org/</A></CODE>. 
+  </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A 
+  href="http://www.oreill.com/safari/">http://www.oreill.com/safari/</A></CODE></SAMP> 
+  - Neste site você encontra os livros publicados sobre a licença OpenBook da 
+  Orreil. Na maioria livros que não atende mais propósitos atualmente e livros 
+  em que os autores concordaram em licenciar sob os termos OpenBook. 
+  <P>Endereço: <CODE><A 
+  href="http://www.oreill.com/safari/">http://www.oreill.com/safari/</A></CODE>. 
+  </P></LI></UL>
+<P>Caso conhecer uma página de Internet que contenha materiais úteis a 
+comunidade <CODE>GNU/Linux</CODE> ou desejar incluir a sua, entre em contato 
+para sua inclusão na próxima versão do guia junto com uma descrição da página. 
+<HR>
+<A name=s-ajuda-listas></A>
+<H3>15.11.2 Listas de discussão</H3>
+<P>São grupos de usuários que trocam mensagens entre si, resolvem dúvidas, 
+ajudam na configuração de programas, instalação, etc. É considerado o melhor 
+suporte ao <CODE>GNU/Linux</CODE> pois qualquer participante pode ser beneficiar 
+das soluções discutidas. Existem milhares de listas de discussões sobre o 
+<CODE>GNU/Linux</CODE> espalhadas pelo mundo, em Português existem algumas 
+dezenas. 
+<P>Algumas listas são específicas a um determinado assunto do sistema, algumas 
+são feitas para usuários iniciantes ou avançados, outras falam praticamente de 
+tudo. Existem desde usuários iniciantes, hackers, consultores, administradores 
+de redes experientes e gurus participando de listas e oferecendo suporte de 
+graça a quem se aventurar em instalar e usar o sistema <CODE>GNU/Linux</CODE>. 
+<P>A lista de discussão funciona da seguinte forma: você se inscreve na lista 
+enviando uma mensagem ao endereço de inscrição, será enviada um pedido de 
+confirmação por e-mail, simplesmente dê um reply na mensagem para ser 
+cadastrado. Pronto! agora você estará participando do grupo de usuários e 
+receberá todas as mensagens dos participantes do grupo. Assim você poderá enviar 
+sua mensagem e ela será vista por todos os participantes da lista. 
+<P>Da mesma forma, você pode responder uma dúvida de outro usuário da lista ou 
+discutir algum assunto, tirar alguma dúvida sobre a dúvida de outra pessoa, etc. 
+
+<P>Não tenha vergonha de enviar sua pergunta, participar de listas de discussão 
+é uma experiência quase obrigatório de um <SAMP>Linuxer</SAMP>. Abaixo segue uma 
+relação de listas de discussão em Português com a descrição, endereço de 
+inscrição, e o que você deve fazer para ser cadastrado: 
+<DL>
+  <DT><CODE><A 
+  href="mailto:debian-user-portuguese@lists.debian.org">debian-user-portuguese@lists.debian.org</A></CODE> 
+
+  <DD>Lista de discussão para usuários Portugueses da <CODE>Debian</CODE>. 
+  Também são discutidos assuntos relacionados ao Linux em geral. A inscrição é 
+  aberta a todos os interessados. 
+  <P>Para se inscrever, envie uma mensagem para <CODE><A 
+  href="mailto:debian-user-portuguese-request@lists.debian.org">debian-user-portuguese-request@lists.debian.org</A></CODE> 
+  contendo a palavra <SAMP>subscribe</SAMP> no assunto da mensagem. Será enviada 
+  uma mensagem a você pedindo a confirmação da inscrição na lista de discussão, 
+  simplesmente dê um reply na mensagem (responder) e você estará cadastrado e 
+  poderá enviar e receber mensagens dos participantes. </P></DD></DL>
+<DL>
+  <DT><CODE><A 
+  href="mailto:debian-news-portuguese@lists.debian.org">debian-news-portuguese@lists.debian.org</A></CODE> 
+
+  <DD>A <CODE>Debian</CODE> é extremamente bem estruturada quanto a divulgações 
+  e notícias, várias listas de email e várias páginas compõe essa base. A 
+  <EM>Debian Weekly News</EM> é especialmente importante pois dá uma visão geral 
+  do que se passou na <CODE>Debian</CODE> durante a semana. Sua versão 
+  Brasileira é editada e traduzida por <EM>Gustavo Noronha Silva (kov)</EM> e 
+  conta com a lista de pacotes traduzida por <EM>Adriano Freitas (afreitas)</EM> 
+  e revisada por <EM>Hilton Fernandes</EM> e não traz apenas traduções mas 
+  também adições dos acontecimentos atuais da <CODE>Debian</CODE> no Brasil, ou 
+  projetos concluídos ou lançados pela equipe <EM>Debian-br</EM> (<CODE><A 
+  href="http://debian-br.cipsga.org.br/">http://debian-br.cipsga.org.br/</A></CODE>). 
+
+  <P>Essa lista <SAMP>NÃO</SAMP> é usada para resolução de dúvidas e problemas, 
+  apenas para o RECEBIMENTO de notícias relacionadas a Debian. Não poste 
+  mensagens nela! 
+  <P>Para se inscrever, envie uma mensagem para <CODE><A 
+  href="mailto:debian-news-portuguese-request@lists.debian.org">debian-news-portuguese-request@lists.debian.org</A></CODE> 
+  contendo a palavra <SAMP>subscribe</SAMP> no assunto da mensagem. Será enviada 
+  uma mensagem a você pedindo a confirmação da inscrição na lista de discussão, 
+  simplesmente dê um reply na mensagem (responder) e você passará a receber as 
+  notícias sobre a Debian em Português. </P></DD></DL>
+<DL>
+  <DT><CODE><A href="mailto:linux-br@unicamp.br">linux-br@unicamp.br</A></CODE> 
+  <DD>Lista de discussão que cobre assuntos diversos. Esta lista é voltada para 
+  usuários com bons conhecimentos no <CODE>GNU/Linux</CODE>, são abordados 
+  assuntos como redes, configurações, etc. Esta é uma lista moderada, o que 
+  significa que a mensagem que envia passam por uma pessoa que verifica (modera) 
+  e a libera caso estejam dentro das normas adotada na lista. É uma lista de 
+  alto nível e recomendada para quem deseja fugir de mensagens como <SAMP>não 
+  consigo instalar o Linux</SAMP>, <SAMP>não sei compilar o kernel</SAMP>, 
+  <SAMP>o que eu faço quando vejo uma tela com o nome login:?</SAMP>, etc. 
+  <P>Para se inscrever nesta lista, envie uma mensagem para: <CODE><A 
+  href="mailto:linux-br-request@unicamp.br">linux-br-request@unicamp.br</A></CODE> 
+  contendo a palavra <SAMP>subscribe</SAMP> no assunto da mensagem e aguarde o 
+  recebimento da confirmação da inscrição. Apenas responda a mensagem de 
+  confirmação para se inscrever. Para se descadastrar envie uma mensagem para o 
+  mesmo endereço mas use a palavra <SAMP>unsubscribe</SAMP>. </P></DD></DL>
+<DL>
+  <DT><CODE><A href="mailto:dicas-l@unicamp.br">dicas-l@unicamp.br</A></CODE> 
+  <DD>Esta lista envia diariamente uma dica de <CODE>Unix</CODE>, sistemas da 
+  Microsoft ou novidades da Internet. 
+  <P>Para se inscreve nesta lista de discussão, envie uma mensagem para: 
+  <CODE><A 
+  href="mailto:dicas-l-request@unicamp.br">dicas-l-request@unicamp.br</A></CODE> 
+  contendo a palavra <SAMP>subscribe</SAMP> no corpo da mensagem e aguarde o 
+  recebimento da confirmação da inscrição. Apenas responda a mensagem de 
+  confirmação para confirmar sua inscrição na lista. Para se descadastrar envie 
+  uma mensagem para o mesmo endereço mas use a palavra <SAMP>unsubscribe</SAMP>. 
+  </P></DD></DL>
+<DL>
+  <DT><CODE><A 
+  href="mailto:linux-br@listas.conectiva.com.br">linux-br@listas.conectiva.com.br</A></CODE> 
+
+  <DD>Discute todos os aspectos relacionados ao uso, instalação, atualização e 
+  operação do <CODE>GNU/Linux</CODE>. 
+  <P>Para se inscreve nesta lista de discussão, envie uma mensagem para: 
+  <CODE><A 
+  href="mailto:linux-br-request@listas.conectiva.com.br">linux-br-request@listas.conectiva.com.br</A></CODE> 
+  contendo a palavra <SAMP>subscribe</SAMP> no corpo da mensagem e aguarde o 
+  recebimento da confirmação da inscrição. Apenas responda a mensagem de 
+  confirmação para confirmar sua inscrição na lista. Para se descadastrar envie 
+  uma mensagem para o mesmo endereço mas use a palavra <SAMP>unsubscribe</SAMP>. 
+  </P></DD></DL>
+<P>Esta listagem deveria estar mais completa, mas eu não lembro de todas as 
+listas!. Também recomendo dar uma olhada em <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html#s-ajuda-netiqueta-listas">Listas 
+de Discussão via Email, Seção 15.12.5</A> que descreve recomendações de 
+comportamento em listas de discussão. 
+<HR>
+<A name=s-ajuda-netiqueta></A>
+<H2>15.12 Netiqueta</H2>
+<P>São recomendações que tem como objetivo facilitar a para comunicação através 
+dos recursos de uma rede. O nome <EM>Netiqueta</EM> vem de "Etiqueta de Rede" 
+(<EM>Net Etiquete</EM>). O material desta seção foi escrito com base nos anos de 
+observação que tive via internet e também com referência a rfc 1855. 
+<HR>
+<A name=s-ajuda-netiqueta-geral></A>
+<H3>15.12.1 Recomendações Gerais sobre a Comunicação Eletrônica</H3>
+<UL>
+  <LI>Como recomendação geral, lembre-se que a conversa via internet é feita 
+  sempre de uma para outra pessoa ou de uma para várias pessoas, e que a forma 
+  de comunicação é a mesma que utilizaria se estivesse de frente a frente com a 
+  pessoa. Nunca diga algo que não diria se estivesse diante da outra pessoa. 
+  Existem pessoas que por estar atrás de um monitor, se sentem "maiores" se 
+  esquecendo disso e causando prejuízos de comunicação (e sem imaginar que a 
+  pessoa do outro lado da linha existe). 
+  <P>Apesar do modo que as frases são escritas expressarem o jeito que a outra 
+  pessoa está do outro lado da linha e seu tom de comunicação no decorrer da 
+  conversar, existem algumas coisas que não podem ser totalmente expressadas 
+  através da Internet, como por exemplo a expressão da "face" das pessoas. Para 
+  isto foram criados símbolos chamados <EM>smileys</EM> que expressam a face da 
+  outra pessoa em determinado momento, e dependendo do sentido da conversa, um 
+  smiley pode expressar corretamente a intenção de sua frase. Os mais usados são 
+  os seguintes: <PRE>     :-)   --&gt; Sorriso
+     
+     :-(   --&gt; Triste
+     
+     ;-)   --&gt; Piscadinha
+     
+     :-O   --&gt; De boca aberta
+     
+     :-|   --&gt; Sem graça
+     
+     8-)   --&gt; De óculos 
+     
+     |-)   --&gt; Com sono e feliz
+     
+     &lt;:-)  --&gt; Bobo
+</PRE>
+  <P>Para entender o sentido do smiley, veja ele de lado (45 graus). Use os 
+  smileys em suas conversações, mas com cautela. Não espere que a inclusão de um 
+  smiley sorridente ":-)" deixe o destinatário da mensagem contente com um 
+  comentário rude ou insulto. </P>
+  <LI>ESCREVER EM MAIÚSCULAS significa gritar quando escrever mensagens 
+  eletrônicas. 
+  <LI>Use *asteriscos* para destacar uma palavra ou frase. _Isso_ indica uma 
+  palavra/frase sublinhada. 
+  <LI>Se você troca mensagens com pessoas do mundo todo, não espere que um 
+  japonês responda logo seu e-mail que enviou as 15:00 da tarde. A essa hora no 
+  país dele, ele está roncando forte na cama e sonhando com a placa 3D que vai 
+  ganhar para melhorar o desempenho de seus jogos de <CODE>Linux</CODE>. 
+  <LI>Durante a comunicação com pessoas de diferentes regiões (ou países), evite 
+  a utilização de gírias, ou expressões regionais. Uma interpretação em uma 
+  determinada região não garante que ela tenha o mesmo significado para seu 
+  destinatário, as vezes pode ser até ofensiva. 
+  <LI>Assuma que sua mensagem está trafegando sobre uma via não segura, desta 
+  forma não envie informações pessoais que não enviaria em uma carta comum. O 
+  uso de criptografia pode garantir melhor segurança na transmissão de dados. 
+  </LI></UL>
+<HR>
+<A name=s-ajuda-netiqueta-email></A>
+<H3>15.12.2 Email</H3>
+<UL>
+  <LI>Tenha o hábito de colocar sempre um assunto na mensagem que envia para 
+  identificar seu conteúdo. 
+  <LI>Respeite os direitos autorais das mensagens de e-mail. Se precisar 
+  encaminhar mensagens, preserve seu conteúdo original. 
+  <LI>Procure limitar o tamanho da linha a 70 caracteres. Muitos usuários 
+  utilizam cliente de e-mail em modo texto, e nem todo mundo usa a mesma 
+  resolução que você. 
+  <LI>Caso o e-mail que responda tenha mais que 100 linhas, é recomendável 
+  colocar a palavra "LONGA" no assunto da mensagem. Se possível corte as partes 
+  não necessárias da mensagens de respostas tendo o cuidado de não "cortar" de 
+  forma mal educada a mensagem de outra pessoa. 
+  <LI>Não espere que o espaçamento ou desenhos ASCII usados em uma mensagem 
+  sejam mostrados corretamente em todos os sistemas. 
+  <LI>Utilize sempre uma assinatura no final da mensagem para identificar você e 
+  principalmente seu endereço de e-mail. Em alguns cliente de e-mail, o campo 
+  <SAMP>Reply-to</SAMP> é bagunçado, e em e-mails redirecionados o endereço de 
+  resposta é excluído. A assinatura facilita encontrar o remetente da mensagem. 
+  Tente manter a assinatura em um tamanho de no máximo 4 linhas. 
+  <LI>Não repasse mensagens de corrente por e-mail. Elas tem somente o objetivo 
+  de espalhar boatos na Internet e se espalhar. Normalmente elas vem com uma 
+  história bonita e no final diz se não repassar acontecerá tudo ao contrário 
+  com você ou algo do tipo. <EM>Não vai acontecer nada! ignore isso e não entre 
+  na corrente!</EM> 
+  <P>Pelas políticas da Internet, você pode ter sua conta de e-mail perdida se 
+  fizer mal uso dele. </P></LI></UL>
+<HR>
+<A name=s-ajuda-netiqueta-talk></A>
+<H3>15.12.3 Talk</H3>
+<UL>
+  <LI>Use sempre quebra de linhas ao escrever suas mensagens, use pelo menos 70 
+  caracteres para escrever suas mensagens de talk. Evita escrever continuamente 
+  até a borda para fazer quebra de linha automática, alguns clientes de talk não 
+  aceitam isso corretamente. 
+  <LI>Sempre que termina uma frase, deixe uma linha em branco (tecle enter 2 
+  vezes) para indicar que a outra pessoa pode iniciar a digitação. 
+  <LI>Sempre se despeça da outra pessoa e espere ela responder antes de fechar 
+  uma seção de conversação. O respeito mútuo durante um diálogo é essencial :-) 
+  <LI>Lembre-se que o talk normalmente interrompe as pessoas que trabalham 
+  nativamente no console. Evite dar talk para estranhos, pois podem fazer uma má 
+  impressão de você. Tente antes estabelecer outros meios de comunicação. 
+  <LI>Se a outra pessoa não responder, não assuma de cara que ela está ignorando 
+  você ou não levando sua conversa muito bem. Ela pode simplesmente estar 
+  ocupada, trabalhando, ou com problemas no cliente de talk. Alguns cliente de 
+  talk dão problemas durante a comunicação remota, lembre-se também que sua 
+  comunicação é via UDP :-) 
+  <LI>Se a pessoa não responder seus talks durante certo tempo, não deixe ele 
+  infinitamente beepando a pessoa. Tente mais tarde :-) 
+  <LI>Seja atencioso caso utilize mais de uma seção de talk ao mesmo tempo. 
+  <LI>O talk também leva em consideração sua habilidade de digitação. Muitos 
+  erros e correções contínuas fazem a outra pessoa ter uma noção de você, suas 
+  experiências, etc ;-) </LI></UL>
+<HR>
+<A name=s-ajuda-netiqueta-icq></A>
+<H3>15.12.4 ICQ</H3>
+<P>O ICQ é uma excelente ferramenta de comunicação em tempo real, usada 
+principalmente para localizar quando uma pessoa está on-line. Este documento 
+inclui algumas recomendações de ICtiQueta (Etiqueta no ICQ) para melhor os 
+usuários aproveitarem melhor esta ferramenta. 
+<UL>
+  <LI>De atenção ao status do ICQ da outra pessoa. Se ela estiver "on-line" ou 
+  "free for chat" significa que ela está desocupada e que pode conversar naquele 
+  instante. Se estiver como não perturbe, envie somente mensagens se for mesmo 
+  preciso. 
+  <LI>Seja também sensato ao usar o ICQ. Não entre nele caso não possa 
+  conversar, ou avise isso mudando seu status para o mais adequado para a 
+  situação, assim os outros poderão entender que está longe do computador, não 
+  disponível ou ocupado. 
+  <LI>É recomendável ser prudente quanto ao envio de mensagens no ICQ, não envie 
+  mais do que 4 mensagens seguidas, pois a outra pessoa terá dificuldades para 
+  responder a todas elas mais outra que talvez possa estar recebendo de outras. 
+  <LI>Guarde seu login e senha de ICQ em um lugar seguro. Caso ela seja perdida, 
+  você terá trabalho para avisar a todos de sua lista de contato. 
+  <LI>Caso alguém de sua lista de contatos esteja sempre on-line e não lhe envia 
+  mensagens há muito tempo, não fique com a impressão de que ela não quer trocar 
+  mais mensagens com você. Pode ser apenas que ela tenha reinstalado seu 
+  programa de ICQ e não tenha anotados todos seus UIN's. 
+  <P>Normalmente quando se envia uma mensagem para a pessoa, o UIN é 
+  automaticamente cadastrado em sua lista. </P>
+  <LI>Não pense que a opção "Requer Autorização" te de o controle total de quem 
+  terá ou não seu número de ICQ em sua lista. Utilize as opções de privacidade 
+  para configurar. 
+  <LI>Sempre que enviar uma URL, procure descrever algo para seu interlocutor na 
+  mensagem. 
+  <LI>No modo de chat, use as recomendações descritas sobre o talk (em <A 
+  href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html#s-ajuda-netiqueta-talk">Talk, 
+  Seção 15.12.3</A>). 
+  <LI>Como em toda comunicação on-line, seja cauteloso quando a pessoa que 
+  conversa. Nem sempre quem conversamos do outro lado é a pessoa que esperamos 
+  encontrar. Lembre-se que um registro falso e uma identidade pode ser criada 
+  sem dificuldades por qualquer pessoa. </LI></UL>
+<HR>
+<A name=s-ajuda-netiqueta-listas></A>
+<H3>15.12.5 Listas de Discussão via Email</H3>
+<UL>
+  <LI>Tente se manter dentro do assunto quando responder mensagens de listas. 
+  Seja claro e explicativo ao mesmo tempo :-) 
+  <LI>Sempre coloque um assunto (subject) na mensagem. O assunto serve como um 
+  resumo do problema ou dúvida que tem. Alguns usuários, principalmente os que 
+  participam de várias listas de discussão, verificam o assunto da mensagem e 
+  podem simplesmente descartar a mensagem sem lê-la porque as vezes ele não 
+  conhece sobre aquele assunto. 
+  <LI>Nunca use "Socorro!", "Help!" ou coisa do gênero como assunto, seja 
+  objetivo sobre o problema/dúvida que tem: <EM>"Falha ao carregar módulo no do 
+  kernel"</EM>, <EM>"SMAIL retorna a mensagem Access denied"</EM>, 
+  <EM>"Novidades: Nova versão do guia Foca Linux"</EM> ;-). 
+  <LI>Procure enviar mensagens em formato <SAMP>texto</SAMP> ao invés de 
+  <SAMP>HTML</SAMP> para as listas de discussão pois isto faz com que a mensagem 
+  seja vista por todos os participantes (muitos dos usuários 
+  <CODE>GNU/Linux</CODE> usam leitores de e-mail que não suportam formato html) 
+  e diminui drásticamente o tamanho da mensagem porque o formato texto não usa 
+  tags e outros elementos que a linguagem HTML contém (muitos dos usuários 
+  costumam participar de várias listas de discussão, e mensagens em HTML levam a 
+  um excesso de tráfego e tempo de conexão). 
+  <LI>Tenha cautela e bom censo em suas mensagens para listas e grupos de 
+  discussão, considere que cada mensagem que posta é são arquivadas para futura 
+  referência. 
+  <LI>Quando o conteúdo das mensagem tomar outro rumo, é ético modificar o 
+  assunto do e-mail para se adequar ao novo conteúdo da mensagem. Por exemplo, 
+  <SAMP>Correção nas regras de Netiqueta</SAMP> para <SAMP>Conversa de pessoa 
+  para pessoa (Era: Correção das regras de Netiqueta</SAMP>). 
+  <LI>Quando a conversa em grupo sair do assunto e envolver apenas duas pessoas, 
+  é conveniente retirar os endereços das pessoas/listas do CC. 
+  <LI>Não mande arquivos grandes para as listas, principalmente se eles tiverem 
+  mais que 40Kb de tamanho. Se precisar enviar arquivos maiores que isso, envie 
+  diretamente para os e-mails dos interessados depois de perguntar. 
+  <LI>Quando enviar mensagens para listas de discussão, seja educado e cordial 
+  quanto ao conteúdo de sua mensagem. Envie CC's para as pessoas que dizem 
+  respeito ao assunto, assim com a lista. 
+  <LI>Tente ignorar ou não responda mensagens de "Guerras" em listas (<EM>Flame 
+  Wars</EM>), caso queira reponde-la por algum tipo de agressão de quem mandou a 
+  mensagem, esperar para responde-la a noite (nunca é garantida uma boa resposta 
+  no momento que está de cabeça quente). Lembre-se de quando responde uma 
+  mensagem de "Flame War" a "altura" de quem mandou seus ataques, está sendo 
+  igualmente tão baixo quando o "nível" dessa pessoa. 
+  <LI>Caso se desentenda com alguma pessoa em uma lista de discussão, não envie 
+  mensagens agressivas para a listas, se precisar, faça isso diretamente para a 
+  pessoa! Você pode se arrepender disso mais tarde. 
+  <LI>Não culpe o administrador da lista pelos usuários que participam dela. 
+  Notifique somente usuários que não estejam colaborando com a lista e outras 
+  coisas que prejudiquem seu funcionamento. Administradores preservam o 
+  funcionamento das listas, e não o policiamento dos usuários. 
+  <LI>Não use auto respostas para listas de discussão. Pelos inconvenientes 
+  causados, você pode ser descadastrado ou banido de se inscrever na 
+  lista/newsgroup. 
+  <LI>Salve as mensagens de inscrição que recebe da lista. Ela contém detalhes 
+  sobre seus recursos, e a senha usada muitas vezes para se descadastrar dela ou 
+  modificar suas permissões de usuário. O administrador pode te ajudar nessa 
+  tarefa, mas não espere que ele esteja sempre disponível para realizar tarefas 
+  que podem ser feitas pelo próprio usuário. 
+  <LI>Muitas pessoas reclamam do excesso de mensagens recebidas das listas de 
+  discussão. Se você recebe muitas mensagens, procure usar os <EM>filtros de 
+  mensagens</EM> para organiza-las. O que eles fazem é procurar por campos na 
+  mensagem, como o remetente, e enviar para um local separado. No final da 
+  filtragem, todas as mensagens de listas de discussão estarão em locais 
+  separados e as mensagens enviadas diretamente a você entrarão na caixa de 
+  correio principal, por exemplo. 
+  <P>Um filtro de mensagens muito usado no <CODE>GNU/Linux</CODE> é o 
+  <CODE>procmail</CODE>, para maiores detalhes consulte a documentação deste 
+  programa. 
+  <P>O Netscape também tem recursos de filtros de mensagem que podem ser criadas 
+  facilmente através da opção "Arquivo/Nova SubPasta" ("File/New Subfolder") do 
+  programa de E-mail. Então defina as regras através do menu "Editar/Filtros de 
+  Mensagens" ("Edit/Message filters") clicando no botão "Novo"("New"). 
+</P></LI></UL>
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14</A> 
+] [ 15 ] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">próximo</A> 
+] 
+<HR>
+
+<P>Guia Foca GNU/Linux 
+<ADDRESS>Versão 3.99 - segunda, 30 de outubro de 2006<BR><BR>Gleydson Mazioli da 
+Silva <CODE><A 
+href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR><BR></ADDRESS>
+<HR>
+</BODY></HTML>

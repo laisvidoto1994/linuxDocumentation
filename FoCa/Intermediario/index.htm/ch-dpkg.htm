@@ -1,0 +1,901 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Guia Foca GNU/Linux - Sistema de gerenciamento de pacotes</title>
+
+</head>
+
+<body>
+
+<a name="ch-dpkg"></a>
+<hr>
+
+[ <a href="ch-deb.htm">anterior</a> ]
+[ <a href="index.htm#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ <a href="ch-hardw.htm">3</a> ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ <a href="ch-cmdd.htm">8</a> ]
+[ <a href="ch-cmd.htm">9</a> ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ <a href="ch-cmdc.htm">12</a> ]
+[ <a href="ch-perm.htm">13</a> ]
+[ <a href="ch-redir.htm">14</a> ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ <a href="ch-cpctd.htm">18</a> ]
+[ <a href="ch-deb.htm">19</a> ]
+[ 20 ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ <a href="ch-cfg.htm">23</a> ]
+[ <a href="ch-tasks.htm">24</a> ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ <a href="ch-etc.htm">27</a> ]
+[ <a href="ch-inter.htm">28</a> ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ <a href="ch-apend.htm">32</a> ]
+[ <a href="ch-pers.htm">próximo</a> ]
+
+<hr>
+
+<h1>
+Guia Foca GNU/Linux
+<br>Capítulo 20 - Sistema de gerenciamento de pacotes
+</h1>
+
+<hr>
+
+<p>
+Este capítulo ensina a operação básica do programa de manipulação de pacotes
+<code>Debian</code>, a instalação, remoção, consulta e checagem de arquivos
+<code>.deb</code>.
+
+<hr>
+
+<a name="s-dpkg-introducao"></a>
+<h2>20.1 dpkg</h2>
+
+<p>
+O <code>dpkg</code> (Debian Package) é o programa responsável pelo
+gerenciamento de pacotes em sistemas <code>Debian</code>.  Sua operação é feita
+em modo texto e funciona através de comandos, assim caso deseje uma ferramenta
+mais amigável para a seleção e instalação de pacotes, prefira o
+<code>dselect</code> (que é um front-end para o <code>dpkg</code>) ou o
+<code>apt</code> (veja <a href="#s-dpkg-apt">apt, Seção 20.2</a>).
+
+<p>
+<code>dpkg</code> é muito usado por usuários avançados da <code>Debian</code> e
+desenvolvedores para fins de instalação, manutenção e construção de pacotes.
+
+<hr>
+
+<a name="s-dpkg-pacotes"></a>
+<h3>20.1.1 Pacotes</h3>
+
+<p>
+Pacotes <code>Debian</code> são programas colocados dentro de um arquivo
+identificados pela extensão <code>.deb</code> incluindo arquivos necessários
+para a instalação do programa, um sistemas de listagem/checagem de
+dependências, scripts de automatização para remoção parcial/total do pacote,
+listagem de arquivos, etc.
+
+<p>
+Um nome de pacote tem a forma <code>nome-versão_revisão.deb</code>
+
+<hr>
+
+<a name="s-dpkg-instalar"></a>
+<h3>20.1.2 Instalar pacotes</h3>
+
+<p>
+Use o comando: <samp>dpkg -i [<code>NomedoPacote</code>]</samp> (ou
+<em>--install</em>) para instalar um pacote em seu sistema.  Talvez ele peça
+que seja instalado algum pacote que depende para seu funcionamento.  Para
+detalhes sobre dependências veja <a href="#s-dpkg-dependencias">Dependências,
+Seção 20.1.3</a>.  É preciso especificar o nome completo do pacote (com a
+versão e revisão).
+
+<hr>
+
+<a name="s-dpkg-dependencias"></a>
+<h3>20.1.3 Dependências</h3>
+
+<p>
+Dependências são pacotes requeridos para a instalação de outro pacote.  Na
+<code>Debian</code> cada pacote contém um programa com uma certa função.  Por
+exemplo, se você tentar instalar o pacote de edição de textos
+<code>supertext</code> que usa o programa <code>sed</code>, você precisará
+verificar se o pacote <code>sed</code> está instalado em seu sistema antes de
+tentar instalar o <code>supertext</code>, caso contrário, o pacote
+<code>supertext</code> pedirá o <code>sed</code> e não funcionará corretamente.
+Note que o pacote <code>supertext</code> é apenas um exemplo e não existe (pelo
+menos até agora :-).  O programa <code>dselect</code> faz o trabalho de
+checagem de dependências automaticamente durante a instalação dos pacotes.
+
+<p>
+A colocação de cada programa em seu próprio pacote parece ser uma dificuldade a
+mais para a instalação manual de um certo programa.  Mas para os
+desenvolvedores que mantém os mais de <strong>8710</strong> pacotes existentes
+na distribuição <code>Debian</code>, é um ponto fundamental, porque não é
+preciso esperar uma nova versão do <code>supertext</code> ser lançada para
+instalar a versão mais nova do pacote <code>sed</code>.  Por este motivo também
+é uma vantagem para o usuário.
+
+<hr>
+
+<a name="s-dpkg-l"></a>
+<h3>20.1.4 Listar pacotes existentes no sistema</h3>
+
+<p>
+Use o comando: <samp>dpkg -l [pacote]</samp> (<em>--list</em>) para isto.
+
+<p>
+Na listagem de pacotes também será mostrado o &quot;status&quot; de cada um na
+coluna da esquerda, acompanhado do nome do pacote, versão e descrição básica.
+Caso o nome do [pacote] seja omitido, todos os pacotes serão listados.
+
+<p>
+É recomendado usar &quot;dpkg -l|less&quot; para ter um melhor controle da
+listagem (pode ser longa dependendo da quantidade de programas instalados).
+
+<hr>
+
+<a name="s-dpkg-r"></a>
+<h3>20.1.5 Removendo pacotes do sistema</h3>
+
+<p>
+Use o comando: <samp>dpkg -r <code>NomedoPacote</code></samp>
+(<em>--remove</em>) para remover um pacote do sistema completamente.  Somente é
+necessário digitar o nome e versão do pacote que deseja remover, não sendo
+necessário a revisão do pacote.
+
+<p>
+O comando <samp>dpkg -r</samp> não remove os arquivos de configuração criados
+pelo programa.  Para uma remoção completa do programa veja <a
+href="#s-dpkg-purge">Removendo completamente um pacote, Seção 20.1.6</a>.
+
+<hr>
+
+<a name="s-dpkg-purge"></a>
+<h3>20.1.6 Removendo completamente um pacote</h3>
+
+<p>
+Use o comando: <samp>dpkg -P [<code>NomedoPacote</code>|-a]</samp>
+(<em>--purge</em>) para remover um pacote e todos os diretórios e arquivos de
+configuração criados.  Não é necessário especificar a revisão do pacote.  O
+comando <samp>dpkg--purge</samp> pode ser usado após uma remoção normal do
+pacote (usando <samp>dpkg -r</samp>).
+
+<p>
+Caso você usar diretamente o comando <samp>dpkg --purge</samp>,
+<code>dpkg</code> primeiro removerá o pacote normalmente (como explicado em <a
+href="#s-dpkg-r">Removendo pacotes do sistema, Seção 20.1.5</a>) e após
+removido apagará todos os arquivos de configuração.
+
+<p>
+Caso especifique a opção <em>-a</em> (ou sua equivalente <em>--pending</em>) no
+lugar do nome do pacote, todos os pacotes marcados para remoção serão removidos
+completamente do sistema.
+
+<p>
+Note que o <samp>dpkg --purge</samp> somente remove arquivos de configuração
+conhecidos pelo pacote.  Em especial, os arquivos de configuração criados para
+cada usuário do sistema devem ser removidos manualmente.  Seria pedir demais
+que o <code>dpkg</code> também conhecesse os usuários de nosso sistema ;-).
+
+<hr>
+
+<a name="s-dpkg-I"></a>
+<h3>20.1.7 Mostrar descrição do pacote</h3>
+
+<p>
+Use o comando: <samp>dpkg -I <code>NomedoPacote</code></samp> (<em>--info</em>)
+para mostrar a descrição do pacote.  Entre a descrição são mostradas as
+dependências do pacote, pacotes sugeridos, recomendados, descrição do que o
+pacote faz, tamanho e número de arquivos que contém.
+
+<hr>
+
+<a name="s-dpkg-S"></a>
+<h3>20.1.8 Procura de pacotes através do nome de um arquivo</h3>
+
+<p>
+Use o comando: <samp>dpkg -S <code>arquivo</code></samp> (<em>--search</em>)
+para saber de qual <code>pacote</code> existente no sistema o
+<code>arquivo</code> pertence.
+
+<hr>
+
+<a name="s-dpkg-s"></a>
+<h3>20.1.9 Status do pacote</h3>
+
+<p>
+Use o comando: <samp>dpkg -s <code>pacote</code></samp> (<em>--status</em>)
+para verificar o status de um pacote em seu sistema, se esta ou não instalado,
+configurado, tamanho, dependências, maintainer, etc.
+
+<p>
+Se o pacote estiver instalado no sistema, o resultado será parecido com o do
+comando <samp>dpkg -c [pacote]</samp> (<em>--contents</em>).
+
+<hr>
+
+<a name="s-dpkg-C"></a>
+<h3>20.1.10 Procurando pacotes com problemas de instalação</h3>
+
+<p>
+A checagem de pacotes com este tipo de problema pode ser feita através do
+comando:
+
+<p>
+<samp>dpkg -C</samp> (<em>--audit</em>)
+
+<p>
+Será listado todos os pacotes com algum tipo de problema, verifique os detalhes
+do pacote com <samp>&quot;dpkg -s&quot;</samp> para decidir como corrigir o
+problema.
+
+<hr>
+
+<a name="s-dpkg-get-selections"></a>
+<h3>20.1.11 Mostrando a lista de pacotes do sistema</h3>
+
+<p>
+Use o comando:
+
+<p>
+<samp>dpkg --get-selections</samp>
+
+<p>
+para obter uma lista de seleção dos pacotes em seu sistema.  A listagem é
+mostrada na saída padrão, que pode ser facilmente redirecionada para um arquivo
+usando <samp>dpkg --get-selections &gt;dpkg.lista</samp>.
+
+<p>
+A listagem obtida com este comando é muito útil para repetir os pacotes usados
+no sistema usando o <samp>dpkg --set-selections</samp>.
+
+<hr>
+
+<a name="s-dpkg-set-selections"></a>
+<h3>20.1.12 Obtendo uma lista de pacotes para instalar no sistema</h3>
+
+<p>
+Use o comando:
+
+<p>
+<samp>dpkg --set-selections &lt;arquivo</samp>
+
+<p>
+para obter a lista de pacotes que serão instalados no sistema.  O uso do
+<samp>dpkg --get-selections</samp> e <samp>dpkg --set-selections</samp> é muito
+útil durante uma necessidade de reinstalação do sistema <code>GNU/Linux</code>
+ou repetir a instalação em várias máquinas sem precisar selecionar algumas
+dezenas entre os milhares de pacotes no <code>dselect</code>.
+
+<p>
+Após obter a lista com <samp>dpkg --get-selections</samp>, use <samp>dpkg
+--set-selections &lt;arquivo</samp> e então entre no <code>dselect</code> e
+escolha a opção <samp>INSTALL</samp>, todos os pacotes obtidos via <samp>dpkg
+--set-selections</samp> serão automaticamente instalados.
+
+<hr>
+
+<a name="s-dpkg-configure"></a>
+<h3>20.1.13 Configurando pacotes desconfigurados</h3>
+
+<p>
+Pacotes estão desconfigurados quando, por algum motivo, a instalação do mesmo
+não foi concluída com sucesso.  Pode ter faltado alguma dependência, acontecido
+algum erro de leitura do arquivo de pacote, etc.  Quando um erro deste tipo
+acontece, os arquivos necessários pelo pacote podem ter sido instalados, mas os
+scripts de configuração pós-instalação não são executados.
+
+<p>
+Use o comando:
+
+<p>
+<samp>dpkg --configure [<em>NomedoPacote</em>]</samp>
+
+<p>
+Para configurar um pacote.  O <em>NomedoPacote</em> não precisa conter a
+revisão do pacote e extensão.
+
+<hr>
+
+<a name="s-dpkg-c"></a>
+<h3>20.1.14 Listando arquivos de um pacote</h3>
+
+<p>
+Use o comando: <samp>dpkg -c <code>arquivo</code></samp> (<em>--contents</em>)
+para obter a listagem dos arquivos contidos no pacote.  É necessário digitar o
+nome completo do pacote.  O comando <samp>dpkg -c</samp> é útil para listarmos
+arquivos de pacotes que não estão instalados no sistema.
+
+<p>
+Para obter a listagem de arquivos de pacotes já instalados no sistema, use o
+comando: <samp>dpkg -L <code>arquivo</code></samp>.  É necessário digitar
+somente o nome do pacote (sem a revisão e extensão).
+
+<hr>
+
+<a name="s-dpkg-apt"></a>
+<h2>20.2 apt</h2>
+
+<p>
+O <code>apt</code> é sistema de gerenciamento de pacotes de programas que
+possui resolução automática de dependências entre pacotes, método fácil de
+instalação de pacotes, facilidade de operação, permite atualizar facilmente sua
+distribuição, etc.  Ele funciona através de linha de comando sendo bastante
+fácil de usar.  Mesmo assim, existem interfaces gráficas para o
+<code>apt</code> como o <code>synaptic</code> (modo gráfico) e o
+<code>aptitude</code> (modo texto) que permitem poderosas manipulações de
+pacotes sugeridos, etc.
+
+<p>
+O <code>apt</code> pode utilizar tanto com arquivos locais como remotos na
+instalação ou atualização, desta maneira é possível atualizar toda a sua
+distribuição <code>Debian</code> via <code>ftp</code> ou <code>http</code> com
+apenas 2 simples comandos!
+
+<p>
+É recomendável o uso do método <code>apt</code> no programa
+<code>dselect</code> pois ele permite a ordem correta de instalação de pacotes
+e checagem e resolução de dependências, etc.  Devido a sua facilidade de
+operação, o <code>apt</code> é o método preferido para os usuários manipularem
+pacotes da <code>Debian</code>.
+
+<p>
+O <code>apt</code> é exclusivo da distribuição <code>Debian</code> e
+distribuições baseadas nela e tem por objetivo tornar a manipulação de pacotes
+poderosa por qualquer pessoa e tem dezenas de opções que podem ser usadas em
+sua execução ou configuradas no arquivo <code>/etc/apt/apt.conf</code>.
+Explicarei aqui como fazer as ações básicas com o <code>apt</code>, portanto se
+desejar maiores detalhes sobre suas opções, veja a página de manual
+<code>apt-get</code>.
+
+<hr>
+
+<a name="s20.2.1"></a>
+<h3>20.2.1 O arquivo <code>/etc/apt/sources.list</code></h3>
+
+<p>
+Este arquivo contém os locais onde o <code>apt</code> encontrará os pacotes, a
+distribuição que será verificada (stable, testing, unstable, Woody, Sarge) e a
+seção que será copiada (main, non-free, contrib, non-US).
+
+<p>
+<em>Woody</em>(Debian 3.0) e <em>Sarge</em>(Debian 3.1) são os nomes das
+versões enquanto <em>stable</em> e <em>unstable</em> são links para as versões
+<em>estável</em> e <em>testing</em> respectivamente.  Se desejar usar sempre
+uma distribuição estável (como a <em>Woody</em>), modifique o arquivo
+<code>sources.list</code> e coloque <em>Woody</em> como distribuição.  Caso
+você desejar estar sempre atualizado mas é uma pessoa cuidadosa e deseja ter
+sempre a última distribuição estável da <code>Debian</code>, coloque
+<em>stable</em> como versão.  Assim que a nova versão for lançada, os links que
+apontam de <em>stable</em> para <em>Woody</em> serão alterados apontando para
+<em>Sarge</em> e você terá seu sistema atualizado.
+
+<p>
+Abaixo um exemplo simples de arquivo <code>/etc/apt/sources.list</code> com
+explicação das seções:
+
+<pre>
+     deb http://www.debian.org/debian stable main contrib non-free
+     deb http://nonus.debian.org/debian-non-US stable non-US
+</pre>
+
+<p>
+Você pode interpretar cada parte da seguinte maneira:
+<ul>
+<li>
+<samp>deb</samp> - Identifica um pacote da Debian.  A palavra
+<samp>deb-src</samp> identifica o código fonte.
+</li>
+<li>
+<samp>http://www.debian.org/debian</samp> - Método de acesso aos arquivos da
+<code>Debian</code>, site e diretório principal.  O caminho pode ser
+<samp>http://</samp>, <samp>ftp://</samp>, <samp>file:/</samp>.
+</li>
+<li>
+<samp>stable</samp> - Local onde serão procurados arquivos para atualização.
+Você pode tanto usar o nome de sua distribuição (<em>Woody</em>,
+<em>Sarge</em>) ou sua classificação (<em>stable</em>, <em>testing</em> ou
+<em>unstable</em>.  Note que <em>unstable</em> é recomendada somente para
+desenvolvedores, máquinas de testes e se você tem conhecimentos para corrigir
+problemas.  Nunca utilize <em>unstable</em> em ambientes de produção ou
+servidores críticos, use a <em>stable</em>.
+</li>
+<li>
+<samp>main contrib non-us</samp> - Seções que serão verificadas no site remoto.
+</li>
+</ul>
+
+<p>
+Note que tudo especificado após o nome da distribuição será interpretado como
+sendo as seções dos arquivos (main, non-free, contrib, non-US).  As linhas são
+processadas na ordem que estão no arquivo, então é recomendável colocar as
+linhas que fazem referência a pacotes locais primeiro e mirrors mais perto de
+você para ter um melhor aproveitamento de banda.  O caminho percorrido pelo
+<code>apt</code> para chegar aos arquivos será o seguinte:
+
+<pre>
+     http://www.debian.org/debian/dists/stable/main/binary-i386
+     http://www.debian.org/debian/dists/stable/non-free/binary-i386
+     http://www.debian.org/debian/dists/stable/contrib/binary-i386
+</pre>
+
+<p>
+Você notou que o diretório <code>dists</code> foi adicionado entre
+<code>http://www.debian.org/debian</code> e <code>stable</code>, enquanto as
+seções <em>main</em>, <em>non-free</em> e <em>contrib</em> são processadas
+separadamente e finalizando com o caminho <code>binary-[arquitetura]</code>,
+onde <em>[arquitetura]</em> pode ser <em>i386, alpha, sparc, powerpc, arm</em>,
+etc.  dependendo do seu sistema.  Entendendo isto, você poderá manipular o
+arquivo <code>sources.list</code> facilmente.
+
+<p>
+<strong>OBS:</strong> Caso tenha mais de uma linha em seu arquivo
+<code>sources.list</code> de onde um pacote pode ser instalado, ele será
+baixado da primeira encontrada no arquivo.  Ë recomendável colocar primeiro
+repositórios locais ou mais perto de você, como recomendado nesta seção.
+
+<hr>
+
+<a name="s20.2.1.1"></a>
+<h4>20.2.1.1 Endereços de servidores e mirrors nacionais da <code>Debian</code></h4>
+
+<p>
+Segue abaixo uma relação de servidores que podem ser colocados em seu arquivo
+<code>sources.list</code>:
+
+<pre>
+     Endereço                               Diretório Principal
+     --------                               --------- ---------
+     ftp://ftp.debian.org.br                /debian
+     ftp://ftp.br.debian.org                /debian
+     ftp://ftp.debian.org                   /debian
+     ftp://download.sourceforge.net         /debian
+     ftp://ftp.quimica.ufpr.br              /debian
+     ftp://download.unesp.br                /linux/debian
+</pre>
+
+<hr>
+
+<a name="s20.2.1.2"></a>
+<h4>20.2.1.2 Um modelo de arquivo <code>sources.list</code></h4>
+
+<p>
+Você pode copiar o modelo do <code>sources.list</code> abaixo para ser usado em
+sua distribuição <samp>Stable</samp> ou personaliza-lo modificando a
+distribuição utilizada e servidores:
+
+<pre>
+     # Arquivos principais da stable
+     deb ftp://ftp.debian.org.br/debian stable main non-free contrib
+     
+     # Non-US da Stable
+     deb ftp://ftp.debian.org.br/debian-non-US stable/non-US main non-free contrib
+     
+     # Atualizações propostas para Stable main e non-US
+     deb ftp://ftp.debian.org.br/debian dists/proposed-updates/
+     deb ftp://ftp.debian.org.br/debian-non-US dists/proposed-updates/
+     
+     # Atualizações de segurança da Stable
+     deb ftp://nonus.debian.org/debian-security stable/updates main
+     
+     # Ximian é um conjunto de pacotes atualizados freqüentemente e compatíveis 
+     # com a distribuição Debian. Entre estes programas estão o Gimp 1.2 e outros
+     # mais atuais e compatíveis com a Debian. Para usa-los inclua a seguinte linha no 
+     # seu sources.list
+     # deb ftp://spidermonkey.ximian.com/pub/red-carpet/binary/debian-22-i386/ ./
+     
+     # Kde 1 e 2
+     # deb ftp://kde.tdyc.com/pub/kde/debian woody main crypto optional qt1apps
+</pre>
+
+<hr>
+
+<a name="s20.2.2"></a>
+<h3>20.2.2 O arquivo <code>/etc/apt/apt.conf</code></h3>
+
+<p>
+Você pode especificar opções neste arquivo que modificarão o comportamento do
+programa <code>apt</code> durante a manipulação de pacotes (ao invés de
+especificar na linha de comando).  Se estiver satisfeito com o funcionamento do
+programa <code>apt</code>, não é necessário modifica-lo.  Para detalhes sobre o
+formato do arquivo, veja a página de manual do <code>apt.conf</code>.  Na
+página de manual do <code>apt-get</code> são feitas referências a parâmetros
+que podem ser especificados neste arquivo ao invés da linha de comando.
+
+<hr>
+
+<a name="s20.2.3"></a>
+<h3>20.2.3 Copiando a lista de pacotes disponíveis</h3>
+
+<p>
+O <code>apt</code> utiliza uma lista de pacotes para verificar se os pacotes
+existentes no sistema precisam ou não ser atualizados.  A lista mais nova de
+pacotes é copiada através do comando <samp>apt-get update</samp>.
+
+<p>
+Este comando pode ser usado com alguma freqüência se estiver usando a
+distribuição stable e sempre se estiver usando a unstable (os pacotes são
+modificados com muita freqüência).  Sempre utilize o <samp>apt-get
+update</samp> antes de atualizar toda a distribuição.
+
+<hr>
+
+<a name="s20.2.4"></a>
+<h3>20.2.4 Utilizando CDs oficiais/não-oficiais/terceiros com o apt</h3>
+
+<p>
+Para usar CDs da <code>Debian</code> ou de programas de terceiros, use o
+seguinte comando com cada um dos CDs que possui:
+
+<pre>
+     apt-cdrom add
+</pre>
+
+<p>
+Este comando adicionará automaticamente uma linha para cada CD no arquivo
+<code>/etc/apt/sources.list</code> e atualizará a lista de pacotes em
+<code>/var/state/apt/lists</code>.  Por padrão, a unidade acessada através de
+<code>/cdrom</code> é usada.  Use a opção <samp>-d /dev/scd?</samp> para
+especificar um outra unidade de CDs (veja <a
+href="ch-disc.htm#s-disc-id">Identificação de discos e partições em sistemas
+Linux, Seção 5.12</a> para detalhes sobre essa identificação).
+
+<p>
+Durante a instalação de um novo programa, o <code>apt</code> pede que o CD
+correspondente seja inserido na unidade e pressionado &lt;Enter&gt; para
+continuar.  O método acesso do <code>apt</code> através de CDs é inteligente o
+bastante para instalar todos os pacotes necessários daquele CD, instalar os
+pacotes do próximo CD e iniciar a configuração após instalar todos os pacotes
+necessários.
+
+<p>
+<samp>Observação:</samp> - CDs de terceiros ou contendo programas adicionais
+também podem ser usados com o comando &quot;apt-cdrom add&quot;.
+
+<hr>
+
+<a name="s20.2.5"></a>
+<h3>20.2.5 Instalando novos pacotes</h3>
+
+<p>
+Use o comando <samp>apt-get install [pacotes]</samp> para instalar novos
+pacotes em sua distribuição.  Podem ser instalados mais de um pacotes ao mesmo
+tempo separando os nomes por espaços.  Somente é preciso especificar o nome do
+pacote (sem a versão e revisão).
+
+<p>
+Se preciso, o <code>apt</code> instalará automaticamente as dependências
+necessárias para o funcionamento correto do pacote.  Quando pacotes além do
+solicitado pelo usuário são requeridos para a instalação, o <code>apt</code>
+mostrará o espaço total que será usado no disco e perguntará ao usuário se ele
+deseja continuar.  Após a instalação, o pacote será automaticamente configurado
+pelo <code>dpkg</code> para ser executado corretamente em seu sistema.
+
+<hr>
+
+<a name="s20.2.6"></a>
+<h3>20.2.6 Removendo pacotes instalado</h3>
+
+<p>
+Use o comando <samp>apt-get remove [pacotes]</samp> para remover completamente
+um pacote do sistema.  Podem ser removidos mais de um pacote ao mesmo tempo
+separando os nomes dos pacotes com espaços.  O <samp>apt-get remove</samp>
+remove completamente o pacote mas mantém os arquivos de configuração, exceto se
+for adicionada a opção <samp>--purge</samp>.
+
+<p>
+É preciso especificar somente o nome do pacote (sem a versão e revisão).
+
+<hr>
+
+<a name="s20.2.7"></a>
+<h3>20.2.7 Atualizando sua distribuição</h3>
+
+<p>
+O <code>apt</code> tem uma grande característica: Atualizar toda a sua
+distribuição de uma forma inteligente e segura.  O <code>apt</code> lê a
+listagem de pacotes disponíveis no servidor remoto, verifica quais estão
+instalados e suas versões, caso a versão do pacote seja mais nova que a já
+instalada em seu sistema, o pacote será imediatamente atualizado.
+
+<p>
+A cópia dos arquivos pelo <code>apt</code> pode ser feita via <samp>FTP</samp>,
+<samp>HTTP</samp> ou através de uma cópia local dos arquivos no disco rígido
+(um <em>mirror</em> local).  Em nenhuma circunstância os pacotes existentes em
+seu sistema serão removidos ou sua configuração apagada durante um
+<samp>upgrade</samp> na distribuição.
+
+<p>
+Os arquivos de configuração em <code>/etc</code> que foram modificados são
+identificados e podem ser mantidos ou substituídos por versões existentes nos
+pacotes que estão sendo instalado, esta escolha é feita por você.  Se estiver
+atualizando a Debian Potato (2.2) para Woody (3.0) (ou versão superior),
+execute os seguintes comandos antes de iniciar a atualização:
+
+<pre>
+     export LANG=C
+     export LC_ALL=C
+     export LC_MESSAGES=C
+</pre>
+
+<p>
+para retornar as variáveis de localização ao valor padrão (inglês).  Isto é
+necessário por causa de modificações no sistema de locales, e o excesso de
+mensagens de erro do perl causaram alguns problemas em meus testes.
+
+<p>
+Após isto, a atualização da distribuição <code>Debian</code> pode ser feita
+através de dois simples comandos:
+
+<pre>
+     apt-get update          #Para atualizar a lista de pacotes (obrigatório)
+     apt-get -f dist-upgrade #Para atualizar a distribuição
+</pre>
+
+<p>
+A opção <samp>-f</samp> faz com que o <code>apt</code> verifique e corrija
+automaticamente problemas de dependências entre pacotes.  Recomendo executa o
+comando <samp>apt-get -f --dry-run dist-upgrade|less</samp> para ver o que vai
+acontecer sem atualizar a distribuição, se tudo ocorrer bem, retire o
+<samp>--dry-run</samp> e vá em frente.
+
+<p>
+A distribuição usada na atualização pode ser:
+<ul>
+<li>
+<samp>Para a mesma versão que utiliza</samp> - Para quem deseja manter os
+pacotes sempre atualizados entre revisões, copiar pacotes que contém correções
+para falhas de segurança (veja a página web em <code><a
+href="http://www.debian.org/">http://www.debian.org/</a></code> para acompanhar
+o boletim de segurança).
+</li>
+<li>
+<samp>Para uma distribuição stable</samp> - Mesmo que o acima, mas quando uma
+nova distribuição for lançada, o link simbólico de stable será apontado para
+próxima distribuição, atualizando instantaneamente seu sistema.
+</li>
+<li>
+<samp>Para a distribuição testing</samp> - Atualiza para a futura distribuição
+<code>Debian</code> que será lançada, é como a <em>unstable</em>, mas seus
+pacotes passam por um período de testes de 2 semanas na <em>unstable</em> antes
+de serem copiados para esta.
+</li>
+<li>
+<samp>unstable</samp> - Versão em desenvolvimento, recomendada somente para
+desenvolvedores ou usuários que conhecem a fundo o sistema
+<code>GNU/Linux</code> e saibam resolver eventuais problemas que apareçam.
+<p>
+A unstable é uma distribuição em constante desenvolvimento e podem haver
+pacotes problemáticos ou com falhas de segurança.  Após o período de
+desenvolvimento, a distribuição unstable se tornará frozen.
+</li>
+<li>
+<samp>frozen</samp> - Versão congelada, nenhum pacote novo é aceito e somente
+são feitas correções de falhas.  Após todas as falhas estarem corrigidas, a
+distribuição <samp>frozen</samp> se tornará <samp>stable</samp>
+</li>
+</ul>
+
+<p>
+A distribuição que será usada na atualização pode ser especificada no arquivo
+<code>/etc/apt/sources.list</code> (veja a seção correspondente acima).  Caso o
+método de atualização usado seja via HTTP ou FTP, será necessário usar o
+comando <samp>apt-get clean</samp> para remover os pacotes copiados para seu
+sistema (para detalhes veja a seção seguinte).
+
+<hr>
+
+<a name="s20.2.8"></a>
+<h3>20.2.8 Removendo pacotes baixados pelo <code>apt</code></h3>
+
+<p>
+Use o comando <samp>apt-get clean</samp> para apagar qualquer arquivo baixado
+durante uma atualização ou instalação de arquivos com o <code>apt</code>.  Os
+arquivos baixados residem em <code>/var/cache/apt/archives</code> (download
+completo) e <code>/var/cache/apt/archives/partial</code> (arquivos sendo
+baixados - parciais).
+
+<p>
+Este local de armazenamento é especialmente usado com o método http e ftp para
+armazenamento de arquivos durante o download para instalação (todos os arquivos
+são primeiro copiados para serem instalados e configurados).
+
+<p>
+O <samp>apt-get clean</samp> é automaticamente executado caso seja usado o
+método de acesso <code>apt</code> do <code>dselect</code>.
+
+<hr>
+
+<a name="s20.2.9"></a>
+<h3>20.2.9 Procurando por pacotes através da descrição</h3>
+
+<p>
+O utilitário <code>apt-cache</code> pode ser usado para esta função.  Ele
+também possui outras utilidades interessante para a procura e manipulação da
+lista de pacotes.
+
+<p>
+Por exemplo, o comando <samp>apt-cache search clock</samp> mostrará todos os
+pacotes que possuem a palavra <var>clock</var> na descrição do pacote.
+
+<hr>
+
+<a name="s20.2.10"></a>
+<h3>20.2.10 Procurando um pacote que contém determinado arquivo</h3>
+
+<p>
+Suponha que algum programa esteja lhe pedindo o arquivo <samp>perlcc</samp> e
+você não tem a mínima idéia de que pacote instalar no seu sistema.  O
+utilitário <samp>auto-apt</samp> pode resolver esta situação.  Primeiro instale
+o pacote <code>auto-apt</code> e execute o comando <samp>auto-apt update</samp>
+para que ele copie o arquivo <code>Contents-i386.gz</code> que será usado na
+busca desses dados.
+
+<p>
+Agora, basta executar o comando:
+
+<pre>
+      auto-apt search perlcc
+</pre>
+
+<p>
+para que ele retorne o resultado:
+
+<pre>
+     usr/bin/perlcc   interpreters/perl
+</pre>
+
+<p>
+O pacote que contém este arquivo é o <code>perl</code> e se encontra na seção
+<code>interpreters</code> dos arquivos da <code>Debian</code>.  Para uma
+pesquisa que mostra mais resultados (como <samp>auto-apt search a2ps</samp>), é
+interessante usar o grep para filtrar a saída:
+
+<pre>
+     auto-apt search a2ps|grep bin/
+     
+     usr/bin/psmandup        text/a2ps
+     usr/bin/pdiff   text/a2ps
+     usr/bin/psset   text/a2ps
+     usr/bin/composeglyphs   text/a2ps
+     usr/bin/a2psj   text/a2ps-perl-ja
+     usr/bin/a2ps    text/a2ps
+     usr/bin/fixps   text/a2ps
+     usr/bin/ogonkify        text/a2ps
+     usr/bin/fixnt   text/a2ps
+     usr/bin/card    text/a2ps
+     usr/bin/texi2dvi4a2ps   text/a2ps
+</pre>
+
+<p>
+Serão mostrados somente os binários, diretórios de documentação, manpages, etc.
+não serão mostradas.
+
+<hr>
+
+<a name="s20.2.11"></a>
+<h3>20.2.11 Modos eficazes de compilação do código fonte para a Debian</h3>
+
+<p>
+O <code>Debian</code> como qualquer distribuição de Linux, possui o diretório
+<code>/usr/local</code> que segundo a FHS é o local apropriado para colocação
+de programas que não fazem parte da distribuição, que seria no caso o de fontes
+compilados manualmente.  Um dos grandes trabalhos de quem pega o código fonte
+para compilação é a instalação de bibliotecas de desenvolvimento para a
+compilação ocorrer com sucesso.
+
+<p>
+O <code>auto-apt</code> facilita magicamente o processo de compilação da
+seguinte forma: durante o passo <samp>./configure</samp> no momento que é
+pedida uma bibliotecas, dependência, etc.  o <code>auto-apt</code> para o
+processo, busca por pacotes no repositório da <code>Debian</code>, pergunta
+qual pacote será instalado (caso tenha mais de uma opção), instala e retorna o
+<samp>./configure</samp> do ponto onde havia parado.
+
+<p>
+Para fazer isso, execute o comando:
+
+<pre>
+     auto-apt run ./configure
+</pre>
+
+<p>
+E ele se encarregará do resto :-)
+
+<hr>
+
+<a name="s20.2.12"></a>
+<h3>20.2.12 Verificando pacotes corrompidos</h3>
+
+<p>
+Use o comando <samp>apt-get check</samp> para verificar arquivos corrompidos.
+A correção é feita automaticamente.  A lista de pacotes também é atualizada
+quando utiliza este comando.
+
+<hr>
+
+<a name="s20.2.13"></a>
+<h3>20.2.13 Corrigindo problemas de dependências e outros erros</h3>
+
+<p>
+Use o comando <samp>apt-get -f install</samp> (sem o nome do pacote) para que o
+<code>apt-get</code> verifique e corrija problemas com dependências de pacotes
+e outros problemas conhecidos.
+
+<hr>
+
+[ <a href="ch-deb.htm">anterior</a> ]
+[ <a href="index.htm#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ <a href="ch-hardw.htm">3</a> ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ <a href="ch-cmdd.htm">8</a> ]
+[ <a href="ch-cmd.htm">9</a> ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ <a href="ch-cmdc.htm">12</a> ]
+[ <a href="ch-perm.htm">13</a> ]
+[ <a href="ch-redir.htm">14</a> ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ <a href="ch-cpctd.htm">18</a> ]
+[ <a href="ch-deb.htm">19</a> ]
+[ 20 ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ <a href="ch-cfg.htm">23</a> ]
+[ <a href="ch-tasks.htm">24</a> ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ <a href="ch-etc.htm">27</a> ]
+[ <a href="ch-inter.htm">28</a> ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ <a href="ch-apend.htm">32</a> ]
+[ <a href="ch-pers.htm">próximo</a> ]
+
+<hr>
+
+<p>
+Guia Foca GNU/Linux
+
+<address>
+Versão 5.45 - segunda, 30 de outubro de 2006<br>
+<br>
+Gleydson Mazioli da Silva <code><a href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</a></code><br>
+<br>
+</address>
+
+<hr>
+
+</body>
+
+</html>
+

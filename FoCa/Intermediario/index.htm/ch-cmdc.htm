@@ -1,0 +1,775 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Guia Foca GNU/Linux - Comandos para manipulação de contas</title>
+
+</head>
+
+<body>
+
+<a name="ch-cmdc"></a>
+<hr>
+
+[ <a href="ch-cmdn.htm">anterior</a> ]
+[ <a href="index.htm#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ <a href="ch-hardw.htm">3</a> ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ <a href="ch-cmdd.htm">8</a> ]
+[ <a href="ch-cmd.htm">9</a> ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ 12 ]
+[ <a href="ch-perm.htm">13</a> ]
+[ <a href="ch-redir.htm">14</a> ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ <a href="ch-cpctd.htm">18</a> ]
+[ <a href="ch-deb.htm">19</a> ]
+[ <a href="ch-dpkg.htm">20</a> ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ <a href="ch-cfg.htm">23</a> ]
+[ <a href="ch-tasks.htm">24</a> ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ <a href="ch-etc.htm">27</a> ]
+[ <a href="ch-inter.htm">28</a> ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ <a href="ch-apend.htm">32</a> ]
+[ <a href="ch-perm.htm">próximo</a> ]
+
+<hr>
+
+<h1>
+Guia Foca GNU/Linux
+<br>Capítulo 12 - Comandos para manipulação de contas
+</h1>
+
+<hr>
+
+<p>
+Este capítulo traz comandos usados para manipulação de conta de usuários e
+grupos em sistemas <code>GNU/Linux</code>.  Entre os assuntos descritos aqui
+estão adicionar usuários ao sistema, adicionar grupos, incluir usuários
+existente em novos grupos, etc.
+
+<hr>
+
+<a name="s-cmdc-adduser"></a>
+<h2>12.1 adduser</h2>
+
+<p>
+Adiciona um usuário ou grupo no sistema.  Por padrão, quando um novo usuário é
+adicionado, é criado um grupo com o mesmo nome do usuário.  Opcionalmente o
+<code>adduser</code> também pode ser usado para adicionar um usuário a um grupo
+(veja <a href="#s-cmdc-incluirgrupo">Adicionando o usuário a um grupo extra,
+Seção 12.10</a>).  Será criado um diretório home com o nome do usuário (a não
+ser que o novo usuário criado seja um usuário do sistema) e este receberá uma
+identificação.  A identificação do usuário (UID) escolhida será a primeira
+disponível no sistema especificada de acordo com a faixa de UIDS de usuários
+permitidas no arquivo de configuração <code>/etc/adduser.conf</code>.  Este é o
+arquivo que contém os padrões para a criação de novos usuários no sistema.
+
+<p>
+<samp>adduser [<em>opções</em>] [<em>usuário/grupo</em>]</samp>
+
+<p>
+Onde:
+<dl>
+<dt><em>usuário/grupo</em></dt>
+<dd>
+Nome do novo usuário que será adicionado ao sistema.
+</dd>
+<dt><em>opções</em></dt>
+<dt>-disable-passwd</dt>
+<dd>
+Não executa o programa <code>passwd</code> para escolher a senha e somente
+permite o uso da conta após o usuário escolher uma senha.
+</dd>
+<dt>--force-badname</dt>
+<dd>
+Desativa a checagem de senhas ruins durante a adição do novo usuário.  Por
+padrão o <code>adduser</code> checa se a senha pode ser facilmente adivinhada.
+</dd>
+<dt>--group</dt>
+<dd>
+Cria um novo grupo ao invés de um novo usuário.  A criação de grupos também
+pode ser feita pelo comando <code>addgroup</code>.
+</dd>
+<dt>-uid [num]</dt>
+<dd>
+Cria um novo usuário com a identificação [num] ao invés de procurar o próximo
+UID disponível.
+</dd>
+<dt>-gid [num]</dt>
+<dd>
+Faz com que o usuário seja parte do grupo [gid] ao invés de pertencer a um novo
+grupo que será criado com seu nome.  Isto é útil caso deseje permitir que
+grupos de usuários possam ter acesso a arquivos comuns.
+<p>
+Caso estiver criando um novo grupo com <code>adduser</code>, a identificação do
+novo grupo será [num].
+</dd>
+<dt>--home [dir]</dt>
+<dd>
+Usa o diretório [dir] para a criação do diretório home do usuário ao invés de
+usar o especificado no arquivo de configuração <code>/etc/adduser.conf</code>.
+</dd>
+<dt>--ingroup [nome]</dt>
+<dd>
+Quando adicionar um novo usuário no sistema, coloca o usuário no grupo [nome]
+ao invés de criar um novo grupo.
+</dd>
+<dt>--quiet</dt>
+<dd>
+Não mostra mensagens durante a operação.
+</dd>
+<dt>--system</dt>
+<dd>
+Cria um usuário de sistema ao invés de um usuário normal.
+</dd>
+</dl>
+
+<p>
+Os dados do usuário são colocados no arquivo <code>/etc/passwd</code> após sua
+criação e os dados do grupo são colocados no arquivo <code>/etc/group</code>.
+
+<p>
+OBSERVAÇÃO: Caso esteja usando senhas ocultas (shadow passwords), as senhas dos
+usuários serão colocadas no arquivo <code>/etc/shadow</code> e as senhas dos
+grupos no arquivo <code>/etc/gshadow</code>.  Isto aumenta mais a segurança do
+sistema porque somente o usuário <samp>root</samp> pode ter acesso a estes
+arquivos, ao contrário do arquivo <code>/etc/passwd</code> que possui os dados
+de usuários e devem ser lidos por todos.
+
+<hr>
+
+<a name="s-cmdc-addgroup"></a>
+<h2>12.2 addgroup</h2>
+
+<p>
+Adiciona um novo grupo de usuários no sistema.  As opções usadas são as mesmas
+do <a href="#s-cmdc-adduser">adduser, Seção 12.1</a>.
+
+<p>
+<samp>addgroup [<em>usuário/grupo</em>] [<em>opções</em>]</samp>
+
+<hr>
+
+<a name="s-cmdc-passwd"></a>
+<h2>12.3 passwd</h2>
+
+<p>
+Muda a senha do usuário ou grupo.  Um usuário somente pode alterar a senha de
+sua conta, mas o superusuário (<samp>root</samp>) pode alterar a senha de
+qualquer conta de usuário, inclusive a data de validade da conta, etc.  Os
+donos de grupos também podem alterar a senha do grupo com este comando.
+
+<p>
+Os dados da conta do usuário como nome, endereço, telefone, também podem ser
+alterados com este comando.
+
+<p>
+<samp>passwd [<em>usuário/grupo</em>] [<em>opções</em>]</samp>
+
+<p>
+Onde:
+<dl>
+<dt><em>usuário</em></dt>
+<dd>
+Nome do usuário/grupo que terá sua senha alterada.
+</dd>
+<dt><em>opções</em></dt>
+<dt>-g</dt>
+<dd>
+Se especificada, a senha do grupo será alterada.  Somente o root ou o
+administrador do grupo pode alterar sua senha.  A opção -r pode ser usada com
+esta para remover a senha do grupo.  A opção -R pode ser usada para restringir
+o acesso do grupo para outros usuários.
+</dd>
+<dt>-x [dias]</dt>
+<dd>
+Especifica o número máximo de dias que a senha poderá ser usada.  Após terminar
+o prazo, a senha deverá ser modificada.
+</dd>
+<dt>-i</dt>
+<dd>
+Desativa a conta caso o usuário não tenha alterado sua senha após o tempo
+especificado por -x.
+</dd>
+<dt>-n [dias]</dt>
+<dd>
+Especifica o número mínimo de dias para a senha ser alterada.  O usuário não
+poderá mudar sua senha até que [dias] sejam atingidos desde a última alteração
+de senha.
+</dd>
+<dt>-w [num]</dt>
+<dd>
+Número de dias antecedentes que o usuário receberá o alerta para mudar sua
+senha.  O alerta ocorre [num] dias antes do limite da opção -x, avisando ao
+usuários quantos dias restam para a troca de sua senha.
+</dd>
+<dt>-l [nome]</dt>
+<dd>
+Bloqueia a conta do usuário [nome].  Deve ser usada pelo root.  O bloqueio da
+conta é feito acrescentando um caracter a senha para que não confira com a
+senha original.
+</dd>
+<dt>-u [nome]</dt>
+<dd>
+Desbloqueia a conta de um usuário bloqueada com a opção -l.
+</dd>
+<dt>-S [nome]</dt>
+<dd>
+Mostra o status da conta do usuário [nome].  A primeira parte é o nome do
+usuário seguido de L(conta bloqueada), NP(sem senha), ou P (com senha), a
+terceira parte é a data da última modificação da senha, a quarta parte é a
+período mínimo, máximo, alerta e o período de inatividade para a senha.
+</dd>
+</dl>
+
+<p>
+Procure sempre combinar letras maiúsculas, minúsculas, e números ao escolher
+suas senhas.  Não é recomendado escolher palavras normais como sua senha pois
+podem ser vulneráveis a ataques de dicionários cracker.  Outra recomendação é
+utilizar <em>senhas ocultas</em> em seu sistema (<em>shadow password</em>).
+
+<p>
+Você deve ser o dono da conta para poder modificar a senhas.  O usuário root
+pode modificar/apagar a senha de qualquer usuário.
+
+<p>
+Exemplo: <samp>passwd root</samp>.
+
+<hr>
+
+<a name="s-cmdc-newgrp"></a>
+<h2>12.4 newgrp</h2>
+
+<p>
+Altera a identificação de grupo do usuário.  Para retornar a identificação
+anterior, digite <samp>exit</samp> e tecle <samp>Enter</samp>.  Para executar
+um comando com outra identificação de grupo de usuário, use o comando <a
+href="#s-cmdc-sg">sg, Seção 12.9</a>.
+
+<p>
+<samp>newgrp <em>-</em> [<em>grupo</em>]</samp>
+
+<p>
+Onde:
+<dl>
+<dt><em>-</em></dt>
+<dd>
+Se usado, inicia um novo ambiente após o uso do comando <code>newgrp</code>
+(semelhante a um novo login no sistema), caso contrário, o ambiente atual do
+usuário é mantido.
+</dd>
+<dt><em>grupo</em></dt>
+<dd>
+Nome do grupo ou número do grupo que será incluído.
+</dd>
+</dl>
+
+<p>
+Quando este comando é usado, é pedida a senha do grupo que deseja acessar.
+Caso a senha do grupo esteja incorreta ou não exista senha definida, a execução
+do comando é negada.  A listagem dos grupos que pertence atualmente pode ser
+feita usando o comando <a href="#s-cmdc-id">id, Seção 12.12</a>.
+
+<hr>
+
+<a name="s-cmdc-userdel"></a>
+<h2>12.5 userdel</h2>
+
+<p>
+Apaga um usuário do sistema.  Quando é usado, este comando apaga todos os dados
+da conta especificado dos arquivos de contas do sistema.
+
+<p>
+<samp>userdel [<em>-r</em>] [<em>usuário</em>]</samp>
+
+<p>
+Onde:
+<dl>
+<dt>-r</dt>
+<dd>
+Apaga também o diretório HOME do usuário.
+</dd>
+</dl>
+
+<p>
+OBS: Note que uma conta de usuário não poderá ser removida caso ele estiver no
+sistema, pois os programas podem precisar ter acesso aos dados dele (como UID,
+GID) no <code>/etc/passwd</code>.
+
+<hr>
+
+<a name="s-cmdc-groupdel"></a>
+<h2>12.6 groupdel</h2>
+
+<p>
+Apaga um grupo do sistema.  Quando é usado, este comando apaga todos os dados
+do grupo especificado dos arquivos de contas do sistema.
+
+<p>
+<samp>groupdel [<em>grupo</em>]</samp>
+
+<p>
+Tenha certeza que não existem arquivos/diretórios criados com o grupo apagado
+através do comando <code>find</code>.
+
+<p>
+OBS: Você não pode remover o grupo primário de um usuário.  Remova o usuário
+primeiro.
+
+<hr>
+
+<a name="s-cmdc-lastlog"></a>
+<h2>12.7 lastlog</h2>
+
+<p>
+Mostra o último login dos usuários cadastrados no sistema.  É mostrado o nome
+usado no login, o terminal onde ocorreu a conexão e a hora da última conexão.
+Estes dados são obtidos através da pesquisa e formatação do arquivo
+<code>/var/log/lastlog</code>.  Caso o usuário não tenha feito login, é
+mostrada a mensagem <samp>** Never logged in **</samp>
+
+<p>
+<samp>lastlog [<em>opções</em>]</samp>
+
+<p>
+Onde:
+<dl>
+<dt><em>opções</em></dt>
+<dt>-t [dias]</dt>
+<dd>
+Mostra somente os usuários que se conectaram ao sistema nos últimos [dias].
+</dd>
+<dt>-u [nome]</dt>
+<dd>
+Mostra somente detalhes sobre o usuário [nome].
+</dd>
+</dl>
+
+<p>
+A opção -t substitui a opção -u caso sejam usadas.
+
+<hr>
+
+<a name="s-cmdc-last"></a>
+<h2>12.8 last</h2>
+
+<p>
+Mostra uma listagem de entrada e saída de usuários no sistema.  São mostrados
+os seguintes campos na listagem:
+<ul>
+<li>
+Nome do usuário
+</li>
+</ul>
+<ul>
+<li>
+Terminal onde ocorreu a conexão/desconexão
+</li>
+</ul>
+<ul>
+<li>
+O hostname (caso a conexão tenha ocorrido remotamente) ou console (caso tenha
+ocorrido localmente).
+</li>
+</ul>
+<ul>
+<li>
+A data do login/logout, a hora do login/down se estiver fora do sistema/ still
+logged in se ainda estiver usando o sistema
+</li>
+</ul>
+<ul>
+<li>
+Tempo (em Horas:Minutos) que esteve conectado ao sistema.
+</li>
+</ul>
+
+<p>
+A listagem é mostrada em ordem inversa, ou seja, da data mais atual para a mais
+antiga.  A listagem feita pelo <code>last</code> é obtida de
+<code>/var/log/wtmp</code>.
+
+<p>
+<samp>last [<em>opções</em>]</samp>
+
+<p>
+Onde:
+<dl>
+<dt><em>opções</em></dt>
+<dt>-n [num]</dt>
+<dd>
+Mostra [num] linhas.  Caso não seja usada, todas as linhas são mostradas.
+</dd>
+<dt>-R</dt>
+<dd>
+Não mostra o campo HostName.
+</dd>
+<dt>-a</dt>
+<dd>
+Mostra o hostname na última coluna.  Será muito útil se combinada com a opção
+-d.
+</dd>
+<dt>-d</dt>
+<dd>
+Usa o DNS para resolver o IP de sistemas remotos para nomes DNS.
+</dd>
+<dt>-x</dt>
+<dd>
+Mostra as entradas de desligamento do sistema e alterações do nível de execução
+do sistema.
+</dd>
+</dl>
+
+<p>
+O comando <code>last</code> pode ser seguido de um argumento que será
+pesquisado como uma expressão regular durante a listagem.
+
+<p>
+O comando <code>last</code> usa o arquivo <code>/var/log/wtmp</code> para gerar
+sua listagem, mas alguns sistemas podem não possuir este arquivo.  O arquivo
+<code>/var/log/wtmp</code> somente é usado caso existir.  Você pode cria-lo com
+o comando <samp>&quot;echo -n &gt;/var/log/wtmp&quot;</samp> ou <samp>touch
+/var/log/wtmp</samp>.
+
+<ul>
+<li>
+<samp>last</samp> - Mostra a listagem geral
+</li>
+<li>
+<samp>last -a</samp> - Mostra a listagem geral incluindo o nome da máquina
+</li>
+<li>
+<samp>last gleydson</samp> - Mostra somente atividades do usuário gleydson
+</li>
+<li>
+<samp>last reboot</samp> - Mostra as reinicializações do sistema
+</li>
+<li>
+<samp>last tty1</samp> - Mostra todas as atividades no tty1
+</li>
+</ul>
+
+<hr>
+
+<a name="s-cmdc-sg"></a>
+<h2>12.9 sg</h2>
+
+<p>
+Executa um comando com outra identificação de grupo.  A identificação do grupo
+de usuário é modificada somente durante a execução do comando.  Para alterar a
+identificação de grupo durante sua seção shell, use o comando <a
+href="#s-cmdc-newgrp">newgrp, Seção 12.4</a>.
+
+<p>
+<samp>sg [<em>-</em>] [<em>grupo</em>] [<em>comando</em>]</samp>
+
+<p>
+Onde:
+<dl>
+<dt><samp>-</samp></dt>
+<dd>
+Se usado, inicia um novo ambiente durante o uso do comando (semelhante a um
+novo login e execução do comando), caso contrário, o ambiente atual do usuário
+é mantido.
+</dd>
+<dt><samp>grupo</samp></dt>
+<dd>
+Nome do grupo que o comando será executado.
+</dd>
+<dt><samp>comando</samp></dt>
+<dd>
+Comando que será executado.  O comando será executado pelo bash.
+</dd>
+</dl>
+
+<p>
+Quando este comando é usado, é pedida a senha do grupo que deseja acessar.
+Caso a senha do grupo esteja incorreta ou não exista senha definida, a execução
+do comando é negada.
+
+<p>
+Exemplo: <samp>sg root ls /root</samp>
+
+<hr>
+
+<a name="s-cmdc-incluirgrupo"></a>
+<h2>12.10 Adicionando o usuário a um grupo extra</h2>
+
+<p>
+Para adicionar um usuário em um novo grupo e assim permitir que ele acesse os
+arquivos/diretórios que pertencem àquele grupo, você deve estar como root e
+editar o arquivo <code>/etc/group</code> com o comando <code>vigr</code>.  Este
+arquivo possui o seguinte formato:
+
+<p>
+NomedoGrupo:senha:GID:usuários
+
+<p>
+Onde:
+<dl>
+<dt>NomedoGrupo</dt>
+<dd>
+É o nome daquele grupo de usuários.
+</dd>
+</dl>
+<dl>
+<dt>senha</dt>
+<dd>
+Senha para ter acesso ao grupo.  Caso esteja utilizando senhas ocultas para
+grupos, as senhas estarão em <code>/etc/gshadow</code>.
+</dd>
+</dl>
+<dl>
+<dt>GID</dt>
+<dd>
+Identificação numérica do grupo de usuário.
+</dd>
+</dl>
+<dl>
+<dt>usuarios</dt>
+<dd>
+Lista de usuários que também fazem parte daquele grupo.  Caso exista mais de um
+nome de usuário, eles devem estar separados por vírgula.
+</dd>
+</dl>
+
+<p>
+Deste modo para acrescentar o usuário &quot;joao&quot; ao grupo
+<samp>audio</samp> para ter acesso aos dispositivos de som do Linux, acrescente
+o nome no final da linha: &quot;audio:x:100:joao&quot;.  Pronto, basta digitar
+<samp>logout</samp> e entrar novamente com seu nome e senha, você estará
+fazendo parte do grupo <samp>audio</samp> (confira digitando
+<samp>groups</samp> ou <samp>id</samp>).
+
+<p>
+Outros nomes de usuários podem ser acrescentados ao grupo <samp>audio</samp>
+bastando separar os nomes com vírgula.  Você também pode usar o comando
+<code>adduser</code> da seguinte forma para adicionar automaticamente um
+usuário a um grupo:
+
+<pre>
+     adduser joao audio
+</pre>
+
+<p>
+Isto adicionaria o usuário &quot;joao&quot; ao grupo <samp>audio</samp> da
+mesma forma que fazendo-se a edição manualmente.
+
+<hr>
+
+<a name="s-cmdc-chfn"></a>
+<h2>12.11 chfn</h2>
+
+<p>
+Muda os dados usados pelo comando <a href="ch-cmdn.htm#s-cmdn-finger">finger,
+Seção 11.3</a>.
+
+<p>
+<samp>chfn [<em>usuário</em>] [<em>opções</em>]</samp>
+
+<p>
+Onde:
+<dl>
+<dt><em>usuário</em></dt>
+<dd>
+Nome do usuário.
+</dd>
+<dt><em>opções</em></dt>
+<dt>-f [nome]</dt>
+<dd>
+Muda o nome completo do usuário.
+</dd>
+<dt>-r [nome]</dt>
+<dd>
+Muda o número da sala do usuário.
+</dd>
+<dt>-w [tel]</dt>
+<dd>
+Muda o telefone de trabalho do usuário.
+</dd>
+<dt>-h [tel]</dt>
+<dd>
+Muda o telefone residencial do usuário.
+</dd>
+<dt>-o [outros]</dt>
+<dd>
+Muda outros dados do usuário.
+</dd>
+</dl>
+
+<p>
+Caso o nome que acompanha as opções (como o nome completo) contenha espaços,
+use &quot;&quot; para identifica-lo.
+
+<p>
+Exemplo: <samp>chfn -f &quot;Nome do Usuário root&quot; root</samp>
+
+<hr>
+
+<a name="s-cmdc-id"></a>
+<h2>12.12 id</h2>
+
+<p>
+Mostra a identificação atual do usuário, grupo primário e outros grupos que
+pertence.
+
+<p>
+<samp>id [<em>opções</em>] [<em>usuário</em>]</samp>
+
+<p>
+Onde:
+<dl>
+<dt><em>usuário</em></dt>
+<dd>
+É o usuário que desejamos ver a identificação, grupos primários e
+complementares.
+</dd>
+<dt><em>opções</em></dt>
+<dt>-g, --group</dt>
+<dd>
+Mostra somente a identificação do grupo primário.
+</dd>
+<dt>-G, --groups</dt>
+<dd>
+Mostra a identificação de outros grupos que pertence.
+</dd>
+<dt>-n, --name</dt>
+<dd>
+Mostra o nome do usuário e grupo ao invés da identificação numérica.
+</dd>
+<dt>-u, --user</dt>
+<dd>
+Mostra somente a identificação do usuário (user ID).
+</dd>
+<dt>-r, --real</dt>
+<dd>
+Mostra a identificação real de usuário e grupo, ao invés da efetiva.  Esta
+opção deve ser usada junto com uma das opções: -u, -g, ou -G.
+</dd>
+</dl>
+
+<p>
+Caso não sejam especificadas opções, <code>id</code> mostrará todos os dados do
+usuário.
+
+<p>
+Exemplo: <samp>id</samp>, <samp>id --user</samp>, <samp>id -r -u</samp>.
+
+<hr>
+
+<a name="s-cmdc-logname"></a>
+<h2>12.13 logname</h2>
+
+<p>
+Mostra seu login (username).
+
+<p>
+<samp>logname</samp>
+
+<hr>
+
+<a name="s-cmdc-users"></a>
+<h2>12.14 users</h2>
+
+<p>
+Mostra os nomes de usuários usando atualmente o sistema.  Os nomes de usuários
+são mostrados através de espaços sem detalhes adicionais, para ver maiores
+detalhes sobre os usuários, veja os comandos <a href="#s-cmdc-id">id, Seção
+12.12</a> e <a href="ch-cmdn.htm#s-cmdn-who">who, Seção 11.1</a>.
+
+<p>
+<samp>users</samp>
+
+<p>
+Os nomes de usuários atualmente conectados ao sistema são obtidos do arquivo
+<code>/var/log/wtmp</code>.
+
+<hr>
+
+<a name="s-cmdc-groups"></a>
+<h2>12.15 groups</h2>
+
+<p>
+Mostra os grupos que o usuário pertence.
+
+<p>
+<samp>groups [<em>usuário</em>]</samp>
+
+<p>
+Exemplo: <samp>groups</samp>, <samp>groups root</samp>
+
+<hr>
+
+[ <a href="ch-cmdn.htm">anterior</a> ]
+[ <a href="index.htm#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ <a href="ch-hardw.htm">3</a> ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ <a href="ch-cmdd.htm">8</a> ]
+[ <a href="ch-cmd.htm">9</a> ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ 12 ]
+[ <a href="ch-perm.htm">13</a> ]
+[ <a href="ch-redir.htm">14</a> ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ <a href="ch-cpctd.htm">18</a> ]
+[ <a href="ch-deb.htm">19</a> ]
+[ <a href="ch-dpkg.htm">20</a> ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ <a href="ch-cfg.htm">23</a> ]
+[ <a href="ch-tasks.htm">24</a> ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ <a href="ch-etc.htm">27</a> ]
+[ <a href="ch-inter.htm">28</a> ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ <a href="ch-apend.htm">32</a> ]
+[ <a href="ch-perm.htm">próximo</a> ]
+
+<hr>
+
+<p>
+Guia Foca GNU/Linux
+
+<address>
+Versão 5.45 - segunda, 30 de outubro de 2006<br>
+<br>
+Gleydson Mazioli da Silva <code><a href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</a></code><br>
+<br>
+</address>
+
+<hr>
+
+</body>
+
+</html>
+

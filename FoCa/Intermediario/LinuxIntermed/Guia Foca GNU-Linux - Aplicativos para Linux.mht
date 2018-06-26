@@ -1,0 +1,2131 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: Guia Foca GNU/Linux - Aplicativos para Linux
+Date: Mon, 6 Aug 2007 11:19:30 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-aplic.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Aplicativos para Linux</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-aplic></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ 30 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 30 - Aplicativos para Linux </H1>
+<HR>
+
+<P>Este cap=EDtulo traz uma lista de aplicativos e suas =
+caracter=EDsticas e tem como=20
+objetivo servir de refer=EAncia para a escolha de um programa que atenda =
+as suas=20
+necessidades espec=EDficas.=20
+<P>Os programas descritos aqui s=E3o "Clientes", ou seja, fazem acesso a =
+um=20
+programa "Servidor" (como =E9 o caso dos navegadores) para funcionarem. =
+Os=20
+programas servidores est=E3o descritos na vers=E3o <EM>Avan=E7ado</EM> =
+do guia, de=20
+forma passo a passo, caracter=EDsticas e m=E9todos de configura=E7=E3o =
+recomendados.=20
+<P>Se voc=EA conhece um bom programa e acha que ele deveria estar aqui, =
+me avise=20
+pelo email <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE>.=20
+<HR>
+<A name=3Ds-aplic-b></A>
+<H2>30.1 Aplicativos B=E1sicos</H2>
+<P>S=E3o aplicativos que fazem parte do cotidiano da maioria dos =
+usu=E1rios=20
+dom=E9sticos e de empresas.=20
+<HR>
+<A name=3Ds-aplic-b-editores></A>
+<H3>30.1.1 Editores de Texto</H3>
+<DL>
+  <DT>vi=20
+  <DD>Modo Texto - (existem algumas vers=F5es adaptadas para o modo =
+gr=E1fico). =C9 um=20
+  dos editores padr=F5es dos sistemas <CODE>GNU/Linux</CODE> e sua =
+interface =E9=20
+  complexa e possui muitas fun=E7=F5es (usu=E1rios =
+<CODE>GNU/Linux</CODE> avan=E7ados=20
+  adoram a quantidade de fun=E7=F5es deste programa). Recomendo que =
+aprenda o b=E1sico=20
+  sobre ele, pois sempre estar=E1 dispon=EDvel caso ocorra algum =
+problema no=20
+  sistema.=20
+  <P>Para sair do editor <CODE>vi</CODE> sem salvar pressione =
+<SAMP>ESC</SAMP> e=20
+  digite <SAMP>:q!</SAMP>. Para sair do editor e salvar pressione=20
+  <SAMP>ESC</SAMP> e digite <SAMP>:wq</SAMP>. </P></DD></DL>
+<DL>
+  <DT>elvis=20
+  <DD>Modo Texto - possui boa interface de comunica=E7=E3o com o =
+usu=E1rio, suporte a=20
+  HTML e Metacaracteres. </DD></DL>
+<DL>
+  <DT>ae=20
+  <DD>Modo Texto - =E9 um dos editores padr=F5es dos sistemas =
+<CODE>GNU/Linux</CODE>=20
+  (encontrado nas distribui=E7=F5es <CODE>Debian</CODE> e baseadas). Sua =
+interface =E9=20
+  mais f=E1cil que o <CODE>vi</CODE>. Tamb=E9m recomendo que aprenda o =
+b=E1sico sobre=20
+  ele, pois =E9 requerido para a manuten=E7=E3o do sistema.=20
+  <P>Para sair do <CODE>ae</CODE> sem salvar pressione =
+<SAMP>CTRL+Q</SAMP>, para=20
+  salvar o texto pressione <SAMP>CTRL+X</SAMP> e <SAMP>CTRL+W</SAMP> =
+(ap=F3s isto=20
+  se quiser sair do editor, pressione <SAMP>CTRL+Q</SAMP>). =
+</P></DD></DL>
+<DL>
+  <DT>jed=20
+  <DD>Modo Texto - Recomend=E1vel para aqueles que est=E3o acostumados =
+com o EDIT do=20
+  <CODE>DOS</CODE> e gostam de menus suspensos. Sua interface =E9 de =
+f=E1cil=20
+  opera=E7=E3o.=20
+  <P>O <CODE>jed</CODE> possui recursos poderosos para programadores de =
+C e=20
+  outras linguagens que faz auto-tabula=E7=E3o, auto-identa=E7=E3o e =
+delimita=E7=E3o de=20
+  blocos de c=F3digo atrav=E9s de cores. </P></DD></DL>
+<DL>
+  <DT>mcedit=20
+  <DD>Modo Texto - Muito f=E1cil de utilizar e possui interface em =
+Portugu=EAs do=20
+  Brasil, em geral n=E3o requer um tutorial para aprendizado. Este =
+programa faz=20
+  parte do pacote <EM>Midnight Commander</EM> (conhecido tamb=E9m como=20
+  <CODE>mc</CODE>).=20
+  <P>Voc=EA utiliza as teclas de fun=E7=E3o (F1 a F10) para salvar o =
+texto, procurar=20
+  palavras no texto, pedir ajuda, sair, etc. Ele possui recursos para =
+colorir=20
+  blocos de c=F3digo (testado com arquivos HTML e SGML). </P></DD></DL>
+<DL>
+  <DT>joe=20
+  <DD>Modo Texto - =C9 um editor muito vers=E1til e voc=EA pode escolher =
+inclusive sua=20
+  interface. </DD></DL>
+<DL>
+  <DT>gedit=20
+  <DD>Modo Gr=E1fico - editor do Gnome, sua interface de comunica=E7=E3o =
+=E9 =F3tima e=20
+  recomendado para aqueles que gostam de trabalhar com muitos arquivos =
+abertos,=20
+  copiar e colar, etc. Possui muitos recursos de opera=E7=E3o de =
+arquivo,=20
+  tabula=E7=F5es, browser, diff de documentos, etc. </DD></DL>
+<DL>
+  <DT>gxedit=20
+  <DD>Modo Gr=E1fico - Editor no estilo do <CODE>gedit</CODE>, sua =
+interface de=20
+  comunica=E7=E3o com o usu=E1rio =E9 =F3tima, possui suporte a e-mail, =
+mede o n=FAmero de=20
+  toques por minuto do usu=E1rio (digita=E7=E3o), suporte a tags HTML, =
+audio, rede,=20
+  corre=E7=E3o ortogr=E1fica, etc. </DD></DL>
+<HR>
+<A name=3Ds-aplic-b-escritorio></A>
+<H3>30.1.2 Aplicativos para Escrit=F3rio</H3>
+<DL>
+  <DT>Open Office=20
+  <DD>Modo Gr=E1fico - Pacote de Escrit=F3rio contendo editor de texto, =
+planilha de=20
+  c=E1lculo, banco de dados, digitalizador de imagens, editor gr=E1fico, =
+
+  calculadora, navegador, e-mail, abre todos os arquivos do MS Office =
+2000 e sua=20
+  interface =E9 id=EAntica aos programas do Office, n=E3o requerendo =
+novo treinamento=20
+  dos usu=E1rios. Todos os programas do <CODE>Open Office</CODE> s=E3o =
+iniciados=20
+  atrav=E9s de uma interface virtual id=EAntica ao Windows (com menu =
+iniciar e tudo=20
+  mais).=20
+  <P>Possui vers=E3o em Portugu=EAs e sua vers=E3o atual =E9 a 1.0. =
+Al=E9m da=20
+  impressionante integra=E7=E3o entre os programas que comp=F5em o =
+conjunto, o=20
+  <CODE>Open Office</CODE> possui um frame de navega=E7=E3o com centenas =
+de modelos,=20
+  barra de desktop, localiza=E7=E3o f=E1cil de arquivos e abertura =
+instant=E2nea.=20
+  <P>O <CODE>Open Office</CODE> possui mais recursos que o Office e =
+n=E3o custa=20
+  nada! Seu tamanho para download =E9 de 80MB e n=E3o requer o pagamento =
+de licen=E7as=20
+  para a instala=E7=E3o em computadores de empresas ou dom=E9sticos.=20
+  <P>O equipamento m=EDnimo que recomendo para a execu=E7=E3o do =
+<CODE>Open=20
+  Office</CODE> =E9 um 586 com 64 MB de mem=F3ria RAM e 200 MB Livres no =
+disco=20
+  r=EDgido. Sua instala=E7=E3o =E9 feita em modo gr=E1fico e o tamanho =
+ocupado no disco=20
+  depende dos componentes selecionados. </P></DD></DL>
+<DL>
+  <DT>Abiword=20
+  <DD>Modo Gr=E1fico - =E9 um editor de Textos mais simples que o =
+<CODE>Star=20
+  Office</CODE> e uma boa interface de opera=E7=E3o que possui suporte a =
+arquivos do=20
+  Office 2000.=20
+  <P>O equipamento m=EDnimo que recomendo para a execu=E7=E3o do =
+<CODE>Abiword</CODE>=20
+  =E9 um 486 com 8 MB de mem=F3ria RAM e 7 MB de espa=E7o livre no disco =
+r=EDgido (ele=20
+  pode ocupar menos espa=E7o caso as bibliotecas compartilhados que =
+utiliza j=E1=20
+  estiverem instaladas). </P></DD></DL>
+<DL>
+  <DT>Corel Word Perfect=20
+  <DD>Modo Gr=E1fico - Pacote de escrit=F3rio da Corel. Uma alternativa =
+ao=20
+  <CODE>Open Office</CODE>. Ele requer o pagamento de licen=E7as para =
+seu uso.=20
+  </DD></DL>
+<HR>
+<A name=3Ds-aplic-b-internet></A>
+<H3>30.1.3 Internet</H3>
+<DL>
+  <DT>Netscape 4.73=20
+  <DD>Modo Gr=E1fico - Vers=E3o do Netscape Communicator para=20
+  <CODE>GNU/Linux</CODE>, com criptografia forte, programa de e-mail, =
+news,=20
+  editor interativo de p=E1ginas HTML, cat=E1logo de endere=E7os. =
+Tamb=E9m possui=20
+  suporte a rede proxy e conex=E3o via firewall.=20
+  <P>Equipamento m=EDnimo recomend=E1vel: 486 com 32 MB de RAM e 40 MB =
+de espa=E7o em=20
+  disco livre. </P></DD></DL>
+<DL>
+  <DT>Mozilla=20
+  <DD>Modo Gr=E1fico - Navegador que inspirou a constru=E7=E3o do =
+Netscape, foi o=20
+  primeiro navegador gr=E1fico e hoje a vers=E3o do Netscape 6.0 =E9 =
+baseada no=20
+  Mozilla. Se gosta de frescuras na apar=EAncia do navegador escolha =
+este mas o=20
+  desempenho do Netscape 4.73 =E9 melhor... Tamb=E9m possui suporte a =
+rede proxy e=20
+  conex=E3o via firewall=20
+  <P>Equipamento m=EDnimo recomendado: 486 com 48 MB de RAM e 40 MB de =
+espa=E7o em=20
+  disco livre. </P></DD></DL>
+<DL>
+  <DT>Arena=20
+  <DD>Modo Gr=E1fico - navegador pequeno, sem suporte a Java e Frames, =
+ideal para=20
+  computadores menos potentes. Recomendo o <CODE>Lynx</CODE>!=20
+  <P>Equipamento m=EDnimo recomendado: 386 com 8 MB de RAM e 12 MB de =
+disco=20
+  </P></DD></DL>
+<DL>
+  <DT>Opera=20
+  <DD>Modo Gr=E1fico - Navegador pequeno, sem suporte a Java e Frames, =
+ideal para=20
+  computadores menos potentes. Ainda recomendo o <CODE>Lynx</CODE>! =
+</DD></DL>
+<DL>
+  <DT>Lynx=20
+  <DD>Modo Texto - Agora sim! Navegador pequeno, n=E3o tem suporte a =
+frames mas=20
+  exibe uma listagem permitindo selecionar qual ser=E1 aberto, sem =
+suporte a Java=20
+  e muito flex=EDvel em sua configura=E7=E3o (d=EA uma olhada na =
+quantidade de op=E7=F5es no=20
+  arquivo <CODE>/etc/lynx.cfg</CODE>). Tamb=E9m funciona via proxy =
+tradicional ou=20
+  firewall.=20
+  <P>Equipamento m=EDnimo recomendado: 386 com 2 MB de RAM e 2 MB de =
+disco.=20
+  </P></DD></DL>
+<DL>
+  <DT>Pine=20
+  <DD>Modo Texto - Programa de E-Mail muito usado entre os usu=E1rios=20
+  <CODE>GNU/Linux</CODE>, mas n=E3o =E9 gratuito... Possui suporte a =
+criptografia=20
+  PGP e HTML em sua nova vers=E3o. </DD></DL>
+<DL>
+  <DT>Mutt=20
+  <DD>Modo Texto - Outro programa de E-mail muito usado pelos usu=E1rios =
+do=20
+  <CODE>GNU/Linux</CODE>. Possui suporte a criptografia PGP, cores de =
+destaque=20
+  nas mensagens e processamento de links HTML. =C9 muito =
+personaliz=E1vel (veja a=20
+  quantidade de op=E7=F5es no arquivo de configura=E7=E3o =
+<CODE>/etc/Muttrc</CODE>). Sua=20
+  interface =E9 em Portugu=EAs.=20
+  <P>Equipamento m=EDnimo recomendado: 386 com 2 MB de RAM e 2 MB de =
+disco.=20
+  </P></DD></DL>
+<DL>
+  <DT>ftp=20
+  <DD>Modo Texto - O pr=F3prio! faz c=F3pias de arquivos de um site =
+remoto para seu=20
+  disco local ou vice versa. Veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-ftp">ftp,=20
+  Se=E7=E3o 11.4</A> para mais detalhes.=20
+  <P>Equipamento m=EDnimo recomendado: 386 com 2 MB de RAM e 1 MB de =
+disco.=20
+  </P></DD></DL>
+<DL>
+  <DT>telnet=20
+  <DD>Modo Texto - Conex=E3o ao terminal virtual remotamente. Permite =
+controlar=20
+  seu terminal remotamente atrav=E9s de uma conex=E3o via rede TCP/IP. =
+Veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-telnet">Telnet,=20
+  Se=E7=E3o 11.2</A> para mais detalhes.=20
+  <P>Equipamento m=EDnimo recomendado: 386 com 2 MB de RAM e 1 MB de =
+disco.=20
+  </P></DD></DL>
+<DL>
+  <DT>talk=20
+  <DD>Modo Texto - Permite conversar com outros usu=E1rios =
+<CODE>GNU/Linux</CODE>=20
+  conectados atrav=E9s de uma rede TCP/IP no estilo do Bate Papo ou do =
+Chat do=20
+  ICQ. Veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-talk">talk,=20
+  Se=E7=E3o 11.8</A> para mais detalhes.=20
+  <P>Equipamento m=EDnimo recomendado: 386 com 2 MB de RAM e 1 MB de =
+disco.=20
+  </P></DD></DL>
+<DL>
+  <DT>fetchmail=20
+  <DD>Modo Texto - Permite baixar as mensagens de seu servidor de e-mail =
+para o=20
+  seu diret=F3rio de usu=E1rio no sistema.=20
+  <P>Equipamento m=EDnimo recomendado: 386 com 2 MB de RAM e 1 MB de =
+disco.=20
+  </P></DD></DL>
+<DL>
+  <DT>procmail=20
+  <DD>Modo Texto - Organiza mensagens em arquivos separados de acordo =
+com a=20
+  origem/assunto/conte=FAdo. O <CODE>procmail</CODE> =E9 muito =
+flex=EDvel e tamb=E9m=20
+  permite resposta autom=E1tica de acordo com alguns tipos de mensagens =
+e a=20
+  cria=E7=E3o de filtros de mensagens muito poderosos caso voc=EA =
+conhe=E7a e saiba=20
+  integrar as ferramentas do sistema. </DD></DL>
+<DL>
+  <DT>bitchx=20
+  <DD>Programa de IRC muito complexo e poderoso. Ele opera em modo texto =
+e em=20
+  modo gr=E1fico (xbitchx). Tem que ter disposi=E7=E3o de hacker para =
+aprender o que=20
+  significam cada uma das 4 telas de comandos obtidos com o /help.=20
+  <P>Equipamento m=EDnimo recomendado: 386 com 2 MB de RAM e 4 MB de =
+disco.=20
+  </P></DD></DL>
+<DL>
+  <DT>xchat=20
+  <DD>Programa de IRC muito f=E1cil de usar e com muitos recursos. Ele =
+possui=20
+  vers=F5es para modo texto e gr=E1fico e possui suporte a scripts Perl =
+e Python,=20
+  personaliza=E7=E3o de menus, comandos, etc. Sua flexibilidade =E9 =
+muito boa para=20
+  quem conhece os comandos dos clientes IRC. Tamb=E9m permite o log das =
+conversas=20
+  p=FAblicas e privadas. Tamb=E9m funciona via proxy tradicional ou =
+Firewall.=20
+  <P>Equipamento m=EDnimo recomendado: 386 com 8 MB de RAM e 3 MB de =
+disco.=20
+  </P></DD></DL>
+<DL>
+  <DT>licq=20
+  <DD>Modo gr=E1fico - Programa de ICQ gr=E1fico para =
+<CODE>GNU/Linux</CODE>. Apesar=20
+  de ter muitos recursos, sua interface =E9 muito organizada e possui =
+suporte a=20
+  sele=E7=E3o de sua apar=EAncia (<EM>Skins</EM>). Emite avisos sonoros =
+e levanta-se=20
+  sobre as outras janelas durante o recebimento de mensagens. Tamb=E9m =
+funciona=20
+  via proxy tradicional ou Firewall.=20
+  <P>Equipamento m=EDnimo recomendado: 486 com 16 MB de RAM e 10 MB de =
+disco.=20
+  </P></DD></DL>
+<DL>
+  <DT>gaim=20
+  <DD>Modo gr=E1fico - Possui suporte a m=FAltiplos protocolos, podendo =
+se conectar=20
+  ao ICQ, MSN, Jabber, e outros.=20
+  <P>Equipamento m=EDnimo recomendado: 486 com 16 MB de RAM e 20 MB de =
+disco.=20
+  </P></DD></DL>
+<DL>
+  <DT>zicq=20
+  <DD>Modo Texto - Programa de ICQ em modo Texto.=20
+  <P>Equipamento m=EDnimo recomendado: 386 com 2 MB de RAM e 1 MB de =
+disco.=20
+  </P></DD></DL>
+<DL>
+  <DT>amsn=20
+  <DD>Modo Gr=E1fico - Suporta protocolo MSN.=20
+  <P>Equipamento m=EDnimo recomendado: 486 com 16 MB de RAM e 8 MB de =
+disco.=20
+  </P></DD></DL>
+<HR>
+<A name=3Ds-aplic-b-emuladores></A>
+<H3>30.1.4 Emuladores</H3>
+<DL>
+  <DT>DosEmu=20
+  <DD>Emulador do DOS. Permite executar aplicativos e jogos de DOS no=20
+  <CODE>GNU/Linux</CODE>=20
+  <P>Equipamento m=EDnimo recomendado: 486 com 8 MB de RAM e 4 MB de =
+disco.=20
+  </P></DD></DL>
+<DL>
+  <DT>Wine=20
+  <DD>Emulador de Windows. Permite executar aplicativos desenvolvidos =
+para=20
+  Windows 3.1X, 9X, NT e 200x no <CODE>GNU/Linux</CODE>.=20
+  <P>Equipamento m=EDnimo recomendado: 486 com 16 MB de RAM e 12 MB de =
+disco.=20
+  </P></DD></DL>
+<HR>
+<A name=3Ds-aplic-b-utils></A>
+<H3>30.1.5 Utilit=E1rios</H3>
+<DL>
+  <DT>Midnight Commander=20
+  <DD>Gerenciador de Arquivos no estilo do <EM>Norton Commander</EM> e=20
+  <EM>Far</EM>. Opera tanto em modo texto e gr=E1fico e possui todas as =
+qualidades=20
+  dos gerenciadores acima, mais o suporte ao painel FTP, permiss=F5es de =
+arquivos=20
+  e dicas sobre o sistema. Simples, pr=E1tico e =FAtil.=20
+  <P>Equipamento m=EDnimo recomendado: 386 com 4 MB de RAM e 2 MB de =
+disco.=20
+  </P></DD></DL>
+<DL>
+  <DT>wget=20
+  <DD>Modo Texto - Permite a c=F3pia completa de sites remotos e =
+tamb=E9m pode ser=20
+  usado como mirror. Com o simples comando <SAMP>wget=20
+  http://www.guiafoca.org</SAMP>, todo o site do guia <EM>Foca =
+Linux</EM> ser=E1=20
+  gravado em seu disco. O <CODE>wget</CODE> tamb=E9m tem a =
+caracter=EDstica de=20
+  resumir downloads interrompidos e copiar somente arquivos mais novos.=20
+  <P>Gostou da id=E9ia? Isto =E9 s=F3 o come=E7o! existem ferramentas =
+mais poderosas no=20
+  <CODE>GNU/Linux</CODE> :-)=20
+  <P>Equipamento m=EDnimo recomendado: 386 com 4 MB de RAM e disco =
+dependendo do=20
+  tamanho do site que deseja copiar (um disco maior que 540 MB exige uma =
+placa=20
+  m=E3e com suporte a LBA :-) </P></DD></DL>
+<HR>
+<A name=3Ds-aplic-b-admin></A>
+<H3>30.1.6 Administra=E7=E3o do Sistema</H3>
+<DL>
+  <DT>logcheck=20
+  <DD>Envia um E-Mail periodicamente ao usu=E1rio alertando sobre =
+ocorr=EAncias=20
+  especiais encontradas nos logs do sistema, como tentativas de =
+invas=E3o sem=20
+  sucesso, tentativas de acesso ao usu=E1rio root do sistema, erros nos=20
+  dispositivos, mensagens dos daemons, inetd, etc. </DD></DL>
+<HR>
+<A name=3Ds30.2></A>
+<H2>30.2 Listagem de Aplicativos para <CODE>GNU/Linux</CODE></H2>
+<P>Esta se=E7=E3o cont=E9m uma listagem dos mais diversos tipos de=20
+aplicativos/ferramentas/scripts/suites/servidores, etc. para=20
+<CODE>GNU/Linux</CODE> com sua respectiva descri=E7=E3o. A listagem =
+est=E1 organizada=20
+em ordem alfab=E9tica e subse=E7=F5es para facilitar a sua navega=E7=E3o =
+e localiza=E7=E3o do=20
+aplicativo desejado.=20
+<P>Alguns aplicativos marcados com <SAMP>(D)</SAMP> no final da =
+descri=E7=E3o s=E3o=20
+<EM>Docks</EM> que s=E3o executados como =EDcones no gerenciador de =
+janelas.=20
+<HR>
+<A name=3Ds-aplic-l-perifericos></A>
+<H3>30.2.1 Perif=E9ricos / Gerenciamento de Hardware</H3>
+<UL>
+  <LI><SAMP>3c5x9utils</SAMP> - Utilit=E1rios de configura=E7=E3o e =
+diagn=F3stico para=20
+  placas 3Com 5x9=20
+  <LI><SAMP>apcupsd</SAMP> - Gerenciamento de Energia para No Breaks APC =
+
+  <LI><SAMP>buffer</SAMP> - Programa de buffering/reblocking para backup =
+em=20
+  tapes, impress=E3o, etc=20
+  <LI><SAMP>dds2tar</SAMP> - Ferramenta para usar caracter=EDsticas DDS =
+de=20
+  unidades DAT com o programa tar da GNU=20
+  <LI><SAMP>dtlk</SAMP> -Controlador de dispositivo Linux para o =
+DoubleTalk PC=20
+  <LI><SAMP>eject</SAMP> - ejeta CDs e opera CD-Changers sob o Linux=20
+  <LI><SAMP>estic</SAMP> - Programa de administra=E7=E3o para ISDN PABX =
+ISTEC=20
+  1003/1008=20
+  <LI><SAMP>gatos</SAMP> - Software de captura TV All-in-Wonder da ATI=20
+  <LI><SAMP>genpower</SAMP> - Monitor de No Break e manipulador de =
+falhas de=20
+  energia=20
+  <LI><SAMP>hdparm</SAMP> - Permite fazer um ajuste fino na performance =
+do disco=20
+  r=EDgido=20
+  <LI><SAMP>hpscanpbm</SAMP> - Utilit=E1rio para o Scanner HP ScanJet=20
+  <LI><SAMP>hwtools</SAMP> - Cole=E7=E3o de ferramentas para o =
+gerenciamento em=20
+  baixo n=EDvel do hardware=20
+  <LI><SAMP>isapnp</SAMP> - Permite configurar recursos de dispositivos=20
+  Plug-and-Play no Linux=20
+  <LI><SAMP>jazip</SAMP> - monta e desmonta Zip drives Iomega e/ou Jaz=20
+  <LI><SAMP>jaztool</SAMP> - Utilit=E1rio para manipular drives Iomega=20
+  <LI><SAMP>joystick</SAMP> -Ferramentas de teste e calibragem de =
+Joysticks=20
+  <LI><SAMP>lcdproc</SAMP> - Daemon de tela LCD=20
+  <LI><SAMP>lm-sensors</SAMP> - Utilit=E1rios para ler a=20
+  temperatura/voltagem/sensores da ventoinha da CPU=20
+  <LI><SAMP>mtx</SAMP> - Controla unidades tape autochangers=20
+  <LI><SAMP>pciutils</SAMP> - Utilit=E1rios PCI para o Linux (para =
+kernels=20
+  2.[123].x )=20
+  <LI><SAMP>powstatd</SAMP> - Daemon de monitoramento de No Breaks =
+configur=E1vel=20
+  <LI><SAMP>prime-net</SAMP> - Permite doar ciclos da CPU n=E3o usados - =
+Cliente=20
+  PrimeNet GIMPS=20
+  <LI><SAMP>sane-gimp1.1</SAMP> - Interface para Scanners no gimp=20
+  <LI><SAMP>sane</SAMP> - Interface para Scanners. Permite a =
+comunica=E7=E3o e uso=20
+  de diversos tipos de scanners diferentes.=20
+  <LI><SAMP>setcd</SAMP> - Controla caracter=EDsticas de funcionamento =
+de sua=20
+  unidade de CD-ROM (auto-lock, auto-eject, etc)=20
+  <LI><SAMP>sformat</SAMP> - Formatador de discos SCSI e ferramenta de =
+reparo=20
+  <LI><SAMP>svgatextmode</SAMP> - Executa o modo de texto em alta =
+resolu=E7=E3o=20
+  <LI><SAMP>synaptics</SAMP> - Configura um TouchPad da Synaptics=20
+  <LI><SAMP>upsd</SAMP> - Programa monitor de No Breaks=20
+  <LI><SAMP>wanpipe</SAMP> - Utilit=E1rios de configura=E7=E3o para =
+placas Sangoma=20
+  S508/S514 WAN=20
+  <LI><SAMP>wdsetup</SAMP> - Utilit=E1rio de configura=E7=E3o para =
+placas ethernet=20
+  Western Digital e SMC=20
+  <LI><SAMP>xsane-gimp1.1</SAMP> - Uma interface X11 baseada no GTK para =
+o SANE=20
+  (Scanner Access Now Easy)=20
+  <LI><SAMP>xsane</SAMP> - Uma interface X11 baseada no GTK para o SANE =
+(Scanner=20
+  Access Now Easy)=20
+  <LI><SAMP>xviddetect</SAMP> - Detecta o modelo da placa de v=EDdeo e =
+indica=20
+  servidores X associados a placa </LI></UL>
+<HR>
+<A name=3Ds-aplic-l-internet></A>
+<H3>30.2.2 Internet</H3>
+<UL>
+  <LI><SAMP>arena</SAMP> - um navegador WWW compat=EDvel com HTML 3.0 =
+para o X=20
+  <LI><SAMP>bezerk</SAMP> - Cliente IRC baseado em GTK=20
+  <LI><SAMP>bitchx</SAMP> - Cliente IRC Avan=E7ado=20
+  <LI><SAMP>bitchx-gtk</SAMP> - Interface gr=E1fica GTK para o BitchX=20
+  <LI><SAMP>cftp</SAMP> - Cliente ftp de tela cheia=20
+  <LI><SAMP>chimera2</SAMP> - Navegador Web para o X=20
+  <LI><SAMP>dxftp</SAMP> - Cliente FTP Darxite baseado em linha de =
+comando=20
+  <LI><SAMP>epic4</SAMP> - Cliente irc epic irc client, vers=E3o 4=20
+  <LI><SAMP>epic</SAMP> - Cliente ircII modificado com funcionalidades=20
+  adicionais=20
+  <LI><SAMP>everybuddy</SAMP> - Cliente ICQ, AOL, Yahoo (tudo em 1)=20
+  <LI><SAMP>express</SAMP> - Navegador web baseado em GTK para o GNOME=20
+  <LI><SAMP>filerunner</SAMP> - Programa FTP e Gerenciador de Arquivos =
+baseado=20
+  em X=20
+  <LI><SAMP>ftp</SAMP> - O cliente FTP padr=E3o=20
+  <LI><SAMP>ftp-upload</SAMP> - Envia arquivos FTP atrav=E9s de um =
+script=20
+  <LI><SAMP>gaim</SAMP> - Um clone GTK do AOL Instant Messenger=20
+  <LI><SAMP>gftp</SAMP> - Cliente FTP do X/GTK+=20
+  <LI><SAMP>gnap</SAMP> - Cliente Gnome para o Napster=20
+  <LI><SAMP>gnapster</SAMP> - Cliente Napster para Linux - localiza =
+arquivos MP3=20
+  na Internet=20
+  <LI><SAMP>gnomeicu</SAMP> - Clone pequeno, r=E1pido e funcional do =
+Mirabilis ICQ=20
+
+  <LI><SAMP>gnome-napster</SAMP> - Cliente Napster para Linux - localiza =
+
+  arquivos MP3 na Internet=20
+  <LI><SAMP>gpppon</SAMP> - Um applet do gnome que funciona como uma =
+interface=20
+  ao pon e poff=20
+  <LI><SAMP>gzilla</SAMP> - Um navegador web baseado em GTK=20
+  <LI><SAMP>irssi</SAMP> - Cliente IRC para Gnome=20
+  <LI><SAMP>isdnbutton</SAMP> - Inicia e Interrompe conex=F5es ISDN e =
+mostra=20
+  status=20
+  <LI><SAMP>licq-data</SAMP> - Arquivos de daods para o Licq=20
+  <LI><SAMP>licq-plugin-qt2</SAMP> - Interface gr=E1fica para o Licq =
+usando=20
+  bibliotecas QT2=20
+  <LI><SAMP>licq</SAMP> - Programa ICQ gr=E1fico para Linux=20
+  <LI><SAMP>lynx</SAMP> - Navegador WWW em modo texto=20
+  <LI><SAMP>micq</SAMP> - Cliente ICQ baseado em texto com muitas=20
+  caracter=EDsticas=20
+  <LI><SAMP>mosaic</SAMP> - Navegador WWW Gr=E1fico=20
+  <LI><SAMP>mozilla</SAMP> - Um Navegador WWW de c=F3digo aberto para o =
+X e GTK+=20
+  <LI><SAMP>ncftp2</SAMP> - Um cliente FTP com interface f=E1cil e com =
+muitas=20
+  caracter=EDsticas=20
+  <LI><SAMP>ncftp</SAMP> - Um cliente FTP com interface f=E1cil e com =
+muitas=20
+  caracter=EDsticas=20
+  <LI><SAMP>Netscape</SAMP> - Navegador gr=E1fico com programa de =
+e-mail, news,=20
+  livro de endere=E7os, editor de p=E1ginas HTML. Suporta Java, tabelas, =
+frames,=20
+  CSS, proxy, etc...=20
+  <LI><SAMP>ppxp</SAMP> - Programa PPP=20
+  <LI><SAMP>ppxp-tcltk</SAMP> - Console tk do ppxp=20
+  <LI><SAMP>ppxp-x11</SAMP> - Console X do ppxp=20
+  <LI><SAMP>quickppp</SAMP> - Ferramenta de configura=E7=E3o PPP=20
+  <LI><SAMP>realplayer</SAMP> - Real Player=20
+  <LI><SAMP>sysnews</SAMP> - Mostra noticias do sistema (de /var/news)=20
+  <LI><SAMP>talk</SAMP> - Permite conversar com outro usu=E1rio =
+conectado ao=20
+  sistema ou via rede TCP/IP=20
+  <LI><SAMP>tftp</SAMP> - Programa trivial file transfer=20
+  <LI><SAMP>tik</SAMP> - Cliente Tcl/Tk do servi=E7o AOL Instant =
+Messenger=20
+  <LI><SAMP>utalk</SAMP> - programa parecido com o talk com =
+caracter=EDsticas=20
+  adicionais=20
+  <LI><SAMP>vrwave</SAMP> - Navegador baseado em VRML 2.0 java=20
+  <LI><SAMP>vrweb</SAMP> - Um navegador VRML e editor=20
+  <LI><SAMP>wvdial</SAMP> - Discador PPP com intelig=EAncia embutida.=20
+  <LI><SAMP>wxftp-gtk</SAMP> - Um programa ftp gr=E1fico com a interface =
+GTK=20
+  <LI><SAMP>xchat</SAMP> - Cliente IRC para X similar ao AmIRC=20
+  <LI><SAMP>xchat-gnome</SAMP> - Cliente IRC para o GNOME similar ao =
+AmIRC=20
+  <LI><SAMP>xisp</SAMP> - Uma interface X amig=E1vel ao pppd/chat=20
+  <LI><SAMP>xitalk</SAMP> - Programa talk que lista usu=E1rios atuais do =
+sistema.=20
+  Ele tamb=E9m pode iniciar uma se=E7=E3o talk, tocar som, executar um =
+aplicativo,=20
+  etc. durante uma requisi=E7=E3o talk=20
+  <LI><SAMP>xrn</SAMP> - Leitor de news NNTP baseado em X=20
+  <LI><SAMP>xtalk</SAMP> - Um cliente X-Window BSD talk, escrito em =
+Python=20
+  <LI><SAMP>ytalk</SAMP> - Programa talk avan=E7ado com suporte ao X=20
+  <LI><SAMP>zicq</SAMP> - Cliente ICQ baseado em ncurses </LI></UL>
+<HR>
+<A name=3Ds-aplic-l-conferencia></A>
+<H3>30.2.3 Confer=EAncia de audio/v=EDdeo via Internet/Intranet</H3>
+<UL>
+  <LI><SAMP>camediaplay</SAMP> - Interface de C=E2mera Digital=20
+  <LI><SAMP>cqcam</SAMP> - Programa de Controle da C=E2mera Colorida =
+QuickCam=20
+  (PC/Paralela)=20
+  <LI><SAMP>gphoto</SAMP> - Aplicativo Universal para c=E2meras digitais =
+
+  <LI><SAMP>gstalker</SAMP> - Stock and commodity price charting utility =
+
+  <LI><SAMP>photopc</SAMP> - Interface para c=E2meras digitais=20
+  <LI><SAMP>phototk</SAMP> - Interface gr=E1fica para c=E2meras digitais =
+
+  <LI><SAMP>qcam</SAMP> - Capturador de Imagens da QuickCam=20
+  <LI><SAMP>qvplay</SAMP> - Ferramenta de comunica=E7=E3o para a =
+c=E2mera Casio QV=20
+  <LI><SAMP>rat</SAMP> - RAT - Ferramenta de confer=EAncia de audio =
+unicast e=20
+  multicast=20
+  <LI><SAMP>Vat</SAMP> - Ferramenta de audio confer=EAncia via =
+rede/Internet=20
+  <LI><SAMP>vic</SAMP> - Ferramenta de v=EDdeo confer=EAncia=20
+  <LI><SAMP>wbd</SAMP> - Prancha de Desenho para Multicast=20
+  <LI><SAMP>webcam</SAMP> - Captura e faz o upload autom=E1tico de =
+imagens para um=20
+  servidor web </LI></UL>
+<HR>
+<A name=3Ds-aplic-l-webhtml></A>
+<H3>30.2.4 Gerenciamento de WebSites / Linguagem HTML</H3>
+<UL>
+  <LI><SAMP>adacgi</SAMP> - Interface CGI para o Ada=20
+  <LI><SAMP>amaya</SAMP> - Editor HTML Gr=E1fico da w3.org=20
+  <LI><SAMP>analog</SAMP> - Analiza arquivos de log de servidores www=20
+  <LI><SAMP>bk2site</SAMP> - Utilit=E1rio para tornar bookmarks em =
+p=E1ginas=20
+  parecidas com o yahoo/Slashdot=20
+  <LI><SAMP>bluefish</SAMP> - Um editor HTML baseado em Gtk+=20
+  <LI><SAMP>bookmarker</SAMP> - Gerenciamento de bookmark baseado em =
+WWW,=20
+  ferramenta de recupera=E7=E3o e procura=20
+  <LI><SAMP>bookmarks</SAMP> - Outra cole=E7=E3o de bookmarks=20
+  <LI><SAMP>browser-history</SAMP> - Daemon do usu=E1rio que captura =
+URLs=20
+  procuradas e as registra=20
+  <LI><SAMP>c2html</SAMP> - Destaca c=F3digos em C para apresenta=E7=E3o =
+em WWW=20
+  <LI><SAMP>cgic-capture</SAMP> - Captura de ambiente CGI para =
+depura=E7=E3o=20
+  <LI><SAMP>cgiemail</SAMP> - Conversor de formul=E1rio CGI para E-Mail=20
+  <LI><SAMP>cgilib</SAMP> - Biblioteca CGI simples=20
+  <LI><SAMP>cgiwrap</SAMP> - Permite usu=E1rios ordin=E1rios executar =
+seus pr=F3prios=20
+  Scripts CGI=20
+  <LI><SAMP>checkbot</SAMP> - Verificador de links WWW=20
+  <LI><SAMP>cocoon</SAMP> - Um Framework de publica=E7=E3o XML/XSL=20
+  <LI><SAMP>cronolog</SAMP> - Um roteador de arquivos de log para =
+servidores web=20
+
+  <LI><SAMP>curl</SAMP> - Copia um arquivo de um servidor FTP, GOPHER, =
+ou HTTP=20
+  (sem suporte a ssl)=20
+  <LI><SAMP>cvs2html</SAMP> - Cria vers=F5es em html dos logs do CVS=20
+  <LI><SAMP>faqomatic</SAMP> - FAQ cgi online e interativa=20
+  <LI><SAMP>freetable</SAMP> - Um script em Perl que facilita a =
+produ=E7=E3o de=20
+  tabelas HTML=20
+  <LI><SAMP>gifsicle</SAMP> - Poderoso programa para a manipula=E7=E3o =
+de imagens=20
+  GIF=20
+  <LI><SAMP>giftrans</SAMP> - Converte qualquer arquivo GIF em um GIF89a =
+
+  <LI><SAMP>gnujsp</SAMP> - Uma implementa=E7=E3o gratuita do Sun's Java =
+Server=20
+  Pages (JSP 1.0)=20
+  <LI><SAMP>gtml</SAMP> - Um pr=E9-processador HTML=20
+  <LI><SAMP>htdig</SAMP> - Sistema de procura WWW para a Intranet ou uma =
+pequena=20
+  internet=20
+  <LI><SAMP>htget</SAMP> - Um capturador de arquivos que obt=E9m =
+arquivos atraes=20
+  de servidores HTTP=20
+  <LI><SAMP>htmldoc</SAMP> - Processador HTML que gera arquivos HTML, =
+PS, e PDF=20
+  indexados=20
+  <LI><SAMP>htmlgen</SAMP> - Gera=E7=E3o de documentos HTML com scripts =
+em Python=20
+  <LI><SAMP>htp</SAMP> - Um pr=E9-processador HTML=20
+  <LI><SAMP>http-analyze</SAMP> - Um analizador r=E1pido de logs de =
+servidores WWW=20
+
+  <LI><SAMP>hypermail</SAMP> - Cria arquivos HTML de listas de =
+discuss=F5es por=20
+  E-Mail=20
+  <LI><SAMP>imaptool</SAMP> - Uma ferramenta para a cria=E7=E3o de mapas =
+de imagens=20
+  do lado cliente=20
+  <LI><SAMP>imgsizer</SAMP> - Adiciona os atributos WIDTH e HEIGHT a =
+tags IMG=20
+  tags em arquivos HTML=20
+  <LI><SAMP>imho</SAMP> - M=F3dulo de E-Mail baseado na Web para o Roxen =
+(usando=20
+  IMAP)=20
+  <LI><SAMP>imp</SAMP> - Programa de E-Mail baseado em IMAP para a Web=20
+  <LI><SAMP>java2html</SAMP> - Destaca c=F3digos em Java e C++ para =
+apresenta=E7=E3o=20
+  via WWW=20
+  <LI><SAMP>jserv</SAMP> - Motor Java Servlet 2.0 com um m=F3dulo Apache =
+adicional=20
+
+  <LI><SAMP>junkbuster</SAMP> - O Junkbuster da Internet!=20
+  <LI><SAMP>latte</SAMP> - A linguagem para transforma=E7=E3o de texto =
+(atualmente=20
+  para html)=20
+  <LI><SAMP>linbot</SAMP> - Verificador de links de sites WWW=20
+  <LI><SAMP>lists-archives</SAMP> - Arquivo Web para listas de =
+discuss=E3o por=20
+  E-Mail=20
+  <LI><SAMP>mailto</SAMP> - Liga=E7=E3o de formul=E1rios WWW com o =
+programa de E-Mail=20
+  <LI><SAMP>muffin</SAMP> - Um proxy Web pessoal e extens=EDvel=20
+  <LI><SAMP>pas2html</SAMP> - Destaca fontes do Pascal e Modula para=20
+  apresenta=E7=E3o via WWW=20
+  <LI><SAMP>pcd2html</SAMP> - Scripts para converter imagens PCD para =
+p=E1ginas=20
+  HTML comentadas=20
+  <LI><SAMP>perl2html</SAMP> - Destaca fontes do Perl para =
+apresenta=E7=E3o via WWW=20
+  <LI><SAMP>php3</SAMP> - Uma linguagem script embutida em HTML - lado =
+do=20
+  servidor=20
+  <LI><SAMP>php4</SAMP> - Uma linguagem script embutida em HTML - lado =
+do=20
+  servidor=20
+  <LI><SAMP>phplib</SAMP> - Biblioteca para escrever aplica=E7=F5es para =
+a Web=20
+  facilmente=20
+  <LI><SAMP>plugger</SAMP> - Plug-in Mime do Netscape=20
+  <LI><SAMP>rpm2html</SAMP> - Gera =EDndices HTML dos diret=F3rios de =
+RPMs=20
+  <LI><SAMP>screem</SAMP> - Um ambiente de desenvolvimento de website=20
+  <LI><SAMP>sitecopy</SAMP> - Um programa para gerenciar um site WWW via =
+FTP=20
+  <LI><SAMP>squishdot</SAMP> - Sistema de discuss=E3o/news baseado na =
+Web=20
+  <LI><SAMP>swish-e</SAMP> - Sistema simples de indexa=E7=E3o Web para =
+Humanos=20
+  <LI><SAMP>swish++</SAMP> - Sistema simples de indexa=E7=E3o Web para =
+Humanos++=20
+  <LI><SAMP>tidy</SAMP> - Verificador de sintaxe HTML e reformatador do =
+c=F3digo=20
+  <LI><SAMP>w3mir</SAMP> - Ferramenta de c=F3pia completa HTTP e mirror=20
+  <LI><SAMP>wdg-html-validator</SAMP> - Verificador de arquivos HTML=20
+  <LI><SAMP>webalizer</SAMP> - Programa de an=E1lise arquivos de log do =
+servidor=20
+  Web=20
+  <LI><SAMP>weblint</SAMP> - Um verificador de sintaxe e estilo m=EDnimo =
+para HTML=20
+
+  <LI><SAMP>webmagick</SAMP> - Cria uma galeria de thumbnails para =
+website=20
+  <LI><SAMP>websec</SAMP> - Secret=E1ria Web=20
+  <LI><SAMP>wget</SAMP> - Utilit=E1rio para copiar arquivos atraes da =
+WWW via HTTP=20
+  e FTP com suporte a reinicio do ponto de interrup=E7=E3o do download.=20
+  <LI><SAMP>wmf</SAMP> - Web Mail Folder=20
+  <LI><SAMP>wml</SAMP> - Website META Language por Ralf Engelschall=20
+  <LI><SAMP>wwwcount</SAMP> - Contador de acessos a p=E1ginas Web=20
+  <LI><SAMP>wwwoffle</SAMP> - Explorer OFFline da World Wide Web=20
+  <LI><SAMP>wwwtable</SAMP> - Um script em Perl que facilita a =
+produ=E7=E3o de=20
+  tabelas em HTML=20
+  <LI><SAMP>xsitecopy</SAMP> - Um programa para gerenciar um site WWW =
+via FTP=20
+  (vers=E3o GNOME)=20
+  <LI><SAMP>zope</SAMP> - O Ambiente de Publica=E7=E3o de Objetos Z =
+</LI></UL>
+<HR>
+<A name=3Ds-aplic-l-multimidia></A>
+<H3>30.2.5 Multim=EDdia</H3>
+<UL>
+  <LI><SAMP>gxanim</SAMP> - Interface em GTK para o xanim=20
+  <LI><SAMP>smpeg-gtv</SAMP> - Exibe arquivos MPEG de audio/v=EDdeo com =
+interface=20
+  em GTK+=20
+  <LI><SAMP>smpeg-plaympeg</SAMP> - Exibe arquivos MPEG de audio/v=EDdeo =
+atrav=E9s=20
+  da linha de comando=20
+  <LI><SAMP>streamer</SAMP> - Programa de captura de v=EDdeo para a =
+bt848 a=20
+  video4linux=20
+  <LI><SAMP>tkxanim</SAMP> - Interface Tcl/Tk para o xanim=20
+  <LI><SAMP>ucbmpeg</SAMP> - Encoder de v=EDdeo MPEG e ferramentas de =
+an=E1lise=20
+  <LI><SAMP>ucbmpeg-play</SAMP> - Exibe arquivos de v=EDdeo MPEG=20
+  <LI><SAMP>vstream</SAMP> - Utilit=E1rio de captura de v=EDdeo bttv =
+para a cria=E7=E3o=20
+  de MPEGs=20
+  <LI><SAMP>xanim</SAMP> - Exibe arquivos multim=EDdia (anima=E7=F5es, =
+filmes e sons)=20
+  <LI><SAMP>xanim-modules</SAMP> - Instala=E7=E3o de bin=E1rios de xanim =
+- somente=20
+  m=F3dulos </LI></UL>
+<HR>
+<A name=3Ds-aplic-l-som></A>
+<H3>30.2.6 Som</H3>
+<UL>
+  <LI><SAMP>ascdc</SAMP> - CD changer ideal para ser usado no After Step =
+junto=20
+  com o m=F3dulo wharf=20
+  <LI><SAMP>ascd</SAMP> - CD Player e mixer para Window Maker e After =
+Step (D)=20
+  <LI><SAMP>aumix</SAMP> - Mixer em modo texto que permite modificar, =
+salvar e=20
+  restaurar a configura=E7=E3o de som na inicializa=E7=E3o do sistema=20
+  <LI><SAMP>bplay</SAMP> - Player/Gravador wav que opera em modo texto =
+(root)=20
+  <LI><SAMP>cam</SAMP> - Mixer para modo texto com controle completo da =
+placa de=20
+  som. Tamb=E9m permite salvar e restaurar a configura=E7=E3o de som, =
+embora isto seja=20
+  mais simples atrav=E9s do aumix.=20
+  <LI><SAMP>cdda2wav</SAMP> - Extrai audio do CD para arquivos wav e mp3 =
+
+  <LI><SAMP>cd-diskio</SAMP> - Obtem dados do CDDB sobre o CD de audio=20
+  <LI><SAMP>cdparanoia</SAMP> - Extrai dados de CD para wav=20
+  <LI><SAMP>cdtool</SAMP> - Utilit=E1rios para manipula=E7=E3o de CD =
+player em modo=20
+  texto=20
+  <LI><SAMP>dtmfdial</SAMP> - Gera tons de discagem para linhas tom=20
+  <LI><SAMP>festival</SAMP> - L=EA textos para a placa de som do sistema =
+
+  <LI><SAMP>freeamp</SAMP> - Player mp2/mp3=20
+  <LI><SAMP>gramofile</SAMP> - Programa de grava=E7=E3o de m=FAsicas de =
+disco de vinil=20
+  para wav com filtros para retirada de ru=EDdos=20
+  <LI><SAMP>graudio</SAMP> - Permite controlar placas de r=E1dio FM=20
+  <LI><SAMP>grip</SAMP> - CD-Ripper e CD-Player (do CD paranoia)=20
+  <LI><SAMP>gtick</SAMP> - Gera ru=EDdos de batida em <CODE>/dev</CODE> =
+e=20
+  <CODE>/dsp</CODE>=20
+  <LI><SAMP>id3</SAMP> - Modifica cabe=E7alhos de identifica=E7=E3o de =
+arquivos mp3=20
+  <LI><SAMP>maplay</SAMP> - Decoder mp3 que permite a decodifica=E7=E3o =
+para a sa=EDda=20
+  padr=E3o=20
+  <LI><SAMP>mctools</SAMP> - CDplayer e mixer=20
+  <LI><SAMP>mixer.app</SAMP> - Mixer para Window Maker (D)=20
+  <LI><SAMP>mp3blaster</SAMP> - Player mp3 para console=20
+  <LI><SAMP>mp3info</SAMP> - Mostra cabe=E7alho de arquivos mp3=20
+  <LI><SAMP>nas</SAMP> - Network Audio Server - Sistema de audio =
+atrav=E9s da rede=20
+
+  <LI><SAMP>playmidi</SAMP> - Toca musicas .mid=20
+  <LI><SAMP>recite</SAMP> - L=EA textos para a placa de som do sistema=20
+  <LI><SAMP>rplay</SAMP> - Toca sons atrav=E9s da rede=20
+  <LI><SAMP>s3mod</SAMP> - Player para arquivos de m=FAsica s3m e mod=20
+  <LI><SAMP>saytime</SAMP> - Diz as horas na placa de som=20
+  <LI><SAMP>snack</SAMP> - Adiciona suporte a som na linguagem TCL/TK=20
+  <LI><SAMP>soundtracker</SAMP> - M=F3dulos para edi=E7=E3o. suporta =
+m=F3dulos .xt e=20
+  instrumentos .xi=20
+  <LI><SAMP>sox</SAMP> - Tradutor universal de sons=20
+  <LI><SAMP>splay</SAMP> - Toca arquivos mp1, mp2, mp3=20
+  <LI><SAMP>synaesthesia</SAMP> - Oscilosc=F3pio musical=20
+  <LI><SAMP>timitidy</SAMP> - Midi sequencer. Tamb=E9m faz a convers=E3o =
+de arquivos=20
+  .mid para .wav=20
+  <LI><SAMP>tkmixer</SAMP> - Mixer em TCL/TK=20
+  <LI><SAMP>transcriber</SAMP> - Permite gravar notas durante a =
+descri=E7=E3o de=20
+  programas=20
+  <LI><SAMP>vkeybd</SAMP> - Teclado virtual (requer placa awe)=20
+  <LI><SAMP>wav2cdr</SAMP> - Converte wav em arquivos cdr. Permite =
+edi=E7=E3o de=20
+  m=FAsicas=20
+  <LI><SAMP>wavtools</SAMP> - Ferramentas para arquivos wav (player, =
+recorder,=20
+  compacta=E7=E3o)=20
+  <LI><SAMP>wmcdplayer</SAMP> - M=F3dulo de Cd player para Window Maker=20
+  <LI><SAMP>wmxmms-spectrum</SAMP> - Spectrum analizador para Window =
+Maker (D)=20
+  <LI><SAMP>workbone</SAMP> - CD player para modo texto operado =
+atrav=E9s do=20
+  teclado num=E9rico=20
+  <LI><SAMP>wosundprefs</SAMP> - Prefer=EAncias musicais para o Window =
+Maker=20
+  <LI><SAMP>wsoundserver</SAMP> - Servidor de som para Window Maker=20
+  <LI><SAMP>xcolmix</SAMP> - Um mixer colorido RGB=20
+  <LI><SAMP>xfreecd</SAMP> - Programa para tocar CDS=20
+  <LI><SAMP>xmcd</SAMP> - CD player/changer muito completo com suporte =
+ao CDDB=20
+  <LI><SAMP>xmix</SAMP> - Mixer para o X=20
+  <LI><SAMP>xmp</SAMP> - Player mod, s3m, 669, mtm, ptm, okt, far, wow, =
+amd,=20
+  rad, alm </LI></UL>
+<HR>
+<A name=3Ds-aplic-l-comm></A>
+<H3>30.2.7 Comunica=E7=E3o/Fax</H3>
+<UL>
+  <LI><SAMP>adbbs</SAMP> - AD BBS, uma BBS baseada em perl ou menu de =
+sistema=20
+  f=E1cil=20
+  <LI><SAMP>efax</SAMP> - Programas para enviar e receber mensagens de =
+fax=20
+  <LI><SAMP>hylafax-client</SAMP> - Programa HylaFAX cliente=20
+  <LI><SAMP>hylafax-server</SAMP> - Programa HylaFAX servidor=20
+  <LI><SAMP>lrzsz</SAMP> - Ferramentas para a transfer=EAncia de =
+arquivos atrav=E9s=20
+  de zmodem/xmodem/ymodem=20
+  <LI><SAMP>mgetty-fax</SAMP> - Ferramentas de Fax para o mgetty=20
+  <LI><SAMP>mgetty</SAMP> - Substitui=E7=E3o ao getty=20
+  <LI><SAMP>mgetty-viewfax</SAMP> - Programa para mostrar arquivos de =
+fax sob o=20
+  X=20
+  <LI><SAMP>mgetty-voice</SAMP> -Secret=E1ria Eletr=F4nica para o mgetty =
+
+  <LI><SAMP>minicom</SAMP> - Clone do "Telix" - um programa de =
+comunica=E7=E3o do=20
+  DOS=20
+  <LI><SAMP>mserver</SAMP> - Servidor de Modem para a Rede=20
+  <LI><SAMP>seyon</SAMP> - Programa de comunica=E7=E3o nativo completo =
+nativo do X11=20
+
+  <LI><SAMP>smsclient</SAMP> - Um programa para enviar mensagens curtas =
+para=20
+  telefones m=F3veis/Pagers (SM / SMS)=20
+  <LI><SAMP>speaker</SAMP> - Aplicativo Viva Voz baseado em Tcl/Tk=20
+  <LI><SAMP>tkhylafax</SAMP> - Uma interface td ao hylafax=20
+  <LI><SAMP>xringd</SAMP> - Daemon de chamadas Extendida - Monitora =
+toques do=20
+  telefone e executa alguma a=E7=E3o </LI></UL>
+<HR>
+<A name=3Ds-aplic-l-x11></A>
+<H3>30.2.8 X Window</H3>
+<UL>
+  <LI><SAMP>asclock</SAMP> - Rel=F3gio do After Step=20
+  <LI><SAMP>dfm</SAMP> - Gerenciador de Arquivos/Desktop=20
+  <LI><SAMP>dgs</SAMP> - Visualizador de arquivos do Ghost Script=20
+  <LI><SAMP>dxpc</SAMP> - Compactador do protocolo X para linhas lentas=20
+  <LI><SAMP>floatbg</SAMP> - Modifica lentamente a cor do fundo da =
+janela do=20
+  root=20
+  <LI><SAMP>gdm</SAMP> - Gerenciador de se=E7=E3o do GNOME - =
+Substitui=E7=E3o ao xdm=20
+  <LI><SAMP>gentoo</SAMP> - Um gerenciador de arquivos totalmente =
+configur=E1vel=20
+  para o X usando o GTK+=20
+  <LI><SAMP>gtkcookie</SAMP> - Editor de arquivos cookie=20
+  <LI><SAMP>gtkfind</SAMP> - Localizador de arquivos completo=20
+  <LI><SAMP>gtkfontsel</SAMP> - Visualizador de fontes=20
+  <LI><SAMP>ical</SAMP> - Um aplicativo de calend=E1rio baseado em =
+X11/Tk=20
+  <LI><SAMP>regexplorer</SAMP> - Explorer visual de express=F5es =
+regulares=20
+  <LI><SAMP>rt</SAMP> - Mostra arquivos de log selecionados na janela =
+ra=EDz do X=20
+  <LI><SAMP>sclient</SAMP> - Um cliente MUD baseado em gtk.=20
+  <LI><SAMP>sfm</SAMP> - Um gerenciador de arquivos baseado em texto =
+usando o=20
+  GTK+=20
+  <LI><SAMP>tkdesk</SAMP> - Um gerenciador de Desktop/Arquivos X11 =
+baseado em=20
+  TCL/TK=20
+  <LI><SAMP>tkvnc</SAMP> - Mostra uma lista de m=E1quinas definidas para =
+iniciar o=20
+  VNC=20
+  <LI><SAMP>tkworld</SAMP> - Uma interface gr=E1fica para comandos do =
+shell=20
+  <LI><SAMP>tuxeyes</SAMP> - Uma vers=E3o do xeyes para o penguim=20
+  <LI><SAMP>ude</SAMP> - Ambiente desktop do Unix=20
+  <LI><SAMP>unclutter</SAMP> - Oculta o mouse no X ap=F3s um per=EDodo =
+de=20
+  inatividade=20
+  <LI><SAMP>uwm</SAMP> - Gerenciador de janelas ultimate para o UDE=20
+  <LI><SAMP>vreng</SAMP> - Motor de realidade virtual=20
+  <LI><SAMP>wdm</SAMP> - Substitui=E7=E3o ao XDM com visual do Window =
+Maker,=20
+  anima=E7=F5es e suporte a sele=E7=E3o do gerenciador de janelas=20
+  <LI><SAMP>wmanager</SAMP> - Permite selecionar o gerenciador de =
+janelas ap=F3s o=20
+  login do xdm=20
+  <LI><SAMP>wmapm</SAMP> - Mostra o status da bateria, gerenciamento de =
+energia=20
+  do sistema (D)=20
+  <LI><SAMP>wmdate</SAMP> - Mostra a data/dia da semana (D)=20
+  <LI><SAMP>wmifs</SAMP> - Monitor das interfaces de rede com indicador =
+de=20
+  atividade das interfaces (envio/recebimento) gr=E1fico de atividade na =
+rede e=20
+  indicador de interface ativa (D)=20
+  <LI><SAMP>wmitime</SAMP> - Rel=F3gio anal=F3gico+digital+data e hora =
+da Internet.=20
+  (D)=20
+  <LI><SAMP>wmload</SAMP> - Mostra a carga da CPU na forma de barras (D) =
+
+  <LI><SAMP>wmmail</SAMP> - Monitor de E-mails (D)=20
+  <LI><SAMP>wmmatrix</SAMP> - Mostra um dock do matrix (D)=20
+  <LI><SAMP>wmmixer</SAMP> - Mixer para o Window maker (D)=20
+  <LI><SAMP>wmmoonclock</SAMP> - Rel=F3gio da lua (D)=20
+  <LI><SAMP>wmnet</SAMP> - Monitor de interfaces de rede (D)=20
+  <LI><SAMP>wmnetselect</SAMP> - Dispara o netscape atrav=E9s de um =
+=EDcone (D)=20
+  <LI><SAMP>wmpinboard</SAMP> - Todo list com anima=E7=F5es e um =
+excelente visual=20
+  (D)=20
+  <LI><SAMP>wmspaceweather</SAMP> - Monitora pr=F3tons e el=E9trons do =
+espa=E7o (D)=20
+  <LI><SAMP>wmtime</SAMP> - Rel=F3gio anal=F3gico, dia da semana e data =
+(D)=20
+  <LI><SAMP>wmtv</SAMP> - Sintonlizador de TV para Window Maker com =
+suporte a=20
+  sele=E7=E3o de canais, sistema de cores PAM-M/Secam/NTSC, ajuste fino, =
+procura de=20
+  esta=E7=F5es de TV, uso de aplicativos de TV externos e muito mais (D) =
+
+  <LI><SAMP>x2x</SAMP> - Liga a imagem de 2 monitores simulando =
+multi-telas=20
+  <LI><SAMP>xautolock</SAMP> - Inicia um programa ap=F3s certo per=EDodo =
+de=20
+  inatividade do X=20
+  <LI><SAMP>xawtv</SAMP> - Visualizador Video4linux=20
+  <LI><SAMP>xbanner</SAMP> - Deixa a tela de login mais bonita=20
+  <LI><SAMP>xext</SAMP> - Extens=F5es para os servidores X=20
+  <LI><SAMP>xfishtank</SAMP> - Mostra um aqu=E1rio na janela ra=EDz do X =
+Window=20
+  <LI><SAMP>xfs</SAMP> - Servidor de fontes do X=20
+  <LI><SAMP>xfs-xtt</SAMP> - Servidor de fontes do X com suporte a =
+fontes true=20
+  type=20
+  <LI><SAMP>xinput</SAMP> - Configura=E7=E3o em tempo de execu=E7=E3o e =
+teste para=20
+  dispositivos de entrada do X=20
+  <LI><SAMP>xipmsg</SAMP> - Envia mensagens=20
+  <LI><SAMP>xjscal</SAMP> - Calibrador de Joystick para o X11=20
+  <LI><SAMP>xkbsel</SAMP> - Ferramenta para definir, selecionar e =
+indicar=20
+  teclados para o X=20
+  <LI><SAMP>xkbsel-gnome</SAMP> - Ferramenta para definir, selecionar e =
+indicar=20
+  teclados para o X (vers=E3o para Gnome)=20
+  <LI><SAMP>xkeycaps</SAMP> - Mostra o c=F3digo de teclas do seu teclado =
+no X para=20
+  a constru=E7=E3o de um Xmodmap personalizado=20
+  <LI><SAMP>xlockmore-gl</SAMP> - Vers=E3o do xlockmore em GL=20
+  <LI><SAMP>xlockmore</SAMP> - Trava a tela do X at=E9 que uma senha =
+seja digitada=20
+
+  <LI><SAMP>xmaddressbook</SAMP> - Agenda de endere=E7os para o X=20
+  <LI><SAMP>xmanpages</SAMP> - Visualizador de p=E1ginas de manual para =
+o X=20
+  <LI><SAMP>xmbdfed</SAMP> - Editor de fontes para o X11=20
+  <LI><SAMP>xmon</SAMP> - Monitor do protocolo X=20
+  <LI><SAMP>xmotd</SAMP> - Navegador da mensagem do dia par ao X=20
+  <LI><SAMP>xodo</SAMP> - Mede a "dist=E2ncia" percorrida pelo cursos do =
+seu=20
+  mouse. =C9 permitido escolher at=E9 a unidade de medida da dist=E2ncia =
+
+  <LI><SAMP>xpaste</SAMP> - Mostra o conte=FAdo copiado com CTRL+C=20
+  <LI><SAMP>xrootconsole</SAMP> - Melhora a apar=EAncia do desktop=20
+  <LI><SAMP>xscreensaver</SAMP> - Cole=E7=E3o de Screen Savers =
+autom=E1tico para o X=20
+  <LI><SAMP>xscreensaver-gl</SAMP> - Prote=E7=F5es de tela GL para o =
+xscreensaver=20
+  <LI><SAMP>xsm</SAMP> - Gerenciador de se=E7=E3o do X=20
+  <LI><SAMP>xsnow</SAMP> - Anima=E7=E3o de neve para o X (muito legal).=20
+  <LI><SAMP>xt</SAMP> - Traceroute gr=E1fico em GL. Mostra o caminho =
+percorrido=20
+  por sua conex=E3o at=E9 chegar ao destino=20
+  <LI><SAMP>xvt</SAMP> - Emulador de terminal do X parecido com o xterm, =
+mas=20
+  menor=20
+  <LI><SAMP>xwit</SAMP> - Uma cole=E7=E3o de rotinas simples para chamar =
+algumas=20
+  fun=E7=F5es do X11=20
+  <LI><SAMP>xwrits</SAMP> - Te lembra para dar uma parada na =
+digita=E7=E3o=20
+  <LI><SAMP>xzoom</SAMP> - Lente de aumento para parte da sua tela do X, =
+com=20
+  atualiza=E7=F5es r=E1pidas </LI></UL>
+<HR>
+<A name=3Ds-aplic-l-edicao></A>
+<H3>30.2.9 Editora=E7=E3o Gr=E1fica/Visualizadores</H3>
+<UL>
+  <LI><SAMP>dia</SAMP> - Editor de Diagramas=20
+  <LI><SAMP>egon</SAMP> - Programa de anima=E7=F5es da Siag Office=20
+  <LI><SAMP>gimp</SAMP> - O Programa de Manipula=E7=E3o de Imagens da =
+GNU=20
+  <LI><SAMP>imagemagick</SAMP> - Programas de manipula=E7=E3o de Imagem=20
+  <LI><SAMP>mentor</SAMP> - Uma cole=E7=E3o de algoritmos de =
+anima=E7=E3o=20
+  <LI><SAMP>moonlight</SAMP> - Cria e desenha cenas em 3D=20
+  <LI><SAMP>pixmap</SAMP> - Um editor de pixmaps=20
+  <LI><SAMP>qcad</SAMP> - Sistema CAD PROFISSIONAL.=20
+  <LI><SAMP>qiv</SAMP> - Um visualizador r=E1pido de imagens para o X=20
+  <LI><SAMP>saoimage</SAMP> - Utilit=E1rio para mostrar e processar =
+imagens=20
+  atron=F4micas=20
+  <LI><SAMP>sced</SAMP> - Um programa para criar cenas em 3D=20
+  <LI><SAMP>sketch</SAMP> - Um programa de desenho interativo do X11=20
+  <LI><SAMP>terraform</SAMP> - Um programa para =
+gera=E7=E3o/manipula=E7=E3o de mapas=20
+  Tridimensionais da Terra=20
+  <LI><SAMP>tgif</SAMP> - Programa para desenhos 2-D sob o X11=20
+  <LI><SAMP>whirlgif</SAMP> - Cria GIFs animadas=20
+  <LI><SAMP>xbmbrowser</SAMP> - Navegador para Pixmaps e Bitmaps=20
+  <LI><SAMP>xfig</SAMP> - Facilita a gera=E7=E3o de figuras =
+interativamente sob o=20
+  X11=20
+  <LI><SAMP>xli</SAMP> - Visualiza imagens sob o X11=20
+  <LI><SAMP>xloadimage</SAMP> - Visualizador de arquivos gr=E1ficos sob =
+o X11=20
+  <LI><SAMP>xpcd</SAMP> - Cole=E7=E3o de ferramentas PhotoCD: B=E1sico=20
+  <LI><SAMP>xpcd-gimp</SAMP> - Cole=E7=E3o de ferramentas PhotoCD: =
+Suporte ao Gimp=20
+  <LI><SAMP>xpcd-svga</SAMP> - Cole=E7=E3o de ferramentas PhotoCD: =
+Visualizador SVGA=20
+
+  <LI><SAMP>xv-doc</SAMP> - Documenta=E7=E3o do XV em Posscript e HTML.=20
+  <LI><SAMP>xv</SAMP> - Uma visualizador e manipulador de imagens para o =
+X=20
+  Window System=20
+  <LI><SAMP>xwpick</SAMP> - Captura uma tela X11 e armazena em arquivos =
+</LI></UL>
+<HR>
+<A name=3Ds-aplic-l-emul></A>
+<H3>30.2.10 Emuladores/Ferramentas p/ Intera=E7=E3o com outros SO</H3>
+<UL>
+  <LI><SAMP>doschk</SAMP> - Verifica a compatibilidade de arquivos SYSV =
+e DOS=20
+  <LI><SAMP>dosemu</SAMP> - Emulador de DOS para Linux=20
+  <LI><SAMP>dosfstools-</SAMP>Utilit=E1rios para criar e checar sistemas =
+de=20
+  arquivos DOS FAT=20
+  <LI><SAMP>hfsutils</SAMP> - Ferramenta para ler e gravar volumes =
+Macintosh.=20
+  <LI><SAMP>hfsutils-tcltk</SAMP> -Interface Tcl/Tk para ler e gravar =
+volumes=20
+  Macintosh=20
+  <LI><SAMP>macutils</SAMP> - Conjunto de ferramentas para negociar com =
+arquivos=20
+  especiais do Macintosh=20
+  <LI><SAMP>mcvert</SAMP> - Ferramenta para negociar com arquivos =
+encodificados=20
+  especiais do Macintosh=20
+  <LI><SAMP>mixal</SAMP> - Um emulador MIX e interpretador MIXAL=20
+  <LI><SAMP>mtools</SAMP> - Ferramenta para manipula=E7=E3o de arquivos =
+do DOS=20
+  <LI><SAMP>p3nfs</SAMP> - Monta unidades da s=E9ria Psion 3[ac], 5=20
+  <LI><SAMP>simh</SAMP> - Um emulador de v=E1rios computadores DEC=20
+  <LI><SAMP>stella</SAMP> - Emulador do video game Atari 2600 Emulator =
+para X=20
+  Windows=20
+  <LI><SAMP>uae-exotic</SAMP> - O Emulador Amiga Ubiquitous: Bin=E1rios =
+ex=F3ticos=20
+  <LI><SAMP>uae</SAMP> - O Emulador Amiga Ubiquitous: B=E1sico=20
+  <LI><SAMP>uae-suid</SAMP> - O Emulador Amiga Ubiquitous: Bin=E1rios =
+Suid root=20
+  <LI><SAMP>umsdos</SAMP> - Utilit=E1rios para o sistema de arquivos =
+UMSDOS=20
+  <LI><SAMP>vice</SAMP> - Emulador vers=E1til do commodore=20
+  <LI><SAMP>wine</SAMP> - Emulador do Windows (Emulador Bin=E1rio)=20
+  <LI><SAMP>xapple2</SAMP> - Emulador do Apple=20
+  <LI><SAMP>xcopilot</SAMP> - Emulador do Pilot=20
+  <LI><SAMP>xspectemu</SAMP> - Emulador do Spectrim Fast 48k ZX para X11 =
+
+  <LI><SAMP>xtrs</SAMP> - Emulador para os computadores TRS-80 Modelos=20
+  I/III/4/4P=20
+  <LI><SAMP>xzx</SAMP> - Emulador de espectro baseado em ZX para o X11 =
+</LI></UL>
+<HR>
+<A name=3Ds-aplic-l-prog></A>
+<H3>30.2.11 Programa=E7=E3o / Bancos de Dados / Acesso a Dados</H3>
+<UL>
+  <LI><SAMP>bcc</SAMP> - Compilador C 16 Bits=20
+  <LI><SAMP>bin86</SAMP> - Assembler 16 bits e carregador=20
+  <LI><SAMP>binutils</SAMP> - Assembler da GNU, linker e utilit=E1rios =
+bin=E1rios=20
+  <LI><SAMP>clc-intercal</SAMP> - Compilador para a linguagem Intercal=20
+  <LI><SAMP>cmucl</SAMP> - Compilador lisp CMUCL e sistema de =
+desenvolvimento=20
+  <LI><SAMP>colorgcc</SAMP> - Colore mensagens de alerta/erro do GCC=20
+  <LI><SAMP>cutils</SAMP> - Utilit=E1rios de c=F3digo fonte C=20
+  <LI><SAMP>cvs</SAMP> - Concurrent Versions System=20
+  <LI><SAMP>cvsweb</SAMP> - uma interface CGI ao seu reposit=F3rio CVS=20
+  <LI><SAMP>cxref</SAMP> - Gera documenta=E7=E3o em latex e HTML para =
+seus programas=20
+  em C=20
+  <LI><SAMP>dbf2pg</SAMP> - Converte arquivos do xBase para PostgreSQL=20
+  <LI><SAMP>dbf</SAMP> - Pacote de manipula=E7=E3o de arquivos xbase=20
+  <LI><SAMP>dbview</SAMP> - Visualiza arquivos do dBase III=20
+  <LI><SAMP>dialog</SAMP> - Permite adicionar o recurso de caixas de =
+di=E1logo em=20
+  shell scripts como "Yes/No", "Ok", "Cancelar", etc.=20
+  <LI><SAMP>dist</SAMP> - Ferramentas para desenvolver, manter e =
+distribuir=20
+  softwares=20
+  <LI><SAMP>doc++</SAMP> - Um sistema de documenta=E7=E3o para C/C++ e =
+Java=20
+  <LI><SAMP>f2c</SAMP> -Um tradutor do Fortran77 para C/C++ com =
+bibliotecas=20
+  est=E1ticas e compartilhadas=20
+  <LI><SAMP>f77reorder</SAMP> - Um script de compila=E7=E3o Fortran =
+chamando o=20
+  f2c/gcc=20
+  <LI><SAMP>fp-api</SAMP> -Units Livres da API do Pascal=20
+  <LI><SAMP>fp-compiler</SAMP> - Compilador Livre do Pascal=20
+  <LI><SAMP>fp-extra</SAMP> - Pacotes Extras do Pascal Livre=20
+  <LI><SAMP>fp-fcl</SAMP> - Pascal Livre - Biblioteca de Componentes =
+Livres=20
+  <LI><SAMP>fp-gtk</SAMP> - Liga=E7=F5es Pascal - GTK=20
+  <LI><SAMP>fp-utils</SAMP> - Units do Pascal Livre=20
+  <LI><SAMP>freetds-jdbc</SAMP> - Driver JDBC Java puro para MS SQL e =
+Sybase=20
+  <LI><SAMP>g77</SAMP> - Compilador GNU Fortran 77.=20
+  <LI><SAMP>gbdk-dev</SAMP> - Kit de desenvolvimento do GameBoy - =
+pacotes de=20
+  desenvolvimento=20
+  <LI><SAMP>gbdk-examples</SAMP> - Kit de desenvolvimento do GameBoy - =
+pacote de=20
+  exemplos=20
+  <LI><SAMP>gbdk</SAMP> -Kit de desenvolvimento GameBoy - pacote =
+bin=E1rio=20
+  <LI><SAMP>gcc272-docs</SAMP> - Documenta=E7=E3o para compiladores gcc =
+(gcc272,=20
+  g++272)=20
+  <LI><SAMP>gcc-i386-gnu</SAMP> - Cheap cross-compiler para GNU/Hurd=20
+  <LI><SAMP>gcc</SAMP> - O compilador C da GNU=20
+  <LI><SAMP>g++</SAMP> - Compilador GNU C++=20
+  <LI><SAMP>gdb</SAMP> - O depurador GNU=20
+  <LI><SAMP>gengetopt</SAMP> - Gerador de estrutura main.c=20
+  <LI><SAMP>global</SAMP> - Ferramenta de procura e navega=E7=E3o do =
+c=F3digo fonte=20
+  <LI><SAMP>gpc</SAMP> - Compilador Pascal da GNU=20
+  <LI><SAMP>gprolog</SAMP> - Compilador GNU Prolog=20
+  <LI><SAMP>gtksql</SAMP> - Interface gr=E1fica GTK para o banco de =
+dados posgress=20
+  SQL=20
+  <LI><SAMP>guavac</SAMP> - Compilador java=20
+  <LI><SAMP>hello-debhelper</SAMP> - O programa inicial e um bom exemplo =
+
+  <LI><SAMP>hello</SAMP> - O programa inicial e um bom exemplo=20
+  <LI><SAMP>indent</SAMP> - Programa de formata=E7=E3o do c=F3digo fonte =
+em linguagem=20
+  C=20
+  <LI><SAMP>inform</SAMP> - Compilador para jogos de aventura=20
+  <LI><SAMP>jitterbug</SAMP> - Um ferramenta cgi-bin para relato de =
+problemas e=20
+  teste=20
+  <LI><SAMP>lclint</SAMP> - Uma ferramenta para checagem est=E1tica de =
+programas=20
+  em C=20
+  <LI><SAMP>liwc</SAMP> - Ferramentas para manipular o c=F3digo fonte em =
+C=20
+  <LI><SAMP>mercury</SAMP> - Nova linguagem de programa=E7=E3o =
+l=F3gica/funcional=20
+  <LI><SAMP>mmake</SAMP> - Gerador Makefile para programas em java=20
+  <LI><SAMP>mpsql</SAMP> - Uma interface gr=E1fica ao PostgreSQL=20
+  <LI><SAMP>mysql-client</SAMP> - Bin=E1rios cliente do banco de dados =
+mysql=20
+  <LI><SAMP>mysql-gpl-client</SAMP> - Bin=E1rios cliente do banco de =
+dados mysql=20
+  <LI><SAMP>mysql-manual</SAMP> - Documenta=E7=E3o n=E3o oficial do =
+MySQL 3.20=20
+  <LI><SAMP>mysql-server 3.22.32-1</SAMP> - bin=E1rios do servidor do =
+banco de=20
+  dados mysql=20
+  <LI><SAMP>nosql</SAMP> - um sistema de Gerenciamento de Banco de Dados =
+
+  Relacional para Unix=20
+  <LI><SAMP>p2c</SAMP> - Tradutor Pascal para C=20
+  <LI><SAMP>pentium-builder</SAMP> - For=E7a a compila=E7=E3o otimizada =
+para=20
+  computadores Pentium=20
+  <LI><SAMP>pgaccess</SAMP> - Interface gr=E1fica Tk/Tcl para o banco de =
+dados=20
+  PostgreSQL=20
+  <LI><SAMP>phylip</SAMP> - [Biology] A program package for inferring=20
+  phylogenies=20
+  <LI><SAMP>postgresql</SAMP> - Banco de dados SQL relacionado a =
+objetos,=20
+  descendente do POSTGRES=20
+  <LI><SAMP>postgresql-client</SAMP> - Programas de interface para o =
+PostgreSQL=20
+  <LI><SAMP>postgresql-contrib</SAMP> - Facilidades adicionais para o =
+PostgreSQL=20
+
+  <LI><SAMP>postgresql-test</SAMP> - Conjunto de testes de regress=E3o =
+para o=20
+  PostgreSQL=20
+  <LI><SAMP>smalleiffel</SAMP> - Compilador Eiffel GNU=20
+  <LI><SAMP>solid-desktop</SAMP> - Servidor SQL S=F3lido=20
+  <LI><SAMP>solid-devel</SAMP> - Desenvolvimento do Servidor SQL =
+S=F3lido=20
+  <LI><SAMP>solid-doc-</SAMP>Documenta=E7=E3o do servidor s=F3lido SQL=20
+  <LI><SAMP>solid-tools</SAMP> - Ferramentas do servidor s=F3lido SQL=20
+  <LI><SAMP>www-mysql</SAMP> - Uma interface WWW interface para o banco =
+de dados=20
+  TCX mySQL=20
+  <LI><SAMP>www-pgsql</SAMP> - Uma interface WWW para o banco de dados=20
+  PostgreSQL=20
+  <LI><SAMP>xmysqladmin</SAMP> - Interface gr=E1fica para o mysql =
+(3.22.xx)=20
+  <LI><SAMP>xxgdb</SAMP> - Interface gr=E1fica para o GNU debugger gdb =
+</LI></UL>
+<HR>
+<A name=3Ds-aplic-l-impressao></A>
+<H3>30.2.12 Impress=E3o</H3>
+<UL>
+  <LI><SAMP>apsfilter</SAMP> - Um filtro de linha de impress=E3o para =
+sistemas com=20
+  lpd/lpr=20
+  <LI><SAMP>cupsys-bsd</SAMP> - Common UNIX Printing System(tm) - =
+comandos BSD=20
+  <LI><SAMP>cupsys</SAMP> - Common UNIX Printing System(tm) - b=E1sico=20
+  <LI><SAMP>djtools</SAMP> - Ferramentas para a impressora HP Deskjet=20
+  <LI><SAMP>ifhp</SAMP> - Filtro para impressoras HP LaserJet=20
+  <LI><SAMP>lprng</SAMP> - Sistema de spooling de impress=E3o lpr/lpd=20
+  <LI><SAMP>lpr</SAMP> - Sistema de spooling da linha de impress=E3o =
+estilo BSD=20
+  <LI><SAMP>magicfilter</SAMP> - Filtro autom=E1tico de impressora=20
+  <LI><SAMP>mpage</SAMP> - Mostra m=FAltiplas p=E1ginas em uma =
+impressora PostScript=20
+
+  <LI><SAMP>printop</SAMP> - Interface gr=E1fica para o daemon de =
+impress=E3o LPRng=20
+  <LI><SAMP>printtool</SAMP> - Ferramenta de administra=E7=E3o de =
+impressoras=20
+  <LI><SAMP>psptools</SAMP> - Ferramentas para impressoras PostScript e=20
+  dispositivos=20
+  <LI><SAMP>rlpr</SAMP> -Um utilit=E1rio para impress=E3o do ldp sem =
+usar o=20
+  /etc/printcap=20
+  <LI><SAMP>wip</SAMP> - Pacote de para ploters gr=E1ficos com alta =
+qualidade de=20
+  sa=EDda </LI></UL>
+<HR>
+<A name=3Ds-aplic-l-texto></A>
+<H3>30.2.13 Texto</H3>
+<UL>
+  <LI><SAMP>1a2ps</SAMP> - Conversor GNU de "tudo para PostScript" e =
+impress=E3o=20
+  <LI><SAMP>abc2ps</SAMP> - Traduz arquivos de descri=E7=E3o de m=FAsica =
+ABC para=20
+  PostScript=20
+  <LI><SAMP>acroread</SAMP> - Adobe Acrobat Reader: Visualizador de =
+arquivos=20
+  Portable Document Format=20
+  <LI><SAMP>aspell</SAMP> - Uma substitui=E7=E3o mais inteligente para o =
+verificador=20
+  ortogr=E1fico ispell=20
+  <LI><SAMP>brazilian-conjugate</SAMP> - Conjugador de verbos Portugues =
+do=20
+  Brasil=20
+  <LI><SAMP>catdoc</SAMP> - Conversor de arquivos MS-Word para TeX ou =
+texto=20
+  plano=20
+  <LI><SAMP>colortail</SAMP> - tail que colore os padr=F5es que conferem =
+
+  <LI><SAMP>cost</SAMP> - Ferramenta de p=F3s processamento SGML de =
+prop=F3sito=20
+  geral=20
+  <LI><SAMP>debiandoc-sgml</SAMP> -DTD DebianDoc SGML e ferramentas de=20
+  formata=E7=E3o=20
+  <LI><SAMP>docbook</SAMP> - DTD SGML para a documenta=E7=E3o de =
+software=20
+  <LI><SAMP>dog</SAMP> - Substitui=E7=E3o avan=E7ada para o cat=20
+  <LI><SAMP>figlet</SAMP> - Cria palavras usando tabelas de caracteres =
+ASCII=20
+  <LI><SAMP>flip</SAMP> - Converte arquivos de texto entre os formatos =
+DOS e=20
+  Unix=20
+  <LI><SAMP>ghostview</SAMP> - Um visualizador PostScript para o X11=20
+  <LI><SAMP>gnuhtml2latex</SAMP> - Um Script Perl que converte arquivos =
+html em=20
+  latex=20
+  <LI><SAMP>gs-aladdin</SAMP> - Interpretador PostScript com suporte a =
+X11 e=20
+  preview svgalib=20
+  <LI><SAMP>gsfonts</SAMP> - Fontes para o interpretador ghostscript=20
+  <LI><SAMP>gs</SAMP> - Interpretador PostScript com suporte a X11 e =
+preview=20
+  svgalib=20
+  <LI><SAMP>gtkdiff</SAMP> - Ferramenta de compara=E7=E3o de texto =
+gr=E1fica=20
+  <LI><SAMP>help2man</SAMP> - Gerador autom=E1tico de p=E1ginas de =
+manual=20
+  <LI><SAMP>html2ps</SAMP> - Conversor HTML para PostScript=20
+  <LI><SAMP>iamerican</SAMP> - Um dicion=E1rio de Ingl=EAs Americano =
+para o ispell=20
+  <LI><SAMP>ibrazilian</SAMP> - Um dicion=E1rio do Brasileiro para o =
+ispell=20
+  <LI><SAMP>ispell</SAMP> - International Ispell (um corretor =
+ortogr=E1fico=20
+  interativo)=20
+  <LI><SAMP>less</SAMP> - Programa de pagina=E7=E3o de arquivos, =
+parecido com o more=20
+
+  <LI><SAMP>lincredits</SAMP> - Gera vers=F5es com melhor formata=E7=E3o =
+do arquivo=20
+  CREDITS do Linux=20
+  <LI><SAMP>lookup</SAMP> - utilit=E1rio para procurar arquivos de texto =
+
+  rapidamente e com muitos recursos=20
+  <LI><SAMP>lout</SAMP> - Sistema de Digita=E7=E3o, uma alternativa ao =
+(La)TeX=20
+  <LI><SAMP>lv</SAMP> - Um poderoso visualizador de arquivos =
+multi-l=EDngua=20
+  <LI><SAMP>lyx</SAMP> - Processador de textos de alto n=EDvel=20
+  <LI><SAMP>mgdiff</SAMP> - clone do xdiff=20
+  <LI><SAMP>mswordview</SAMP> - Um conversor de arquivos MS Word 97/2000 =
+para=20
+  HTML=20
+  <LI><SAMP>ndtpd</SAMP> - Servidor CD-ROM books=20
+  <LI><SAMP>par</SAMP> - Reformatador de par=E1grafo=20
+  <LI><SAMP>pbm2ppa</SAMP> - Conversor PBM para PPA=20
+  <LI><SAMP>perlsgml</SAMP> - Ferramentas para construir e analizar DTDs =
+SGML=20
+  <LI><SAMP>perspic</SAMP> - Programa indexador de textos e localizador =
+de=20
+  palavras=20
+  <LI><SAMP>poster</SAMP> - Faz grandes posters de p=E1ginas PostScript=20
+  <LI><SAMP>ppd-gs</SAMP> - Arquivos de descri=E7=E3o de impressora =
+PostScript para=20
+  o Ghostscript=20
+  <LI><SAMP>pstotext</SAMP> - Extrai textos de arquivos PostScript e PDF =
+
+  <LI><SAMP>recode</SAMP> - Utilit=E1rio de convers=E3o do conjunto de =
+caracteres=20
+  <LI><SAMP>sgml-base</SAMP> - Utilit=E1rio para manter o arquivo de =
+cat=E1logo SGML=20
+
+  <LI><SAMP>sgml-data</SAMP> - Dados comuns entre DTDs SGML e entities=20
+  <LI><SAMP>sgml-tools</SAMP> - Conversores SGML somente par ao DTD =
+linuxdoc=20
+  <LI><SAMP>spell</SAMP> - Spell GNU, um clone do "spell" para Unix=20
+  <LI><SAMP>sufary</SAMP> - Ferramentas de procura em texto completo =
+usando uma=20
+  array de sufixos=20
+  <LI><SAMP>sufary-tcltk</SAMP> - Interface Tcl/Tk para o SUFARY=20
+  <LI><SAMP>tcs</SAMP> - Tradutor de conjunto de caracteres=20
+  <LI><SAMP>tkdiff</SAMP> - Utilit=E1rio "diff" gr=E1fico=20
+  <LI><SAMP>trueprint</SAMP> - Imprime de forma organizada o c=F3digo =
+fonte=20
+  <LI><SAMP>word2x</SAMP> - Traduz arquivos do Word em texto ascii ou =
+LaTeX=20
+  <LI><SAMP>xpdf</SAMP> - Visualizador do formato Portable Document =
+Format para=20
+  X11=20
+  <LI><SAMP>xpw</SAMP> - O processador de textos Pat=E9tico </LI></UL>
+<HR>
+<A name=3Ds-aplic-l-kernel></A>
+<H3>30.2.14 Kernel</H3>
+<UL>
+  <LI><SAMP>adjtimex</SAMP> - Mostra e configura vari=E1veis do kernel=20
+  <LI><SAMP>autofs</SAMP> - Montador autom=E1tico baseado no kernel para =
+Linux=20
+  <LI><SAMP>kernellab</SAMP> - Gerencia facilmente configura=E7=F5es do =
+kernel em=20
+  muitas m=E1quinas=20
+  <LI><SAMP>kernel-package</SAMP> - Scripts de constru=E7=E3o do pacote =
+de kernel=20
+  para a Debian=20
+  <LI><SAMP>knl</SAMP> - Obt=E9m/ajusta par=E2metros de imagem do kernel =
+
+  <LI><SAMP>ksymoops</SAMP> - Interpreta mensagens oops e de erro do =
+kernel=20
+  <LI><SAMP>psmisc</SAMP> - Utilit=E1rios que utilizam o sistema de =
+arquivos /proc=20
+
+  <LI><SAMP>systune</SAMP> - Ajuste fino do kernel atrav=E9s do sistema =
+de=20
+  arquivos /proc </LI></UL>
+<HR>
+<A name=3Ds-aplic-l-notebooks></A>
+<H3>30.2.15 Notebooks</H3>
+<UL>
+  <LI><SAMP>apmd</SAMP> - Utilit=E1rio para gerenciamento avan=E7ado de =
+energia=20
+  (APM) em Notebooks=20
+  <LI><SAMP>toshutils</SAMP> - Utilit=E1rios para Note Books Toshiba=20
+  <LI><SAMP>wmbattery</SAMP> - Mostra o status/carga da bateria (D) =
+</LI></UL>
+<HR>
+<A name=3Ds-aplic-l-cdrec></A>
+<H3>30.2.16 Grava=E7=E3o de CD/DVD</H3>
+<UL>
+  <LI><SAMP>cdrdao</SAMP> - Grava CDs de audio ou tipos de dados =
+diversos no=20
+  disco de uma s=F3 vez=20
+  <LI><SAMP>cdrecord</SAMP> - Ferramenta de grava=E7=E3o de CD/DVD=20
+  <LI><SAMP>cdrtoaster</SAMP> - Interface gr=E1fica em Tcl/Tk para =
+gravar CD-ROMs=20
+  <LI><SAMP>cdwrite</SAMP> - Ferramenta de grava=E7=E3o de CD para =
+unidades CD-R=20
+  Orange Book=20
+  <LI><SAMP>cdlabelgen</SAMP> - Gera capa e fundo para CDs=20
+  <LI><SAMP>gtoaster</SAMP> - Gnome Toaster, uma interface gr=E1fica =
+para grava=E7=E3o=20
+  de CD's=20
+  <LI><SAMP>mkhybrid</SAMP> - Cria imagens do sistema de arquivos CD-ROM =
+
+  <LI><SAMP>mkisofs</SAMP> - Cria imagens do sistema de arquivos CD-ROM =
+ISO-9660=20
+
+  <LI><SAMP>tkcdlayout</SAMP> - Programa simples em X para criar capas =
+de CDs=20
+  <LI><SAMP>xcdroast</SAMP> - Software de grava=E7=E3o de CDs baseado no =
+X </LI></UL>
+<HR>
+<A name=3Ds-aplic-l-cluster></A>
+<H3>30.2.17 Computa=E7=E3o Paralela/Clusters</H3>
+<UL>
+  <LI><SAMP>lam2-dev</SAMP> - Ativa processamento paralelo entre =
+m=FAltiplos=20
+  processadores=20
+  <LI><SAMP>mpich</SAMP> - Sistema de computa=E7=E3o Paralela=20
+  <LI><SAMP>pvm</SAMP> - M=E1quina Virtual Paralela - bin=E1rios e =
+bibliotecas=20
+  compartilhadas </LI></UL>
+<HR>
+<A name=3Ds-aplic-l-handhelds></A>
+<H3>30.2.18 PalmTop / Palm Pilot / Computadores de M=E3o</H3>
+<UL>
+  <LI><SAMP>imgvtopgm</SAMP> -Utilit=E1rio de convers=E3o de imagem =
+PalmPilot/III=20
+  <LI><SAMP>jpilot</SAMP> -Um utilit=E1rio GTK para modificar o =
+conte=FAdo de seus=20
+  Bancos de Dados no Pilot.=20
+  <LI><SAMP>lpkg</SAMP> - Carregador do pacotes de mensagens para o PDA =
+Newton=20
+  MessagePad=20
+  <LI><SAMP>lx-gdb</SAMP> - Mostra e carrega banco de dados do palmtop =
+da HP=20
+  <LI><SAMP>lxtools</SAMP> -Permite o gerenciamento de arquivos em =
+palmtops=20
+  HP100/200LX=20
+  <LI><SAMP>palm-doctoolkit</SAMP> - Ferramentas de texto eletr=F4nico =
+para=20
+  usu=E1rios PalmPilot=20
+  <LI><SAMP>picasm</SAMP> -Assembler para a familia de controladores =
+Microchip=20
+  PIC=20
+  <LI><SAMP>pilot-link</SAMP> -Ferramentas para se comunicar com um =
+Pilot 3COM=20
+  PDA atrav=E9s de uma porta serial=20
+  <LI><SAMP>pilot-manager</SAMP> - PalmPilot PIM, UI, e gerenciador de =
+condu=EDte=20
+  <LI><SAMP>pilot-template</SAMP> - Gerador de c=F3digo para programas =
+do=20
+  PalmPilot=20
+  <LI><SAMP>pilrc</SAMP> - Compilador de recursos e editor do =
+PalmPilot/PalmIII=20
+  <LI><SAMP>pose</SAMP> - Emulador PalmOS=20
+  <LI><SAMP>prc-tools</SAMP> - GCC, GDB, binutils, etc. para o PalmPilot =
+e Palm=20
+  III=20
+  <LI><SAMP>pyrite</SAMP> - Kit da plataforma de comunica=E7=E3o Palm =
+Computing(R)=20
+  para Python </LI></UL>
+<HR>
+<A name=3Ds-aplic-l-backup></A>
+<H3>30.2.19 Backup</H3>
+<UL>
+  <LI><SAMP>afbackup-client</SAMP> - Sistema de backup cliente-servidor =
+(lado=20
+  Cliente)=20
+  <LI><SAMP>afbackup</SAMP> - Sistema de backup cliente-servidor (lado =
+Servidor)=20
+
+  <LI><SAMP>amanda-client</SAMP> - Advanced Maryland Automatic Network =
+Disk=20
+  Archiver (Cliente)=20
+  <LI><SAMP>amanda-common</SAMP> - Advanced Maryland Automatic Network =
+Disk=20
+  Archiver (Libs)=20
+  <LI><SAMP>amanda-server</SAMP> - Advanced Maryland Automatic Network =
+Disk=20
+  Archiver (Servidor)=20
+  <LI><SAMP>floppybackup</SAMP> - Backup em disquetes usando diversos =
+tipos de=20
+  formatos de disquetes=20
+  <LI><SAMP>taper</SAMP> - Utilit=E1rio de backup do sistema em tela =
+cheia=20
+  <LI><SAMP>tob</SAMP> - Programa pequeno e poderoso orientado a backup =
+de tapes=20
+  </LI></UL>
+<HR>
+<A name=3Ds-aplic-l-uteis></A>
+<H3>30.2.20 Utilit=E1rios</H3>
+<UL>
+  <LI><SAMP>afio</SAMP> - Programa de manipula=E7=E3o de arquivos=20
+  <LI><SAMP>aish</SAMP> - Conversor ish/base64/uuencoded_file=20
+  <LI><SAMP>alien</SAMP> - Instala pacotes da Red Hat, Stampede e =
+Slackware com=20
+  o dpkg=20
+  <LI><SAMP>ascii</SAMP> - Mostra aliases e tabela para caracteres ASCII =
+
+  <LI><SAMP>autoconf</SAMP> - Script de configura=E7=E3o autom=E1tico=20
+  <LI><SAMP>autogen</SAMP> - Gerador autom=E1tico de arquivos texto=20
+  <LI><SAMP>automake</SAMP> - Gerador autom=E1tico de scripts Makefile=20
+  <LI><SAMP>autoproject</SAMP> - Cria um esqueleto de pacote fonte para =
+um novo=20
+  programa=20
+  <LI><SAMP>barcode</SAMP> - Cria c=F3digo de barras no formato .ps=20
+  <LI><SAMP>binstats</SAMP> - Ferramenta de estat=EDstica para programas =
+
+  instalados=20
+  <LI><SAMP>birthday</SAMP> - Alerta sobre eventos pendentes no login=20
+  <LI><SAMP>blinkd</SAMP> -Pisca LEDS do teclado para uma secret=E1ria =
+eletr=F4nica=20
+  ou m=E1quina de fax=20
+  <LI><SAMP>bl</SAMP> - Pisca seq=FCencialmente os LEDs do teclado=20
+  <LI><SAMP>bsdmainutils</SAMP> - Mais utilit=E1rios do 4.4BSD-Lite=20
+  <LI><SAMP>btoa</SAMP> - Converte bin=E1rio para ascii e vice versa=20
+  <LI><SAMP>cbb</SAMP> - Um clone do Quicken=20
+  <LI><SAMP>chase</SAMP> - Segue um link simb=F3lico e mostra seu =
+arquivo alvo=20
+  <LI><SAMP>dgpsip</SAMP> - Corrige localiza=E7=E3o GPS com o sinal DGPS =
+da internet=20
+
+  <LI><SAMP>diffstat</SAMP> - produz gr=E1ficos das altera=E7=F5es =
+introduzidas por um=20
+  arquivo diff=20
+  <LI><SAMP>dotfile-bash</SAMP> - Gerador de arquivos dotfile, m=F3dulo =
+para o=20
+  bash=20
+  <LI><SAMP>dotfile</SAMP> -Configura=E7=E3o f=E1cil de programas =
+populares atrav=E9s da=20
+  interface Tcl/Tk=20
+  <LI><SAMP>dotfile-elm</SAMP> - Gerador de arquivos dotfile, m=F3dulo =
+para o elm=20
+  <LI><SAMP>dotfile-fvwm1</SAMP> - Gerador de arquivos dotfile, m=F3dulo =
+para o=20
+  fvwm1=20
+  <LI><SAMP>dotfile-fvwm2</SAMP> - Gerador de arquivos dotfile, m=F3dulo =
+para o=20
+  fvwm2=20
+  <LI><SAMP>dotfile-ipfwadm</SAMP> - Gerador de arquivos dotfile, =
+m=F3dulo para o=20
+  ipfwadm=20
+  <LI><SAMP>dotfile-procmail</SAMP> - Gerador de arquivos dotfile, =
+m=F3dulo para o=20
+  procmail=20
+  <LI><SAMP>dotfile-rtin</SAMP> - Gerador de arquivos dotfile, m=F3dulo =
+para o=20
+  rtin=20
+  <LI><SAMP>dotfile-tcsh</SAMP> - Gerador de arquivos dotfile, m=F3dulo =
+para o=20
+  tcsh=20
+  <LI><SAMP>dump</SAMP> - 4.4bsd dump e restore para sistema de arquivos =
+ext2=20
+  <LI><SAMP>fastjar</SAMP> - Utilit=E1rio de cria=E7=E3o de arquivos Jar =
+
+  <LI><SAMP>fdupes</SAMP> - Identifica arquivos duplicados residindo nos =
+
+  diret=F3rios especificados=20
+  <LI><SAMP>fdutils</SAMP> - Utilit=E1rios de disquete do Linux=20
+  <LI><SAMP>file</SAMP> - Determina o tipo de arquivo usando n=FAmeros =
+"m=E1gicos"=20
+  <LI><SAMP>gcal</SAMP> - Mostra um calend=E1rio=20
+  <LI><SAMP>gettext</SAMP> - Utilit=E1rios de internacionaliza=E7=E3o da =
+GNU=20
+  <LI><SAMP>gfloppy</SAMP> - Interface gr=E1fica para a formata=E7=E3o =
+de disquetes=20
+  <LI><SAMP>git</SAMP> - Ferramentas interativas da GNU=20
+  <LI><SAMP>glimpse</SAMP> - Ferramentas de indexa=E7=E3o e =
+localiza=E7=E3o em tela=20
+  cheia=20
+  <LI><SAMP>gmc</SAMP> - Midnight Commander - Um poderoso gerenciador de =
+
+  arquivos - Vers=E3o gnome=20
+  <LI><SAMP>gmemusage</SAMP> -Mostra um gr=E1fico detalhando a =
+utiliza=E7=E3o de=20
+  mem=F3ria por cada processo=20
+  <LI><SAMP>gnotes</SAMP> - Applet de notas Yellow sticky para o GNOME=20
+  <LI><SAMP>gnucash</SAMP> - Um programa de tratamento de finan=E7as =
+pessoais=20
+  <LI><SAMP>gpm</SAMP> - Daemon de mouse para modo texto=20
+  <LI><SAMP>grep-dctrl</SAMP> - Vers=E3o do gru para informa=E7=F5es de =
+pacotes da=20
+  Debian=20
+  <LI><SAMP>gtktalog</SAMP> - Cat=E1logo de Disco=20
+  <LI><SAMP>guitar</SAMP> - Ferramenta de extra=E7=E3o/visualiza=E7=E3o =
+de arquivos em=20
+  GTK+=20
+  <LI><SAMP>gxset</SAMP> - Interface gr=E1fica baseada em GTK a =
+ferramenta de=20
+  linha de comando xset=20
+  <LI><SAMP>hextype</SAMP> - Hexdump de acordo com o formato de sa=EDda =
+do antido=20
+  Debug do DOS=20
+  <LI><SAMP>iraf</SAMP> - Redu=E7=E3o de Imagem e Facilidade de =
+An=E1lise=20
+  (astronomia/imagem)=20
+  <LI><SAMP>jdresolve</SAMP> - Alternativa r=E1pida ao logresolve do =
+Apache=20
+  <LI><SAMP>kbd</SAMP> - Utilit=E1rios de fonte e mapas de teclado para =
+o console=20
+  do Linux=20
+  <LI><SAMP>launcher</SAMP> - Seleciona que programa carregar de acordo =
+com a=20
+  extens=E3o=20
+  <LI><SAMP>lavaps</SAMP> - Uma l=E2mpada de lava dos processos =
+atualmente=20
+  executados=20
+  <LI><SAMP>leave</SAMP> - Te lembra quando deve deixar o sistema (muito =
+=FAtil=20
+  para quem gosta do Linux :-)=20
+  <LI><SAMP>linuxlogo</SAMP> - Logotipo do Sistema Colorido em ANSI=20
+  <LI><SAMP>loadwatch</SAMP> - Executa um programa usando somente ciclos =
+ociosos=20
+  da CPU=20
+  <LI><SAMP>makepatch</SAMP> - gera/aplica arquivos de patch com mais=20
+  funcionalidade que o diff plano=20
+  <LI><SAMP>mc-common</SAMP> - Arquvios comuns par ao mc e gmc=20
+  <LI><SAMP>mc</SAMP> - Midnight Commander - Um poderoso gerenciador de =
+arquivos=20
+
+  <LI><SAMP>mirrordir</SAMP> - Duplica um diret=F3rio fazendo um =
+m=EDnimo de=20
+  modifica=E7=F5es=20
+  <LI><SAMP>ncdt</SAMP> - Mostra a =E1rvore de diret=F3rios=20
+  <LI><SAMP>netplan</SAMP> - Servidor de rede para o "plan"=20
+  <LI><SAMP>nwrite</SAMP> - Substitui=E7=E3o avan=E7ada ao comando write =
+
+  <LI><SAMP>patch</SAMP> - Aplica um arquivo gerado pelo diff a um =
+original=20
+  <LI><SAMP>pcal</SAMP> - Cria calend=E1rios imprim=EDveis via =
+PostScript sem o X=20
+  <LI><SAMP>perforate</SAMP> - Utilit=E1rios para salvar espa=E7o em =
+disco=20
+  <LI><SAMP>pgrep</SAMP> - utilit=E1rio grep que usa express=F5es =
+regulares=20
+  compat=EDveis com o Perl=20
+  <LI><SAMP>plan</SAMP> - Planejamento di=E1rio baseado em X/Motif =
+(compilado=20
+  dinamicamente com LessTif)=20
+  <LI><SAMP>pointerize</SAMP> - Utilit=E1rios de internacionaliza=E7=E3o =
+baseado no=20
+  gettext=20
+  <LI><SAMP>popularity-contest</SAMP> - Vote em seus pacotes favoritos=20
+  automaticamente=20
+  <LI><SAMP>pydf</SAMP> - Clone df com sa=EDda em cores=20
+  <LI><SAMP>rtlinux</SAMP> - Linux em Tempo Real=20
+  <LI><SAMP>set6x86</SAMP> -Ferramenta de configura=E7=E3o para CPUs =
+Cyrix/IBM=20
+  5x86/6x86=20
+  <LI><SAMP>splitvt</SAMP> - Executa dois programas em uma tela dividida =
+
+  <LI><SAMP>statserial</SAMP> - Mostra a linha de status da porta serial =
+do=20
+  modem=20
+  <LI><SAMP>strace</SAMP> - Um tra=E7ador de chamadas do sistema=20
+  <LI><SAMP>sunclock</SAMP> - Mostra por=E7=E3o iluminada do planeta =
+terra=20
+  <LI><SAMP>symlinks</SAMP> - procura/modifica links simb=F3licos=20
+  <LI><SAMP>tleds</SAMP> - Pisca LEDs do teclado indicando Envio e =
+Recebimento=20
+  de pacotes da rede=20
+  <LI><SAMP>tree</SAMP> - Mostra a =E1rvore de diret=F3rios em cores=20
+  <LI><SAMP>units</SAMP> - conversor entre diferentes unidades de =
+sistema=20
+  <LI><SAMP>uptimed</SAMP> - Utilit=E1rio para registrar seus maiores =
+tempos de=20
+  utiliza=E7=E3o do sistema=20
+  <LI><SAMP>urlview</SAMP> - Extrai URLs de textos=20
+  <LI><SAMP>vold</SAMP> - Daemon de volume para unidades de CDROM=20
+  <LI><SAMP>vrms</SAMP> - Virtual Richard M. Stallman (mostra =
+mensalmente uma=20
+  lista de pacotes n=E3o-livres instalados em seu sistema)=20
+  <LI><SAMP>wipe</SAMP> - Dele=E7=E3o segura de arquivos (sem =
+possibilidade de=20
+  recupera=E7=E3o)=20
+  <LI><SAMP>xcal</SAMP> - Um calend=E1rio gr=E1fico com alarmes de =
+alerta=20
+  <LI><SAMP>xplanet</SAMP> - Cria imagens do planeta Terra=20
+  <LI><SAMP>xvmount</SAMP> - Pequeno utilit=E1rio gr=E1fico para a =
+montagem de=20
+  dispositivos pelos usu=E1rios </LI></UL>
+<HR>
+<A name=3Ds-aplic-l-compactadores></A>
+<H3>30.2.21 Compactadores/Descompactadores/Arquivadores</H3>
+<UL>
+  <LI><SAMP>bzip2</SAMP> - Um =F3timo compactador de arquivos texto - =
+utilit=E1rios=20
+  <LI><SAMP>gzip</SAMP> - Compactador de arquivos de formato .gz=20
+  <LI><SAMP>lha</SAMP> - Compactador de arquivos no formato .lha ou . =
+lzh=20
+  <LI><SAMP>lzop</SAMP> - Um compactador em tempo real=20
+  <LI><SAMP>ncompress</SAMP> - Compress / Uncompress original para a=20
+  transfer=EAncia de News, etc.=20
+  <LI><SAMP>rar</SAMP> - Compactador/Descompactador de arquivos .rar=20
+  <LI><SAMP>tar</SAMP> - Utilit=E1rio de arquivamento de arquivos=20
+  <LI><SAMP>unarj</SAMP> - Descompactador de arquivos .arj=20
+  <LI><SAMP>unzip</SAMP> - Descompactador de arquivos .zip=20
+  <LI><SAMP>zoo</SAMP> - Manipula arquivos compactados no formato .zoo =
+</LI></UL>
+<HR>
+<A name=3Ds-aplic-l-x10></A>
+<H3>30.2.22 Dispositivos X-10 (Controle de eletrodom=E9sticos e =
+aparelhos via=20
+PC)</H3>
+<UL>
+  <LI><SAMP>bottlerocket</SAMP> - Utilit=E1rio para controle de =
+dispositivos X10=20
+  <LI><SAMP>heyu</SAMP> - Comunica=E7=E3o X10 de dois pontos para o =
+CM11A=20
+  <LI><SAMP>wmx10</SAMP> - Permite controlar uma casa atrav=E9s de =
+m=F3dulos x10.=20
+  Este aplicativo permite controlar at=E9 8 dispositivos por casa (D)=20
+  <LI><SAMP>x10</SAMP> - Opera m=F3dulos de controle de for=E7a =
+el=E9trica=20
+  <LI><SAMP>X10x10-automate</SAMP> - Interface gr=E1fica para o =
+utilit=E1rio de=20
+  controle de for=E7a de linha X10=20
+  <LI><SAMP>xtend</SAMP> - Daemon monitor de status X10 </LI></UL>
+<HR>
+<A name=3Ds-aplic-l-outros></A>
+<H3>30.2.23 Outros</H3>
+<UL>
+  <LI><SAMP>acs</SAMP> - Simulador de Circuito Al's=20
+  <LI><SAMP>avra</SAMP> - Montador para microcontroladoras AVR Atmel=20
+  <LI><SAMP>avrp</SAMP> - Programador para microcontroladoras AVR Atmel=20
+  <LI><SAMP>chipmunk-log</SAMP> - Ferramenta de captura esquem=E1tica e =
+ambiente=20
+  de simula=E7=E3o=20
+  <LI><SAMP>cracklib2-dev</SAMP> - Uma biblioteca de checagem de senhas=20
+  <LI><SAMP>cracklib2</SAMP> - Uma biblioteca de checagem de senhas=20
+  <LI><SAMP>cracklib-runtime</SAMP> - Uma biblioteca de checagem de =
+senhas=20
+  <LI><SAMP>display-dhammapada</SAMP> - Mostra versos do Dhammapada=20
+  <LI><SAMP>fastdnaml</SAMP> - [Biologia] Uma ferramenta para =
+constru=E7=E3o de=20
+  =E1rvores da seq=FC=EAncia do DNA=20
+  <LI><SAMP>geda</SAMP> - GNU EDA -- Software de design eletr=F4nico=20
+  <LI><SAMP>gwave</SAMP> - Um visualizador waveform para simuladores =
+spice=20
+  <LI><SAMP>megahal</SAMP> - Um simulador de conversa=E7=E3o que pode =
+aprender=20
+  <LI><SAMP>mime-support</SAMP> - Arquivos MIME "mime.types" e =
+"mailcap", e=20
+  programas=20
+  <LI><SAMP>nitpic</SAMP> - Simulador para o Microcontrolador Microchip =
+PIC16C84=20
+
+  <LI><SAMP>pcb</SAMP> - Programa de Design de Placas de Circuito =
+Impresso=20
+  <LI><SAMP>puzzle</SAMP> - [Biology] Reconstruction of phylogenetic =
+trees by=20
+  maximum likelihood=20
+  <LI><SAMP>readseq</SAMP> - [Biologia] Convers=E3o entre formatos em =
+seq=FC=EAncia=20
+  <LI><SAMP>savant</SAMP> - Analizador VHDL 93 livre da University de=20
+  Cincinnati's=20
+  <LI><SAMP>screen</SAMP> - Um gerenciador de tela com a emula=E7=E3o de =
+terminal=20
+  VT100/ANSI=20
+  <LI><SAMP>seaview</SAMP> - [Biologia] Um editor de alinhamento em =
+m=FAltiplas=20
+  seq=FC=EAncias=20
+  <LI><SAMP>simulpic</SAMP> - Simulador de dispositivo PIC Microchip=20
+  <LI><SAMP>smtm</SAMP> - Show Me The Money is a configurable Perl/Tk =
+stock=20
+  ticker program=20
+  <LI><SAMP>spim</SAMP> - Emulador MIPS R2000/R3000=20
+  <LI><SAMP>xacc-smotif</SAMP> -Um programa de tratamento de finan=E7as =
+pessoais=20
+  <LI><SAMP>xacc</SAMP> - Um programa de tratamento de finan=E7as =
+pessoais=20
+  <LI><SAMP>xcircuit</SAMP> - Esquemas de circuitos de desenho de quase =
+tudo=20
+  </LI></UL>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ 30 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

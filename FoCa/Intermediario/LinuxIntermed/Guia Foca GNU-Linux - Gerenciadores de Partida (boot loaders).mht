@@ -1,0 +1,1656 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: Guia Foca GNU/Linux - Gerenciadores de Partida (boot loaders)
+Date: Mon, 6 Aug 2007 11:20:03 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-boot.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Gerenciadores de Partida (boot =
+loaders)</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-boot></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ 6 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 6 - Gerenciadores de Partida =
+(boot loaders)=20
+</H1>
+<HR>
+
+<P><EM>Gerenciadores de Partida</EM> s=E3o programas que carregam um =
+sistema=20
+operacional e/ou permitem escolher qual ser=E1 iniciado. Normalmente =
+este=20
+programas s=E3o gravados no <EM>setor de boot</EM> (inicializa=E7=E3o) =
+da parti=E7=E3o=20
+ativa ou no <EM>master boot record</EM> (MBR) do disco r=EDgido.=20
+<P>Este capitulo explica o funcionamento de cada um dos principais =
+gerenciadores=20
+de partida usados no <CODE>GNU/Linux</CODE>, em que situa=E7=F5es =E9 =
+recomendado seu=20
+uso, as caracter=EDsticas, como configura-lo e alguns exemplos de =
+configura=E7=E3o.=20
+<HR>
+<A name=3Ds-boot-lilo></A>
+<H2>6.1 LILO</H2>
+<P>O <CODE>LILO</CODE> (<EM>Linux Loader</EM>) =E9 sem d=FAvida o =
+gerenciador de=20
+partida padr=E3o para quem deseja iniciar o <CODE>GNU/Linux</CODE> =
+atrav=E9s do=20
+disco r=EDgido. Ele permite selecionar qual sistema operacional ser=E1 =
+iniciado=20
+(caso voc=EA possua mais de um) e funciona tanto em discos r=EDgidos =
+<EM>IDE</EM>=20
+como <EM>SCSI</EM>.=20
+<P>A sele=E7=E3o de qual sistema operacional e a passagem de =
+par=E2metros ao kernel=20
+pode ser feita automaticamente ou usando o aviso de <SAMP>boot:</SAMP> =
+do=20
+<CODE>LILO</CODE>.=20
+<HR>
+<A name=3Ds-boot-lilo-cfg></A>
+<H3>6.1.1 Criando o arquivo de configura=E7=E3o do LILO</H3>
+<P>Os dados para a cria=E7=E3o do novo <EM>setor de boot</EM> que =
+armazenar=E1 o=20
+gerenciador de partida s=E3o lidos do arquivo =
+<CODE>/etc/lilo.conf</CODE> Este=20
+arquivo pode ser criado em qualquer editor de textos (como o =
+<CODE>ae</CODE> ou=20
+<CODE>vi</CODE>). Normalmente ele =E9 criado durante a instala=E7=E3o de =
+sua=20
+distribui=E7=E3o <CODE>GNU/Linux</CODE> mas por algum motivo pode ser =
+preciso=20
+modifica-lo ou personaliza-lo (para incluir novos sistemas operacionais, =
+
+mensagens, alterar o tempo de espera para a partida autom=E1tica, etc).=20
+<P>O arquivo <CODE>/etc/lilo.conf</CODE> =E9 dividido em duas =
+se=E7=F5es:=20
+<EM>Geral</EM> e <EM>Imagens</EM>. A se=E7=E3o <EM>Geral</EM> vem no =
+inicio do=20
+arquivo e cont=E9m op=E7=F5es que ser=E3o usadas na inicializa=E7=E3o do =
+<CODE>Lilo</CODE> e=20
+par=E2metros que ser=E3o passados ao kernel. A se=E7=E3o =
+<EM>Imagens</EM> cont=E9m op=E7=F5es=20
+especificas identificando qual a parti=E7=E3o que cont=E9m o sistema =
+operacional, como=20
+ser=E1 montado inicialmente o sistema de arquivos, tabela de =
+parti=E7=E3o, o arquivo=20
+que ser=E1 carregado na mem=F3ria para inicializar o sistema, etc. =
+Abaixo um modelo=20
+do arquivo <CODE>/etc/lilo.conf</CODE> para sistemas que s=F3 possuem o=20
+<CODE>GNU/Linux</CODE> instalado: <PRE>     boot=3D/dev/hda1
+     compact
+     install=3Dtext
+     map=3D/boot/map
+     vga=3Dnormal
+     delay=3D20
+     lba32
+    =20
+     image=3D/vmlinuz
+         root=3D/dev/hda1
+         label=3DLinux
+         read-only
+</PRE>
+<P>Para criar um novo gerenciador de partida atrav=E9s do arquivo=20
+<CODE>/etc/lilo.conf</CODE> , execute o comando <SAMP>lilo</SAMP>.=20
+<P>No exemplo acima, o gerenciador de partida ser=E1 instalado em=20
+<CODE>/dev/hda1</CODE> (veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-id">Identifica=E7=E3o=20
+de discos e parti=E7=F5es em sistemas Linux, Se=E7=E3o 5.12</A>) , =
+utilizar=E1 um setor de=20
+boot compacto (compact), modo de v=EDdeo VGA normal (80x25), esperar=E1 =
+2 segundos=20
+antes de processar automaticamente a primeira se=E7=E3o =
+<SAMP>image=3D</SAMP> e=20
+carregar=E1 o kernel <CODE>/vmlinux</CODE> de <CODE>/dev/hda1</CODE>. =
+Para=20
+detalhes sobre op=E7=F5es que podem ser usadas neste arquivo veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-lilo-opcoes">Op=E7=F5es=20
+usadas no LILO, Se=E7=E3o 6.1.2</A>.=20
+<P>Para mostrar o aviso de <SAMP>boot:</SAMP>, voc=EA dever=E1 ligar as =
+teclas Caps=20
+Lock ou Scrool lock na partida ou pressionar a tecla <SAMP>Shift</SAMP> =
+durante=20
+os dois segundos de pausa. Outro m=E9todo =E9 incluir a op=E7=E3o =
+<SAMP>prompt</SAMP> na=20
+se=E7=E3o <EM>global</EM> para que o aviso de <SAMP>boot:</SAMP> seja =
+mostrado=20
+automaticamente ap=F3s carregar o <CODE>Lilo</CODE>.=20
+<P>Abaixo uma configura=E7=E3o para computadores com mais de um sistema =
+operacional=20
+(Usando <CODE>GNU/Linux</CODE> e <CODE>DOS</CODE>): <PRE>     =
+boot=3D/dev/hda1
+     compact
+     lba32
+     install=3Dmenu
+     map=3D/boot/map
+     vga=3Dnormal
+     delay=3D20
+     prompt
+    =20
+     image=3D/vmlinuz
+         root=3D/dev/hda1
+         label=3Dlinux
+         read-only
+    =20
+     other=3D/dev/hda2
+      table=3D/dev/hda
+      label=3Ddos
+</PRE>
+<P>O exemplo acima =E9 id=EAntico ao anterior, o que foi acrescentado =
+foi a op=E7=E3o=20
+<SAMP>prompt</SAMP> na se=E7=E3o <EM>geral</EM> (para que seja mostrado=20
+imediatamente o aviso de <SAMP>boot:</SAMP> no momento em que o=20
+<CODE>LILO</CODE> for carregado), e inclu=EDda uma imagem de disco=20
+<CODE>DOS</CODE> localizado em <CODE>/dev/hda2</CODE>. No momento da=20
+inicializa=E7=E3o =E9 mostrada a mensagem <SAMP>boot:</SAMP> e caso seja =
+digitado=20
+<SAMP>DOS</SAMP> e pressionado ENTER, o sistema iniciar=E1 o =
+<CODE>DOS</CODE>.=20
+Caso a tecla Enter seja pressionada sem especificar a imagem, a primeira =
+ser=E1=20
+carregada (neste caso o <CODE>GNU/Linux</CODE>).=20
+<P>Voc=EA pode substituir a palavra <SAMP>GNU/Linux</SAMP> da op=E7=E3o=20
+<SAMP>label</SAMP> por o n=FAmero <SAMP>1</SAMP> e <SAMP>DOS</SAMP> por=20
+<SAMP>2</SAMP>, desta forma o n=FAmero pode ser digitado para iniciar o =
+sistema=20
+operacional. Isto =E9 muito =FAtil para construir um menu usando a =
+op=E7=E3o=20
+<SAMP>message</SAMP>. Para detalhes veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-lilo-opcoes">Op=E7=F5es=20
+usadas no LILO, Se=E7=E3o 6.1.2</A>.=20
+<P>A se=E7=E3o <EM>Geral</EM> vem do inicio do arquivo at=E9 a palavra=20
+<SAMP>delay=3D20</SAMP>. A partir do primeiro aparecimento da palavra=20
+<SAMP>image</SAMP>, <SAMP>other</SAMP> ou <SAMP>range</SAMP>, tudo o que =
+vier=20
+abaixo ser=E1 interpretado como imagens de inicializa=E7=E3o.=20
+<P>Por padr=E3o, a imagem carregada =E9 a especificada por =
+<SAMP>default=3D</SAMP> ou=20
+a primeira que aparece no arquivo (caso <SAMP>default=3D</SAMP> n=E3o =
+seja=20
+especificado). Para carregar o outro sistema (o <CODE>DOS</CODE>), =
+digite o nome=20
+da imagem de disco no aviso de <SAMP>boot:</SAMP> (especificada em=20
+<SAMP>label=3D</SAMP>) que ser=E1 carregada. Voc=EA tamb=E9m pode passar =
+par=E2metros=20
+manualmente ao kernel digitando o nome da imagem de disco e uma =
+op=E7=E3o do kernel=20
+ou atrav=E9s do arquivo <CODE>/etc/lilo.conf</CODE> (veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-lilo-opcoes">Op=E7=F5es=20
+usadas no LILO, Se=E7=E3o 6.1.2</A>).=20
+<P>O <CODE>LILO</CODE> pode inicializar o seguintes tipos de imagens:=20
+<UL>
+  <LI>Imagens do kernel de um arquivo. Normalmente usado para iniciar o=20
+  <CODE>GNU/Linux</CODE> pelo disco r=EDgido e especificado pelo =
+par=E2metro=20
+  <SAMP>image=3D</SAMP>.=20
+  <LI>Imagens do kernel de um dispositivo de bloco (como um disquete). =
+Neste=20
+  caso o n=FAmero de setores a serem lidos devem ser especificados na =
+forma=20
+  <EM>PRIMEIRO-=DALTIMO</EM> ou <EM>PRIMEIRO+N=DAMERO de setores a serem =
+lidos</EM>.=20
+
+  <P>=C9 necess=E1rio especificar o par=E2metro <SAMP>image=3D</SAMP> e=20
+  <SAMP>range=3D</SAMP>, por exemplo: <PRE>     image=3D/dev/fd0
+        range=3D1+512
+</PRE>
+  <P>Todas as op=E7=F5es do kernel podem ser usadas na inicializa=E7=E3o =
+por=20
+  dispositivo. </P>
+  <LI>O setor de boot de outro sistema operacional (como o =
+<CODE>DOS</CODE>,=20
+  <CODE>OS/2</CODE>, etc). O setor de partida =E9 armazenado junto com a =
+tabela de=20
+  parti=E7=E3o no arquivo <CODE>/boot/map</CODE>. =C9 necess=E1rio =
+especificar o=20
+  par=E2metro <SAMP>OTHER=3Ddispositivo</SAMP> ou =
+<SAMP>OTHER=3Darquivo</SAMP> e a=20
+  inicializa=E7=E3o atrav=E9s de um setor de partida possui algumas =
+op=E7=F5es especiais=20
+  como o <SAMP>TABLE=3D</SAMP> (para especificar a tabela de =
+parti=E7=E3o) e o=20
+  <SAMP>MAP-DRIVE=3D</SAMP> (identifica=E7=E3o da unidade de discos pelo =
+sistema=20
+  operacional). Veja o exemplo desta configura=E7=E3o abaixo: <PRE>     =
+other=3D/dev/hda2
+       table=3D/dev/hda
+       label=3DDOS
+       map-drive=3D0x80
+        to =3D 0x81
+       map-drive=3D0x81
+        to =3D 0x80
+</PRE></LI></UL>
+<P>Observa=E7=F5es:=20
+<UL>
+  <LI>Caso o gerenciador de partida seja instalado no MBR do disco =
+r=EDgido=20
+  (boot=3D/dev/hda), o setor de boot do antigo sistema operacional =
+ser=E1=20
+  substitu=EDdo, retire uma c=F3pia do setor de boot para um disquete =
+usando o=20
+  comando <SAMP>dd if=3D/dev/hda of=3D/floppy/mbr bs=3D512 =
+count=3D1</SAMP> no=20
+  <CODE>GNU/Linux</CODE> para salvar o setor de boot em um disquete e =
+<SAMP>dd=20
+  if=3D/floppy/mbr of=3D/dev/hda bs=3D446 count=3D1</SAMP> para =
+restaura-lo. No=20
+  <CODE>DOS</CODE> voc=EA pode usar o comando <CODE>fdisk /mbr</CODE> =
+para criar=20
+  um novo Master Boot Record.=20
+  <LI>Ap=F3s qualquer modifica=E7=E3o no arquivo =
+<CODE>/etc/lilo.conf</CODE> , o=20
+  comando <SAMP>lilo</SAMP> dever=E1 ser novamente executado para =
+atualizar o=20
+  setor de partida do disco r=EDgido. Isto tamb=E9m =E9 v=E1lido caso o =
+kernel seja=20
+  atualizado ou a parti=E7=E3o que cont=E9m a imagem do kernel =
+desfragmentada.=20
+  <LI>A limita=E7=E3o de 1024 cilindros do <CODE>Lilo</CODE> n=E3o =
+existe mais a=20
+  partir da vers=E3o 21.4.3 (recomendada, por conter muitas =
+corre=E7=F5es) e=20
+  superiores.=20
+  <LI>A reinstala=E7=E3o, formata=E7=E3o de sistemas <CODE>DOS</CODE> e=20
+  <CODE>Windows</CODE> pode substituir o setor de partida do HD e assim =
+o=20
+  gerenciador de partida, tornando imposs=EDvel a inicializa=E7=E3o do=20
+  <CODE>GNU/Linux</CODE>. Antes de reinstalar o <CODE>DOS</CODE> ou=20
+  <CODE>Windows</CODE>, verifique se possui um disquete de partida do=20
+  <CODE>GNU/Linux</CODE>.=20
+  <P>Para gerar um novo boot loader, coloque o disquete na unidade e =
+ap=F3s o=20
+  aviso <SAMP>boot:</SAMP> ser mostrado, digite <SAMP>linux=20
+  root=3D/dev/hda1</SAMP> (no lugar de <CODE>/dev/hda1</CODE> voc=EA =
+coloca a=20
+  parti=E7=E3o raiz do <CODE>GNU/Linux</CODE>), o sistema iniciar=E1. =
+Dentro do=20
+  <CODE>GNU/Linux</CODE>, digite o comando <CODE>lilo</CODE> para gerar =
+um novo=20
+  setor de partida.=20
+  <P>Agora reinicie o computador, tudo voltar=E1 ao normal. =
+</P></LI></UL>
+<HR>
+<A name=3Ds-boot-lilo-opcoes></A>
+<H3>6.1.2 Op=E7=F5es usadas no LILO</H3>
+<P>Esta se=E7=E3o traz op=E7=F5es =FAteis usadas no arquivo =
+<CODE>lilo.conf</CODE> com=20
+explica=E7=F5es sobre o que cada uma faz. As op=E7=F5es est=E3o =
+divididas em duas partes:=20
+As usadas na se=E7=E3o <EM>Global</EM> e as da se=E7=E3o =
+<EM>Imagens</EM> do arquivo=20
+<CODE>lilo.conf</CODE>.=20
+<P><SAMP>Global</SAMP>=20
+<UL>
+  <LI><SAMP>backup=3D[arquivo/dispositivo]</SAMP> - Copia o setor de =
+partida=20
+  original para o arquivo ou dispositivo especificado. </LI></UL>
+<UL>
+  <LI><SAMP>boot=3Ddispositivo</SAMP> - Define o nome do dispositivo =
+onde ser=E1=20
+  gravado o setor de partida do <CODE>LILO</CODE> (normalmente =E9 usada =
+a=20
+  parti=E7=E3o ativa ou o Master Boot Record - MBR). Caso n=E3o seja =
+especificado, o=20
+  dispositivo montado como a parti=E7=E3o raiz ser=E1 usado. </LI></UL>
+<UL>
+  <LI><SAMP>compact</SAMP> - Tenta agrupar requisi=E7=F5es de leitura =
+para setores=20
+  seguintes ao sendo lido. Isto reduz o tempo de inicializa=E7=E3o e =
+deixa o mapa=20
+  menor. =C9 normalmente recomendado em disquetes. </LI></UL>
+<UL>
+  <LI><SAMP>default=3Dimagem</SAMP> - Usa a imagem especificada como =
+padr=E3o ao=20
+  inv=E9s da primeira encontrada no arquivo <CODE>lilo.conf</CODE>. =
+</LI></UL>
+<UL>
+  <LI><SAMP>delay=3D[num]</SAMP> - Permite ajustar o n=FAmero de =
+segundos (em=20
+  d=E9cimos de segundos) que o gerenciador de partida deve aguardar para =
+carregar=20
+  a primeira imagem de disco (ou a especificada por =
+<SAMP>default=3D</SAMP>). Esta=20
+  pausa lhe permite selecionar que sistema operacional ser=E1 carregado. =
+</LI></UL>
+<UL>
+  <LI><SAMP>install=3Dinterface</SAMP> - Especifica que interface ser=E1 =
+usada para=20
+  exibi=E7=E3o de menu com as op=E7=F5es de inicializa=E7=E3o ao =
+usu=E1rio. As seguintes=20
+  op=E7=F5es s=E3o permitidas:=20
+  <UL>
+    <LI><SAMP>text</SAMP> - Exibe uma mensagem de texto (exibida =
+atrav=E9s do=20
+    par=E2metro <EM>message=3D</EM>) na tela. Esta =E9 a recomendada =
+para terminais.=20
+    <LI><SAMP>menu</SAMP> - Exibe um menu que lhe permite selecionar =
+atrav=E9s de=20
+    uma interface de menu a op=E7=E3o de inicializa=E7=E3o. Esta =E9 a =
+padr=E3o.=20
+    <LI><SAMP>bmp</SAMP> - Exibe um bitmap gr=E1fico com a resolu=E7=E3o =
+de 640x480=20
+    com 16 ou 256 cores. </LI></UL></LI></UL>
+<UL>
+  <LI><SAMP>lba32</SAMP> - Permite que o <CODE>LILO</CODE> quebre o =
+limite de=20
+  1024 cilindros do disco r=EDgido, inicializando o =
+<CODE>GNU/Linux</CODE> em um=20
+  cilindro acima deste atrav=E9s do acesso . Note que isto requer =
+compatibilidade=20
+  com o BIOS, mais especificamente que tenha suporte a chamadas int 0x13 =
+e=20
+  AH=3D0x42. =C9 recomendado o seu uso. </LI></UL>
+<UL>
+  <LI><SAMP>map=3Darquivo-mapa</SAMP> - Especifica a localiza=E7=E3o do =
+arquivo de=20
+  mapa (<CODE>.map</CODE>). Se n=E3o for especificado, =
+<CODE>/boot/map</CODE> =E9=20
+  usado. </LI></UL>
+<UL>
+  <LI><SAMP>message=3Darquivo</SAMP> - Especifica um arquivo que =
+cont=E9m uma=20
+  mensagem que ser=E1 mostrada antes do aviso de <SAMP>boot:</SAMP>. =
+Nenhuma=20
+  mensagem =E9 mostrada at=E9 que seja pressionada a tecla =
+<SAMP>Shift</SAMP> ap=F3s=20
+  mostrar a palavra <SAMP>LILO</SAMP>. O tamanho da mensagem deve ser no =
+m=E1ximo=20
+  65535 bytes. O arquivo de mapa deve ser novamente criado caso a =
+mensagem seja=20
+  retirada ou modificada. Na mensagem, o caracter <SAMP>FF</SAMP> =
+(CTRL+L) limpa=20
+  a tela. </LI></UL>
+<UL>
+  <LI><SAMP>nowarn</SAMP> - N=E3o mostra mensagens de alerta. </LI></UL>
+<UL>
+  <LI><SAMP>password=3Dsenha</SAMP> - Permite proteger todas as imagens =
+de disco=20
+  com uma =FAnica senha. Caso a senha esteja incorreta, o LILO =E9 =
+novamente=20
+  carregado. </LI></UL>
+<UL>
+  <LI><SAMP>prompt</SAMP> - Mostra imediatamente o aviso de =
+<SAMP>boot:</SAMP>=20
+  ao inv=E9s de mostrar somente quando a tecla <SAMP>Shift</SAMP> =E9 =
+pressionada.=20
+  </LI></UL>
+<UL>
+  <LI><SAMP>verbose=3D[num]</SAMP> - Ativa mensagens sobre o =
+processamento do=20
+  <CODE>LILO</CODE>. Os n=FAmeros podem ser especificados de 1 a 5, =
+quanto maior o=20
+  n=FAmero, maior a quantidade de detalhes mostrados. </LI></UL>
+<UL>
+  <LI><SAMP>timeout=3D[num]</SAMP> - Ajusta o tempo m=E1ximo de espera =
+(em d=E9cimos=20
+  de segundos) de digita=E7=E3o no teclado. Se nenhuma tecla =E9 =
+pressionada no tempo=20
+  especificado, a primeira imagem =E9 automaticamente carregada. =
+Igualmente a=20
+  digita=E7=E3o de senha =E9 interrompida se o usu=E1rio estiver inativo =
+por este=20
+  per=EDodo. </LI></UL>
+<P>Adicionalmente as op=E7=F5es de imagem do kernel <SAMP>append, =
+ramdisk,=20
+read-only, read-write, root e vga</SAMP> podem ser especificadas na =
+se=E7=E3o=20
+<EM>global</EM>. <SAMP>Op=E7=F5es por Imagem</SAMP>=20
+<P>As op=E7=F5es por imagem iniciam com uma das seguintes op=E7=F5es:=20
+<SAMP>image=3D</SAMP>, <SAMP>other=3D</SAMP> ou <SAMP>range=3D</SAMP>. =
+Op=E7=F5es usadas=20
+por cada imagem:=20
+<UL>
+  <LI><SAMP>table=3Ddispositivo</SAMP> - Indica o dispositivo que =
+cont=E9m a tabela=20
+  de parti=E7=E3o para aquele dispositivo. Necess=E1rio apenas para =
+imagens=20
+  especificadas por <SAMP>other=3D</SAMP>. </LI></UL>
+<UL>
+  <LI><SAMP>unsafe</SAMP> - N=E3o acessa o setor de boot no momento da =
+cria=E7=E3o do=20
+  mapa. Isto desativa algumas checagens, como a checagem da tabela de =
+parti=E7=E3o.=20
+  <SAMP>unsafe</SAMP> e <SAMP>table=3D</SAMP> s=E3o incompat=EDveis. =
+</LI></UL>
+<UL>
+  <LI><SAMP>label=3D[nome]</SAMP> - Permite especificar um nome para a =
+imagem.=20
+  Este nome ser=E1 usado na linha <SAMP>boot:</SAMP> para inicializar o =
+sistema.=20
+  </LI></UL>
+<UL>
+  <LI><SAMP>alias=3D[nome]</SAMP> - Apelido para a imagem de disco. =C9 =
+como um=20
+  segundo <SAMP>label</SAMP>. </LI></UL>
+<UL>
+  <LI><SAMP>optional</SAMP> - Ignora a imagem caso n=E3o estiver =
+dispon=EDvel no=20
+  momento da cria=E7=E3o do mapa. =C9 =FAtil para especificar kernels =
+que n=E3o est=E3o=20
+  sempre presentes no sistema. </LI></UL>
+<UL>
+  <LI><SAMP>password=3Dsenha</SAMP> - Protege a imagem atual com a =
+senha. Caso a=20
+  senha esteja incorreta, o setor de partida do <CODE>Lilo</CODE> =E9 =
+novamente=20
+  carregado. </LI></UL>
+<UL>
+  <LI><SAMP>restricted</SAMP> - A senha somente =E9 pedida para iniciar =
+a imagem=20
+  se o sistema for iniciado no modo single. </LI></UL>
+<P>Tamb=E9m podem ser usados par=E2metros de inicializa=E7=E3o do kernel =
+no arquivo=20
+<CODE>/etc/lilo.conf</CODE>, veja a se=E7=E3o <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-kernelparam">Par=E2metros=
+=20
+de inicializa=E7=E3o passados ao kernel, Se=E7=E3o 6.3</A> para maiores =
+detalhes.=20
+<HR>
+<A name=3Ds-boot-lilo-exemplo></A>
+<H3>6.1.3 Um exemplo do arquivo de configura=E7=E3o lilo.conf</H3>
+<P>Abaixo um exemplo do arquivo <CODE>/etc/lilo.conf</CODE> que poder=E1 =
+ser usado=20
+em instala=E7=F5es <CODE>GNU/Linux</CODE> com o <CODE>DOS</CODE>. <PRE>  =
+   boot=3D/dev/hda1        #Instala o LILO em /dev/hda1
+     compact              =20
+     install=3Dmenu
+     map=3D/boot/map
+     message=3D/etc/lilo.message  #mensagem que ser=E1 mostrada na tela
+     default=3D1          #Carrega a Imagem especificada por label=3D1 =
+como padr=E3o
+     vga=3Dnormal         #usa o modo de video 80x25 ao iniciar o Linux
+     delay=3D20           #aguarda 2 segundos antes de iniciar a imagem =
+padr=E3o=20
+     lba32              #permite quebrar o limite de 1024 cilindros na =
+inicializa=E7=E3o
+     prompt             #mostra o aviso de "boot:" logo que o LILO =E9 =
+carregado
+    =20
+     image=3D/vmlinuz     #especifica o arquivo que cont=E9m a primeira =
+imagem
+       root=3D/dev/hda1   #parti=E7=E3o onde a imagem acima esta =
+localizada
+       label=3D1          #identifica=E7=E3o da imagem de disco
+       read-only        #monta inicialmente como somente leitura
+       password=3D12345   #Usa a senha 12345
+       restricted       #somente quando iniciar com o par=E2metro single
+    =20
+     other=3D/dev/hda2    #especifica outro sistema que ser=E1 carregado
+      table=3D/dev/hda    #a tabela de parti=E7=E3o dele est=E1 em =
+/dev/hda
+      label=3D2           #identifica=E7=E3o desta imagem de disco
+      password=3D12345    #pede a senha antes de iniciar este sistema
+</PRE>
+<P>Voc=EA pode usar o exemplo acima como base para construir sua =
+pr=F3pria=20
+configura=E7=E3o personalizada do <CODE>/etc/lilo.conf</CODE> mas n=E3o =
+se esque=E7a de=20
+modificar as tabelas de parti=E7=F5es para seu sistema. Se voc=EA usa o =
+<CODE>Windows=20
+NT 4.0</CODE>, <CODE>Windows NT 5.0 (Windows 2000)</CODE> ou o=20
+<CODE>OS/2</CODE>, recomendo ler o <SAMP>DOS+Windows+OS/2-HOWTO</SAMP>.=20
+<P>Ap=F3s criar seu arquivo <CODE>/etc/lilo.conf</CODE> , execute o =
+comando=20
+<SAMP>lilo</SAMP> e se tudo ocorrer bem, o <CODE>LILO</CODE> ser=E1 =
+instalado.=20
+<HR>
+<A name=3Ds-boot-grub></A>
+<H2>6.2 GRUB</H2>
+<P>(Os detalhes contidos na se=E7=E3o sobre o <CODE>GRUB</CODE>, foram =
+integralmente=20
+desenvolvidos por Alexandre Costa <CODE><A=20
+href=3D"mailto:alebyte@bol.com.br">alebyte@bol.com.br</A></CODE> como =
+contribui=E7=E3o=20
+ao guia FOCA GNU/Linux.)=20
+<P>O <CODE>GRUB</CODE> (<EM>Grand Unified Boot Loader</EM>) =E9 mais uma =
+
+alternativa como gerenciador de boot e apresenta alguns recursos extras =
+com=20
+rela=E7=E3o as outras op=E7=F5es dispon=EDveis. Ele =E9 flex=EDvel, =
+funcional e poderoso,=20
+podendo inicializar sistemas operacionais como o <CODE>Windows</CODE> =
+(9x, ME,=20
+NT, 2000 e XP), <CODE>Dos</CODE>, <CODE>Linux</CODE>, <CODE>GNU =
+Hurd</CODE>,=20
+<CODE>*BSD</CODE>, <CODE>OS/2</CODE> e etc. Podemos destacar tamb=E9m o =
+suporte=20
+aos sistemas de arquivos ext2 (Linux), ext3 e reiserfs (novos sistemas =
+de=20
+arquivos journaling do Linux), FAT16 e FAT32 (Win 9x/ME), FFS (Fast File =
+System=20
+usado no *BSD), minix (MINIX OS) e etc.=20
+<P>Por utilizar o padr=E3o Multiboot ele =E9 capaz de carregar diversas =
+imagens de=20
+boot e m=F3dulos. Por esse motivo ele =E9 o =FAnico gerenciador de =
+inicializa=E7=E3o capaz=20
+de carregar o conjunto de servidores do GNU Hurd. O GRUB tamb=E9m =
+permite buscar=20
+imagens do kernel pela rede, por cabo seriais, suporta discos r=EDgidos =
+IDE e=20
+SCSI, detecta toda a mem=F3ria RAM dispon=EDvel no sistema, tem =
+interface voltada=20
+para linha de comandos ou menus de escolha, al=E9m de suportar sistemas =
+sem discos=20
+e terminais remotos.=20
+<P>Como possui in=FAmeros recursos, ser=E1 apresentada sua =
+utiliza=E7=E3o b=E1sica,=20
+ficando como sugest=E3o ao leitor procurar se aprofundar mais em suas=20
+possibilidades de uso e configura=E7=E3o.=20
+<HR>
+<A name=3Ds-boot-grub-part></A>
+<H3>6.2.1 Como o GRUB trabalha com discos e parti=E7=F5es</H3>
+<P>O GRUB trabalha com uma nota=E7=E3o diferente para apontar discos e =
+parti=E7=F5es=20
+sendo necess=E1rio algumas explica=E7=F5es antes de prosseguir. Veja a =
+tabela=20
+comparativa: <PRE>     No Linux                No GRUB
+    =20
+     /dev/hda                (hd0)
+     /dev/hda1               (hd0,0)
+     /dev/hda2               (hd0,1)
+    =20
+     /dev/hdb                (hd1)
+     /dev/hdb1               (hd1,0)
+     /dev/hdb2               (hd1,1)
+    =20
+     /dev/sda                (hd0)   # Disco SCSI ID 0
+     /dev/sda1               (hd0,0) # Disco SCSI ID 0, parti=E7=E3o 1
+     /dev/sda2               (hd0,1) # Disco SCSI ID 0, parti=E7=E3o 2
+    =20
+     /dev/sdb                (hd1)   # Disco SCSI ID 1
+     /dev/sdb1               (hd1,0) # Disco SCSI ID 1, parti=E7=E3o 1
+     /dev/sdb2               (hd1,1) # Disco SCSI ID 1, parti=E7=E3o 2
+    =20
+     /dev/fd0                (fd0)
+</PRE>
+<P><STRONG>OBS:</STRONG> Os discos <EM>IDE</EM> e <EM>SCSI</EM> s=E3o=20
+referenciados ambos como (<SAMP>hd?</SAMP>) pelo <CODE>GRUB</CODE>. =
+N=E3o h=E1=20
+distin=E7=E3o entre os discos e de modo geral a identifica=E7=E3o de =
+unidades IDE =E9=20
+menor do que qualquer tipo de drive SCSI, salvo se voc=EA alterar a =
+seq=FC=EAncia de=20
+inicializa=E7=E3o (boot) na BIOS.=20
+<P>Para saber como o Linux trabalha com parti=E7=F5es veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-id">Identifica=E7=E3o=20
+de discos e parti=E7=F5es em sistemas Linux, Se=E7=E3o 5.12</A>.=20
+<HR>
+<A name=3Ds-boot-grub-install></A>
+<H3>6.2.2 Instalando o GRUB</H3>
+<P>A instala=E7=E3o do <CODE>GRUB</CODE> ao contr=E1rio da =
+instala=E7=E3o do=20
+<CODE>LILO</CODE> (<A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-lilo">LILO,=20
+Se=E7=E3o 6.1</A>), s=F3 precisa ser executada uma =FAnica vez. Caso =
+seja necess=E1ria=20
+alguma mudan=E7a como por exemplo adicionar uma nova imagem, esta pode =
+ser feita=20
+apenas editando o arquivo de configura=E7=E3o <CODE>menu.lst</CODE>.=20
+<HR>
+<A name=3Ds-boot-grub-install-mbr></A>
+<H4>6.2.2.1 No MBR</H4>
+<P>Um m=E9todo simples de adicionar o <CODE>GRUB</CODE> para gerenciar =
+seu MBR=20
+(<EM>Master Boot Record</EM>) =E9 rodando o seguinte comando (como =
+superusu=E1rio): <PRE>     # /sbin/grub-install /dev/hda
+</PRE>
+<P>Este comando grava o <CODE>GRUB</CODE> no MBR do primeiro disco e =
+cria o=20
+diret=F3rio <CODE>/boot/grub</CODE> onde estar=E3o os arquivos =
+necess=E1rios para o=20
+seu funcionamento. Neste ponto o <CODE>GRUB</CODE> j=E1 est=E1 instalado =
+e quando=20
+voc=EA reiniciar seu computador ir=E1 se deparar com uma linha de =
+comandos, onde=20
+ter=E1 que carregar a imagem do kernel manualmente. Mais adiante ser=E1 =
+explorada a=20
+utiliza=E7=E3o desta linha de comando que =E9 muito eficiente.=20
+<P>Provavelmente voc=EA achar=E1 mais interessante copiar o arquivo de =
+configura=E7=E3o=20
+de exemplos do <CODE>GRUB</CODE> e otimiz=E1-lo =E0s suas necessidades. =
+Note que=20
+isto n=E3o exclui a possibilidade de utilizar a linha de comando, apenas =
+cria uma=20
+interface de menus onde voc=EA pode configurar v=E1rias op=E7=F5es de =
+boot de uma forma=20
+organizada, automatizada e funcional. Copie este arquivo para o =
+diret=F3rio=20
+<CODE>/boot/grub</CODE> com o seguinte comando: <PRE>     # cp =
+/usr/share/doc/grub/examples/menu.lst /boot/grub
+</PRE>
+<P>Por ser um arquivo de exemplos ser=E1 necess=E1rio otimiz=E1-lo de =
+acordo com suas=20
+necessidades, o que ser=E1 abordado mais a frente.=20
+<HR>
+<A name=3Ds-boot-grub-install-fd-cmd></A>
+<H3>6.2.3 No disco flex=EDvel (somente linha de comando)</H3>
+<P>Quando criamos um disquete de partida, este funcionar=E1 em um =
+sistema=20
+qualquer, podendo utilizar este disquete em v=E1rias m=E1quinas =
+diferentes ou em uma=20
+m=E1quina em que tenha tido algum problema com o <CODE>GRUB</CODE> no =
+MBR. Coloque=20
+um disquete virgem e digite os seguintes comandos: <PRE>     # dd =
+if=3D/usr/lib/grub/i386-pc/stage1 of=3D/dev/fd0 count=3D1
+     # dd if=3D/usr/lib/grub/i386-pc/stage2 of=3D/dev/fd0 seek=3D1
+</PRE>
+<P>Estes comandos permitem que seja apresentada a linha de comando do =
+grub=20
+quando este disco for utilizado para boot.=20
+<HR>
+<A name=3Ds-boot-grub-install-fd-menu></A>
+<H3>6.2.4 No disco flex=EDvel (com interface de menu)</H3>
+<P>Quando foi criado o disquete de partida anteriormente, este s=F3 nos =
+permitia=20
+utilizar a linha de comando sendo necess=E1rio carregar o =
+<CODE>menu.lst</CODE>=20
+pelo disco r=EDgido (o qual deve estar presente). Em alguns casos este =
+disco=20
+satisfaz as necessidades b=E1sicas mas pode haver um momento em que =
+voc=EA deseje=20
+ter um disquete que funcione com v=E1rios sistema e n=E3o dependa de um =
+disco fixo.=20
+<P>Digite os seguintes comandos: <PRE>     # mke2fs /dev/fd0
+     # mount /dev/fd0 /floppy -t ext2
+     # mkdir /floppy/grub
+     # cp /usr/lib/grub/i386-pc/stage[12] /floppy/grub
+     # cp /usr/share/doc/grub/examples/menu.lst /floppy/grub
+     # umount /floppy
+     # /sbin/grub
+</PRE>
+<P>Este =FAltimo comando disponibiliza a linha de comando do GRUB. =
+Digite os=20
+seguintes comandos: <PRE>     grub&gt; install (fd0)/grub/stage1 d (fd0) =
+(fd0)/grub/stage2 p (fd0)/grub/menu.lst
+     grub&gt; quit
+</PRE>
+<P>Neste momento o disquete est=E1 pronto. Note que o =
+<CODE>menu.lst</CODE> que=20
+foi copiado para ele =E9 um arquivo de exemplo, sendo necess=E1rio que =
+voc=EA o=20
+configure de acordo com suas necessidades.=20
+<HR>
+<A name=3Ds-boot-grub-opcoescfg></A>
+<H3>6.2.5 Op=E7=F5es do arquivo de configura=E7=E3o</H3>
+<P>Esta se=E7=E3o descreve o arquivo <CODE>menu.lst</CODE> com =
+explica=E7=F5es sobre as=20
+op=E7=F5es mais usadas. Este arquivo =E9 dividido em par=E2metros =
+Globais, que afetam o=20
+arquivo todo e par=E2metros que s=F3 tem efeito para as imagens do =
+sistema que ser=E1=20
+carregado. Algumas op=E7=F5es podem ser passadas para o kernel do Linux =
+no momento=20
+do boot, algumas delas tamb=E9m ser=E3o detalhadas.=20
+<DL>
+  <DT>Par=E2metros Globais=20
+  <DD>
+  <UL>
+    <LI><SAMP>timeout</SAMP> =3D Define um tempo (em segundos) de =
+espera. Se=20
+    nenhuma tecla for pressionada, carrega a imagem padr=E3o.=20
+    <LI><SAMP>default</SAMP> =3D Define qual ser=E1 a op=E7=E3o padr=E3o =
+que deve ser=20
+    automaticamente selecionada quando nenhuma outra for especificada em =
+um=20
+    tempo definido por timeout.=20
+    <LI><SAMP>fallback</SAMP> =3D Caso ocorra algum erro inesperado e a =
+op=E7=E3o=20
+    padr=E3o n=E3o possa ser carregada, este par=E2metro define qual a =
+outra op=E7=E3o=20
+    deve ser utilizada.=20
+    <LI><SAMP>color</SAMP> =3D Permite que voc=EA escolha as cores =
+usadas no menu de=20
+    boot.=20
+    <LI><SAMP>password</SAMP> =3D Permite que voc=EA especifique uma =
+senha. Est=E1=20
+    ser=E1 solicitada sempre que houver necessidade de realizar uma =
+fun=E7=E3o que n=E3o=20
+    seja carregar as imagens dispon=EDveis, como por exemplo acessar a =
+linha de=20
+    comandos do GRUB. Voc=EA pode utilizar tamb=E9m o par=E2metro =
+password para=20
+    esconder um arquivo que contenha outras configura=E7=F5es, como um =
+menu.lst=20
+    secreto. O arquivo pode ter um nome qualquer. <PRE>     Ex.: =
+password =3D senha (hd0,0)/boot/grub/secret.conf
+</PRE>
+    <P>Voc=EA pode ter v=E1rias entradas do par=E2metro "password" em um =
+mesmo arquivo=20
+    sendo que uma delas =E9 usada para bloquear o acesso as =
+imagens/linha de=20
+    comandos e as outras usadas para carregar arquivos de op=E7=F5es do =
+GRUB. Quando=20
+    voc=EA digitar <SAMP>p</SAMP> para entrar com a senha, voc=EA pode =
+digitar a=20
+    senha que protege as imagens/linha de comandos ou a que =E9 =
+utilizada para=20
+    carregar os arquivos de op=E7=F5es. </P>
+    <LI><SAMP>hiddenmenu</SAMP> =3D Est=E1 op=E7=E3o faz com que o menu =
+de op=E7=F5es n=E3o=20
+    seja mostrado e de boot na imagem especificada por "default" depois =
+de=20
+    expirado o tempo definido em <SAMP>timeout</SAMP>. O usu=E1rio pode =
+requisitar=20
+    o menu com as op=E7=F5es pressionando a tecla &lt;ESC&gt; antes que =
+o tempo=20
+    definido em timeout expire. </LI></UL></DD></DL>
+<DL>
+  <DT>Par=E2metros que afetam apenas as imagens=20
+  <DD>
+  <UL>
+    <LI><SAMP>title</SAMP> =3D Define um texto que ser=E1 apresentado no =
+menu de=20
+    boot para identificar o sistema a ser inicializado.=20
+    <LI><SAMP>root</SAMP> =3D Determina qual a parti=E7=E3o raiz do =
+sistema a ser=20
+    inicializada.=20
+    <LI><SAMP>rootnoverify</SAMP> =3D Id=EAntica a op=E7=E3o =
+<SAMP>root</SAMP>, mas n=E3o=20
+    tenta montar a parti=E7=E3o-alvo, o que =E9 necess=E1rio para alguns =
+sistemas como=20
+    <CODE>Dos</CODE> e <CODE>Windows</CODE>.=20
+    <LI><SAMP>kernel</SAMP> =3D Nesta op=E7=E3o voc=EA informa qual o =
+kernel vai ser=20
+    inicializado. Voc=EA pode passar par=E2metros diretamente para o =
+kernel tamb=E9m. <PRE>     Ex.: kernel (hd0,0)/boot/vmlinuz-2.4.16 =
+vga=3D6
+</PRE>
+    <LI><SAMP>module</SAMP> =3D Faz com que algum m=F3dulo necess=E1rio =
+para o boot=20
+    seja carregado. Lembre-se que estes n=E3o s=E3o m=F3dulos do kernel =
+(m=F3dulos de=20
+    som, rede, etc.) e sim m=F3dulos necess=E1rios ao boot de alguns =
+sistemas, como=20
+    por exemplo o <CODE>GNU Hurd</CODE>.=20
+    <LI><SAMP>lock</SAMP> =3D Quando voc=EA quiser controlar se uma =
+pessoa pode=20
+    iniciar um sistema que esteja listado nas op=E7=F5es do menu de =
+boot, voc=EA pode=20
+    utilizar esta op=E7=E3o que faz com que a senha especificada com o =
+comando=20
+    "password" seja solicitada no momento em que se tentar carregar a =
+imagem em=20
+    quest=E3o.=20
+    <LI><SAMP>pause</SAMP> =3D Emite uma mensagem na tela e espera uma =
+tecla ser=20
+    pressionada.=20
+    <LI><SAMP>makeactive</SAMP> =3D Torna a parti=E7=E3o ativa. Este =
+comando est=E1=20
+    limitado a parti=E7=F5es prim=E1rias dos discos.=20
+    <LI><SAMP>chainloader</SAMP> =3D Alguns sistemas como o Windows ou =
+Dos=20
+    armazenam seu pr=F3prio gerenciador de boot no in=EDcio da =
+parti=E7=E3o em que ele=20
+    est=E1 instalado. Para efetuar o boot destes sistemas atrav=E9s do =
+GRUB, voc=EA=20
+    precisa pedir para que o gerenciador de boot de tal sistema seja =
+carregado e=20
+    fa=E7a seu trabalho, dando o boot.=20
+    <LI><SAMP>hide</SAMP> e <SAMP>unhide</SAMP> =3D Esconde e mostra =
+parti=E7=E3o=20
+    respectivamente. Estas duas op=E7=F5es s=E3o necess=E1rias quando =
+houver mais de uma=20
+    vers=E3o do Dos ou Windows na m=E1quina em parti=E7=F5es diferentes, =
+j=E1 que estes=20
+    sistemas detectam automaticamente a parti=E7=E3o e quase sempre o =
+fazem de modo=20
+    errado. Suponha o Windows na primeira parti=E7=E3o prim=E1ria =
+(hd0,0) e o Dos na=20
+    segunda parti=E7=E3o prim=E1ria (hd0,1). Quando quisermos carregar =
+estes sistemas=20
+    devemos proceder da seguinte maneira: <PRE>     title Windows
+     hide (hd0,1)
+     unhide (hd0,0)
+     rootnoverify (hd0,0)
+     chainloader  +1
+     makeactive
+    =20
+     title Dos
+     hide (hd0,0)
+     unhide (hd0,1)
+     rootnoverify (hd0,1)
+     chainloader  +1
+     makeactive
+</PRE>
+    <LI><SAMP>map</SAMP> =3D Alguns sistemas n=E3o permitem ser =
+inicializados quando=20
+    n=E3o est=E3o no primeiro disco (Dos, Win 9x, etc.). Para resolver =
+esta e outras=20
+    situa=E7=F5es o <CODE>GRUB</CODE> tem um comando que permite enganar =
+tal sistema=20
+    mapeando as unidades de disco do modo como lhe for mais conveniente. =
+
+    <P>Imagine que voc=EA tenha o primeiro disco (hd0) com o GNU/Linux =
+instalado e=20
+    em um outro disco (hd1) com o Windows/Dos instalado. O Windows/Dos =
+n=E3o=20
+    permitem serem inicializados desta forma e como solu=E7=E3o voc=EA =
+poderia usar a=20
+    seguinte entrada no arquivo de configura=E7=F5es do GRUB: <PRE>     =
+title Windows
+     unhide (hd1,0)
+     rootnoverify (hd1,0)
+     chainloader +1
+     map (hd1) (hd0)
+     makeactive
+</PRE>
+    <P>Isso faz com que o disco (hd1), onde esta o Windows/Dos, seja =
+apresentado=20
+    a este sistema como (hd0) "enganado" o mesmo e possibilitando o =
+boot.=20
+    </P></LI></UL></DD></DL>
+<DL>
+  <DT>Par=E2metros enviados diretamente ao kernel=20
+  <DD>Pode ser necess=E1rio passar alguns par=E2metros para o kernel no =
+momento do=20
+  boot. Para maiores informa=E7=F5es ver a se=E7=E3o <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-kernelparam">Par=E2metros=
+=20
+  de inicializa=E7=E3o passados ao kernel, Se=E7=E3o 6.3</A>. Voc=EA =
+pode passar os=20
+  par=E2metros da seguinte maneira: <PRE>     # Exemplo de entrada no =
+'menu.lst'.
+     title Linux 2.4.16
+     root (hd0,0)
+     kernel (hd0,0)/boot/vmlinuz-2.4.16 vga=3D6 mem=3D512M ramdisk=3D0
+</PRE>
+  <P>Neste exemplo, a linha com o comando "kernel" =E9 usada para =
+indicar qual=20
+  imagem deve ser carregada. As op=E7=F5es que seguem (vga, mem e =
+ramdisk) s=E3o=20
+  par=E2metros que devem ser passados diretamente ao kernel do sistema a =
+ser=20
+  carregado. </P></DD></DL>
+<HR>
+<A name=3Ds-boot-grub-exemplo></A>
+<H3>6.2.6 Um exemplo de arquivo de configura=E7=E3o</H3><PRE>     # =
+Exemplo de arquivo de configura=E7=E3o do GRUB.
+     # Note que voc=EA pode usar o  caracter '#' para fazer =
+coment=E1rios.
+    =20
+     # Se ap=F3s 30 segundos nenhuma tecla for pressionada, carrega a =
+imagem padr=E3o.
+     timeout 30
+    =20
+     # Define a primeira imagem como padr=E3o.
+     default 0
+    =20
+     # Caso a imagem padr=E3o n=E3o funcione carrega a imagem definida =
+aqui.
+     fallback 1
+    =20
+     # Define as cores que ser=E3o usadas no menu.
+     color light-cyan/black white/blue
+    =20
+     # Permite utilizar uma senha.
+     password minha-senha-secreta
+     password minha-senha (hd0,0)/boot/grub/secret.conf
+    =20
+     # Para boot com o GNU/Hurd
+     title GNU/Hurd
+     root (hd0,0)
+     kernel /boot/gnumach.gz root=3Dhd0s1
+     module /boot/serverboot.gz
+    =20
+     # Para boot com o GNU/Linux
+     title Linux 2.4.16
+     # Pede a senha configurada em "password" antes de carregar esta =
+imagem.
+     lock
+     root (hd0,0)
+     # Atente as op=E7=F5es passadas diretamente para o kernel (vga, =
+mem, etc.).
+     kernel (hd0,0)/boot/vmlinuz-2.4.16 vga=3D6 mem=3D512M ramdisk=3D0
+    =20
+     # Para boot com o Mach (obtendo o kernel de um disquete)
+     title Utah Mach4 multiboot
+     root (hd0,2)
+     pause Insira o disquete agora!!!
+     kernel (fd0)/boot/kernel root=3Dhd0s3
+     module (fd0)/boot/bootstrap
+    =20
+     # Para boot com FreeBSD
+     title FreeBSD 3.4
+     root (hd0,2,a)
+     kernel /boot/loader
+    =20
+     # Para boot com OS/2
+     title OS/2
+     root (hd0,1)
+     makeactive
+     chainloader +1
+     chainloader /boot/chain.os2
+    =20
+     # Para boot com Windows 9x, ME, NT, 2000, XP.
+     title Windows 9x, ME, NT, 2000, XP
+     unhide (hd0,0)
+     rootnoverify (hd0,0)
+     chainloader  +1
+     makeactive
+    =20
+     # Para instalar o GRUB no disco r=EDgido.
+     title =3D Instala o GRUB no disco r=EDgido
+     root =3D (hd0,0)
+     setup =3D (hd0)
+    =20
+     # Muda as cores.
+     title Mudar as cores
+     color light-green/brown blink-red/blue
+</PRE>
+<HR>
+<A name=3Ds-boot-grub-cmdline></A>
+<H3>6.2.7 Usando a linha de comandos do GRUB</H3>
+<P>O <CODE>GRUB</CODE> possui in=FAmeros recursos, mas com certeza um =
+dos mais=20
+importantes e que merece destaque =E9 sua linha de comandos. A maioria =
+dos=20
+comandos usados no arquivo de configura=E7=E3o <CODE>menu.lst</CODE> =
+s=E3o v=E1lidos=20
+aqui e muitos outros est=E3o dispon=EDveis. Uma breve apresenta=E7=E3o =
+da linha de=20
+comandos ser=E1 dada, ficando por conta do leitor se aprofundar o quanto =
+achar=20
+necess=E1rio em sua flexibilidade.=20
+<P>Quando o <CODE>GRUB</CODE> =E9 inicializado voc=EA pode se deparar =
+com sua linha=20
+de comandos ou se possuir o arquivo <CODE>menu.lst</CODE> configurado, =
+um menu=20
+de escolha. Mesmo usando os menus de escolha voc=EA pode utilizar a =
+linha de=20
+comandos, bastando para isso seguir as instru=E7=F5es no rodap=E9 da =
+tela onde o=20
+<CODE>GRUB</CODE> nos informa que podemos digitar <SAMP>e</SAMP> para =
+editar as=20
+entradas de boot ou <SAMP>c</SAMP> para ter acesso a linha de comandos=20
+(lembre-se que pressionar <SAMP>&lt;ESC&gt;</SAMP> faz com que voc=EA =
+volte aos=20
+menus de escolha).=20
+<P>Caso a op=E7=E3o <SAMP>password</SAMP> tenha sido especificada no =
+arquivo=20
+<CODE>menu.lst</CODE>, ser=E1 necess=E1rio antes de acessar as outras =
+op=E7=F5es (que=20
+estar=E3o desabilitadas) pressionar <SAMP>p</SAMP> e entrar com a senha =
+correta.=20
+<P>Agora, com acesso a linha de comandos, voc=EA pode verificar os =
+comandos=20
+dispon=EDveis pressionando duas vezes a tecla &lt;TAB&gt;. Note que =
+voc=EA tamb=E9m=20
+pode utilizar esta tecla para completar nomes de comandos bem como =
+par=E2metros de=20
+alguns comandos.=20
+<P>Alguns comandos dispon=EDveis:=20
+<UL>
+  <LI><SAMP>cat</SAMP> =3D Este comando permite verificar o conte=FAdo =
+de um arquivo=20
+  qualquer, o qual deve estar gravado em um dispositivo ligado a sua =
+m=E1quina.=20
+  Embora seja um recurso =FAtil, nenhuma permiss=E3o de acesso =E9 =
+verificada e=20
+  qualquer pessoa que tenha acesso a linha de comandos do GRUB pode =
+listar o=20
+  conte=FAdo de arquivos importantes. Para contornar este problema o =
+par=E2metro=20
+  <SAMP>password</SAMP> =E9 utilizado no arquivo <CODE>menu.lst</CODE> e =
+faz com=20
+  que uma senha seja solicitada antes de liberar o acesso a linha de =
+comandos.=20
+  N=E3o esque=E7a que ainda =E9 poss=EDvel utilizar um disquete com o =
+<CODE>GRUB</CODE>=20
+  para dar boot na m=E1quina o que permite usar a linha de comandos pelo =
+disquete.=20
+<PRE>     Ex.: grub&gt; cat (hd0,0)/etc/passwd
+</PRE>
+  <LI><SAMP>cmp</SAMP> =3D Este comando =E9 utilizado para comparar dois =
+arquivos. <PRE>     Ex.: grub&gt; cmp (hd0,0)/arquivo1 (hd0,0)/arquivo2
+</PRE>
+  <LI><SAMP>configfile</SAMP> =3D Carrega um arquivo de configura=E7=E3o =
+do GRUB. <PRE>     Ex.: grub&gt; configfile (hd0,0)/boot/grub/menu.lst
+</PRE>
+  <LI><SAMP>displayapm</SAMP> =3D Mostra informa=E7=F5es sobre APM.=20
+  <LI><SAMP>displaymem</SAMP> =3D Mostra informa=E7=F5es sobre a =
+mem=F3ria RAM.=20
+  <LI><SAMP>find</SAMP> =3D Permite encontrar um arquivo. A sa=EDda =
+deste comando=20
+  disponibiliza o nome completo do caminho para o arquivo e a =
+parti=E7=E3o onde o=20
+  mesmo est=E1 localizado. <PRE>     Ex.: grub&gt; find stage1
+</PRE>
+  <LI><SAMP>geometry</SAMP> =3D Mostra informa=E7=F5es sobre a geometria =
+reconhecida=20
+  de seu drive e permite que voc=EA escolha a geometria desejada caso =
+esta esteja=20
+  sendo reconhecida erroneamente.=20
+  <LI><SAMP>help</SAMP> =3D help "comando" para ver a ajuda. <PRE>     =
+Ex.: help color
+</PRE>
+  <LI><SAMP>install</SAMP> =3D Instala o GRUB, embora n=E3o seja =
+recomendado o uso=20
+  deste comando diretamente, pois =E9 poss=EDvel esquecer ou trocar =
+facilmente um=20
+  par=E2metro e sobrescrever a tabela de parti=E7=F5es de seu disco. =
+<PRE>     Ex.: install (fd0)/grub/stage1 d (fd0) (fd0)/grub/stage2 p =
+(fd0)/grub/menu.lst
+</PRE>
+  <LI><SAMP>setup</SAMP> =3D Voc=EA pode usar este comando para instalar =
+o GRUB.=20
+  Note que sua sintaxe =E9 menos complexa do que a usada em =
+<SAMP>install</SAMP>. <PRE>     Ex.:=20
+     grub&gt; root =3D (hd0,0)
+     grub&gt; setup =3D (hd0)
+</PRE>
+  <LI><SAMP>quit</SAMP> =3D Abandona a linha de comandos do GRUB.=20
+  <LI><SAMP>reboot</SAMP> =3D Reinicia o computador.=20
+  <LI><SAMP>boot</SAMP> =3D Efetua o boot. Suponha o Linux instalado em =
+(hd0,0),=20
+  podemos passar os seguintes comandos na linha de comandos para efetuar =
+o boot=20
+  de uma imagem do GNU/Linux: <PRE>     grub&gt; root (hd0,0)
+     grub&gt; kernel (hd0,0)/boot/vmlinuz-2.4.16 vga=3D6
+     grub&gt; boot
+</PRE></LI></UL>
+<P>Muitos outros comandos est=E3o dispon=EDveis tanto na linha de =
+comandos do=20
+<CODE>GRUB</CODE> quanto no arquivo de configura=E7=E3o =
+<CODE>menu.lst</CODE>. Estes=20
+comandos adicionais podem ser necess=E1rios apenas para algumas pessoas =
+e por isso=20
+n=E3o ser=E3o explicados.=20
+<HR>
+<A name=3Ds-boot-grub-removendo></A>
+<H3>6.2.8 Removendo o GRUB do MBR</H3>
+<P>N=E3o existe a necessidade de se remover o <CODE>GRUB</CODE> do MBR =
+pois n=E3o h=E1=20
+utiliza=E7=E3o para o mesmo vazio. Para substituir o <CODE>GRUB</CODE> =
+do MBR =E9=20
+necess=E1rio apenas que outro gerenciador de boot escreva algo nele. =
+Voc=EA pode=20
+seguir o procedimento de instala=E7=E3o do <CODE>LILO</CODE> para =
+escrever algo no=20
+MBR ou usar o comando <SAMP>fdisk /mbr</SAMP> do DOS.=20
+<HR>
+<A name=3Ds-boot-grub-detalhes></A>
+<H3>6.2.9 Como obter informa=E7=F5es mais detalhadas</H3>
+<P>Para obter informa=E7=F5es mais detalhadas sobre o <CODE>GRUB</CODE> =
+=E9=20
+recomendado o site oficial do mesmo, o qual est=E1 dispon=EDvel apenas =
+na l=EDngua=20
+inglesa. Os seguintes sites foram utilizados na pesquisa:=20
+<UL>
+  <LI>Site oficial do GRUB: <CODE><A=20
+  =
+href=3D"http://www.gnu.org/software/grub/">http://www.gnu.org/software/gr=
+ub/</A></CODE>=20
+
+  <LI>Site Debian-br (<CODE><A=20
+  =
+href=3D"http://debian-br.cipsga.org.br/">http://debian-br.cipsga.org.br/<=
+/A></CODE>),=20
+  na parte de suporte, documenta=E7=E3o, "Como usar o GRUB: Um guia =
+r=E1pido para usar=20
+  o GRUB, feito por Vitor Silva Souza e Gustavo Noronha Silva". =
+</LI></UL>
+<HR>
+<A name=3Ds-boot-kernelparam></A>
+<H2>6.3 Par=E2metros de inicializa=E7=E3o passados ao kernel</H2>
+<P>Abaixo algumas das op=E7=F5es mais usadas para passar par=E2metros de =
+inicializa=E7=E3o=20
+de hardware/caracter=EDsticas ao kernel.=20
+<UL>
+  <LI><SAMP>append=3Dstring</SAMP> - Passa os par=E2metros especificados =
+ao kernel.=20
+  =C9 extremamente =FAtil para passar par=E2metros de hardwares que =
+podem ter=20
+  problemas na hora da detec=E7=E3o ou para par=E2metros que precisam =
+ser passados=20
+  constantemente ao kernel atrav=E9s do aviso <SAMP>boot:</SAMP>.=20
+  <P>Exemplo: <SAMP>append=3D"mem=3D32m"</SAMP> </P></LI></UL>
+<UL>
+  <LI><SAMP>ramdisk=3Dtamanho</SAMP> - Especifica o tamanho do disco RAM =
+que ser=E1=20
+  criado. Caso for igual a zero, nenhum disco RAM ser=E1 criado. Se =
+n=E3o for=20
+  especificado, o tamanho do disco RAM usado na imagem de =
+inicializa=E7=E3o do=20
+  kernel ser=E1 usada. </LI></UL>
+<UL>
+  <LI><SAMP>read-only</SAMP> - Especifica que o sistema de arquivos raiz =
+dever=E1=20
+  ser montado como somente leitura. Normalmente o sistema de =
+inicializa=E7=E3o=20
+  remonta o sistema de arquivos como leitura/grava=E7=E3o. </LI></UL>
+<UL>
+  <LI><SAMP>read-write</SAMP> - Especifica que o sistema de arquivos =
+raiz dever=E1=20
+  ser montado como leitura e grava=E7=E3o. </LI></UL>
+<UL>
+  <LI><SAMP>root=3Ddispositivo</SAMP> - Especifica o dispositivo que =
+ser=E1 montado=20
+  como raiz. Se a palavra <SAMP>current</SAMP> =E9 usada, o dispositivo =
+atual ser=E1=20
+  montado como raiz. </LI></UL>
+<UL>
+  <LI><SAMP>vga=3Dmodo</SAMP> - Especifica o mode de video texto que =
+ser=E1 usado=20
+  durante a inicializa=E7=E3o.=20
+  <UL>
+    <LI><SAMP>normal</SAMP> - Usa o modo 80x25 (80 colunas por 25 =
+linhas)=20
+    <LI><SAMP>extended</SAMP> (ou ext) - Usa o modo de texto 80x50=20
+    <LI><SAMP>ask</SAMP> - Pergunta que modo de video usar na =
+inicializa=E7=E3o. Os=20
+    modos de v=EDdeo podem ser obtidos pressionando-se enter quando o =
+sistema=20
+    perguntar o modo de v=EDdeo. </LI></UL></LI></UL>
+<P>Uma lista mais detalhada de par=E2metros de inicializa=E7=E3o pode =
+ser obtida no=20
+documento <SAMP>Boot-prompt-howto</SAMP> (veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-howto">Documentos=20
+HOWTO's, Se=E7=E3o 31.8</A>).=20
+<HR>
+<A name=3Ds-boot-loadlin></A>
+<H2>6.4 LOADLIN</H2>
+<P>=C9 um gerenciador de partida que permite iniciar o =
+<CODE>GNU/Linux</CODE> a=20
+partir do <CODE>DOS</CODE>. A vantagem do uso do <CODE>Loadlin</CODE> =
+=E9 n=E3o ser=20
+preciso reiniciar o computador para se entrar no <CODE>GNU/Linux</CODE>. =
+Ele=20
+funciona carregando o <CODE>kernel</CODE> (copiado para a parti=E7=E3o=20
+<CODE>DOS</CODE>) para a mem=F3ria e inicializando o =
+<CODE>GNU/Linux</CODE>.=20
+<P>Outro motivo pelo qual =E9 muito usado =E9 quando o =
+<CODE>GNU/Linux</CODE> n=E3o=20
+tem suporte a um certo tipo de dispositivo, mas este tem seu suporte no=20
+<CODE>DOS</CODE> ou <CODE>Windows</CODE> e funciona corretamente com =
+eles.=20
+<P>O truque =E9 o seguinte: Voc=EA inicia normalmente pelo =
+<CODE>DOS</CODE> e ap=F3s=20
+seu dispositivo ser configurado corretamente pelo driver do =
+<CODE>DOS</CODE> e=20
+funcionando corretamente, voc=EA executa o <CODE>Loadlin</CODE> e o=20
+<CODE>GNU/Linux</CODE> assim poder=E1 usa-lo. Muitos usam o comando=20
+<CODE>Loadlin</CODE> dentro do arquivo <CODE>autoexec.bat</CODE> para =
+iniciar o=20
+<CODE>GNU/Linux</CODE> automaticamente ap=F3s o dispositivo ser =
+configurado pelo=20
+<CODE>DOS</CODE>.=20
+<P>ATEN=C7=C3O!!! N=E3o execute o <CODE>Loadlin</CODE> dentro do =
+Windows.=20
+<HR>
+<A name=3Ds-boot-loadlin-opcoes></A>
+<H3>6.4.1 Op=E7=F5es do LOADLIN</H3>
+<P>Abaixo a lista de op=E7=F5es que podem ser usadas com o programa=20
+<CODE>LOADLIN</CODE> (note que todas s=E3o usadas no <CODE>DOS</CODE>):=20
+<P><SAMP>loadlin [<EM>imagem_kernel</EM>] [<EM>argumentos</EM>]=20
+[<EM>op=E7=F5es</EM>]</SAMP>=20
+<UL>
+  <LI><SAMP>imagem_kernel</SAMP> - Arquivo que cont=E9m o kernel.=20
+  <LI><SAMP>root=3Ddispositivo</SAMP> - Especifica o dispositivo que =
+cont=E9m o=20
+  sistema de arquivos raiz. =C9 especificado de acordo com a =
+identifica=E7=E3o de=20
+  dispositivos no <CODE>GNU/Linux</CODE> (<CODE>/dev/hda1</CODE>,=20
+  <CODE>/dev/hdb1</CODE>, etc).=20
+  <LI><SAMP>ro</SAMP> - Diz ao kernel para montar inicialmente o sistema =
+de=20
+  arquivos raiz como somente leitura. Os scripts de inicializa=E7=E3o =
+normalmente=20
+  modificam o sistema de arquivos para leitura e grava=E7=E3o ap=F3s sua =
+checagem.=20
+  <LI><SAMP>rw</SAMP> - Diz ao kernel para montar inicialmente o sistema =
+de=20
+  arquivos raiz como leitura e grava=E7=E3o.=20
+  <LI><SAMP>initrd=3D[NUM]</SAMP> - Define o tamanho do disco RAM usado =
+no=20
+  sistema.=20
+  <LI><SAMP>-v</SAMP> - Mostra detalhes sobre mensagens e =
+configura=E7=E3o=20
+  <LI><SAMP>-t</SAMP> - Modo de teste, tudo =E9 feito menos a =
+inicializa=E7=E3o do=20
+  <CODE>GNU/Linux</CODE>.=20
+  <LI><SAMP>-d arquivo</SAMP> - Mesma fun=E7=E3o de <SAMP>-t</SAMP>, mas =
+envia a=20
+  sa=EDda para o arquivo=20
+  <LI><SAMP>-txmode</SAMP> - Altera o modo de v=EDdeo para 80x25 antes =
+de=20
+  inicializar o kernel.=20
+  <LI><SAMP>-dskreset</SAMP> - Ap=F3s carregar a imagem do kernel, =
+reseta todos os=20
+  discos r=EDgidos antes de inicializar o <CODE>GNU/Linux</CODE>. =
+</LI></UL>
+<HR>
+<A name=3Ds-boot-loadlin-exemplo></A>
+<H3>6.4.2 Exemplo de inicializa=E7=E3o com o LOADLIN</H3>
+<P>Abaixo voc=EA encontra um exemplo do comando <SAMP>loadlin</SAMP> que =
+poder=E1=20
+ser usado em sua instala=E7=E3o <CODE>GNU/Linux</CODE> (precisando =
+apenas ajustar a=20
+localiza=E7=E3o da parti=E7=E3o raiz do <CODE>GNU/Linux</CODE> de acordo =
+com seu=20
+sistema). <PRE>      C:\&gt; LOADLIN vmlinuz root=3D/dev/hda1 ro
+                     |        |            |
+                     |        |            +- Montar como somente =
+leitura
+                     |        |
+                     |        +- Parti=E7=E3o raiz
+                     |
+                     +- Nome do kernel copiado para o DOS
+</PRE>
+<HR>
+<A name=3Ds-boot-syslinux></A>
+<H2>6.5 syslinux</H2>
+<P>Outro gerenciador de partida que funciona somente com sistemas de =
+arquivos=20
+<CODE>DOS</CODE>. A principal diferen=E7a do <CODE>syslinux</CODE> em =
+rela=E7=E3o ao=20
+<CODE>LOADLIN</CODE> =E9 que foi feito especialmente para funcionar em =
+disquetes=20
+formatados no <CODE>DOS</CODE>, facilitando a instala=E7=E3o do=20
+<CODE>GNU/Linux</CODE> e para a cria=E7=E3o de disquetes de =
+recupera=E7=E3o ou de=20
+inicializa=E7=E3o. Um disquete gerado pelo <CODE>syslinux</CODE> =E9 =
+lido sem=20
+problemas pelo <CODE>DOS</CODE>/<CODE>Windows</CODE>.=20
+<P><SAMP>syslinux [-s] [<EM>dispositivo</EM>]</SAMP>=20
+<P>A op=E7=E3o <SAMP>-s</SAMP> instala no disquete uma vers=E3o segura, =
+lenta e=20
+est=FApida do <CODE>syslinux</CODE>. Isto =E9 necess=E1rio para algumas=20
+<SAMP>BIOS</SAMP> problem=E1ticas.=20
+<HR>
+<A name=3Ds-boot-syslinux-criando></A>
+<H3>6.5.1 Criando um disquete de inicializa=E7=E3o com o syslinux</H3>
+<P>Siga os passos abaixo para criar um disquete de inicializa=E7=E3o com =
+o=20
+<CODE>syslinux</CODE>:=20
+<OL type=3D1>
+  <LI>Formate o disquete no <CODE>DOS</CODE> ou com alguma ferramenta=20
+  <CODE>GNU/Linux</CODE> que fa=E7a a formata=E7=E3o de disquetes para =
+serem usados no=20
+  <CODE>DOS</CODE>. </LI></OL>
+<OL type=3D1 start=3D2>
+  <LI>Copie um ou mais arquivos de <CODE>kernel</CODE> para o disquete =
+</LI></OL>
+<OL type=3D1 start=3D3>
+  <LI>Digite <SAMP>syslinux /dev/fd0</SAMP> (lembre-se de usar a =
+op=E7=E3o=20
+  <SAMP>-s</SAMP> se tiver problemas de inicializa=E7=E3o). Este comando =
+modificar=E1=20
+  o setor de partida do disquete e gravar=E1 um arquivo chamado=20
+  <CODE>LDLINUX.SYS</CODE> no diret=F3rio raiz do disquete.=20
+  <P>Lembre-se: O disquete deve estar desmontado antes de usar o comando =
+
+  <CODE>syslinux</CODE>, caso o disquete estiver montado uma mensagem =
+ser=E1=20
+  mostrada e o <CODE>syslinux</CODE> abortado. </P></LI></OL>
+<P>Por padr=E3o =E9 carregado o kernel de nome <CODE>GNU/Linux</CODE>. =
+Este padr=E3o=20
+pode ser modificado atrav=E9s do arquivo de configura=E7=E3o =
+<CODE>SYSLINUX.CFG</CODE>=20
+que tamb=E9m =E9 gravado no diret=F3rio raiz do disquete. Veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-syslinux-opcoes">O=20
+arquivo SYSLINUX.CFG, Se=E7=E3o 6.5.2</A> para detalhes.=20
+<P>Se as teclas Caps Lock ou Scrool Lock estiverem ligadas ou Shift, Alt =
+forem=20
+pressionadas durante o carregamento do <CODE>syslinux</CODE>, o=20
+<CODE>syslinux</CODE> mostrar=E1 um aviso de <SAMP>boot:</SAMP> no =
+estilo do=20
+<CODE>LILO</CODE>. O usu=E1rio pode ent=E3o digitar o nome do kernel =
+seguido de=20
+qualquer par=E2metro para inicializar o <CODE>GNU/Linux</CODE>.=20
+<HR>
+<A name=3Ds-boot-syslinux-opcoes></A>
+<H3>6.5.2 O arquivo SYSLINUX.CFG</H3>
+<P>Este arquivo =E9 criado no diret=F3rio raiz da unidade de disquete e =
+cont=E9m as=20
+op=E7=F5es que ser=E3o usadas para modificar o funcionamento do =
+<CODE>syslinux</CODE>.=20
+Abaixo a listagem de op=E7=F5es que podem ser especificadas neste =
+arquivo:=20
+<DL>
+  <DT>default [kernel] [op=E7=F5es]=20
+  <DD>Indica o nome do kernel e as op=E7=F5es dele que ser=E3o usadas na =
+
+  inicializa=E7=E3o, caso <CODE>syslinux</CODE> seja iniciado =
+automaticamente. Caso=20
+  n=E3o for especificada, o valor assumido ser=E1 <EM>linux auto</EM> =
+sem nenhuma=20
+  op=E7=E3o de inicializa=E7=E3o.=20
+  <DT>append [op=E7=F5es]=20
+  <DD>Passa uma ou mais op=E7=F5es ao kernel na inicializa=E7=E3o. Elas =
+ser=E3o=20
+  adicionadas automaticamente para inicializa=E7=F5es autom=E1ticas e =
+manuais do=20
+  <CODE>syslinux</CODE>.=20
+  <DT>label [nome]=20
+  <DT>kernel [kernel]=20
+  <DT>append [op=E7=F5es]=20
+  <DD>Nome que identificar=E1 o kernel no aviso de <SAMP>boot:</SAMP> =
+(id=EAntica a=20
+  op=E7=E3o <SAMP>label=3D</SAMP> do <CODE>LILO</CODE>). Se a imagem =
+especificada por=20
+  <SAMP>nome</SAMP> for selecionada, o kernel usado ser=E1 o =
+especificado pelo=20
+  par=E2metro <SAMP>kernel</SAMP> e as op=E7=F5es usadas por =
+<SAMP>append</SAMP>.=20
+  <P>Caso seja passado um h=EDfen <SAMP>-</SAMP> ao par=E2metro =
+<SAMP>append</SAMP>,=20
+  os par=E2metros passados pelo <SAMP>append</SAMP> global ser=E3o =
+anulados. </P>
+  <DT>implicit [valor]=20
+  <DD>Se o [valor] for igual a 0, n=E3o carrega a imagem at=E9 que seja=20
+  explicitamente especificada na op=E7=E3o <SAMP>label</SAMP>.=20
+  <DT>timeout [tempo]=20
+  <DD>Indica quanto tempo o <CODE>syslinux</CODE> aguardar=E1 antes de =
+inicializar=20
+  automaticamente (medido em 1/10 de segundos). Caso alguma tecla seja=20
+  pressionada, a inicializa=E7=E3o autom=E1tica =E9 interrompida. Para =
+desativar esta=20
+  caracter=EDstica, use 0 como <SAMP>timeout</SAMP>. O valor m=E1ximo =
+=E9 de 35996.=20
+  <DT>font [nome]=20
+  <DD>Especifica uma fonte (em formato <CODE>.psf</CODE>) que ser=E1 =
+usada para=20
+  mostrar as mensagens do <CODE>syslinux</CODE> (ap=F3s o aviso de =
+copyright do=20
+  programa). Ele carrega a fonte para a placa de v=EDdeo, se a fonte =
+conter uma=20
+  tabela unicode, ela ser=E1 ignorada. Somente funciona em placas EGA e =
+VGA.=20
+  <DT>kbdmap [mapa]=20
+  <DD>Instala um simples mapa de teclado. O mapa de teclados usado =E9 =
+muito=20
+  simples: somente remapeia c=F3digos conhecidos pela <CODE>BIOS</CODE>, =
+o que=20
+  significa que somente teclas usadas no teclado padr=E3o EUA ser=E3o =
+usadas.=20
+  <P>O utilit=E1rio <CODE>keytab-lilo.pl</CODE> da distribui=E7=E3o do=20
+  <CODE>lilo</CODE> pode ser usado para criar tais mapas de teclado. =
+</P>
+  <DT>prompt [valor]=20
+  <DD>Se [valor] for igual a 1, mostra automaticamente o aviso de=20
+  <SAMP>boot:</SAMP> assim que o <CODE>syslinux</CODE> for iniciado. =
+Caso seja=20
+  igual a 0, mostra o aviso de <SAMP>boot:</SAMP> somente se as teclas =
+Shift ou=20
+  Alt forem pressionadas ou Caps Lock e Scrool Lock estiverem ativadas.=20
+  <DT>display [arquivo]=20
+  <DD>Mostra o conte=FAdo do [arquivo] durante a inicializa=E7=E3o do=20
+  <CODE>syslinux</CODE>.=20
+  <DT>F1 [arquivo]=20
+  <DT>F2 [arquivo]=20
+  <DT>...=20
+  <DT>F0 [arquivo]=20
+  <DD>Especifica que arquivos ser=E3o mostrados quando as teclas de F1 =
+at=E9 F10=20
+  forem pressionadas. Para detalhes, veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-syslinux-formatacao">Form=
+ata=E7=E3o=20
+  dos arquivos de tela do syslinux, Se=E7=E3o 6.5.3</A>. </DD></DL>
+<HR>
+<A name=3Ds-boot-syslinux-formatacao></A>
+<H3>6.5.3 Formata=E7=E3o dos arquivos de tela do syslinux</H3>
+<P>Os arquivos de texto que s=E3o mostrados na tela pelo =
+<CODE>syslinux</CODE>=20
+podem ter suas cores modificadas usando par=E2metros simples, isto causa =
+um bom=20
+efeito de apresenta=E7=E3o. Abaixo est=E3o os c=F3digos que podem ser =
+usados para criar=20
+um arquivo texto que ser=E1 exibido pelo <CODE>syslinux</CODE>: <PRE>    =
+ CTRL+L - Limpa a tela (semelhante ao que o clear faz).=20
+     CTRL+O[frente][fundo] - Define a cor de frente e fundo, se somente=20
+                      uma cor for especificada, esta ser=E1 assumida =
+como frente.=20
+                      Veja os valores para [frente] e [fundo] abaixo:
+                      00 - preto                      08 - cinza escuro
+                      01 - azul escuro                09 - azul claro
+                      02 - verde escuro               0a - verde claro=20
+                      03 - ciano escuro               0b - ciano claro
+                      04 - vermelho escuro            0c - vermelho =
+claro=20
+                      05 - purple escuro              0d - purple claro
+                      06 - marrom                     0e - amarelo=20
+                      07 - cinza claro                0f - branco
+     CTRL+Z       - Equivalente ao fim de arquivo no DOS
+</PRE>
+<P>O c=F3digo padr=E3o usado =E9 o 07. Escolhendo uma cor clara para o =
+fundo (08-0f)=20
+resultar=E1 em uma cor piscante correspondente para a texto (00-07).=20
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ 6 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

@@ -1,0 +1,459 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Guia Foca GNU/Linux - Comandos para manipulação de Arquivos</title>
+
+</head>
+
+<body>
+
+<a name="ch-cmd"></a>
+<hr>
+
+[ <a href="ch-cmdd.htm">anterior</a> ]
+[ <a href="index.htm#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ <a href="ch-hardw.htm">3</a> ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ <a href="ch-cmdd.htm">8</a> ]
+[ 9 ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ <a href="ch-cmdc.htm">12</a> ]
+[ <a href="ch-perm.htm">13</a> ]
+[ <a href="ch-redir.htm">14</a> ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ <a href="ch-cpctd.htm">18</a> ]
+[ <a href="ch-deb.htm">19</a> ]
+[ <a href="ch-dpkg.htm">20</a> ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ <a href="ch-cfg.htm">23</a> ]
+[ <a href="ch-tasks.htm">24</a> ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ <a href="ch-etc.htm">27</a> ]
+[ <a href="ch-inter.htm">28</a> ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ <a href="ch-apend.htm">32</a> ]
+[ <a href="ch-cmdv.htm">próximo</a> ]
+
+<hr>
+
+<h1>
+Guia Foca GNU/Linux
+<br>Capítulo 9 - Comandos para manipulação de Arquivos
+</h1>
+
+<hr>
+
+<p>
+Abaixo, comandos utilizados para manipulação de arquivos.
+
+<hr>
+
+<a name="s-comandos-cat"></a>
+<h2>9.1 cat</h2>
+
+<p>
+Mostra o conteúdo de um arquivo binário ou texto.
+
+<p>
+<samp>cat [opções] [<em>diretório/arquivo</em>]
+[<em>diretório1/arquivo1</em>]</samp>
+
+<dl>
+<dt><em>diretório/arquivo</em></dt>
+<dd>
+Localização do arquivo que deseja visualizar o conteúdo.
+</dd>
+<dt><em>opções</em></dt>
+<dt>-n, --number</dt>
+<dd>
+Mostra o número das linhas enquanto o conteúdo do arquivo é mostrado.
+</dd>
+<dt>-s, --squeeze-blank</dt>
+<dd>
+Não mostra mais que uma linha em branco entre um parágrafo e outro.
+</dd>
+<dt>-</dt>
+<dd>
+Lê a entrada padrão.
+</dd>
+</dl>
+
+<p>
+O comando <code>cat</code> trabalha com arquivos texto.  Use o comando
+<code>zcat</code> para ver diretamente arquivos compactados com
+<code>gzip</code>.
+
+<p>
+Exemplo: <samp>cat /usr/doc/copyright/GPL</samp>
+
+<hr>
+
+<a name="s-comando-tac"></a>
+<h2>9.2 tac</h2>
+
+<p>
+Mostra o conteúdo de um arquivo binário ou texto (como o <code>cat</code>) só
+que em ordem inversa.
+
+<p>
+<samp>tac [opções] [<em>diretório/arquivo</em>]
+[<em>diretório1/arquivo1</em>]</samp>
+
+<dl>
+<dt><em>diretório/arquivo</em></dt>
+<dd>
+Localização do arquivo que deseja visualizar o conteúdo
+</dd>
+<dt><em>opções</em></dt>
+<dt>-s [string]</dt>
+<dd>
+Usa o [string] como separador de registros.
+</dd>
+<dt>-</dt>
+<dd>
+Lê a entrada padrão.
+</dd>
+</dl>
+
+<p>
+Exemplo: <samp>tac /usr/doc/copyright/GPL</samp>.
+
+<hr>
+
+<a name="s-comando-rm"></a>
+<h2>9.3 rm</h2>
+
+<p>
+Apaga arquivos.  Também pode ser usado para apagar diretórios e sub-diretórios
+vazios ou que contenham arquivos.
+
+<p>
+<samp>rm [<em>opções</em>][<em>caminho</em>][<em>arquivo/diretório</em>]
+[<em>caminho1</em>][<em>arquivo1/diretório1</em>]</samp>
+
+<p>
+onde:
+<dl>
+<dt><em>caminho</em></dt>
+<dd>
+Localização do arquivo que deseja apagar.  Se omitido, assume que o arquivo
+esteja no diretório atual.
+</dd>
+<dt><em>arquivo/diretório</em></dt>
+<dd>
+Arquivo que será apagado.
+</dd>
+<dt><em>opções</em></dt>
+<dt>-i, --interactive</dt>
+<dd>
+Pergunta antes de remover, esta é ativada por padrão.
+</dd>
+<dt>-v, --verbose</dt>
+<dd>
+Mostra os arquivos na medida que são removidos.
+</dd>
+<dt>-r, --recursive</dt>
+<dd>
+Usado para remover arquivos em sub-diretórios.  Esta opção também pode ser
+usada para remover sub-diretórios.
+</dd>
+<dt>-f, --force</dt>
+<dd>
+Remove os arquivos sem perguntar.
+</dd>
+<dt>-- arquivo</dt>
+<dd>
+Remove arquivos/diretórios que contém caracteres especiais.  O separador
+&quot;--&quot; funciona com todos os comandos do shell e permite que os
+caracteres especiais como &quot;*&quot;, &quot;?&quot;, &quot;-&quot;, etc.
+sejam interpretados como caracteres comuns.
+</dd>
+</dl>
+
+<p>
+Use com atenção o comando <code>rm</code>, uma vez que os arquivos e diretórios
+forem apagados, eles não poderão ser mais recuperados.
+
+<p>
+Exemplos:
+<ul>
+<li>
+<samp>rm teste.txt</samp> - Apaga o arquivo <code>teste.txt</code> no diretório
+atual.
+</li>
+<li>
+<samp>rm *.txt</samp> - Apaga todos os arquivos do diretório atual que terminam
+com <code>.txt</code>.
+</li>
+<li>
+<samp>rm *.txt teste.novo</samp> - Apaga todos os arquivos do diretório atual
+que terminam com <code>.txt</code> e também o arquivo <code>teste.novo</code>.
+</li>
+<li>
+<samp>rm -rf /tmp/teste/*</samp> - Apaga todos os arquivos e sub-diretórios do
+diretório <code>/tmp/teste</code> mas mantém o sub-diretório
+<code>/tmp/teste</code>.
+</li>
+<li>
+<samp>rm -rf /tmp/teste</samp> - Apaga todos os arquivos e sub-diretórios do
+diretório <code>/tmp/teste</code>, inclusive <code>/tmp/teste</code>.
+</li>
+<li>
+<samp>rm -f -- --arquivo--</samp> - Remove o arquivo de nome
+<code>--arquivo--</code>.
+</li>
+</ul>
+
+<hr>
+
+<a name="s-comando-cp"></a>
+<h2>9.4 cp</h2>
+
+<p>
+Copia arquivos.
+
+<p>
+<samp>cp [<em>opções</em>] [<em>origem</em>] [<em>destino</em>]</samp>
+
+<p>
+onde:
+<dl>
+<dt><em>origem</em></dt>
+<dd>
+Arquivo que será copiado.  Podem ser especificados mais de um arquivo para ser
+copiado usando &quot;Curingas&quot; (veja <a
+href="ch-bas.htm#s-basico-curingas">Curingas, Seção 2.12</a>).
+</dd>
+<dt><em>destino</em></dt>
+<dd>
+O caminho ou nome de arquivo onde será copiado.  Se o destino for um diretório,
+os arquivos de origem serão copiados para dentro do diretório.
+</dd>
+<dt><em>opções</em></dt>
+<dt>i, --interactive</dt>
+<dd>
+Pergunta antes de substituir um arquivo existente.
+</dd>
+<dt>-f, --force</dt>
+<dd>
+Não pergunta, substitui todos os arquivos caso já exista.
+</dd>
+<dt>-r</dt>
+<dd>
+Copia arquivos dos diretórios e subdiretórios da origem para o destino.  É
+recomendável usar -R ao invés de -r.
+</dd>
+<dt>-R, --recursive</dt>
+<dd>
+Copia arquivos e sub-diretórios (como a opção -r) e também os arquivos
+especiais FIFO e dispositivos.
+</dd>
+<dt>-v, --verbose</dt>
+<dd>
+Mostra os arquivos enquanto estão sendo copiados.
+</dd>
+<dt>-s, --simbolic-link</dt>
+<dd>
+Cria link simbólico ao invés de copiar.
+</dd>
+<dt>-l, --link</dt>
+<dd>
+Faz o link no destino ao invés de copiar os arquivos.
+</dd>
+<dt>-p, --preserve</dt>
+<dd>
+Preserva atributos do arquivo, se for possível.
+</dd>
+<dt>-u, --update</dt>
+<dd>
+Copia somente se o arquivo de origem é mais novo que o arquivo de destino ou
+quando o arquivo de destino não existe.
+</dd>
+<dt>-x</dt>
+<dd>
+Não copia arquivos que estão localizados em um sistema de arquivos diferente de
+onde a cópia iniciou.
+</dd>
+</dl>
+
+<p>
+O comando <code>cp</code> copia arquivos da ORIGEM para o DESTINO.  Ambos
+origem e destino terão o mesmo conteúdo após a cópia.
+
+<p>
+Exemplos:
+<dl>
+<dt><samp>cp teste.txt teste1.txt</samp></dt>
+<dd>
+Copia o arquivo <code>teste.txt</code> para <code>teste1.txt</code>.
+</dd>
+<dt><samp>cp teste.txt /tmp</samp></dt>
+<dd>
+Copia o arquivo <code>teste.txt</code> para dentro do diretório
+<code>/tmp</code>.
+</dd>
+<dt><samp>cp * /tmp</samp></dt>
+<dd>
+Copia todos os arquivos do diretório atual para <code>/tmp</code>.
+</dd>
+<dt><samp>cp /bin/* .</samp></dt>
+<dd>
+Copia todos os arquivos do diretório <code>/bin</code> para o diretório em que
+nos encontramos no momento.
+</dd>
+<dt><samp>cp -R /bin /tmp</samp></dt>
+<dd>
+Copia o diretório <code>/bin</code> e todos os arquivos/sub-diretórios
+existentes para o diretório <code>/tmp</code>.
+</dd>
+<dt><samp>cp -R /bin/* /tmp</samp></dt>
+<dd>
+Copia todos os arquivos do diretório <code>/bin</code> (exceto o diretório
+<code>/bin</code>) e todos os arquivos/sub-diretórios existentes dentro dele
+para <code>/tmp</code>.
+</dd>
+<dt><samp>cp -R /bin /tmp</samp></dt>
+<dd>
+Copia todos os arquivos e o diretório <code>/bin</code> para <code>/tmp</code>.
+</dd>
+</dl>
+
+<hr>
+
+<a name="s-comando-mv"></a>
+<h2>9.5 mv</h2>
+
+<p>
+Move ou renomeia arquivos e diretórios.  O processo é semelhante ao do comando
+<code>cp</code> mas o arquivo de origem é apagado após o término da cópia.
+
+<p>
+<samp>mv [<em>opções</em>] [<em>origem</em>] [<em>destino</em>]</samp>
+
+<p>
+Onde:
+<dl>
+<dt><em>origem</em></dt>
+<dd>
+Arquivo/diretório de origem.
+</dd>
+<dt><em>destino</em></dt>
+<dd>
+Local onde será movido ou novo nome do arquivo/diretório.
+</dd>
+<dt><em>opções</em></dt>
+<dt>-f, --force</dt>
+<dd>
+Substitui o arquivo de destino sem perguntar.
+</dd>
+<dt>-i, --interactive</dt>
+<dd>
+Pergunta antes de substituir.  É o padrão.
+</dd>
+<dt>-v, --verbose</dt>
+<dd>
+Mostra os arquivos que estão sendo movidos.
+</dd>
+<dt>-u, --update</dt>
+<dd>
+Move somente arquivos antigos, ou novos arquivos.
+</dd>
+</dl>
+
+<p>
+O comando <code>mv</code> copia um arquivo da <em>ORIGEM</em> para o
+<em>DESTINO</em> (semelhante ao <code>cp</code>), mas após a cópia, o arquivo
+de <em>ORIGEM</em> é apagado.
+
+<p>
+Exemplos:
+<dl>
+<dt><samp>mv teste.txt teste1.txt</samp></dt>
+<dd>
+Muda o nome do arquivo <code>teste.txt</code> para <code>teste1.txt</code>.
+</dd>
+<dt><samp>mv teste.txt /tmp</samp></dt>
+<dd>
+Move o arquivo teste.txt para <code>/tmp</code>.  Lembre-se que o arquivo de
+origem é apagado após ser movido.
+</dd>
+<dt><samp>mv teste.txt teste.new</samp> (supondo que <code>teste.new</code> já exista)</dt>
+<dd>
+Copia o arquivo <code>teste.txt</code> por cima de <code>teste.new</code> e
+apaga <code>teste.txt</code> após terminar a cópia.
+</dd>
+</dl>
+
+<hr>
+
+[ <a href="ch-cmdd.htm">anterior</a> ]
+[ <a href="index.htm#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ <a href="ch-hardw.htm">3</a> ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ <a href="ch-cmdd.htm">8</a> ]
+[ 9 ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ <a href="ch-cmdc.htm">12</a> ]
+[ <a href="ch-perm.htm">13</a> ]
+[ <a href="ch-redir.htm">14</a> ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ <a href="ch-cpctd.htm">18</a> ]
+[ <a href="ch-deb.htm">19</a> ]
+[ <a href="ch-dpkg.htm">20</a> ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ <a href="ch-cfg.htm">23</a> ]
+[ <a href="ch-tasks.htm">24</a> ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ <a href="ch-etc.htm">27</a> ]
+[ <a href="ch-inter.htm">28</a> ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ <a href="ch-apend.htm">32</a> ]
+[ <a href="ch-cmdv.htm">próximo</a> ]
+
+<hr>
+
+<p>
+Guia Foca GNU/Linux
+
+<address>
+Versão 5.45 - segunda, 30 de outubro de 2006<br>
+<br>
+Gleydson Mazioli da Silva <code><a href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</a></code><br>
+<br>
+</address>
+
+<hr>
+
+</body>
+
+</html>
+

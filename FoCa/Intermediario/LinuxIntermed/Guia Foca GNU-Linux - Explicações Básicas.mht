@@ -1,0 +1,486 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: =?iso-8859-1?Q?Guia_Foca_GNU/Linux_-_Explica=E7=F5es_B=E1sicas?=
+Date: Mon, 6 Aug 2007 11:19:49 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-bas.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Explica=E7=F5es =
+B=E1sicas</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-bas></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ 2 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 2 - Explica=E7=F5es B=E1sicas =
+</H1>
+<HR>
+
+<P>Este cap=EDtulo traz explica=E7=F5es sobre os principais componentes =
+existentes no=20
+computador e do sistema operacional.=20
+<HR>
+<A name=3Ds-basico-interpcmd></A>
+<H2>2.1 Interpretador de comandos</H2>
+<P>Tamb=E9m conhecido como "shell". =C9 o programa respons=E1vel em =
+interpretar as=20
+instru=E7=F5es enviadas pelo usu=E1rio e seus programas ao sistema =
+operacional (o=20
+kernel). Ele que executa comandos lidos do dispositivo de entrada =
+padr=E3o=20
+(teclado) ou de um arquivo execut=E1vel. =C9 a principal liga=E7=E3o =
+entre o usu=E1rio, os=20
+programas e o kernel. O <CODE>GNU/Linux</CODE> possui diversos tipos de=20
+interpretadores de comandos, entre eles posso destacar o <CODE>bash, =
+ash, csh,=20
+tcsh, sh,</CODE> etc. Entre eles o mais usado =E9 o <CODE>bash</CODE>. O =
+
+interpretador de comandos do DOS, por exemplo, =E9 o =
+<CODE>command.com</CODE>.=20
+<P>Os comandos podem ser enviados de duas maneiras para o interpretador: =
+
+<SAMP>interativa</SAMP> e <SAMP>n=E3o-interativa</SAMP>:=20
+<DL>
+  <DT><SAMP>Interativa</SAMP>=20
+  <DD>Os comandos s=E3o digitados no aviso de comando e passados ao =
+interpretador=20
+  de comandos um a um. Neste modo, o computador depende do usu=E1rio =
+para executar=20
+  uma tarefa, ou pr=F3ximo comando. </DD></DL>
+<DL>
+  <DT><SAMP>N=E3o-interativa</SAMP>=20
+  <DD>S=E3o usados arquivos de comandos criados pelo usu=E1rio (scripts) =
+para o=20
+  computador executar os comandos na ordem encontrada no arquivo. Neste =
+modo, o=20
+  computador executa os comandos do arquivo um por um e dependendo do =
+t=E9rmino do=20
+  comando, o script pode checar qual ser=E1 o pr=F3ximo comando que =
+ser=E1 executado e=20
+  dar continuidade ao processamento.=20
+  <P>Este sistema =E9 =FAtil quando temos que digitar por v=E1rias vezes =
+seguidas um=20
+  mesmo comando ou para compilar algum programa complexo. </P></DD></DL>
+<P>O shell <CODE>Bash</CODE> possui ainda outra caracter=EDstica =
+interessante: A=20
+completa=E7=E3o dos nomes. Isto =E9 feito pressionando-se a tecla =
+<SAMP>TAB</SAMP>.=20
+Por exemplo, se digitar "ls tes" e pressionar &lt;tab&gt;, o =
+<CODE>Bash</CODE>=20
+localizar=E1 todos os arquivos que iniciam com "tes" e completar=E1 o =
+restante do=20
+nome. Caso a completa=E7=E3o de nomes encontre mais do que uma =
+express=E3o que=20
+satisfa=E7a a pesquisa, ou nenhuma, =E9 emitido um beep. Se voc=EA =
+apertar novamente a=20
+tecla TAB imediatamente depois do beep, o interpretador de comandos =
+ir=E1 listar=20
+as diversas possibilidades que satisfazem a pesquisa, para que voc=EA =
+possa=20
+escolher a que lhe interessa. A completa=E7=E3o de nomes funciona sem =
+problemas para=20
+comandos internos.=20
+<P>Exemplo: <SAMP>ech</SAMP> (pressione <SAMP>TAB</SAMP>). <SAMP>ls=20
+/vm</SAMP>(pressione <SAMP>TAB</SAMP>)=20
+<HR>
+<A name=3Ds-basico-terminal></A>
+<H2>2.2 Terminal Virtual (console)</H2>
+<P>Terminal (ou console) =E9 o teclado e tela conectados em seu =
+computador. O=20
+<CODE>GNU/Linux</CODE> faz uso de sua caracter=EDstica =
+<EM>multi-usu=E1ria</EM>=20
+usando os "terminais virtuais". Um terminal virtual =E9 uma segunda =
+se=E7=E3o de=20
+trabalho completamente independente de outras, que pode ser acessada no=20
+computador local ou remotamente via <CODE>telnet, rsh, rlogin,</CODE> =
+etc.=20
+<P>No <CODE>GNU/Linux</CODE>, em modo texto, voc=EA pode acessar outros =
+terminais=20
+virtuais segurando a tecla <SAMP>ALT</SAMP> e pressionando <SAMP>F1 a =
+F6</SAMP>.=20
+Cada tecla de fun=E7=E3o corresponde a um n=FAmero de terminal do 1 ao 6 =
+(o s=E9timo =E9=20
+usado por padr=E3o pelo ambiente gr=E1fico X). O <CODE>GNU/Linux</CODE> =
+possui mais=20
+de 63 terminais virtuais, mas apenas 6 est=E3o dispon=EDveis =
+inicialmente por=20
+motivos de economia de mem=F3ria RAM (cada terminal virtual ocupa =
+aproximadamente=20
+350 Kb de mem=F3ria RAM, desative a quantidade que n=E3o estiver usando =
+para liberar=20
+mem=F3ria RAM para uso de outros programas!) .=20
+<P>Se estiver usando o modo gr=E1fico, voc=EA deve segurar =
+<SAMP>CTRL</SAMP>+=20
+<SAMP>ALT</SAMP> enquanto pressiona uma tela de &lt;F1&gt; a &lt;F6&gt;. =
+
+<P>Um exemplo pr=E1tico: Se voc=EA estiver usando o sistema no Terminal =
+1 com o nome=20
+"joao" e desejar entrar como "root" para instalar algum programa, segure =
+
+<SAMP>ALT</SAMP> enquanto pressiona &lt;F2&gt; para abrir o segundo =
+terminal=20
+virtual e fa=E7a o login como "root". Ser=E1 aberta uma nova se=E7=E3o =
+para o usu=E1rio=20
+"root" e voc=EA poder=E1 retornar a hora que quiser para o primeiro =
+terminal=20
+pressionando <SAMP>ALT</SAMP>+&lt;F1&gt;.=20
+<HR>
+<A name=3Ds-basico-curingas></A>
+<H2>2.3 Curingas</H2>
+<P>Curingas (ou refer=EAncia global) =E9 um recurso usado para =
+especificar um ou=20
+mais arquivos ou diret=F3rios do sistema de uma s=F3 vez. Este =E9 um =
+recurso permite=20
+que voc=EA fa=E7a a filtragem do que ser=E1 listado, copiado, apagado, =
+etc. S=E3o usados=20
+4 tipos de curingas no <CODE>GNU/Linux</CODE>:=20
+<UL>
+  <LI>"*" - Faz refer=EAncia a um nome completo/restante de um =
+arquivo/diret=F3rio.=20
+  </LI></UL>
+<UL>
+  <LI>"?" - Faz refer=EAncia a uma letra naquela posi=E7=E3o. </LI></UL>
+<UL>
+  <LI><SAMP>[padr=E3o]</SAMP> - Faz refer=EAncia a uma faixa de =
+caracteres de um=20
+  arquivo/diret=F3rio. Padr=E3o pode ser:=20
+  <UL>
+    <LI><SAMP>[a-z][0-9]</SAMP> - Faz refer=EAncia a caracteres de =
+<SAMP>a</SAMP>=20
+    at=E9 <SAMP>z</SAMP> seguido de um caracter de <SAMP>0</SAMP> at=E9=20
+    <SAMP>9</SAMP>.=20
+    <LI><SAMP>[a,z][1,0]</SAMP> - Faz a refer=EAncia aos caracteres =
+<SAMP>a</SAMP>=20
+    e <SAMP>z</SAMP> seguido de um caracter <SAMP>1</SAMP> ou =
+<SAMP>0</SAMP>=20
+    naquela posi=E7=E3o.=20
+    <LI><SAMP>[a-z,1,0]</SAMP> - Faz refer=EAncia a intervalo de =
+caracteres de=20
+    <SAMP>a</SAMP> at=E9 <SAMP>z</SAMP> ou <SAMP>1</SAMP> ou =
+<SAMP>0</SAMP>=20
+    naquela posi=E7=E3o. </LI></UL>
+  <P>A procura de caracteres =E9 "Case Sensitive" assim se voc=EA deseja =
+que sejam=20
+  localizados todos os caracteres alfab=E9ticos voc=EA deve usar=20
+  <SAMP>[a-zA-Z]</SAMP>.=20
+  <P>Caso a express=E3o seja precedida por um <SAMP>^</SAMP>, faz =
+refer=EAncia a=20
+  qualquer caracter exceto o da express=E3o. Por exemplo =
+<SAMP>[^abc]</SAMP> faz=20
+  refer=EAncia a qualquer caracter exceto <SAMP>a</SAMP>, <SAMP>b</SAMP> =
+e=20
+  <SAMP>c</SAMP>. </P></LI></UL>
+<UL>
+  <LI><SAMP>{padr=F5es}</SAMP> - Expande e gera strings para pesquisa de =
+padr=F5es=20
+  de um arquivo/diret=F3rio.=20
+  <UL>
+    <LI><SAMP>X{ab,01}</SAMP> - Faz refer=EAncia a seq=FCencia de =
+caracteres=20
+    <SAMP>Xab</SAMP> ou <SAMP>X01</SAMP>=20
+    <LI><SAMP>X{a-z,10}</SAMP> Faz referencia a seq=FCencia de =
+caracteres=20
+    X<SAMP>a-z</SAMP> e <SAMP>X10</SAMP>. </LI></UL></LI></UL>
+<P>O que diferencia este m=E9todo de expans=E3o dos demais =E9 que a =
+exist=EAncia do=20
+arquivo/diret=F3rio =E9 opcional para gera=E7=E3o do resultado. Isto =E9 =
+=FAtil para a=20
+cria=E7=E3o de diret=F3rios. Lembrando que os 4 tipos de curingas ("*", =
+"?", "[]",=20
+"{}") podem ser usados juntos. Para entender melhor vamos a pr=E1tica:=20
+<P>Vamos dizer que tenha 5 arquivo no diret=F3rio =
+<CODE>/usr/teste</CODE>:=20
+<CODE>teste1.txt, teste2.txt, teste3.txt, teste4.new, teste5.new</CODE>. =
+
+<P>Caso deseje listar <STRONG>todos</STRONG> os arquivos do diret=F3rio=20
+<CODE>/usr/teste</CODE> voc=EA pode usar o coringa "*" para especificar =
+todos os=20
+arquivos do diret=F3rio:=20
+<P><SAMP>cd /usr/teste</SAMP> e <SAMP>ls *</SAMP> ou <SAMP>ls=20
+/usr/teste/*</SAMP>.=20
+<P>N=E3o tem muito sentido usar o comando <CODE>ls</CODE> com "*" porque =
+todos os=20
+arquivos ser=E3o listados se o <CODE>ls</CODE> for usado sem nenhum =
+Coringa.=20
+<P>Agora para listar todos os arquivos <CODE>teste1.txt, teste2.txt,=20
+teste3.txt</CODE> com excess=E3o de <CODE>teste4.new</CODE>,=20
+<CODE>teste5.new</CODE>, podemos usar inicialmente 3 m=E9todos:=20
+<OL type=3D1>
+  <LI>Usando o comando <SAMP>ls *.txt</SAMP> que pega todos os arquivos =
+que=20
+  come=E7am com qualquer nome e terminam com <CODE>.txt</CODE>.=20
+  <LI>Usando o comando <SAMP>ls teste?.txt</SAMP>, que pega todos os =
+arquivos=20
+  que come=E7am com o nome <CODE>teste</CODE>, tenham qualquer caracter =
+no lugar=20
+  do coringa <SAMP>?</SAMP> e terminem com <CODE>.txt</CODE>. Com o =
+exemplo=20
+  acima <SAMP>teste*.txt</SAMP> tamb=E9m faria a mesma coisa, mas se =
+tamb=E9m=20
+  tiv=E9ssemos um arquivo chamado <CODE>teste10.txt</CODE> este tamb=E9m =
+seria=20
+  listado.=20
+  <LI>Usando o comando <SAMP>ls teste[1-3].txt</SAMP>, que pega todos os =
+
+  arquivos que come=E7am com o nome <CODE>teste</CODE>, tenham qualquer =
+caracter=20
+  entre o n=FAmero 1-3 no lugar da 6a letra e terminem com =
+<CODE>.txt</CODE>.=20
+  Neste caso se obt=E9m uma filtragem mais exata, pois o coringa =
+<EM>?</EM>=20
+  especifica qualquer caracter naquela posi=E7=E3o e [] especifica =
+n=FAmeros, letras=20
+  ou intervalo que ser=E1 usado. </LI></OL>
+<P>Agora para listar somente <CODE>teste4.new</CODE> e =
+<CODE>teste5.new</CODE>=20
+podemos usar os seguintes m=E9todos:=20
+<OL type=3D1>
+  <LI><SAMP>ls *.new</SAMP> que lista todos os arquivos que terminam com =
+
+  <CODE>.new</CODE>=20
+  <LI><SAMP>ls teste?.new</SAMP> que lista todos os arquivos que =
+come=E7am com=20
+  <CODE>teste</CODE>, contenham qualquer caracter na posi=E7=E3o do =
+coringa=20
+  <EM>?</EM> e terminem com <CODE>.new</CODE>.=20
+  <LI><SAMP>ls teste[4,5].*</SAMP> que lista todos os arquivos que =
+come=E7am com=20
+  <CODE>teste</CODE> contenham n=FAmeros de 4 e 5 naquela posi=E7=E3o e =
+terminem com=20
+  qualquer extens=E3o. </LI></OL>
+<P>Existem muitas outras formas de se fazer a mesma coisa, isto depende =
+do gosto=20
+de cada um. O que pretendi fazer aqui foi mostrar como especificar mais =
+de um=20
+arquivo de uma s=F3 vez. O uso de curingas ser=E1 =FAtil ao copiar =
+arquivos, apagar,=20
+mover, renomear, e nas mais diversas partes do sistema. Alias esta =E9 =
+uma=20
+caracter=EDstica do <CODE>GNU/Linux</CODE>: permitir que a mesma coisa =
+possa ser=20
+feita com liberdade de v=E1rias maneiras diferentes.=20
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ 2 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

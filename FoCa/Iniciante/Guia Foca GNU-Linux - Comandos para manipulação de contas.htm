@@ -1,0 +1,373 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Comandos para manipulação de contas</TITLE>
+<META http-equiv=content-type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2900.3059" name=GENERATOR></HEAD>
+<BODY><A name=ch-cmdc></A>
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9</A> 
+] [ 10 ] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">próximo</A> 
+] 
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Capítulo 10 - Comandos para manipulação de contas 
+</H1>
+<HR>
+
+<P>Este capítulo traz comandos usados para manipulação de conta de usuários e 
+grupos em sistemas <CODE>GNU/Linux</CODE>. Entre os assuntos descritos aqui 
+estão adicionar usuários ao sistema, adicionar grupos, incluir usuários 
+existente em novos grupos, etc. 
+<HR>
+<A name=s-cmdc-adduser></A>
+<H2>10.1 adduser</H2>
+<P>Adiciona um usuário ou grupo no sistema. Por padrão, quando um novo usuário é 
+adicionado, é criado um grupo com o mesmo nome do usuário. Opcionalmente o 
+<CODE>adduser</CODE> também pode ser usado para adicionar um usuário a um grupo 
+(veja <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html#s-cmdc-incluirgrupo">Adicionando 
+o usuário a um grupo extra, Seção 10.8</A>). Será criado um diretório home com o 
+nome do usuário (a não ser que o novo usuário criado seja um usuário do sistema) 
+e este receberá uma identificação. A identificação do usuário (UID) escolhida 
+será a primeira disponível no sistema especificada de acordo com a faixa de UIDS 
+de usuários permitidas no arquivo de configuração 
+<CODE>/etc/adduser.conf</CODE>. Este é o arquivo que contém os padrões para a 
+criação de novos usuários no sistema. 
+<P><SAMP>adduser [<EM>opções</EM>] [<EM>usuário/grupo</EM>]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT><EM>usuário/grupo</EM> 
+  <DD>Nome do novo usuário que será adicionado ao sistema. 
+  <DT><EM>opções</EM> 
+  <DT>-disable-passwd 
+  <DD>Não executa o programa <CODE>passwd</CODE> para escolher a senha e somente 
+  permite o uso da conta após o usuário escolher uma senha. 
+  <DT>--force-badname 
+  <DD>Desativa a checagem de senhas ruins durante a adição do novo usuário. Por 
+  padrão o <CODE>adduser</CODE> checa se a senha pode ser facilmente adivinhada. 
+
+  <DT>--group 
+  <DD>Cria um novo grupo ao invés de um novo usuário. A criação de grupos também 
+  pode ser feita pelo comando <CODE>addgroup</CODE>. 
+  <DT>-uid [num] 
+  <DD>Cria um novo usuário com a identificação [num] ao invés de procurar o 
+  próximo UID disponível. 
+  <DT>-gid [num] 
+  <DD>Faz com que o usuário seja parte do grupo [gid] ao invés de pertencer a um 
+  novo grupo que será criado com seu nome. Isto é útil caso deseje permitir que 
+  grupos de usuários possam ter acesso a arquivos comuns. 
+  <P>Caso estiver criando um novo grupo com <CODE>adduser</CODE>, a 
+  identificação do novo grupo será [num]. </P>
+  <DT>--home [dir] 
+  <DD>Usa o diretório [dir] para a criação do diretório home do usuário ao invés 
+  de usar o especificado no arquivo de configuração 
+  <CODE>/etc/adduser.conf</CODE>. 
+  <DT>--ingroup [nome] 
+  <DD>Quando adicionar um novo usuário no sistema, coloca o usuário no grupo 
+  [nome] ao invés de criar um novo grupo. 
+  <DT>--quiet 
+  <DD>Não mostra mensagens durante a operação. 
+  <DT>--system 
+  <DD>Cria um usuário de sistema ao invés de um usuário normal. </DD></DL>
+<P>Os dados do usuário são colocados no arquivo <CODE>/etc/passwd</CODE> após 
+sua criação e os dados do grupo são colocados no arquivo 
+<CODE>/etc/group</CODE>. 
+<P>OBSERVAÇÃO: Caso esteja usando senhas ocultas (shadow passwords), as senhas 
+dos usuários serão colocadas no arquivo <CODE>/etc/shadow</CODE> e as senhas dos 
+grupos no arquivo <CODE>/etc/gshadow</CODE>. Isto aumenta mais a segurança do 
+sistema porque somente o usuário <SAMP>root</SAMP> pode ter acesso a estes 
+arquivos, ao contrário do arquivo <CODE>/etc/passwd</CODE> que possui os dados 
+de usuários e devem ser lidos por todos. 
+<HR>
+<A name=s-cmdc-addgroup></A>
+<H2>10.2 addgroup</H2>
+<P>Adiciona um novo grupo de usuários no sistema. As opções usadas são as mesmas 
+do <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html#s-cmdc-adduser">adduser, 
+Seção 10.1</A>. 
+<P><SAMP>addgroup [<EM>usuário/grupo</EM>] [<EM>opções</EM>]</SAMP> 
+<HR>
+<A name=s-cmdc-passwd></A>
+<H2>10.3 passwd</H2>
+<P>Muda a senha do usuário ou grupo. Um usuário somente pode alterar a senha de 
+sua conta, mas o superusuário (<SAMP>root</SAMP>) pode alterar a senha de 
+qualquer conta de usuário, inclusive a data de validade da conta, etc. Os donos 
+de grupos também podem alterar a senha do grupo com este comando. 
+<P>Os dados da conta do usuário como nome, endereço, telefone, também podem ser 
+alterados com este comando. 
+<P><SAMP>passwd [<EM>usuário/grupo</EM>] [<EM>opções</EM>]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT><EM>usuário</EM> 
+  <DD>Nome do usuário/grupo que terá sua senha alterada. 
+  <DT><EM>opções</EM> 
+  <DT>-g 
+  <DD>Se especificada, a senha do grupo será alterada. Somente o root ou o 
+  administrador do grupo pode alterar sua senha. A opção -r pode ser usada com 
+  esta para remover a senha do grupo. A opção -R pode ser usada para restringir 
+  o acesso do grupo para outros usuários. </DD></DL>
+<P>Procure sempre combinar letras maiúsculas, minúsculas, e números ao escolher 
+suas senhas. Não é recomendado escolher palavras normais como sua senha pois 
+podem ser vulneráveis a ataques de dicionários cracker. Outra recomendação é 
+utilizar <EM>senhas ocultas</EM> em seu sistema (<EM>shadow password</EM>). 
+<P>Você deve ser o dono da conta para poder modificar a senhas. O usuário root 
+pode modificar/apagar a senha de qualquer usuário. 
+<P>Exemplo: <SAMP>passwd root</SAMP>. 
+<HR>
+<A name=s-cmdc-newgrp></A>
+<H2>10.4 newgrp</H2>
+<P>Altera a identificação de grupo do usuário. Para retornar a identificação 
+anterior, digite <SAMP>exit</SAMP> e tecle <SAMP>Enter</SAMP>. Para executar um 
+comando com outra identificação de grupo de usuário, use o comando <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html#s-cmdc-sg">sg, 
+Seção 10.7</A>. 
+<P><SAMP>newgrp <EM>-</EM> [<EM>grupo</EM>]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT><EM>-</EM> 
+  <DD>Se usado, inicia um novo ambiente após o uso do comando 
+  <CODE>newgrp</CODE> (semelhante a um novo login no sistema), caso contrário, o 
+  ambiente atual do usuário é mantido. 
+  <DT><EM>grupo</EM> 
+  <DD>Nome do grupo ou número do grupo que será incluído. </DD></DL>
+<P>Quando este comando é usado, é pedida a senha do grupo que deseja acessar. 
+Caso a senha do grupo esteja incorreta ou não exista senha definida, a execução 
+do comando é negada. A listagem dos grupos que pertence atualmente pode ser 
+feita usando o comando <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html#s-cmdc-id">id, 
+Seção 10.10</A>. 
+<HR>
+<A name=s-cmdc-userdel></A>
+<H2>10.5 userdel</H2>
+<P>Apaga um usuário do sistema. Quando é usado, este comando apaga todos os 
+dados da conta especificado dos arquivos de contas do sistema. 
+<P><SAMP>userdel [<EM>-r</EM>] [<EM>usuário</EM>]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT>-r 
+  <DD>Apaga também o diretório HOME do usuário. </DD></DL>
+<P>OBS: Note que uma conta de usuário não poderá ser removida caso ele estiver 
+no sistema, pois os programas podem precisar ter acesso aos dados dele (como 
+UID, GID) no <CODE>/etc/passwd</CODE>. 
+<HR>
+<A name=s-cmdc-groupdel></A>
+<H2>10.6 groupdel</H2>
+<P>Apaga um grupo do sistema. Quando é usado, este comando apaga todos os dados 
+do grupo especificado dos arquivos de contas do sistema. 
+<P><SAMP>groupdel [<EM>grupo</EM>]</SAMP> 
+<P>Tenha certeza que não existem arquivos/diretórios criados com o grupo apagado 
+através do comando <CODE>find</CODE>. 
+<P>OBS: Você não pode remover o grupo primário de um usuário. Remova o usuário 
+primeiro. 
+<HR>
+<A name=s-cmdc-sg></A>
+<H2>10.7 sg</H2>
+<P>Executa um comando com outra identificação de grupo. A identificação do grupo 
+de usuário é modificada somente durante a execução do comando. Para alterar a 
+identificação de grupo durante sua seção shell, use o comando <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html#s-cmdc-newgrp">newgrp, 
+Seção 10.4</A>. 
+<P><SAMP>sg [<EM>-</EM>] [<EM>grupo</EM>] [<EM>comando</EM>]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT><SAMP>-</SAMP> 
+  <DD>Se usado, inicia um novo ambiente durante o uso do comando (semelhante a 
+  um novo login e execução do comando), caso contrário, o ambiente atual do 
+  usuário é mantido. 
+  <DT><SAMP>grupo</SAMP> 
+  <DD>Nome do grupo que o comando será executado. 
+  <DT><SAMP>comando</SAMP> 
+  <DD>Comando que será executado. O comando será executado pelo bash. </DD></DL>
+<P>Quando este comando é usado, é pedida a senha do grupo que deseja acessar. 
+Caso a senha do grupo esteja incorreta ou não exista senha definida, a execução 
+do comando é negada. 
+<P>Exemplo: <SAMP>sg root ls /root</SAMP> 
+<HR>
+<A name=s-cmdc-incluirgrupo></A>
+<H2>10.8 Adicionando o usuário a um grupo extra</H2>
+<P>Para adicionar um usuário em um novo grupo e assim permitir que ele acesse os 
+arquivos/diretórios que pertencem àquele grupo, você deve estar como root e 
+editar o arquivo <CODE>/etc/group</CODE> com o comando <CODE>vigr</CODE>. Este 
+arquivo possui o seguinte formato: 
+<P>NomedoGrupo:senha:GID:usuários 
+<P>Onde: 
+<DL>
+  <DT>NomedoGrupo 
+  <DD>É o nome daquele grupo de usuários. </DD></DL>
+<DL>
+  <DT>senha 
+  <DD>Senha para ter acesso ao grupo. Caso esteja utilizando senhas ocultas para 
+  grupos, as senhas estarão em <CODE>/etc/gshadow</CODE>. </DD></DL>
+<DL>
+  <DT>GID 
+  <DD>Identificação numérica do grupo de usuário. </DD></DL>
+<DL>
+  <DT>usuarios 
+  <DD>Lista de usuários que também fazem parte daquele grupo. Caso exista mais 
+  de um nome de usuário, eles devem estar separados por vírgula. </DD></DL>
+<P>Deste modo para acrescentar o usuário "joao" ao grupo <SAMP>audio</SAMP> para 
+ter acesso aos dispositivos de som do Linux, acrescente o nome no final da 
+linha: "audio:x:100:joao". Pronto, basta digitar <SAMP>logout</SAMP> e entrar 
+novamente com seu nome e senha, você estará fazendo parte do grupo 
+<SAMP>audio</SAMP> (confira digitando <SAMP>groups</SAMP> ou <SAMP>id</SAMP>). 
+<P>Outros nomes de usuários podem ser acrescentados ao grupo <SAMP>audio</SAMP> 
+bastando separar os nomes com vírgula. Você também pode usar o comando 
+<CODE>adduser</CODE> da seguinte forma para adicionar automaticamente um usuário 
+a um grupo: <PRE>     adduser joao audio
+</PRE>
+<P>Isto adicionaria o usuário "joao" ao grupo <SAMP>audio</SAMP> da mesma forma 
+que fazendo-se a edição manualmente. 
+<HR>
+<A name=s-cmdc-chfn></A>
+<H2>10.9 chfn</H2>
+<P>Muda os dados usados pelo comando <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html#s-cmdn-finger">finger, 
+Seção 9.3</A>. 
+<P><SAMP>chfn [<EM>usuário</EM>] [<EM>opções</EM>]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT><EM>usuário</EM> 
+  <DD>Nome do usuário. 
+  <DT><EM>opções</EM> 
+  <DT>-f [nome] 
+  <DD>Muda o nome completo do usuário. 
+  <DT>-r [nome] 
+  <DD>Muda o número da sala do usuário. 
+  <DT>-w [tel] 
+  <DD>Muda o telefone de trabalho do usuário. 
+  <DT>-h [tel] 
+  <DD>Muda o telefone residencial do usuário. 
+  <DT>-o [outros] 
+  <DD>Muda outros dados do usuário. </DD></DL>
+<P>Caso o nome que acompanha as opções (como o nome completo) contenha espaços, 
+use "" para identifica-lo. 
+<P>Exemplo: <SAMP>chfn -f "Nome do Usuário root" root</SAMP> 
+<HR>
+<A name=s-cmdc-id></A>
+<H2>10.10 id</H2>
+<P>Mostra a identificação atual do usuário, grupo primário e outros grupos que 
+pertence. 
+<P><SAMP>id [<EM>opções</EM>] [<EM>usuário</EM>]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT><EM>usuário</EM> 
+  <DD>É o usuário que desejamos ver a identificação, grupos primários e 
+  complementares. 
+  <DT><EM>opções</EM> 
+  <DT>-g, --group 
+  <DD>Mostra somente a identificação do grupo primário. 
+  <DT>-G, --groups 
+  <DD>Mostra a identificação de outros grupos que pertence. 
+  <DT>-n, --name 
+  <DD>Mostra o nome do usuário e grupo ao invés da identificação numérica. 
+  <DT>-u, --user 
+  <DD>Mostra somente a identificação do usuário (user ID). 
+  <DT>-r, --real 
+  <DD>Mostra a identificação real de usuário e grupo, ao invés da efetiva. Esta 
+  opção deve ser usada junto com uma das opções: -u, -g, ou -G. </DD></DL>
+<P>Caso não sejam especificadas opções, <CODE>id</CODE> mostrará todos os dados 
+do usuário. 
+<P>Exemplo: <SAMP>id</SAMP>, <SAMP>id --user</SAMP>, <SAMP>id -r -u</SAMP>. 
+<HR>
+<A name=s-cmdc-logname></A>
+<H2>10.11 logname</H2>
+<P>Mostra seu login (username). 
+<P><SAMP>logname</SAMP> 
+<HR>
+<A name=s-cmdc-users></A>
+<H2>10.12 users</H2>
+<P>Mostra os nomes de usuários usando atualmente o sistema. Os nomes de usuários 
+são mostrados através de espaços sem detalhes adicionais, para ver maiores 
+detalhes sobre os usuários, veja os comandos <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html#s-cmdc-id">id, 
+Seção 10.10</A> e <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html#s-cmdn-who">who, 
+Seção 9.1</A>. 
+<P><SAMP>users</SAMP> 
+<P>Os nomes de usuários atualmente conectados ao sistema são obtidos do arquivo 
+<CODE>/var/log/wtmp</CODE>. 
+<HR>
+<A name=s-cmdc-groups></A>
+<H2>10.13 groups</H2>
+<P>Mostra os grupos que o usuário pertence. 
+<P><SAMP>groups [<EM>usuário</EM>]</SAMP> 
+<P>Exemplo: <SAMP>groups</SAMP>, <SAMP>groups root</SAMP> 
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9</A> 
+] [ 10 ] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">próximo</A> 
+] 
+<HR>
+
+<P>Guia Foca GNU/Linux 
+<ADDRESS>Versão 3.99 - segunda, 30 de outubro de 2006<BR><BR>Gleydson Mazioli da 
+Silva <CODE><A 
+href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR><BR></ADDRESS>
+<HR>
+</BODY></HTML>

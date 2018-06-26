@@ -1,0 +1,903 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Guia Foca GNU/Linux - Configurações especiais de Rede</title>
+
+</head>
+
+<body>
+
+<a name="ch-cfgrede"></a>
+<hr>
+
+[ <a href="ch-rede.html">anterior</a> ]
+[ <a href="index.html#contents">Conteúdo</a> ]
+[ <a href="ch-intro.html">1</a> ]
+[ <a href="ch-bas.html">2</a> ]
+[ <a href="ch-hardw.html">3</a> ]
+[ <a href="ch-rede.html">4</a> ]
+[ 5 ]
+[ <a href="ch-log.html">6</a> ]
+[ <a href="ch-deb.html">7</a> ]
+[ <a href="ch-pers.html">8</a> ]
+[ <a href="ch-impr.html">9</a> ]
+[ <a href="ch-fw-iptables.html">10</a> ]
+[ <a href="ch-d-contas.html">11</a> ]
+[ <a href="ch-s-apache.html">12</a> ]
+[ <a href="ch-s-ident.html">13</a> ]
+[ <a href="ch-s-telnet.html">14</a> ]
+[ <a href="ch-s-ssh.html">15</a> ]
+[ <a href="ch-s-pop3.html">16</a> ]
+[ <a href="ch-s-cvs.html">17</a> ]
+[ <a href="ch-s-samba.html">18</a> ]
+[ <a href="ch-d-restr.html">19</a> ]
+[ <a href="ch-d-cripto.html">20</a> ]
+[ <a href="ch-apend.html">21</a> ]
+[ <a href="ch-log.html">próximo</a> ]
+
+<hr>
+
+<h1>
+Guia Foca GNU/Linux
+<br>Capítulo 5 - Configurações especiais de Rede
+</h1>
+
+<hr>
+
+<p>
+Este capítulo descreve alguns tipos de configurações que podem ser feitas em
+rede utilizando os recursos disponíveis do <code>Linux</code>.  Aqui não estão
+todas as aplicações, pois o sistema é bastante flexível e o próprio time de
+desenvolvimento do kernel não demonstrou limitações quanto as formas de se
+construir uma rede :-)
+
+<hr>
+
+<a name="s-cfgrede-ipalias"></a>
+<h2>5.1 IP Alias</h2>
+
+<p>
+Este recurso permite configurar uma interface de rede para responder por um ou
+mais IPs, que não precisam pertencer a mesma faixa.  Para usuários externos, a
+impressão é que a rede tem &quot;muitas&quot; máquinas, quando na realidade
+apenas uma responde por todos estes endereços virtuais.  Podemos citar algumas
+utilizações úteis deste recurso:
+<ul>
+<li>
+Simular uma rede com diversas máquinas
+</li>
+<li>
+Construir virtual hosts baseados em IP
+</li>
+<li>
+Definir endereçamentos secundários para fins de análise e depuração de pacotes
+(principalmente como armadilhas para trojans)
+</li>
+<li>
+Colocação de serviços com operação restritas a interfaces em funcionamento
+através de faixas específicas usando as configurações da interface virtual
+</li>
+<li>
+Transição de IP de servidores de forma transparente
+</li>
+<li>
+Entre muitas outras.  A idéia aqui é mostrar a simplicidade de se configurar
+este recurso e entender o processo, que é bastante simples.
+</li>
+</ul>
+
+<p>
+Para configurar o recurso de <em>IP Alias</em> é necessário apenas que a opção
+<em>IP Aliasing Support</em> seja habilitada no kernel (como módulo ou
+embutida).  Em nosso exemplo abaixo, temos uma rede com a interface
+<code>eth0</code> configurada com o IP <em>192.168.1.1</em> (classe C privada)
+e queremos adicionar uma interface virtual que atenda pelo IP
+<em>172.16.0.1</em> (classe B privada) e depois seguir os seguintes passos:
+<ol type="1" start="1" >
+<li>
+Ative a interface de rede com <code>ifconfig</code> ou <code>ifup</code> (caso
+esteja usando a <code>Debian</code>).
+</li>
+<li>
+Crie uma interface virtual usando o comando <samp>ifconfig eth0:0
+172.16.0.1</samp>.  Isto criará uma nova interface chamada <samp>eth0:0</samp>
+que passará a responder pelo IP 172.6.0.1.  É permitido o uso de nomes para
+especificar a interface virtual, como: <samp>eth0:rede1</samp>,
+<samp>eth0:rede2</samp>, <samp>eth0:escritório</samp>.
+</li>
+<li>
+Digite <samp>ifconfig</samp> para ver as configurações de sua nova interface de
+rede.  Use o ping também para vê-la: <samp>ping 172.16.0.1</samp>.
+<pre>
+     eth0       Encapsulamento do Link: Ethernet  Endereço de HW 00:80:AE:B3:AA:AA
+               inet end.: 192.168.1.1  Bcast:192.168.1.255  Masc:255.255.255.0
+               UP BROADCASTRUNNING MULTICAST  MTU:1500  Métrica:1
+               RX packets:979 errors:0 dropped:0 overruns:0 frame:0
+               TX packets:1228 errors:0 dropped:0 overruns:0 carrier:0
+               colisões:1 txqueuelen:100 
+               RX bytes:71516 (69.8 Kb)  TX bytes:1146031 (1.0 Mb)
+               IRQ:10 Endereço de E/S:0x300 
+     
+     eth0:0    Encapsulamento do Link: Ethernet  Endereço de HW 00:80:AE:B3:AA:AA
+               inet end.: 192.168.1.10  Bcast:192.168.1.255  Masc:255.255.255.0
+               UP BROADCASTRUNNING MULTICAST  MTU:1500  Métrica:1
+               IRQ:10 Endereço de E/S:0x300
+</pre>
+<p>
+Note que o MAC Address da placa <code>eth0</code> e <code>eth0:0</code> são o
+mesmo, indicando que a mesma interface atende ambos os IPs.
+</li>
+<li>
+Se necessário ajuste as rotas ou gateway com o comando <code>route</code> (veja
+<a href="ch-rede.html#s-rede-rota-c">Configurando uma rota no Linux, Seção
+4.5.1</a>).
+</li>
+</ol>
+
+<p>
+Para desativar uma interface de rede virtual, utilize a sintaxe: <samp>ifconfig
+eth0:0 down</samp> ou <samp>ifdown eth0:0</samp> (caso esteja usando a
+<code>Debian</code>).
+
+<p>
+Se o teste com o <code>ping</code> não funcionar, verifique se possui o suporte
+a <em>IP Alias</em> no kernel, se o módulo precisa ser carregado manualmente
+(caso seu kernel não esteja compilado com o <code>kmod</code>) ou se existe um
+firewall restritivo bloqueando seu IP.
+
+<p>
+Na distribuição <code>Debian</code> a configuração de uma interface virtual
+pode ser feita de forma idêntica a interfaces estáticas padrão:
+
+<pre>
+     auto eth0
+     iface eth0 inet static
+      address 192.168.1.1
+      netmask 255.255.255.0
+      network 192.168.1.0
+      broadcast 192.168.1.255
+     
+     auto eth0:0
+     iface eth0:0 inet static
+      address 172.16.0.1
+      netmask 255.255.0.0
+      network 172.16.0.1
+      broadcast 172.16.255.255
+</pre>
+
+<p>
+<strong>OBS1:</strong> Quando você desativa uma interface física
+(<code>eth0</code>), todas as interfaces virtuais também são desativadas.
+
+<p>
+<strong>OBS2:</strong> Caso utilize um firewall (principalmente com a política
+padrão permissiva), esteja atento as modificações que precisa realizar para não
+comprometer a segurança de sua máquina.  Caso tenha dados considerados seguros
+em sua máquina e esteja em dúvida sobre as implicações de segurança do <em>IP
+Alias</em> em sua máquina, consulte seu administrador de redes.
+
+<p>
+<strong>OBS3:</strong> Note que somente os 4 primeiros caracteres serão
+mostrados na saída do <code>ifconfig</code>, desta forma procure utilizar no
+máximo esta quantidade de caracteres para evitar problemas durante uma futura
+administração do servidor, no caso de esquecimento do nome completo da
+interface virtual).
+
+<hr>
+
+<a name="s-cfgs-bridge"></a>
+<h2>5.2 Bridge</h2>
+
+<p>
+Uma <em>bridge</em> é uma interface de rede lógica composta por uma ou mais
+interfaces de rede física operando em nível 2 (enviando pacotes através de
+<em>MAC adresses</em>, veja <a href="ch-rede.html#s-rede-camadas">Camadas de
+Rede, Seção 4.10</a>).
+
+<p>
+Sua operação é transparente na rede, podendo ser usada como um switch/firewall,
+estação de monitoração, etc.  Aqui descreverei como montar uma bridge simples e
+uma aplicação de firewall simples.  As possibilidades são diversas e uma
+configuração bem feita pode detectar ataques, protocolos desconhecidos até
+vírus complexos de rede.
+
+<hr>
+
+<a name="s-cfgs-bridge-req"></a>
+<h3>5.2.1 Requerimentos para a Instalação</h3>
+
+<p>
+É necessário um dos seguintes requerimentos para se montar uma bridge:
+<ul>
+<li>
+Kernel com suporte a bridge ativado (na configuração de rede)
+</li>
+<li>
+O pacote <code>bridge-utils</code> instalado.
+</li>
+<li>
+patch bridge-nf se desejar usar o netfilter com as interfaces de entrada e
+saída (como antes de usar a bridge) ao invés de controlar o tráfego apenas pela
+interface criada pela bridge.
+</li>
+</ul>
+
+<p>
+Ative a opção <samp>802.1d Ethernet Bridging</samp> na seção <samp>Networking
+Options</samp>, recompile e instale seu novo kernel.  Caso tenha aplicado o
+patch <em>bridge nf</em>, aparecerá uma sub opção chamada <samp>netfilter
+(firewalling) support</samp> que permitirá que o firewall trabalhe com as
+interfaces físicas ao invés de somente através da interface virtual criada pela
+bridge.
+
+<p>
+<strong>OBS:</strong> O patch <em>bridge nf</em> viola a RFC de bridges.  Mesmo
+assim ela é a única opção em muitas aplicações, principalmente quando se deseja
+controlar o tráfego que atravessam as interfaces.  Após isto instale o pacote
+<code>bridge-utils</code>, ele possui os utilitários necessários para ativar,
+configurar e monitorar o funcionamento de sua bridge.
+
+<p>
+Não é necessária ativação do <em>ip_forward</em> para o funcionamento da
+bridge, uma vez que ela funcionará como uma interface lógica que reúne
+interfaces de rede físicas.
+
+<hr>
+
+<a name="s-cfgs-bridge-cfg"></a>
+<h3>5.2.2 Configuração da bridge</h3>
+
+<p>
+Nos exemplos abaixo, eu assumirei a utilização do nome de dispositivo
+<code>br0</code> para se referir a bridge no sistema.  Siga estes passos para
+configurar uma bridge em sistemas <code>Debian</code>:
+<ul>
+<li>
+Primeiro, desative os blocos no arquivo <code>/etc/network/interfaces</code>
+que configuram as interfaces que serão usadas na bridge (por exemplo,
+<code>eth0</code> e <code>eth1</code>).  Elas podem ser comentadas, removidas,
+ou você poderá comentar a linha <em>auto eth0</em> e <em>auto eth1</em> para
+que ele não ative automaticamente estas interfaces com o <samp>ifup -a</samp>
+(executado durante a inicialização).  Desta forma, a inicialização destas
+interfaces poderá somente ser feita manualmente.
+<pre>
+     auto br0
+     iface br0 inet static
+         address 192.168.1.2
+         network 192.168.1.0
+         netmask 255.255.255.0
+         broadcast 192.168.1.255
+         gateway 192.168.1.1
+         bridge_ports eth0 eth1
+</pre>
+<p>
+Note que a interface virtual da brigde (<code>br0</code>) deve ser configurada
+com parâmetros válidos de interfaces (assim com uma interface de rede padrão).
+Note a adição da linha <samp>bridge_ports</samp> que indica que interfaces de
+rede serão usadas para fazer a bridge.  Caso seja usado o parâmetro
+<em>all</em>, todas as interfaces físicas de rede serão usadas para fazer
+bridge (excluindo a <code>lo</code>).
+</li>
+<li>
+Execute o <samp>ifdown -a</samp> (para desativar as interfaces antigas.
+</li>
+<li>
+Execute o <samp>ifup br0</samp> para levantar as interface <code>br0</code>.  O
+sistema poder demorar um pouco para levantar a bridge (as vezes até 40
+segundos) mas isto é normal.
+</li>
+</ul>
+
+<p>
+Pronto, você terá uma bridge simples já configurada e funcionando em seu
+sistema!  As interfaces físicas serão configuradas com o IP 0.0.0.0 e estarão
+operando em modo promíscuo.
+
+<hr>
+
+<a name="s-cfgs-bridge-cfgadv"></a>
+<h3>5.2.3 Configurações mais avançadas de bridge</h3>
+
+<p>
+A bridge permite ainda definir prioridade para utilização de interfaces, além
+de outras funcionalidades que lhe permitem ajustar a performance da máquina de
+acordo com sua rede.  Um bom exemplo, é quando você deseja criar 2 bridges em
+uma mesma máquina envolvendo interfaces de rede específicas, uma atendendo a
+rede 192.168.0.x e outra a rede 192.168.1.x:
+
+<pre>
+     auto br0
+     iface br0 inet static
+         address 192.168.0.2
+         network 192.168.0.0
+         netmask 255.255.255.0
+         broadcast 192.168.0.255
+         gateway 192.168.0.1
+         bridge_ports eth0 eth1
+     
+     auto br1
+     iface br1 inet static
+         address 192.168.1.2
+         network 192.168.1.0
+         netmask 255.255.255.0
+         broadcast 192.168.1.255
+         gateway 192.168.0.1
+         bridge_ports eth2 eth3 eth4
+</pre>
+
+<p>
+No exemplo acima, as interfaces <code>eth0</code> e <code>eth1</code> fazem
+parte da bridge <code>br0</code> e as demais (<code>eth0</code>,
+<code>eth1</code> e <code>eth2</code> da bridge <code>br1</code>.
+
+<pre>
+         bridge_ports eth2 eth3
+         bridge_bridgeprio 16385
+         bridge_portprio eth1 100
+         bridge_fd 5
+</pre>
+
+<hr>
+
+<a name="s-cfgs-bridge-cfgmanual"></a>
+<h3>5.2.4 Configuração manual da bridge</h3>
+
+<p>
+Internamente, o que o <code>ifup</code> faz é interpretar os parâmetros no
+arquivo de configuração e executar os comandos do pacote
+<code>bridge-utils</code> para ativar a interface da bridge.  O utilitário
+responsável por este processo é o <code>brctl</code>.  Será documentado aqui
+como ativar uma bridge através deste programa (que servirá para fazer uma
+bridge em qualquer sistema <code>Linux</code>).
+
+<pre>
+     brctl addbr br0
+     brctl addif br0 eth0
+     brctl addif br0 eth1
+     
+     ifconfig eth0 0.0.0.0
+     ifconfig eth1 0.0.0.0
+     ifconfig br0 192.168.0.4
+</pre>
+
+<p>
+O comando acima ativa uma bridge simples, como o primeiro exemplo.  Tenha
+certeza que as interfaces físicas de rede estão desativadas antes de executar
+este comando.
+
+<p>
+Outros parâmetros que podem ser usados com o <code>brctl</code>:
+<dl>
+<dt>setbridgeprio [bridge] [prioridade]</dt>
+<dd>
+Define a prioridade da bridge, o valor deve estar entre 0 e 65536 (16 bits).
+Valores menores definem uma prioridade maior.
+</dd>
+<dt>setfd [bridge] [tempo]</dt>
+<dd>
+Ajusta o delay da bridge especificada em [tempo] segundos.
+</dd>
+<dt>setmaxage [bridge] [tempo]</dt>
+<dd>
+Ajusta o tempo máximo de vida da bridge para [tempo] segundos.
+</dd>
+<dt>setportprio [bridge] [interface] [prioridade]</dt>
+<dd>
+Ajusta a prioridade da [interface] especificada na [bridge].  O valor de
+prioridade deve estar entre 0 e 255 (8 bits).  Quanto menor o valor maior a
+prioridade.  Isto é útil para otimizações o volume de tráfego em máquinas que
+possuem diversas interfaces configuradas fazendo parte da bridge.
+</dd>
+</dl>
+
+<pre>
+     brctl addbr br0
+     brctl addif br0 eth0
+     brctl addif br0 eth1
+     brctl setportprio br0 eth0 50
+     brctl setportprio br0 eth1 80
+     brctl setfd br0 2
+     
+     ifconfig eth0 0.0.0.0
+     ifconfig eth1 0.0.0.0
+     ifconfig br0 192.168.0.4
+</pre>
+
+<hr>
+
+<a name="s-cfgs-bridge-fw"></a>
+<h3>5.2.5 Usando o iptables para construir um firewall na máquina da bridge</h3>
+
+<p>
+A construção de um firewall em uma bridge não tem maiores segredos, basta
+referir-se a interface lógica da bridge para construir suas regras (tendo em
+mente como uma bridge funciona e como os pacotes atravessarão as interfaces).
+
+<p>
+Caso aplique o patch <em>bridge nf</em>, será possível referir-se as interfaces
+locais de rede e também a da bridge.  Neste caso a interface da bridge será
+identificada como interface <em>IN</em> ou <em>OUT</em> <em>PHYSIN</em> e as
+interfaces físicas como <em>PHYSOUT</em>:
+
+<pre>
+     Oct 22 09:19:24 router kernel: IN=br0 PHYSIN=eth0 OUT= MAC=ff:ff:ff:ff:ff:ff:00:d4:7d:ff:ff:ff:08:00 SRC=192.168.0.4 DST=1982.168.255.255 LEN=238 TOS=0x00 PREC=0x00 TTL=128 ID=23383 PROTO=UDP SPT=138 DPT=138 LEN=218
+</pre>
+
+<p>
+Mesmo que a bridge não necessite de <em>ip_forward</em> ativado para
+redirecionar os pacotes através das interfaces, isto será necessário para
+habilitar o uso do firewall para controlar o tráfego que atravessa as
+interfaces.
+
+<hr>
+
+<a name="s-cfgs-bridge-filternoip"></a>
+<h3>5.2.6 Filtrando pacotes não IP na bridge</h3>
+
+<p>
+Para fazer esta tarefa, utilize a ferramenta <code>ebtables</code> disponível
+em (<code><a
+href="http://users.pandora.be/bart.de.schuymer/ebtables/">http://users.pandora.be/bart.de.schuymer/ebtables/</a></code>).
+
+<hr>
+
+<a name="s-cfgs-plip"></a>
+<h2>5.3 Conectando dois computadores usando a porta paralela</h2>
+
+<p>
+O <code>Linux</code> é bastante poderoso quando se trata de métodos para se
+conectar duas ou mais máquinas em rede.  Uma brincadeira que é levada a sério é
+que qualquer coisa que ligue uma máquina a outra possui um controlador
+desenvolvido por alguém para fazer uma rede :)
+
+<p>
+Usando o <code>plip</code> (<em>Parallel Line Internet Protocol</em>) permite
+<samp>criar</samp> uma interface de rede para a porta paralela que utiliza
+todos os recursos de uma rede normal.  Esta interface será identificada por
+<code>plip?</code>, onde <samp>?</samp> é o número da porta paralela, recém
+configurada.
+
+<p>
+A rede via porta paralela pode atingir até 1Mb/s e mesmo esta velocidade
+parecer aparentemente baixa apresenta diversas vantagens por sua escalabilidade
+e pode lhe salvar em muitas situações de problemas.  Algumas características
+deste tipo de rede:
+<ul>
+<li>
+Pode ser configurado em qualquer máquina, pois sempre haverá uma porta
+paralela.
+</li>
+<li>
+É útil para fazer instalação de <code>Linux</code> em máquinas sem CD-ROM.  No
+momento da instalação é preciso somente alternar para um console, executar os
+passos descritos aqui e continuar com o processo de instalação normal :)
+</li>
+<li>
+É uma boa solução quando as duas máquinas estão próximas
+</li>
+<li>
+O custo para montagem desta rede é extremamente baixo, bastando um cabo Lap
+Link Paralelo que custa no máximo R$20,00 o de 1,5M ou se gosta de eletrônica,
+montar seu próprio cabo usando o esquema que descrevo em <a
+href="#s-cfgs-plip-cabo">Construindo um cabo LapLink Paralelo, Seção 5.3.1</a>.
+</li>
+<li>
+Você poderá fazer qualquer coisa que faria em uma rede normal (incluindo
+MASQUERADING, roteamento entre redes, etc) sendo bastante interessante para
+testes práticos dos exemplos do Foca Linux Avançado ;-)
+</li>
+<li>
+Ficará admirado com as capacidade de rede existente no <code>Linux</code> e
+feliz por ter colocado mais uma configuração em funcionamento :)
+</li>
+</ul>
+
+<p>
+Agora, os contras da conexão via porta paralela:
+<ul>
+<li>
+A porta paralela não estará disponível para ser usada em impressoras, conexão
+de câmeras.
+</li>
+<li>
+O cabo não pode ter mais de 4,5 metros.  Acima dessa comprimento, você pode
+colocar sua controladora em risco além da perda de sinal.  Por segurança, o
+tamanho recomendável é 2,5 metros.
+</li>
+<li>
+Quando toda a banda do cabo é utilizada, algumas CPUs se tornam extremamente
+lentas.
+</li>
+</ul>
+
+<p>
+Para configurar uma conexão via cabo paralelo (plip) entre duas máquinas, vamos
+assumir que a primeira máquina terá o IP 192.168.1.1 e a segunda máquina
+192.168.1.2:
+<ol type="1" start="1" >
+<li>
+Conecte o cabo Lap Link em cada uma das portas de impressora.  Caso saiba fazer
+conexões eletrônicas ou goste do assunto, veja <a
+href="#s-cfgs-plip-cabo">Construindo um cabo LapLink Paralelo, Seção 5.3.1</a>.
+</li>
+<li>
+Verifique se o seu kernel está compilado com o suporte a rede
+<code>plip</code>.  Caso não esteja, a configuração da interface
+<code>plip</code> falhará no passo do <code>ifconfig</code>.
+</li>
+<li>
+Se o sistema executa algum daemon de impressão, interrompa antes de usar a
+porta paralela.  Alguns tipos de serviços de impressão interferem no
+funcionamento do <code>plip</code>.
+</li>
+<li>
+Configure o módulo <code>parport_pc</code> passando o parâmetro
+<samp>irq=7</samp> (a IRQ que sua porta de impressora utiliza).  Esta
+configuração é necessária pois em algumas máquinas isso faz que o
+<code>plip</code> não funcione ou aconteçam somente timeouts de transmissão.
+</li>
+<li>
+Execute o comando <samp>ifconfig plip0 192.168.1.1</samp>.  Verifique se a
+interface foi ativada com o comando <samp>ifconfig plip0</samp>.
+</li>
+<li>
+Nesse ponto a interface está ativa, mas a nossa máquina não conhece nada sobre
+a rede ou como alcançar a máquina 192.168.1.2.  Como a conexão é ponto a ponto,
+precisamos adicionar uma rota direta para esta máquina com o comando:
+<samp>route add -host 192.168.1.2 plip0</samp>.
+<p>
+Este comando diz para criar uma rota com o destino <samp>192.168.1.2</samp>
+usando a interface <code>plip0</code>.
+</li>
+<li>
+Configure a outra máquina seguindo os passos acima, apenas invertendo os 2
+endereços IPs usados.
+</li>
+</ol>
+
+<p>
+Pronto, agora verifique se cada uma das máquinas se comunica com a outra usando
+o comando <samp>ping 192.168.1.x</samp>.  Se ocorrer um erro de timeout na
+transmissão, leia atentamente os passos acima e refaça a configuração em ambas
+as máquinas.  Ainda não funcionando, verifique se existe um firewall bloqueando
+os pacotes da nova interface e se o cabo Lap Link está em bom estado, o
+problema pode estar ai.
+
+<p>
+O número máximo de interfaces <code>plip?</code> está limitado ao número máximo
+suportado pela máquina.  O padrão em sistemas padrão IBM/PC é de 3
+(<code>plip0</code>, <code>plip1</code>, <code>plip2</code>).
+
+<p>
+Para desativar uma rede plip, utilize o comando <samp>ifconfig plip0
+down</samp>, remova o módulo <code>plip</code> (<samp>rmmod plip</samp>).  Após
+isto, a porta paralela será liberada para uso por outros aplicativos.
+
+<hr>
+
+<a name="s-cfgs-plip-cabo"></a>
+<h3>5.3.1 Construindo um cabo LapLink Paralelo</h3>
+
+<p>
+Se você tem experiência com eletrônica, poderá construir seu próprio cabo
+LapLink Paralelo para fazer os testes desta seção.  Os materiais necessários
+são:
+<ul>
+<li>
+<samp>2</samp> Conectores DB25 macho
+</li>
+<li>
+<samp>2</samp> Capas para os conectores acima.
+</li>
+<li>
+Fio para ligação dos conectores (15 ligações).  No meu caso utilizei 2 metros
+de um rolo de cabo SCSI de 50 vias para fazer as ligações, que é uma boa
+alternativa para manter o cabo bonito e os fios juntos.
+</li>
+</ul>
+
+<p>
+Este é o conector macho DB25 (a tomada que liga no computador) visto por trás
+(minha namorada já disse que não sou bom em arte ASCII).  Bom, não custa tentar
+de novo:
+
+<pre>
+       -------------------------------
+     13  \ o o o o o o o o o o o o o / 1
+     25  \ o o o o o o o o o o o o / 14
+          -------------------------
+</pre>
+
+<p>
+A figura acima mostra a posição dos pinos como referência para a soldagem dos
+terminais.  A tabela abaixo mostra a ligação dos fios nos cabos das 2 pontas do
+cabo:
+
+<pre>
+     +---------+---------+
+     | Ponta 1 | Ponta 2 |
+     +---------+---------+
+     |    1    |     1   |
+     |    2    |    15   |
+     |    3    |    13   |
+     |    4    |    12   |
+     |    5    |    10   |
+     |    6    |    11   |
+     |   10    |     5   |
+     |   11    |     6   |
+     |   12    |     4   |
+     |   13    |     3   |
+     |   14    |    14   |
+     |   15    |     2   |
+     |   16    |    16   |
+     |   17    |    17   |
+     |   25    |    25   |
+     +---------+---------+
+</pre>
+
+<hr>
+
+<a name="s-cfgs-slattach"></a>
+<h2>5.4 Conectando dois computadores usando a porta serial</h2>
+
+<p>
+Este método permite criar uma rede ponto a ponto usando a porta serial da
+máquina, que funcionará de forma semelhante a mostrada em <a
+href="#s-cfgs-plip">Conectando dois computadores usando a porta paralela, Seção
+5.3</a>.
+
+<p>
+O método que irei descrever é bastante simples e utiliza o
+<code>slattach</code> e o protocolo <em>slip</em> para comunicação entre as
+duas máquinas, mas nada impede que seja usado o <em>ppp</em> para comunicação,
+apenas acrescentará um pouco mais de complexibilidade para esta configuração
+para obter o mesmo resultado.
+
+<p>
+Usando o método descrito, será criada uma interface chamada <code>sl?</code>
+(interface SLIP, onde <samp>?</samp> é o número da interface recém
+configurada).
+
+<p>
+A rede via porta serial pode atingir em média 115.200kbps/s mas é prático
+quando não tem outras opções para fazer uma rede ponto a ponto.  Segue algumas
+características deste tipo de rede:
+<ul>
+<li>
+Pode ser configurado em qualquer máquina, pois sempre haverá uma porta serial
+disponível.
+</li>
+<li>
+É possível fazer a instalação de <code>Linux</code> em máquinas sem CD-ROM e
+acesso a rede, onde não é possível gerar disquetes para instalar o resto dos
+pacotes necessários, embora seja limitado a 11Kb/s.  No momento da instalação é
+preciso somente alternar para um console, executar os passos descritos aqui e
+continuar com o processo de instalação normal :)
+</li>
+<li>
+É uma boa solução quando as duas máquinas até em ambientes próximos.
+</li>
+<li>
+O custo para montagem desta rede é extremamente baixo, bastando um cabo Lap
+Link Serial custa em média R$20,00 o cabo de 4 metros.  Se você também é um
+amante da eletrônica, estou descrevendo o esquema de montagem do cabo em <a
+href="#s-cfgs-slattach-cabo">Construindo um cabo LapLink Serial, Seção
+5.4.1</a>.
+</li>
+<li>
+Você poderá fazer qualquer coisa que faria em uma rede normal (incluindo
+roteamento entre redes, MASQUERADING, etc)
+</li>
+<li>
+É mais uma prova das capacidades de rede que é possível usando o
+<code>Linux</code>.
+</li>
+</ul>
+
+<p>
+Agora, os contras da conexão via porta serial:
+<ul>
+<li>
+A porta serial não estará disponível para ser usada para conexão de mouses,
+impressoras seriais, dispositivos eletrônicos e inteligentes, etc.
+</li>
+<li>
+O comprimento máximo do cabo é de 15 metros.  Acima dessa comprimento, você
+pode colocar sua controladora em risco além da perda de sinal.  Por segurança,
+o tamanho máximo recomendável é 13 metros
+</li>
+</ul>
+
+<p>
+Para configurar uma conexão via cabo serial entre duas máquinas, vamos assumir
+que a primeira máquina terá o IP 192.168.2.1 e a segunda máquina 192.168.2.2:
+<ol type="1" start="1" >
+<li>
+Conecte o cabo Lap Link serial em cada uma das portas seriais.
+</li>
+<li>
+Verifique se o seu kernel está compilado com o suporte a rede <code>slip</code>
+e também com suporte a <samp>cslip</samp> (slip compactado, que melhora a taxa
+de transferência dependendo dos dados sendo transmitidos).  Caso não tenha o
+suporte a <em>slip</em>, você poderá usar o <em>ppp</em> nas duas pontas do
+link fazendo algumas adaptações para usar a interface <code>ppp?</code>, como é
+simples não será descrito neste guia :) (veja o manual do
+<code>slattach</code>)
+</li>
+<li>
+Interrompa qualquer programa que esteja usando a porta serial.
+</li>
+<li>
+Execute o comando <samp>slattach -s 115200 /dev/ttyS1 &amp;</samp>.  A função
+do <code>slattach</code> é associar uma interface de rede a um dispositivo,
+neste caso associamos o dispositivo <code>/dev/ttyS1</code> (segunda porta
+serial) a interface <code>sl0</code> (verifique se a interface foi criada
+usando o comando <samp>ifconfig sl0</samp>.
+<p>
+A opção <samp>-p</samp> especifica um protocolo alternativo para o
+<code>slattach</code>, o padrão é o <em>cslip</em>.  Outros tipos disponíveis
+são <em>slip</em>, <em>adaptive</em> <em>ppp</em> e <em>kiss</em> (usado em
+conexões de rádio AX.25).  Recomendo ver a página de manual do
+<code>slattach</code>.
+</li>
+<li>
+Nesse ponto a interface está ativa, mas a nossa máquina não conhece nada sobre
+a rede ou como alcançar a máquina 192.168.2.2.  Como a conexão é ponto a ponto,
+precisamos adicionar uma rota direta para esta máquina com o comando:
+<samp>route add -host 192.168.2.2 sl0</samp>.
+<p>
+Este comando diz para criar uma rota com o destino <samp>192.168.2.2</samp>
+usando a interface <code>sl0</code>.
+</li>
+<li>
+Configure a outra máquina seguindo os passos acima, apenas invertendo os 2
+endereços IPs usados.
+</li>
+</ol>
+
+<p>
+Pronto, agora verifique se cada uma das máquinas se comunica com a outra usando
+o comando <samp>ping 192.168.2.x</samp>.  Se ocorrer um erro, verifique os
+seguintes ítens:
+<ul>
+<li>
+Se as velocidade e o protocolo especificado em ambos os lados do link estão
+iguais.
+</li>
+<li>
+Se já existe um processo <code>slattach</code> rodando em segundo plano.
+</li>
+<li>
+Se existe um firewall bloqueando os pacotes da nova interface
+</li>
+<li>
+Se o cabo Lap Link serial está em bom estado.
+</li>
+</ul>
+
+<p>
+O número máximo de interfaces <code>sl?</code> depende da quantidade de portas
+seriais da sua máquina.  Caso utilize uma placa multi serial, o número máximo
+de conexões de rede se torna grande (mas isto é apenas para curiosidade, pois
+não compensa uma multi serial para ligar uma quantidade grande de máquinas a
+baixa velocidade).
+
+<p>
+Para derrubar a conexão, basta derrubar a interface serial com o <samp>ifconfig
+sl0 down</samp>, dar um kill no daemon do <code>slattach</code> e remover o
+módulo <code>slip</code> e <code>cslip</code> com o comando <code>rmmod</code>.
+Assim sua porta serial será liberada e poderá ser usada por outros aplicativos.
+
+<hr>
+
+<a name="s-cfgs-slattach-cabo"></a>
+<h3>5.4.1 Construindo um cabo LapLink Serial</h3>
+
+<p>
+Se você é uma pessoa que sabe mexer com eletrônica, poderá construir seu
+próprio cabo LapLink serial para fazer os testes desta seção.  Os materiais
+necessários são:
+<ul>
+<li>
+<samp>2</samp> - Conectores seriais DB9 fêmea
+</li>
+<li>
+<samp>2</samp> - Capas para os conectores acima.
+</li>
+<li>
+Fios para ligação dos conectores.  Uma forma que utilizei para montar este cabo
+foi aproveitar um carretel de cabo SCSI aproveitando 10 metros desfiando
+somente 9 dos 50 fios que acompanha o cabo (deixei um fio extra no caso de
+algum outro se romper).
+</li>
+<li>
+Ferro de solda e solda para as ligações.
+</li>
+<li>
+Concentração e paciência para a confecção correta dos cabos.
+</li>
+</ul>
+
+<p>
+Este é o conector fêmea DB9 (tomada que liga na máquina) visto por trás (hora
+de mostrar novamente meu talento com arte ASCII :))
+
+<pre>
+       --------------
+     1 \ o o o o o  / 5
+     6  \ o o o o  / 9
+         ----------
+</pre>
+
+<p>
+A figura acima mostra a posição dos pinos como referência para a soldagem dos
+terminais.  A tabela abaixo mostra a ligação dos fios nos cabos das 2 pontas.
+Note que cada ponta pode ter a opção da serial de 9 ou 25 pinos (ou as duas):
+
+<pre>
+      
+     +--------+--------+---------+
+     |Ponta 1 |        |  Ponta 2|
+     +---+----+--------+----+----+
+     | 9 | 25 |        | 25 |  9 |
+     +---+----+--------+----+----+
+     | 5 |  7 |        |  7 |  5 |
+     | 3 |  2 |        |  3 |  2 |
+     | 7 |  4 |        |  5 |  8 |
+     | 6 |  6 |        | 20 |  4 |
+     | 2 |  3 |        |  2 |  3 |
+     | 8 |  5 |        |  4 |  7 |
+     | 4 | 20 |        |  6 |  6 |
+     +---+----+--------+----+----+
+</pre>
+
+<hr>
+
+[ <a href="ch-rede.html">anterior</a> ]
+[ <a href="index.html#contents">Conteúdo</a> ]
+[ <a href="ch-intro.html">1</a> ]
+[ <a href="ch-bas.html">2</a> ]
+[ <a href="ch-hardw.html">3</a> ]
+[ <a href="ch-rede.html">4</a> ]
+[ 5 ]
+[ <a href="ch-log.html">6</a> ]
+[ <a href="ch-deb.html">7</a> ]
+[ <a href="ch-pers.html">8</a> ]
+[ <a href="ch-impr.html">9</a> ]
+[ <a href="ch-fw-iptables.html">10</a> ]
+[ <a href="ch-d-contas.html">11</a> ]
+[ <a href="ch-s-apache.html">12</a> ]
+[ <a href="ch-s-ident.html">13</a> ]
+[ <a href="ch-s-telnet.html">14</a> ]
+[ <a href="ch-s-ssh.html">15</a> ]
+[ <a href="ch-s-pop3.html">16</a> ]
+[ <a href="ch-s-cvs.html">17</a> ]
+[ <a href="ch-s-samba.html">18</a> ]
+[ <a href="ch-d-restr.html">19</a> ]
+[ <a href="ch-d-cripto.html">20</a> ]
+[ <a href="ch-apend.html">21</a> ]
+[ <a href="ch-log.html">próximo</a> ]
+
+<hr>
+
+<p>
+Guia Foca GNU/Linux
+
+<address>
+Versão 6.40 - segunda, 30 de outubro de 2006<br>
+<br>
+Gleydson Mazioli da Silva <code><a href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</a></code><br>
+<br>
+</address>
+
+<hr>
+
+</body>
+
+</html>
+

@@ -1,0 +1,265 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Comandos para manipulação de diretório</TITLE>
+<META http-equiv=content-type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2900.3059" name=GENERATOR></HEAD>
+<BODY><A name=ch-cmdd></A>
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ 6 ] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">próximo</A> 
+] 
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Capítulo 6 - Comandos para manipulação de diretório 
+</H1>
+<HR>
+
+<P>Abaixo comandos úteis para a manipulação de diretórios. 
+<HR>
+<A name=s-comando-ls></A>
+<H2>6.1 ls</H2>
+<P>Lista os arquivos de um diretório. 
+<P><SAMP>ls [<EM>opções</EM>] [<EM>caminho/arquivo</EM>] 
+[<EM>caminho1/arquivo1</EM>] ...</SAMP> 
+<P>onde: 
+<DL>
+  <DT><EM>caminho/arquivo</EM> 
+  <DD>Diretório/arquivo que será listado. 
+  <DT><EM>caminho1/arquivo1</EM> 
+  <DD>Outro Diretório/arquivo que será listado. Podem ser feitas várias 
+  listagens de uma só vez. 
+  <DT><EM>opções</EM> 
+  <DT>-a, --all 
+  <DD>Lista todos os arquivos (inclusive os ocultos) de um diretório. 
+  <DT>-A, --almost-all 
+  <DD>Lista todos os arquivos (inclusive os ocultos) de um diretório, exceto o 
+  diretório atual e o de nível anterior. 
+  <DT>-B, --ignore-backups 
+  <DD>Não lista arquivos que terminam com ~ (Backup). 
+  <DT>--color=PARAM 
+  <DD>Mostra os arquivos em cores diferentes, conforme o tipo de arquivo. PARAM 
+  pode ser: 
+  <UL>
+    <LI><EM>never</EM> - Nunca lista em cores (mesma coisa de não usar o 
+    parâmetro --color). 
+    <LI><EM>always</EM> - Sempre lista em cores conforme o tipo de arquivo. 
+    <LI><EM>auto</EM> - Somente colore a listagem se estiver em um terminal. 
+    </LI></UL>
+  <DT>-d, --directory 
+  <DD>Lista os nomes dos diretórios ao invés do conteúdo. 
+  <DT>-f 
+  <DD>Não classifica a listagem. 
+  <DT>-F 
+  <DD>Insere um caracter após arquivos executáveis ('*'), diretórios ('/'), 
+  soquete ('='), link simbólico ('@') e pipe ('|'). Seu uso é útil para 
+  identificar de forma fácil tipos de arquivos nas listagens de diretórios. 
+  <DT>-G, --no-group 
+  <DD>Oculta a coluna de grupo do arquivo. 
+  <DT>-h, --human-readable 
+  <DD>Mostra o tamanho dos arquivos em Kbytes, Mbytes, Gbytes. 
+  <DT>-H 
+  <DD>Faz o mesmo que <SAMP>-h</SAMP>, mas usa unidades de 1000 ao invés de 1024 
+  para especificar Kbytes, Mbytes, Gbytes. 
+  <DT>-l 
+  <DD>Usa o formato longo para listagem de arquivos. Lista as permissões, data 
+  de modificação, donos, grupos, etc. 
+  <DT>-n 
+  <DD>Usa a identificação de usuário e grupo numérica ao invés dos nomes. 
+  <DT>-L, --dereference 
+  <DD>Lista o arquivo original e não o link referente ao arquivo. 
+  <DT>-o 
+  <DD>Usa a listagem longa sem os donos dos arquivos (mesma coisa que -lG). 
+  <DT>-p 
+  <DD>Mesma coisa que -F, mas não inclui o símbolo '*' em arquivos executáveis. 
+  Esta opção é típica de sistemas <CODE>Linux</CODE>. 
+  <DT>-R 
+  <DD>Lista diretórios e sub-diretórios recursivamente. </DD></DL>
+<P>Uma listagem feita com o comando <SAMP>ls -la</SAMP> normalmente é mostrada 
+da seguinte maneira: <PRE>     -rwxr-xr--  1  gleydson user    8192 nov 4 16:00 teste
+</PRE>
+<P>Abaixo as explicações de cada parte: 
+<DL>
+  <DT><SAMP>-rwxr-xr--</SAMP> 
+  <DD>São as permissões de acesso ao arquivo teste. A primeira letra (da 
+  esquerda) identifica o tipo do arquivo, se tiver um <SAMP>d</SAMP> é um 
+  diretório, se tiver um "-" é um arquivo normal. 
+  <P>As permissões de acesso é explicada em detalhes em <A 
+  href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">Permissões 
+  de acesso a arquivos e diretórios, Capítulo 11</A>. </P>
+  <DT><SAMP>1</SAMP> 
+  <DD>Se for um diretório, mostra a quantidade de sub-diretórios existentes 
+  dentro dele. Caso for um arquivo, será 1. 
+  <DT><SAMP>gleydson</SAMP> 
+  <DD>Nome do dono do arquivo <CODE>teste</CODE>. 
+  <DT><SAMP>user</SAMP> 
+  <DD>Nome do grupo que o arquivo <CODE>teste</CODE> pertence. 
+  <DT><SAMP>8192</SAMP> 
+  <DD>Tamanho do arquivo (em bytes). 
+  <DT><SAMP>nov</SAMP> 
+  <DD>Mês da criação/ última modificação do arquivo. 
+  <DT><SAMP>4</SAMP> 
+  <DD>Dia que o arquivo foi criado. 
+  <DT><SAMP>16:00</SAMP> 
+  <DD>Hora em que o arquivo foi criado/modificado. Se o arquivo foi criado há 
+  mais de um ano, em seu lugar é mostrado o ano da criação do arquivo. 
+  <DT><CODE>teste</CODE> 
+  <DD>Nome do arquivo. </DD></DL>
+<P>Exemplos do uso do comando <CODE>ls</CODE>: 
+<UL>
+  <LI><SAMP>ls</SAMP> - Lista os arquivos do diretório atual. 
+  <LI><SAMP>ls /bin /sbin</SAMP> - Lista os arquivos do diretório /bin e /sbin 
+  <LI><SAMP>ls -la /bin</SAMP> - Listagem completa (vertical) dos arquivos do 
+  diretório /bin inclusive os ocultos. </LI></UL>
+<HR>
+<A name=s-comando-cd></A>
+<H2>6.2 cd</H2>
+<P>Entra em um diretório. Você precisa ter a permissão de execução para entrar 
+no diretório. 
+<P><SAMP>cd [<EM>diretório</EM>]</SAMP> 
+<P>onde: 
+<P><EM>diretório</EM> - diretório que deseja entrar. 
+<P>Exemplos: 
+<UL>
+  <LI>Usando <SAMP>cd</SAMP> sem parâmetros ou <SAMP>cd ~</SAMP>, você retornará 
+  ao seu diretório de usuário (diretório home). 
+  <LI><SAMP>cd /</SAMP>, retornará ao diretório raíz. 
+  <LI><SAMP>cd -</SAMP>, retornará ao diretório anteriormente acessado. 
+  <LI><SAMP>cd ..</SAMP>, sobe um diretório. 
+  <LI><SAMP>cd ../[<EM>diretório</EM>]</SAMP>, sobe um diretório e entra 
+  imediatamente no próximo (por exemplo, quando você está em 
+  <CODE>/usr/sbin</CODE>, você digita <SAMP>cd ../bin</SAMP>, o comando 
+  <CODE>cd</CODE> retorna um diretório (<CODE>/usr</CODE>) e entra imediatamente 
+  no diretório <CODE>bin</CODE> (<CODE>/usr/bin</CODE>). </LI></UL>
+<HR>
+<A name=s-comando-pwd></A>
+<H2>6.3 pwd</H2>
+<P>Mostra o nome e caminho do diretório atual. 
+<P>Você pode usar o comando pwd para verificar em qual diretório se encontra 
+(caso seu aviso de comandos não mostre isso). 
+<HR>
+<A name=s-comando-mkdir></A>
+<H2>6.4 mkdir</H2>
+<P>Cria um diretório no sistema. Um diretório é usado para armazenar arquivos de 
+um determinado tipo. O diretório pode ser entendido como uma <EM>pasta</EM> onde 
+você guarda seus papeis (arquivos). Como uma pessoa organizada, você utilizará 
+uma pasta para guardar cada tipo de documento, da mesma forma você pode criar um 
+diretório <CODE>vendas</CODE> para guardar seus arquivos relacionados com vendas 
+naquele local. 
+<P><SAMP>mkdir [<EM>opções</EM>] [<EM>caminho/diretório</EM>] 
+[<EM>caminho1/diretório1</EM>]</SAMP> 
+<P>onde: 
+<DL>
+  <DT><EM>caminho</EM> 
+  <DD>Caminho onde o diretório será criado. 
+  <DT><EM>diretório</EM> 
+  <DD>Nome do diretório que será criado. 
+  <DT><EM>opções:</EM> 
+  <DT>--verbose 
+  <DD>Mostra uma mensagem para cada diretório criado. As mensagens de erro serão 
+  mostradas mesmo que esta opção não seja usada. </DD></DL>
+<P>Para criar um novo diretório, você deve ter permissão de gravação. Por 
+exemplo, para criar um diretório em /tmp com o nome de <CODE>teste</CODE> que 
+será usado para gravar arquivos de teste, você deve usar o comando <CODE>"mkdir 
+/tmp/teste"</CODE>. 
+<P>Podem ser criados mais de um diretório com um único comando (<SAMP>mkdir 
+/tmp/teste /tmp/teste1 /tmp/teste2</SAMP>). 
+<HR>
+<A name=s-comando-rmdir></A>
+<H2>6.5 rmdir</H2>
+<P>Remove um diretório do sistema. Este comando faz exatamente o contrário do 
+<CODE>mkdir</CODE>. O diretório a ser removido deve estar vazio e você deve ter 
+permissão de gravação para remove-lo. 
+<P><SAMP>rmdir [<EM>caminho/diretório</EM>] 
+[<EM>caminho1/diretório1</EM>]</SAMP> 
+<P>onde: 
+<DL>
+  <DT><EM>caminho</EM> 
+  <DD>Caminho do diretório que será removido. 
+  <DT><EM>diretório</EM> 
+  <DD>Nome do diretório que será removido. </DD></DL>
+<P>É necessário que esteja um nível acima do diretório(s) que será(ão) 
+removido(s). Para remover diretórios que contenham arquivos, use o comando 
+<CODE>rm</CODE> com a opção <SAMP>-r</SAMP> (para maiores detalhes, veja <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html#s-comando-rm">rm, 
+Seção 7.3</A>). 
+<P>Por exemplo, para remover o diretório <CODE>/tmp/teste</CODE> você deve estar 
+no diretório <CODE>tmp</CODE> e executar o comando <SAMP>rmdir teste</SAMP>. 
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ 6 ] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">próximo</A> 
+] 
+<HR>
+
+<P>Guia Foca GNU/Linux 
+<ADDRESS>Versão 3.99 - segunda, 30 de outubro de 2006<BR><BR>Gleydson Mazioli da 
+Silva <CODE><A 
+href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR><BR></ADDRESS>
+<HR>
+</BODY></HTML>

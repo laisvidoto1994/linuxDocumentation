@@ -1,0 +1,879 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: =?iso-8859-1?Q?Guia_Foca_GNU/Linux_-_A_distribui=E7=E3o_Debian_GNU/Linux?=
+Date: Mon, 6 Aug 2007 11:22:48 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-deb.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - A distribui=E7=E3o Debian =
+GNU/Linux</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-deb></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ 19 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 19 - A distribui=E7=E3o Debian =
+GNU/Linux </H1>
+<HR>
+
+<P>Este cap=EDtulo traz algumas caracter=EDsticas sobre a =
+distribui=E7=E3o <CODE>Debian=20
+GNU/Linux</CODE>, programas de configura=E7=E3o e particularidades. A =
+maioria dos=20
+trechos aqui descritos, tamb=E9m se aplicam a distribui=E7=F5es baseadas =
+na=20
+<CODE>Debian</CODE>, como a <EM>Corel Debian GNU/Linux</EM> e a=20
+<EM>LibraNet</EM>.=20
+<P>Voc=EA deve estar se perguntando <SAMP>mas porque um cap=EDtulo =
+falando sobre a=20
+distribui=E7=E3o Debian se eu uso outra?</SAMP>. Bem, a partir da =
+vers=E3o=20
+<EM>Intermedi=E1rio</EM> do <EM>Foca Linux</EM> existem algumas partes =
+que s=E3o=20
+especificas de algumas distribui=E7=F5es Linux e que n=E3o se aplicam a =
+outras, como a=20
+localiza=E7=E3o dos arquivos de configura=E7=E3o, nomes dos programas de =
+configura=E7=E3o e=20
+outros detalhes espec=EDficos e esta vers=E3o =E9 a baseada na =
+<CODE>Debian</CODE>.=20
+Pegue na p=E1gina do Foca Linux (<CODE><A=20
+href=3D"http://www.guiafoca.org/">http://www.guiafoca.org/</A></CODE>) =
+uma vers=E3o=20
+Intermedi=E1rio do guia espec=EDfico para sua distribui=E7=E3o.=20
+<HR>
+<A name=3Ds-deb-carac></A>
+<H2>19.1 Porque usar a Debian?</H2>
+<P>A <CODE>Debian</CODE> =E9 a distribui=E7=E3o que mais cresce no =
+mundo, cada vers=E3o=20
+=E9 somente lan=E7ada ap=F3s rigorosos testes de seguran=E7a e =
+corre=E7=E3o de falhas=20
+fazendo desta a mais segura e confi=E1vel dentre todas as outras =
+distribui=E7=F5es=20
+Linux. =C9 reconhecida como a mais segura, maior e atualizada mais =
+freq=FCentemente=20
+entre as outras distribui=E7=F5es <CODE>Linux</CODE>, al=E9m de ser a =
+=FAnica sem fins=20
+comerciais.=20
+<P>=C9 a =FAnica que adota o estilo de desenvolvimento aberto e n=E3o =
+=E9 mantida por=20
+uma empresa comercial (note que o endere=E7o do WebSite da =
+<CODE>Debian</CODE>=20
+termina com <CODE>.org</CODE>), ao inv=E9s disso =E9 mantida por =
+programadores,=20
+hackers e especialistas de seguran=E7a espalhados ao redor do mundo, =
+seguindo o=20
+estilo de desenvolvimento do Linux. Possui suporte a mais de 10 =
+arquiteturas e=20
+15 sub-arquiteturas (entre elas, Intel x86, Alpha, VMS, Sparc, Macintosh =
+(m68k),=20
+Power Pc, ARM, etc).=20
+<P>Suas atualiza=E7=F5es s=E3o constantes e n=E3o =E9 necess=E1rio =
+adquirir um novo CD para=20
+fazer upgrades. Meu sistema =E9 atualizado semanalmente e de forma =
+segura atrav=E9s=20
+de 2 simples comandos. Veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-apt">apt,=20
+Se=E7=E3o 20.2</A> as instru=E7=F5es de como fazer isto.=20
+<P>Cada pacote da distribui=E7=E3o =E9 mantida por uma pessoa, o que =
+garante uma boa=20
+qualidade, implementa=E7=F5es de novos recursos e r=E1pida corre=E7=E3o =
+de falhas.=20
+Qualquer pessoa com bons conhecimentos no sistema e ingl=EAs pode se =
+tornar um=20
+<EM>Debian Developer</EM>, para detalhes consulte a lista de discuss=E3o =
+
+<EM>debian-user-portuguese</EM> (veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-listas">Listas=20
+de discuss=E3o, Se=E7=E3o 31.12.2</A>) ou veja a p=E1gina oficial da=20
+<CODE>Debian</CODE>: <CODE><A=20
+href=3D"http://www.debian.org/">http://www.debian.org/</A></CODE>.=20
+<P>A distribui=E7=E3o apresenta compatibilidade com outros sistemas a =
+partir da=20
+instala=E7=E3o at=E9 a sele=E7=E3o de programas e execu=E7=E3o do =
+sistema, sua instala=E7=E3o est=E1=20
+at=E9 mesmo dispon=EDvel desde computadores 386 que utilizam unidades de =
+disquetes=20
+de 5 1/4 polegadas at=E9 para computadores UDMA66 e com CD-ROM =
+inicializ=E1vel.=20
+<P>=C9 a distribui=E7=E3o mais indicada para uso em servidores devido ao =
+seu=20
+desempenho, seguran=E7a e programas =FAteis de gerenciamento e =
+monitora=E7=E3o da rede,=20
+recomendados por especialistas que participam de seu desenvolvimento.=20
+<P>N=E3o existem vers=F5es separadas da Debian para servidores, uso =
+pessoal, etc, ao=20
+inv=E9s disso a distribui=E7=E3o usa perfis de usu=E1rio (dependendo da =
+fun=E7=E3o do=20
+usu=E1rio) e perfis de computador (dependendo do que deseja fazer), =
+podendo ser=20
+selecionado mais de um perfil de usu=E1rio/computador.=20
+<P>Os perfis selecionam automaticamente os pacotes mais =FAteis para a =
+instala=E7=E3o.=20
+Os pacotes existentes em cada perfil foram escolhidos atrav=E9s de =
+debates entre=20
+usu=E1rios que trabalham ativamente naquela =E1rea, resultando em uma =
+sele=E7=E3o de=20
+pacotes de alta produtividade.=20
+<P>Para os usu=E1rios avan=E7ados e exigentes, tamb=E9m =E9 poss=EDvel =
+selecionar os=20
+pacotes individualmente via <CODE>dselect</CODE>, o que resultar=E1 em =
+uma=20
+instala=E7=E3o somente com pacotes =FAteis e melhor configurada.=20
+<HR>
+<A name=3Ds-deb-pacotes></A>
+<H2>19.2 Pacotes existentes na Debian</H2>
+<P>O n=FAmero de pacotes existentes na distribui=E7=E3o atual da =
+<CODE>Debian</CODE>=20
+(<EM>Woody</EM> - 3.0) =E9 de 8710.=20
+<P>A <CODE>Debian</CODE> (como a <CODE>Red Hat</CODE>) usa um formato =
+pr=F3prio=20
+para armazenar os programas: o formato <CODE>.deb</CODE>. Este formato =
+permite a=20
+declara=E7=E3o, resolu=E7=E3o e checagem autom=E1tica de depend=EAncias, =
+pacotes sugeridos,=20
+opcionais e outras caracter=EDsticas que o torna atraente para o =
+desenvolvimento,=20
+gerenciamento e manuten=E7=E3o do sistema.=20
+<P>Estes pacotes s=E3o gerenciados atrav=E9s do programa =
+<CODE>dpkg</CODE>=20
+(<EM>Debian Package</EM>) ou atrav=E9s de front-ends como o =
+<CODE>dselect</CODE>=20
+ou <CODE>apt</CODE> (para detalhes veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">Sistema=20
+de gerenciamento de pacotes, Cap=EDtulo 20</A>).=20
+<HR>
+<A name=3Ds-deb-suf></A>
+<H2>19.3 O que =E9 sid/testing/frozen/stable?</H2>
+<P>Para o lan=E7amento de uma nova distribui=E7=E3o <CODE>Debian</CODE>, =
+o seguinte=20
+processo ocorre: <SAMP>sid =3D&gt; testing =3D&gt; stable</SAMP> (sendo =
+a=20
+<EM>stable</EM> sempre o lan=E7amento oficial e sem bugs da =
+distribui=E7=E3o).=20
+<DL>
+  <DT>sid=20
+  <DD>Durante o desenvolvimento de uma nova distribui=E7=E3o =
+<CODE>Debian</CODE>,=20
+  ela =E9 chamada de <EM>sid</EM>. A <EM>sid</EM> =E9 a vers=E3o =
+<EM>Unstable</EM>,=20
+  isto n=E3o significa instabilidade, mas sim que a distribui=E7=E3o =
+esta sofrendo=20
+  modifica=E7=F5es para se tornar uma vers=E3o est=E1vel, recebendo =
+novos pacotes, etc.=20
+  <P>Quando os pacotes n=E3o s=E3o modificados ap=F3s um determinado =
+per=EDodo, os=20
+  scripts da Debian copiam estes pacotes (novos ou atualizados) para a=20
+  <EM>testing</EM>.=20
+  <P>N=E3o use a distribui=E7=E3o <EM>sid</EM> (<EM>unstable</EM>) ao =
+menos que tenha=20
+  experi=EAncia no <CODE>Linux</CODE> para corrigir problemas, que =
+certamente=20
+  aparecer=E3o. </P></DD></DL>
+<DL>
+  <DT>testing=20
+  <DD>A <EM>testing</EM> recebe os pacotes que n=E3o s=E3o modificados =
+durante algum=20
+  tempo da <EM>unstable</EM>, isto significa que eles possuem alguma=20
+  estabilidade.=20
+  <P>A <EM>testing</EM> =E9 uma esp=E9cie de congelamento permanente =
+(freeze)=20
+  durante o desenvolvimento da <EM>Unstable</EM>.=20
+  <P>Os novos pacotes que entram na <EM>unstable</EM> tamb=E9m caem na=20
+  <EM>testing</EM> ap=F3s certo tempo.=20
+  <P>Mesmo assim, podem existir falhas graves na <EM>testing</EM>, se =
+voc=EA=20
+  precisa de um ambiente realmente livre de falhas, use a =
+<EM>stable</EM>.=20
+  </P></DD></DL>
+<DL>
+  <DT>frozen (congelada)=20
+  <DD>Na data programada pela equipe de lan=E7amento da =
+<CODE>Debian</CODE>, a=20
+  distribui=E7=E3o <EM>testing</EM> =E9 congelada: nenhum pacote novo da =
+
+  <EM>unstable</EM> cai na <EM>testing</EM> e come=E7a a procura de =
+falhas na=20
+  distribui=E7=E3o <EM>testing</EM>. Nenhuma nova caracter=EDstica =E9 =
+implementada nos=20
+  pacotes (a n=E3o ser que seja extremamente necess=E1rio) e os =
+developers se=20
+  dedicam a corre=E7=E3o de erros nos pacotes.=20
+  <P>A distribui=E7=E3o <EM>testing</EM> congelada se tornar=E1 a futura =
+
+  <EM>stable</EM> ap=F3s todas as falhas serem corrigidas. =C9 =
+considerado seguro=20
+  usar a <EM>frozen</EM> ap=F3s 1 m=EAs de "congelamento".=20
+  <P>Quando a <EM>testing</EM> =E9 congelada, o ciclo de desenvolvimento =
+da=20
+  <EM>unstable</EM> continua para que a pr=F3xima distribui=E7=E3o da=20
+  <CODE>Debian</CODE> seja lan=E7ada. </P></DD></DL>
+<DL>
+  <DT>stable=20
+  <DD>Quando todos os bugs da <EM>testing</EM> congelada s=E3o =
+eliminados, ela =E9=20
+  lan=E7ada como <EM>stable</EM>, a nova <EM>vers=E3o Oficial</EM> da=20
+  <CODE>Debian</CODE>.=20
+  <P>A <EM>stable</EM> =E9 o resultado final do desenvolvimento, das =
+corre=E7=E3o de=20
+  falhas/seguran=E7a e que passou por todos os ciclos de testes para ser =
+lan=E7ada.=20
+  Resumindo =E9 a distribui=E7=E3o pronta para ser usada com toda a =
+seguran=E7a.=20
+  </P></DD></DL>
+<HR>
+<A name=3Ds-deb-obtendo></A>
+<H2>19.4 Como obter a Debian</H2>
+<P>A instala=E7=E3o da distribui=E7=E3o pode ser obtida atrav=E9s de =
+Download de <CODE><A=20
+href=3D"ftp://ftp.debian.org//debian/dists/stable/main/disks-i386">ftp://=
+ftp.debian.org//debian/dists/stable/main/disks-i386</A></CODE>=20
+(para Intel x86), seus programas diversos est=E3o dispon=EDveis em =
+<CODE><A=20
+href=3D"ftp://ftp.debian.org//debian/dists/stable/main/binary-i386">ftp:/=
+/ftp.debian.org//debian/dists/stable/main/binary-i386</A></CODE>.=20
+
+<P>A distribui=E7=E3o tamb=E9m pode ser obtida atrav=E9s de 3 (ou 4) CDs =
+bin=E1rios (para=20
+a Debian 2.2).=20
+<HR>
+<A name=3Ds-deb-prgnconfig></A>
+<H2>19.5 Programas de configura=E7=E3o</H2>
+<UL>
+  <LI><CODE>dselect</CODE> - Seleciona pacote para =
+instala=E7=E3o/desinstala=E7=E3o=20
+</LI></UL>
+<UL>
+  <LI><CODE>pppconfig</CODE> - Configura o computador para se conectar a =
+
+  Internet facilmente. Ap=F3s isto, use <SAMP>pon</SAMP> para se =
+conectar a=20
+  Internet, <SAMP>poff</SAMP> para se desconectar e <SAMP>plog</SAMP> =
+para=20
+  monitorar a conex=E3o. </LI></UL>
+<UL>
+  <LI><CODE>modconf</CODE> - Permite selecionar os m=F3dulos que ser=E3o =
+
+  automaticamente carregados na inicializa=E7=E3o do sistema. Se =
+requerido pelos=20
+  m=F3dulos os par=E2metros I/O, IRQ e DMA tamb=E9m podem ser =
+especificados. </LI></UL>
+<UL>
+  <LI><CODE>kbdconfig</CODE> - Permite selecionar o tipo de teclado que =
+utiliza=20
+  </LI></UL>
+<UL>
+  <LI><CODE>shadowconfig</CODE> - Permite ativar ou desativar o suporte =
+a senhas=20
+  ocultas (shadow password). Com as senhas ocultas ativadas, as senhas=20
+  criptografadas dos usu=E1rios e grupos s=E3o armazenadas nos arquivos=20
+  <CODE>shadow</CODE> e <CODE>gshadow</CODE> respectivamente, que =
+somente podem=20
+  ser acessadas pelo usu=E1rio root.=20
+  <P>Isto aumenta consideravelmente a seguran=E7a do sistema pois os =
+arquivos=20
+  <CODE>passwd</CODE> e <CODE>group</CODE> cont=E9m dados de usu=E1rios =
+que devem=20
+  ter permiss=E3o de leitura de todos os usu=E1rios do sistema. =
+</P></LI></UL>
+<UL>
+  <LI><CODE>tasksel</CODE> - Permite selecionar/modificar de forma =
+f=E1cil a=20
+  instala=E7=E3o de pacotes em seu sistema atrav=E9s da fun=E7=E3o que =
+sua m=E1quina ter=E1 ou=20
+  do seu perfil de usu=E1rio. </LI></UL>
+<UL>
+  <LI><CODE>tzconfig</CODE> - Permite modificar/selecionar o =
+fuso-hor=E1rio usado=20
+  na distribui=E7=E3o. </LI></UL>
+<P>Al=E9m destes, a Debian 3.0 (Woody) conta com o sistema de =
+configura=E7=E3o baseado=20
+no <SAMP>dpkg-reconfigure</SAMP> que permite configurar de forma f=E1cil =
+e r=E1pida=20
+aspecto de pacotes: <SAMP>dpkg-reconfigure xserver-svga</SAMP>.=20
+<HR>
+<A name=3Ds-deb-startup></A>
+<H2>19.6 Arquivos de inicializa=E7=E3o</H2>
+<P>Os arquivos de inicializa=E7=E3o da distribui=E7=E3o =
+<CODE>Debian</CODE> (e baseadas=20
+nela) est=E3o localizados no diret=F3rio <CODE>/etc/init.d</CODE>. Cada =
+daemon=20
+(programa residente na mem=F3ria) ou configura=E7=E3o espec=EDfica =
+possui um arquivo de=20
+onde pode ser ativado/desativado. Os sistemas residentes neste =
+diret=F3rio n=E3o s=E3o=20
+ativados diretamente, mas sim atrav=E9s de links existentes nos =
+diret=F3rios=20
+<CODE>/etc/rc?.d</CODE> onde cada diret=F3rio consiste em um n=EDvel de =
+execu=E7=E3o do=20
+sistema (veja tamb=E9m a <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm#s-deb-runlevels">N=EDveis=20
+de Execu=E7=E3o, Se=E7=E3o 19.7</A>).=20
+<P>Por padr=E3o, voc=EA pode usar as seguintes palavras chaves com os =
+arquivos de=20
+configura=E7=E3o:=20
+<UL>
+  <LI><SAMP>start</SAMP> - Inicia o daemon ou executa a configura=E7=E3o =
+
+  <LI><SAMP>stop</SAMP> - Interrompe a execu=E7=E3o de um daemon ou =
+desfaz a=20
+  configura=E7=E3o feita anteriormente (se poss=EDvel).=20
+  <LI><SAMP>restart</SAMP> - Reinicia a execu=E7=E3o de um daemon. =C9 =
+equivalente ao=20
+  uso de <SAMP>stop</SAMP> e <SAMP>start</SAMP> mas se aplicam somente a =
+alguns=20
+  daemons e configura=E7=F5es, que permitem a interrup=E7=E3o de =
+execu=E7=E3o e reinicio.=20
+  </LI></UL>
+<P>Por exemplo, para reconfigurar as interfaces de rede do computador, =
+podemos=20
+utilizar os seguintes comandos: <PRE>     cd /etc/init.d
+     ./networking restart
+</PRE>
+<HR>
+<A name=3Ds-deb-runlevels></A>
+<H2>19.7 N=EDveis de Execu=E7=E3o</H2>
+<P>Os <EM>N=EDveis de execu=E7=E3o</EM> (run levels) s=E3o diferentes =
+modos de=20
+funcionamento do <CODE>GNU/Linux</CODE> com programas, daemons e =
+recursos=20
+espec=EDficos. Em geral, os sistemas <CODE>GNU/Linux</CODE> possuem sete =
+n=EDveis de=20
+execu=E7=E3o numerados de 0 a 6. O daemon <CODE>init</CODE> =E9 o =
+primeiro programa=20
+executado no <CODE>GNU/Linux</CODE> (veja atrav=E9s do <SAMP>ps ax|grep=20
+init</SAMP>) e respons=E1vel pela carga de todos daemons de =
+inicializa=E7=E3o e=20
+configura=E7=E3o do sistema.=20
+<P>O n=EDvel de execu=E7=E3o padr=E3o em uma distribui=E7=E3o =
+<CODE>GNU/Linux</CODE> =E9=20
+definido atrav=E9s do arquivo de configura=E7=E3o do =
+<CODE>/etc/inittab</CODE> (<A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-inittab">Arquivo=20
+<CODE>/etc/inittab</CODE>, Se=E7=E3o 27.27</A>) atrav=E9s da linha <PRE> =
+    id:2:initdefault:
+</PRE>
+<HR>
+<A name=3Ds-deb-runlevels-e></A>
+<H3>19.7.1 Entendendo o funcionamento dos n=EDveis de execu=E7=E3o do =
+sistema=20
+(runlevels)</H3>
+<P>Os n=EDvel de execu=E7=E3o atual do sistema pode ser visualizado =
+atrav=E9s do comando=20
+<CODE>runlevel</CODE> e modificado atrav=E9s dos programas =
+<CODE>init</CODE> ou=20
+<CODE>telinit</CODE>. Quando =E9 executado, o <CODE>runlevel</CODE> l=EA =
+o arquivo=20
+<CODE>/var/run/utmp</CODE> e adicionalmente lista o n=EDvel de =
+execu=E7=E3o anterior=20
+ou a letra <SAMP>N</SAMP> em seu lugar (caso ainda n=E3o tenha ocorrido =
+a mudan=E7a=20
+do n=EDvel de execu=E7=E3o do sistema).=20
+<P>Na <CODE>Debian</CODE>, os diret=F3rios <CODE>/etc/rc0.d</CODE> a=20
+<CODE>/etc/rc6.d</CODE> cont=E9m os links simb=F3licos para arquivos em=20
+<CODE>/etc/init.d</CODE> que s=E3o acionados pelo n=EDvel de =
+execu=E7=E3o=20
+correspondente.=20
+<P>Por exemplo, o arquivo <CODE>S10sysklogd</CODE> em =
+<CODE>/etc/rc2.d</CODE>, =E9=20
+um link simb=F3lico para <CODE>/etc/init.d/sysklogd</CODE>.=20
+<P>O que aconteceria se voc=EA removesse o arquivo=20
+<CODE>/etc/rc2.d/S10sysklogd</CODE>? Simplesmente o daemon =
+<CODE>sysklogd</CODE>=20
+deixaria de ser executado no n=EDvel de execu=E7=E3o 2 do sistema (que =
+=E9 o padr=E3o da=20
+<CODE>Debian</CODE>).=20
+<P>A <CODE>Debian</CODE> segue o seguinte padr=E3o para definir se um =
+link=20
+simb=F3lico em <CODE>/etc/rc[0-6].d</CODE> iniciar=E1 ou interromper=E1 =
+a execu=E7=E3o de=20
+um servi=E7o em <CODE>/etc/init.d</CODE>, que =E9 o seguinte:=20
+<UL>
+  <LI>Se um link =E9 iniciado com a letra <SAMP>K</SAMP> (kill), quer =
+dizer que o=20
+  servi=E7o ser=E1 interrompido naquele n=EDvel de execu=E7=E3o. O que =
+ele faz =E9 executar=20
+  o daemon em <CODE>/etc/init.d</CODE> seguido de <SAMP>stop</SAMP>.=20
+  <LI>Se um link =E9 iniciado com a letra <SAMP>S</SAMP> (start), quer =
+dizer que o=20
+  servi=E7o ser=E1 iniciado naquele n=EDvel de execu=E7=E3o (=E9 =
+equivalente a executar o=20
+  daemon seguido de <SAMP>start</SAMP>). </LI></UL>
+<P>Primeiro os links com a letra <SAMP>K</SAMP> s=E3o executado e depois =
+os=20
+<SAMP>S</SAMP>. A ordem que os links s=E3o executados dependem do valor =
+num=E9rico=20
+que acompanha o link, por exemplo, os seguintes arquivos s=E3o =
+executados em=20
+seq=FC=EAncia: <PRE>     S10sysklogd
+     S12kerneld
+     S20inetd
+     S20linuxlogo
+     S20logoutd
+     S20lprng
+     S89cron
+     S99xdm
+</PRE>
+<P>Note que os arquivos que iniciam com o mesmo n=FAmero =
+(<SAMP>S20*</SAMP>) s=E3o=20
+executados alfabeticamente. O n=EDvel de execu=E7=E3o do sistema pode =
+ser modificado=20
+usando-se o comando <CODE>init</CODE> ou <CODE>telinit</CODE>. Os =
+seguinte=20
+n=EDveis de execu=E7=E3o est=E3o dispon=EDveis na <CODE>Debian</CODE>:=20
+<UL>
+  <LI><SAMP>0</SAMP> - Interrompe a execu=E7=E3o do sistema. todos os =
+programas e=20
+  daemons finalizados. =C9 acionado pelo comando <SAMP>shutdown =
+-h</SAMP>=20
+  <LI><SAMP>1</SAMP> - Modo monousu=E1rio, =FAtil para manuten=E7=E3o =
+dos sistema.=20
+  <LI><SAMP>2</SAMP> - Modo multiusu=E1rio (padr=E3o da Debian)=20
+  <LI><SAMP>3</SAMP> - Modo multiusu=E1rio=20
+  <LI><SAMP>4</SAMP> - Modo multiusu=E1rio=20
+  <LI><SAMP>5</SAMP> - Modo multiusu=E1rio com login gr=E1fico=20
+  <LI><SAMP>6</SAMP> - Reinicializa=E7=E3o do sistema. Todos os =
+programas e daemons=20
+  s=E3o encerrados e o sistema =E9 reiniciado. =C9 acionado pelo comando =
+
+  <SAMP>shutdown -r</SAMP> e o pressionamento de=20
+  <SAMP>CTRL</SAMP>+<SAMP>ALT</SAMP>+<SAMP>DEL</SAMP>. </LI></UL>
+<P>Por exemplo, para listar o n=EDvel de execu=E7=E3o atual do sistema =
+digite:=20
+<SAMP>runlevel</SAMP>. O <CODE>runlevel</CODE> dever=E1 listar algo =
+como: <PRE>     N 2
+</PRE>
+<P>Agora para mudar para o n=EDvel de execu=E7=E3o 1, digite: <SAMP>init =
+3</SAMP>.=20
+Agora confira a mudan=E7a digitando: <SAMP>runlevel</SAMP>. Voc=EA =
+dever=E1 ver este=20
+resultado: <PRE>     2 3
+</PRE>
+<P>Isto quer dizer que o n=EDvel de execu=E7=E3o anterior era o =
+<SAMP>2</SAMP> e o=20
+atual =E9 o <SAMP>3</SAMP>.=20
+<HR>
+<A name=3Ds-deb-rede></A>
+<H2>19.8 Rede no sistema Debian</H2>
+<P>O local que cont=E9m as configura=E7=F5es de rede em um sistema =
+<CODE>Debian</CODE>=20
+=E9 o <CODE>/etc/network/interfaces</CODE>. O formato deste arquivo =E9 =
+descrito em=20
+<A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-network-interfaces">Arquivo=
+=20
+<CODE>/etc/network/interfaces</CODE>, Se=E7=E3o 27.8</A>.=20
+<HR>
+<A name=3Ds-deb-bts></A>
+<H2>19.9 Bug tracking system</H2>
+<P>=C9 o sistema para relatar bugs e enviar sugest=F5es sobre a =
+distribui=E7=E3o. Para=20
+relatar um bug primeiro voc=EA deve saber ingl=EAs (=E9 a l=EDngua =
+universal entendida=20
+pelos desenvolvedores) e verificar se o bug j=E1 foi relatado. O Debian =
+<EM>Bug=20
+tracking system</EM> pode ser acessado pelo endere=E7o: <CODE><A=20
+href=3D"http://bugs.debian.org/">http://bugs.debian.org/</A></CODE>.=20
+<P>Para relatar uma falha/sugest=E3o, envie um e-mail para: <CODE><A=20
+href=3D"mailto:submit@bugs.debian.org">submit@bugs.debian.org</A></CODE>,=
+ com o=20
+assunto referente a falha/sugest=E3o que deseja fazer e no corpo da =
+mensagem: <PRE>     Package: pacote
+     Severity: normal/grave/wishlist
+     Version: vers=E3o do pacote
+    =20
+     E o relato do problema
+</PRE>
+<P>O bug ser=E1 encaminhado diretamente ao mantenedor do pacote que =
+verificar=E1 o=20
+problema relatado. Os campos <SAMP>Package</SAMP> e =
+<SAMP>Severity</SAMP> s=E3o=20
+obrigat=F3rios para definir o nome do pacote (para endere=E7ar o bug =
+para a pessoa=20
+correta) e vers=E3o do pacote (esta falha pode ter sido relatada e =
+corrigida em=20
+uma nova vers=E3o).=20
+<HR>
+<A name=3Ds-deb-download></A>
+<H2>19.10 Onde encontrar a Debian para Download?</H2>
+<P>No endere=E7o <CODE><A=20
+href=3D"ftp://ftp.debian.org/">ftp://ftp.debian.org/</A></CODE>. Outros =
+endere=E7os=20
+podem ser obtidos na p=E1gina oficial da <CODE>Debian</CODE> (<CODE><A=20
+href=3D"http://www.debian.org/">http://www.debian.org/</A></CODE>) =
+clicando no=20
+link <SAMP>Download</SAMP> e <SAMP>mirrors</SAMP>.=20
+<P>A distribui=E7=E3o Woody (3.0) completa, com 8710 pacotes ocupa em =
+torno de 3.0=20
+GB, (equivalente a 6 CDS de pacotes e mais 3 se quiser o c=F3digo =
+fonte). Voc=EA=20
+tamb=E9m pode optar por fazer a instala=E7=E3o dos pacotes opcionais via =
+Internet=20
+atrav=E9s do m=E9todo apt. Para detalhes veja o guia do dselect ou envie =
+uma=20
+mensagem para a lista de discuss=E3o <CODE><A=20
+href=3D"mailto:debian-user-portuguese@lists.debian.org">debian-user-portu=
+guese@lists.debian.org</A></CODE>=20
+(veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-listas">Listas=20
+de discuss=E3o, Se=E7=E3o 31.12.2</A> para detalhes).=20
+<HR>
+<A name=3Ds-deb-lista-pacotes></A>
+<H2>19.11 Lista de pacotes para uma instala=E7=E3o r=E1pida e =
+manual</H2>
+<P>Esta se=E7=E3o cont=E9m uma lista de pacotes necess=E1rios que =
+atendem a maioria dos=20
+usu=E1rios normais da <CODE>Debian</CODE> em um <STRONG>sistema =
+padr=E3o</STRONG>=20
+sem desperd=EDcio de espa=E7o e sabendo exatamente o que est=E1 =
+instalando.=20
+<P>Estou assumindo que voc=EA concluiu a instala=E7=E3o da =
+<CODE>Debian</CODE> 3.0=20
+(Woody) mas preferiu pular o passo de sele=E7=E3o de pacotes do =
+<CODE>dselect</CODE>=20
+e fazer uma instala=E7=E3o manual.=20
+<P>A lista de pacotes est=E1 dividida por categorias e voc=EA precisa =
+ter o programa=20
+<CODE>apt</CODE> configurado corretamente para que os comandos funcionem =
+(veja=20
+<A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-apt">apt,=20
+Se=E7=E3o 20.2</A> para detalhes).=20
+<P>Se pretende usar a lista de pacotes para fazer a instala=E7=E3o da=20
+<CODE>Debian</CODE> em muitos computadores, voc=EA tem duas op=E7=F5es:=20
+<OL type=3D1>
+  <LI>Copiar o conte=FAdo das se=E7=F5es que seguem e fazer um script de =
+instala=E7=E3o=20
+  personalizado para automatizar a instala=E7=E3o de pacotes da =
+<CODE>Debian</CODE>=20
+  em outras m=E1quinas=20
+  <LI>Ap=F3s a instala=E7=E3o dos pacotes no computador, utilize o =
+comando <SAMP>dpkg=20
+  --get-selections &gt;Lista-Pacotes.txt</SAMP> para gerar o arquivo=20
+  <CODE>Lista-Pacotes.txt</CODE> contendo a lista de pacotes instalados. =
+
+  <P>Ent=E3o no computador que pretende fazer a instala=E7=E3o de =
+pacotes, use o=20
+  comando <SAMP>dpkg --set-selections &lt;Lista-Pacotes.txt</SAMP> e =
+ent=E3o=20
+  digitar <SAMP>apt-get -f install</SAMP> ou escolher a op=E7=E3o=20
+  <SAMP>Install</SAMP> no <CODE>dselect</CODE>. </P></LI></OL>
+<P>Para mais detalhes veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-get-selections">Mostrando=
+=20
+a lista de pacotes do sistema, Se=E7=E3o 20.1.11</A> e a <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-set-selections">Obtendo=20
+uma lista de pacotes para instalar no sistema, Se=E7=E3o 20.1.12</A>. =
+=C9 importante=20
+usar o comando <SAMP>apt-get clean</SAMP> ap=F3s a instala=E7=E3o de =
+pacotes para=20
+remover os pacotes baixados pelo <CODE>apt</CODE> de=20
+<CODE>/var/cache/apt/archives</CODE> (exceto na instala=E7=E3o de =
+pacotes atrav=E9s do=20
+disco r=EDgido local).=20
+<HR>
+<A name=3Ds19.11.1></A>
+<H3>19.11.1 Pacotes B=E1sicos (Altamente Recomendado)</H3><PRE>     =
+apt-get install cpio info libident libncurses4 man-db manpages whois nvi =
+
+                     hdparm mc exim linuxlogo less kbd mutt libstdc++2.8 =
+bzip2=20
+                     isapnptools cron gpm libstdc++2.9-glibc2.1
+</PRE>
+<HR>
+<A name=3Ds19.11.2></A>
+<H3>19.11.2 Compila=E7=E3o do Kernel e programas em linguagem =
+C</H3><PRE>     apt-get install perl, gcc-i386-gnu libc6-dev bin86 make
+</PRE>
+<P>Se pretender utilizar o <CODE>kernel-package</CODE> para compilar o =
+kernel=20
+mais facilmente, ent=E3o voc=EA precisar=E1 dos seguintes pacotes: <PRE> =
+    apt-get install kernel-package dpkg-dev
+</PRE>
+<P>Veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-recompilando">Recompiland=
+o=20
+o Kernel, Se=E7=E3o 16.11</A> para entender como compilar seu pr=F3prio =
+kernel.=20
+<HR>
+<A name=3Ds19.11.3></A>
+<H3>19.11.3 X11 (b=E1sico)</H3><PRE>     apt-get install xbase =
+xbase-clients xf86setup xfonts-75dpi xserver-svga=20
+                     xterm xfs-xtt xdm
+</PRE>
+<P>Caso suas fontes sejam mostradas em tamanho exagerado, remova o =
+pacotes=20
+<CODE>xfonts-100dpi</CODE> ou ajuste a se=E7=E3o <SAMP>Files</SAMP> do =
+arquivo=20
+<CODE>/etc/X11/XF86Config</CODE> apropriadamente.=20
+<HR>
+<A name=3Ds19.11.4></A>
+<H3>19.11.4 Window Managers para o X</H3><PRE>     apt-get install =
+wmaker wmakerconf wmaker-data wmavload=20
+                     eterm enlightenment enlightenment-theme-bluesteel =
+asclock
+     		afterstep
+</PRE>
+<P>OBS: Existem outros excelentes gerenciadores de janelas como o=20
+<CODE>gnome</CODE>, se voc=EA tiver espa=E7o em disco...=20
+<HR>
+<A name=3Ds19.11.5></A>
+<H3>19.11.5 Impress=E3o (texto e gr=E1fico com sistema de =
+spool)</H3><PRE>     apt-get install lprng magicfilter gs gsfonts
+</PRE>
+<HR>
+<A name=3Ds19.11.6></A>
+<H3>19.11.6 Som (mixer, mp3, Midi, wav, CD-Player)</H3><PRE>     xmms =
+playmidi cam aumix libaudiofile0 libmikmod2 libesd0 mesag3+ggi xmcd sox
+</PRE>
+<HR>
+<A name=3Ds19.11.7></A>
+<H3>19.11.7 Programas de Internet (clientes)</H3><PRE>     apt-get =
+install xchat licq licq-data netscape fetchmail procmail mime-support
+</PRE>
+<HR>
+<A name=3Ds19.11.8></A>
+<H3>19.11.8 Acess=F3rios</H3><PRE>     apt-get install gimp gimp-nonfree =
+gedit gxedit abiword freefont sharefont=20
+                     type1inst
+</PRE>
+<HR>
+<A name=3Ds19.11.9></A>
+<H3>19.11.9 Rede</H3><PRE>     apt-get install finger, talk, talkd, =
+telnet
+</PRE>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ 19 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

@@ -1,0 +1,636 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: Guia Foca GNU/Linux - Arquivos e daemons de Log
+Date: Mon, 6 Aug 2007 11:32:53 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-log.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Arquivos e daemons de =
+Log</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-log></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ 17 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 17 - Arquivos e daemons de Log =
+</H1>
+<HR>
+
+<P>A atividade dos programas s=E3o registradas em arquivos localizados =
+em=20
+<CODE>/var/log</CODE> . Estes arquivos de registros s=E3o chamados de=20
+<EM>logs</EM> e cont=E9m a data, hora e a mensagem emitida pelo programa =
+
+(viola=E7=F5es do sistema, mensagens de erro, alerta e outros eventos) =
+entre outros=20
+campos. Enfim, muitos detalhes =FAteis ao administrador tanto para =
+acompanhar o=20
+funcionamento do seu sistema, comportamento dos programas ou ajudar na =
+solu=E7=E3o e=20
+preven=E7=E3o de problemas.=20
+<P>Alguns programas como o <CODE>Apache</CODE>, <CODE>exim</CODE>,=20
+<CODE>ircd</CODE> e <CODE>squid</CODE> criam diversos arquivos de log e =
+por este=20
+motivo estes s=E3o organizados em sub-diret=F3rios (a mesma t=E9cnica =
+=E9 usada nos=20
+arquivos de configura=E7=E3o em <CODE>/etc</CODE>, conforme a padr=E3o =
+FHS atual).=20
+<HR>
+<A name=3Ds17.1></A>
+<H2>17.1 Formato do arquivo de log</H2>
+<P>Um arquivo de log =E9 normalmente composto pelos seguintes campos: =
+<PRE>     Data|Hora|M=E1quina|daemon|mensagem
+</PRE>
+<P>O campo <EM>m=E1quina</EM> =E9 o nome do computador que registrou a =
+mensagem (a=20
+m=E1quina pode atuar como um servidor de logs registrando mensagens de =
+diversos=20
+computadores em sua rede). O campo <EM>daemon</EM> indica qual programa =
+gravou a=20
+<EM>mensagem</EM>.=20
+<P>O uso dos utilit=E1rios do console pode ajudar muito na pesquisa e =
+monitora=E7=E3o=20
+dos logs, por exemplo, para obter todas as mensagens do daemon=20
+<CODE>kernel</CODE> da esta=E7=E3o de trabalho <SAMP>wrk1</SAMP>, =
+eliminando os=20
+campos "wrk1" e "kernel": <PRE>     cat /var/log/*|grep 'wrk1'|grep =
+'kernel'|awk '{print $1 $2 $3 $6 $7 $8 $9 $10 $11 $12}'
+</PRE>
+<P>Os par=E2metros "$1", "$2" do comando <CODE>awk</CODE> indica que =
+campos ser=E3o=20
+listados, (omitimos $4 e $5 que s=E3o respectivamente "wrk1" e =
+"kernel").=20
+<HR>
+<A name=3Ds17.2></A>
+<H2>17.2 Daemons de log do sistema</H2>
+<P>Os daemons de log do sistema registram as mensagens de sa=EDda do =
+kernel=20
+(<CODE>klogd</CODE>) e sistema (<CODE>syslogd</CODE>) nos arquivos em=20
+<CODE>/var/log</CODE> .=20
+<P>A classifica=E7=E3o de qual arquivo em <CODE>/var/log</CODE> =
+receber=E1 qual tipo=20
+de mensagem =E9 controlado pelo arquivo de configura=E7=E3o=20
+<CODE>/etc/syslog.conf</CODE> atrav=E9s de <EM>facilidades</EM> e =
+<EM>n=EDveis</EM>=20
+(veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm#s-log-syslogd-exemplo">Arquivo=20
+de configura=E7=E3o <CODE>syslog.conf</CODE>, Se=E7=E3o 17.2.1.1</A> =
+para detalhes).=20
+<HR>
+<A name=3Ds-log-syslogd></A>
+<H3>17.2.1 syslogd</H3>
+<P>Este daemon controla o registro de logs do sistema.=20
+<P><SAMP>syslogd [<EM>op=E7=F5es</EM>]</SAMP>=20
+<DL>
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-f=20
+  <DD>Especifica um arquivo de configura=E7=E3o alternativo ao=20
+  <CODE>/etc/syslog.conf</CODE>.=20
+  <DT>-h=20
+  <DD>Permite redirecionar mensagens recebidas a outros servidores de =
+logs=20
+  especificados.=20
+  <DT>-l [computadores]=20
+  <DD>Especifica um ou mais computadores (separados por ":") que =
+dever=E3o ser=20
+  registrados somente com o nome de m=E1quina ao inv=E9s do FQDN (nome =
+completo,=20
+  incluindo dom=EDnio).=20
+  <DT>-m [minutos]=20
+  <DD>Intervalo em <EM>minutos</EM> que o syslog mostrar=E1 a mensagem=20
+  <SAMP>--MARK--</SAMP>. O valor padr=E3o padr=E3o =E9 20 minutos, 0 =
+desativa.=20
+  <DT>-n=20
+  <DD>Evita que o processo caia automaticamente em background. =
+Necess=E1rio=20
+  principalmente se o <CODE>syslogd</CODE> for controlado pelo=20
+  <CODE>init</CODE>.=20
+  <DT>-p [soquete]=20
+  <DD>Especifica um soquete UNIX alternativo ao inv=E9s de usar o =
+padr=E3o=20
+  <CODE>/dev/log</CODE>.=20
+  <DT>-r=20
+  <DD>Permite o recebimento de mensagens atrav=E9s da rede atrav=E9s da =
+porta UDP=20
+  514. Esta op=E7=E3o =E9 =FAtil para criar um servidor de logs =
+centralizado na rede.=20
+  Por padr=E3o, o servidor <CODE>syslog</CODE> rejeitar=E1 conex=F5es =
+externas.=20
+  <DT>-s [dom=EDnios]=20
+  <DD>Especifica a lista de dom=EDnios (separados por ":") que dever=E3o =
+ser=20
+  retirados antes de enviados ao log. </DD></DL>
+<P>Na distribui=E7=E3o <CODE>Debian</CODE>, o daemon =
+<CODE>syslogd</CODE> =E9 iniciado=20
+atrav=E9s do script <CODE>/etc/init.d/sysklogd</CODE>.=20
+<HR>
+<A name=3Ds-log-syslogd-exemplo></A>
+<H4>17.2.1.1 Arquivo de configura=E7=E3o <CODE>syslog.conf</CODE></H4>
+<P>O arquivo de configura=E7=E3o <CODE>/etc/syslog.conf</CODE> possui o =
+seguinte=20
+formato: <PRE>     facilidade.n=EDvel                    destino
+</PRE>
+<P>A <EM>facilidade</EM> e <EM>n=EDvel</EM> s=E3o separadas por um "." e =
+cont=E9m=20
+par=E2metros que definem o que ser=E1 registrado nos arquivos de log do =
+sistema:=20
+<UL>
+  <LI><SAMP>facilidade</SAMP> - =C9 usada para especificar que tipo de =
+programa=20
+  est=E1 enviando a mensagem. Os seguintes n=EDveis s=E3o permitidos (em =
+ordem=20
+  alfab=E9tica):=20
+  <UL>
+    <LI><SAMP>auth</SAMP> - Mensagens de seguran=E7a/autoriza=E7=E3o =
+(=E9 recomend=E1vel=20
+    usar authpriv ao inv=E9s deste).=20
+    <LI><SAMP>authpriv</SAMP> - Mensagens de seguran=E7a/autoriza=E7=E3o =
+(privativas).=20
+
+    <LI><SAMP>cron</SAMP> - Daemons de agendamento (<CODE>cron</CODE> e=20
+    <CODE>at</CODE>).=20
+    <LI><SAMP>daemon</SAMP> - Outros daemons do sistema que n=E3o =
+possuem=20
+    facilidades espec=EDficas.=20
+    <LI><SAMP>ftp</SAMP> - Daemon de ftp do sistema.=20
+    <LI><SAMP>kern</SAMP> - Mensagens do kernel.=20
+    <LI><SAMP>lpr</SAMP> - Subsistema de impress=E3o.=20
+    <LI><SAMP>local0 a local7</SAMP> - Reservados para uso local.=20
+    <LI><SAMP>mail</SAMP> - Subsistema de e-mail.=20
+    <LI><SAMP>news</SAMP> - Subsistema de not=EDcias da USENET.=20
+    <LI><SAMP>security</SAMP> - Sin=F4nimo para a facilidade =
+<SAMP>auth</SAMP>=20
+    (evite usa-la).=20
+    <LI><SAMP>syslog</SAMP> - Mensagens internas geradas pelo=20
+    <CODE>syslogd</CODE>.=20
+    <LI><SAMP>user</SAMP> - Mensagens gen=E9ricas de n=EDvel do =
+usu=E1rio.=20
+    <LI><SAMP>uucp</SAMP> - Subsistema de UUCP.=20
+    <LI><SAMP>*</SAMP> - Confere com todas as facilidades. </LI></UL>
+  <P>Mais de uma facilidade pode ser especificada na mesma linha do=20
+  <CODE>syslog.conf</CODE> separando-as com ",". </P>
+  <LI><SAMP>n=EDvel</SAMP> - Especifica a import=E2ncia da mensagem. Os =
+seguintes=20
+  n=EDveis s=E3o permitidos (em ordem de import=E2ncia invertida; da =
+mais para a menos=20
+  importante):=20
+  <UL>
+    <LI><SAMP>emerg</SAMP> - O sistema est=E1 inutiliz=E1vel.=20
+    <LI><SAMP>alert</SAMP> - Uma a=E7=E3o deve ser tomada imediatamente =
+para=20
+    resolver o problema.=20
+    <LI><SAMP>crit</SAMP> - Condi=E7=F5es cr=EDticas.=20
+    <LI><SAMP>err</SAMP> - Condi=E7=F5es de erro.=20
+    <LI><SAMP>warning</SAMP> - Condi=E7=F5es de alerta.=20
+    <LI><SAMP>notice</SAMP> - Condi=E7=E3o normal, mas significante.=20
+    <LI><SAMP>info</SAMP> - Mensagens informativas.=20
+    <LI><SAMP>debug</SAMP> - Mensagens de depura=E7=E3o.=20
+    <LI><SAMP>*</SAMP> - Confere com todos os n=EDveis.=20
+    <LI><SAMP>none</SAMP> - Nenhuma prioridade. </LI></UL>
+  <P>Al=E9m destes n=EDveis os seguintes sin=F4nimos est=E3o =
+dispon=EDveis:=20
+  <UL>
+    <LI><SAMP>error</SAMP> - Sin=F4nimo para o n=EDvel err.=20
+    <LI><SAMP>panic</SAMP> - Sin=F4nimo para o n=EDvel emerg.=20
+    <LI><SAMP>warn</SAMP> - Sin=F4nimo para o n=EDvel warning. =
+</LI></UL>
+  <LI><SAMP>destino</SAMP> - O destino das mensagens pode ser um =
+arquivo, um=20
+  pipe (se iniciado por um "|"), um computador remoto (se iniciado por =
+uma "@"),=20
+  determinados usu=E1rios do sistema (especificando os logins separados =
+por=20
+  v=EDrgula) ou para todos os usu=E1rios logados via <CODE>wall</CODE> =
+(usando "*").=20
+  </LI></UL>
+<P>Todas as mensagens com o n=EDvel especificado e superiores a esta =
+especificadas=20
+no <CODE>syslog.conf</CODE> ser=E3o registradas, de acordo com as =
+op=E7=F5es usadas.=20
+Conjuntos de <EM>facilidades</EM> e <EM>n=EDveis</EM> podem ser =
+agrupadas=20
+separando-as por ";".=20
+<P>OBS1: Sempre use TABS ao inv=E9s de espa=E7os para separar os =
+par=E2metros do=20
+<CODE>syslog.conf</CODE>.=20
+<P>OBS2: Algumas facilidades como <SAMP>security</SAMP>, emitem um beep =
+de=20
+alerta no sistema e enviam uma mensagem para o console, como forma de =
+alerta ao=20
+administrador e usu=E1rios logados no sistema.=20
+<P>Existem ainda 4 caracteres que garantes fun=E7=F5es especiais: "*", =
+"=3D", "!" e=20
+"-":=20
+<UL>
+  <LI>"*" - Todas as mensagens da <EM>facilidade</EM> especificada =
+ser=E3o=20
+  redirecionadas.=20
+  <LI>"=3D" - Somente o <EM>n=EDvel</EM> especificado ser=E1 registrado. =
+
+  <LI>"!" - Todos os <EM>n=EDveis</EM> especificados e maiores N=C3O =
+ser=E3o=20
+  registrados.=20
+  <LI>"-" - Pode ser usado para desativar o sync imediato do arquivo =
+ap=F3s sua=20
+  grava=E7=E3o. </LI></UL>
+<P>Os caracteres especiais "=3D" e "!" podem ser combinados em uma mesma =
+regra.=20
+<P>Exemplo: Veja abaixo um exemplo de um arquivo =
+<CODE>/etc/syslog.conf</CODE>=20
+padr=E3o de sistemas <CODE>Debian</CODE> <PRE>     #
+     # Primeiro alguns arquivos de log padr=F5es. Registrados por =
+facilidade
+     #
+    =20
+     auth,authpriv.*                 /var/log/auth.log
+     *.*;auth,authpriv.none          -/var/log/syslog
+     cron.*                         /var/log/cron.log
+     daemon.*                        -/var/log/daemon.log
+     kern.*                          -/var/log/kern.log
+     lpr.*                           -/var/log/lpr.log
+     mail.*                          /var/log/mail.log
+     user.*                          -/var/log/user.log
+     uucp.*                          -/var/log/uucp.log
+    =20
+     #
+     # Registro de logs do sistema de mensagens. Divididos para =
+facilitar
+     # a cria=E7=E3o de scripts para manipular estes arquivos.
+     #
+     mail.info                       -/var/log/mail.info
+     mail.warn                       -/var/log/mail.warn
+     mail.err                        /var/log/mail.err
+    =20
+     # Registro para o sistema de news INN
+     #
+     news.crit                       /var/log/news/news.crit
+     news.err                        /var/log/news/news.err
+     news.notice                     -/var/log/news/news.notice
+    =20
+     #
+     # Alguns arquivos de registro "pega-tudo".
+     # S=E3o usadas "," para especificar mais de uma prioridade (por=20
+     # exemplo, "auth,authpriv.none") e ";" para especificar mais de uma =
+
+     # facilidade.n=EDvel que ser=E1 gravada naquele arquivo.
+     # Isto permite deixar as regras consideravelmente menores e mais =
+leg=EDveis
+     #
+     *.=3Ddebug;\
+             auth,authpriv.none;\
+             news.none;mail.none     -/var/log/debug
+     *.=3Dinfo;*.=3Dnotice;*.=3Dwarn;\
+             auth,authpriv.none;\
+             cron,daemon.none;\
+             mail,news.none          -/var/log/messages
+    =20
+     #
+     # Emerg=EAncias s=E3o enviadas para qualquer um que estiver logado =
+no sistema. Isto
+     # =E9 feito atrav=E9s da especifica=E7=E3o do "*" como destino das =
+mensagens e s=E3o
+     # enviadas atrav=E9s do comando wall.
+     #
+     *.emerg                         *
+    =20
+     #
+     # Eu gosto de ter mensagens mostradas no console, mas somente em =
+consoles que=20
+     # n=E3o utilizo.
+     #
+     #daemon,mail.*;\
+     #       news.=3Dcrit;news.=3Derr;news.=3Dnotice;\
+     #       *.=3Ddebug;*.=3Dinfo;\
+     #       *.=3Dnotice;*.=3Dwarn       /dev/tty8
+    =20
+     # O pipe /dev/xconsole =E9 usado pelo utilit=E1rio "xconsole". Para =
+usa-lo,
+     # voc=EA deve executar o "xconsole" com a op=E7=E3o "-file":
+     #=20
+     #    $ xconsole -file /dev/xconsole [...]
+     #
+     # NOTA: ajuste as regras abaixo, ou ficar=E1 maluco se tiver um um =
+site=20
+     # muito movimentado...
+     #
+     daemon.*;mail.*;\
+             news.crit;news.err;news.notice;\
+             *.=3Ddebug;*.=3Dinfo;\
+             *.=3Dnotice;*.=3Dwarn       |/dev/xconsole
+    =20
+     # A linha baixo envia mensagens importantes para o console em que=20
+     # estamos trabalhando logados (principalmente para quem gosta de =
+ter=20
+     # controle total sobre o que est=E1 acontecendo com seu sistema).
+     *.err;kern.debug;auth.notice;mail.crit	/dev/console
+</PRE>
+<HR>
+<A name=3Ds-log-klogd></A>
+<H3>17.2.2 klogd</H3>
+<P>Este daemon controla o registro de mensagens do kernel. Ele monitora =
+as=20
+mensagens do kernel e as envia para o daemon de monitoramento=20
+<CODE>syslogd</CODE>, por padr=E3o.=20
+<P><SAMP>klogd [<EM>op=E7=F5es</EM>]</SAMP>=20
+<DL>
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-d=20
+  <DD>Ativa o modo de depura=E7=E3o do daemon=20
+  <DT>-f [arquivo]=20
+  <DD>Envia as mensagens do kernel para o arquivo especificado ao =
+inv=E9s de=20
+  enviar ao daemon do <CODE>syslog</CODE>=20
+  <DT>-i=20
+  <DD>Envia um sinal para o daemon recarregar os s=EDmbolos de m=F3dulos =
+do kernel.=20
+  <DT>-I=20
+  <DD>Envia um sinal para o daemon recarregar os s=EDmbolos est=E1ticos =
+e de m=F3dulos=20
+  do kernel.=20
+  <DT>-n=20
+  <DD>Evita a opera=E7=E3o em segundo plano. =DAtil se iniciado pelo =
+<CODE>init</CODE>=20
+
+  <DT>-k [arquivo]=20
+  <DD>Especifica o arquivo que cont=E9m os s=EDmbolos do kernel. =
+Exemplos deste=20
+  arquivo est=E3o localizados em <CODE>/boot/System.map-xx.xx.xx</CODE>. =
+</DD></DL>
+<P>A especifica=E7=E3o de um arquivo com a op=E7=E3o <SAMP>-k</SAMP> =E9 =
+necess=E1ria se=20
+desejar que sejam mostradas a tabela de s=EDmbolos ao inv=E9s de =
+endere=E7os num=E9ricos=20
+do kernel.=20
+<HR>
+<A name=3Ds-log-logger></A>
+<H2>17.3 logger</H2>
+<P>Este comando permite enviar uma mensagem nos log do sistema. A =
+mensagem =E9=20
+enviada aos logs via daemon <CODE>syslogd</CODE> ou via soquete do =
+sistema, =E9=20
+poss=EDvel especificar a prioridade, n=EDvel, um nome identificando o =
+processo, etc.=20
+Seu uso =E9 muito =FAtil em shell scripts ou em outros eventos do =
+sistema.=20
+<P><SAMP>logger [<EM>op=E7=F5es</EM>] [<EM>mensagem</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>mensagem</EM>=20
+  <DD>Mensagem que ser=E1 enviada ao daemon <EM>syslog</EM>=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-i=20
+  <DD>Registra o PID do processo=20
+  <DT>-s=20
+  <DD>Envia a mensagem ambos para a sa=EDda padr=E3o (STDOUT) e syslog.=20
+  <DT>-f [arquivo]=20
+  <DD>Envia o conte=FAdo do arquivo especificado como <EM>mensagem</EM> =
+ao syslog.=20
+
+  <DT>-t [nome]=20
+  <DD>Especifica o nome do processo respons=E1vel pelo log que ser=E1 =
+exibido antes=20
+  do PID na mensagem do syslog.=20
+  <DT>-p [prioridade]=20
+  <DD>Especifica a prioridade da mensagem do syslog, especificada como=20
+  <SAMP>facilidade.n=EDvel</SAMP>. Veja os tipos de prioridade/n=EDveis =
+em <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm#s-log-syslogd-exemplo">Arquivo=20
+  de configura=E7=E3o <CODE>syslog.conf</CODE>, Se=E7=E3o 17.2.1.1</A>. =
+O valor padr=E3o=20
+  <EM>prioridade.n=EDvel</EM> =E9 <EM>user.notice</EM> </DD></DL>
+<P>Mais detalhes sobre o funcionamento sobre o daemon de log do sistema=20
+<CODE>syslogd</CODE>, pode ser encontrado em <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm#s-log-syslogd">syslogd,=20
+Se=E7=E3o 17.2.1</A>=20
+<P>Exemplos: <SAMP>logger -i -t focalinux Teste teste teste</SAMP>, =
+<SAMP>logger=20
+-i -f /tmp/mensagem -p security.emerg</SAMP>=20
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ 17 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

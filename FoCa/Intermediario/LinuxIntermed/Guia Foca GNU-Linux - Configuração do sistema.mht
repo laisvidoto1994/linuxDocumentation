@@ -1,0 +1,735 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: =?iso-8859-1?Q?Guia_Foca_GNU/Linux_-_Configura=E7=E3o_do_sistema?=
+Date: Mon, 6 Aug 2007 11:20:20 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-cfg.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Configura=E7=E3o do =
+sistema</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-cfg></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ 23 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 23 - Configura=E7=E3o do sistema =
+</H1>
+<HR>
+
+<P>Este cap=EDtulo traz explica=E7=F5es sobre algumas configura=E7=F5es =
+=FAteis que podem=20
+ser feitas no sistema. Neste documento assumimos que o kernel do seus =
+sistema j=E1=20
+possui suporte a p=E1gina de c=F3digo 860 (Portuguesa) e o conjunto de =
+caracteres=20
+<SAMP>ISO-8859-1</SAMP>.=20
+<HR>
+<A name=3Ds-cfg-acentuacao></A>
+<H2>23.1 Acentua=E7=E3o</H2>
+<P>Permite que o <CODE>GNU/Linux</CODE> use a acentua=E7=E3o. A =
+acentua=E7=E3o do modo=20
+texto =E9 independente do modo gr=E1fico; voc=EA pode configurar tanto =
+um como o outro=20
+ou ambos. Para maiores detalhes veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm#s-cfg-acentuacao-t">Acentua=E7=E3=
+o=20
+em modo Texto, Se=E7=E3o 23.1.1</A> e/ou <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm#s-cfg-acentuacao-g">Acentua=E7=E3=
+o=20
+em modo gr=E1fico, Se=E7=E3o 23.1.2</A>.=20
+<P>Note que os mapas de teclado usados em modo texto s=E3o diferentes =
+dos usados=20
+em modo gr=E1fico. Geralmente os mapas de teclados para o modo gr=E1fico =
+tem uma=20
+letra <SAMP>X</SAMP> no nome.=20
+<HR>
+<A name=3Ds-cfg-acentuacao-t></A>
+<H3>23.1.1 Acentua=E7=E3o em modo Texto</H3>
+<P>Caso sua distribui=E7=E3o <CODE>Debian</CODE> esteja acentuando =
+corretamente no=20
+modo texto voc=EA n=E3o precisar=E1 ler esta se=E7=E3o. Antes de =
+prosseguir, verifique se=20
+voc=EA possui o pacote <CODE>kbd</CODE> ou <CODE>console-data</CODE> =
+instalado em=20
+seu sistema com o comando: <SAMP>dpkg -l kbd</SAMP>. Caso n=E3o existam, =
+alguns=20
+programas de configura=E7=E3o e arquivos de fontes n=E3o estar=E3o =
+dispon=EDveis.=20
+<P>Siga os passos abaixo para colocar e acentua=E7=E3o em funcionamento =
+para o modo=20
+Texto na <CODE>Debian</CODE>:=20
+<DL>
+  <DT><EM>Mapa de Teclados</EM>=20
+  <DD>
+  <DL>
+    <DT>Debian 2.2 (Potato)=20
+    <DD>Verifique se possui o arquivo de <EM>mapa de teclado</EM> =
+correspondente=20
+    ao seu modelo. Um mapa de teclado s=E3o arquivos com a extens=E3o=20
+    <CODE>.map</CODE> ou <CODE>.kmap</CODE> que fazem a tradu=E7=E3o do =
+c=F3digo=20
+    enviado pelo teclado para um caracter que ser=E1 exibido na tela =
+al=E9m de=20
+    outras fun=E7=F5es como o "Dead Keys" (pressionamento de uma tecla =
+que n=E3o gera=20
+    nenhum caracter mas afetar=E1 o pr=F3ximo caracter gerado - como na =
+acentua=E7=E3o,=20
+    quando voc=EA aperta o <SAMP>'</SAMP> n=E3o aparece nada mas ap=F3s =
+apertar a=20
+    letra <SAMP>A</SAMP> um caracter <SAMP>=C1</SAMP> =E9 exibido. A =
+combina=E7=E3o=20
+    <SAMP>'</SAMP> + <SAMP>A</SAMP> =E9 um <EM>Dead Key</EM> e est=E1 =
+definido no=20
+    arquivo do mapa de teclados).=20
+    <P>Os tipos de teclados mais usados aqui no Brasil s=E3o o =
+<EM>padr=E3o EUA</EM>=20
+    e o <EM>ABNT2</EM>. O teclado <EM>padr=E3o EUA</EM> =E9 o modelo =
+usado nos=20
+    Estados Unidos e voc=EA precisar=E1 apertar =
+<SAMP>'</SAMP>+<SAMP>C</SAMP> para=20
+    gerar um <EM>Cedilha (=E7)</EM>, enquanto o teclado ABNT2 possui =
+todas as=20
+    teclas usadas no Brasil (semelhante a uma m=E1quina de escrever) e o =
+
+    <EM>Cedilha</EM> possui sua pr=F3pria tecla ap=F3s a letra =
+<SAMP>L</SAMP>. O=20
+    mapa de teclados correspondente ao teclado <EM>padr=E3o EUA</EM> =E9 =
+o=20
+    <CODE>br-latin1</CODE> enquanto o <EM>ABNT2</EM> =E9 o =
+<CODE>br-abnt2</CODE>.=20
+    <P>Se n=E3o tiver o arquivo correspondente ao seu teclado ou n=E3o =
+encontra-lo,=20
+    voc=EA poder=E1 copia-lo de <CODE><A=20
+    =
+href=3D"http://www.guiafoca.org/download/outros/Consolemaps_tar.gz">http:=
+//www.guiafoca.org/download/outros/Consolemaps_tar.gz</A></CODE>,=20
+    este arquivo possui 3 mapas de teclados para os 2 teclados =
+Brasileiros mais=20
+    usados e um de Portugal (raramente usado no Brasil). Descompacte o =
+arquivo=20
+    <CODE>Consolemaps_tar.gz</CODE> para um local em seu sistema (por =
+exemplo:=20
+    <CODE>/tmp</CODE>) com o comando: <SAMP>tar -xzvf =
+Consolemaps_tar.gz</SAMP>.=20
+    Note que este arquivo serve somente para a configura=E7=E3o no modo =
+texto=20
+    (console), veja a se=E7=E3o seguinte para configurar a =
+acentua=E7=E3o no modo=20
+    gr=E1fico. </P>
+    <DT>Debian 3.0 (Woody)=20
+    <DD>Digite <SAMP>dpkg-reconfigure console-data</SAMP>. Ap=F3s a tela =
+inicial,=20
+    selecione a op=E7=E3o <SAMP>Select Keymap from Arch List</SAMP>,=20
+    <SAMP>qwerty</SAMP> e selecione os passos seguintes de acordo com =
+seu tipo=20
+    de teclado:=20
+    <UL>
+      <LI><SAMP>Us Internacional</SAMP> - Selecione <SAMP>US =
+American</SAMP> na=20
+      lista de op=E7=F5es e em seguida <SAMP>Standard</SAMP> e <SAMP>US=20
+      International (ISO-8859-1)</SAMP>.=20
+      <LI><SAMP>ABNT2 (com cedilha)</SAMP> - Selecione =
+<SAMP>Brazilian</SAMP> na=20
+      lista de op=E7=F5es. </LI></UL></DD></DL></DD></DL>
+<DL>
+  <DT><EM>Configurando o Mapa de Teclados</EM>=20
+  <DD>Se o arquivo do mapa de teclados possuir a extens=E3o =
+<CODE>.gz</CODE>,=20
+  descompacte-o com o comando: <SAMP>gzip -dc=20
+  <EM>arquivo.gz</EM>&gt;/etc/kbd/default.map</SAMP> ou <SAMP>gzip -d=20
+  <EM>arquivo.gz</EM></SAMP> para descompactar e depois o comando =
+<SAMP>cp=20
+  <EM>arquivo.kmap</EM> /etc/kbd/default</SAMP>.=20
+  <P>Se o arquivo possuir a extens=E3o <CODE>.tar.gz</CODE>, =
+descompacte-o com o=20
+  comando: <SAMP>tar -zxvf <EM>arquivo.tar.gz</EM></SAMP> e depois use o =
+comando=20
+  <SAMP>cp <EM>arquivo.kmap</EM> /etc/kbd/default</SAMP>.=20
+  <P>Fa=E7a isto substituindo <EM>arquivo.gz</EM> ou =
+<EM>arquivo.tar.gz</EM> com o=20
+  nome do arquivo compactado que cont=E9m o mapa de teclados.=20
+  <P>Voc=EA pode manter o arquivo <CODE>/etc/kbd/default.map.gz</CODE>, =
+pois este=20
+  arquivo =E9 lido pelos scripts de inicializa=E7=E3o da =
+<CODE>Debian</CODE> somente=20
+  se o arquivo <CODE>/etc/kbd/default.map</CODE> n=E3o for encontrado.=20
+  <P>Se desejar usar o comando <SAMP>loadkeys</SAMP>, voc=EA precisa =
+copiar o mapa=20
+  de teclados para um local conhecido no sistema, ent=E3o copie o =
+arquivo=20
+  <CODE>arquivo.kmap</CODE> para =
+<CODE>/usr/share/keymaps/i386/qwerty</CODE> (em=20
+  sistemas Debian) ou algum outro local apropriado. Note que o arquivo =
+pode ser=20
+  compactado pelo <CODE>gzip</CODE> e copiado para=20
+  <CODE>/usr/share/keymaps/i386/qwerty</CODE> que ser=E1 lido sem =
+problemas pelo=20
+  sistema encarregado de configurar o teclado e acentua=E7=E3o. =
+</P></DD></DL>
+<DL>
+  <DT><EM>Configurando a fonte de Tela</EM>=20
+  <DD>Descomente a linha <SAMP>CONSOLE_FONT=3Diso01.f16</SAMP> e =
+modifique-a para=20
+  <SAMP>CONSOLE_FONT=3Dlat1u-16.psf</SAMP> no arquivo=20
+  <CODE>/etc/kbd/config</CODE>.=20
+  <P>Esta linha diz ao sistema que <EM>fonte</EM> deve carregar para =
+mostrar os=20
+  caracteres na tela. A fonte de caracteres deve ser compat=EDvel com o =
+idioma=20
+  local, pois nem todas suportam caracteres acentuados. A fonte =
+prefer=EDvel para=20
+  exibir os caracteres acentuados =E9 a <CODE>lat1u-16</CODE>, o =
+<CODE>-16</CODE>=20
+  no nome do arquivo significa o tamanho da fonte. As fontes de tela =
+est=E3o=20
+  dispon=EDveis no diret=F3rio <CODE>/usr/share/consolefonts</CODE>.=20
+  <P>Neste ponto voc=EA pode verificar se o seu sistema esta =
+reconhecendo=20
+  corretamente a acentua=E7=E3o entrando no editor de textos =
+<CODE>ae</CODE> e=20
+  digitando: <SAMP>=E1=E3=E2=E0</SAMP>. Se todos os acentos apareceram =
+corretamente,=20
+  parab=E9ns! voc=EA j=E1 passou pela parte mais dif=EDcil. Agora o =
+pr=F3ximo passo =E9 a=20
+  acentua=E7=E3o no <CODE>Bash</CODE>. </P></DD></DL>
+<DL>
+  <DT><EM>Acentua=E7=E3o no aviso de comando (<CODE>bash</CODE>)</EM>=20
+  <DD>Para acentuar no <CODE>Bash</CODE> (interpretador de comandos) =E9 =
+
+  necess=E1rio alterar o arquivo <CODE>/etc/inputrc</CODE> e fazer as =
+seguintes=20
+  modifica=E7=F5es:=20
+  <OL type=3D1>
+    <LI>Descomente a linha: <SAMP>"#set convert-meta off"</SAMP> voc=EA =
+faz isto=20
+    apagando o s=EDmbolo "#" antes do nome.=20
+    <P>Um coment=E1rio faz com que o programa ignore linha(s) de =
+comando. =C9 muito=20
+    =FAtil para descrever o funcionamento de comandos/programas (voc=EA =
+vai=20
+    encontrar muito isso no sistema <CODE>GNU/Linux</CODE>, tudo =E9 =
+muito bem=20
+    documentado). </P></LI></OL>
+  <OL type=3D1 start=3D2>
+    <LI>Inclua a seguinte linha no final do arquivo:=20
+    <P>set meta-flag on </P></LI></OL>
+  <OL type=3D1 start=3D3>
+    <LI>O conte=FAdo deste arquivo deve ficar assim: <PRE>     set =
+convert-meta off
+     set input-meta on
+     set output-meta on
+</PRE></LI></OL>
+  <OL type=3D1 start=3D4>
+    <LI>Digite <SAMP>exit</SAMP> ou pressione =
+<SAMP>CTRL</SAMP>+<SAMP>D</SAMP>=20
+    para fazer o logout. Entre novamente no sistema para que as =
+altera=E7=F5es fa=E7am=20
+    efeito. </LI></OL></DD></DL>
+<P>Pronto! voc=EA j=E1 esta acentuando em modo texto!. Talvez seja =
+necess=E1rio que=20
+fa=E7a alguma altera=E7=E3o em arquivos de configura=E7=E3o de outros =
+programas para que=20
+possa acentuar corretamente (veja se existe algum arquivo com o nome=20
+correspondente ao programa no diret=F3rio <CODE>/etc</CODE>).=20
+<P>A distribui=E7=E3o <CODE>Debian</CODE> tamb=E9m traz o utilit=E1rio=20
+<CODE>kbdconfig</CODE> que tamb=E9m faz a configura=E7=E3o do mapa de =
+teclados de=20
+forma interativa e gravando automaticamente o mapa de teclados em=20
+<CODE>/etc/kbd/default.map.gz</CODE>. Se preferir usar o =
+<CODE>kbdconfig</CODE>=20
+ainda ser=E1 necess=E1rio executar os passos acima para habilita=E7=E3o =
+da fonte=20
+<CODE>lat1u-16</CODE> e acentua=E7=E3o no <CODE>bash</CODE>.=20
+<HR>
+<A name=3Ds-cfg-acentuacao-g></A>
+<H3>23.1.2 Acentua=E7=E3o em modo gr=E1fico</H3>
+<P>A acentua=E7=E3o no modo gr=E1fico =E9 feita de maneira simples:=20
+<DL>
+  <DT><EM>Mapa de Teclados</EM>=20
+  <DD>Verifique se possui o arquivo de mapa de teclado para o modo =
+gr=E1fico que=20
+  corresponde ao seu teclado. Um arquivo de mapa de teclado faz a =
+tradu=E7=E3o do=20
+  c=F3digo enviado pelo teclado para um caracter que ser=E1 exibido na =
+tela. Este=20
+  tipo de arquivo =E9 identificado com a extens=E3o <CODE>.map</CODE>. =
+Se n=E3o tiver=20
+  este arquivo ou n=E3o encontra-lo, voc=EA pode copia-lo de <CODE><A=20
+  =
+href=3D"http://www.guiafoca.org/download/outros/Xmodmaps_tar.gz">http://w=
+ww.guiafoca.org/download/outros/Xmodmaps_tar.gz</A></CODE>,=20
+  este arquivo possui 3 mapas de teclados para os 2 teclados Brasileiros =
+mais=20
+  usados e um de Portugal. Descompacte o arquivo =
+<CODE>Xmodmaps_tar.gz</CODE>=20
+  para um local em seu sistema (por exemplo: <CODE>/tmp</CODE>) com o =
+comando:=20
+  <SAMP>tar -xzvf Xmodmaps-tar.gz</SAMP>. Note que os mapas de teclado =
+do=20
+  <CODE>Xmodmaps_tar.gz</CODE> somente servem para a configura=E7=E3o no =
+modo=20
+  gr=E1fico (X-Window). </DD></DL>
+<DL>
+  <DT><EM>Acentua=E7=E3o no X</EM>=20
+  <DD>Para acentuar no X voc=EA precisar=E1 descompactar e copiar o =
+arquivo de mapa=20
+  de teclado adequado ao seu computador em cima do arquivo=20
+  <CODE>/etc/X11/Xmodmap</CODE> que j=E1 est=E1 em seu sistema. No meu =
+caso, eu usei=20
+  o seguinte comando (ap=F3s descompactar o arquivo): <SAMP>"cp=20
+  <CODE>Xmodmap.us+</CODE> <CODE>/etc/X11/Xmodmap</CODE>"</SAMP>. Agora =
+voc=EA=20
+  precisa reiniciar o servidor X para que as altera=E7=F5es fa=E7am =
+efeito (ou digite=20
+  <SAMP>xmodmap /etc/X11/Xmodmap</SAMP> no <CODE>xterm</CODE> para =
+aplicar as=20
+  altera=E7=F5es na se=E7=E3o atual).=20
+  <P>Os passos descritos at=E9 aqui funcionar=E3o para pessoas que =
+iniciam o X pelo=20
+  prompt (usando o comando <SAMP>startx</SAMP>, <SAMP>xinit</SAMP>, =
+etc), veja o=20
+  passo seguinte para acentuar pelo <CODE>XDM</CODE>. </P></DD></DL>
+<DL>
+  <DT><EM>Acentua=E7=E3o no XDM</EM>=20
+  <DD>Para acentuar no <CODE>XDM</CODE>, inclua as seguintes linhas no =
+arquivo=20
+  <CODE>/etc/X11/xdm/Xsetup_0</CODE>: <PRE>     =
+sysmodmap=3D/etc/X11/Xmodmap
+    =20
+     if [ -r $sysmodmap ]; then
+      xmodmap $sysmodmap
+     fi
+</PRE></DD></DL>
+<HR>
+<A name=3Ds-cfg-cores></A>
+<H2>23.2 N=FAmero de Cores do ambiente gr=E1fico</H2>
+<P>O n=FAmero de cores do ambiente gr=E1fico pode ser alterado =
+facilmente. Por=20
+padr=E3o, a maioria das instala=E7=F5es e distribui=E7=F5es =
+<CODE>GNU/Linux</CODE> vem com=20
+apenas 16 cores (4 bits) porque =E9 um n=FAmero de cores suportado por =
+qualquer=20
+placa de v=EDdeo, sem modifica=E7=F5es especiais.=20
+<P>A configura=E7=E3o de mais de 16 cores exige que voc=EA tenha =
+escolhido o modelo=20
+correto de sua placa de v=EDdeo (usando o programa =
+<CODE>xf86config</CODE> (na=20
+Debian 2.2) ou digitando <SAMP>dpkg-reconfigure xserver-svga</SAMP> (na =
+Debian=20
+3.0)). Por exemplo, minha placa de v=EDdeo =E9 uma <SAMP>Trident =
+9680</SAMP> na tela=20
+de sele=E7=E3o do programa <CODE>xf86config</CODE> eu escolhi =
+<SAMP>Trident 9680=20
+Generic</SAMP> (c=F3digo 671 no servidor X 3.3.6) que =E9 o driver que =
+permite o uso=20
+de todas as cores permitidas por esta placa e tamb=E9m usar os recursos =
+de=20
+acelera=E7=E3o que ela oferece. Voc=EA pode utilizar o programa=20
+<CODE>xviddetect</CODE> para obter o modelo de sua placa de v=EDdeo e o =
+servidor X=20
+correspondente a ela, basta digitar <SAMP>xviddetect</SAMP> na linha de =
+comando.=20
+O comando <SAMP>dpkg-reconfigure xserver-svga</SAMP> da Debian 3.0 =
+(Woody) =E9=20
+mais flex=EDvel e possui uma facilidade maior de configura=E7=E3o, =
+inclusive=20
+auto-detectando seu chipset de v=EDdeo e configurando seu monitor de =
+acordo com o=20
+tamanho da tela (em polegadas).=20
+<P>Com uma configura=E7=E3o correta =E9 poss=EDvel atingir at=E9 32 bits =
+de cores (pocket=20
+pixel) no X. A configura=E7=E3o do X utiliza o <EM>n=FAmero de bits</EM> =
+ao inv=E9s do=20
+n=FAmero de cores na sua configura=E7=E3o. Abaixo uma tabela =
+comparativa: <PRE>       Bits      N=FAmero Max. Cores  Mem=F3ria =
+m=EDnima requerida na Placa de V=EDdeo
+     -------     -----------------  =
+-----------------------------------------
+      4 bits         16 cores                          256Kb
+      8 bits        256 cores                          512Kb
+     16 bits      32.384/65536 cores                   1MB
+     24 bits      16 milh=F5es de cores (pixel menor)    1MB
+     32 bits      16 milh=F5es de cores                  1MB
+</PRE>
+<P>Lembre-se que a tabela acima leva em considera=E7=E3o a resolu=E7=E3o =
+de v=EDdeo de=20
+640x480. Caso utilizar uma resolu=E7=E3o de 800x600, 1024x768 ou =
+superior, os=20
+requerimentos de <EM>mem=F3ria de v=EDdeo</EM> para mostrar o n=FAmero =
+de cores da=20
+tabela acima ser=E3o maiores. Para mostrar 1024x768 - 16 milh=F5es de =
+cores ser=E3o=20
+necess=E1rios 2MB de mem=F3ria de v=EDdeo, por exemplo. A resolu=E7=E3o =
+de 24 bits=20
+normalmente traz problemas em alguns chipsets, considere a =
+utiliza=E7=E3o da=20
+resolu=E7=E3o de 16 ou 32 bits.=20
+<P>O uso de uma resolu=E7=E3o de v=EDdeo como 800x600 ou superior, =
+tamb=E9m depende do=20
+monitor de v=EDdeo. Nem todos os monitores VGA e SVGAs do mercado =
+suportam=20
+resolu=E7=F5es acima de 640x480.=20
+<P>OBS: Se tiver escolha, prefira placas de v=EDdeo independentes da =
+placa m=E3e.=20
+Normalmente as placas de v=EDdeo on-board usam parte da mem=F3ria RAM =
+como mem=F3ria=20
+de v=EDdeo (mem=F3ria compartilhada) e isto diminui a performance de =
+v=EDdeo e a=20
+performance do sistema porque se voc=EA estiver usando 2MB de mem=F3ria =
+de v=EDdeo,=20
+ter=E1 2 MB a menos para executar seus programas. O pre=E7o destas =
+placas geralmente=20
+diminui na propor=E7=E3o do desempenho que oferecem.=20
+<P>Uma boa escolha para uma melhor qualidade e maior velocidade =E9 =
+<EM>16=20
+bits</EM>. O motivo disto =E9 que quanto maior a qualidade e a =
+resolu=E7=E3o, mais=20
+tempo ser=E1 levado para os pixels serem atualizados no monitor. Veja =
+abaixo como=20
+configurar o n=FAmero de cores para quem esta iniciando o X-Window pelo =
+modo texto=20
+e <CODE>XDM</CODE>.=20
+<HR>
+<A name=3Ds-cfg-cores-t></A>
+<H3>23.2.1 Configurando o n=FAmero de cores para quem inicia pelo =
+prompt</H3>
+<P>Ap=F3s configurar corretamente a resolu=E7=E3o de v=EDdeo aceita pelo =
+seu servidor X=20
+com <CODE>xf86config</CODE> ou <SAMP>dpkg-reconfigure =
+xserver-svga</SAMP>=20
+(Debian 3.0) use o comando <SAMP>startx -- -bpp 8</SAMP> no lugar de=20
+<SAMP>startx</SAMP>. Note que estou usando 256 cores como exemplo (veja =
+a tabela=20
+acima), se quiser usar mais cores e sua placa de v=EDdeo tiver mem=F3ria =
+suficiente,=20
+use 16, 24 ou 32. Os usu=E1rios de distribui=E7=F5es baseadas na =
+<CODE>Debian=20
+2.2</CODE> tamb=E9m tem o <CODE>anXious</CODE> (um programa em linguagem =
+
+<CODE>Perl</CODE>) que permite fazer a configura=E7=E3o no modo texto =
+atrav=E9s de=20
+menus. Para a Debian 3.0 (Woody) o comando <SAMP>dpkg-reconfigure=20
+xserver-svga</SAMP> =E9 o mais f=E1cil e r=E1pido, ele detecta sua placa =
+de v=EDdeo e=20
+configura seu monitor de acordo com o tamanho de tela, al=E9m de =
+permitir=20
+configura=E7=F5es detalhadas se selecionar a op=E7=E3o "Avan=E7ado" de =
+configura=E7=E3o.=20
+<P>Uma maneira mais pr=E1tica de iniciar sempre com uma mesma =
+resolu=E7=E3o =E9 incluir=20
+um <CODE>alias</CODE> no arquivo <CODE>.bashrc</CODE> em seu =
+diret=F3rio:=20
+<SAMP>alias startx=3D'startx -- -bpp 8'</SAMP>=20
+<P>Desta forma toda a vez que se digitar <SAMP>startx</SAMP>, ser=E1 =
+executado o=20
+comando da direita do sinal de igual.=20
+<P>OBS: Se alguma coisa der errado e a imagem aparecer distorcida ou=20
+simplesmente n=E3o aparecer, n=E3o se desespere! Pressione =
+simultaneamente=20
+<SAMP>CTRL+ALT+Back Space</SAMP>, esta =E9 a combina=E7=E3o de teclas =
+finaliza=20
+imediatamente o servidor X.=20
+<HR>
+<A name=3Ds-cfg-configurando-g></A>
+<H3>23.2.2 Configurando o n=FAmero de cores para quem inicia pelo =
+XDM</H3>
+<P>Assumindo que o seu arquivo <CODE>/etc/X11/XF86Config</CODE> foi =
+gerado=20
+corretamente, modifique o arquivo <CODE>/etc/X11/xdm/Xservers</CODE> e =
+alterar o=20
+final da linha colocando <SAMP>-bpp resolu=E7=E3o</SAMP>. Por exemplo, a =
+=FAltima=20
+linha de meu arquivo <CODE>Xservers</CODE> era: <PRE>     :0 local =
+/usr/bin/X11/X vt7=20
+    =20
+      eu a modifiquei para=20
+    =20
+     :0 local /usr/bin/X11/X vt7 -bpp 16
+</PRE>
+<P>Pronto, basta reiniciar o servidor X (usando <SAMP>CTRL+ALT+Back=20
+Space</SAMP>) ou reiniciando atrav=E9s do arquivo =
+<CODE>/etc/init.d/xdm</CODE>=20
+usando <SAMP>xdm restart</SAMP> e seu sistema passar=E1 a usar 65.000 =
+cores de=20
+v=EDdeo.=20
+<P>OBS: Lembre-se de salvar todos os seus arquivos antes de reiniciar o =
+servidor=20
+X, pois todos os programas que estiverem abertos no sistema ser=E3o =
+imediatamente=20
+fechados.=20
+<HR>
+<A name=3Ds23.2.3></A>
+<H3>23.2.3 Ajustando o alinhamento da imagem no X e outras =
+configura=E7=F5es</H3>
+<P>Ap=F3s voc=EA ter criado o arquivo de configura=E7=E3o do X com o=20
+<CODE>xf86config</CODE> (modo texto), <SAMP>dpkg-reconfigure =
+xserver-svga</SAMP>=20
+ou <CODE>XF86Setup</CODE> (modo gr=E1fico), =E9 poss=EDvel que a =
+configura=E7=E3o precise=20
+de um ajuste fino para o alinhamento correto da imagem no monitor. =
+Muitos=20
+monitores modernos possuem teclas para esta fun=E7=E3o, mas desde que =
+monitor esteja=20
+com sua imagem aparecendo corretamente em modo texto, o ajuste dever=E1 =
+ser feito=20
+no servidor X. Este ajuste =E9 feito atrav=E9s do utilit=E1rio =
+<CODE>xvidtune</CODE>.=20
+<P>Entre no modo gr=E1fico como usu=E1rio <SAMP>root</SAMP>, abra o=20
+<CODE>xterm</CODE> e digite <SAMP>xvidtune</SAMP> uma tela aparecer=E1 =
+com um=20
+aviso sobre o uso do programa, clique em <CODE>OK</CODE>. Recomendo que =
+ative o=20
+bot=E3o <SAMP>AUTO</SAMP> para que a tela v=E1 se ajustando na medida =
+que voc=EA mexe=20
+nos ajustes.=20
+<P>Para restaurar a configura=E7=E3o anterior, pressione o bot=E3o=20
+<SAMP>Restore</SAMP> (n=E3o faz efeito caso o bot=E3o <SAMP>Apply</SAMP> =
+tenha sido=20
+pressionado). Clicando em <SAMP>Quit</SAMP>, voc=EA sai do =
+<CODE>xvidtune</CODE>=20
+sem salvar a configura=E7=E3o. Quando estiver satisfeito com a sua=20
+configura=E7=E3o/alinhamento da imagem, clique em <SAMP>Apply</SAMP>, a =
+configura=E7=E3o=20
+escolhida estar=E1 salva.=20
+<HR>
+<A name=3Ds23.2.4></A>
+<H3>23.2.4 Sobre o n=FAmero de cores para jogos que funcionam no X</H3>
+<P>A maioria dos jogos se recusam a funcionam com uma quantidade de =
+cores maior=20
+do que 8 bits. Se voc=EA instalar algum jogo e ao tentar executa-lo =
+simplesmente=20
+n=E3o acontecer nada ou mostrar uma mensagem de erro, modifique o =
+n=FAmero de cores=20
+para 8 bits, provavelmente o problema estar=E1 ai.=20
+<P>Lembre-se: Quanto mais cores usar e maior for sua resolu=E7=E3o, mais =
+lento=20
+ficar=E1 a velocidade de v=EDdeo. Por este motivo alguns jogos se =
+recusam a=20
+funcionar com mais de 8 bits de cores.=20
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ 23 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

@@ -1,0 +1,534 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: Guia Foca GNU/Linux - Executando tarefas diversas no Linux
+Date: Mon, 6 Aug 2007 11:34:14 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-tasks.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Executando tarefas diversas no =
+Linux</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-tasks></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ 24 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 24 - Executando tarefas diversas =
+no Linux=20
+</H1>
+<HR>
+
+<P>Este cap=EDtulo explica como realizar tarefas espec=EDficas no =
+sistema, como=20
+gravar um CD, assistir filmes, etc. Ele tamb=E9m cont=E9m nomes de =
+programas=20
+recomendados tanto em modo texto como modo gr=E1fico.=20
+<HR>
+<A name=3Ds-tasks-cdwriting></A>
+<H2>24.1 Gravando CDs no Linux</H2>
+<P>A grava=E7=E3o de CDs no <CODE>Linux</CODE> pode ser feita atrav=E9s =
+dos programas=20
+<CODE>cdrecord</CODE> ou <CODE>CDRDAO</CODE>. Neste cap=EDtulo vou =
+explicar a=20
+grava=E7=E3o usando o <CODE>cdrecord</CODE> para gravar um CD de dados e =
+audio.=20
+Primeiro instale o <CODE>cdrecord</CODE>, <CODE>mkisofs</CODE> e=20
+<CODE>cdda2wav</CODE> em sua m=E1quina (<SAMP>apt-get install cdrecord =
+mkisofs=20
+cdda2wav</SAMP>).=20
+<HR>
+<A name=3Ds-tasks-cdwriting-data></A>
+<H3>24.1.1 Gravando CDs de dados</H3>
+<P>O processo de grava=E7=E3o de um CD de dados =E9 feito em 2 etapas: =
+primeiro =E9=20
+gerado um arquivo ISO com o programa <CODE>mkisofs</CODE> que ser=E1 a =
+imagem=20
+exata do CD que ser=E1 gravado e a grava=E7=E3o usando o =
+<CODE>cdrecord</CODE>. Caso=20
+ainda n=E3o tenha configurado seu gravador no <CODE>Linux</CODE> ou =
+n=E3o tem=20
+certeza do seu funcionamento, veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfgdisp-cdwritter">Conf=
+igurando=20
+um gravador de CD no Linux, Se=E7=E3o 3.11.3</A>.=20
+<P>Vou assumir que os dados que deseja gravar est=E3o no diret=F3rio=20
+<CODE>/dados</CODE>. Primeiro gere o arquivo ISO: <PRE>     cd /dados
+     mkisofs -r -o dados.iso -J -V"CD_DADOS" .
+</PRE>
+<P>Na linha acima, voc=EA permite que todos possam ler o CD alterando as =
+
+permiss=F5es (<SAMP>-r</SAMP>), o arquivo de sa=EDda ser=E1 =
+<CODE>dados.iso</CODE>=20
+(<SAMP>-o <CODE>dados.iso</CODE></SAMP>), os nomes tamb=E9m ter=E3o o =
+=EDndice no=20
+formato Joliet (<CODE>Windows</CODE>) (<SAMP>-J</SAMP>), o nome de =
+volume ser=E1=20
+<EM>CD_DADOS</EM> (<SAMP>-V"CD_DADOS"</SAMP>). Foi colocado =
+<SAMP>.</SAMP> para=20
+o diret=F3rio ra=EDz porque estamos dentro do diret=F3rio que queremos =
+gravar dados.=20
+N=E3o us e "*" para especificar os arquivos, a n=E3o ser que queira que =
+todos os=20
+arquivos do seus subdiret=F3rios fiquem dentro do ra=EDz do CD :-)=20
+<P>Antes de gravar voc=EA pode testar se o conte=FAdo do CD est=E1 OK =
+montando a=20
+imagem ISO: <PRE>     mkdir /tmp/iso
+     mount /dados/dados.iso /tmp/iso -o loop -t iso9660
+</PRE>
+<P>Voc=EA poder=E1 entrar no diret=F3rio <CODE>/tmp/iso</CODE> e ver =
+como est=E1 o=20
+conte=FAdo do seu CD antes da grava=E7=E3o. Qualquer modifica=E7=E3o =
+dever=E1 ser feita no=20
+diret=F3rio <CODE>/dados</CODE> e depois gerar novamente o iso com=20
+<CODE>mkisofs</CODE>. Desmonte o arquivo ISO antes de gravar o CD.=20
+<P>Agora, execute o comando: <PRE>     cdrecord -v -dev=3D0,0,0 -data =
+/dados/dados.iso
+</PRE>
+<P>Para gravar seu CD. O <SAMP>-v</SAMP> mostra a progress=E3o da =
+grava=E7=E3o, o=20
+n=FAmero passado como argumento a <SAMP>-dev</SAMP> =E9 obtido pelo =
+comando=20
+<SAMP>cdrecord -scanbus</SAMP>, a op=E7=E3o <SAMP>-data</SAMP> =
+especifica o arquivo=20
+iso que cont=E9m os dados que ser=E3o gravados.=20
+<P>Ap=F3s isto seu CD estar=E1 gravado e pronto para uso.=20
+<HR>
+<A name=3Ds-tasks-cdwriting-audio></A>
+<H3>24.1.2 Gravando um CD de audio</H3>
+<P>A grava=E7=E3o de um CD de audio se divide em 2 etapas: Extra=E7=E3o =
+das trilhas de=20
+audio para um diret=F3rio em formato <VAR>wav</VAR> e a grava=E7=E3o. =
+Ap=F3s inserir o=20
+CD de audio na unidade, a extra=E7=E3o =E9 feita pelo programa =
+<CODE>cdda2wav</CODE>=20
+da seguinte forma: <PRE>     mkdir /audio
+     cd /audio
+     cdda2wav -x -D/dev/cdrom -d99999 -S4 -Owav -B audio
+</PRE>
+<P>A op=E7=E3o <SAMP>-x</SAMP> extrai usando m=E1xima qualidade,=20
+<SAMP>-D/dev/cdrom</SAMP> diz qual =E9 o dispositivo onde o CD de audio =
+est=E1=20
+inserido, <SAMP>-d99999</SAMP> diz a dura=E7=E3o total da extra=E7=E3o =
+(99999 =E9 um valor=20
+que garante a extra=E7=E3o de TODO o CD), <SAMP>-S4</SAMP> diz que a =
+velocidade de=20
+extra=E7=E3o ser=E1 de 4X, a <SAMP>-B audio</SAMP> diz para criar =
+arquivos contendo as=20
+faixas seq=FCencialmente como <CODE>audio01.wav</CODE>, =
+<CODE>audio02.wav</CODE>,=20
+etc.=20
+<P>Ap=F3s extrair, voc=EA dever=E1 executar o comando: <PRE>     =
+cdrecord -v -dev=3D0,0,0 -dao -useinfo *.wav
+</PRE>
+<P>O comando acima usa o dispositivo gravador 0,0,0 (<SAMP>cdrecord=20
+-scanbus</SAMP>) para fazer a grava=E7=E3o do CD de audio. O formato =
+usado =E9 o DAO=20
+(<SAMP>-dao</SAMP>), o que garante que n=E3o haver=E1 intervalo entre as =
+faixas de=20
+CD, =FAtil em CDs ao vivo e que os arquivos <CODE>*.inf</CODE> contendo =
+os dados=20
+das faixas ser=E3o usados para controlar a dura=E7=E3o de cada uma =
+(-useinfo *.wav).=20
+<P>Se voc=EA quer gravar uma sele=E7=E3o de arquivos <CODE>.wav</CODE> =
+ou=20
+<CODE>.cdr</CODE>, ser=E1 preciso faze-lo em modo TAO (track at once), =
+mantendo a=20
+pausa de 2 segundos entre as m=FAsicas. Isto =E9 feito pelo comando: =
+<PRE>     cdrecord -v -dev=3D0,0,0 -pad -audio *.wav
+</PRE>
+<P>Estamos dizendo para o <CODE>cdrecord</CODE> gravar diversos arquivos =
+de=20
+audio (<SAMP>-audio *.wav</SAMP>) e preencher os intervalos dos arquivos =
+de=20
+audio com zeros (<SAMP>-pad</SAMP>) pois nem sempre os arquivos tem o =
+m=FAltiplo=20
+de setores requeridos para a grava=E7=E3o de arquivos de audio.=20
+<HR>
+<A name=3Ds-tasks-cdwriting-cdcd></A>
+<H3>24.1.3 C=F3pia de CD para CD</H3>
+<P>A c=F3pia de CD de dados para outro =E9 feita em duas etapas: A =
+extra=E7=E3o do=20
+arquivo ISO e a grava=E7=E3o do CD. Esse recurso =E9 =FAtil pela =
+economia de tempo que=20
+proporciona e porque mant=E9m caracter=EDsticas especiais do CD como =
+setores de boot=20
+(para CDs de instala=E7=E3o).=20
+<P>Primeiro, extraia o conte=FAdo do CD em format raw com o comando: =
+<PRE>     dd if=3D/dev/cdrom of=3D/dados/arquivo.iso
+</PRE>
+<P>Confira se no final o n=FAmero de bytes conferem, isso diz que a =
+extra=E7=E3o foi=20
+feita com sucesso. O par=E2metro <SAMP>if=3D</SAMP> indica o arquivo de =
+entrada e=20
+<SAMP>of=3D</SAMP> o arquivo de sa=EDda. Depois disso grave o CD com o =
+comando: <PRE>     cdrecord -v -dev=3D0,0,0 -data /dados/dados.iso
+</PRE>
+<P>Veja a explica=E7=E3o dos par=E2metros em <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm#s-tasks-cdwriting-data">Gravand=
+o=20
+CDs de dados, Se=E7=E3o 24.1.1</A>. Note que voc=EA tamb=E9m poder=E1 =
+gravar o CD usando o=20
+comando <CODE>dd</CODE>: <PRE>     dd if=3D/dados/arquivo.iso =
+of=3D/dev/sr0
+</PRE>
+<HR>
+<A name=3Ds-tasks-cdwriting-massivewrite></A>
+<H3>24.1.4 Grava=E7=E3o massiva de CDs</H3>
+<P>Isso =E9 feito pelo programa <CODE>cdcontrol</CODE> que permite a =
+grava=E7=E3o de=20
+CDs paralelamente, sendo bastante =FAtil para gerar CDs para install =
+fests,=20
+distribui=E7=F5es comerciais em massa. Ele mant=E9m um relat=F3rio de =
+CDs totais por=20
+unidade de disco e tamb=E9m de falhas, tamb=E9m permite a c=F3pia de CDs =
+de=20
+inicializa=E7=E3o. Ele est=E1 dispon=EDvel em <CODE><A=20
+href=3D"http://cdcontrol.sourceforge.net/">http://cdcontrol.sourceforge.n=
+et/</A></CODE>.=20
+Ele tamb=E9m est=E1 dispon=EDvel como pacote <CODE>.deb</CODE> =
+(<SAMP>apt-get install=20
+cdcontrol</SAMP>).=20
+<HR>
+<A name=3Ds-tasks-cdwriting-cdfrommp3></A>
+<H3>24.1.5 Grava=E7=E3o de CDs diretamente atrav=E9s de arquivos mp3 ou =
+Ogg</H3>
+<P>Utilize o aplicativo <CODE>mp3burn</CODE> para fazer isto. Por =
+exemplo: <PRE>     mp3burn -o "-v -dev=3D0,0,0" *.mp3
+</PRE>
+<P>A op=E7=E3o <SAMP>-o</SAMP> indica as op=E7=F5es que devem ser =
+passadas ao=20
+<CODE>cdrecord</CODE>. A op=E7=E3o <SAMP>-audio</SAMP> e =
+<SAMP>-pad</SAMP> s=E3o=20
+adicionadas automaticamente.=20
+<HR>
+<A name=3Ds-tasks-cdwriting-backupcd></A>
+<H3>24.1.6 Backup de dados para 1 ou mais CDs</H3>
+<P>O programa <CODE>multicd</CODE> =E9 a ferramenta que permite esta =
+fun=E7=E3o.=20
+<HR>
+<A name=3Ds-tasks-cdwriting-graphicapps></A>
+<H3>24.1.7 Aplica=E7=F5es gr=E1ficas para grava=E7=E3o de CDs</H3>
+<P>Os seguintes aplicativos s=E3o interfaces gr=E1ficas e amig=E1veis =
+que usam o=20
+<CODE>cdrecord</CODE>, <CODE>cdda2wav</CODE> e <CODE>mkisofs</CODE> para =
+fazer a=20
+grava=E7=E3o de seus CDs. Normalmente eles acrescentam uma carga maior =
+para a=20
+m=E1quina, mas se voc=EA gosta de uma interface amig=E1vel para fazer as =
+coisas, ter=20
+anima=E7=F5es, etc. o pre=E7o que paga =E9 a performance :-)=20
+<P>Entre os principais programas, destaco os seguintes: =
+<CODE>cdrtoaster</CODE>,=20
+<CODE>cdbakeoven</CODE>, <CODE>kreatecd</CODE>, <CODE>gcombust</CODE>.=20
+<HR>
+<A name=3Ds-tasks-cdwriting-cover></A>
+<H3>24.1.8 Fazendo a capa de frente e verso do CD</H3>
+<P>Capas de frente e verso podem ser produzidas com o =
+<CODE>cdlabelgen</CODE>.=20
+<HR>
+<A name=3Ds-tasks-cdwriting-rundivx></A>
+<H2>24.2 Executando v=EDdeos DIVX</H2>
+<P>O programa mais recomendado =E9 o <CODE>mplayer</CODE>. Ap=F3s =
+instalar, execute=20
+o comando: <SAMP>mplayer -framedrop -vo xv arquivo.avi</SAMP>. A =
+op=E7=E3o=20
+<SAMP>-framedrop</SAMP> diz ao <CODE>mplayer</CODE> pular frames que ele =
+n=E3o=20
+conseguir exibir (=FAtil em sistemas que tem CPU lenta).=20
+<P>O <CODE>gmplayer</CODE> =E9 a interface gr=E1fica do =
+<CODE>mplayer</CODE> e=20
+aceita todos os seus par=E2metros.=20
+<HR>
+<A name=3Ds-tasks-cdwriting-rundivx-sub></A>
+<H3>24.2.1 Colocando legendas nos filmes</H3>
+<P>Para adicionar legendas em um filme Divx sendo executado pelo=20
+<CODE>mplayer</CODE>, baixe a fonte de caracteres da legenda de <CODE><A =
+
+href=3D"http://mplayer.sourceforge.net/">http://mplayer.sourceforge.net/<=
+/A></CODE>=20
+e a descompacte dentro de <CODE>~/.mplayer</CODE>. Ser=E3o criados =
+v=E1rios=20
+diret=F3rios contendo fontes de tamanhos espec=EDficos. Escolha qual =
+deseja utilizar=20
+e fa=E7a um link para o diret=F3rio <CODE>~/.mplayer/font</CODE> com o =
+comando=20
+<CODE>ln</CODE>.=20
+<HR>
+<A name=3Ds-tasks-rundvd></A>
+<H2>24.3 Assistindo DVDs</H2>
+<P>Para assistir filmes em DVD recomendo os seguintes programas:=20
+<CODE>ogle</CODE>, <CODE>xine</CODE> e <CODE>mplayer</CODE>. Lembre-se =
+de fazer=20
+um link de <CODE>/dev/dvd</CODE> para seu dispositivo leitor de DVD =
+antes de=20
+executar um destes programas.=20
+<HR>
+<A name=3Ds-tasks-wavtomp3></A>
+<H2>24.4 Convertendo m=FAsicas no formato wav para mp3</H2>
+<P>A convers=E3o =E9 explicada aqui usando o programa =
+<CODE>bladeenc</CODE>. Voc=EA=20
+pode baixa-lo de <CODE><A=20
+href=3D"http://bladeenc.mp3.no/">http://bladeenc.mp3.no/</A></CODE>. O=20
+<CODE>bladeenc</CODE> foi o escolhido por apresentar a melhor =
+performance e=20
+qualidade para convers=E3o da m=FAsicas, que =E9 importante para quem =
+tem m=E1quinas=20
+menos potentes e processamento leve =E9 valioso para voc=EA :-)=20
+<P>A convers=E3o =E9 feita da seguinte forma: <PRE>     bladeenc =
+-progress=3D4 -del *.wav
+</PRE>
+<P>A op=E7=E3o <SAMP>-del</SAMP> diz para apagar os arquivos =
+<CODE>.wav</CODE> a=20
+medida que s=E3o convertidos e <SAMP>-progress=3D4</SAMP> para mostrar =
+uma barra de=20
+progresso total e outra do arquivo que est=E1 sendo processado.=20
+<HR>
+<A name=3Ds-tasks-mp3cdr></A>
+<H2>24.5 Convertendo m=FAsicas do formato mp3 para cdr</H2>
+<P>Esta convers=E3o necess=E1ria quando deseja gravar um CD de audio a =
+partir de uma=20
+sele=E7=E3o de m=FAsicas MP3. As explica=E7=F5es aqui s=E3o baseadas no =
+programa=20
+<CODE>mpg123</CODE>, que pode ser instalado com <SAMP>apt-get install=20
+mpg123</SAMP>. Execute o seguinte comando para fazer a convers=E3o: =
+<PRE>     mpg123 --cdr - arquivo.mp3 &gt;arquivo.cdr
+</PRE>
+<P>Para fazer a convers=E3o de todos os arquivos <CODE>mp3</CODE> dentro =
+de um=20
+diret=F3rio, use o comando: <PRE>     for MUSICA in *.mp3; do
+      mpg123 --cdr - "$MUSICA" &gt;"${VAR}.cdr"
+     done
+</PRE>
+<P>Ap=F3s feita a convers=E3o de m=FAsicas necess=E1rias para completar =
+um CD=20
+(normalmente 600MB), v=E1 at=E9 <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm#s-tasks-cdwriting-audio">Gravan=
+do=20
+um CD de audio, Se=E7=E3o 24.1.2</A>.=20
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ 24 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

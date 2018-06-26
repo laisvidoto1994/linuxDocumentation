@@ -1,0 +1,3337 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: Guia Foca GNU/Linux
+Date: Mon, 6 Aug 2007 11:34:42 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\index.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dindex></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR></H1>
+<HR>
+<A name=3Dabstract></A>
+<H2>Resumo</H2>
+<P>Este documento tem por objetivo ser uma refer=EAncia ao aprendizado =
+do usu=E1rio=20
+e um guia de consulta, opera=E7=E3o e configura=E7=E3o de sistemas Linux =
+(e outros tipos=20
+de *ix). A =FAltima vers=E3o deste guia pode ser encontrada na <CODE><A=20
+href=3D"http://www.guiafoca.org/">P=E1gina Oficial do Foca =
+GNU/Linux</A></CODE>.=20
+Novas vers=F5es s=E3o lan=E7adas com uma freq=FC=EAncia mensal e voc=EA =
+pode receber avisos=20
+de novos lan=E7amentos deste guia preenchendo um formul=E1rio na =
+p=E1gina Web.=20
+<HR>
+<A name=3Dcopyright></A>
+<H2>Nota de Copyright</H2>
+<P>Copyright =A9 1999-2006 - Gleydson Mazioli da Silva.=20
+<P>Permission is granted to copy, distribute and/or modify this document =
+under=20
+the terms of the GNU Free Documentation License, Version 1.1 or any =
+later=20
+version published by the Free Software Foundation; A copy of the license =
+is=20
+included in the section entitled "GNU Free Documentation License".=20
+<HR>
+<A name=3Dcontents></A>
+<H2>Conte=FAdo</H2>
+<UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1=20
+  Introdu=E7=E3o</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm#s-introducao-palavras">1.1=20
+    Antes de come=E7ar</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm#s-introducao-requisitos">1.2=20
+    Pr=E9-requisitos para a utiliza=E7=E3o deste guia</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm#s-introducao-linux">1.3=20
+    O Linux</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm#s-introducao-linux-carac">1.3.1=
+=20
+      Algumas Caracter=EDsticas do Linux</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm#s-introducao-software-livre">1.=
+4=20
+    Software Livre</A> </LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2=20
+  Explica=E7=F5es B=E1sicas</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm#s-basico-interpcmd">2.1=20
+    Interpretador de comandos</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm#s-basico-terminal">2.2=20
+    Terminal Virtual (console)</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm#s-basico-curingas">2.3=20
+    Curingas</A> </LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3=20
+  Hardware</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-placas">3.1=20
+    Placa de expans=E3o</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-nomesdisp">3.2=20
+    Nomes de dispositivos</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfg">3.3=20
+    Configura=E7=E3o de Hardware</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfg-irq">3.3.1=20
+      IRQ - Requisi=E7=E3o de Interrup=E7=E3o</A>=20
+      <UL>
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s3.3.1.1">3.3.1.1=20
+        Prioridade das Interrup=E7=F5es</A> </LI></UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfg-dma">3.3.2=20
+      DMA - Acesso Direto a Mem=F3ria</A>=20
+      <UL>
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s3.3.2.1">3.3.2.1=20
+        Conflitos de DMA</A> </LI></UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfg-io">3.3.3=20
+      I/O - Porta de Entrada/Sa=EDda</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-metodoscfg">3.4=20
+    Hardwares configur=E1veis por jumpers, dip-switches, jumperless e=20
+    Plug-and-Play.</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-metodoscfg-jumpers">3.4=
+.1=20
+      Jumpers</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-metodoscfg-dipswitche">=
+3.4.2=20
+      Dip-Switches</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-metodoscfg-jumperless">=
+3.4.3=20
+      Jumperless (sem jumper)</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-metodoscfg-plug-and-pla=
+y">3.4.4=20
+      Plug-and-Play</A>=20
+      <UL>
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-metodoscfg-plug-and-pla=
+y-e">3.4.4.1=20
+        Entendendo o arquivo de configura=E7=E3o =
+<CODE>isapnp.conf</CODE></A>=20
+      </LI></UL></LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-findhw">3.5=20
+    Listando as placas e outros hardwares em um computador</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-conflitos">3.6=20
+    Conflitos de hardware</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hard-barramento">3.7=20
+    Barramento</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hard-onoffboard">3.8=20
+    Placas on-board / off-board</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hard-forwindows">3.9=20
+    Hardwares espec=EDficos ou "For Windows"</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s3.10">3.10=20
+    Dispositivos espec=EDficos para GNU/Linux</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfgdisp">3.11=20
+    Configura=E7=F5es de Dispositivos</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfgdisp-rede">3.11.1=20
+      Configurando uma placa de rede</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfgdisp-som">3.11.2=20
+      Configurando uma placa de SOM no Linux</A>=20
+      <UL>
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfgdisp-som-hwreq">3.11=
+.2.1=20
+        Reservando os recursos de hardware para sua placa de som</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfgdisp-som-oss">3.11.2=
+.2=20
+        Configurando uma placa de som usando o padr=E3o OSS</A> =
+</LI></UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfgdisp-cdwritter">3.11=
+.3=20
+      Configurando um gravador de CD no Linux</A>=20
+      <UL>
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfgdisp-cdwritter-ide">=
+3.11.3.1=20
+        Configurando o suporte a um gravador IDE</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfgdisp-cdwritter-scsi"=
+>3.11.3.2=20
+        Configurando o suporte a um gravador SCSI</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfgdisp-cdwritter-teste=
+">3.11.3.3=20
+        Testando o funcionamento</A> </LI></UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfgdisp-apm">3.11.4=20
+      Configurando o gerenciamento de energia usando o APM</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfgdisp-acpi">3.11.5=20
+      Configurando o gerenciamento de energia usando ACPI</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfgdisp-wol">3.11.6=20
+      Ativando WakeUP on Lan</A> </LI></UL></LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4=20
+  Para quem esta migrando (ou pensando em migrar) do DOS/Windows para o=20
+  Linux</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm#s-d-l-compar">4.1=20
+    Quais as diferen=E7as iniciais</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm#s-d-l-comandos">4.2=20
+    Comandos equivalentes entre DOS e Linux</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm#s4.2.1">4.2.1=20
+      Arquivos de configura=E7=E3o</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm#s-d-l-mtools">4.3=20
+    Usando a sintaxe de comandos DOS no Linux</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm#s-d-l-programas">4.4=20
+    Programas equivalentes entre Windows/DOS e o Linux</A> </LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5=20
+  Discos e Parti=E7=F5es</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-particoes">5.1=20
+    Parti=E7=F5es</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-sistarq">5.2=20
+    Sistema de Arquivos</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-ext2">5.3=20
+    Parti=E7=E3o EXT2 (Linux Native)</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-ext2-criando-p">5.3.1=20
+      Criando um sistema de arquivos EXT2 em uma parti=E7=E3o</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-ext2-criando-a">5.3.2=20
+      Criando um sistema de arquivos EXT2 em um arquivo</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-journal">5.4=20
+    Journaling</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-ext3">5.5=20
+    Parti=E7=E3o EXT3 (Linux Native)</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-ext3-criando-p">5.5.1=20
+      Criando um sistema de arquivos EXT3 em uma parti=E7=E3o</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-ext3-criando-a">5.5.2=20
+      Criando um sistema de arquivos EXT3 em um arquivo</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-ext3-conv2-3">5.5.3=20
+      Fazendo a convers=E3o do sistema de arquivos EXT2 para EXT3</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-ext3-conv3-2">5.5.4=20
+      Convertendo de EXT3 para EXT2</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-reiserfs">5.6=20
+    Sistema de arquivos reiserfs</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-reiserfs-criando-p">5.6.1=
+=20
+      Criando um sistema de arquivos reiserfs em uma parti=E7=E3o</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-reiserfs-criando-a">5.6.2=
+=20
+      Criando um sistema de arquivos reiserfs em um arquivo</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-e2label">5.6.3=20
+      Nomeando uma parti=E7=E3o de disco</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-mklost+found">5.6.4=20
+      Criando o diret=F3rio especial <CODE>lost+found</CODE></A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-dumpe2fs">5.6.5=20
+      dumpe2fs</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-ext2xarquivo">5.6.6=20
+      Parti=E7=E3o EXT2 ou Arquivo?</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-swap">5.7=20
+    Parti=E7=E3o Linux Swap (Mem=F3ria Virtual)</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-swap-criando-p">5.7.1=20
+      Criando sistema de arquivos Swap em uma parti=E7=E3o</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-swap-criando-a">5.7.2=20
+      Criando um sistema de arquivos Swap em um arquivo</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-swap-swapxarquivo">5.7.3 =
+
+      Parti=E7=E3o Swap ou Arquivo?</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-proc">5.8=20
+    O sistema de arquivos <CODE>/proc</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-lvm">5.9=20
+    LVM - Logical Volume Manager</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-lvm-graph">5.9.1=20
+      Representa=E7=E3o gr=E1fica do LVM</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-lvm-perf">5.9.2=20
+      Performance do LVM</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-lvm-install">5.9.3=20
+      Colocando LVM em seu sistema</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-lvm-grow">5.9.4=20
+      Aumentando o tamanho de um volume l=F3gico</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-lvm-shrink">5.9.5=20
+      Diminuindo um volume l=F3gico</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-formatando">5.10=20
+    Formatando disquetes</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-formatando-l">5.10.1=20
+      Formatando disquetes para serem usados no Linux</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-formatando-d">5.10.2=20
+      Formatando disquetes compat=EDveis com o DOS/Windows</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-formatando-g">5.10.3=20
+      Programas de Formata=E7=E3o Gr=E1ficos</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-pontomontagem">5.11=20
+    Pontos de Montagem</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-id">5.12=20
+    Identifica=E7=E3o de discos e parti=E7=F5es em sistemas Linux</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-montagem">5.13=20
+    Montando (acessando) uma parti=E7=E3o de disco</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-fstab">5.13.1=20
+      fstab</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-desmontagem">5.14=20
+    Desmontando uma parti=E7=E3o de disco</A> </LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6=20
+  Gerenciadores de Partida (boot loaders)</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-lilo">6.1=20
+    LILO</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-lilo-cfg">6.1.1=20
+      Criando o arquivo de configura=E7=E3o do LILO</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-lilo-opcoes">6.1.2=20
+      Op=E7=F5es usadas no LILO</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-lilo-exemplo">6.1.3=20
+      Um exemplo do arquivo de configura=E7=E3o lilo.conf</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-grub">6.2=20
+    GRUB</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-grub-part">6.2.1=20
+      Como o GRUB trabalha com discos e parti=E7=F5es</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-grub-install">6.2.2=20
+      Instalando o GRUB</A>=20
+      <UL>
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-grub-install-mbr">6.2.2.1=
+=20
+        No MBR</A> </LI></UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-grub-install-fd-cmd">6.2.=
+3=20
+      No disco flex=EDvel (somente linha de comando)</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-grub-install-fd-menu">6.2=
+.4=20
+      No disco flex=EDvel (com interface de menu)</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-grub-opcoescfg">6.2.5=20
+      Op=E7=F5es do arquivo de configura=E7=E3o</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-grub-exemplo">6.2.6=20
+      Um exemplo de arquivo de configura=E7=E3o</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-grub-cmdline">6.2.7=20
+      Usando a linha de comandos do GRUB</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-grub-removendo">6.2.8=20
+      Removendo o GRUB do MBR</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-grub-detalhes">6.2.9=20
+      Como obter informa=E7=F5es mais detalhadas</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-kernelparam">6.3=20
+    Par=E2metros de inicializa=E7=E3o passados ao kernel</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-loadlin">6.4=20
+    LOADLIN</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-loadlin-opcoes">6.4.1=20
+      Op=E7=F5es do LOADLIN</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-loadlin-exemplo">6.4.2=20
+      Exemplo de inicializa=E7=E3o com o LOADLIN</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-syslinux">6.5=20
+    syslinux</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-syslinux-criando">6.5.1=20
+      Criando um disquete de inicializa=E7=E3o com o syslinux</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-syslinux-opcoes">6.5.2=20
+      O arquivo SYSLINUX.CFG</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-syslinux-formatacao">6.5.=
+3=20
+      Formata=E7=E3o dos arquivos de tela do syslinux</A> =
+</LI></UL></LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7=20
+  Execu=E7=E3o de programas</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-tipos">7.1=20
+    Tipos de Execu=E7=E3o de comandos/programas</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-seq">7.2=20
+    Executando programas em seq=FC=EAncia</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-ps">7.3=20
+    ps</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-top">7.4=20
+    top</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-controle">7.5=20
+    Controle de execu=E7=E3o de processos</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-break">7.5.1=20
+      Interrompendo a execu=E7=E3o de um processo</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-pausa">7.5.2=20
+      Parando momentaneamente a execu=E7=E3o de um processo</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-ver-backgrounds">7.5.3=20
+      jobs</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-fg">7.5.4=20
+      fg</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-bg">7.5.5=20
+      bg</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-kill">7.5.6=20
+      kill</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-killall">7.5.7=20
+      killall</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-killall5">7.5.8=20
+      killall5</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-sinais">7.5.9=20
+      Sinais do Sistema</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-nohup">7.6=20
+    nohup</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-nice">7.7=20
+    nice</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-fuser">7.8=20
+    fuser</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-tload">7.9=20
+    tload</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-vmstat">7.10=20
+    vmstat</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-pidof">7.11=20
+    pidof</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-pstree">7.12=20
+    pstree</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-fechando">7.13=20
+    Fechando um programa quando n=E3o se sabe como sair</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-reset">7.14=20
+    Eliminando caracteres estranhos</A> </LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8=20
+  Comandos para manipula=E7=E3o de diret=F3rio</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm#s-comando-ls">8.1=20
+    ls</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm#s-comando-cd">8.2=20
+    cd</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm#s-comando-pwd">8.3=20
+    pwd</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm#s-comando-mkdir">8.4=20
+    mkdir</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm#s-comando-rmdir">8.5=20
+    rmdir</A> </LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9=20
+  Comandos para manipula=E7=E3o de Arquivos</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm#s-comandos-cat">9.1=20
+    cat</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm#s-comando-tac">9.2=20
+    tac</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm#s-comando-rm">9.3=20
+    rm</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm#s-comando-cp">9.4=20
+    cp</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm#s-comando-mv">9.5=20
+    mv</A> </LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10=20
+  Comandos Diversos</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-clear">10.1=20
+    clear</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-date">10.2=20
+    date</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-df">10.3=20
+    df</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-ln">10.4=20
+    ln</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-du">10.5=20
+    du</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-find">10.6=20
+    find</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-free">10.7=20
+    free</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-grep">10.8=20
+    grep</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-head">10.9=20
+    head</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-nl">10.10=20
+    nl</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-more">10.11=20
+    more</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-less">10.12=20
+    less</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-sort">10.13=20
+    sort</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-tail">10.14=20
+    tail</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-time">10.15=20
+    time</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-touch">10.16=20
+    touch</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-uptime">10.17=20
+    uptime</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-dmesg">10.18=20
+    dmesg</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-mesg">10.19=20
+    mesg</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-echo">10.20=20
+    echo</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-su">10.21=20
+    su</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-sync">10.22=20
+    sync</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-uname">10.23=20
+    uname</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-reboot">10.24=20
+    reboot</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-shutdown">10.25=20
+    shutdown</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-wc">10.26=20
+    wc</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-seq">10.27=20
+    seq</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-chattr">10.28=20
+    chattr</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-lsattr">10.29=20
+    lsattr</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-cut">10.30=20
+    cut</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-cmp">10.31=20
+    cmp</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-dirname">10.32=20
+    dirname</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-diff">10.33=20
+    diff</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-pr">10.34=20
+    pr</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-patch">10.35=20
+    patch</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-whereis">10.36=20
+    whereis</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-which">10.37=20
+    which</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-zforce">10.38=20
+    zforce</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-gzexe">10.39=20
+    gzexe</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-znew">10.40=20
+    znew</A> </LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11=20
+  Comandos de rede</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-who">11.1=20
+    who</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-telnet">11.2=20
+    Telnet</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-finger">11.3=20
+    finger</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-ftp">11.4=20
+    ftp</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-whoami">11.5=20
+    whoami</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-dnsdomainname">11.6=20
+    dnsdomainname</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-hostname">11.7=20
+    hostname</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-talk">11.8=20
+    talk</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-ping">11.9=20
+    ping</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-rlogin">11.10=20
+    rlogin</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-rsh">11.11=20
+    rsh</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-w">11.12=20
+    w</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-traceroute">11.13=20
+    traceroute</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-netstat">11.14=20
+    netstat</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdv-wall">11.15=20
+    wall</A> </LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12=20
+  Comandos para manipula=E7=E3o de contas</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm#s-cmdc-adduser">12.1=20
+    adduser</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm#s-cmdc-addgroup">12.2=20
+    addgroup</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm#s-cmdc-passwd">12.3=20
+    passwd</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm#s-cmdc-newgrp">12.4=20
+    newgrp</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm#s-cmdc-userdel">12.5=20
+    userdel</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm#s-cmdc-groupdel">12.6=20
+    groupdel</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm#s-cmdc-lastlog">12.7=20
+    lastlog</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm#s-cmdc-last">12.8=20
+    last</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm#s-cmdc-sg">12.9=20
+    sg</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm#s-cmdc-incluirgrupo">12.10=20
+    Adicionando o usu=E1rio a um grupo extra</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm#s-cmdc-chfn">12.11=20
+    chfn</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm#s-cmdc-id">12.12=20
+    id</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm#s-cmdc-logname">12.13=20
+    logname</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm#s-cmdc-users">12.14=20
+    users</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm#s-cmdc-groups">12.15=20
+    groups</A> </LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13=20
+  Permiss=F5es de acesso a arquivos e diret=F3rios</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm#s-perm-user-group">13.1=20
+    Donos, grupos e outros usu=E1rios</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm#s-perm-tipos">13.2=20
+    Tipos de Permiss=F5es de acesso</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm#s-perm-acessando">13.3=20
+    Etapas para acesso a um arquivo/diret=F3rio</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm#s-perm-exemplo">13.4=20
+    Exemplos pr=E1ticos de permiss=F5es de acesso</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm#s-perm-exemplo-a">13.4.1=20
+      Exemplo de acesso a um arquivo</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm#s-perm-exemplo-d">13.4.2=20
+      Exemplo de acesso a um diret=F3rio</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm#s-perm-especiais">13.5=20
+    Permiss=F5es de Acesso Especiais</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm#s-perm-root">13.6=20
+    A conta root</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm#s-perm-chmod">13.7=20
+    chmod</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm#s-perm-chgrp">13.8=20
+    chgrp</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm#s-perm-chown">13.9=20
+    chown</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm#s-perm-octal">13.10=20
+    Modo de permiss=E3o octal</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm#s-perm-umask">13.11=20
+    umask</A> </LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14=20
+  Redirecionamentos e Pipe</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm#s-redir-maior">14.1=20
+    &gt;</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm#s-redir-maior2">14.2=20
+    &gt;&gt;</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm#s-redir-menor">14.3=20
+    &lt;</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm#s-redir-menor2">14.4=20
+    &lt;&lt;</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm#s-redir-pipe">14.5=20
+    | (pipe)</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm#s14.6">14.6=20
+    Diferen=E7a entre o "|" e o "&gt;"</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm#s-redir-tee">14.7=20
+    tee</A> </LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15=20
+  Rede</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-oque">15.1=20
+    O que =E9 uma rede</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-protocolo">15.2=20
+    Protocolo de Rede</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-ip">15.3=20
+    Endere=E7o IP</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-ip-classes">15.3.1=20
+      Classes de Rede IP</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-ip-nova">15.3.2=20
+      Para instalar uma m=E1quina usando o Linux em uma rede =
+existente</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-ip-privada">15.3.3=20
+      Endere=E7os reservados para uso em uma rede Privada</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-interfaces">15.4=20
+    Interface de rede</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-interfaces-lo">15.4.1=20
+      A interface loopback</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-interfaces-c">15.4.2=20
+      Atribuindo um endere=E7o de rede a uma interface (ifconfig)</A> =
+</LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-rota">15.5=20
+    Roteamento</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-rota-c">15.5.1=20
+      Configurando uma rota no Linux</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-dns">15.6=20
+    Resolvedor de nomes (DNS)</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-dns-oque">15.6.1=20
+      O que =E9 um nome?</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-dns-a">15.6.2=20
+      Arquivos de configura=E7=E3o usados na resolu=E7=E3o de nomes</A>=20
+      <UL>
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-dns-a-resolv">15.6.2.1=20
+        /etc/resolv.conf</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-dns-a-hostconf">15.6.2.2 =
+
+        /etc/host.conf</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-dns-a-hosts">15.6.2.3=20
+        /etc/hosts</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-dns-a-networks">15.6.2.4 =
+
+        /etc/networks</A> </LI></UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-dns-servdns">15.6.3=20
+      Executando um servidor de nomes</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-servicos">15.7=20
+    Servi=E7os de Rede</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-servicos-daemon">15.7.1=20
+      Servi=E7os iniciados como Daemons de rede</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-servicos-inetd">15.7.2=20
+      Servi=E7os iniciados atrav=E9s do inetd</A>=20
+      <UL>
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-servicos-inetd-c">15.7.2.=
+1=20
+        /etc/inetd.conf</A> </LI></UL></LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-seg">15.8=20
+    Seguran=E7a da Rede e controle de Acesso</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-seg-ftpusers">15.8.1=20
+      /etc/ftpusers</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-seg-securetty">15.8.2=20
+      /etc/securetty</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-seg-tcpd">15.8.3=20
+      O mecanismo de controle de acessos tcpd</A>=20
+      <UL>
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-seg-tcpd-a">15.8.3.1=20
+        /etc/hosts.allow</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-seg-tcpd-d">15.8.3.2=20
+        /etc/hosts.deny</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-seg-tcpd-e">15.8.3.3=20
+        /etc/hosts.equiv e /etc/shosts.equiv</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-seg-tcpd-v">15.8.3.4=20
+        Verificando a seguran=E7a do TCPD e a sintaxe dos arquivos</A> =
+</LI></UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-seg-firewall">15.8.4=20
+      Firewall</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-outros">15.9=20
+    Outros arquivos de configura=E7=E3o relacionados com a rede</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-outros-services">15.9.1=20
+      /etc/services</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-outros-protocols">15.9.2 =
+
+      /etc/protocols</A> </LI></UL></LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16=20
+  Kernel e M=F3dulos</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-kernel">16.1=20
+    O Kernel</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-modulos">16.2=20
+    M=F3dulos</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-suporte">16.3=20
+    Como adicionar suporte a Hardwares e outros dispositivos no =
+kernel</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-kmod">16.4=20
+    kmod</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-lsmod">16.5=20
+    lsmod</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-insmod">16.6=20
+    insmod</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-rmmod">16.7=20
+    rmmod</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-modprobe">16.8=20
+    modprobe</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-depmod">16.9=20
+    depmod</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-modconf">16.10=20
+    modconf</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-recompilando">16.11=20
+    Recompilando o Kernel</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-arquivos">16.12=20
+    Arquivos relacionados com o Kernel e M=F3dulos</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-arquivos-modules">16.12.1=
+=20
+      /etc/modules</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-arquivos-modulesconf">16.=
+12.2=20
+      modules.conf</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-patches">16.13=20
+    Aplicando Patches no kernel</A> </LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17=20
+  Arquivos e daemons de Log</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm#s17.1">17.1=20
+    Formato do arquivo de log</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm#s17.2">17.2=20
+    Daemons de log do sistema</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm#s-log-syslogd">17.2.1=20
+      syslogd</A>=20
+      <UL>
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm#s-log-syslogd-exemplo">17.2.1.1=20
+        Arquivo de configura=E7=E3o <CODE>syslog.conf</CODE></A> =
+</LI></UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm#s-log-klogd">17.2.2=20
+      klogd</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm#s-log-logger">17.3=20
+    logger</A> </LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18=20
+  Compactadores</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm#s-cpctd-oque">18.1=20
+    O que fazem os compactadores/descompactadores?</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm#s-cpctd-tipos">18.1.1=20
+      Tipos de compacta=E7=E3o</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm#s-cpctd-extensoes">18.2=20
+    Extens=F5es de arquivos compactados</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm#s-cpctd-gzip">18.3=20
+    gzip</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm#s-cpctd-zip">18.4=20
+    zip</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm#s-cpctd-unzip">18.5=20
+    unzip</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm#s-cpctd-tar">18.6=20
+    tar</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm#s-cpctd-bzip2">18.7=20
+    bzip2</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm#s-cpctd-rar">18.8=20
+    rar</A> </LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19=20
+  A distribui=E7=E3o Debian GNU/Linux</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm#s-deb-carac">19.1=20
+    Porque usar a Debian?</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm#s-deb-pacotes">19.2=20
+    Pacotes existentes na Debian</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm#s-deb-suf">19.3=20
+    O que =E9 sid/testing/frozen/stable?</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm#s-deb-obtendo">19.4=20
+    Como obter a Debian</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm#s-deb-prgnconfig">19.5=20
+    Programas de configura=E7=E3o</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm#s-deb-startup">19.6=20
+    Arquivos de inicializa=E7=E3o</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm#s-deb-runlevels">19.7=20
+    N=EDveis de Execu=E7=E3o</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm#s-deb-runlevels-e">19.7.1=20
+      Entendendo o funcionamento dos n=EDveis de execu=E7=E3o do sistema =
+
+      (runlevels)</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm#s-deb-rede">19.8=20
+    Rede no sistema Debian</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm#s-deb-bts">19.9=20
+    Bug tracking system</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm#s-deb-download">19.10=20
+    Onde encontrar a Debian para Download?</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm#s-deb-lista-pacotes">19.11=20
+    Lista de pacotes para uma instala=E7=E3o r=E1pida e manual</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm#s19.11.1">19.11.1=20
+      Pacotes B=E1sicos (Altamente Recomendado)</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm#s19.11.2">19.11.2=20
+      Compila=E7=E3o do Kernel e programas em linguagem C</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm#s19.11.3">19.11.3=20
+      X11 (b=E1sico)</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm#s19.11.4">19.11.4=20
+      Window Managers para o X</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm#s19.11.5">19.11.5=20
+      Impress=E3o (texto e gr=E1fico com sistema de spool)</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm#s19.11.6">19.11.6=20
+      Som (mixer, mp3, Midi, wav, CD-Player)</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm#s19.11.7">19.11.7=20
+      Programas de Internet (clientes)</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm#s19.11.8">19.11.8=20
+      Acess=F3rios</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm#s19.11.9">19.11.9=20
+      Rede</A> </LI></UL></LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20=20
+  Sistema de gerenciamento de pacotes</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-introducao">20.1=20
+    dpkg</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-pacotes">20.1.1=20
+      Pacotes</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-instalar">20.1.2=20
+      Instalar pacotes</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-dependencias">20.1.3=20
+      Depend=EAncias</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-l">20.1.4=20
+      Listar pacotes existentes no sistema</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-r">20.1.5=20
+      Removendo pacotes do sistema</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-purge">20.1.6=20
+      Removendo completamente um pacote</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-I">20.1.7=20
+      Mostrar descri=E7=E3o do pacote</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-S">20.1.8=20
+      Procura de pacotes atrav=E9s do nome de um arquivo</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-s">20.1.9=20
+      Status do pacote</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-C">20.1.10=20
+      Procurando pacotes com problemas de instala=E7=E3o</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-get-selections">20.1.11=20
+      Mostrando a lista de pacotes do sistema</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-set-selections">20.1.12=20
+      Obtendo uma lista de pacotes para instalar no sistema</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-configure">20.1.13=20
+      Configurando pacotes desconfigurados</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-c">20.1.14=20
+      Listando arquivos de um pacote</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-apt">20.2=20
+    apt</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s20.2.1">20.2.1=20
+      O arquivo <CODE>/etc/apt/sources.list</CODE></A>=20
+      <UL>
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s20.2.1.1">20.2.1.1=20
+        Endere=E7os de servidores e mirrors nacionais da =
+<CODE>Debian</CODE></A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s20.2.1.2">20.2.1.2=20
+        Um modelo de arquivo <CODE>sources.list</CODE></A> </LI></UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s20.2.2">20.2.2=20
+      O arquivo <CODE>/etc/apt/apt.conf</CODE></A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s20.2.3">20.2.3=20
+      Copiando a lista de pacotes dispon=EDveis</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s20.2.4">20.2.4=20
+      Utilizando CDs oficiais/n=E3o-oficiais/terceiros com o apt</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s20.2.5">20.2.5=20
+      Instalando novos pacotes</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s20.2.6">20.2.6=20
+      Removendo pacotes instalado</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s20.2.7">20.2.7=20
+      Atualizando sua distribui=E7=E3o</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s20.2.8">20.2.8=20
+      Removendo pacotes baixados pelo <CODE>apt</CODE></A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s20.2.9">20.2.9=20
+      Procurando por pacotes atrav=E9s da descri=E7=E3o</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s20.2.10">20.2.10=20
+      Procurando um pacote que cont=E9m determinado arquivo</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s20.2.11">20.2.11=20
+      Modos eficazes de compila=E7=E3o do c=F3digo fonte para a =
+Debian</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s20.2.12">20.2.12=20
+      Verificando pacotes corrompidos</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s20.2.13">20.2.13=20
+      Corrigindo problemas de depend=EAncias e outros erros</A> =
+</LI></UL></LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21=20
+  Personaliza=E7=E3o do Sistema</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm#s-pers-varamb">21.1=20
+    Vari=E1veis de Ambientes</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm#s-pers-idioma">21.2=20
+    Modificando o Idioma usado em seu sistema</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm#s-pers-alias">21.3=20
+    alias</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm#s-pers-profile">21.4=20
+    Arquivo <CODE>/etc/profile</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm#s-pers-bashprofile">21.5=20
+    Arquivo <CODE>.bash_profile</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm#s-pers-bashrc">21.6=20
+    Arquivo <CODE>.bashrc</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm#s-pers-hushlogin">21.7=20
+    Arquivo <CODE>.hushlogin</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm#s-pers-environment">21.8=20
+    Arquivo <CODE>/etc/environment</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm#s-pers-conf-skel">21.9=20
+    Diret=F3rio <CODE>/etc/skel</CODE></A> </LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22=20
+  Impress=E3o</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm#s-impr-portas">22.1=20
+    Portas de impressora</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm#s-impr-direta">22.2=20
+    Imprimindo diretamente para a porta de impressora</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm#s-impr-spool">22.3=20
+    Imprimindo via spool</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm#s-impr-graficos">22.4=20
+    Impress=E3o em modo gr=E1fico</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm#s-impr-ghostscript">22.4.1=20
+      Ghost Script</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm#s-impr-magicfilter">22.5=20
+    Magic Filter</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm#s-impr-magicfilter-i">22.5.1=20
+      Instala=E7=E3o e configura=E7=E3o do Magic Filter</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm#s-impr-magicfilter-c">22.5.2=20
+      Outros detalhes t=E9cnicos sobre o Magic Filter</A> =
+</LI></UL></LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23=20
+  Configura=E7=E3o do sistema</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm#s-cfg-acentuacao">23.1=20
+    Acentua=E7=E3o</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm#s-cfg-acentuacao-t">23.1.1=20
+      Acentua=E7=E3o em modo Texto</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm#s-cfg-acentuacao-g">23.1.2=20
+      Acentua=E7=E3o em modo gr=E1fico</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm#s-cfg-cores">23.2=20
+    N=FAmero de Cores do ambiente gr=E1fico</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm#s-cfg-cores-t">23.2.1=20
+      Configurando o n=FAmero de cores para quem inicia pelo prompt</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm#s-cfg-configurando-g">23.2.2=20
+      Configurando o n=FAmero de cores para quem inicia pelo XDM</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm#s23.2.3">23.2.3=20
+      Ajustando o alinhamento da imagem no X e outras =
+configura=E7=F5es</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm#s23.2.4">23.2.4=20
+      Sobre o n=FAmero de cores para jogos que funcionam no X</A> =
+</LI></UL></LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24=20
+  Executando tarefas diversas no Linux</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm#s-tasks-cdwriting">24.1=20
+    Gravando CDs no Linux</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm#s-tasks-cdwriting-data">24.1.1 =
+
+      Gravando CDs de dados</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm#s-tasks-cdwriting-audio">24.1.2=
+=20
+      Gravando um CD de audio</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm#s-tasks-cdwriting-cdcd">24.1.3 =
+
+      C=F3pia de CD para CD</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm#s-tasks-cdwriting-massivewrite"=
+>24.1.4=20
+      Grava=E7=E3o massiva de CDs</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm#s-tasks-cdwriting-cdfrommp3">24=
+.1.5=20
+      Grava=E7=E3o de CDs diretamente atrav=E9s de arquivos mp3 ou =
+Ogg</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm#s-tasks-cdwriting-backupcd">24.=
+1.6=20
+      Backup de dados para 1 ou mais CDs</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm#s-tasks-cdwriting-graphicapps">=
+24.1.7=20
+      Aplica=E7=F5es gr=E1ficas para grava=E7=E3o de CDs</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm#s-tasks-cdwriting-cover">24.1.8=
+=20
+      Fazendo a capa de frente e verso do CD</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm#s-tasks-cdwriting-rundivx">24.2=
+=20
+    Executando v=EDdeos DIVX</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm#s-tasks-cdwriting-rundivx-sub">=
+24.2.1=20
+      Colocando legendas nos filmes</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm#s-tasks-rundvd">24.3=20
+    Assistindo DVDs</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm#s-tasks-wavtomp3">24.4=20
+    Convertendo m=FAsicas no formato wav para mp3</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm#s-tasks-mp3cdr">24.5=20
+    Convertendo m=FAsicas do formato mp3 para cdr</A> </LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25=20
+  Compila=E7=E3o</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm#s-compil-descricao">25.1=20
+    O que =E9 compila=E7=E3o?</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm#s-compil-compilador">25.2=20
+    Compilador</A> </LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26=20
+  Manuten=E7=E3o do Sistema</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm#s-manut-checagem">26.1=20
+    Checagem dos sistemas de arquivos</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm#s-manut-checagem-ext2">26.1.1=20
+      fsck.ext2</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm#s-manut-checagem-reiserfsck">26=
+.2=20
+    reiserfsck</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm#s-manut-checagem-minix">26.3=20
+    fsck.minix</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm#s-manut-badblocks">26.4=20
+    badblocks</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm#s-manut-defrag">26.5=20
+    defrag</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm#s-manut-hdbadblocks">26.6=20
+    Verificando e marcando setores danificados em um HD</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm#s-manut-logs-l">26.7=20
+    Limpando arquivos de LOGS</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm#s-manut-recpart">26.8=20
+    Recuperando parti=E7=F5es apagadas</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm#s-manut-senhaperdida">26.9=20
+    Recuperando a senha de root perdida</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm#s-manut-tarefas">26.10=20
+    Tarefas autom=E1ticas de manuten=E7=E3o do sistema</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm#s-manut-cron">26.11=20
+    cron</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm#s-manut-cron-formato">26.11.1=20
+      O formato de um arquivo crontab</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm#s-manut-at">26.12=20
+    at</A> </LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27=20
+  Principais arquivos de configura=E7=E3o do diret=F3rio =
+<CODE>/etc</CODE></A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-alternatives">27.1=20
+    Diret=F3rio <CODE>/etc/alternatives</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-devpts">27.2=20
+    Arquivo <CODE>/etc/default/devpts</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-rcs">27.3=20
+    Arquivo <CODE>/etc/default/rcs</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-config">27.4=20
+    Arquivo <CODE>/etc/kbd/config</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-menu-methods">27.5=20
+    Diret=F3rio <CODE>/etc/menu-methods</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-menu-translate">27.6=20
+    Arquivo <CODE>/etc/menu-methods/menu-translate</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-networks">27.7=20
+    Arquivo <CODE>/etc/networks</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-network-interfaces">27.8=20
+    Arquivo <CODE>/etc/network/interfaces</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-networks-options">27.9=20
+    Arquivo <CODE>/etc/networks/options</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-spoof-protect">27.10=20
+    Arquivo <CODE>/etc/networks/spoof-protect</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-pam">27.11=20
+    Diret=F3rio <CODE>/etc/pam.d</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-ppp">27.12=20
+    Diret=F3rio <CODE>/etc/ppp</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-security">27.13=20
+    Diret=F3rio <CODE>/etc/security</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-security-access">27.14=20
+    Arquivo <CODE>/etc/security/access.conf</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-securith-limits">27.15=20
+    Arquivo <CODE>/etc/security/limits.conf</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-crontab">27.16=20
+    Arquivo <CODE>/etc/crontab</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s27.17">27.17=20
+    Arquivo <CODE>/etc/fstab</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s27.18">27.18=20
+    Arquivo <CODE>/etc/group</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-gshadow">27.19=20
+    Arquivo <CODE>/etc/gshadow</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s27.20">27.20=20
+    Arquivo <CODE>/etc/host.conf</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s27.21">27.21=20
+    Arquivo <CODE>/etc/hostname</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s27.22">27.22=20
+    Arquivo <CODE>/etc/hosts</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s27.23">27.23=20
+    Arquivo <CODE>/etc/hosts.allow</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s27.24">27.24=20
+    Arquivo <CODE>/etc/hosts.deny</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s27.25">27.25=20
+    Arquivo <CODE>/etc/hosts.equiv</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s27.26">27.26=20
+    Arquivo <CODE>/etc/inetd.conf</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-inittab">27.27=20
+    Arquivo <CODE>/etc/inittab</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-inputrc">27.28=20
+    Arquivo <CODE>/etc/inputrc</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-isapnp-c">27.29=20
+    Arquivo <CODE>/etc/isapnp.conf</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-isapnp-g">27.30=20
+    Arquivo <CODE>/etc/isapnp.gone</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-issue">27.31=20
+    Arquivo <CODE>/etc/issue</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-issue-n">27.32=20
+    Arquivo <CODE>/etc/issue.net</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s27.33">27.33=20
+    Arquivo <CODE>/etc/lilo.conf</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-login-d">27.34=20
+    Arquivo <CODE>/etc/login.defs</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s27.35">27.35=20
+    Arquivo <CODE>/etc/modules</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s27.36">27.36=20
+    Arquivo <CODE>/etc/modules.conf</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-motd">27.37=20
+    Arquivo <CODE>/etc/motd</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-mtab">27.38=20
+    Arquivo <CODE>/etc/mtab</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s27.39">27.39=20
+    Arquivo <CODE>/etc/networks</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-passwd">27.40=20
+    Arquivo <CODE>/etc/passwd</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-printcap">27.41=20
+    Arquivo <CODE>/etc/printcap</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s27.42">27.42=20
+    Arquivo <CODE>/etc/protocols</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s27.43">27.43=20
+    Arquivo <CODE>/etc/resolv.conf</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-serial-c">27.44=20
+    Arquivo <CODE>/etc/serial.conf</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s27.45">27.45=20
+    Arquivo <CODE>/etc/services</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-shadow">27.46=20
+    Arquivo <CODE>/etc/shadow</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-shells">27.47=20
+    Arquivo <CODE>/etc/shells</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-syslog-c">27.48=20
+    Arquivo <CODE>/etc/syslog.conf</CODE></A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm#s-etc-timezones">27.49=20
+    Arquivo <CODE>/etc/timezone</CODE></A> </LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28=20
+  Conectando seu computador a Internet</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm#s-inter-conectando">28.1=20
+    Conectando-se a Internet</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm#s-inter-navegando">28.2=20
+    Navegando na Internet</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm#s-inter-emails-r">28.3=20
+    Recebimento de E-Mails atrav=E9s do <CODE>fetchmail</CODE></A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm#s-inter-procmail">28.3.1=20
+      Processamento de mensagens atrav=E9s do procmail</A> =
+</LI></UL></LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29=20
+  X Window (ambiente gr=E1fico)</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm#s-x11-descricao">29.1=20
+    O que =E9 X Window?</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm#s-x11-estrutura">29.2=20
+    A organiza=E7=E3o do ambiente gr=E1fico X Window</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm#s-x11-iniciando">29.3=20
+    Iniciando o X</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm#s-x11-servidor">29.4=20
+    Servidor X</A> </LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30=20
+  Aplicativos para Linux</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-b">30.1=20
+    Aplicativos B=E1sicos</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-b-editores">30.1.1=20
+      Editores de Texto</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-b-escritorio">30.1.2=20
+      Aplicativos para Escrit=F3rio</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-b-internet">30.1.3=20
+      Internet</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-b-emuladores">30.1.4=20
+      Emuladores</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-b-utils">30.1.5=20
+      Utilit=E1rios</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-b-admin">30.1.6=20
+      Administra=E7=E3o do Sistema</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s30.2">30.2=20
+    Listagem de Aplicativos para <CODE>GNU/Linux</CODE></A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-l-perifericos">30.2.1=20
+      Perif=E9ricos / Gerenciamento de Hardware</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-l-internet">30.2.2=20
+      Internet</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-l-conferencia">30.2.3=20
+      Confer=EAncia de audio/v=EDdeo via Internet/Intranet</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-l-webhtml">30.2.4=20
+      Gerenciamento de WebSites / Linguagem HTML</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-l-multimidia">30.2.5=20
+      Multim=EDdia</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-l-som">30.2.6=20
+      Som</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-l-comm">30.2.7=20
+      Comunica=E7=E3o/Fax</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-l-x11">30.2.8=20
+      X Window</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-l-edicao">30.2.9=20
+      Editora=E7=E3o Gr=E1fica/Visualizadores</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-l-emul">30.2.10=20
+      Emuladores/Ferramentas p/ Intera=E7=E3o com outros SO</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-l-prog">30.2.11=20
+      Programa=E7=E3o / Bancos de Dados / Acesso a Dados</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-l-impressao">30.2.12=20
+      Impress=E3o</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-l-texto">30.2.13=20
+      Texto</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-l-kernel">30.2.14=20
+      Kernel</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-l-notebooks">30.2.15=20
+      Notebooks</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-l-cdrec">30.2.16=20
+      Grava=E7=E3o de CD/DVD</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-l-cluster">30.2.17=20
+      Computa=E7=E3o Paralela/Clusters</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-l-handhelds">30.2.18=20
+      PalmTop / Palm Pilot / Computadores de M=E3o</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-l-backup">30.2.19=20
+      Backup</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-l-uteis">30.2.20=20
+      Utilit=E1rios</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-l-compactadores">30.2.2=
+1=20
+      Compactadores/Descompactadores/Arquivadores</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-l-x10">30.2.22=20
+      Dispositivos X-10 (Controle de eletrodom=E9sticos e aparelhos via =
+PC)</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-l-outros">30.2.23=20
+      Outros</A> </LI></UL></LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31=20
+  Como obter ajuda no sistema</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-man">31.1=20
+    P=E1ginas de Manual</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-info">31.2=20
+    Info Pages</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-helponline">31.3=20
+    Help on line</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-help">31.4=20
+    help</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-apropos">31.5=20
+    apropos/whatis</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-locate">31.6=20
+    locate</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-which">31.7=20
+    which</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-howto">31.8=20
+    Documentos HOWTO's</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-howto-listagem">31.8.1 =
+
+      Listagem de HOWTO's</A>=20
+      <UL>
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.1.1">31.8.1.1=20
+        Introdu=E7=E3o ao Sistema / Instala=E7=E3o / Configura=E7=F5es / =
+Kernel</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.1.2">31.8.1.2=20
+        Adapta=E7=E3o do <CODE>GNU/Linux</CODE> para idiomas =
+espec=EDficos</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.1.3">31.8.1.3=20
+        Discos / Sistemas de Arquivos / Desempenho</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.1.4">31.8.1.4=20
+        Escrita de Documenta=E7=E3o / Editores</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.1.5">31.8.1.5=20
+        Hardware</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.1.6">31.8.1.6=20
+        Software</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.1.7">31.8.1.7=20
+        Plataformas n=E3o Intel (x86)</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.1.8">31.8.1.8=20
+        Programa=E7=E3o / Compiladores / Banco de Dados</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.1.9">31.8.1.9=20
+        Computa=E7=E3o Paralela / Clusters</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.1.10">31.8.1.10=20
+        Configura=E7=E3o de Teclado / V=EDdeo / Console</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.1.11">31.8.1.11=20
+        Ambiente Gr=E1fico</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.1.12">31.8.1.12=20
+        Suporte ao Sistema / Grupos de Usu=E1rios / Listas de =
+Discuss=E3o</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.1.13">31.8.1.13=20
+        Migra=E7=E3o / Conviv=EAncia com Outras Plataformas</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.1.14">31.8.1.14=20
+        Tarefas Espec=EDficas</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.1.15">31.8.1.15=20
+        Rede / Administra=E7=E3o / Firewall / Proxy / Seguran=E7a</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.1.16">31.8.1.16=20
+        Outros</A> </LI></UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-howto-listagem-m">31.8.=
+2=20
+      Listagem de Mini-HOWTO's</A>=20
+      <UL>
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.2.1">31.8.2.1=20
+        Introdu=E7=E3o ao Sistema / Instala=E7=E3o / Configura=E7=E3o / =
+Kernel</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.2.2">31.8.2.2=20
+        Discos / Sistema de Arquivos / Desempenho</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.2.3">31.8.2.3=20
+        Escrita de Documenta=E7=E3o / Editores</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.2.4">31.8.2.4=20
+        Hardware</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.2.5">31.8.2.5=20
+        Software</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.2.6">31.8.2.6=20
+        Plataformas n=E3o Intel (x86)</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.2.7">31.8.2.7=20
+        Programa=E7=E3o / Compiladores / Banco de Dados</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.2.8">31.8.2.8=20
+        Configura=E7=E3o de Teclado / Video / Console</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.2.9">31.8.2.9=20
+        Ambiente Gr=E1fico</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.2.10">31.8.2.10=20
+        Migra=E7=E3o/Conviv=EAncia com outras plataformas</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.2.11">31.8.2.11=20
+        Tarefas Espec=EDficas</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.2.12">31.8.2.12=20
+        Rede / Administra=E7=E3o / Firewall / Seguran=E7a</A>=20
+        <LI><A=20
+        =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s31.8.2.13">31.8.2.13=20
+        Outros</A> </LI></UL></LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-docs">31.9=20
+    Documenta=E7=E3o de Programas</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-faq">31.10=20
+    FAQ</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-rfcs">31.11=20
+    RFC's</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-internet">31.12=20
+    Internet</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-paginas">31.12.1=20
+      P=E1ginas Internet de Refer=EAncia</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-listas">31.12.2=20
+      Listas de discuss=E3o</A> </LI></UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-netiqueta">31.13=20
+    Netiqueta</A>=20
+    <UL>
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-netiqueta-geral">31.13.=
+1=20
+      Recomenda=E7=F5es Gerais sobre a Comunica=E7=E3o Eletr=F4nica</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-netiqueta-email">31.13.=
+2=20
+      Email</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-netiqueta-talk">31.13.3=
+=20
+      Talk</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-netiqueta-icq">31.13.4 =
+
+      ICQ</A>=20
+      <LI><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-netiqueta-listas">31.13=
+.5=20
+      Listas de Discuss=E3o via Email</A> </LI></UL></LI></UL>
+  <LI><A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32=20
+  Ap=EAndice</A>=20
+  <UL>
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm#s-apend-sobre">32.1=20
+    Sobre este guia</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm#s-apend-autor">32.2=20
+    Sobre o Autor</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm#s-apend-ref">32.3=20
+    Refer=EAncias de aux=EDlio ao desenvolvimento do guia</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm#s-apend-homepage">32.4=20
+    Onde encontrar a vers=E3o mais nova do guia?</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm#s-apend-colaboradores">32.5=20
+    Colaboradores do Guia</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm#s-apend-mr">32.6=20
+    Marcas Registradas</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm#s-apend-new">32.7=20
+    Futuras vers=F5es</A>=20
+    <LI><A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm#s-apend-pgp">32.8=20
+    Chave P=FAblica PGP</A> </LI></UL></LI></UL>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

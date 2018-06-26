@@ -1,0 +1,561 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: =?iso-8859-1?Q?Guia_Foca_GNU/Linux_-_Personaliza=E7=E3o_do_Sistema?=
+Date: Mon, 6 Aug 2007 11:33:24 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-pers.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Personaliza=E7=E3o do =
+Sistema</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-pers></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ 21 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 21 - Personaliza=E7=E3o do =
+Sistema </H1>
+<HR>
+
+<P>Este cap=EDtulo ensina como personalizar algumas caracter=EDsticas de =
+seu sistema=20
+<CODE>GNU/Linux</CODE>.=20
+<HR>
+<A name=3Ds-pers-varamb></A>
+<H2>21.1 Vari=E1veis de Ambientes</H2>
+<P>=C9 um m=E9todo simples e pr=E1tico que permite a especifica=E7=E3o =
+de op=E7=F5es de=20
+configura=E7=E3o de programas sem precisar mexer com arquivos no disco =
+ou op=E7=F5es.=20
+Algumas vari=E1veis do <CODE>GNU/Linux</CODE> afetam o comportamento de =
+todo o=20
+Sistema Operacional, como o idioma utilizado e o path . Vari=E1veis de =
+ambientes=20
+s=E3o nomes que cont=E9m algum valor e tem a forma =
+<SAMP>Nome=3DValor</SAMP>. As=20
+vari=E1veis de ambiente s=E3o individuais para cada usu=E1rio do sistema =
+ou consoles=20
+virtuais e permanecem residentes na mem=F3ria RAM at=E9 que o usu=E1rio =
+saia do=20
+sistema (logo-off) ou at=E9 que o sistema seja desligado.=20
+<P>As vari=E1veis de ambiente s=E3o visualizadas/criadas atrav=E9s do =
+comando=20
+<CODE>set</CODE> ou <SAMP>echo $NOME</SAMP> (apenas visualiza) e =
+exportadas para=20
+o sistemas com o comando <SAMP>export NOME=3DVALOR</SAMP>.=20
+<P>Nos sistemas <CODE>Debian</CODE>, o local usado para especificar =
+vari=E1veis de=20
+ambiente =E9 o <CODE>/etc/environment</CODE> (veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm#s-pers-environment">Arquivo=20
+<CODE>/etc/environment</CODE>, Se=E7=E3o 21.8</A>). Todas as vari=E1veis =
+especificadas=20
+neste arquivos ser=E3o inicializadas e automaticamente exportadas na =
+inicializa=E7=E3o=20
+do sistema.=20
+<P>Exemplo: Para criar uma vari=E1vel chamada <CODE>TESTE</CODE> que =
+contenha o=20
+valor <SAMP>123456</SAMP> digite: <SAMP>export TESTE=3D123456</SAMP>. =
+Agora para=20
+ver o resultado digite: <SAMP>echo $TESTE</SAMP> ou <SAMP>set|grep =
+TESTE</SAMP>.=20
+Note que o <SAMP>$</SAMP> que antecede o nome <CODE>TESTE</CODE> serve =
+para=20
+identificar que se trata de uma vari=E1vel e n=E3o de um arquivo comum.=20
+<HR>
+<A name=3Ds-pers-idioma></A>
+<H2>21.2 Modificando o Idioma usado em seu sistema</H2>
+<P>O idioma usado em seu sistema pode ser modificado facilmente =
+atrav=E9s das=20
+vari=E1veis de ambiente. Atualmente a maioria dos programas est=E3o =
+sendo=20
+<EM>localizados</EM>. A localiza=E7=E3o =E9 um recurso que especifica =
+arquivos que=20
+cont=E9m as mensagens do programas em outros idiomas. Voc=EA pode usar o =
+comando=20
+<CODE>locale</CODE> para listar as vari=E1veis de localiza=E7=E3o do =
+sistema e seus=20
+respectivos valores. As principais vari=E1veis usadas para determinar =
+qual idioma=20
+os programas <SAMP>localizados</SAMP> utilizar=E3o s=E3o:=20
+<UL>
+  <LI><CODE>LANG</CODE> - Especifica o idioma_PAIS local. Podem ser=20
+  especificados mais de um idioma na mesma vari=E1vel separando-os com=20
+  <SAMP>:</SAMP>, desta forma caso o primeiro n=E3o esteja dispon=EDvel =
+para o=20
+  programa o segundo ser=E1 verificado e assim por diante. A l=EDngua =
+Inglesa =E9=20
+  identificada pelo c=F3digo <SAMP>C</SAMP> e usada como padr=E3o caso =
+nenhum locale=20
+  seja especificado.=20
+  <P>Por exemplo: <SAMP>export LANG=3Dpt_BR</SAMP>, <SAMP>export=20
+  LANG=3Dpt_BR:pt_PT:C</SAMP> </P>
+  <LI><CODE>LC_MESSAGES</CODE> - Especifica o idioma que ser=E3o =
+mostradas as=20
+  mensagens dos programas. Seu formato =E9 o mesmo de <CODE>LANG</CODE>. =
+
+  <LI><CODE>LC_ALL</CODE> - Configura todas as vari=E1veis de =
+localiza=E7=E3o de uma=20
+  s=F3 vez. Seu formato =E9 o mesmo de <CODE>LANG</CODE>. </LI></UL>
+<P>As mensagens de localiza=E7=E3o est=E3o localizadas em arquivos =
+individuais de cada=20
+programa em <CODE>/usr/share/locale/[Idioma]/LC_MESSAGES</CODE> . Elas =
+s=E3o=20
+geradas atrav=E9s de arquivos <SAMP>potfiles</SAMP> (arquivos com a =
+extens=E3o=20
+<CODE>.po</CODE> ou <CODE>.pot</CODE> e s=E3o gerados cat=E1logos de =
+mensagens=20
+<CODE>.mo</CODE>. As vari=E1veis de ambiente podem ser especificadas no =
+arquivo=20
+<CODE>/etc/environment</CODE> desta forma as vari=E1veis ser=E3o =
+carregadas toda a=20
+vez que seu sistema for iniciado. Voc=EA tamb=E9m pode especificar as =
+vari=E1veis de=20
+localiza=E7=E3o em seu arquivos de inicializa=E7=E3o =
+<CODE>.bash_profile</CODE>,=20
+<CODE>.bashrc</CODE> ou <CODE>.profile</CODE> assim toda a vez que =
+entrar no=20
+sistema, as vari=E1veis de localiza=E7=E3o personalizadas ser=E3o =
+carregadas.=20
+<P>Siga as instru=E7=F5es a seguir de acordo com a vers=E3o de sua =
+distribui=E7=E3o=20
+<CODE>Debian</CODE>:=20
+<DL>
+  <DT>Debian 3.0=20
+  <DD>Acrescente a linha <SAMP>pt_BR ISO-8859-1</SAMP> no arquivo=20
+  <CODE>/etc/locale.gen</CODE>, rode o utilit=E1rio =
+<CODE>locale-gen</CODE> para=20
+  gerar os locales e acrescente as vari=E1veis de localiza=E7=E3o no =
+arquivo=20
+  <CODE>/etc/locales.def</CODE> seguindo a forma: <PRE>     export =
+LANG=3Dpt_BR
+     export LC_ALL=3Dpt_BR
+     export LC_MESSAGES=3Dpt_BR
+</PRE>
+  <P>Note que o arquivo <CODE>/etc/environment</CODE> tamb=E9m pode ser =
+usado para=20
+  tal tarefa, mas o <CODE>locales.def</CODE> foi criado especialmente =
+para lidar=20
+  com vari=E1veis de localiza=E7=E3o na <CODE>Debian</CODE> 3.0. </P>
+  <DT>Debian 2.2=20
+  <DD>Coloque estas vari=E1veis no arquivo <CODE>/etc/environment</CODE> =
+(veja um=20
+  exemplo deste arquivo em <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm#s-pers-environment">Arquivo=20
+  <CODE>/etc/environment</CODE>, Se=E7=E3o 21.8</A>), assim toda a vez =
+que seu=20
+  sistema for iniciado as vari=E1veis de localiza=E7=E3o ser=E3o =
+carregadas e exportadas=20
+  para o sistema, estando dispon=EDveis para todos os usu=E1rios. =
+</DD></DL>
+<P>Para as mensagens e programas do X-Window usarem em seu idioma local, =
+=E9=20
+preciso colocar as vari=E1veis no arquivo <CODE>~/.xserverrc</CODE> do =
+diret=F3rio=20
+home de cada usu=E1rio e dar a permiss=E3o de execu=E7=E3o neste arquivo =
+(<SAMP>chmod=20
+755 .xserverrc</SAMP>). Lembre-se de incluir o caminho completo do =
+arquivo=20
+execut=E1vel do seu gerenciador de janelas na =FAltima linha deste =
+arquivo (sem o=20
+<SAMP>&amp;</SAMP> no final), caso contr=E1rio o Xserver ser=E1 =
+finalizado logo ap=F3s=20
+ler este arquivo.=20
+<P>Abaixo exemplos de localiza=E7=E3o com as explica=E7=F5es:=20
+<UL>
+  <LI><SAMP>export LANG=3Dpt_BR</SAMP> - Usa o idioma pt_BR como =
+l=EDngua padr=E3o do=20
+  sistema. Caso o idioma Portugues do Brasil n=E3o esteja dispon=EDvel, =
+C =E9 usado=20
+  (Ingl=EAs).=20
+  <LI><SAMP>export LANG=3DC</SAMP> - Usa o idioma Ingl=EAs como padr=E3o =
+(=E9 a mesma=20
+  coisa de n=E3o especificar <CODE>LANG</CODE>, pois o idioma Ingl=EAs =
+=E9 usado como=20
+  padr=E3o).=20
+  <LI><SAMP>export LANG=3Dpt_BR:pt_PT:es_ES:C</SAMP> - Usa o idioma =
+Portugu=EAs do=20
+  Brasil como padr=E3o, caso n=E3o esteja dispon=EDvel usa o Portugu=EAs =
+de Portugal, se=20
+  n=E3o estiver dispon=EDvel usa o Espanhol e por fim o Ingl=EAs. =
+</LI></UL>
+<P>=C9 recomend=E1vel usar a vari=E1vel <CODE>LC_ALL</CODE> para =
+especificar o idioma,=20
+desta forma todos os outras vari=E1veis (<CODE>LANG, MESSAGES, =
+LC_MONETARY,=20
+LC_NUMERIC, LC_COLLATE, LC_CTYPE e LC_TIME</CODE>) ser=E3o configuradas=20
+automaticamente.=20
+<HR>
+<A name=3Ds-pers-alias></A>
+<H2>21.3 alias</H2>
+<P>Permite criar um apelido a um comando ou programa. Por exemplo, se =
+voc=EA gosta=20
+de digitar (como eu) o comando <SAMP>ls --color=3Dauto</SAMP> para ver =
+uma=20
+listagem longa e colorida, voc=EA pode usar o comando <CODE>alias</CODE> =
+para=20
+facilitar as coisas digitando: <SAMP>alias ls=3D'ls =
+--color=3Dauto'</SAMP> (n=E3o se=20
+esque=E7a da meia aspa 'para identificar o comando'). Agora quando =
+voc=EA digitar=20
+<SAMP>ls</SAMP>, a listagem ser=E1 mostrada com cores.=20
+<P>Se voc=EA digitar <SAMP>ls -la</SAMP>, a op=E7=E3o <SAMP>-la</SAMP> =
+ser=E1 adicionada=20
+no final da linha de comando do alias: <SAMP>ls --color=3Dauto =
+-la</SAMP>, e a=20
+listagem tamb=E9m ser=E1 mostrada em cores.=20
+<P>Se quiser utilizar isto toda vez que entrar no sistema, veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm#s-pers-bashprofile">Arquivo=20
+<CODE>.bash_profile</CODE>, Se=E7=E3o 21.5</A> e <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm#s-pers-bashrc">Arquivo=20
+<CODE>.bashrc</CODE>, Se=E7=E3o 21.6</A>.=20
+<HR>
+<A name=3Ds-pers-profile></A>
+<H2>21.4 Arquivo <CODE>/etc/profile</CODE></H2>
+<P>Este arquivo cont=E9m comandos que s=E3o executados para =
+<EM>todos</EM> os=20
+usu=E1rios do sistema no momento do login. Somente o usu=E1rio root pode =
+ter=20
+permiss=E3o para modificar este arquivo.=20
+<P>Este arquivo =E9 lido antes do arquivo de configura=E7=E3o pessoal de =
+cada usu=E1rio=20
+(<CODE>.profile</CODE>(root) e <CODE>.bash_profile</CODE>).=20
+<P>Quando =E9 carregado atrav=E9s de um shell que requer login (nome e =
+senha), o=20
+<CODE>bash</CODE> procura estes arquivos em seq=FC=EAncia e executa os =
+comandos=20
+contidos, caso existam:=20
+<OL type=3D1>
+  <LI><CODE>/etc/profile</CODE>=20
+  <LI><CODE>~/.bash_profile</CODE>=20
+  <LI><CODE>~/.bash_login</CODE>=20
+  <LI><CODE>~/.profile</CODE> </LI></OL>
+<P>Ele <EM>ionterrompe</EM> a pesquisa assim que localiza o primeiro =
+arquivo no=20
+diret=F3rio do usu=E1rio (usando a sequ=EAncia acima). Por exemplo, se =
+voc=EA tem o=20
+arquivo <CODE>~/.bash_login</CODE> e <CODE>~/.bash_profile</CODE> em seu =
+
+diret=F3rio de usu=E1rio, ele processar=E1 o <CODE>/etc/profile</CODE> e =
+ap=F3s isto o=20
+<CODE>~/.bash_profile</CODE>, mas nunca processar=E1 o =
+<CODE>~/.bash_login</CODE>=20
+(a menos que o <CODE>~/.bash_profile</CODE> seja apagado ou renomeado).=20
+<P>Caso o <CODE>bash</CODE> seja carregado atrav=E9s de um shell que =
+n=E3o requer=20
+login (um terminal no X, por exemplo), o seguinte arquivo =E9 executado: =
+
+<CODE>~/.bashrc</CODE>.=20
+<P>Observa=E7=E3o: Nos sistemas Debian, o profile do usu=E1rio root =
+est=E1 configurado=20
+no arquivo <CODE>/root/.profile</CODE>. A raz=E3o disto =E9 porque se o=20
+<CODE>bash</CODE> for carregado atrav=E9s do comando <CODE>sh</CODE>, =
+ele far=E1 a=20
+inicializa=E7=E3o cl=E1ssica deste shell lendo primeiro o arquivo=20
+<CODE>/etc/profile</CODE> e ap=F3s o <CODE>~/.profile</CODE> e ignorando =
+o=20
+<CODE>.bash_profile</CODE> e <CODE>.bashrc</CODE> que s=E3o arquivos de=20
+configura=E7=E3o usados somente pelo <CODE>Bash</CODE>. Exemplo, =
+inserindo a linha=20
+<SAMP>mesg y</SAMP> no arquivo <CODE>/etc/profile</CODE> permite que =
+todos os=20
+usu=E1rios do sistema recebam pedidos de <CODE>talk</CODE> de outros =
+usu=E1rios.=20
+Caso um usu=E1rio n=E3o quiser receber pedidos de <CODE>talk</CODE>, =
+basta somente=20
+adicionar a linha <SAMP>mesg n</SAMP> no arquivo pessoal=20
+<CODE>.bash_profile</CODE>.=20
+<HR>
+<A name=3Ds-pers-bashprofile></A>
+<H2>21.5 Arquivo <CODE>.bash_profile</CODE></H2>
+<P>Este arquivo reside no diret=F3rio pessoal de cada usu=E1rio. =C9 =
+executado por=20
+shells que usam autentica=E7=E3o (nome e senha). =
+<CODE>.bash_profile</CODE> cont=E9m=20
+comandos que s=E3o executados para o usu=E1rio no momento do login no =
+sistema ap=F3s o=20
+<CODE>/etc/profile</CODE>. Note que este =E9 um arquivo oculto pois tem =
+um "." no=20
+inicio do nome.=20
+<P>Por exemplo colocando a linha: <SAMP>alias ls=3D'ls =
+--colors=3Dauto'</SAMP> no=20
+<CODE>.bash_profile</CODE>, cria um apelido para o comando <CODE>ls=20
+--colors=3Dauto</CODE> usando <CODE>ls</CODE>, assim toda vez que voc=EA =
+digitar=20
+<SAMP>ls</SAMP> ser=E1 mostrada a listagem colorida.=20
+<HR>
+<A name=3Ds-pers-bashrc></A>
+<H2>21.6 Arquivo <CODE>.bashrc</CODE></H2>
+<P>Possui as mesmas caracter=EDsticas do <CODE>.bash_profile</CODE> mas =
+=E9=20
+executado por shells que n=E3o requerem autentica=E7=E3o (como uma =
+se=E7=E3o de terminal=20
+no X).=20
+<P>Os comandos deste arquivo s=E3o executados no momento que o usu=E1rio =
+inicia um=20
+shell com as caracter=EDsticas acima. Note que este =E9 um arquivo =
+oculto pois tem=20
+um "." no inicio do nome.=20
+<HR>
+<A name=3Ds-pers-hushlogin></A>
+<H2>21.7 Arquivo <CODE>.hushlogin</CODE></H2>
+<P>Deve ser colocado no diret=F3rio pessoal do usu=E1rio. Este arquivo =
+faz o=20
+<CODE>bash</CODE> pular as mensagens do <CODE>/etc/motd</CODE>, n=FAmero =
+de=20
+e-mails, etc. Exibindo imediatamente o aviso de comando ap=F3s a =
+digita=E7=E3o da=20
+senha.=20
+<HR>
+<A name=3Ds-pers-environment></A>
+<H2>21.8 Arquivo <CODE>/etc/environment</CODE></H2>
+<P>Armazena as vari=E1veis de ambiente que s=E3o exportadas para todo o =
+sistema. Uma=20
+vari=E1vel de ambiente controla o comportamento de um programa, =
+registram detalhes=20
+=FAteis durante a se=E7=E3o do usu=E1rio no sistema, especificam o =
+idioma das mensagens=20
+do sistema, etc.=20
+<P>Exemplo do conte=FAdo de um arquivo <CODE>/etc/environment</CODE>: =
+<PRE>     LANG=3Dpt_BR
+     LC_ALL=3Dpt_BR
+     LC_MESSAGES=3Dpt_BR
+</PRE>
+<HR>
+<A name=3Ds-pers-conf-skel></A>
+<H2>21.9 Diret=F3rio <CODE>/etc/skel</CODE></H2>
+<P>Este diret=F3rio cont=E9m os modelos de arquivos =
+<CODE>.bash_profile</CODE> e=20
+<CODE>.bashrc</CODE> que ser=E3o copiados para o diret=F3rio pessoal dos =
+usu=E1rios no=20
+momento que for criada uma conta no sistema. Desta forma voc=EA n=E3o =
+precisar=E1=20
+configurar estes arquivos separadamente para cada usu=E1rio.=20
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ 21 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

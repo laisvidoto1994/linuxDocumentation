@@ -1,0 +1,375 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Impressão</TITLE>
+<META http-equiv=content-type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2900.3059" name=GENERATOR></HEAD>
+<BODY><A name=ch-impr></A>
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12</A> 
+] [ 13 ] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">próximo</A> 
+] 
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Capítulo 13 - Impressão </H1>
+<HR>
+
+<P>Este capitulo descreve como imprimir em seu sistema <CODE>GNU/Linux</CODE> e 
+as formas de impressão via spool, rede, gráfica, etc. 
+<P>Antes de seguir os passos descritos neste capítulo, tenha certeza que seu 
+kernel foi compilado com o suporte a impressora paralela ativado, caso contrário 
+até mesmo a impressão direta para a porta de impressora falhará. . 
+<HR>
+<A name=s-impr-portas></A>
+<H2>13.1 Portas de impressora</H2>
+<P>Uma porta de impressora é o local do sistema usado para se comunicar com a 
+impressora. Em sistemas <CODE>GNU/Linux</CODE>, a porta de impressora é 
+identificada como <CODE>lp0, lp1, lp2</CODE> no diretório <CODE>/dev</CODE>, 
+correspondendo respectivamente a <CODE>LPT1</CODE>, <CODE>LPT2</CODE> e 
+<CODE>LPT3</CODE> no <CODE>DOS</CODE> e <CODE>Windows</CODE>. Recomendo que o 
+suporte a porta paralela esteja compilado como módulo no kernel. 
+<HR>
+<A name=s-impr-direta></A>
+<H2>13.2 Imprimindo diretamente para a porta de impressora</H2>
+<P>Isto é feito direcionando a saída ou o texto com <SAMP>&gt;</SAMP> 
+diretamente para a porta de impressora no diretório <CODE>/dev</CODE>. 
+<P>Supondo que você quer imprimir o texto contido do arquivo 
+<CODE>trabalho.txt</CODE> e a porta de impressora em seu sistema é 
+<CODE>/dev/lp0</CODE>, você pode usar os seguintes comandos: 
+<UL>
+  <LI><SAMP>cat trabalho.txt &gt;/dev/lp0</SAMP> - Direciona a saída do comando 
+  <CODE>cat</CODE> para a impressora. 
+  <LI><SAMP>cat &lt;trabalho.txt &gt;/dev/lp0</SAMP>. Faz a mesma coisa que o 
+  acima. 
+  <LI><SAMP>cat -n trabalho.txt &gt;/dev/lp0</SAMP> - Numera as linhas durante a 
+  impressão. 
+  <LI><SAMP>head -n 30 trabalho.txt &gt;/dev/lp0</SAMP> - Imprime as 30 linhas 
+  iniciais do arquivo. 
+  <LI><SAMP>cat trabalho.txt|tee /dev/lp0</SAMP> - Mostra o conteúdo do 
+  <CODE>cat</CODE> na tela e envia também para a impressora. </LI></UL>
+<P>Os métodos acima servem somente para imprimir em modo texto (letras, números 
+e caracteres semi-gráficos). 
+<HR>
+<A name=s-impr-spool></A>
+<H2>13.3 Imprimindo via spool</H2>
+<P>A impressão via spool tem por objetivo liberar logo o programa do serviço de 
+impressão deixando um outro programa especifico tomar conta. Este programa é 
+chamado de <EM>daemon de impressão</EM>, normalmente é o <CODE>lpr</CODE> ou o 
+<CODE>lprng</CODE> (recomendado) em sistemas <CODE>GNU/Linux</CODE>. 
+<P>Logo após receber o arquivo que será impresso, o programa de spool gera um 
+arquivo temporário (normalmente localizado em <CODE>/var/spool/lpd</CODE>) que 
+será colocado em fila para a impressão (um trabalho será impresso após o outro, 
+em seqüência). O arquivo temporário gerado pelo programa de spool é apagado logo 
+após concluir a impressão. 
+<P>Antes de se imprimir qualquer coisa usando os daemons de impressão, é preciso 
+configurar os parâmetros de sua impressora no arquivo 
+<CODE>/etc/printcap</CODE>. Um arquivo <CODE>/etc/printcap</CODE> para uma 
+impressora local padrão se parece com o seguinte: <PRE>     lp|Impressora compatível com Linux
+      :lp=/dev/lp0
+      :sd=/var/spool/lpd/lp
+      :af=/var/log/lp-acct
+      :lf=/var/log/lp-errs
+      :pl#66
+      :pw#80
+      :pc#150
+      :mx#0
+      :sh
+</PRE>
+<P>É possível também compartilhar a impressora para a impressão em sistemas 
+remotos, isto será visto em uma seção separada neste guia. 
+<P>Usando os exemplos anteriores da seção <SAMP>Imprimindo diretamente para uma 
+porta de impressora</SAMP>, vamos acelerar as coisas: 
+<UL>
+  <LI><SAMP>cat trabalho.txt |lpr</SAMP> - Direciona a saída do comando 
+  <CODE>cat</CODE> para o programa de spool <CODE>lpr</CODE>. 
+  <LI><SAMP>cat &lt;trabalho.txt |lpr</SAMP>. Faz a mesma coisa que o acima. 
+  <LI><SAMP>cat -n trabalho.txt |lpr</SAMP> - Numera as linhas durante a 
+  impressão. 
+  <LI><SAMP>head -n 30 trabalho.txt |lpr</SAMP> - Imprime as 30 linhas iniciais 
+  do arquivo. </LI></UL>
+<P>A fila de impressão pode ser controlada com os comandos: 
+<UL>
+  <LI><SAMP>lpq</SAMP> - Mostra os trabalhos de impressão atuais 
+  <LI><SAMP>lprm</SAMP> - Remove um trabalho de impressão </LI></UL>
+<P>Ou usado o programa de administração <CODE>lpc</CODE> para gerenciar a fila 
+de impressão (veja a página de manual do <CODE>lpc</CODE> ou digite 
+<SAMP>?</SAMP> ao iniciar o programa para detalhes). 
+<HR>
+<A name=s-impr-graficos></A>
+<H2>13.4 Impressão em modo gráfico</H2>
+<P>A impressão em modo gráfico requer que conheça a marca e modelo de sua 
+impressora e os métodos usados para imprimir seus documentos. Este guia abordará 
+somente a segunda recomendação :-) 
+<HR>
+<A name=s-impr-ghostscript></A>
+<H3>13.4.1 Ghost Script</H3>
+<P>O método mais usados pelos aplicativos do <CODE>GNU/Linux</CODE> para a 
+impressão de gráficos do <EM>Ghost Script</EM>. O Ghost Script (chamado de 
+<EM>gs</EM>) é um interpretador do formato <EM>Pos Script</EM> (arquivos 
+<CODE>.ps</CODE>) e pode enviar o resultado de processamento tanto para a tela 
+como impressora. Ele está disponível para diversas plataformas e sistema 
+operacionais além do <CODE>GNU/Linux</CODE>, inclusive o <CODE>DOS</CODE>, 
+<CODE>Windows</CODE>, <CODE>OS/2</CODE>, etc. 
+<P>O formato <CODE>.ps</CODE> esta se tornando uma padronização para a impressão 
+de gráficos em <CODE>GNU/Linux</CODE> devido a boa qualidade da impressão, 
+liberdade de configuração, gerenciamento de impressão feito pelo <EM>gs</EM> e 
+por ser um formato universal, compatíveis com outros sistemas operacionais. 
+<P>Para imprimir um documento via Ghost Script, você precisará do pacote 
+<CODE>gs</CODE>, <CODE>gsfonts</CODE> (para a distribuição <CODE>Debian</CODE> e 
+distribuições baseadas, ou outros de acordo com sua distribuição Linux) e suas 
+dependências. A distribuição <CODE>Debian</CODE> vem com vários exemplos Pos 
+Script no diretório <CODE>/usr/share/doc/gs/example</CODE> que são úteis para o 
+aprendizado e testes com o Ghost Script. 
+<P>Hora da diversão: 
+<UL>
+  <LI>Copie os arquivos <CODE>tiger.ps.gz</CODE> e <CODE>alphabet.ps.gz</CODE> 
+  do diretório <CODE>/usr/share/doc/gs/examples</CODE> (sistemas 
+  <CODE>Debian</CODE>) para <CODE>/tmp</CODE> e descompacte-os com o comando 
+  <CODE>gzip -d tiger.ps.gz e gzip -d alphabet.ps.gz</CODE>. Se a sua 
+  distribuição não possui arquivos de exemplo ou você não encontra nenhuma 
+  referência de onde se localizam, mande um e-mail que os envio os 2 arquivos 
+  acima (são 32Kb). 
+  <LI>O Ghost Script requer um monitor EGA, VGA ou superior para a visualização 
+  dos seus arquivos (não tenho certeza se ele funciona com monitores CGA ou 
+  Hércules Monocromático) . 
+  <P>Para visualizar os arquivos na tela digite: <PRE>     gs tiger.ps 
+     gs alphabet.ps
+</PRE>
+  <P>Para sair do <CODE>Ghost Script</CODE> pressione <SAMP>CTRL+C</SAMP>. Neste 
+  ponto você deve ter visto um desenho de um tigre e (talvez) letras do 
+  alfabeto. 
+  <P>Se o comando <SAMP>gs alphabet.ps</SAMP> mostrou somente uma tela em 
+  branco, você se esqueceu de instalar as fontes do Ghost Script (estão 
+  localizadas no pacote <CODE>gsfonts</CODE> na distribuição Debian). </P>
+  <LI>Para imprimir o arquivo <CODE>alphabet.ps</CODE> use o comando: <PRE>     gs -q -dSAFER -dNOPAUSE -sDEVICE=epson -r240x72 -sPAPERSIZE=legal -sOutputFile=/dev/lp0 
+     alphabet.ps
+</PRE>
+  <P>O arquivo <CODE>alphabet.ps</CODE> deve ser impresso. Caso aparecerem 
+  mensagens como <SAMP>Error: /invalidfont in findfont</SAMP> no lugar das 
+  letras, você se esqueceu de instalar ou configurar as fontes do Ghost Script. 
+  Instale o pacote de fontes (<CODE>gsfonts</CODE> na <CODE>Debian</CODE>) ou 
+  verifique a documentação sobre como configurar as fontes. 
+  <P>Cada uma das opções acima descrevem o seguinte: 
+  <UL>
+    <LI><SAMP>-q, -dQUIET</SAMP> - Não mostra mensagens de inicialização do 
+    Ghost Script. 
+    <LI><SAMP>-dSAFER</SAMP> - É uma opção para ambientes seguros, pois desativa 
+    a operação de mudança de nome e deleção de arquivo e permite somente a 
+    abertura dos arquivos no modo somente leitura. 
+    <LI><SAMP>-dNOPAUSE</SAMP> - Desativa a pausa no final de cada página 
+    processada. 
+    <LI><SAMP>-sDEVICE=dispositivo</SAMP> - Dispositivo que receberá a saída do 
+    Ghost Script. Neste local pode ser especificada a marca o modelo de sua 
+    impressora ou um formato de arquivo diferente (como pcxmono, bmp256) para 
+    que o arquivo <CODE>.ps</CODE> seja convertido para o formato designado. 
+    <P>Para detalhes sobre os dispositivos disponíveis em seu Ghost Script, 
+    digite <SAMP>gs --help|less</SAMP> ou veja a página de manual. Normalmente 
+    os nomes de impressoras e modelos são concatenados, por exemplo, bjc600 para 
+    a impressora <EM>Canon BJC 600</EM>, epson para impressoras padrão epson, 
+    stcolor para <EM>Epson Stylus color</EM>, etc. 
+    <P>O Hardware-HOWTO contém referências sobre hardware suportados pelo 
+    <CODE>GNU/Linux</CODE>, tal como impressoras e sua leitura pode ser útil. 
+    </P>
+    <LI><SAMP>-r&lt;ResH&gt;x&lt;ResV&gt;</SAMP> - Define a resolução de 
+    impressão (em dpi) Horizontal e Vertical. Os valores dependem de sua 
+    impressora. 
+    <LI><SAMP>-sPAPERSIZE=tamanho</SAMP> - Tamanho do papel. Podem ser usados 
+    a4, legal, letter, etc. Veja a página de manual do gs para ver os outros 
+    tipos suportados e suas medidas. 
+    <LI><SAMP>-sOutputFile=dispositivo</SAMP> - Dispositivo que receberá a saída 
+    de processamento do gs. Você pode especificar 
+    <UL>
+      <LI><SAMP>arquivo.epson</SAMP> - Nome do arquivo que receberá todo o 
+      resultado do processamento. O <CODE>arquivo.epson</CODE> terá toda a 
+      impressão codificada no formato entendido por impressoras epson e poderá 
+      ser impresso com o comando <SAMP>cat arquivo.epson &gt;/dev/lp0</SAMP>. 
+      <P>Uma curiosidade útil: É possível imprimir este arquivo em outros 
+      sistemas operacionais, tal como o <CODE>DOS</CODE> digitando: <SAMP>copy 
+      /b arquivo.eps prn</SAMP> (lembre-se que o <CODE>DOS</CODE> tem um limite 
+      de 8 letras no nome do arquivo e 3 na extensão. Você deve estar 
+      compreendendo a flexibilidade que o <CODE>GNU/Linux</CODE> e suas 
+      ferramentas permitem, isso é só o começo. </P>
+      <LI><SAMP>impressao%d.epson</SAMP> - Nome do arquivo que receberá o 
+      resultado do processamento. Cada página será gravada em arquivos separados 
+      como <CODE>impressao1.epson</CODE>, <CODE>impressao2.epson</CODE>. 
+      <P>Os arquivos podem ser impressos usando os mesmos métodos acima. </P>
+      <LI><SAMP>/dev/lp0</SAMP> para uma impressora em <CODE>/dev/lp0</CODE> 
+      <LI><SAMP>-</SAMP> para redirecionar a saída de processamento do 
+      <CODE>gs</CODE> para a saída padrão. É útil para usar o gs com pipes 
+      <SAMP>|</SAMP>. 
+      <LI><SAMP>\|lpr</SAMP> - Envia a saída do Ghost Script para o daemon de 
+      impressão. O objetivo é deixar a impressão mais rápida. </LI></UL>
+    <P>Se você é curioso ou não esta satisfeito com as opções mostradas acima, 
+    veja a página de manual do <CODE>gs</CODE>. </P></LI></UL></LI></UL>
+<HR>
+<A name=s-impr-magicfilter></A>
+<H2>13.5 Magic Filter</H2>
+<P>O <EM>Magic Filter</EM> é um filtro de impressão inteligente. Ele funciona 
+acionado pelo spool de impressão (mais especificamente o arquivo 
+<CODE>/etc/printcap</CODE>) e permite identificar e imprimir arquivos de 
+diversos tipos diretamente através do comando <SAMP>lpr arquivo</SAMP>. 
+<P>É um ótimo programa e <STRONG>ALTAMENTE RECOMENDADO</STRONG> se você deseja 
+apenas clicar no botão imprimir e deixar os programas fazerem o resto :-) A 
+intenção do programa é justamente automatizar os trabalhos de impressão e spool. 
+
+<P>A maioria dos programas para ambiente gráfico X11, incluindo o Netscape, Word 
+Perfect, Gimp e Star Office trabalham nativamente com o 
+<CODE>magicfilter</CODE>. 
+<HR>
+<A name=s-impr-magicfilter-i></A>
+<H3>13.5.1 Instalação e configuração do Magic Filter</H3>
+<P>O Magic Filter é encontrado no pacote <CODE>magicfilter</CODE> da 
+distribuição <CODE>Debian</CODE> e baseadas. 
+<P>Sua configuração pode ser feita com o programa <CODE>magicfilterconfig</CODE> 
+que torna o processo de configuração rápido e fácil para quem não conhece a 
+sintaxe do arquivo <CODE>/etc/printcap</CODE> ou não tem muitas exigências sobre 
+a configuração detalhada da impressora. 
+<P>Após instalar o <CODE>magicfilter</CODE> reinicie o daemon de impressão (se 
+estiver usando a <CODE>Debian</CODE>, entre no diretório 
+<CODE>/etc/init.d</CODE> e como usuário <SAMP>root</SAMP> digite <SAMP>./lpr 
+restart</SAMP> ou <SAMP>./lprng restart</SAMP>). 
+<P>Para testar o funcionamento do <CODE>magicfilter</CODE>, digite <SAMP>lpr 
+alphabet.ps</SAMP> e <SAMP>lpr tiger.ps</SAMP>, os arquivos serão enviados para 
+o <CODE>magicfilter</CODE> que identificará o arquivo como <EM>Pos Script</EM>, 
+executará o Ghost Script e retornará o resultado do processamento para o daemon 
+de impressão. O resultado será visto na impressora. 
+<P>Se tiver problemas, verifique se a configuração feita com o 
+<CODE>magicfilterconfig</CODE> está correta. Caso precise re-configurar o 
+<CODE>magicfilter</CODE>, digite <SAMP>magicfilterconfig --force</SAMP> 
+(lembre-se que a opção --force substitui qualquer configuração personalizada que 
+tenha adicionado ao arquivo <CODE>/etc/printcap</CODE>). 
+<HR>
+<A name=s-impr-magicfilter-c></A>
+<H3>13.5.2 Outros detalhes técnicos sobre o Magic Filter</H3>
+<P>Durante a configuração do <CODE>magicfilter</CODE>, a seguinte linha é 
+adicionada ao arquivo <CODE>/etc/printcap</CODE>: <PRE>     :if=/etc/magicfilter/epson9-filter
+</PRE>
+<P>Não tenho nenhum contrato de divulgação com a <EM>epson</EM> :-) estou usando 
+esta marca de impressora porque é a mais tradicional e facilmente encontrada. A 
+linha que começa com <SAMP>:if</SAMP> no <CODE>magicfilter</CODE> identifica um 
+arquivo de filtro de impressão. 
+<P>O arquivo <CODE>/etc/magicfilter/epson9-filter</CODE> é criado usando o 
+formato do magicfilter, e não é difícil entender seu conteúdo e fazer algumas 
+modificações: <PRE>     #! /usr/sbin/magicfilter
+     #
+     # Magic filter setup file for 9-pin Epson (or compatible) printers
+     #
+     # This file is in the public domain.
+     #
+     # This file has been automatically adapted to your system.
+     #
+     # wild guess: native control codes start with ESC
+     0       \033            cat
+     
+     # PostScript
+     0 %! filter /usr/bin/gs -q -dSAFER -dNOPAUSE -r120x72 -sDEVICE=epson -sOutputFile=- - -c quit 
+     0 \004%! filter	/usr/bin/gs -q -dSAFER -dNOPAUSE -r120x72 -sDEVICE=epson -sOutputFile=- - -c quit 
+     
+     # PDF
+     0 %PDF fpipe /usr/bin/gs -q -dSAFER -dNOPAUSE -r120x72 -sDEVICE=epson -sOutputFile=- $FILE -c quit 
+     
+     # TeX DVI
+     0 \367\002 fpipe /usr/bin/dvips -X 120  -Y 72  -R -q -f 
+     
+     # compress'd data
+     0 \037\235 pipe	/bin/gzip  -cdq 
+     
+     # packed, gzipped, frozen and SCO LZH data
+     0 \037\036 pipe	/bin/gzip  -cdq 
+     0 \037\213 pipe	/bin/gzip  -cdq 
+     0 \037\236 pipe	/bin/gzip  -cdq 
+     0 \037\240 pipe	/bin/gzip  -cdq 
+     
+     0 BZh	pipe	/usr/bin/bzip2  -cdq 
+     
+     # troff documents
+     0 .\?\?\040	fpipe 	`/usr/bin/grog  -Tps $FILE` 
+     0 .\\\"		fpipe 	`/usr/bin/grog  -Tps $FILE` 
+     0 '\\\"		fpipe 	`/usr/bin/grog  -Tps $FILE` 
+     0 '.\\\"		fpipe 	`/usr/bin/grog  -Tps $FILE` 
+     0  \\\"		fpipe 	`/usr/bin/grog  -Tps $FILE`
+</PRE>
+<P>Você deve ter notado que para cada tipo de arquivo existe o respectivo 
+programa que é executado, basta você modificar as opções usadas nos programas 
+neste arquivo (como faria na linha de comando) para afetar o comportamento da 
+impressão. 
+<P>Por exemplo, modificando a resolução para -r240x72 no processamento de 
+arquivos Pos Script (gs), a impressora passará a usar esta resolução. 
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12</A> 
+] [ 13 ] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">próximo</A> 
+] 
+<HR>
+
+<P>Guia Foca GNU/Linux 
+<ADDRESS>Versão 3.99 - segunda, 30 de outubro de 2006<BR><BR>Gleydson Mazioli da 
+Silva <CODE><A 
+href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR><BR></ADDRESS>
+<HR>
+</BODY></HTML>

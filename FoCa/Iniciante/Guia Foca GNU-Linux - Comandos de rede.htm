@@ -1,0 +1,262 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Comandos de rede</TITLE>
+<META http-equiv=content-type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2900.3059" name=GENERATOR></HEAD>
+<BODY><A name=ch-cmdn></A>
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8</A> 
+] [ 9 ] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">próximo</A> 
+] 
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Capítulo 9 - Comandos de rede </H1>
+<HR>
+
+<P>Este capítulo traz alguns comandos úteis para uso em rede e ambientes 
+multiusuário. 
+<HR>
+<A name=s-cmdn-who></A>
+<H2>9.1 who</H2>
+<P>Mostra quem está atualmente conectado no computador. Este comando lista os 
+nomes de usuários que estão conectados em seu computador, o terminal e data da 
+conexão. 
+<P><SAMP>who [<EM>opções</EM>]</SAMP> 
+<P>onde: 
+<DL>
+  <DT><EM>opções</EM> 
+  <DT>-H, --heading 
+  <DD>Mostra o cabeçalho das colunas. 
+  <DT>-i, -u, --idle 
+  <DD>Mostra o tempo que o usuário está parado em Horas:Minutos. 
+  <DT>-m, i am 
+  <DD>Mostra o nome do computador e usuário associado ao nome. É equivalente a 
+  digitar <SAMP>who i am</SAMP> ou <SAMP>who am i</SAMP>. 
+  <DT>-q, --count 
+  <DD>Mostra o total de usuários conectados aos terminais. 
+  <DT>-T, -w, --mesg 
+  <DD>Mostra se o usuário pode receber mensagens via <CODE>talk</CODE> 
+  (conversação). 
+  <UL>
+    <LI>+ O usuário recebe mensagens via talk 
+    <LI>- O usuário não recebe mensagens via talk. 
+    <LI>? Não foi possível determinar o dispositivo de terminal onde o usuário 
+    está conectado. </LI></UL></DD></DL>
+<HR>
+<A name=s-cmdn-telnet></A>
+<H2>9.2 Telnet</H2>
+<P>Permite acesso a um computador remoto. É mostrada uma tela de acesso 
+correspondente ao computador local onde deve ser feita a autenticação do usuário 
+para entrar no sistema. Muito útil, mas deve ser tomado cuidados ao 
+disponibilizar este serviço para evitar riscos de segurança. 
+<P><SAMP>telnet [<EM>opções</EM>] [<EM>ip/dns</EM>] [<EM>porta</EM>]</SAMP> 
+<P>onde: 
+<DL>
+  <DT><EM>ip/dns</EM> 
+  <DD>Endereço IP do computador de destino ou nome DNS. 
+  <DT><EM>porta</EM> 
+  <DD>Porta onde será feita a conexão. Por padrão, a conexão é feita na porta 
+  <EM>23</EM>. 
+  <DT><EM>opções</EM> 
+  <DD>
+  <DL>
+    <DT>-8 
+    <DD>Requisita uma operação binária de 8 bits. Isto força a operação em modo 
+    binário para envio e recebimento. Por padrão, <CODE>telnet</CODE> não usa 8 
+    bits. 
+    <DT>-a 
+    <DD>Tenta um login automático, enviando o nome do usuário lido da variável 
+    de ambiente <CODE>USER</CODE>. 
+    <DT>-d 
+    <DD>Ativa o modo de debug. 
+    <DT>-r 
+    <DD>Ativa a emulação de rlogin. 
+    <DT>-l [usuário] 
+    <DD>Faz a conexão usando [usuário] como nome de usuário. </DD></DL></DD></DL>
+<P>Exemplo: <SAMP>telnet 192.168.1.1</SAMP>, <SAMP>telnet 192.168.1.1 23</SAMP>. 
+
+<HR>
+<A name=s-cmdn-finger></A>
+<H2>9.3 finger</H2>
+<P>Mostra detalhes sobre os usuários de um sistema. Algumas versões do 
+<CODE>finger</CODE> possuem bugs e podem significar um risco para a segurança do 
+sistema. É recomendado desativar este serviço na máquina local. 
+<P><SAMP>finger [<EM>usuário</EM>] [<EM>usuário@host</EM>]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT><EM>usuário</EM> 
+  <DD>Nome do usuário que deseja obter detalhes do sistema. Se não for digitado 
+  o nome de usuário, o sistema mostra detalhes de todos os usuários conectados 
+  no momento. 
+  <DT><EM>usuário@host</EM> 
+  <DD>Nome do usuário e endereço do computador que deseja obter detalhes. 
+  <DT>-l 
+  <DD>Mostra os detalhes de todos os usuários conectados no momento. Entre os 
+  detalhes, estão incluídos o <EM>nome do interpretador de comandos</EM> (shell) 
+  do usuário, <EM>diretório home</EM>, <EM>nome do usuário</EM>, 
+  <EM>endereço</EM>, etc. 
+  <DT>-p 
+  <DD>Não exibe o conteúdo dos arquivos <CODE>.plan</CODE> e 
+  <CODE>.project</CODE> </DD></DL>
+<P>Se for usado sem parâmetros, mostra os dados de todos os usuários conectados 
+atualmente ao seu sistema. 
+<P>Exemplo: <SAMP>finger</SAMP>, <SAMP>finger root</SAMP>. 
+<HR>
+<A name=s-cmdn-ftp></A>
+<H2>9.4 ftp</H2>
+<P>Permite a transferência de arquivos do computador remoto/local e vice versa. 
+O file transfer protocol é o sistema de transmissão de arquivos mais usado na 
+Internet. É requerida a autenticação do usuário para que seja permitida a 
+conexão. Muitos servidores ftp disponibilizam acesso anônimo aos usuários, com 
+acesso restrito. 
+<P>Uma vez conectado a um servidor <CODE>ftp</CODE>, você pode usar a maioria 
+dos comandos do <CODE>GNU/Linux</CODE> para operá-lo. 
+<P><SAMP>ftp [<EM>ip/dns</EM>]</SAMP> 
+<P>Abaixo alguns dos comandos mais usados no FTP: 
+<DL>
+  <DT>ls 
+  <DD>Lista arquivos do diretório atual. 
+  <DT>cd [diretório] 
+  <DD>Entra em um diretório. 
+  <DT>get [arquivo] 
+  <DD>Copia um arquivo do servidor ftp para o computador local. O arquivo é 
+  gravado, por padrão, no diretório onde o programa ftp foi executado. 
+  <DT>hash [on/off] 
+  <DD>Por padrão esta opção está desligada. Quando ligada, faz com que o 
+  caracter "#" seja impresso na tela indicando o progresso do download. 
+  <DT>mget [arquivos] 
+  <DD>Semelhante ao get, mas pode copiar diversos arquivos e permite o uso de 
+  curingas. 
+  <DT>send [arquivo] 
+  <DD>Envia um arquivo para o diretório atual do servidor FTP (você precisa de 
+  uma conta com acesso a gravação para fazer isto). 
+  <DT>prompt [on/off] 
+  <DD>Ativa ou desativa a pergunta para a cópia de arquivo. Se estiver como 
+  <SAMP>off</SAMP> assume sim para qualquer pergunta. </DD></DL>
+<P>Exemplo: <SAMP>ftp ftp.br.debian.org</SAMP>. 
+<HR>
+<A name=s-cmdn-whoami></A>
+<H2>9.5 whoami</H2>
+<P>Mostra o nome que usou para se conectar ao sistema. É útil quando você usa 
+várias contas e não sabe com qual nome entrou no sistema :-) 
+<P><SAMP>whoami</SAMP> 
+<HR>
+<A name=s-cmdn-dnsdomainname></A>
+<H2>9.6 dnsdomainname</H2>
+<P>Mostra o nome do domínio de seu sistema. 
+<HR>
+<A name=s-cmdn-hostname></A>
+<H2>9.7 hostname</H2>
+<P>Mostra ou muda o nome de seu computador na rede. 
+<HR>
+<A name=s-cmdn-talk></A>
+<H2>9.8 talk</H2>
+<P>Inicia conversa com outro usuário em uma rede local ou Internet. Talk é um 
+programa de conversação em tempo real onde uma pessoa vê o que a outra escreve. 
+<P><SAMP>talk [<EM>usuário</EM>] [<EM>tty</EM>]</SAMP> 
+<P>ou 
+<P><SAMP>talk [<EM>usuário@host</EM>]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT><EM>usuário</EM> 
+  <DD>Nome de login do usuário que deseja iniciar a conversação. Este nome pode 
+  ser obtido com o comando <CODE>who</CODE> (veja <A 
+  href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html#s-cmdn-who">who, 
+  Seção 9.1</A>). 
+  <DT><EM>tty</EM> 
+  <DD>O nome de terminal onde o usuário está conectado, para iniciar uma conexão 
+  local. 
+  <DT><EM>usuário@host</EM> 
+  <DD>Se o usuário que deseja conversar estiver conectado em um computador 
+  remoto, você deve usar o nome do usuário@hosname do computador. </DD></DL>
+<P>Após o <CODE>talk</CODE> ser iniciado, ele verificará se o usuário pode 
+receber mensagens, em caso positivo, ele enviará uma mensagem ao usuário dizendo 
+como responder ao seu pedido de conversa. Veja <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html#s-cmdn-who">who, 
+Seção 9.1</A>. 
+<P>Para poder fazer a rolagem para cima e para baixo no <CODE>talk</CODE>, 
+pressione <SAMP>CTRL+P</SAMP>(Previous - Tela anterior) e <SAMP>CTRL+N</SAMP> 
+(Next - Próxima tela). 
+<P>Você deve autorizar o recebimento de talks de outros usuários para que eles 
+possam se comunicar com você , para detalhes veja o comando <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-mesg">mesg, 
+Seção 8.19</A>. 
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8</A> 
+] [ 9 ] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">próximo</A> 
+] 
+<HR>
+
+<P>Guia Foca GNU/Linux 
+<ADDRESS>Versão 3.99 - segunda, 30 de outubro de 2006<BR><BR>Gleydson Mazioli da 
+Silva <CODE><A 
+href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR><BR></ADDRESS>
+<HR>
+</BODY></HTML>

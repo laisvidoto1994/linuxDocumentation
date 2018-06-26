@@ -1,0 +1,661 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: Guia Foca GNU/Linux - Comandos de rede
+Date: Mon, 6 Aug 2007 11:18:07 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-cmdn.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Comandos de rede</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-cmdn></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ 11 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 11 - Comandos de rede </H1>
+<HR>
+
+<P>Este cap=EDtulo traz alguns comandos =FAteis para uso em rede e =
+ambientes=20
+multiusu=E1rio.=20
+<HR>
+<A name=3Ds-cmdn-who></A>
+<H2>11.1 who</H2>
+<P>Mostra quem est=E1 atualmente conectado no computador. Este comando =
+lista os=20
+nomes de usu=E1rios que est=E3o conectados em seu computador, o terminal =
+e data da=20
+conex=E3o.=20
+<P><SAMP>who [<EM>op=E7=F5es</EM>]</SAMP>=20
+<P>onde:=20
+<DL>
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-H, --heading=20
+  <DD>Mostra o cabe=E7alho das colunas.=20
+  <DT>-i, -u, --idle=20
+  <DD>Mostra o tempo que o usu=E1rio est=E1 parado em Horas:Minutos.=20
+  <DT>-m, i am=20
+  <DD>Mostra o nome do computador e usu=E1rio associado ao nome. =C9 =
+equivalente a=20
+  digitar <SAMP>who i am</SAMP> ou <SAMP>who am i</SAMP>.=20
+  <DT>-q, --count=20
+  <DD>Mostra o total de usu=E1rios conectados aos terminais.=20
+  <DT>-T, -w, --mesg=20
+  <DD>Mostra se o usu=E1rio pode receber mensagens via <CODE>talk</CODE> =
+
+  (conversa=E7=E3o).=20
+  <UL>
+    <LI>+ O usu=E1rio recebe mensagens via talk=20
+    <LI>- O usu=E1rio n=E3o recebe mensagens via talk.=20
+    <LI>? N=E3o foi poss=EDvel determinar o dispositivo de terminal onde =
+o usu=E1rio=20
+    est=E1 conectado. </LI></UL></DD></DL>
+<HR>
+<A name=3Ds-cmdn-telnet></A>
+<H2>11.2 Telnet</H2>
+<P>Permite acesso a um computador remoto. =C9 mostrada uma tela de =
+acesso=20
+correspondente ao computador local onde deve ser feita a =
+autentica=E7=E3o do usu=E1rio=20
+para entrar no sistema. Muito =FAtil, mas deve ser tomado cuidados ao=20
+disponibilizar este servi=E7o para evitar riscos de seguran=E7a.=20
+<P><SAMP>telnet [<EM>op=E7=F5es</EM>] [<EM>ip/dns</EM>] =
+[<EM>porta</EM>]</SAMP>=20
+<P>onde:=20
+<DL>
+  <DT><EM>ip/dns</EM>=20
+  <DD>Endere=E7o IP do computador de destino ou nome DNS.=20
+  <DT><EM>porta</EM>=20
+  <DD>Porta onde ser=E1 feita a conex=E3o. Por padr=E3o, a conex=E3o =E9 =
+feita na porta=20
+  <EM>23</EM>.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DD>
+  <DL>
+    <DT>-8=20
+    <DD>Requisita uma opera=E7=E3o bin=E1ria de 8 bits. Isto for=E7a a =
+opera=E7=E3o em modo=20
+    bin=E1rio para envio e recebimento. Por padr=E3o, =
+<CODE>telnet</CODE> n=E3o usa 8=20
+    bits.=20
+    <DT>-a=20
+    <DD>Tenta um login autom=E1tico, enviando o nome do usu=E1rio lido =
+da vari=E1vel=20
+    de ambiente <CODE>USER</CODE>.=20
+    <DT>-d=20
+    <DD>Ativa o modo de debug.=20
+    <DT>-r=20
+    <DD>Ativa a emula=E7=E3o de rlogin.=20
+    <DT>-l [usu=E1rio]=20
+    <DD>Faz a conex=E3o usando [usu=E1rio] como nome de usu=E1rio. =
+</DD></DL></DD></DL>
+<P>Exemplo: <SAMP>telnet 192.168.1.1</SAMP>, <SAMP>telnet 192.168.1.1 =
+23</SAMP>.=20
+
+<HR>
+<A name=3Ds-cmdn-finger></A>
+<H2>11.3 finger</H2>
+<P>Mostra detalhes sobre os usu=E1rios de um sistema. Algumas vers=F5es =
+do=20
+<CODE>finger</CODE> possuem bugs e podem significar um risco para a =
+seguran=E7a do=20
+sistema. =C9 recomendado desativar este servi=E7o na m=E1quina local.=20
+<P><SAMP>finger [<EM>usu=E1rio</EM>] [<EM>usu=E1rio@host</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>usu=E1rio</EM>=20
+  <DD>Nome do usu=E1rio que deseja obter detalhes do sistema. Se n=E3o =
+for digitado=20
+  o nome de usu=E1rio, o sistema mostra detalhes de todos os usu=E1rios =
+conectados=20
+  no momento.=20
+  <DT><EM>usu=E1rio@host</EM>=20
+  <DD>Nome do usu=E1rio e endere=E7o do computador que deseja obter =
+detalhes.=20
+  <DT>-l=20
+  <DD>Mostra os detalhes de todos os usu=E1rios conectados no momento. =
+Entre os=20
+  detalhes, est=E3o inclu=EDdos o <EM>nome do interpretador de =
+comandos</EM> (shell)=20
+  do usu=E1rio, <EM>diret=F3rio home</EM>, <EM>nome do usu=E1rio</EM>,=20
+  <EM>endere=E7o</EM>, etc. Estes dados s=E3o lidos de =
+<CODE>/etc/passwd</CODE>.=20
+  <DT>-p=20
+  <DD>N=E3o exibe o conte=FAdo dos arquivos <CODE>.plan</CODE> e=20
+  <CODE>.project</CODE> </DD></DL>
+<P>Se for usado sem par=E2metros, mostra os dados de todos os usu=E1rios =
+conectados=20
+atualmente ao seu sistema.=20
+<P>Exemplo: <SAMP>finger</SAMP>, <SAMP>finger root</SAMP>.=20
+<HR>
+<A name=3Ds-cmdn-ftp></A>
+<H2>11.4 ftp</H2>
+<P>Permite a transfer=EAncia de arquivos do computador remoto/local e =
+vice versa.=20
+O file transfer protocol =E9 o sistema de transmiss=E3o de arquivos mais =
+usado na=20
+Internet. =C9 requerida a autentica=E7=E3o do usu=E1rio para que seja =
+permitida a=20
+conex=E3o. Muitos servidores ftp disponibilizam acesso an=F4nimo aos =
+usu=E1rios, com=20
+acesso restrito.=20
+<P>Uma vez conectado a um servidor <CODE>ftp</CODE>, voc=EA pode usar a =
+maioria=20
+dos comandos do <CODE>GNU/Linux</CODE> para oper=E1-lo.=20
+<P><SAMP>ftp [<EM>ip/dns</EM>]</SAMP>=20
+<P>Abaixo alguns dos comandos mais usados no FTP:=20
+<DL>
+  <DT>ls=20
+  <DD>Lista arquivos do diret=F3rio atual.=20
+  <DT>cd [diret=F3rio]=20
+  <DD>Entra em um diret=F3rio.=20
+  <DT>get [arquivo]=20
+  <DD>Copia um arquivo do servidor ftp para o computador local. O =
+arquivo =E9=20
+  gravado, por padr=E3o, no diret=F3rio onde o programa ftp foi =
+executado.=20
+  <DT>hash [on/off]=20
+  <DD>Por padr=E3o esta op=E7=E3o est=E1 desligada. Quando ligada, faz =
+com que o=20
+  caracter "#" seja impresso na tela indicando o progresso do download.=20
+  <DT>mget [arquivos]=20
+  <DD>Semelhante ao get, mas pode copiar diversos arquivos e permite o =
+uso de=20
+  curingas.=20
+  <DT>send [arquivo]=20
+  <DD>Envia um arquivo para o diret=F3rio atual do servidor FTP (voc=EA =
+precisa de=20
+  uma conta com acesso a grava=E7=E3o para fazer isto).=20
+  <DT>prompt [on/off]=20
+  <DD>Ativa ou desativa a pergunta para a c=F3pia de arquivo. Se estiver =
+como=20
+  <SAMP>off</SAMP> assume sim para qualquer pergunta. </DD></DL>
+<P>Exemplo: <SAMP>ftp ftp.br.debian.org</SAMP>.=20
+<HR>
+<A name=3Ds-cmdn-whoami></A>
+<H2>11.5 whoami</H2>
+<P>Mostra o nome que usou para se conectar ao sistema. =C9 =FAtil quando =
+voc=EA usa=20
+v=E1rias contas e n=E3o sabe com qual nome entrou no sistema :-)=20
+<P><SAMP>whoami</SAMP>=20
+<HR>
+<A name=3Ds-cmdn-dnsdomainname></A>
+<H2>11.6 dnsdomainname</H2>
+<P>Mostra o nome do dom=EDnio de seu sistema.=20
+<HR>
+<A name=3Ds-cmdn-hostname></A>
+<H2>11.7 hostname</H2>
+<P>Mostra ou muda o nome de seu computador na rede.=20
+<HR>
+<A name=3Ds-cmdn-talk></A>
+<H2>11.8 talk</H2>
+<P>Inicia conversa com outro usu=E1rio em uma rede local ou Internet. =
+Talk =E9 um=20
+programa de conversa=E7=E3o em tempo real onde uma pessoa v=EA o que a =
+outra escreve.=20
+<P><SAMP>talk [<EM>usu=E1rio</EM>] [<EM>tty</EM>]</SAMP>=20
+<P>ou=20
+<P><SAMP>talk [<EM>usu=E1rio@host</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>usu=E1rio</EM>=20
+  <DD>Nome de login do usu=E1rio que deseja iniciar a conversa=E7=E3o. =
+Este nome pode=20
+  ser obtido com o comando <CODE>who</CODE> (veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-who">who,=20
+  Se=E7=E3o 11.1</A>).=20
+  <DT><EM>tty</EM>=20
+  <DD>O nome de terminal onde o usu=E1rio est=E1 conectado, para iniciar =
+uma conex=E3o=20
+  local.=20
+  <DT><EM>usu=E1rio@host</EM>=20
+  <DD>Se o usu=E1rio que deseja conversar estiver conectado em um =
+computador=20
+  remoto, voc=EA deve usar o nome do usu=E1rio@hosname do computador. =
+</DD></DL>
+<P>Ap=F3s o <CODE>talk</CODE> ser iniciado, ele verificar=E1 se o =
+usu=E1rio pode=20
+receber mensagens, em caso positivo, ele enviar=E1 uma mensagem ao =
+usu=E1rio dizendo=20
+como responder ao seu pedido de conversa. Veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-who">who,=20
+Se=E7=E3o 11.1</A>.=20
+<P>Para poder fazer a rolagem para cima e para baixo no =
+<CODE>talk</CODE>,=20
+pressione <SAMP>CTRL+P</SAMP>(Previous - Tela anterior) e =
+<SAMP>CTRL+N</SAMP>=20
+(Next - Pr=F3xima tela). Voc=EA deve ter o daemon do <CODE>talk</CODE> =
+instalado=20
+(<SAMP>talkd</SAMP>) para receber requisi=E7=F5es de conversa.=20
+<P>Voc=EA deve autorizar o recebimento de talks de outros usu=E1rios =
+para que eles=20
+possam se comunicar com voc=EA , para detalhes veja o comando <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-mesg">mesg,=20
+Se=E7=E3o 10.19</A>.=20
+<HR>
+<A name=3Ds-cmdn-ping></A>
+<H2>11.9 ping</H2>
+<P>Verifica se um computador est=E1 dispon=EDvel na rede. Este comando =
+=E9 muito=20
+utilizado por alguns programas de conex=E3o e administradores para =
+verificar se=20
+uma determinada m=E1quina est=E1 conectada na rede e tamb=E9m para =
+verificar o tempo=20
+de resposta de cada m=E1quina da rede. O <CODE>ping</CODE> envia pacotes =
+ICMS=20
+ECHO_REQUEST para um computador, este quando recebe o pacote envia uma =
+resposta=20
+ao endere=E7o de origem avisando que est=E1 dispon=EDvel na rede.=20
+<P><SAMP>ping [<EM>op=E7=F5es</EM>][<EM>IP/DNS</EM>]</SAMP>=20
+<P>onde:=20
+<DL>
+  <DT><EM>IP/dns</EM>=20
+  <DD>Endere=E7o IP ou nome DNS do endere=E7o.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-c [num]=20
+  <DD>Envia <EM>num</EM> pacotes ao computador de destino.=20
+  <DT>-f=20
+  <DD><EM>Flood ping</EM>. Envia novos pacotes antes de receber a =
+resposta do=20
+  pacote anterior. Para cada requisi=E7=E3o enviada, um "." =E9 mostrado =
+na tela e=20
+  para cada resposta recebida, um backspace =E9 mostrado. Somente o =
+usu=E1rio root=20
+  pode utilizar esta op=E7=E3o e pode te auxiliar muito na detec=E7=E3o =
+de erros de=20
+  transmiss=E3o de pacotes em interfaces das m=E1quinas em sua rede.=20
+  <DT>-i [seg]=20
+  <DD>Aguarda [seg] segundos antes de enviar cada pacote.=20
+  <DT>-q=20
+  <DD>N=E3o mostra as requisi=E7=F5es enquanto s=E3o enviadas, somente =
+mostra as linhas=20
+  de sum=E1rio no inicio e t=E9rmino do programa.=20
+  <DT>-s [tamanho]=20
+  <DD>Especifica o tamanho do pacote que ser=E1 enviado.=20
+  <DT>-v, --verbose=20
+  <DD>Sa=EDda detalhada, tanto os pacotes enviados como recebidos s=E3o =
+listados.=20
+  </DD></DL>
+<P>Exemplo: <SAMP>ping 192.168.1.1</SAMP>, <SAMP>ping =
+www.br.debian.org</SAMP>.=20
+<HR>
+<A name=3Ds-cmdn-rlogin></A>
+<H2>11.10 rlogin</H2>
+<P>Executa um login em uma m=E1quina local ou remota.=20
+<P><SAMP>rlogin [<EM>op=E7=F5es</EM>] [<EM>IP/DNS</EM>]</SAMP>=20
+<P>onde:=20
+<DL>
+  <DT><EM>IP/DNS</EM>=20
+  <DD>Endere=E7o IP ou DNS do computador que ser=E1 acessado.=20
+  <DT>op=E7=F5es=20
+  <DT>-l [nome]=20
+  <DD>Entra com o user id [nome] no sistema. </DD></DL>
+<P><CODE>rlogin</CODE> =E9 usado para executar comandos interativamente =
+no=20
+computador de destino (como se voc=EA estivesse sentado diante dele, =
+muito=20
+semelhante ao telnet). Para executar comandos n=E3o interativamente veja =
+<A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-rsh">rsh,=20
+Se=E7=E3o 11.11</A>.=20
+<HR>
+<A name=3Ds-cmdn-rsh></A>
+<H2>11.11 rsh</H2>
+<P>Executa um comando em um computador local ou remoto.=20
+<P><SAMP>rsh [<EM>op=E7=F5es</EM>] [<EM>IP/DNS</EM>] =
+[<EM>comando</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>IP/DNS</EM>=20
+  <DD>Endere=E7o IP ou nome DNS do computador.=20
+  <DT><EM>comando</EM>=20
+  <DD>Comando que ser=E1 executado no computador local/remoto.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-l [nome]=20
+  <DD>Entra no sistema usando o login [nome]. </DD></DL>
+<P><CODE>rsh</CODE> =E9 usado somente para executar comandos. Para usar =
+um shell=20
+interativo veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-telnet">Telnet,=20
+Se=E7=E3o 11.2</A> e <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-rlogin">rlogin,=20
+Se=E7=E3o 11.10</A>.=20
+<HR>
+<A name=3Ds-cmdn-w></A>
+<H2>11.12 w</H2>
+<P>Mostra quem est=E1 conectado no sistema e o que cada um est=E1 =
+fazendo.=20
+<P><SAMP>w [<EM>op=E7=F5es</EM>][<EM>usu=E1rio</EM>]</SAMP>=20
+<P>onde:=20
+<DL>
+  <DT><EM>usu=E1rio</EM>=20
+  <DD>Nome do usu=E1rio que deseja ver os detalhes. Se o usu=E1rio n=E3o =
+for digitado,=20
+  o comando <CODE>w</CODE> mostra detalhes de todos os usu=E1rios =
+conectados no=20
+  sistema.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-h=20
+  <DD>N=E3o mostra o cabe=E7alho=20
+  <DT>-u=20
+  <DD>Ignora os nomes de usu=E1rios enquanto verifica os processo atuais =
+e tempos=20
+  de CPU.=20
+  <DT>-f=20
+  <DD>Mostra ou oculta o campo <EM>FROM</EM> na listagem. </DD></DL>
+<HR>
+<A name=3Ds-cmdn-traceroute></A>
+<H2>11.13 traceroute</H2>
+<P>Mostra o caminho percorrido por um pacote para chegar ao seu destino. =
+Este=20
+comando mostra na tela o caminho percorrido entre os Gateways da rede e =
+o tempo=20
+gasto de retransmiss=E3o. Este comando =E9 =FAtil para encontrar =
+computadores=20
+defeituosos na rede caso o pacote n=E3o esteja chegando ao seu destino.=20
+<P><SAMP>traceroute [<EM>op=E7=F5es</EM>] [<EM>host/IP de =
+destino</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>host/IP destino</EM>=20
+  <DD>=C9 o endere=E7o para onde o pacote ser=E1 enviado (por exemplo,=20
+  www.debian.org). Caso o tamanho do pacote n=E3o seja especificado, =E9 =
+enviado um=20
+  pacote de 38 bytes.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-l=20
+  <DD>Mostra o tempo de vida do pacote (ttl)=20
+  <DT>-m [num]=20
+  <DD>Ajusta a quantidade m=E1ximas de ttl dos pacotes. O padr=E3o =E9 =
+30.=20
+  <DT>-n=20
+  <DD>Mostra os endere=E7os numericamente ao inv=E9s de usar =
+resolu=E7=E3o DNS.=20
+  <DT>-p [porta]=20
+  <DD>Ajusta a porta que ser=E1 usada para o teste. A porta padr=E3o =E9 =
+33434.=20
+  <DT>-r=20
+  <DD>Pula as tabelas de roteamento e envia o pacote diretamente ao =
+computador=20
+  conectado a rede.=20
+  <DT>-s [end]=20
+  <DD>Usa o endere=E7o IP/DNS [end] como endere=E7o de origem para =
+computadores com=20
+  m=FAltiplos endere=E7os IPs ou nomes.=20
+  <DT>-v=20
+  <DD>Mostra mais detalhes sobre o resultado do <CODE>traceroute</CODE>. =
+
+  <DT>-w [num]=20
+  <DD>Configura o tempo m=E1ximo que aguardar=E1 por uma resposta. O =
+padr=E3o =E9 3=20
+  segundos. </DD></DL>
+<P>Exemplos: <SAMP>traceroute www.debian.org</SAMP>, <SAMP>traceroute=20
+www.linux.org</SAMP>.=20
+<HR>
+<A name=3Ds-cmdn-netstat></A>
+<H2>11.14 netstat</H2>
+<P>Mostra conex=F5es de rede, tabela de roteamento, estat=EDsticas de =
+interfaces,=20
+conex=F5es masquerade, e mensagens.=20
+<P><SAMP>netstat [<EM>op=E7=F5es</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-i [interface]=20
+  <DD>Mostra estat=EDsticas da interface [interface].=20
+  <DT>-M, --masquerade=20
+  <DD>Se especificado, tamb=E9m lista conex=F5es masquerade.=20
+  <DT>-n, --numeric=20
+  <DD>Usa endere=E7os num=E9ricos ao inv=E9s de tentar resolver nomes de =
+hosts,=20
+  usu=E1rios e portas.=20
+  <DT>-c, --continuos=20
+  <DD>Mostra a listagem a cada segundo at=E9 que a=20
+  <SAMP>CTRL</SAMP>+<SAMP>C</SAMP> seja pressionado. </DD></DL>
+<P>Se n=E3o for especificada nenhuma op=E7=E3o, os detalhes das =
+conex=F5es atuais ser=E3o=20
+mostrados.=20
+<HR>
+<A name=3Ds-cmdv-wall></A>
+<H2>11.15 wall</H2>
+<P>Envia uma mensagem a todos os usu=E1rios do sistema. Este comando faz =
+a leitura=20
+de um arquivo ou entrada padr=E3o e escreve o resultado em todos os =
+terminais onde=20
+existem usu=E1rios conectados. Somente o usu=E1rio root pode utilizar =
+este comando.=20
+<P><SAMP>wall [<EM>arquivo</EM>]</SAMP>=20
+<P>Exemplos: <SAMP>wall /tmp/mensagem.txt</SAMP>, <SAMP>echo Teste de =
+mensagem=20
+enviada a todos os usu=E1rios conectados ao sistema|wall</SAMP>.=20
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ 11 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

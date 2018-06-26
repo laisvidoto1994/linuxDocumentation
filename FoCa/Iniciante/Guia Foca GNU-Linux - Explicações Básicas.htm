@@ -1,0 +1,709 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Explicações Básicas</TITLE>
+<META http-equiv=content-type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2900.3059" name=GENERATOR></HEAD>
+<BODY><A name=ch-bas></A>
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ 2 ] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">próximo</A> 
+] 
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Capítulo 2 - Explicações Básicas </H1>
+<HR>
+
+<P>Este capítulo traz explicações sobre os principais componentes existentes no 
+computador e do sistema operacional. 
+<HR>
+<A name=s-basico-hardsoft></A>
+<H2>2.1 Hardware e Software</H2>
+<P><EM>Hardware</EM> - Significa parte física do computador (disquete, 
+impressoras, monitores, placa mãe, placa de fax, discos rígidos, etc). 
+<P><EM>Software</EM> - São os programas usados no computador (sistema 
+operacional, processador de textos, planilha, banco de dados, scripts, comandos, 
+etc). 
+<HR>
+<A name=s-basico-arquivo></A>
+<H2>2.2 Arquivos</H2>
+<P>É onde gravamos nossos dados. Um arquivo pode conter um texto feito por nós, 
+uma música, programa, planilha, etc. 
+<P>Cada arquivo deve ser identificado por um <SAMP>nome</SAMP>, assim ele pode 
+ser encontrado facilmente quando desejar usa-lo. Se estiver fazendo um trabalho 
+de história, nada melhor que salva-lo com o nome <CODE>historia</CODE>. Um 
+arquivo pode ser binário ou texto (para detalhes veja <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-arquivo-bintext">Arquivo 
+texto e binário, Seção 2.2.3</A>). 
+<P>O <CODE>GNU/Linux</CODE> é <EM>Case Sensitive</EM> ou seja, ele diferencia 
+letras <EM>maiúsculas</EM> e <EM>minúsculas</EM> nos arquivos. O arquivo 
+<CODE>historia</CODE> é completamente diferente de <CODE>Historia</CODE>. Esta 
+regra também é válido para os <EM>comandos</EM> e <EM>diretórios</EM>. Prefira, 
+sempre que possível, usar letras minúsculas para identificar seus arquivos, pois 
+quase todos os comandos do sistema estão em <EM>minúsculas</EM>. 
+<P>Um arquivo oculto no <CODE>GNU/Linux</CODE> é identificado por um "." no 
+inicio do nome (por exemplo, <CODE>.bashrc</CODE>). Arquivos ocultos não 
+aparecem em listagens normais de diretórios, deve ser usado o comando <SAMP>ls 
+-a</SAMP> para também listar arquivos ocultos. 
+<HR>
+<A name=s-basico-arquivo-tipos></A>
+<H3>2.2.1 Extensão de arquivos</H3>
+<P>A extensão serve para identificar o tipo do arquivo. A extensão são as letras 
+após um "." no nome de um arquivo, explicando melhor: 
+<UL>
+  <LI><CODE>relatório<STRONG>.txt</STRONG></CODE> - O <SAMP>.txt</SAMP> indica 
+  que o conteúdo é um arquivo texto. </LI></UL>
+<UL>
+  <LI><CODE>script<STRONG>.sh</STRONG></CODE> - Arquivo de Script (interpretado 
+  por <CODE>/bin/sh</CODE>). </LI></UL>
+<UL>
+  <LI><CODE>system<STRONG>.log</STRONG></CODE> - Registro de algum programa no 
+  sistema. </LI></UL>
+<UL>
+  <LI><CODE>arquivo<STRONG>.gz</STRONG></CODE> - Arquivo compactado pelo 
+  utilitário <CODE>gzip</CODE>. </LI></UL>
+<UL>
+  <LI><CODE>index<STRONG>.html</STRONG></CODE> - Página de Internet (formato 
+  Hypertexto). </LI></UL>
+<P>A extensão de um arquivo também ajuda a saber o que precisamos fazer para 
+abri-lo. Por exemplo, o arquivo <CODE>relatório.txt</CODE> é um texto simples e 
+podemos ver seu conteúdo através do comando <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html#s-comandos-cat">cat, 
+Seção 7.1</A>, já o arquivo <CODE>index.html</CODE> contém uma página de 
+Internet e precisaremos de um navegador para poder visualiza-lo (como o 
+<CODE>lynx</CODE>, <CODE>Mosaic</CODE> ou o <CODE>Netscape</CODE>). 
+<P>A extensão (na maioria dos casos) não é requerida pelo sistema operacional 
+<CODE>GNU/Linux</CODE>, mas é conveniente o seu uso para determinarmos 
+facilmente o tipo de arquivo e que programa precisaremos usar para abri-lo. 
+<HR>
+<A name=s-basico-arquivo-tamanho></A>
+<H3>2.2.2 Tamanho de arquivos</H3>
+<P>A unidade de medida padrão nos computadores é o <SAMP>bit</SAMP>. A um 
+conjunto de 8 bits nós chamamos de <SAMP>byte</SAMP>. Cada arquivo/diretório 
+possui um tamanho, que indica o espaço que ele ocupa no disco e isto é medido em 
+<SAMP>bytes</SAMP>. O byte representa uma letra. Assim, se você criar um arquivo 
+vazio e escrever o nome <SAMP>Linux</SAMP> e salvar o arquivo, este terá o 
+tamanho de 5 bytes. Espaços em branco e novas linhas também ocupam bytes. 
+<P>Além do byte existem as medidas Kbytes, Mbytes, Gbytes. Os prefixos K 
+(quilo), M (mega), G (giga), T (tera) etc. vêem da matemática. O "K" significa 
+multiplicar por 10^3, o "M" por 10^6, e assim por diante. Esta letras servem 
+para facilitar a leitura em arquivos de grande tamanho. Um arquivo de 1K é a 
+mesma coisa de um arquivo de 1024 bytes. Uma forma que pode inicialmente lhe 
+ajudar a lembrar: K vem de Kilo que é igual a 1000 - 1Kilo é igual a 1000 gramas 
+certo?. 
+<P>Da mesma forma 1Mb (ou 1M) é igual a um arquivo de 1024K ou 1.048.576 bytes 
+<P>1Gb (ou 1G) é igual a um arquivo de 1024Mb ou 1048576Kb ou 1.073.741.824 
+bytes (1 Gb é igual a 1.073.741.824 bytes, são muitos números!). Deu pra notar 
+que é mais fácil escrever e entender como 1Gb do que 1.073.741.824 bytes :-) 
+<P>A lista completa em ordem progressiva das unidades de medida é a seguinte: <PRE>     Símbolo	10^	2^	Nome
+     
+     K	 3	10	Quilo
+     M	 6	20	Mega
+     G	 9	30	Giga
+     T	12	40	Tera
+     P	15	50	Peta
+     E	18	60	Eta
+     Z	21	70	Zetta
+     Y	24	80	Yotta
+</PRE>
+<HR>
+<A name=s-basico-arquivo-bintext></A>
+<H3>2.2.3 Arquivo texto e binário</H3>
+<P>Quanto ao tipo, um arquivo pode ser de texto ou binário: 
+<DL>
+  <DT><SAMP>texto</SAMP> 
+  <DD>Seu conteúdo é compreendido pelas pessoas. Um arquivo texto pode ser uma 
+  carta, um script, um programa de computador escrito pelo programador, arquivo 
+  de configuração, etc. </DD></DL>
+<DL>
+  <DT><SAMP>binário</SAMP> 
+  <DD>Seu conteúdo somente pode ser entendido por computadores. Contém 
+  caracteres incompreensíveis para pessoas normais. Um arquivo binário é gerado 
+  através de um arquivo de programa (formato texto) através de um processo 
+  chamado de <SAMP>compilação</SAMP>. Compilação é basicamente a conversão de um 
+  programa em linguagem humana para a linguagem de máquina. </DD></DL>
+<HR>
+<A name=s-basico-diretorio></A>
+<H2>2.3 Diretório</H2>
+<P>Diretório é o local utilizado para armazenar conjuntos arquivos para melhor 
+organização e localização. O diretório, como o arquivo, também é "<EM>Case 
+Sensitive</EM>" (diretório <CODE>/teste</CODE> é completamente diferente do 
+diretório <CODE>/Teste</CODE>). 
+<P>Não podem existir dois arquivos com o <SAMP>mesmo</SAMP> nome em um 
+diretório, ou um sub-diretório com um mesmo nome de um arquivo em um mesmo 
+diretório. 
+<P>Um diretório nos sistemas <CODE>Linux/UNIX</CODE> são especificados por uma 
+"<EM>/</EM>" e não uma "<EM>\</EM>" como é feito no <CODE>DOS</CODE>. Para 
+detalhes sobre como criar um diretório, veja o comando <CODE>mkdir</CODE> (<A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html#s-comando-mkdir">mkdir, 
+Seção 6.4</A>). 
+<HR>
+<A name=s-basico-diretorio-raiz></A>
+<H3>2.3.1 Diretório Raíz</H3>
+<P>Este é o diretório principal do sistema. Dentro dele estão todos os 
+diretórios do sistema. O diretório Raíz é representado por uma "<EM>/</EM>", 
+assim se você digitar o comando <SAMP>cd /</SAMP> você estará acessando este 
+diretório. 
+<P>Nele estão localizados outros diretórios como o <CODE>/bin, /sbin, /usr, 
+/usr/local, /mnt, /tmp, /var, /home,</CODE> etc. Estes são chamados de 
+<EM>sub-diretórios</EM> pois estão dentro do diretório "<CODE>/</CODE>". A 
+estrutura de <EM>diretórios</EM> e <EM>sub-diretórios</EM> pode ser identificada 
+da seguinte maneira: 
+<UL>
+  <LI>/ 
+  <LI>/bin 
+  <LI>/sbin 
+  <LI>/usr 
+  <LI>/usr/local 
+  <LI>/mnt 
+  <LI>/tmp 
+  <LI>/var 
+  <LI>/home </LI></UL>
+<P>A estrutura de diretórios também é chamada de <SAMP>Árvore de 
+Diretórios</SAMP> porque é parecida com uma <EM>árvore</EM> de cabeça para 
+baixo. Cada diretório do sistema tem seus respectivos arquivos que são 
+armazenados conforme regras definidas pela <EM>FHS</EM> (<EM>FileSystem 
+Hierarchy Standard - Hierarquia Padrão do Sistema de Arquivos</EM>) versão 2.0, 
+definindo que tipo de arquivo deve ser armazenado em cada diretório. 
+<HR>
+<A name=s-basico-diretorio-atual></A>
+<H3>2.3.2 Diretório atual</H3>
+<P>É o diretório em que nos encontramos no momento. Você pode digitar 
+<SAMP>pwd</SAMP> (veja <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html#s-comando-pwd">pwd, 
+Seção 6.3</A>) para verificar qual é seu diretório atual. 
+<P>O diretório atual também é identificado por um "." (ponto). O comando comando 
+<SAMP>ls .</SAMP> pode ser usado para listar seus arquivos (é claro que isto é 
+desnecessário porque se não digitar nenhum diretório, o comando <CODE>ls</CODE> 
+listará o conteúdo do diretório atual). 
+<HR>
+<A name=s-basico-diretorio-home></A>
+<H3>2.3.3 Diretório home</H3>
+<P>Também chamado de diretório de usuário. Em sistemas <CODE>GNU/Linux</CODE> 
+cada usuário (inclusive o root) possui seu próprio diretório onde poderá 
+armazenar seus programas e arquivos pessoais. 
+<P>Este diretório está localizado em <CODE>/home/[login]</CODE>, neste caso se o 
+seu login for "joao" o seu diretório home será <CODE>/home/joao</CODE>. O 
+diretório home também é identificado por um <SAMP>~</SAMP>(til), você pode 
+digitar tanto o comando <SAMP>ls /home/joao</SAMP> como <SAMP>ls ~</SAMP> para 
+listar os arquivos de seu diretório home. 
+<P>O diretório home do usuário root (na maioria das distribuições 
+<CODE>GNU/Linux</CODE>) está localizado em <CODE>/root</CODE>. 
+<P>Dependendo de sua configuração e do número de usuários em seu sistema, o 
+diretório de usuário pode ter a seguinte forma: 
+<CODE>/home/[1letra_do_nome]/[login]</CODE>, neste caso se o seu login for 
+"joao" o seu diretório home será <CODE>/home/j/joao</CODE>. 
+<HR>
+<A name=s-basico-diretorio-superior></A>
+<H3>2.3.4 Diretório Superior</H3>
+<P>O diretório superior (Upper Directory) é identificado por <SAMP>..</SAMP> (2 
+pontos). 
+<P>Caso estiver no diretório <CODE>/usr/local</CODE> e quiser listar os arquivos 
+do diretório <CODE>/usr</CODE> você pode digitar, <SAMP>ls ..</SAMP> Este 
+recurso também pode ser usado para copiar, mover arquivos/diretórios, etc. 
+<HR>
+<A name=s-basico-diretorio-anterior></A>
+<H3>2.3.5 Diretório Anterior</H3>
+<P>O diretório anterior é identificado por "-". É útil para retornar ao último 
+diretório usado. 
+<P>Se estive no diretório <CODE>/usr/local</CODE> e digitar <SAMP>cd 
+/lib</SAMP>, você pode retornar facilmente para o diretório 
+<CODE>/usr/local</CODE> usando <SAMP>cd -</SAMP>. 
+<HR>
+<A name=s-basico-diretorio-caminho></A>
+<H3>2.3.6 Caminho na estrutura de diretórios</H3>
+<P>São os diretórios que teremos que percorrer até chegar no arquivo ou 
+diretório que que procuramos. Se desejar ver o arquivo 
+<CODE>/usr/doc/copyright/GPL</CODE> você tem duas opções: 
+<OL type=1>
+  <LI>Mudar o diretório padrão para <CODE>/usr/doc/copyright</CODE> com o 
+  comando <SAMP>cd /usr/doc/copyright</SAMP> e usar o comando <SAMP>cat 
+  GPL</SAMP> 
+  <LI>Usar o comando <CODE>"cat"</CODE> especificando o caminho completo na 
+  estrutura de diretórios e o nome de arquivo: <SAMP>cat 
+  /usr/doc/copyright/GPL</SAMP>. </LI></OL>
+<P>As duas soluções acima permitem que você veja o arquivo <CODE>GPL</CODE>. A 
+diferença entre as duas é a seguinte: 
+<UL>
+  <LI>Na primeira, você muda o diretório padrão para 
+  <CODE>/usr/doc/copyright</CODE> (confira digitando <SAMP>pwd</SAMP>) e depois 
+  o comando <SAMP>cat GPL</SAMP>. Você pode ver os arquivos de 
+  <CODE>/usr/doc/copyright</CODE> com o comando <CODE>"ls"</CODE>. 
+  <P><CODE>/usr/doc/copyright</CODE> é o caminho de diretório que devemos 
+  percorrer para chegar até o arquivo <CODE>GPL</CODE>. </P>
+  <LI>Na segunda, é digitado o caminho completo para o <CODE>"cat"</CODE> 
+  localizar o arquivo <CODE>GPL</CODE>: <SAMP>cat /usr/doc/copyright/GPL</SAMP>. 
+  Neste caso, você continuará no diretório padrão (confira digitando 
+  <SAMP>pwd</SAMP>). Digitando <SAMP>ls</SAMP>, os arquivos do diretório atual 
+  serão listados. </LI></UL>
+<P>O <EM>caminho de diretórios</EM> é necessário para dizer ao sistema 
+operacional onde encontrar um arquivo na "árvore" de diretórios. 
+<HR>
+<A name=s-basico-diretorio-exemplo></A>
+<H3>2.3.7 Exemplo de diretório</H3>
+<P>Um exemplo de diretório é o seu diretório de usuário, todos seus arquivos 
+essenciais devem ser colocadas neste diretório. Um diretório pode conter outro 
+diretório, isto é útil quando temos muitos arquivos e queremos melhorar sua 
+organização. Abaixo um exemplo de uma empresa que precisa controlar os arquivos 
+de Pedidos que emite para as fábricas: 
+<P>/pub/vendas - diretório principal de vendas /pub/vendas/mes01-99 - diretório 
+contendo vendas do mês 01/1999 /pub/vendas/mes02-99 - diretório contendo vendas 
+do mês 02/1999 /pub/vendas/mes03-99 - diretório contendo vendas do mês 03/1999 
+<UL>
+  <LI>o diretório <CODE>vendas</CODE> é o diretório principal. 
+  <LI><CODE>mes01-99</CODE> subdiretório que contém os arquivos de vendas do mês 
+  01/1999. 
+  <LI><CODE>mes02-99</CODE> subdiretório que contém os arquivos de vendas do mês 
+  02/1999. 
+  <LI><CODE>mes03-99</CODE> subdiretório que contém os arquivos de vendas do mês 
+  03/1999. </LI></UL>
+<P><CODE>mes01-99, mes02-99, mes03-99</CODE> são diretórios usados para 
+armazenar os arquivos de pedidos do mês e ano correspondente. Isto é essencial 
+para organização, pois se todos os pedidos fossem colocados diretamente no 
+diretório vendas, seria muito difícil encontrar o arquivo do cliente "João" ;-) 
+<P>Você deve ter reparado que usei a palavra <EM>sub-diretório</EM> para 
+mes01-99, mes02-99 e mes03-99, porque que eles estão dentro do diretório vendas. 
+Da mesma forma, <CODE>vendas</CODE> é um sub-diretório de <CODE>pub</CODE>. 
+<HR>
+<A name=s-basico-diretorio-estrutura></A>
+<H3>2.3.8 Estrutura básica de diretórios do Sistema Linux</H3>
+<P>O sistema <CODE>GNU/Linux</CODE> possui a seguinte estrutura básica de 
+diretórios organizados segundo o FHS (Filesystem Hierarchy Standard): 
+<DL>
+  <DT><CODE>/bin</CODE> 
+  <DD>Contém arquivos programas do sistema que são usados com freqüência pelos 
+  usuários. </DD></DL>
+<DL>
+  <DT><CODE>/boot</CODE> 
+  <DD>Contém arquivos necessários para a inicialização do sistema. </DD></DL>
+<DL>
+  <DT><CODE>/cdrom</CODE> 
+  <DD>Ponto de montagem da unidade de CD-ROM. </DD></DL>
+<DL>
+  <DT><CODE>/dev</CODE> 
+  <DD>Contém arquivos usados para acessar dispositivos (periféricos) existentes 
+  no computador. </DD></DL>
+<DL>
+  <DT><CODE>/etc</CODE> 
+  <DD>Arquivos de configuração de seu computador local. </DD></DL>
+<DL>
+  <DT><CODE>/floppy</CODE> 
+  <DD>Ponto de montagem de unidade de disquetes </DD></DL>
+<DL>
+  <DT><CODE>/home</CODE> 
+  <DD>Diretórios contendo os arquivos dos usuários. </DD></DL>
+<DL>
+  <DT><CODE>/lib</CODE> 
+  <DD>Bibliotecas compartilhadas pelos programas do sistema e módulos do kernel. 
+  </DD></DL>
+<DL>
+  <DT><CODE>/lost+found</CODE> 
+  <DD>Local para a gravação de arquivos/diretórios recuperados pelo utilitário 
+  <CODE>fsck.ext2</CODE>. Cada partição possui seu próprio diretório 
+  <CODE>lost+found</CODE>. </DD></DL>
+<DL>
+  <DT><CODE>/mnt</CODE> 
+  <DD>Ponto de montagem temporário. </DD></DL>
+<DL>
+  <DT><CODE>/proc</CODE> 
+  <DD>Sistema de arquivos do kernel. Este diretório não existe em seu disco 
+  rígido, ele é colocado lá pelo kernel e usado por diversos programas que fazem 
+  sua leitura, verificam configurações do sistema ou modificar o funcionamento 
+  de dispositivos do sistema através da alteração em seus arquivos. </DD></DL>
+<DL>
+  <DT><CODE>/root</CODE> 
+  <DD>Diretório do usuário <SAMP>root</SAMP>. </DD></DL>
+<DL>
+  <DT><CODE>/sbin</CODE> 
+  <DD>Diretório de programas usados pelo superusuário (root) para administração 
+  e controle do funcionamento do sistema. </DD></DL>
+<DL>
+  <DT><CODE>/tmp</CODE> 
+  <DD>Diretório para armazenamento de arquivos temporários criados por 
+  programas. </DD></DL>
+<DL>
+  <DT><CODE>/usr</CODE> 
+  <DD>Contém maior parte de seus programas. Normalmente acessível somente como 
+  leitura. </DD></DL>
+<DL>
+  <DT><CODE>/var</CODE> 
+  <DD>Contém maior parte dos arquivos que são gravados com freqüência pelos 
+  programas do sistema, e-mails, spool de impressora, cache, etc. </DD></DL>
+<HR>
+<A name=s-basico-nomeando></A>
+<H2>2.4 Nomeando Arquivos e Diretórios</H2>
+<P>No <CODE>GNU/Linux</CODE>, os arquivos e diretórios pode ter o tamanho de até 
+<EM>255</EM> letras. Você pode identifica-lo com uma extensão (um conjunto de 
+letras separadas do nome do arquivo por um "."). 
+<P>Os programas executáveis do <CODE>GNU/Linux</CODE>, ao contrário dos 
+programas de <CODE>DOS</CODE> e <CODE>Windows</CODE>, não são executados a 
+partir de extensões <CODE>.exe, .com</CODE> ou <CODE>.bat</CODE>. O 
+<CODE>GNU/Linux</CODE> (como todos os sistemas POSIX) usa a <EM>permissão de 
+execução</EM> de arquivo para identificar se um arquivo pode ou não ser 
+executado. 
+<P>No exemplo anterior, nosso trabalho de história pode ser identificado mais 
+facilmente caso fosse gravado com o nome <CODE>trabalho.text</CODE> ou 
+<CODE>trabalho.txt</CODE>. Também é permitido gravar o arquivo com o nome 
+<CODE>Trabalho de Historia.txt</CODE> mas não é recomendado gravar nomes de 
+arquivos e diretórios com espaços. Porque será necessário colocar o nome do 
+arquivo entre "aspas" para acessa-lo (por exemplo, <SAMP>cat "Trabalho de 
+Historia.txt"</SAMP>). Ao invés de usar espaços, prefira <EM>capitalizar</EM> o 
+arquivo (usar letras maiúsculas e minúsculas para identifica-lo): 
+<CODE>TrabalhodeHistoria.txt</CODE>. 
+<HR>
+<A name=s-basico-comandos></A>
+<H2>2.5 Comandos</H2>
+<P>Comandos são ordens que passamos ao sistema operacional para executar uma 
+determinada tarefa. 
+<P>Cada comando tem uma função específica, devemos saber a função de cada 
+comando e escolher o mais adequado para fazer o que desejamos, por exemplo: 
+<UL>
+  <LI><CODE>ls</CODE> - Mostra arquivos de diretórios 
+  <LI><CODE>cd</CODE> - Para mudar de diretório </LI></UL>
+<P>Este guia tem uma lista de vários comandos organizados por categoria com a 
+explicação sobre o seu funcionamento e as opções aceitas (incluindo alguns 
+exemplos). 
+<P>É sempre usado um espaço depois do comando para separá-lo de uma opção ou 
+parâmetro que será passado para o processamento. Um comando pode receber opções 
+e parâmetros: 
+<DL>
+  <DT><EM>opções</EM> 
+  <DD>As <EM>opções</EM> são usadas para controlar como o comando será 
+  executado, por exemplo, para fazer uma listagem mostrando o <EM>dono, grupo, 
+  tamanho dos arquivos</EM> você deve digitar <SAMP>ls -l</SAMP>. 
+  <P>Opções podem ser passadas ao comando através de um "-" ou "--": 
+  <DL>
+    <DT>- 
+    <DD>Opção identificada por uma letra. Podem ser usadas mais de uma opção com 
+    um único hífen. O comando <SAMP>ls -l -a</SAMP> é a mesma coisa de <SAMP>ls 
+    -la</SAMP> 
+    <DT>-- 
+    <DD>Opção identificada por um nome. O comando <SAMP>ls --all</SAMP> é 
+    equivalente a <SAMP>ls -a</SAMP>. </DD></DL>
+  <P>Pode ser usado tanto "-" como "--", mas há casos em que somente "-" ou "--" 
+  esta disponível. </P>
+  <DT>parâmetros 
+  <DD>Um parâmetro identifica o <EM>caminho, origem, destino, entrada 
+  padrão</EM> ou <EM>saída padrão</EM> que será passada ao comando. 
+  <P>Se você digitar: <SAMP>ls /usr/doc/copyright</SAMP>, 
+  <CODE>/usr/doc/copyright</CODE> será o parâmetro passado ao comando 
+  <CODE>ls</CODE>, neste caso queremos que ele liste os arquivos do diretório 
+  <EM>/usr/doc/copyright</EM>. 
+  <P>É normal errar o nome de comandos, mas não se preocupe, quando isto 
+  acontecer o sistema mostrará a mensagem <SAMP>command not found</SAMP> 
+  (comando não encontrado) e voltará ao aviso de comando. As mensagens de erro 
+  não fazem nenhum mal ao seu sistema, somente dizem que algo deu errado para 
+  que você possa corrigir e entender o que aconteceu. No <CODE>GNU/Linux</CODE>, 
+  você tem a possibilidade de criar comandos personalizados usando outros 
+  comandos mais simples (isto será visto mais adiante). Os comandos se encaixam 
+  em duas categorias: <EM>Comandos Internos</EM> e <EM>Comandos Externos</EM>. 
+  </P></DD></DL>
+<P>Por exemplo: <SAMP>"ls -la /usr/doc"</SAMP>, <SAMP>ls</SAMP> é o comando, 
+<SAMP>-la</SAMP> é a opção passada ao comando, e 
+<SAMP><CODE>/usr/doc</CODE></SAMP> é o diretório passado como parâmetro ao 
+comando <SAMP>ls</SAMP>. 
+<HR>
+<A name=s-basico-comandos-internos></A>
+<H3>2.5.1 Comandos Internos</H3>
+<P>São comandos que estão localizados dentro do interpretador de comandos 
+(normalmente o <CODE>Bash</CODE>) e não no disco. Eles são carregados na memória 
+RAM do computador junto com o interpretador de comandos. 
+<P>Quando executa um comando, o interpretador de comandos verifica primeiro se 
+ele é um <EM>Comando Interno</EM> caso não seja é verificado se é um <EM>Comando 
+Externo</EM>. 
+<P>Exemplos de comandos internos são: <SAMP>cd, exit, echo, bg, fg, source, 
+help</SAMP> 
+<HR>
+<A name=s-basico-comandos-externos></A>
+<H2>2.6 Comandos Externos</H2>
+<P>São comandos que estão localizados no disco. Os comandos são procurados no 
+disco usando o <SAMP>path</SAMP> e executados assim que encontrados. 
+<P>Para detalhes veja <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html#s-run-path">path, 
+Seção 5.2</A>. 
+<HR>
+<A name=s-basico-avisocmd></A>
+<H2>2.7 Aviso de comando (Prompt)</H2>
+<P>Aviso de comando (ou Prompt), é a linha mostrada na tela para <EM>digitação 
+de comandos</EM> que serão passados ao <SAMP>interpretador de comandos</SAMP> 
+para sua execução. 
+<P>A posição onde o comando será digitado é marcado um "traço" piscante na tela 
+chamado de <EM>cursor</EM>. Tanto em shells texto como em gráficos é necessário 
+o uso do cursor para sabermos onde iniciar a digitação de textos e nos 
+orientarmos quanto a posição na tela. 
+<P>O aviso de comando do usuário <SAMP>root</SAMP> é identificado por uma "#" 
+(tralha), e o aviso de comando de usuários é identificado pelo símbolo "$". Isto 
+é padrão em sistemas <CODE>UNIX</CODE>. 
+<P>Você pode retornar comandos já digitados pressionando as teclas <SAMP>Seta 
+para cima</SAMP> / <SAMP>Seta para baixo</SAMP>. 
+<P>A tela pode ser rolada para baixo ou para cima segurando a tecla 
+<SAMP>SHIFT</SAMP> e pressionando <SAMP>PGUP</SAMP> ou <SAMP>PGDOWN</SAMP>. Isto 
+é útil para ver textos que rolaram rapidamente para cima. 
+<P>Abaixo algumas dicas sobre a edição da linha de comandos (não é necessário se 
+preocupar em decora-los): 
+<UL>
+  <LI>Pressione a tecla <SAMP>Back Space</SAMP> ("<STRONG>&lt;--</STRONG>") para 
+  apagar um caracter à esquerda do cursor. </LI></UL>
+<UL>
+  <LI>Pressione a tecla <SAMP>Del</SAMP> para apagar o caracter acima do cursor. 
+  </LI></UL>
+<UL>
+  <LI>Pressione <SAMP>CTRL</SAMP>+<SAMP>A</SAMP> para mover o cursor para o 
+  inicio da linha de comandos. </LI></UL>
+<UL>
+  <LI>Pressione <SAMP>CTRL</SAMP>+<SAMP>E</SAMP> para mover o cursor para o fim 
+  da linha de comandos. </LI></UL>
+<UL>
+  <LI>Pressione <SAMP>CTRL</SAMP>+<SAMP>U</SAMP> para apagar o que estiver à 
+  esquerda do cursor. O conteúdo apagado é copiado para uso com 
+  <SAMP>CTRL</SAMP>+<SAMP>y</SAMP>. </LI></UL>
+<UL>
+  <LI>Pressione <SAMP>CTRL</SAMP>+<SAMP>K</SAMP> para apagar o que estiver à 
+  direita do cursor. O conteúdo apagado é copiado para uso com 
+  <SAMP>CTRL</SAMP>+<SAMP>y</SAMP>. </LI></UL>
+<UL>
+  <LI>Pressione <SAMP>CTRL</SAMP>+<SAMP>L</SAMP> para limpar a tela e manter o 
+  texto que estiver sendo digitado na linha de comando (parecido com o comando 
+  <CODE>clear</CODE>). </LI></UL>
+<UL>
+  <LI>Pressione <SAMP>CTRL</SAMP>+<SAMP>Y</SAMP> para colocar o texto que foi 
+  apagado na posição atual do cursor. </LI></UL>
+<HR>
+<A name=s-basico-interpcmd></A>
+<H2>2.8 Interpretador de comandos</H2>
+<P>Também conhecido como "shell". É o programa responsável em interpretar as 
+instruções enviadas pelo usuário e seus programas ao sistema operacional (o 
+kernel). Ele que executa comandos lidos do dispositivo de entrada padrão 
+(teclado) ou de um arquivo executável. É a principal ligação entre o usuário, os 
+programas e o kernel. O <CODE>GNU/Linux</CODE> possui diversos tipos de 
+interpretadores de comandos, entre eles posso destacar o <CODE>bash, ash, csh, 
+tcsh, sh,</CODE> etc. Entre eles o mais usado é o <CODE>bash</CODE>. O 
+interpretador de comandos do DOS, por exemplo, é o <CODE>command.com</CODE>. 
+<P>Os comandos podem ser enviados de duas maneiras para o interpretador: 
+<SAMP>interativa</SAMP> e <SAMP>não-interativa</SAMP>: 
+<DL>
+  <DT><SAMP>Interativa</SAMP> 
+  <DD>Os comandos são digitados no aviso de comando e passados ao interpretador 
+  de comandos um a um. Neste modo, o computador depende do usuário para executar 
+  uma tarefa, ou próximo comando. </DD></DL>
+<DL>
+  <DT><SAMP>Não-interativa</SAMP> 
+  <DD>São usados arquivos de comandos criados pelo usuário (scripts) para o 
+  computador executar os comandos na ordem encontrada no arquivo. Neste modo, o 
+  computador executa os comandos do arquivo um por um e dependendo do término do 
+  comando, o script pode checar qual será o próximo comando que será executado e 
+  dar continuidade ao processamento. 
+  <P>Este sistema é útil quando temos que digitar por várias vezes seguidas um 
+  mesmo comando ou para compilar algum programa complexo. </P></DD></DL>
+<P>O shell <CODE>Bash</CODE> possui ainda outra característica interessante: A 
+completação dos nomes. Isto é feito pressionando-se a tecla <SAMP>TAB</SAMP>. 
+Por exemplo, se digitar "ls tes" e pressionar &lt;tab&gt;, o <CODE>Bash</CODE> 
+localizará todos os arquivos que iniciam com "tes" e completará o restante do 
+nome. Caso a completação de nomes encontre mais do que uma expressão que 
+satisfaça a pesquisa, ou nenhuma, é emitido um beep. Se você apertar novamente a 
+tecla TAB imediatamente depois do beep, o interpretador de comandos irá listar 
+as diversas possibilidades que satisfazem a pesquisa, para que você possa 
+escolher a que lhe interessa. A completação de nomes funciona sem problemas para 
+comandos internos. 
+<P>Exemplo: <SAMP>ech</SAMP> (pressione <SAMP>TAB</SAMP>). <SAMP>ls 
+/vm</SAMP>(pressione <SAMP>TAB</SAMP>) 
+<HR>
+<A name=s-basico-terminal></A>
+<H2>2.9 Terminal Virtual (console)</H2>
+<P>Terminal (ou console) é o teclado e tela conectados em seu computador. O 
+<CODE>GNU/Linux</CODE> faz uso de sua característica <EM>multi-usuária</EM> 
+usando os "terminais virtuais". Um terminal virtual é uma segunda seção de 
+trabalho completamente independente de outras, que pode ser acessada no 
+computador local ou remotamente via <CODE>telnet, rsh, rlogin,</CODE> etc. 
+<P>No <CODE>GNU/Linux</CODE>, em modo texto, você pode acessar outros terminais 
+virtuais segurando a tecla <SAMP>ALT</SAMP> e pressionando <SAMP>F1 a F6</SAMP>. 
+Cada tecla de função corresponde a um número de terminal do 1 ao 6 (o sétimo é 
+usado por padrão pelo ambiente gráfico X). O <CODE>GNU/Linux</CODE> possui mais 
+de 63 terminais virtuais, mas apenas 6 estão disponíveis inicialmente por 
+motivos de economia de memória RAM . 
+<P>Se estiver usando o modo gráfico, você deve segurar <SAMP>CTRL</SAMP>+ 
+<SAMP>ALT</SAMP> enquanto pressiona uma tela de &lt;F1&gt; a &lt;F6&gt;. 
+<P>Um exemplo prático: Se você estiver usando o sistema no Terminal 1 com o nome 
+"joao" e desejar entrar como "root" para instalar algum programa, segure 
+<SAMP>ALT</SAMP> enquanto pressiona &lt;F2&gt; para abrir o segundo terminal 
+virtual e faça o login como "root". Será aberta uma nova seção para o usuário 
+"root" e você poderá retornar a hora que quiser para o primeiro terminal 
+pressionando <SAMP>ALT</SAMP>+&lt;F1&gt;. 
+<HR>
+<A name=s-basico-login></A>
+<H2>2.10 Login</H2>
+<P>Login é a entrada no sistema quando você digita seu <EM>nome</EM> e 
+<EM>senha</EM>. Por enquanto vou manter o seu suspense sobre o que é o 
+<EM>logout</EM>. 
+<HR>
+<A name=s-basico-logout></A>
+<H2>2.11 Logout</H2>
+<P>Logout é a saída do sistema. A saída do sistema é feita pelos comandos 
+<CODE>logout</CODE>, <CODE>exit</CODE>, <SAMP>CTRL</SAMP>+<SAMP>D</SAMP>, ou 
+quando o sistema é reiniciado ou desligado. 
+<HR>
+<A name=s-basico-curingas></A>
+<H2>2.12 Curingas</H2>
+<P>Curingas (ou referência global) é um recurso usado para especificar um ou 
+mais arquivos ou diretórios do sistema de uma só vez. Este é um recurso permite 
+que você faça a filtragem do que será listado, copiado, apagado, etc. São usados 
+4 tipos de curingas no <CODE>GNU/Linux</CODE>: 
+<UL>
+  <LI>"*" - Faz referência a um nome completo/restante de um arquivo/diretório. 
+  </LI></UL>
+<UL>
+  <LI>"?" - Faz referência a uma letra naquela posição. </LI></UL>
+<UL>
+  <LI><SAMP>[padrão]</SAMP> - Faz referência a uma faixa de caracteres de um 
+  arquivo/diretório. Padrão pode ser: 
+  <UL>
+    <LI><SAMP>[a-z][0-9]</SAMP> - Faz referência a caracteres de <SAMP>a</SAMP> 
+    até <SAMP>z</SAMP> seguido de um caracter de <SAMP>0</SAMP> até 
+    <SAMP>9</SAMP>. 
+    <LI><SAMP>[a,z][1,0]</SAMP> - Faz a referência aos caracteres <SAMP>a</SAMP> 
+    e <SAMP>z</SAMP> seguido de um caracter <SAMP>1</SAMP> ou <SAMP>0</SAMP> 
+    naquela posição. 
+    <LI><SAMP>[a-z,1,0]</SAMP> - Faz referência a intervalo de caracteres de 
+    <SAMP>a</SAMP> até <SAMP>z</SAMP> ou <SAMP>1</SAMP> ou <SAMP>0</SAMP> 
+    naquela posição. </LI></UL>
+  <P>A procura de caracteres é "Case Sensitive" assim se você deseja que sejam 
+  localizados todos os caracteres alfabéticos você deve usar 
+  <SAMP>[a-zA-Z]</SAMP>. 
+  <P>Caso a expressão seja precedida por um <SAMP>^</SAMP>, faz referência a 
+  qualquer caracter exceto o da expressão. Por exemplo <SAMP>[^abc]</SAMP> faz 
+  referência a qualquer caracter exceto <SAMP>a</SAMP>, <SAMP>b</SAMP> e 
+  <SAMP>c</SAMP>. </P></LI></UL>
+<UL>
+  <LI><SAMP>{padrões}</SAMP> - Expande e gera strings para pesquisa de padrões 
+  de um arquivo/diretório. 
+  <UL>
+    <LI><SAMP>X{ab,01}</SAMP> - Faz referência a seqüencia de caracteres 
+    <SAMP>Xab</SAMP> ou <SAMP>X01</SAMP> 
+    <LI><SAMP>X{a-z,10}</SAMP> Faz referencia a seqüencia de caracteres 
+    X<SAMP>a-z</SAMP> e <SAMP>X10</SAMP>. </LI></UL></LI></UL>
+<P>O que diferencia este método de expansão dos demais é que a existência do 
+arquivo/diretório é opcional para geração do resultado. Isto é útil para a 
+criação de diretórios. Lembrando que os 4 tipos de curingas ("*", "?", "[]", 
+"{}") podem ser usados juntos. Para entender melhor vamos a prática: 
+<P>Vamos dizer que tenha 5 arquivo no diretório <CODE>/usr/teste</CODE>: 
+<CODE>teste1.txt, teste2.txt, teste3.txt, teste4.new, teste5.new</CODE>. 
+<P>Caso deseje listar <STRONG>todos</STRONG> os arquivos do diretório 
+<CODE>/usr/teste</CODE> você pode usar o coringa "*" para especificar todos os 
+arquivos do diretório: 
+<P><SAMP>cd /usr/teste</SAMP> e <SAMP>ls *</SAMP> ou <SAMP>ls 
+/usr/teste/*</SAMP>. 
+<P>Não tem muito sentido usar o comando <CODE>ls</CODE> com "*" porque todos os 
+arquivos serão listados se o <CODE>ls</CODE> for usado sem nenhum Coringa. 
+<P>Agora para listar todos os arquivos <CODE>teste1.txt, teste2.txt, 
+teste3.txt</CODE> com excessão de <CODE>teste4.new</CODE>, 
+<CODE>teste5.new</CODE>, podemos usar inicialmente 3 métodos: 
+<OL type=1>
+  <LI>Usando o comando <SAMP>ls *.txt</SAMP> que pega todos os arquivos que 
+  começam com qualquer nome e terminam com <CODE>.txt</CODE>. 
+  <LI>Usando o comando <SAMP>ls teste?.txt</SAMP>, que pega todos os arquivos 
+  que começam com o nome <CODE>teste</CODE>, tenham qualquer caracter no lugar 
+  do coringa <SAMP>?</SAMP> e terminem com <CODE>.txt</CODE>. Com o exemplo 
+  acima <SAMP>teste*.txt</SAMP> também faria a mesma coisa, mas se também 
+  tivéssemos um arquivo chamado <CODE>teste10.txt</CODE> este também seria 
+  listado. 
+  <LI>Usando o comando <SAMP>ls teste[1-3].txt</SAMP>, que pega todos os 
+  arquivos que começam com o nome <CODE>teste</CODE>, tenham qualquer caracter 
+  entre o número 1-3 no lugar da 6a letra e terminem com <CODE>.txt</CODE>. 
+  Neste caso se obtém uma filtragem mais exata, pois o coringa <EM>?</EM> 
+  especifica qualquer caracter naquela posição e [] especifica números, letras 
+  ou intervalo que será usado. </LI></OL>
+<P>Agora para listar somente <CODE>teste4.new</CODE> e <CODE>teste5.new</CODE> 
+podemos usar os seguintes métodos: 
+<OL type=1>
+  <LI><SAMP>ls *.new</SAMP> que lista todos os arquivos que terminam com 
+  <CODE>.new</CODE> 
+  <LI><SAMP>ls teste?.new</SAMP> que lista todos os arquivos que começam com 
+  <CODE>teste</CODE>, contenham qualquer caracter na posição do coringa 
+  <EM>?</EM> e terminem com <CODE>.new</CODE>. 
+  <LI><SAMP>ls teste[4,5].*</SAMP> que lista todos os arquivos que começam com 
+  <CODE>teste</CODE> contenham números de 4 e 5 naquela posição e terminem com 
+  qualquer extensão. </LI></OL>
+<P>Existem muitas outras formas de se fazer a mesma coisa, isto depende do gosto 
+de cada um. O que pretendi fazer aqui foi mostrar como especificar mais de um 
+arquivo de uma só vez. O uso de curingas será útil ao copiar arquivos, apagar, 
+mover, renomear, e nas mais diversas partes do sistema. Alias esta é uma 
+característica do <CODE>GNU/Linux</CODE>: permitir que a mesma coisa possa ser 
+feita com liberdade de várias maneiras diferentes. 
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ 2 ] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">próximo</A> 
+] 
+<HR>
+
+<P>Guia Foca GNU/Linux 
+<ADDRESS>Versão 3.99 - segunda, 30 de outubro de 2006<BR><BR>Gleydson Mazioli da 
+Silva <CODE><A 
+href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR><BR></ADDRESS>
+<HR>
+</BODY></HTML>

@@ -1,0 +1,855 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: Guia Foca GNU/Linux - Para quem esta migrando (ou pensando em migrar) do DOS/Windows para o Linux
+Date: Mon, 6 Aug 2007 11:22:37 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-d-l.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Para quem esta migrando (ou =
+pensando em migrar) do DOS/Windows para o Linux</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-d-l></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ 4 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 4 - Para quem esta migrando (ou =
+pensando em=20
+migrar) do DOS/Windows para o Linux </H1>
+<HR>
+
+<P>Este cap=EDtulo explica as diferen=E7as e particularidades do sistema =
+
+<CODE>GNU/Linux</CODE> comparado ao <CODE>DOS/Windows</CODE> e uma lista =
+de=20
+equival=EAncia entre comandos e programas <CODE>DOS</CODE> e=20
+<CODE>GNU/Linux</CODE>, que pode servir de compara=E7=E3o para que o =
+usu=E1rio possa=20
+conhecer e utilizar os comandos/programas <CODE>GNU/Linux</CODE> que tem =
+a mesma=20
+fun=E7=E3o no ambiente <CODE>DOS/Windows</CODE>.=20
+<HR>
+<A name=3Ds-d-l-compar></A>
+<H2>4.1 Quais as diferen=E7as iniciais</H2>
+<UL>
+  <LI>Quando entrar pela primeira vez no <CODE>GNU/Linux</CODE> (ou =
+qualquer=20
+  outro <CODE>UNIX</CODE>, a primeira coisa que ver=E1 ser=E1 a palavra=20
+  <SAMP>login:</SAMP> escrita na tela.=20
+  <P>A sua aventura come=E7a aqui, voc=EA deve ser uma pessoa cadastrada =
+no sistema=20
+  (ter uma conta) para que poder entrar. No <SAMP>login</SAMP> voc=EA =
+digita seu=20
+  nome (por exemplo, gleydson) e pressiona Enter. Agora ser=E1 lhe =
+pedida a senha,=20
+  repare que a senha n=E3o =E9 mostrada enquanto =E9 digitada, isto =
+serve de seguran=E7a=20
+  e para enganar pessoas que est=E3o pr=F3ximas de voc=EA "tocando" =
+algumas teclas a=20
+  mais enquanto digita a senha e fazendo-as pensar que voc=EA usa uma =
+grande senha=20
+  ;-) (com os asteriscos aparecendo isto n=E3o seria poss=EDvel).=20
+  <P>Caso cometa erros durante a digita=E7=E3o da senha, basta =
+pressionar a tecla=20
+  <SAMP>Back Space</SAMP> para apagar o =FAltimo caracter digitado e =
+terminar a=20
+  entrada da senha.=20
+  <P>Pressione Enter, se tudo ocorrer bem voc=EA estar=E1 dentro do =
+sistema e ser=E1=20
+  presenteado com o s=EDmbolo # (caso tenha entrado como usu=E1rio=20
+  <SAMP>root</SAMP>) ou $ (caso tenha entrado como um usu=E1rio normal). =
+
+  <P>Existe um mecanismo de seguran=E7a que te alerta sobre eventuais =
+tentativas=20
+  de entrada no sistema por intrusos usando seu <SAMP>login</SAMP>, =
+fa=E7a um=20
+  teste: entre com seu login e digite a senha errada, na segunda vez =
+entre com a=20
+  senha correta no sistema. Na pen=FAltima linha das mensagens aparece =
+uma=20
+  mensagem "1 failure since last login", o que quer dizer "1 falha desde =
+o=20
+  =FAltimo login". Isto significa que algu=E9m tentou entrar 1 vez com =
+seu nome e=20
+  senha no sistema, sem sucesso. </P></LI></UL>
+<UL>
+  <LI>A conta <SAMP>root</SAMP> n=E3o tem restri=E7=F5es de acesso ao =
+sistema e pode=20
+  fazer tudo o que quiser, =E9 equivalente ao usu=E1rio normal do =
+<CODE>DOS</CODE> e=20
+  <CODE>Windows</CODE>. Use a conta <SAMP>root</SAMP> somente para =
+manuten=E7=F5es=20
+  no sistema e instala=E7=E3o de programas, qualquer movimento errado =
+pode=20
+  comprometer todo o sistema. Para detalhes veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm#s-perm-root">A=20
+  conta root, Se=E7=E3o 13.6</A>. </LI></UL>
+<UL>
+  <LI>No <CODE>GNU/Linux</CODE> os diret=F3rio s=E3o identificados por =
+uma=20
+  <CODE>/</CODE> e n=E3o por uma <CODE>\</CODE> como acontece no =
+<CODE>DOS</CODE>.=20
+  Para entrar no diret=F3rio <CODE>/bin</CODE>, voc=EA deve usar =
+<SAMP>cd=20
+  /bin</SAMP>. </LI></UL>
+<UL>
+  <LI>Os comandos s=E3o <SAMP>case-sensitive</SAMP>, o que significa que =
+ele=20
+  diferencia as letras mai=FAsculas de min=FAsculas em arquivos e =
+diret=F3rios. O=20
+  comando <SAMP>ls</SAMP> e <SAMP>LS</SAMP> s=E3o completamente =
+diferentes.=20
+</LI></UL>
+<UL>
+  <LI>A multitarefa lhe permite usar v=E1rios programas simultaneamente =
+(n=E3o pense=20
+  que multitarefa somente funciona em ambientes gr=E1ficos, pois isto =
+=E9 errado!).=20
+  Para detalhes veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">Execu=E7=E3o=20
+  de programas, Cap=EDtulo 7</A>. </LI></UL>
+<UL>
+  <LI>Os dispositivos tamb=E9m s=E3o identificados e uma forma diferente =
+que no=20
+  <CODE>DOS</CODE> por exemplo: <PRE>      DOS/Windows        Linux
+     -------------  ---------------=20
+     A:             /dev/fd0
+     B:             /dev/fd1
+     C:             /dev/hda1
+     LPT1           /dev/lp0
+     LPT2           /dev/lp1
+     LPT3           /dev/lp2
+     COM1           /dev/ttyS0
+     COM2           /dev/ttyS1
+     COM3           /dev/ttyS2
+     COM4           /dev/ttyS3
+</PRE></LI></UL>
+<UL>
+  <LI>Os recursos multiusu=E1rio lhe permite acessar o sistema de =
+qualquer lugar=20
+  sem instalar nenhum driver, ou programa gigante, apenas atrav=E9s de =
+conex=F5es=20
+  TCP/IP, como a Internet. Tamb=E9m =E9 poss=EDvel acessar o sistema =
+localmente com=20
+  v=E1rios usu=E1rios (cada um executando tarefas completamente =
+independente dos=20
+  outros) atrav=E9s dos Terminais Virtuais. Fa=E7a um teste: pressione =
+ao mesmo=20
+  tempo a tecla <SAMP>ALT</SAMP> e <SAMP>F2</SAMP> e voc=EA ser=E1 =
+levado para o=20
+  segundo Terminal Virtual, pressione novamente <SAMP>ALT</SAMP> e=20
+  <SAMP>F1</SAMP> para retornar ao anterior. </LI></UL>
+<UL>
+  <LI>Para reiniciar o computador, voc=EA pode pressionar CTRL+ALT+DEL =
+(como=20
+  usu=E1rio <SAMP>root</SAMP>) ou digitar <SAMP>shutdown -r now</SAMP>. =
+. </LI></UL>
+<UL>
+  <LI>Para desligar o computador, digite <SAMP>shutdown -h now</SAMP> e =
+espere o=20
+  aparecimento da mensagem <SAMP>Power Down</SAMP> para apertar o =
+bot=E3o=20
+  LIGA/DESLIGA do computador. </LI></UL>
+<HR>
+<A name=3Ds-d-l-comandos></A>
+<H2>4.2 Comandos equivalentes entre DOS e Linux</H2>
+<P>Esta se=E7=E3o cont=E9m os comandos equivalentes entre estes dois =
+sistemas e a=20
+avalia=E7=E3o entre ambos. Grande parte dos comandos podem ser usados da =
+mesma forma=20
+que no <CODE>DOS</CODE>, mas os comandos <CODE>Linux</CODE> possuem =
+avan=E7os para=20
+utiliza=E7=E3o neste ambiente multiusu=E1rio/multitarefa.=20
+<P>O objetivo desta se=E7=E3o =E9 permitir as pessoas com experi=EAncia =
+em=20
+<CODE>DOS</CODE> fazer rapidamente no <CODE>GNU/Linux</CODE> as tarefas =
+que=20
+fazem no <CODE>DOS</CODE>. A primeira coluna tem o nome do comando no=20
+<CODE>DOS</CODE>, a segunda o comando que possui a mesma fun=E7=E3o no=20
+<CODE>GNU/Linux</CODE> e na terceira coluna as diferen=E7as. <PRE>       =
+DOS       Linux                        Diferen=E7as
+     --------  ------------ =
+--------------------------------------------------
+     cls       clear        Sem diferen=E7as.
+     dir       ls -la       A listagem no Linux possui mais campos (as=20
+                            permiss=F5es de acesso) e o total de =
+espa=E7o ocupado=20
+                            no diret=F3rio e livre no disco deve ser =
+visto=20
+                            separadamente usando o comando du e df.
+                            Permite tamb=E9m listar o conte=FAdo de =
+diversos=20
+                            diret=F3rios com um s=F3 comando (ls /bin =
+/sbin /...).
+     dir/s     ls -lR       Sem diferen=E7as.
+     dir/od    ls -tr       Sem diferen=E7as.
+     cd        cd           Poucas diferen=E7as. cd sem par=E2metros =
+retorna ao=20
+                            diret=F3rio de usu=E1rio e tamb=E9m permite =
+o uso=20
+                            de "cd -" para retornar ao diret=F3rio =
+anteriormente=20
+                            acessado.
+     del       rm           Poucas diferen=E7as. O rm do Linux permite=20
+                            especificar diversos arquivos que ser=E3o =
+apagados=20
+                            (rm arquivo1 arquivo2 arquivo3). Para ser =
+mostrados=20
+                            os arquivos apagados, deve-se especificar o=20
+                            par=E2metro "-v" ao comando, e "-i" para =
+pedir=20
+                            a confirma=E7=E3o ao apagar arquivos.=20
+     md        mkdir        Uma s=F3 diferen=E7a: No Linux permite que =
+v=E1rios=20
+                            diret=F3rios sejam criados de uma s=F3 vez=20
+                            (mkdir /tmp/a /tmp/b...).=20
+     copy      cp           Poucas diferen=E7as. Para ser mostrados os =
+arquivos=20
+                            enquanto est=E3o sendo copiados, deve-se =
+usar a=20
+                            op=E7=E3o "-v", e para que ele pergunte se =
+deseja=20
+                            substituir um arquivo j=E1 existente, =
+deve-se usar=20
+                            a op=E7=E3o "-i".
+     echo      echo         Sem diferen=E7as.
+     path      path         No Linux deve ser usado ":" para separar os=20
+                            diret=F3rios e usar o comando=20
+                            "export =
+PATH=3Dcaminho1:/caminho2:/caminho3:"
+                            para definir a vari=E1vel de ambiente PATH.
+                            O path atual pode ser visualizado atrav=E9s=20
+                            do comando "echo $PATH".
+     ren       mv           Poucas diferen=E7as. No Linux n=E3o =E9 =
+poss=EDvel=20
+                            renomear v=E1rios arquivos de uma s=F3 vez=20
+                            (como "ren *.txt *.bak"). =C9 necess=E1rio =
+usar=20
+                            um shell script para fazer isto.=20
+     type      cat          Sem diferen=E7as.=20
+     ver       uname -a     Poucas diferen=E7as (o uname tem algumas =
+op=E7=F5es=20
+                            a mais).
+     date      date         No Linux mostra/modifica a Data e Hora do =
+sistema.
+     time      date         No Linux mostra/modifica a Data e Hora do =
+sistema.
+     attrib    chmod        O chmod possui mais op=E7=F5es por tratar as =
+permiss=F5es=20
+                            de acesso de leitura, grava=E7=E3o e =
+execu=E7=E3o para=20
+                            donos, grupos e outros usu=E1rios.=20
+     scandisk  fsck.ext2    O fsck =E9 mais r=E1pido e extensivo na =
+checagem.
+     doskey    -----        A edi=E7=E3o de teclas =E9 feita =
+automaticamente pelo=20
+                            bash.
+     edit      vi, ae,      O edit =E9 mais f=E1cil de usar, mas =
+usu=E1rio
+               emacs        experientes apreciar=E3o os recursos do vi =
+ou=20
+                            o emacs (programado em lisp).
+     fdisk     fdisk, cfdisk Os particionadores do Linux trabalham com=20
+                            praticamente todos os tipos de parti=E7=F5es =
+de=20
+                            diversos sistemas de arquivos diferentes.
+     format    mkfs.ext2    Poucas diferen=E7as, precisa apenas que seja =
+
+                            especificado o dispositivo a ser formatado=20
+                            como "/dev/fd0" ou "/dev/hda10" (o=20
+                            tipo de identifica=E7=E3o usada no Linux), =
+ao=20
+                            inv=E9s de "A:" ou "C:".=20
+     help      man, info    Sem diferen=E7as.
+     interlnk  plip         O plip do Linux permite que sejam montadas=20
+                            redes reais a partir de uma conex=E3o via =
+Cabo=20
+                            Paralelo ou Serial. A m=E1quina pode fazer =
+tudo=20
+                            o que poderia fazer conectada em uma rede=20
+                            (na realidade =E9 uma rede e usa o TCP/IP =
+como=20
+                            protocolo) inclusive navegar na Internet, =
+enviar=20
+                            e-mails, irc, etc.=20
+     intersvr  plip         Mesmo que o acima.
+     keyb      loadkeys     Sem diferen=E7as (somente que a posi=E7=E3o =
+das=20
+                            teclas do teclado pode ser editada.=20
+                            Desnecess=E1rio para a maioria dos =
+usu=E1rios).
+     label     e2label      =C9 necess=E1rio especificar a parti=E7=E3o =
+que ter=E1=20
+                            o nome modificado.
+     mem       cat /proc/meminfo Mostra detalhes sobre a quantidade de =
+dados=20
+               top          em buffers, cache e mem=F3ria virtual =
+(disco).=20
+     more      more, less   O more =E9 equivalente a ambos os sistemas, =
+mas=20
+                            o less permite que sejam usadas as setas =
+para=20
+                            cima e para baixo, o que torna a leitura do=20
+                            texto muito mais agrad=E1vel.=20
+     move      mv           Poucas diferen=E7as. Para ser mostrados os =
+arquivos=20
+                            enquanto est=E3o sendo movidos, deve-se usar =
+a=20
+                            op=E7=E3o "-v", e para que ele pergunte se =
+deseja=20
+                            substituir um arquivo j=E1 existente deve-se =
+usar=20
+                            a op=E7=E3o "-i".=20
+     scan      -----        N=E3o existem v=EDrus no Linux devido as=20
+                            restri=E7=F5es do usu=E1rio durante =
+execu=E7=E3o de=20
+                            programas.=20
+     backup    tar          O tar permite o uso de compacta=E7=E3o =
+(atrav=E9s do=20
+                            par=E2metro -z) e tem um melhor esquema de=20
+                            recupera=E7=E3o de arquivos corrompidos que =
+j=E1=20
+                            segue evoluindo h=E1 30 anos em sistemas =
+UNIX.=20
+     print     lpr          O lpr =E9 mais r=E1pido e permite at=E9 =
+mesmo=20
+                            impress=F5es de gr=E1ficos ou arquivos =
+compactados=20
+                            diretamente caso seja usado o programa=20
+                            magicfilter. =C9 o programa de Spool de=20
+                            impressoras usados no sistema Linux/Unix.=20
+     vol       e2label      Sem diferen=E7as.
+     xcopy     cp -R        Pouca diferen=E7a, requer que seja usado a=20
+                            op=E7=E3o "-v" para mostrar os arquivos que=20
+                            est=E3o sendo copiados e "-i" para pedir=20
+                            confirma=E7=E3o de substitui=E7=E3o de =
+arquivos.
+</PRE>
+<HR>
+<A name=3Ds4.2.1></A>
+<H3>4.2.1 Arquivos de configura=E7=E3o</H3>
+<P>Os arquivos <CODE>config.sys</CODE> e <CODE>autoexec.bat</CODE> s=E3o =
+
+equivalentes aos arquivos do diret=F3rio <CODE>/etc</CODE> especialmente =
+o=20
+<CODE>/etc/inittab</CODE> e arquivos dentro do diret=F3rio /etc/init.d . =
+
+<HR>
+<A name=3Ds-d-l-mtools></A>
+<H2>4.3 Usando a sintaxe de comandos DOS no Linux</H2>
+<P>Voc=EA pode usar os comandos do pacote <CODE>mtools</CODE> para =
+simular os=20
+comandos usados pelo <CODE>DOS</CODE> no <CODE>GNU/Linux</CODE>, a =
+diferen=E7a=20
+b=E1sica =E9 que eles ter=E3o a letra <SAMP>m</SAMP> no inicio do nome. =
+Os seguintes=20
+comandos s=E3o suportados:=20
+<UL>
+  <LI><SAMP>mattrib</SAMP> - Ajusta modifica atributos de arquivos=20
+  <LI><SAMP>mcat</SAMP> - Mostra os dados da unidade de disquete em =
+formato RAW=20
+  <LI><SAMP>mcd</SAMP> - Entra em diret=F3rios=20
+  <LI><SAMP>mcopy</SAMP> - Copia arquivos/diret=F3rios=20
+  <LI><SAMP>mdel</SAMP> - Exclui arquivos=20
+  <LI><SAMP>mdeltree</SAMP> - Exclui arquivos, diret=F3rios e =
+sub-diret=F3rios=20
+  <LI><SAMP>mdir</SAMP> - Lista arquivos e diret=F3rios=20
+  <LI><SAMP>mdu</SAMP> - Mostra o espa=E7o ocupado pelo diret=F3rio do =
+DOS=20
+  <LI><SAMP>mformat</SAMP> - Formatador de discos=20
+  <LI><SAMP>minfo</SAMP> - Mostra detalhes sobre a unidade de disquetes=20
+  <LI><SAMP>mlabel</SAMP> - Cria um volume para unidades DOS=20
+  <LI><SAMP>mmd</SAMP> - Cria diret=F3rios=20
+  <LI><SAMP>mmount</SAMP> - Monta discos DOS=20
+  <LI><SAMP>mmove</SAMP> - Move ou renomeia arquivos/subdiret=F3rios=20
+  <LI><SAMP>mpartition</SAMP> - Particiona um disco para ser usado no =
+DOS=20
+  <LI><SAMP>mrd</SAMP> - Remove um diret=F3rio=20
+  <LI><SAMP>mren</SAMP> - Renomeia arquivos=20
+  <LI><SAMP>mtype</SAMP> - Visualiza o conte=FAdo de arquivos =
+(equivalente ao cat)=20
+
+  <LI><SAMP>mtoolstest</SAMP> - Exibe a configura=E7=E3o atual do=20
+  <CODE>mtools</CODE>=20
+  <LI><SAMP>mshowfat</SAMP> - Mostra a FAT da unidade=20
+  <LI><SAMP>mbadblocks</SAMP> - Procura por setores defeituosos na =
+unidade=20
+  <LI><SAMP>mzip</SAMP> - Altera modo de prote=E7=E3o e ejeta discos em =
+unidades=20
+  Jaz/ZIP=20
+  <LI><SAMP>mkmanifest</SAMP> - Cria um shell script para restaurar =
+nomes=20
+  extensos usados no UNIX=20
+  <LI><SAMP>mcheck</SAMP> - Verifica arquivos na unidade </LI></UL>
+<HR>
+<A name=3Ds-d-l-programas></A>
+<H2>4.4 Programas equivalentes entre Windows/DOS e o Linux</H2>
+<P>Esta se=E7=E3o cont=E9m programas equivalentes para quem est=E1 vindo =
+do=20
+<CODE>DOS</CODE> e <CODE>Windows</CODE> e n=E3o sabe o que usar no=20
+<CODE>GNU/Linux</CODE>. Esta se=E7=E3o tamb=E9m tem por objetivo =
+permitir ao usu=E1rio=20
+que ainda n=E3o usa <CODE>GNU/Linux</CODE> decidir se a passagem vale a =
+pena vendo=20
+se o sistema tem os programas que precisa.=20
+<P>Note que esta listagem mostra os programas equivalentes entre o=20
+<CODE>DOS/Windows</CODE> e o <CODE>GNU/Linux</CODE> cabendo a voc=EA a =
+decis=E3o=20
+final de migrar ou n=E3o. Lembrando que =E9 poss=EDvel usar o =
+<CODE>Windows</CODE>,=20
+<CODE>OS/2</CODE>, <CODE>DOS</CODE>, <CODE>OS/2</CODE> e =
+<CODE>GNU/Linux</CODE>=20
+no mesmo disco r=EDgido sem qualquer tipo de conflito. A listagem abaixo =
+pode=20
+estar incompleta, se encontrar algum programa que n=E3o esteja listado =
+aqui, por=20
+favor entre em contato pelo E-Mail <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE> =
+para=20
+inclui-lo na listagem. <PRE>     DOS/Windows           Linux             =
+            Diferen=E7as
+     -----------           ----------         =
+-------------------------------
+     MS Word               Open Office,       O Open Office possui todos =
+os=20
+                           Corel Word Perfect recursos do Word al=E9m de =
+ter=20
+                                              a interface gr=E1fica =
+igual, menus=20
+                                              e teclas de atalho =
+id=EAnticas ao=20
+                                              Word, o que facilita a =
+migra=E7=E3o.=20
+                                              Tamb=E9m trabalha com =
+arquivos=20
+                                              no formato Word97/2000 e =
+n=E3o=20
+                                              =E9 vulner=E1vel a v=EDrus =
+de macro.
+                                              =C9 distribu=EDdo =
+gratuitamente e=20
+                                              n=E3o requer pagamento de =
+licen=E7a=20
+                                              podendo ser instalado em =
+quantos=20
+                                              computadores voc=EA quiser =
+(tanto=20
+                                              dom=E9sticos como de =
+empresas).
+     MS Excel              Open Office        Mesmos pontos do acima e =
+tamb=E9m=20
+                                              abre arquivos =
+Excel97/2000.=20
+     MS PowerPoint         Open Office        Mesmos pontos do acima.=20
+     MS Access             SQL, Oracle, etc   Existem diversas =
+ferramentas de=20
+                                              conceito para bancos de =
+dados=20
+                                              corporativos no Linux. =
+Todos=20
+                                              produtos compat=EDveis com =
+outras=20
+                                              plataformas.=20
+     MS Outlook            Pine, Mutt,        Centenas de programas de =
+E-Mail
+                           sylpheed, etc      tanto em modo texto como =
+em=20
+                                              modo gr=E1fico. Instale, =
+avalie=20
+                                              e escolha.=20
+     MS Internet Explorer  Netscape, Arena,   Os tr=EAs primeiros para =
+modo=20
+                           Mozilla, lynx.     gr=E1fico e o lynx opera =
+em=20
+                                              modo texto.
+     ICQ                   LICQ, GAIM, SIM    Muito pr=E1tico e f=E1cil =
+de=20
+                                              operar. Possibilita a =
+mudan=E7a=20
+                                              completa da apar=EAncia do =
+programa=20
+                                              atrav=E9s de Skins. A =
+organiza=E7=E3o=20
+                                              dos menus deste programa =
+=E9 outro=20
+                                              ponto de destaque.=20
+     MSN                   AMSN, GAIM         Permite conversar =
+diretamente com=20
+                                              usu=E1rios do Microsoft =
+MSN.
+     Photo Shop            The Gimp           F=E1cil de usar, possui=20
+                                              muitos scripts que =
+permitem=20
+                                              a cria=E7=E3o r=E1pida e =
+f=E1cil de=20
+                                              qualquer tipo de efeito=20
+                                              profissional pelo =
+usu=E1rio=20
+                                              mais leigo. Acompanha =
+centenas
+                                              de efeitos especiais e um=20
+                                              belo manual em html com =
+muitas=20
+                                              fotos (aproximadamente =
+20MB) que=20
+                                              mostra o que =E9 =
+poss=EDvel se fazer=20
+                                              com ele.=20
+     Corel Photo Paint     Corel Photo Paint  Corel Photo-Paint para=20
+                                              Linux.
+     winamp                xmms               Possui todos os recursos =
+do=20
+                                              programa para Windows =
+al=E9m=20
+                                              de filtros que permite =
+acrescentar=20
+                                              efeitos digitais da =
+m=FAsica (em=20
+                                              tempo real), eco, etc.=20
+     media player          mplayer,playmidi   Programas para =
+execu=E7=E3o de=20
+                           xwave,             arquivos de m=FAsica e =
+videos=20
+                                              multim=EDdia. Existem =
+outras=20
+                                              alternativas, a escolha=20
+                                              depende de seu gosto e da=20
+                                              sofistica=E7=E3o do =
+programa.
+     Agente de Sistema     cron               Pouca diferen=E7a. O cron
+                                              da mais liberdade na =
+programa=E7=E3o=20
+                                              de tarefas a serem =
+executadas=20
+                                              pelo Linux.=20
+     Mixer                 aumix, cam         Sem diferen=E7as.=20
+     Bate-Papo             talk, ytalk        O talk e o ytalk permite a =
+
+                                              conversa de dois =
+usu=E1rios n=E3o=20
+                                              s=F3 atrav=E9s de uma rede =
+local,=20
+                                              mas de qualquer parte do=20
+                                              planeta, pois usa o =
+protocolo=20
+                                              tcp/ip para =
+comunica=E7=E3o. Muito=20
+                                              =FAtil e f=E1cil de usar.=20
+     MIRC                  Bitchx, xchat      Clientes IRC para Linux
+     IIS, Pers. Web Server Apache             O apache =E9 o servidor =
+WEB mais=20
+                                              usado no mundo (algo em =
+torno=20
+                                              de 75% das empresas), =
+muito=20
+                                              r=E1pido e flex=EDvel de =
+se=20
+                                              configurar.=20
+     Exchange, NT Mail     Sendmail, Postfix, 72% da base de servidores =
+de=20
+                           Exim, Qmail        emails no mundo atualmente =
+roda
+                                              em software livre. Os mais =
+recomendados
+     					 s=E3o o Postfix e o qmail, devido a=20
+     					 seguran=E7a, velocidade e integridade
+     					 de mensagem
+     Wingate, MS Proxy     Squid, Apache,     A migra=E7=E3o de um =
+servidor proxy
+                           ip masquerade,     para Linux requer o uso de =
+
+                           nat, diald,        v=E1rios programas =
+separados para=20
+                           exim,              que se tenha um resultado=20
+                                              profissional. Isto pode =
+parecer=20
+                                              incomodo no come=E7o, mas =
+voc=EA logo
+                                              perceber=E1 que a =
+divis=E3o de servi=E7os=20
+                                              entre programas =E9 mais =
+produtivo.=20
+                                              Quando desejar substituir =
+um=20
+                                              deles, o funcionamento dos =
+
+                                              outros n=E3o ser=E3o =
+afetados.=20
+                                              N=E3o vou entrar em =
+detalhes sobre os=20
+                                              programas citados ao lado, =
+mas o squid=20
+                                              =E9 um servidor proxy Web =
+(HTTP e=20
+                                              HTTPS) completo e tamb=E9m =
+apresenta um=20
+                                              excelente servi=E7o FTP.=20
+                                              Possui outros m=F3dulos =
+como dns, ping,=20
+                                              restri=E7=F5es de acesso, =
+limites de=20
+                                              tamanho de arquivos, =
+cache, etc.=20
+     MS Frontpage          Netscape Composer  Sem coment=E1rios... todas =
+s=E3o=20
+                           e muitas outras    ferramentas para a =
+gera=E7=E3o=20
+                           ferramentas para   de grandes Web Sites. O =
+wdm,=20
+                           gera=E7=E3o de conte=FAdo por exemplo, =E9 =
+usado na gera=E7=E3o
+                           WEB (como zope,    do site da =
+distribui=E7=E3o Debian=20
+                           php3, php4, wdm,   (http://www.debian.org) em =
+27
+                           htdig)             idiomas diferentes.=20
+     MS Winsock            Sem equivalente    O Linux tem suporte nativo =
+a=20
+                                              tcp/ip desde o come=E7o de =
+sua=20
+                                              exist=EAncia e n=E3o =
+precisa de=20
+                                              nenhuma camada de =
+comunica=E7=E3o=20
+                                              entre ele e a Internet. A=20
+                                              performance =E9 =
+aproximadamente=20
+                                              10% maior em conex=F5es =
+Internet
+                                              via fax-modem e outras =
+redes tcp/ip.=20
+     ViruScan, TBAV,       -----              N=E3o existem v=EDrus no =
+Linux=20
+     F-PROT, CPAV.                            devido as restri=E7=F5es =
+ao usu=E1rio
+                                              durante a execu=E7=E3o de =
+programas.
+</PRE>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ 4 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

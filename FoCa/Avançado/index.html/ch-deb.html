@@ -1,0 +1,434 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Guia Foca GNU/Linux - A distribuição Debian GNU/Linux</title>
+
+</head>
+
+<body>
+
+<a name="ch-deb"></a>
+<hr>
+
+[ <a href="ch-log.html">anterior</a> ]
+[ <a href="index.html#contents">Conteúdo</a> ]
+[ <a href="ch-intro.html">1</a> ]
+[ <a href="ch-bas.html">2</a> ]
+[ <a href="ch-hardw.html">3</a> ]
+[ <a href="ch-rede.html">4</a> ]
+[ <a href="ch-cfgrede.html">5</a> ]
+[ <a href="ch-log.html">6</a> ]
+[ 7 ]
+[ <a href="ch-pers.html">8</a> ]
+[ <a href="ch-impr.html">9</a> ]
+[ <a href="ch-fw-iptables.html">10</a> ]
+[ <a href="ch-d-contas.html">11</a> ]
+[ <a href="ch-s-apache.html">12</a> ]
+[ <a href="ch-s-ident.html">13</a> ]
+[ <a href="ch-s-telnet.html">14</a> ]
+[ <a href="ch-s-ssh.html">15</a> ]
+[ <a href="ch-s-pop3.html">16</a> ]
+[ <a href="ch-s-cvs.html">17</a> ]
+[ <a href="ch-s-samba.html">18</a> ]
+[ <a href="ch-d-restr.html">19</a> ]
+[ <a href="ch-d-cripto.html">20</a> ]
+[ <a href="ch-apend.html">21</a> ]
+[ <a href="ch-pers.html">próximo</a> ]
+
+<hr>
+
+<h1>
+Guia Foca GNU/Linux
+<br>Capítulo 7 - A distribuição Debian GNU/Linux
+</h1>
+
+<hr>
+
+<p>
+Este capítulo traz algumas características sobre a distribuição <code>Debian
+GNU/Linux</code>, programas de configuração e particularidades.  A maioria dos
+trechos aqui descritos, também se aplicam a distribuições baseadas na
+<code>Debian</code>, como a <em>Corel Debian GNU/Linux</em> e a
+<em>LibraNet</em>.
+
+<p>
+Você deve estar se perguntando <samp>mas porque um capítulo falando sobre a
+distribuição Debian se eu uso outra?</samp>.  Bem, a partir da versão
+<em>Intermediário</em> do <em>Foca Linux</em> existem algumas partes que são
+especificas de algumas distribuições Linux e que não se aplicam a outras, como
+a localização dos arquivos de configuração, nomes dos programas de configuração
+e outros detalhes específicos e esta versão é a baseada na <code>Debian</code>.
+Pegue na página do Foca Linux (<code><a
+href="http://www.guiafoca.org">http://www.guiafoca.org</a></code>) uma versão
+Intermediário /Avançado do guia específico para sua distribuição.
+
+<hr>
+
+<a name="s-deb-obtendo"></a>
+<h2>7.1 Como obter a Debian</h2>
+
+<p>
+A instalação da distribuição pode ser obtida através de Download de <code><a
+href="ftp://ftp.debian.org//debian/dists/stable/main/disks-i386">ftp://ftp.debian.org//debian/dists/stable/main/disks-i386</a></code>
+(para Intel x86), seus programas diversos estão disponíveis em <code><a
+href="ftp://ftp.debian.org//debian/dists/stable/main/binary-i386">ftp://ftp.debian.org//debian/dists/stable/main/binary-i386</a></code>.
+
+<p>
+A distribuição também pode ser obtida através de 3 (ou 4) CDs binários (para a
+Debian 2.2).
+
+<hr>
+
+<a name="s-deb-prgnconfig"></a>
+<h2>7.2 Programas de configuração</h2>
+<ul>
+<li>
+<code>dselect</code> - Seleciona pacote para instalação/desinstalação
+</li>
+</ul>
+<ul>
+<li>
+<code>pppconfig</code> - Configura o computador para se conectar a Internet
+facilmente.  Após isto, use <samp>pon</samp> para se conectar a Internet,
+<samp>poff</samp> para se desconectar e <samp>plog</samp> para monitorar a
+conexão.
+</li>
+</ul>
+<ul>
+<li>
+<code>modconf</code> - Permite selecionar os módulos que serão automaticamente
+carregados na inicialização do sistema.  Se requerido pelos módulos os
+parâmetros I/O, IRQ e DMA também podem ser especificados.
+</li>
+</ul>
+<ul>
+<li>
+<code>kbdconfig</code> - Permite selecionar o tipo de teclado que utiliza
+</li>
+</ul>
+<ul>
+<li>
+<code>shadowconfig</code> - Permite ativar ou desativar o suporte a senhas
+ocultas (shadow password).  Com as senhas ocultas ativadas, as senhas
+criptografadas dos usuários e grupos são armazenadas nos arquivos
+<code>shadow</code> e <code>gshadow</code> respectivamente, que somente podem
+ser acessadas pelo usuário root.
+
+<p>
+Isto aumenta consideravelmente a segurança do sistema pois os arquivos
+<code>passwd</code> e <code>group</code> contém dados de usuários que devem ter
+permissão de leitura de todos os usuários do sistema.
+</li>
+</ul>
+<ul>
+<li>
+<code>tasksel</code> - Permite selecionar/modificar de forma fácil a instalação
+de pacotes em seu sistema através da função que sua máquina terá ou do seu
+perfil de usuário.
+</li>
+</ul>
+<ul>
+<li>
+<code>tzconfig</code> - Permite modificar/selecionar o fuso-horário usado na
+distribuição.
+</li>
+</ul>
+
+<p>
+Além destes, a Debian 3.0 (Woody) conta com o sistema de configuração baseado
+no <samp>dpkg-reconfigure</samp> que permite configurar de forma fácil e rápida
+aspecto de pacotes: <samp>dpkg-reconfigure xserver-svga</samp>.
+
+<hr>
+
+<a name="s-deb-startup"></a>
+<h2>7.3 Arquivos de inicialização</h2>
+
+<p>
+Os arquivos de inicialização da distribuição <code>Debian</code> (e baseadas
+nela) estão localizados no diretório <code>/etc/init.d</code>.  Cada daemon
+(programa residente na memória) ou configuração específica possui um arquivo de
+onde pode ser ativado/desativado.  Os sistemas residentes neste diretório não
+são ativados diretamente, mas sim através de links existentes nos diretórios
+<code>/etc/rc?.d</code> onde cada diretório consiste em um nível de execução do
+sistema (veja também a <a href="#s-deb-runlevels">Níveis de Execução, Seção
+7.4</a>).
+
+<p>
+Por padrão, você pode usar as seguintes palavras chaves com os arquivos de
+configuração:
+<ul>
+<li>
+<samp>start</samp> - Inicia o daemon ou executa a configuração
+</li>
+<li>
+<samp>stop</samp> - Interrompe a execução de um daemon ou desfaz a configuração
+feita anteriormente (se possível).
+</li>
+<li>
+<samp>restart</samp> - Reinicia a execução de um daemon.  É equivalente ao uso
+de <samp>stop</samp> e <samp>start</samp> mas se aplicam somente a alguns
+daemons e configurações, que permitem a interrupção de execução e reinicio.
+</li>
+</ul>
+
+<p>
+Por exemplo, para reconfigurar as interfaces de rede do computador, podemos
+utilizar os seguintes comandos:
+
+<pre>
+     cd /etc/init.d
+     ./networking restart
+</pre>
+
+<hr>
+
+<a name="s-deb-runlevels"></a>
+<h2>7.4 Níveis de Execução</h2>
+
+<p>
+Os <em>Níveis de execução</em> (run levels) são diferentes modos de
+funcionamento do <code>GNU/Linux</code> com programas, daemons e recursos
+específicos.  Em geral, os sistemas <code>GNU/Linux</code> possuem sete níveis
+de execução numerados de 0 a 6.  O daemon <code>init</code> é o primeiro
+programa executado no <code>GNU/Linux</code> (veja através do <samp>ps ax|grep
+init</samp>) e responsável pela carga de todos daemons de inicialização e
+configuração do sistema.
+
+<p>
+O nível de execução padrão em uma distribuição <code>GNU/Linux</code> é
+definido através do arquivo de configuração do <code>/etc/inittab</code>
+através da linha
+
+<pre>
+     id:2:initdefault:
+</pre>
+
+<hr>
+
+<a name="s-deb-runlevels-e"></a>
+<h3>7.4.1 Entendendo o funcionamento dos níveis de execução do sistema (runlevels)</h3>
+
+<p>
+Os nível de execução atual do sistema pode ser visualizado através do comando
+<code>runlevel</code> e modificado através dos programas <code>init</code> ou
+<code>telinit</code>.  Quando é executado, o <code>runlevel</code> lê o arquivo
+<code>/var/run/utmp</code> e adicionalmente lista o nível de execução anterior
+ou a letra <samp>N</samp> em seu lugar (caso ainda não tenha ocorrido a mudança
+do nível de execução do sistema).
+
+<p>
+Na <code>Debian</code>, os diretórios <code>/etc/rc0.d</code> a
+<code>/etc/rc6.d</code> contém os links simbólicos para arquivos em
+<code>/etc/init.d</code> que são acionados pelo nível de execução
+correspondente.
+
+<p>
+Por exemplo, o arquivo <code>S10sysklogd</code> em <code>/etc/rc2.d</code>, é
+um link simbólico para <code>/etc/init.d/sysklogd</code>.
+
+<p>
+O que aconteceria se você removesse o arquivo
+<code>/etc/rc2.d/S10sysklogd</code>?  Simplesmente o daemon
+<code>sysklogd</code> deixaria de ser executado no nível de execução 2 do
+sistema (que é o padrão da <code>Debian</code>).
+
+<p>
+A <code>Debian</code> segue o seguinte padrão para definir se um link simbólico
+em <code>/etc/rc[0-6].d</code> iniciará ou interromperá a execução de um
+serviço em <code>/etc/init.d</code>, que é o seguinte:
+<ul>
+<li>
+Se um link é iniciado com a letra <samp>K</samp> (kill), quer dizer que o
+serviço será interrompido naquele nível de execução.  O que ele faz é executar
+o daemon em <code>/etc/init.d</code> seguido de <samp>stop</samp>.
+</li>
+<li>
+Se um link é iniciado com a letra <samp>S</samp> (start), quer dizer que o
+serviço será iniciado naquele nível de execução (é equivalente a executar o
+daemon seguido de <samp>start</samp>).
+</li>
+</ul>
+
+<p>
+Primeiro os links com a letra <samp>K</samp> são executado e depois os
+<samp>S</samp>.  A ordem que os links são executados dependem do valor numérico
+que acompanha o link, por exemplo, os seguintes arquivos são executados em
+seqüência:
+
+<pre>
+     S10sysklogd
+     S12kerneld
+     S20inetd
+     S20linuxlogo
+     S20logoutd
+     S20lprng
+     S89cron
+     S99xdm
+</pre>
+
+<p>
+Note que os arquivos que iniciam com o mesmo número (<samp>S20*</samp>) são
+executados alfabeticamente.  O nível de execução do sistema pode ser modificado
+usando-se o comando <code>init</code> ou <code>telinit</code>.  Os seguinte
+níveis de execução estão disponíveis na <code>Debian</code>:
+<ul>
+<li>
+<samp>0</samp> - Interrompe a execução do sistema.  todos os programas e
+daemons finalizados.  É acionado pelo comando <samp>shutdown -h</samp>
+</li>
+<li>
+<samp>1</samp> - Modo monousuário, útil para manutenção dos sistema.
+</li>
+<li>
+<samp>2</samp> - Modo multiusuário (padrão da Debian)
+</li>
+<li>
+<samp>3</samp> - Modo multiusuário
+</li>
+<li>
+<samp>4</samp> - Modo multiusuário
+</li>
+<li>
+<samp>5</samp> - Modo multiusuário com login gráfico
+</li>
+<li>
+<samp>6</samp> - Reinicialização do sistema.  Todos os programas e daemons são
+encerrados e o sistema é reiniciado.  É acionado pelo comando <samp>shutdown
+-r</samp> e o pressionamento de
+<samp>CTRL</samp>+<samp>ALT</samp>+<samp>DEL</samp>.
+</li>
+</ul>
+
+<p>
+Por exemplo, para listar o nível de execução atual do sistema digite:
+<samp>runlevel</samp>.  O <code>runlevel</code> deverá listar algo como:
+
+<pre>
+     N 2
+</pre>
+
+<p>
+Agora para mudar para o nível de execução 1, digite: <samp>init 3</samp>.
+Agora confira a mudança digitando: <samp>runlevel</samp>.  Você deverá ver este
+resultado:
+
+<pre>
+     2 3
+</pre>
+
+<p>
+Isto quer dizer que o nível de execução anterior era o <samp>2</samp> e o atual
+é o <samp>3</samp>.
+
+<hr>
+
+<a name="s-deb-rede"></a>
+<h2>7.5 Rede no sistema Debian</h2>
+
+<p>
+O local que contém as configurações de rede em um sistema <code>Debian</code> é
+o <code>/etc/network/interfaces</code>.
+
+<hr>
+
+<a name="s-deb-bts"></a>
+<h2>7.6 Bug tracking system</h2>
+
+<p>
+É o sistema para relatar bugs e enviar sugestões sobre a distribuição.  Para
+relatar um bug primeiro você deve saber inglês (é a língua universal entendida
+pelos desenvolvedores) e verificar se o bug já foi relatado.  O Debian <em>Bug
+tracking system</em> pode ser acessado pelo endereço: <code><a
+href="http://bugs.debian.org/">http://bugs.debian.org/</a></code>.
+
+<p>
+Para relatar uma falha/sugestão, envie um e-mail para: <code><a
+href="mailto:submit@bugs.debian.org">submit@bugs.debian.org</a></code>, com o
+assunto referente a falha/sugestão que deseja fazer e no corpo da mensagem:
+
+<pre>
+     Package: pacote
+     Severity: normal/grave/wishlist
+     Version: versão do pacote
+     
+     E o relato do problema
+</pre>
+
+<p>
+O bug será encaminhado diretamente ao mantenedor do pacote que verificará o
+problema relatado.  Os campos <samp>Package</samp> e <samp>Severity</samp> são
+obrigatórios para definir o nome do pacote (para endereçar o bug para a pessoa
+correta) e versão do pacote (esta falha pode ter sido relatada e corrigida em
+uma nova versão).
+
+<hr>
+
+<a name="s-deb-download"></a>
+<h2>7.7 Onde encontrar a Debian para Download?</h2>
+
+<p>
+No endereço <code><a
+href="ftp://ftp.debian.org/">ftp://ftp.debian.org/</a></code>.  Outros
+endereços podem ser obtidos na página oficial da <code>Debian</code> (<code><a
+href="http://www.debian.org/">http://www.debian.org/</a></code>) clicando no
+link <samp>Download</samp> e <samp>mirrors</samp>.
+
+<p>
+A distribuição Woody (3.0) completa, com 8710 pacotes ocupa em torno de 3.0 GB,
+(equivalente a 6 CDS de pacotes e mais 3 se quiser o código fonte).  Você
+também pode optar por fazer a instalação dos pacotes opcionais via Internet
+através do método apt.  Para detalhes veja o guia do dselect ou envie uma
+mensagem para a lista de discussão <code><a
+href="mailto:debian-user-portuguese@lists.debian.org">debian-user-portuguese@lists.debian.org</a></code>
+
+<hr>
+
+[ <a href="ch-log.html">anterior</a> ]
+[ <a href="index.html#contents">Conteúdo</a> ]
+[ <a href="ch-intro.html">1</a> ]
+[ <a href="ch-bas.html">2</a> ]
+[ <a href="ch-hardw.html">3</a> ]
+[ <a href="ch-rede.html">4</a> ]
+[ <a href="ch-cfgrede.html">5</a> ]
+[ <a href="ch-log.html">6</a> ]
+[ 7 ]
+[ <a href="ch-pers.html">8</a> ]
+[ <a href="ch-impr.html">9</a> ]
+[ <a href="ch-fw-iptables.html">10</a> ]
+[ <a href="ch-d-contas.html">11</a> ]
+[ <a href="ch-s-apache.html">12</a> ]
+[ <a href="ch-s-ident.html">13</a> ]
+[ <a href="ch-s-telnet.html">14</a> ]
+[ <a href="ch-s-ssh.html">15</a> ]
+[ <a href="ch-s-pop3.html">16</a> ]
+[ <a href="ch-s-cvs.html">17</a> ]
+[ <a href="ch-s-samba.html">18</a> ]
+[ <a href="ch-d-restr.html">19</a> ]
+[ <a href="ch-d-cripto.html">20</a> ]
+[ <a href="ch-apend.html">21</a> ]
+[ <a href="ch-pers.html">próximo</a> ]
+
+<hr>
+
+<p>
+Guia Foca GNU/Linux
+
+<address>
+Versão 6.40 - segunda, 30 de outubro de 2006<br>
+<br>
+Gleydson Mazioli da Silva <code><a href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</a></code><br>
+<br>
+</address>
+
+<hr>
+
+</body>
+
+</html>
+

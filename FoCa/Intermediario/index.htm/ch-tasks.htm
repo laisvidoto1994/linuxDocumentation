@@ -1,0 +1,451 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Guia Foca GNU/Linux - Executando tarefas diversas no Linux</title>
+
+</head>
+
+<body>
+
+<a name="ch-tasks"></a>
+<hr>
+
+[ <a href="ch-cfg.htm">anterior</a> ]
+[ <a href="index.htm#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ <a href="ch-hardw.htm">3</a> ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ <a href="ch-cmdd.htm">8</a> ]
+[ <a href="ch-cmd.htm">9</a> ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ <a href="ch-cmdc.htm">12</a> ]
+[ <a href="ch-perm.htm">13</a> ]
+[ <a href="ch-redir.htm">14</a> ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ <a href="ch-cpctd.htm">18</a> ]
+[ <a href="ch-deb.htm">19</a> ]
+[ <a href="ch-dpkg.htm">20</a> ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ <a href="ch-cfg.htm">23</a> ]
+[ 24 ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ <a href="ch-etc.htm">27</a> ]
+[ <a href="ch-inter.htm">28</a> ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ <a href="ch-apend.htm">32</a> ]
+[ <a href="ch-compil.htm">próximo</a> ]
+
+<hr>
+
+<h1>
+Guia Foca GNU/Linux
+<br>Capítulo 24 - Executando tarefas diversas no Linux
+</h1>
+
+<hr>
+
+<p>
+Este capítulo explica como realizar tarefas específicas no sistema, como gravar
+um CD, assistir filmes, etc.  Ele também contém nomes de programas recomendados
+tanto em modo texto como modo gráfico.
+
+<hr>
+
+<a name="s-tasks-cdwriting"></a>
+<h2>24.1 Gravando CDs no Linux</h2>
+
+<p>
+A gravação de CDs no <code>Linux</code> pode ser feita através dos programas
+<code>cdrecord</code> ou <code>CDRDAO</code>.  Neste capítulo vou explicar a
+gravação usando o <code>cdrecord</code> para gravar um CD de dados e audio.
+Primeiro instale o <code>cdrecord</code>, <code>mkisofs</code> e
+<code>cdda2wav</code> em sua máquina (<samp>apt-get install cdrecord mkisofs
+cdda2wav</samp>).
+
+<hr>
+
+<a name="s-tasks-cdwriting-data"></a>
+<h3>24.1.1 Gravando CDs de dados</h3>
+
+<p>
+O processo de gravação de um CD de dados é feito em 2 etapas: primeiro é gerado
+um arquivo ISO com o programa <code>mkisofs</code> que será a imagem exata do
+CD que será gravado e a gravação usando o <code>cdrecord</code>.  Caso ainda
+não tenha configurado seu gravador no <code>Linux</code> ou não tem certeza do
+seu funcionamento, veja <a
+href="ch-hardw.htm#s-hardw-cfgdisp-cdwritter">Configurando um gravador de CD no
+Linux, Seção 3.11.3</a>.
+
+<p>
+Vou assumir que os dados que deseja gravar estão no diretório
+<code>/dados</code>.  Primeiro gere o arquivo ISO:
+
+<pre>
+     cd /dados
+     mkisofs -r -o dados.iso -J -V&quot;CD_DADOS&quot; .
+</pre>
+
+<p>
+Na linha acima, você permite que todos possam ler o CD alterando as permissões
+(<samp>-r</samp>), o arquivo de saída será <code>dados.iso</code> (<samp>-o
+<code>dados.iso</code></samp>), os nomes também terão o índice no formato
+Joliet (<code>Windows</code>) (<samp>-J</samp>), o nome de volume será
+<em>CD_DADOS</em> (<samp>-V&quot;CD_DADOS&quot;</samp>).  Foi colocado
+<samp>.</samp> para o diretório raíz porque estamos dentro do diretório que
+queremos gravar dados.  Não us e &quot;*&quot; para especificar os arquivos, a
+não ser que queira que todos os arquivos do seus subdiretórios fiquem dentro do
+raíz do CD :-)
+
+<p>
+Antes de gravar você pode testar se o conteúdo do CD está OK montando a imagem
+ISO:
+
+<pre>
+     mkdir /tmp/iso
+     mount /dados/dados.iso /tmp/iso -o loop -t iso9660
+</pre>
+
+<p>
+Você poderá entrar no diretório <code>/tmp/iso</code> e ver como está o
+conteúdo do seu CD antes da gravação.  Qualquer modificação deverá ser feita no
+diretório <code>/dados</code> e depois gerar novamente o iso com
+<code>mkisofs</code>.  Desmonte o arquivo ISO antes de gravar o CD.
+
+<p>
+Agora, execute o comando:
+
+<pre>
+     cdrecord -v -dev=0,0,0 -data /dados/dados.iso
+</pre>
+
+<p>
+Para gravar seu CD.  O <samp>-v</samp> mostra a progressão da gravação, o
+número passado como argumento a <samp>-dev</samp> é obtido pelo comando
+<samp>cdrecord -scanbus</samp>, a opção <samp>-data</samp> especifica o arquivo
+iso que contém os dados que serão gravados.
+
+<p>
+Após isto seu CD estará gravado e pronto para uso.
+
+<hr>
+
+<a name="s-tasks-cdwriting-audio"></a>
+<h3>24.1.2 Gravando um CD de audio</h3>
+
+<p>
+A gravação de um CD de audio se divide em 2 etapas: Extração das trilhas de
+audio para um diretório em formato <var>wav</var> e a gravação.  Após inserir o
+CD de audio na unidade, a extração é feita pelo programa <code>cdda2wav</code>
+da seguinte forma:
+
+<pre>
+     mkdir /audio
+     cd /audio
+     cdda2wav -x -D/dev/cdrom -d99999 -S4 -Owav -B audio
+</pre>
+
+<p>
+A opção <samp>-x</samp> extrai usando máxima qualidade,
+<samp>-D/dev/cdrom</samp> diz qual é o dispositivo onde o CD de audio está
+inserido, <samp>-d99999</samp> diz a duração total da extração (99999 é um
+valor que garante a extração de TODO o CD), <samp>-S4</samp> diz que a
+velocidade de extração será de 4X, a <samp>-B audio</samp> diz para criar
+arquivos contendo as faixas seqüencialmente como <code>audio01.wav</code>,
+<code>audio02.wav</code>, etc.
+
+<p>
+Após extrair, você deverá executar o comando:
+
+<pre>
+     cdrecord -v -dev=0,0,0 -dao -useinfo *.wav
+</pre>
+
+<p>
+O comando acima usa o dispositivo gravador 0,0,0 (<samp>cdrecord
+-scanbus</samp>) para fazer a gravação do CD de audio.  O formato usado é o DAO
+(<samp>-dao</samp>), o que garante que não haverá intervalo entre as faixas de
+CD, útil em CDs ao vivo e que os arquivos <code>*.inf</code> contendo os dados
+das faixas serão usados para controlar a duração de cada uma (-useinfo *.wav).
+
+<p>
+Se você quer gravar uma seleção de arquivos <code>.wav</code> ou
+<code>.cdr</code>, será preciso faze-lo em modo TAO (track at once), mantendo a
+pausa de 2 segundos entre as músicas.  Isto é feito pelo comando:
+
+<pre>
+     cdrecord -v -dev=0,0,0 -pad -audio *.wav
+</pre>
+
+<p>
+Estamos dizendo para o <code>cdrecord</code> gravar diversos arquivos de audio
+(<samp>-audio *.wav</samp>) e preencher os intervalos dos arquivos de audio com
+zeros (<samp>-pad</samp>) pois nem sempre os arquivos tem o múltiplo de setores
+requeridos para a gravação de arquivos de audio.
+
+<hr>
+
+<a name="s-tasks-cdwriting-cdcd"></a>
+<h3>24.1.3 Cópia de CD para CD</h3>
+
+<p>
+A cópia de CD de dados para outro é feita em duas etapas: A extração do arquivo
+ISO e a gravação do CD.  Esse recurso é útil pela economia de tempo que
+proporciona e porque mantém características especiais do CD como setores de
+boot (para CDs de instalação).
+
+<p>
+Primeiro, extraia o conteúdo do CD em format raw com o comando:
+
+<pre>
+     dd if=/dev/cdrom of=/dados/arquivo.iso
+</pre>
+
+<p>
+Confira se no final o número de bytes conferem, isso diz que a extração foi
+feita com sucesso.  O parâmetro <samp>if=</samp> indica o arquivo de entrada e
+<samp>of=</samp> o arquivo de saída.  Depois disso grave o CD com o comando:
+
+<pre>
+     cdrecord -v -dev=0,0,0 -data /dados/dados.iso
+</pre>
+
+<p>
+Veja a explicação dos parâmetros em <a href="#s-tasks-cdwriting-data">Gravando
+CDs de dados, Seção 24.1.1</a>.  Note que você também poderá gravar o CD usando
+o comando <code>dd</code>:
+
+<pre>
+     dd if=/dados/arquivo.iso of=/dev/sr0
+</pre>
+
+<hr>
+
+<a name="s-tasks-cdwriting-massivewrite"></a>
+<h3>24.1.4 Gravação massiva de CDs</h3>
+
+<p>
+Isso é feito pelo programa <code>cdcontrol</code> que permite a gravação de CDs
+paralelamente, sendo bastante útil para gerar CDs para install fests,
+distribuições comerciais em massa.  Ele mantém um relatório de CDs totais por
+unidade de disco e também de falhas, também permite a cópia de CDs de
+inicialização.  Ele está disponível em <code><a
+href="http://cdcontrol.sourceforge.net/">http://cdcontrol.sourceforge.net/</a></code>.
+Ele também está disponível como pacote <code>.deb</code> (<samp>apt-get install
+cdcontrol</samp>).
+
+<hr>
+
+<a name="s-tasks-cdwriting-cdfrommp3"></a>
+<h3>24.1.5 Gravação de CDs diretamente através de arquivos mp3 ou Ogg</h3>
+
+<p>
+Utilize o aplicativo <code>mp3burn</code> para fazer isto.  Por exemplo:
+
+<pre>
+     mp3burn -o &quot;-v -dev=0,0,0&quot; *.mp3
+</pre>
+
+<p>
+A opção <samp>-o</samp> indica as opções que devem ser passadas ao
+<code>cdrecord</code>.  A opção <samp>-audio</samp> e <samp>-pad</samp> são
+adicionadas automaticamente.
+
+<hr>
+
+<a name="s-tasks-cdwriting-backupcd"></a>
+<h3>24.1.6 Backup de dados para 1 ou mais CDs</h3>
+
+<p>
+O programa <code>multicd</code> é a ferramenta que permite esta função.
+
+<hr>
+
+<a name="s-tasks-cdwriting-graphicapps"></a>
+<h3>24.1.7 Aplicações gráficas para gravação de CDs</h3>
+
+<p>
+Os seguintes aplicativos são interfaces gráficas e amigáveis que usam o
+<code>cdrecord</code>, <code>cdda2wav</code> e <code>mkisofs</code> para fazer
+a gravação de seus CDs.  Normalmente eles acrescentam uma carga maior para a
+máquina, mas se você gosta de uma interface amigável para fazer as coisas, ter
+animações, etc.  o preço que paga é a performance :-)
+
+<p>
+Entre os principais programas, destaco os seguintes: <code>cdrtoaster</code>,
+<code>cdbakeoven</code>, <code>kreatecd</code>, <code>gcombust</code>.
+
+<hr>
+
+<a name="s-tasks-cdwriting-cover"></a>
+<h3>24.1.8 Fazendo a capa de frente e verso do CD</h3>
+
+<p>
+Capas de frente e verso podem ser produzidas com o <code>cdlabelgen</code>.
+
+<hr>
+
+<a name="s-tasks-cdwriting-rundivx"></a>
+<h2>24.2 Executando vídeos DIVX</h2>
+
+<p>
+O programa mais recomendado é o <code>mplayer</code>.  Após instalar, execute o
+comando: <samp>mplayer -framedrop -vo xv arquivo.avi</samp>.  A opção
+<samp>-framedrop</samp> diz ao <code>mplayer</code> pular frames que ele não
+conseguir exibir (útil em sistemas que tem CPU lenta).
+
+<p>
+O <code>gmplayer</code> é a interface gráfica do <code>mplayer</code> e aceita
+todos os seus parâmetros.
+
+<hr>
+
+<a name="s-tasks-cdwriting-rundivx-sub"></a>
+<h3>24.2.1 Colocando legendas nos filmes</h3>
+
+<p>
+Para adicionar legendas em um filme Divx sendo executado pelo
+<code>mplayer</code>, baixe a fonte de caracteres da legenda de <code><a
+href="http://mplayer.sourceforge.net/">http://mplayer.sourceforge.net/</a></code>
+e a descompacte dentro de <code>~/.mplayer</code>.  Serão criados vários
+diretórios contendo fontes de tamanhos específicos.  Escolha qual deseja
+utilizar e faça um link para o diretório <code>~/.mplayer/font</code> com o
+comando <code>ln</code>.
+
+<hr>
+
+<a name="s-tasks-rundvd"></a>
+<h2>24.3 Assistindo DVDs</h2>
+
+<p>
+Para assistir filmes em DVD recomendo os seguintes programas:
+<code>ogle</code>, <code>xine</code> e <code>mplayer</code>.  Lembre-se de
+fazer um link de <code>/dev/dvd</code> para seu dispositivo leitor de DVD antes
+de executar um destes programas.
+
+<hr>
+
+<a name="s-tasks-wavtomp3"></a>
+<h2>24.4 Convertendo músicas no formato wav para mp3</h2>
+
+<p>
+A conversão é explicada aqui usando o programa <code>bladeenc</code>.  Você
+pode baixa-lo de <code><a
+href="http://bladeenc.mp3.no/">http://bladeenc.mp3.no/</a></code>.  O
+<code>bladeenc</code> foi o escolhido por apresentar a melhor performance e
+qualidade para conversão da músicas, que é importante para quem tem máquinas
+menos potentes e processamento leve é valioso para você :-)
+
+<p>
+A conversão é feita da seguinte forma:
+
+<pre>
+     bladeenc -progress=4 -del *.wav
+</pre>
+
+<p>
+A opção <samp>-del</samp> diz para apagar os arquivos <code>.wav</code> a
+medida que são convertidos e <samp>-progress=4</samp> para mostrar uma barra de
+progresso total e outra do arquivo que está sendo processado.
+
+<hr>
+
+<a name="s-tasks-mp3cdr"></a>
+<h2>24.5 Convertendo músicas do formato mp3 para cdr</h2>
+
+<p>
+Esta conversão necessária quando deseja gravar um CD de audio a partir de uma
+seleção de músicas MP3.  As explicações aqui são baseadas no programa
+<code>mpg123</code>, que pode ser instalado com <samp>apt-get install
+mpg123</samp>.  Execute o seguinte comando para fazer a conversão:
+
+<pre>
+     mpg123 --cdr - arquivo.mp3 &gt;arquivo.cdr
+</pre>
+
+<p>
+Para fazer a conversão de todos os arquivos <code>mp3</code> dentro de um
+diretório, use o comando:
+
+<pre>
+     for MUSICA in *.mp3; do
+      mpg123 --cdr - &quot;$MUSICA&quot; &gt;&quot;${VAR}.cdr&quot;
+     done
+</pre>
+
+<p>
+Após feita a conversão de músicas necessárias para completar um CD (normalmente
+600MB), vá até <a href="#s-tasks-cdwriting-audio">Gravando um CD de audio,
+Seção 24.1.2</a>.
+
+<hr>
+
+[ <a href="ch-cfg.htm">anterior</a> ]
+[ <a href="index.htm#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ <a href="ch-hardw.htm">3</a> ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ <a href="ch-cmdd.htm">8</a> ]
+[ <a href="ch-cmd.htm">9</a> ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ <a href="ch-cmdc.htm">12</a> ]
+[ <a href="ch-perm.htm">13</a> ]
+[ <a href="ch-redir.htm">14</a> ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ <a href="ch-cpctd.htm">18</a> ]
+[ <a href="ch-deb.htm">19</a> ]
+[ <a href="ch-dpkg.htm">20</a> ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ <a href="ch-cfg.htm">23</a> ]
+[ 24 ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ <a href="ch-etc.htm">27</a> ]
+[ <a href="ch-inter.htm">28</a> ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ <a href="ch-apend.htm">32</a> ]
+[ <a href="ch-compil.htm">próximo</a> ]
+
+<hr>
+
+<p>
+Guia Foca GNU/Linux
+
+<address>
+Versão 5.45 - segunda, 30 de outubro de 2006<br>
+<br>
+Gleydson Mazioli da Silva <code><a href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</a></code><br>
+<br>
+</address>
+
+<hr>
+
+</body>
+
+</html>
+

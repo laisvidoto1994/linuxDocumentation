@@ -1,0 +1,565 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Guia Foca GNU/Linux - Configuração do sistema</title>
+
+</head>
+
+<body>
+
+<a name="ch-cfg"></a>
+<hr>
+
+[ <a href="ch-impr.htm">anterior</a> ]
+[ <a href="index.htm#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ <a href="ch-hardw.htm">3</a> ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ <a href="ch-cmdd.htm">8</a> ]
+[ <a href="ch-cmd.htm">9</a> ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ <a href="ch-cmdc.htm">12</a> ]
+[ <a href="ch-perm.htm">13</a> ]
+[ <a href="ch-redir.htm">14</a> ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ <a href="ch-cpctd.htm">18</a> ]
+[ <a href="ch-deb.htm">19</a> ]
+[ <a href="ch-dpkg.htm">20</a> ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ 23 ]
+[ <a href="ch-tasks.htm">24</a> ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ <a href="ch-etc.htm">27</a> ]
+[ <a href="ch-inter.htm">28</a> ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ <a href="ch-apend.htm">32</a> ]
+[ <a href="ch-tasks.htm">próximo</a> ]
+
+<hr>
+
+<h1>
+Guia Foca GNU/Linux
+<br>Capítulo 23 - Configuração do sistema
+</h1>
+
+<hr>
+
+<p>
+Este capítulo traz explicações sobre algumas configurações úteis que podem ser
+feitas no sistema.  Neste documento assumimos que o kernel do seus sistema já
+possui suporte a página de código 860 (Portuguesa) e o conjunto de caracteres
+<samp>ISO-8859-1</samp>.
+
+<hr>
+
+<a name="s-cfg-acentuacao"></a>
+<h2>23.1 Acentuação</h2>
+
+<p>
+Permite que o <code>GNU/Linux</code> use a acentuação.  A acentuação do modo
+texto é independente do modo gráfico; você pode configurar tanto um como o
+outro ou ambos.  Para maiores detalhes veja <a
+href="#s-cfg-acentuacao-t">Acentuação em modo Texto, Seção 23.1.1</a> e/ou <a
+href="#s-cfg-acentuacao-g">Acentuação em modo gráfico, Seção 23.1.2</a>.
+
+<p>
+Note que os mapas de teclado usados em modo texto são diferentes dos usados em
+modo gráfico.  Geralmente os mapas de teclados para o modo gráfico tem uma
+letra <samp>X</samp> no nome.
+
+<hr>
+
+<a name="s-cfg-acentuacao-t"></a>
+<h3>23.1.1 Acentuação em modo Texto</h3>
+
+<p>
+Caso sua distribuição <code>Debian</code> esteja acentuando corretamente no
+modo texto você não precisará ler esta seção.  Antes de prosseguir, verifique
+se você possui o pacote <code>kbd</code> ou <code>console-data</code> instalado
+em seu sistema com o comando: <samp>dpkg -l kbd</samp>.  Caso não existam,
+alguns programas de configuração e arquivos de fontes não estarão disponíveis.
+
+<p>
+Siga os passos abaixo para colocar e acentuação em funcionamento para o modo
+Texto na <code>Debian</code>:
+<dl>
+<dt><em>Mapa de Teclados</em></dt>
+<dd>
+<dl>
+<dt>Debian 2.2 (Potato)</dt>
+<dd>
+Verifique se possui o arquivo de <em>mapa de teclado</em> correspondente ao seu
+modelo.  Um mapa de teclado são arquivos com a extensão <code>.map</code> ou
+<code>.kmap</code> que fazem a tradução do código enviado pelo teclado para um
+caracter que será exibido na tela além de outras funções como o &quot;Dead
+Keys&quot; (pressionamento de uma tecla que não gera nenhum caracter mas
+afetará o próximo caracter gerado - como na acentuação, quando você aperta o
+<samp>'</samp> não aparece nada mas após apertar a letra <samp>A</samp> um
+caracter <samp>Á</samp> é exibido.  A combinação <samp>'</samp> +
+<samp>A</samp> é um <em>Dead Key</em> e está definido no arquivo do mapa de
+teclados).
+<p>
+Os tipos de teclados mais usados aqui no Brasil são o <em>padrão EUA</em> e o
+<em>ABNT2</em>.  O teclado <em>padrão EUA</em> é o modelo usado nos Estados
+Unidos e você precisará apertar <samp>'</samp>+<samp>C</samp> para gerar um
+<em>Cedilha (ç)</em>, enquanto o teclado ABNT2 possui todas as teclas usadas no
+Brasil (semelhante a uma máquina de escrever) e o <em>Cedilha</em> possui sua
+própria tecla após a letra <samp>L</samp>.  O mapa de teclados correspondente
+ao teclado <em>padrão EUA</em> é o <code>br-latin1</code> enquanto o
+<em>ABNT2</em> é o <code>br-abnt2</code>.
+<p>
+Se não tiver o arquivo correspondente ao seu teclado ou não encontra-lo, você
+poderá copia-lo de <code><a
+href="http://www.guiafoca.org/download/outros/Consolemaps_tar.gz">http://www.guiafoca.org/download/outros/Consolemaps_tar.gz</a></code>,
+este arquivo possui 3 mapas de teclados para os 2 teclados Brasileiros mais
+usados e um de Portugal (raramente usado no Brasil).  Descompacte o arquivo
+<code>Consolemaps_tar.gz</code> para um local em seu sistema (por exemplo:
+<code>/tmp</code>) com o comando: <samp>tar -xzvf Consolemaps_tar.gz</samp>.
+Note que este arquivo serve somente para a configuração no modo texto
+(console), veja a seção seguinte para configurar a acentuação no modo gráfico.
+</dd>
+<dt>Debian 3.0 (Woody)</dt>
+<dd>
+Digite <samp>dpkg-reconfigure console-data</samp>.  Após a tela inicial,
+selecione a opção <samp>Select Keymap from Arch List</samp>,
+<samp>qwerty</samp> e selecione os passos seguintes de acordo com seu tipo de
+teclado:
+<ul>
+<li>
+<samp>Us Internacional</samp> - Selecione <samp>US American</samp> na lista de
+opções e em seguida <samp>Standard</samp> e <samp>US International
+(ISO-8859-1)</samp>.
+</li>
+<li>
+<samp>ABNT2 (com cedilha)</samp> - Selecione <samp>Brazilian</samp> na lista de
+opções.
+</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt><em>Configurando o Mapa de Teclados</em></dt>
+<dd>
+Se o arquivo do mapa de teclados possuir a extensão <code>.gz</code>,
+descompacte-o com o comando: <samp>gzip -dc
+<em>arquivo.gz</em>&gt;/etc/kbd/default.map</samp> ou <samp>gzip -d
+<em>arquivo.gz</em></samp> para descompactar e depois o comando <samp>cp
+<em>arquivo.kmap</em> /etc/kbd/default</samp>.
+
+<p>
+Se o arquivo possuir a extensão <code>.tar.gz</code>, descompacte-o com o
+comando: <samp>tar -zxvf <em>arquivo.tar.gz</em></samp> e depois use o comando
+<samp>cp <em>arquivo.kmap</em> /etc/kbd/default</samp>.
+
+<p>
+Faça isto substituindo <em>arquivo.gz</em> ou <em>arquivo.tar.gz</em> com o
+nome do arquivo compactado que contém o mapa de teclados.
+
+<p>
+Você pode manter o arquivo <code>/etc/kbd/default.map.gz</code>, pois este
+arquivo é lido pelos scripts de inicialização da <code>Debian</code> somente se
+o arquivo <code>/etc/kbd/default.map</code> não for encontrado.
+
+<p>
+Se desejar usar o comando <samp>loadkeys</samp>, você precisa copiar o mapa de
+teclados para um local conhecido no sistema, então copie o arquivo
+<code>arquivo.kmap</code> para <code>/usr/share/keymaps/i386/qwerty</code> (em
+sistemas Debian) ou algum outro local apropriado.  Note que o arquivo pode ser
+compactado pelo <code>gzip</code> e copiado para
+<code>/usr/share/keymaps/i386/qwerty</code> que será lido sem problemas pelo
+sistema encarregado de configurar o teclado e acentuação.
+</dd>
+</dl>
+<dl>
+<dt><em>Configurando a fonte de Tela</em></dt>
+<dd>
+Descomente a linha <samp>CONSOLE_FONT=iso01.f16</samp> e modifique-a para
+<samp>CONSOLE_FONT=lat1u-16.psf</samp> no arquivo <code>/etc/kbd/config</code>.
+
+<p>
+Esta linha diz ao sistema que <em>fonte</em> deve carregar para mostrar os
+caracteres na tela.  A fonte de caracteres deve ser compatível com o idioma
+local, pois nem todas suportam caracteres acentuados.  A fonte preferível para
+exibir os caracteres acentuados é a <code>lat1u-16</code>, o <code>-16</code>
+no nome do arquivo significa o tamanho da fonte.  As fontes de tela estão
+disponíveis no diretório <code>/usr/share/consolefonts</code>.
+
+<p>
+Neste ponto você pode verificar se o seu sistema esta reconhecendo corretamente
+a acentuação entrando no editor de textos <code>ae</code> e digitando:
+<samp>áãâà</samp>.  Se todos os acentos apareceram corretamente, parabéns!
+você já passou pela parte mais difícil.  Agora o próximo passo é a acentuação
+no <code>Bash</code>.
+</dd>
+</dl>
+<dl>
+<dt><em>Acentuação no aviso de comando (<code>bash</code>)</em></dt>
+<dd>
+Para acentuar no <code>Bash</code> (interpretador de comandos) é necessário
+alterar o arquivo <code>/etc/inputrc</code> e fazer as seguintes modificações:
+<ol type="1" start="1" >
+<li>
+Descomente a linha: <samp>&quot;#set convert-meta off&quot;</samp> você faz
+isto apagando o símbolo &quot;#&quot; antes do nome.
+
+<p>
+Um comentário faz com que o programa ignore linha(s) de comando.  É muito útil
+para descrever o funcionamento de comandos/programas (você vai encontrar muito
+isso no sistema <code>GNU/Linux</code>, tudo é muito bem documentado).
+</li>
+</ol>
+<ol type="1" start="2" >
+<li>
+Inclua a seguinte linha no final do arquivo:
+
+<p>
+set meta-flag on
+</li>
+</ol>
+<ol type="1" start="3" >
+<li>
+O conteúdo deste arquivo deve ficar assim:
+
+<pre>
+     set convert-meta off
+     set input-meta on
+     set output-meta on
+</pre>
+</li>
+</ol>
+<ol type="1" start="4" >
+<li>
+Digite <samp>exit</samp> ou pressione <samp>CTRL</samp>+<samp>D</samp> para
+fazer o logout.  Entre novamente no sistema para que as alterações façam
+efeito.
+</li>
+</ol>
+</dd>
+</dl>
+
+<p>
+Pronto!  você já esta acentuando em modo texto!.  Talvez seja necessário que
+faça alguma alteração em arquivos de configuração de outros programas para que
+possa acentuar corretamente (veja se existe algum arquivo com o nome
+correspondente ao programa no diretório <code>/etc</code>).
+
+<p>
+A distribuição <code>Debian</code> também traz o utilitário
+<code>kbdconfig</code> que também faz a configuração do mapa de teclados de
+forma interativa e gravando automaticamente o mapa de teclados em
+<code>/etc/kbd/default.map.gz</code>.  Se preferir usar o
+<code>kbdconfig</code> ainda será necessário executar os passos acima para
+habilitação da fonte <code>lat1u-16</code> e acentuação no <code>bash</code>.
+
+<hr>
+
+<a name="s-cfg-acentuacao-g"></a>
+<h3>23.1.2 Acentuação em modo gráfico</h3>
+
+<p>
+A acentuação no modo gráfico é feita de maneira simples:
+<dl>
+<dt><em>Mapa de Teclados</em></dt>
+<dd>
+Verifique se possui o arquivo de mapa de teclado para o modo gráfico que
+corresponde ao seu teclado.  Um arquivo de mapa de teclado faz a tradução do
+código enviado pelo teclado para um caracter que será exibido na tela.  Este
+tipo de arquivo é identificado com a extensão <code>.map</code>.  Se não tiver
+este arquivo ou não encontra-lo, você pode copia-lo de <code><a
+href="http://www.guiafoca.org/download/outros/Xmodmaps_tar.gz">http://www.guiafoca.org/download/outros/Xmodmaps_tar.gz</a></code>,
+este arquivo possui 3 mapas de teclados para os 2 teclados Brasileiros mais
+usados e um de Portugal.  Descompacte o arquivo <code>Xmodmaps_tar.gz</code>
+para um local em seu sistema (por exemplo: <code>/tmp</code>) com o comando:
+<samp>tar -xzvf Xmodmaps-tar.gz</samp>.  Note que os mapas de teclado do
+<code>Xmodmaps_tar.gz</code> somente servem para a configuração no modo gráfico
+(X-Window).
+</dd>
+</dl>
+<dl>
+<dt><em>Acentuação no X</em></dt>
+<dd>
+Para acentuar no X você precisará descompactar e copiar o arquivo de mapa de
+teclado adequado ao seu computador em cima do arquivo
+<code>/etc/X11/Xmodmap</code> que já está em seu sistema.  No meu caso, eu usei
+o seguinte comando (após descompactar o arquivo): <samp>&quot;cp
+<code>Xmodmap.us+</code> <code>/etc/X11/Xmodmap</code>&quot;</samp>.  Agora
+você precisa reiniciar o servidor X para que as alterações façam efeito (ou
+digite <samp>xmodmap /etc/X11/Xmodmap</samp> no <code>xterm</code> para aplicar
+as alterações na seção atual).
+
+<p>
+Os passos descritos até aqui funcionarão para pessoas que iniciam o X pelo
+prompt (usando o comando <samp>startx</samp>, <samp>xinit</samp>, etc), veja o
+passo seguinte para acentuar pelo <code>XDM</code>.
+</dd>
+</dl>
+<dl>
+<dt><em>Acentuação no XDM</em></dt>
+<dd>
+Para acentuar no <code>XDM</code>, inclua as seguintes linhas no arquivo
+<code>/etc/X11/xdm/Xsetup_0</code>:
+
+<pre>
+     sysmodmap=/etc/X11/Xmodmap
+     
+     if [ -r $sysmodmap ]; then
+      xmodmap $sysmodmap
+     fi
+</pre>
+</dd>
+</dl>
+
+<hr>
+
+<a name="s-cfg-cores"></a>
+<h2>23.2 Número de Cores do ambiente gráfico</h2>
+
+<p>
+O número de cores do ambiente gráfico pode ser alterado facilmente.  Por
+padrão, a maioria das instalações e distribuições <code>GNU/Linux</code> vem
+com apenas 16 cores (4 bits) porque é um número de cores suportado por qualquer
+placa de vídeo, sem modificações especiais.
+
+<p>
+A configuração de mais de 16 cores exige que você tenha escolhido o modelo
+correto de sua placa de vídeo (usando o programa <code>xf86config</code> (na
+Debian 2.2) ou digitando <samp>dpkg-reconfigure xserver-svga</samp> (na Debian
+3.0)).  Por exemplo, minha placa de vídeo é uma <samp>Trident 9680</samp> na
+tela de seleção do programa <code>xf86config</code> eu escolhi <samp>Trident
+9680 Generic</samp> (código 671 no servidor X 3.3.6) que é o driver que permite
+o uso de todas as cores permitidas por esta placa e também usar os recursos de
+aceleração que ela oferece.  Você pode utilizar o programa
+<code>xviddetect</code> para obter o modelo de sua placa de vídeo e o servidor
+X correspondente a ela, basta digitar <samp>xviddetect</samp> na linha de
+comando.  O comando <samp>dpkg-reconfigure xserver-svga</samp> da Debian 3.0
+(Woody) é mais flexível e possui uma facilidade maior de configuração,
+inclusive auto-detectando seu chipset de vídeo e configurando seu monitor de
+acordo com o tamanho da tela (em polegadas).
+
+<p>
+Com uma configuração correta é possível atingir até 32 bits de cores (pocket
+pixel) no X.  A configuração do X utiliza o <em>número de bits</em> ao invés do
+número de cores na sua configuração.  Abaixo uma tabela comparativa:
+
+<pre>
+       Bits      Número Max. Cores  Memória mínima requerida na Placa de Vídeo
+     -------     -----------------  -----------------------------------------
+      4 bits         16 cores                          256Kb
+      8 bits        256 cores                          512Kb
+     16 bits      32.384/65536 cores                   1MB
+     24 bits      16 milhões de cores (pixel menor)    1MB
+     32 bits      16 milhões de cores                  1MB
+</pre>
+
+<p>
+Lembre-se que a tabela acima leva em consideração a resolução de vídeo de
+640x480.  Caso utilizar uma resolução de 800x600, 1024x768 ou superior, os
+requerimentos de <em>memória de vídeo</em> para mostrar o número de cores da
+tabela acima serão maiores.  Para mostrar 1024x768 - 16 milhões de cores serão
+necessários 2MB de memória de vídeo, por exemplo.  A resolução de 24 bits
+normalmente traz problemas em alguns chipsets, considere a utilização da
+resolução de 16 ou 32 bits.
+
+<p>
+O uso de uma resolução de vídeo como 800x600 ou superior, também depende do
+monitor de vídeo.  Nem todos os monitores VGA e SVGAs do mercado suportam
+resoluções acima de 640x480.
+
+<p>
+OBS: Se tiver escolha, prefira placas de vídeo independentes da placa mãe.
+Normalmente as placas de vídeo on-board usam parte da memória RAM como memória
+de vídeo (memória compartilhada) e isto diminui a performance de vídeo e a
+performance do sistema porque se você estiver usando 2MB de memória de vídeo,
+terá 2 MB a menos para executar seus programas.  O preço destas placas
+geralmente diminui na proporção do desempenho que oferecem.
+
+<p>
+Uma boa escolha para uma melhor qualidade e maior velocidade é <em>16
+bits</em>.  O motivo disto é que quanto maior a qualidade e a resolução, mais
+tempo será levado para os pixels serem atualizados no monitor.  Veja abaixo
+como configurar o número de cores para quem esta iniciando o X-Window pelo modo
+texto e <code>XDM</code>.
+
+<hr>
+
+<a name="s-cfg-cores-t"></a>
+<h3>23.2.1 Configurando o número de cores para quem inicia pelo prompt</h3>
+
+<p>
+Após configurar corretamente a resolução de vídeo aceita pelo seu servidor X
+com <code>xf86config</code> ou <samp>dpkg-reconfigure xserver-svga</samp>
+(Debian 3.0) use o comando <samp>startx -- -bpp 8</samp> no lugar de
+<samp>startx</samp>.  Note que estou usando 256 cores como exemplo (veja a
+tabela acima), se quiser usar mais cores e sua placa de vídeo tiver memória
+suficiente, use 16, 24 ou 32.  Os usuários de distribuições baseadas na
+<code>Debian 2.2</code> também tem o <code>anXious</code> (um programa em
+linguagem <code>Perl</code>) que permite fazer a configuração no modo texto
+através de menus.  Para a Debian 3.0 (Woody) o comando <samp>dpkg-reconfigure
+xserver-svga</samp> é o mais fácil e rápido, ele detecta sua placa de vídeo e
+configura seu monitor de acordo com o tamanho de tela, além de permitir
+configurações detalhadas se selecionar a opção &quot;Avançado&quot; de
+configuração.
+
+<p>
+Uma maneira mais prática de iniciar sempre com uma mesma resolução é incluir um
+<code>alias</code> no arquivo <code>.bashrc</code> em seu diretório:
+<samp>alias startx='startx -- -bpp 8'</samp>
+
+<p>
+Desta forma toda a vez que se digitar <samp>startx</samp>, será executado o
+comando da direita do sinal de igual.
+
+<p>
+OBS: Se alguma coisa der errado e a imagem aparecer distorcida ou simplesmente
+não aparecer, não se desespere!  Pressione simultaneamente <samp>CTRL+ALT+Back
+Space</samp>, esta é a combinação de teclas finaliza imediatamente o servidor
+X.
+
+<hr>
+
+<a name="s-cfg-configurando-g"></a>
+<h3>23.2.2 Configurando o número de cores para quem inicia pelo XDM</h3>
+
+<p>
+Assumindo que o seu arquivo <code>/etc/X11/XF86Config</code> foi gerado
+corretamente, modifique o arquivo <code>/etc/X11/xdm/Xservers</code> e alterar
+o final da linha colocando <samp>-bpp resolução</samp>.  Por exemplo, a última
+linha de meu arquivo <code>Xservers</code> era:
+
+<pre>
+     :0 local /usr/bin/X11/X vt7 
+     
+      eu a modifiquei para 
+     
+     :0 local /usr/bin/X11/X vt7 -bpp 16
+</pre>
+
+<p>
+Pronto, basta reiniciar o servidor X (usando <samp>CTRL+ALT+Back Space</samp>)
+ou reiniciando através do arquivo <code>/etc/init.d/xdm</code> usando <samp>xdm
+restart</samp> e seu sistema passará a usar 65.000 cores de vídeo.
+
+<p>
+OBS: Lembre-se de salvar todos os seus arquivos antes de reiniciar o servidor
+X, pois todos os programas que estiverem abertos no sistema serão imediatamente
+fechados.
+
+<hr>
+
+<a name="s23.2.3"></a>
+<h3>23.2.3 Ajustando o alinhamento da imagem no X e outras configurações</h3>
+
+<p>
+Após você ter criado o arquivo de configuração do X com o
+<code>xf86config</code> (modo texto), <samp>dpkg-reconfigure
+xserver-svga</samp> ou <code>XF86Setup</code> (modo gráfico), é possível que a
+configuração precise de um ajuste fino para o alinhamento correto da imagem no
+monitor.  Muitos monitores modernos possuem teclas para esta função, mas desde
+que monitor esteja com sua imagem aparecendo corretamente em modo texto, o
+ajuste deverá ser feito no servidor X.  Este ajuste é feito através do
+utilitário <code>xvidtune</code>.
+
+<p>
+Entre no modo gráfico como usuário <samp>root</samp>, abra o <code>xterm</code>
+e digite <samp>xvidtune</samp> uma tela aparecerá com um aviso sobre o uso do
+programa, clique em <code>OK</code>.  Recomendo que ative o botão
+<samp>AUTO</samp> para que a tela vá se ajustando na medida que você mexe nos
+ajustes.
+
+<p>
+Para restaurar a configuração anterior, pressione o botão <samp>Restore</samp>
+(não faz efeito caso o botão <samp>Apply</samp> tenha sido pressionado).
+Clicando em <samp>Quit</samp>, você sai do <code>xvidtune</code> sem salvar a
+configuração.  Quando estiver satisfeito com a sua configuração/alinhamento da
+imagem, clique em <samp>Apply</samp>, a configuração escolhida estará salva.
+
+<hr>
+
+<a name="s23.2.4"></a>
+<h3>23.2.4 Sobre o número de cores para jogos que funcionam no X</h3>
+
+<p>
+A maioria dos jogos se recusam a funcionam com uma quantidade de cores maior do
+que 8 bits.  Se você instalar algum jogo e ao tentar executa-lo simplesmente
+não acontecer nada ou mostrar uma mensagem de erro, modifique o número de cores
+para 8 bits, provavelmente o problema estará ai.
+
+<p>
+Lembre-se: Quanto mais cores usar e maior for sua resolução, mais lento ficará
+a velocidade de vídeo.  Por este motivo alguns jogos se recusam a funcionar com
+mais de 8 bits de cores.
+
+<hr>
+
+[ <a href="ch-impr.htm">anterior</a> ]
+[ <a href="index.htm#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ <a href="ch-hardw.htm">3</a> ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ <a href="ch-cmdd.htm">8</a> ]
+[ <a href="ch-cmd.htm">9</a> ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ <a href="ch-cmdc.htm">12</a> ]
+[ <a href="ch-perm.htm">13</a> ]
+[ <a href="ch-redir.htm">14</a> ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ <a href="ch-cpctd.htm">18</a> ]
+[ <a href="ch-deb.htm">19</a> ]
+[ <a href="ch-dpkg.htm">20</a> ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ 23 ]
+[ <a href="ch-tasks.htm">24</a> ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ <a href="ch-etc.htm">27</a> ]
+[ <a href="ch-inter.htm">28</a> ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ <a href="ch-apend.htm">32</a> ]
+[ <a href="ch-tasks.htm">próximo</a> ]
+
+<hr>
+
+<p>
+Guia Foca GNU/Linux
+
+<address>
+Versão 5.45 - segunda, 30 de outubro de 2006<br>
+<br>
+Gleydson Mazioli da Silva <code><a href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</a></code><br>
+<br>
+</address>
+
+<hr>
+
+</body>
+
+</html>
+

@@ -1,0 +1,569 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: =?iso-8859-1?Q?Guia_Foca_GNU/Linux_-_Ap=EAndice?=
+Date: Mon, 6 Aug 2007 11:19:15 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-apend.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Ap=EAndice</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-apend></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ 32 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 32 - Ap=EAndice </H1>
+<HR>
+
+<P>Este cap=EDtulo cont=E9m considera=E7=F5es sobre o guia Foca =
+GNU/Linux.=20
+<HR>
+<A name=3Ds-apend-sobre></A>
+<H2>32.1 Sobre este guia</H2>
+<P>Esta guia foi criado com a inten=E7=E3o de servir como refer=EAncia a =
+usu=E1rios=20
+<EM>Intermedi=E1rios</EM> que j=E1 conhecem o b=E1sico sobre o =
+funcionamento deste=20
+sistema operacional e j=E1 est=E3o acostumados com os comandos, =
+execu=E7=E3o de=20
+programas e diret=F3rios, ou com refer=EAncia de consulta r=E1pida.=20
+<P>A vers=E3o que esta lendo agora foi gerada com as seguintes =
+op=E7=F5es:=20
+<UL>
+  <LI>Descri=E7=E3o detalhada de comandos=20
+  <LI>Op=E7=F5es usadas em comandos e programas=20
+  <LI>Observa=E7=F5es=20
+  <LI>Exemplos para a melhor compreens=E3o do assunto discutido. =
+</LI></UL>
+<P>e cont=E9m o(s) n=EDvel(is) de aprendizado (Iniciante, =
+Intermedi=E1rio e Avan=E7ado):=20
+
+<UL>
+  <LI>Intermedi=E1rio </LI></UL>
+<P>O <EM>Foca GNU/Linux</EM> =E9 atualizado freq=FCentemente, por este =
+motivo=20
+recomendo que preencha a ficha do aviso de atualiza=E7=F5es na p=E1gina =
+web em=20
+<CODE><A href=3D"http://www.guiafoca.org/">P=E1gina Oficial do guia Foca =
+
+GNU/Linux</A></CODE> no fim da p=E1gina principal. Ap=F3s preencher a =
+ficha do aviso=20
+de atualiza=E7=F5es, eu te enviarei um e-mail sobre o lan=E7amento de =
+novas vers=F5es do=20
+guia e o que foi modificado, desta forma voc=EA poder=E1 decidir em =
+copia-la caso a=20
+nova vers=E3o cont=E9m modifica=E7=F5es que considera importantes.=20
+<P>Vers=F5es diferentes deste guia podem ser geradas a partir do =
+c=F3digo fonte SGML=20
+ou obtidas atrav=E9s da home page principal (para detalhes veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm#s-apend-homepage">Onde=20
+encontrar a vers=E3o mais nova do guia?, Se=E7=E3o 32.4</A>).=20
+<HR>
+<A name=3Ds-apend-autor></A>
+<H2>32.2 Sobre o Autor</H2>
+<P>Gleydson Mazili da Silva =E9 Capixaba, nascido em Vila Velha, tem 25 =
+anos.=20
+Amante de eletr=F4nica desde crian=E7a, foi atraido para a inform=E1tica =
+atrav=E9s da=20
+curiosidade em hardware, n=E3o demorando muito para recupera-los ou =
+especificar=20
+corretamente dimensionamento e outras caracter=EDsticas.=20
+<P>Se dedica ao sistema <CODE>Linux</CODE> desde 1997. Curioso por =
+natureza e=20
+determinado a testar ferramentas a fundo avaliando pontos fortes e =
+fracos de=20
+cada uma. Logo que iniciou em <CODE>Linux</CODE> passou a estudar =
+exaustivamente=20
+aspectos t=E9cnicos de distribui=E7=F5es e rede em =
+<CODE>Linux</CODE>/<CODE>BSD</CODE>=20
+e largando de vez o Windows (que s=F3 usava para rodar mais de uma =
+se=E7=E3o DOS e ter=20
+rede na m=E1quina).=20
+<P>Entre coisas que gosta de fazer/implementar em <CODE>Linux</CODE>:=20
+possibilidade de pesquisa e atualiza=E7=E3o de conhecimento constante, =
+n=EDveis de=20
+seguran=E7a da informa=E7=E3o (tanto f=EDsico e l=F3gico), firewalls, =
+redes virtuais,=20
+integra=E7=E3o de sistemas, forense computacional, documenta=E7=E3o de =
+processos,=20
+desenvolvimento de ferramentas GPL para a comunidade, depura=E7=E3o, =
+hacks baseados=20
+em sniffing para facilitar a vida dos outros, desenvolvimento de =
+documenta=E7=F5es,=20
+etc.=20
+<P>Um dos desenvolvedores da distribui=E7=E3o <EM>Liberdade</EM>, =
+<EM>CAETECT</EM>,=20
+<EM>Debian-BR</EM> e desenvolvedor oficial da distribui=E7=E3o =
+<EM>Debian</EM>.=20
+Atuou como tradutor do LDP-BR, traduzindo v=E1rios HOW-TOs importantes =
+para a=20
+comunidade Linux Brasileira. =C9 um dos administradores do projeto =
+CIPSGA,=20
+cuidando de uma infinidade de servi=E7os que o projeto oferece a =
+comunidade que=20
+deseja estrutura para hospedar, fortalecer e manter projetos em software =
+livre.=20
+<P>Trabalhou para algumas empresas do Esp=EDrito Santo na =
+implanta=E7=E3o de sistemas=20
+em software livre e seu =FAltimo trabalho foi atuando como consultor em =
+servidores=20
+GNU/Linux para a compania e processamento de dados de Campinas (IMA), =
+sediada no=20
+CPQD.=20
+<P>N=E3o concorda totalmente com certifica=E7=F5es, acreditando que a =
+pessoa deva tem=20
+em mente procurar pontos fracos quando notar dificuldade na =
+avalia=E7=E3o e=20
+melhora-los. Mesmo assim possui certifica=E7=E3o LPI n=EDvel 2 e um =
+ISO9001=20
+internacional, obtendo 2o lugar no ranking Brasileiro.=20
+<HR>
+<A name=3Ds-apend-ref></A>
+<H2>32.3 Refer=EAncias de aux=EDlio ao desenvolvimento do guia</H2>
+<UL>
+  <LI>As se=E7=F5es sobre comandos/programas foram constru=EDdas ap=F3s =
+uso, teste e=20
+  observa=E7=E3o das op=E7=F5es dos comandos/programas, help on line, =
+p=E1ginas de manual,=20
+  info pages e documenta=E7=E3o t=E9cnica do sistema.=20
+  <LI>How-tos do Linux (principalmente o <EM>Networking Howto</EM>,=20
+  <EM>Security-Howto</EM>) ajudaram a formar a base de desenvolvimento =
+do guia e=20
+  desenvolver algumas se=E7=F5es (vers=F5es <EM>Intermedi=E1rio</EM> e =
+<EM>Avan=E7ado</EM>=20
+  somente).=20
+  <LI>Todos os exemplos e se=E7=F5es descritivas do guia s=E3o de minha =
+autoria.=20
+  <LI>Manual de Instala=E7=E3o da <EM>Debian GNU/Linux</EM> - Os =
+cap=EDtulos contendo=20
+  materiais extra=EDdos do manual de instala=E7=E3o da Debian s=E3o =
+muito =FAteis e=20
+  explicativos, seria desnecess=E1rio reescrever um material como este. =
+O texto =E9=20
+  claro e didaticamente organizado, o documento aborda detalhes =
+t=E9cnicos =FAteis=20
+  sobre hardwares em geral e o Linux ausentes nos manuais de outras=20
+  distribui=E7=F5es Linux. </LI></UL>
+<HR>
+<A name=3Ds-apend-homepage></A>
+<H2>32.4 Onde encontrar a vers=E3o mais nova do guia?</H2>
+<P>Novas vers=F5es deste guia, avisos de lan=E7amento, outros n=EDveis =
+de aprendizado=20
+(Iniciante, Intermedi=E1rio e Avan=E7ado), vers=F5es para outras =
+distribui=E7=F5es Linux=20
+podem ser encontradas em: <CODE><A =
+href=3D"http://www.guiafoca.org/">P=E1gina=20
+Oficial do guia Foca GNU/Linux</A></CODE>.=20
+<P>Se quiser receber notifica=E7=F5es de novas vers=F5es por E-Mail, =
+envie uma=20
+mensagem para <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE> =
+pedindo=20
+para ser inclu=EDdo na lista de atualiza=E7=F5es do guia ou preencha o =
+formul=E1rio=20
+encontrado no final da Home Page do guia (recomendado).=20
+<HR>
+<A name=3Ds-apend-colaboradores></A>
+<H2>32.5 Colaboradores do Guia</H2>
+<P>Entre as principais colabora=E7=F5es at=E9 a vers=E3o atual, posso =
+citar as=20
+seguintes:=20
+<UL>
+  <LI><SAMP>Djalma Valois <CODE><A=20
+  =
+href=3D"mailto:djalma@cipsga.org.br">djalma@cipsga.org.br</A></CODE></SAM=
+P> -=20
+  Pela recente hospedagem do Foca GNU/Linux. Estou muito feliz vendo o =
+Foca=20
+  GNU/Linux fazendo parte de um projeto t=E3o positivo como o CIPSGA =E9 =
+para o=20
+  crescimento e desenvolvimento do software livre nacional. </LI></UL>
+<UL>
+  <LI><SAMP>Bakurih <CODE><A=20
+  href=3D"mailto:bakurih@yahoo.com">bakurih@yahoo.com</A></CODE></SAMP> =
+- Revis=E3o=20
+  inicial do documento. </LI></UL>
+<UL>
+  <LI><SAMP>Eduardo Marcel Ma=E7an <CODE><A=20
+  href=3D"mailto:macan@debian.org">macan@debian.org</A></CODE></SAMP> - =
+Pela=20
+  antiga hospedagem na p=E1gina do metainfo. </LI></UL>
+<UL>
+  <LI><SAMP>Michelle Ribeiro <CODE><A=20
+  =
+href=3D"mailto:michelle@cipsga.org.br">michelle@cipsga.org.br</A></CODE><=
+/SAMP>=20
+  - Por dispensar parte de seu atencioso tempo enviando revis=F5es e =
+sugest=F5es que=20
+  est=E3o melhorando bastante a qualidade do guia. Entre eles detalhes =
+que=20
+  passaram despercebidos durante muito tempo no guia e p=E1gina =
+principal.=20
+  <P>E tamb=E9m por cuidar do fonte do guia ;-) </P></LI></UL>
+<UL>
+  <LI><SAMP>Augusto Campos <CODE><A=20
+  =
+href=3D"mailto:brain@matrix.com.br">brain@matrix.com.br</A></CODE></SAMP>=
+ -=20
+  Descri=E7=E3o sobre a distribui=E7=E3o <CODE>Suse</CODE> . </LI></UL>
+<UL>
+  <LI><SAMP>Paulo Henrique Baptista de Oliveira <CODE><A=20
+  =
+href=3D"mailto:baptista@linuxsolutions.com.br">baptista@linuxsolutions.co=
+m.br</A></CODE></SAMP>=20
+  - Pelo apoio moral oferecido durante os freq=FCentes lan=E7amentos do =
+guia,=20
+  acompanhamento e divulga=E7=E3o. </LI></UL>
+<UL>
+  <LI><SAMP>Diego Abadan <CODE><A=20
+  =
+href=3D"mailto:diego@hipernet.ufsc.br">diego@hipernet.ufsc.br</A></CODE><=
+/SAMP>=20
+  - Envio de corre=E7=F5es significativas, novos endere=E7os de listas =
+de discuss=E3o.=20
+  </LI></UL>
+<UL>
+  <LI><SAMP>Alexandre Costa <CODE><A=20
+  =
+href=3D"mailto:alebyte@bol.com.br">alebyte@bol.com.br</A></CODE></SAMP> =
+- Envio=20
+  de centenas de patches ortogr=E1ficos nas vers=F5es Iniciante e =
+Intermedi=E1rio do=20
+  guia que passaram desapercebidas durante v=E1rias vers=F5es do guia... =
+</LI></UL>
+<UL>
+  <LI><SAMP>Christoph Simon <CODE><A=20
+  =
+href=3D"mailto:ciccio@prestonet.com.br">ciccio@prestonet.com.br</A></CODE=
+></SAMP>=20
+  - Pela pesquisa e a gigantesca colet=E2nea de textos sobre o Linux =
+enviada. Eles=20
+  est=E3o sendo muito =FAteis tanto para mim quanto no desenvolvimento =
+do guia.=20
+</LI></UL>
+<UL>
+  <LI><SAMP>Gustavo Noronha <CODE><A=20
+  href=3D"mailto:dockov@zaz.com.br">dockov@zaz.com.br</A></CODE></SAMP> =
+- Vem=20
+  enviando freq=FCentes corre=E7=F5es, contribui=E7=F5es construtivas ao =
+desenvolvimento=20
+  al=E9m de apoio ao desenvolvimento do guia . Vale a pena destaca-lo =
+por sua=20
+  atual dedica=E7=E3o junto a distribui=E7=E3o Debian/GNU, sua =
+tradu=E7=E3o e a comunidade=20
+  Open Source. </LI></UL>
+<UL>
+  <LI><SAMP>Pedro Zorzenon Neto <CODE><A=20
+  href=3D"mailto:pzn@debian.org">pzn@debian.org</A></CODE></SAMP> - =
+Envio de=20
+  diversas atualiza=E7=F5es para o n=EDvel Avan=E7ado, principalmente =
+sobre o firewall=20
+  iptables. </LI></UL>
+<HR>
+<A name=3Ds-apend-mr></A>
+<H2>32.6 Marcas Registradas</H2>
+<P>Todas as marcas registradas citadas neste guia s=E3o propriedades de =
+seus=20
+respectivos autores.=20
+<HR>
+<A name=3Ds-apend-new></A>
+<H2>32.7 Futuras vers=F5es</H2>
+<P>Estes s=E3o os materiais que pretendo adicionar em futuras vers=F5es =
+do guia:=20
+<UL>
+  <LI>Acrescentar mais detalhes sobre o sistema gr=E1fico X-Window. =
+</LI></UL>
+<UL>
+  <LI>Entre outros =EDtens que venho estudando para verificar se =
+encaixam no=20
+  perfil do guia. </LI></UL>
+<P>Esta =E9 uma futura implementa=E7=E3o que venho estudando para =
+acompanhar o=20
+crescimento do guia. Sugest=F5es s=E3o bem vindas e podem ser enviadas =
+para <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE>.=20
+<HR>
+<A name=3Ds-apend-pgp></A>
+<H2>32.8 Chave P=FAblica PGP</H2>
+<P>Chaves PGP s=E3o usadas para criptografar arquivos, e-mails ou =
+qualquer outra=20
+coisa que desejamos que somente uma pessoa tenha acesso. O PGP segue o =
+padr=E3o de=20
+chave p=FAblica/privada; a chave p=FAblica =E9 distribu=EDda a todos e a =
+chave privada=20
+permanece na posse do criador para que ele seja o =FAnico a ter acesso =
+aos dados=20
+criptografados ap=F3s digitar a "frase de acesso" correta.=20
+<P>Minha chave PGP segue abaixo, ela tamb=E9m pode ser encontrada em =
+<CODE><A=20
+href=3D"http://pgp.ai.mit.edu/">http://pgp.ai.mit.edu/</A></CODE>. Se =
+voc=EA deseja=20
+saber mais sobre o PGP, recomendo um excelente documento encontrado na =
+se=E7=E3o=20
+<SAMP>Apostilas</SAMP> em <CODE><A=20
+href=3D"http://www.cipsga.org.br/">http://www.cipsga.org.br/</A></CODE> =
+<PRE>     -----BEGIN PGP PUBLIC KEY BLOCK-----
+     Version: GnuPG v1.0.6 (GNU/Linux)
+     Comment: For info see http://www.gnupg.org
+    =20
+     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3D
+     =3DbvnT
+     -----END PGP PUBLIC KEY BLOCK-----
+</PRE>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ 32 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

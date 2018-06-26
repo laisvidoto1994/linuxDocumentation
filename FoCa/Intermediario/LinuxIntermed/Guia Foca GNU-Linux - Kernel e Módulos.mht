@@ -1,0 +1,1109 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: =?iso-8859-1?Q?Guia_Foca_GNU/Linux_-_Kernel_e_M=F3dulos?=
+Date: Mon, 6 Aug 2007 11:32:42 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-kern.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Kernel e M=F3dulos</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-kern></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ 16 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 16 - Kernel e M=F3dulos </H1>
+<HR>
+
+<P>Este cap=EDtulo descreve em detalhes o que =E9 o kernel, m=F3dulos, =
+sua=20
+configura=E7=E3o e programas relacionados.=20
+<HR>
+<A name=3Ds-kern-kernel></A>
+<H2>16.1 O Kernel</H2>
+<P>=C9 o sistema operacional (o <CODE>Linux</CODE>), =E9 ele que =
+controla os=20
+dispositivos e demais perif=E9ricos do sistema (como mem=F3ria, placas =
+de som,=20
+v=EDdeo, discos r=EDgidos, disquetes, sistemas de arquivos, redes e =
+outros recursos=20
+dispon=EDveis). Muitos confundem isto e chamam a distribui=E7=E3o de =
+sistema=20
+operacional. Isto =E9 errado!=20
+<P>O <EM>kernel</EM> faz o controle dos perif=E9ricos do sistema e para =
+isto ele=20
+deve ter o seu suporte inclu=EDdo. Para fazer uma placa de som <EM>Sound =
+
+Blaster</EM> funcionar, por exemplo, =E9 necess=E1rio que o kernel =
+ofere=E7a suporte a=20
+este placa e voc=EA deve configurar seus par=E2metros (como =
+interrup=E7=E3o, I/O e DMA)=20
+com comandos espec=EDficos para ativar a placa e faze-la funcionar =
+corretamente.=20
+Existe um documento que cont=E9m quais s=E3o os perif=E9ricos =
+suportados/ n=E3o=20
+suportados pelo <CODE>GNU/Linux</CODE>, ele se chama=20
+<SAMP>Hardware-HOWTO</SAMP>.=20
+<P>Suas vers=F5es s=E3o identificadas por n=FAmeros como 2.0.36, 2.0.38, =
+2.1.10,=20
+2.2.12, as vers=F5es que cont=E9m um n=FAmero par entre o primeiro e =
+segundo ponto s=E3o=20
+vers=F5es est=E1veis e que cont=E9m n=FAmeros =EDmpares neste mesmo =
+local s=E3o vers=F5es=20
+inst=E1veis (em desenvolvimento). Usar vers=F5es inst=E1veis n=E3o quer =
+dizer que=20
+ocorrer=E1 travamentos ou coisas do tipo, mas algumas partes do kernel =
+podem n=E3o=20
+estar testadas o suficiente ou alguns controladores podem ainda estar=20
+incompletos para obter pleno funcionamento. Se opera sua m=E1quina em um =
+ambiente=20
+cr=EDtico, prefira pegar vers=F5es est=E1veis do kernel.=20
+<P>Ap=F3s inicializar o sistema, o kernel e seus arquivos podem ser =
+acessados ou=20
+modificados atrav=E9s do ponto de montagem <CODE>/proc</CODE>. Para =
+detalhes veja=20
+<A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-proc">O=20
+sistema de arquivos <CODE>/proc</CODE>, Se=E7=E3o 5.8</A>.=20
+<P>Caso voc=EA tenha um dispositivo (como uma placa de som) que tem =
+suporte no=20
+<CODE>GNU/Linux</CODE> mas n=E3o funciona veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-suporte">Como=20
+adicionar suporte a Hardwares e outros dispositivos no kernel, Se=E7=E3o =
+16.3</A>.=20
+<HR>
+<A name=3Ds-kern-modulos></A>
+<H2>16.2 M=F3dulos</H2>
+<P>S=E3o partes do kernel que s=E3o carregadas somente quando s=E3o =
+solicitadas por=20
+algum aplicativo ou dispositivo e descarregadas da mem=F3ria quando =
+n=E3o s=E3o mais=20
+usadas. Este recurso =E9 =FAtil por 2 motivos: Evita a constru=E7=E3o de =
+um kernel=20
+grande (est=E1tico) que ocupe grande parte da mem=F3ria com todos os =
+drivers=20
+compilados e permite que partes do kernel ocupem a mem=F3ria somente =
+quando forem=20
+necess=E1rios.=20
+<P>Os m=F3dulos do kernel est=E3o localizados no diret=F3rio=20
+<CODE>/lib/modules/vers=E3o_do_kernel/*</CODE> (onde =
+<SAMP>vers=E3o_do_kernel</SAMP>=20
+=E9 a vers=E3o atual do kernel em seu sistema, caso seja =
+<SAMP>2.2.10</SAMP> o=20
+diret=F3rio que cont=E9m seus m=F3dulos ser=E1 =
+<CODE>/lib/modules/2.2.10</CODE>.=20
+<P>Os m=F3dulos s=E3o carregados automaticamente quando solicitados =
+atrav=E9s do=20
+programa <CODE>kmod</CODE> ou manualmente atrav=E9s do arquivo=20
+<CODE>/etc/modules</CODE> , <CODE>insmod</CODE> ou =
+<CODE>modprobe</CODE>.=20
+Aten=E7=E3o: N=E3o compile o suporte ao seu sistema de arquivos ra=EDz =
+como m=F3dulo, isto=20
+o tornar=E1 inacess=EDvel.=20
+<HR>
+<A name=3Ds-kern-suporte></A>
+<H2>16.3 Como adicionar suporte a Hardwares e outros dispositivos no =
+kernel</H2>
+<P>Quando seu hardware n=E3o funciona mas voc=EA tem certeza que =E9 =
+suportado pelo=20
+<CODE>GNU/Linux</CODE>, =E9 preciso seguir alguns passos para faze-lo =
+funcionar=20
+corretamente:=20
+<UL>
+  <LI>Verifique se o kernel atual foi compilado com suporte ao seu =
+dispositivo.=20
+  Tamb=E9m =E9 poss=EDvel que o suporte ao dispositivo esteja compilado =
+como m=F3dulo.=20
+  D=EA o comando <SAMP>dmesg</SAMP> para ver as mensagens do kernel =
+durante a=20
+  inicializa=E7=E3o e verifique se aparece alguma coisa referente ao =
+dispositivo que=20
+  deseja instalar (alguma mensagem de erro, etc). Caso n=E3o aparecer =
+nada =E9=20
+  poss=EDvel que o driver esteja compilado como m=F3dulo, para verificar =
+isto entre=20
+  no diret=F3rio <CODE>/lib/modules/versao_do_kernel</CODE> e veja se =
+encontra o=20
+  m=F3dulo correspondente ao seu dispositivo (o m=F3dulo da placa <EM>NE =
+2000</EM>=20
+  tem o nome de <CODE>ne.o</CODE> e o da placa <EM>Sound Blaster</EM> de =
+
+  <CODE>sb.o</CODE>, por exemplo).=20
+  <P>Caso o kernel n=E3o tiver o suporte ao seu dispositivo, voc=EA =
+precisar=E1=20
+  recompilar seu kernel ativando seu suporte. Veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-recompilando">Recompiland=
+o=20
+  o Kernel, Se=E7=E3o 16.11</A>. </P></LI></UL>
+<UL>
+  <LI>Caso seu hardware esteja compilado no kernel, verifique se o =
+m=F3dulo=20
+  correspondente est=E1 carregado (com o comando <CODE>lsmod</CODE>). =
+Caso n=E3o=20
+  estiver, carregue-o com o <CODE>modprobe</CODE> (por exemplo, =
+<SAMP>modprobe=20
+  sb io=3D0x220 irq=3D5 dma=3D1 dma16=3D5 mpuio=3D0x330</SAMP>), para =
+detalhes veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-modprobe">modprobe,=20
+  Se=E7=E3o 16.8</A>.=20
+  <P>O uso deste comando dever=E1 ativar seu hardware imediatamente, =
+neste caso=20
+  configure o m=F3dulo para ser carregado automaticamente atrav=E9s do =
+programa=20
+  <CODE>modconf</CODE> ou edite os arquivos relacionados com os =
+m=F3dulos (veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-arquivos">Arquivos=20
+  relacionados com o Kernel e M=F3dulos, Se=E7=E3o 16.12</A>). Caso =
+n=E3o tenha sucesso,=20
+  ser=E1 retornada uma mensagem de erro. </P></LI></UL>
+<HR>
+<A name=3Ds-kern-kmod></A>
+<H2>16.4 kmod</H2>
+<P>Este =E9 o programa usado para carregar os m=F3dulos automaticamente =
+quando s=E3o=20
+requeridos pelo sistema. Ele =E9 um daemon que funciona constantemente =
+fazendo a=20
+monitora=E7=E3o, quando verifica que algum dispositivo ou programa =
+est=E1 solicitando=20
+o suporte a algum dispositivo, ele carrega o m=F3dulo correspondente.=20
+<P>Ele pode ser desativado atrav=E9s da recompila=E7=E3o do kernel, =
+dando um=20
+<CODE>kill</CODE> no processo ou atrav=E9s do arquivo =
+<CODE>/etc/modules</CODE>=20
+(veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-arquivos-modules">/etc/mo=
+dules,=20
+Se=E7=E3o 16.12.1</A>. Caso seja desativado, =E9 preciso carregar =
+manualmente os=20
+m=F3dulos atrav=E9s do <CODE>modprobe</CODE> ou <CODE>insmod</CODE>.=20
+<HR>
+<A name=3Ds-kern-lsmod></A>
+<H2>16.5 lsmod</H2>
+<P>Lista quais m=F3dulos est=E3o carregados atualmente pelo kernel. O =
+nome=20
+<SAMP>lsmod</SAMP> =E9 uma contra=E7=E3o de =
+<SAMP>ls</SAMP>+<SAMP>m=F3dulos</SAMP> -=20
+Listar M=F3dulos. A listagem feita pelo <CODE>lsmod</CODE> =E9 uma =
+alternativa ao=20
+uso do comando <SAMP>cat /proc/modules</SAMP>.=20
+<P>A sa=EDda deste comando tem a seguinte forma: <PRE>     Module        =
+    Size  Pages    Used by
+     nls_iso8859_1     8000      1          1 (autoclean)
+     nls_cp437         3744      1          1 (autoclean)
+     ne                6156      2          1
+     8390              8390      2     [ne] 0
+</PRE>
+<P>A coluna <EM>Module</EM> indica o nome do m=F3dulo que est=E1 =
+carregado, a coluna=20
+<EM>Used</EM> mostra qual m=F3dulos est=E1 usando aquele recurso. O =
+par=E2metro=20
+<EM>(autoclean)</EM> no final da coluna indica que o m=F3dulo foi =
+carregado=20
+manualmente (pelo <CODE>insmod</CODE> ou <CODE>modprobe</CODE>) ou =
+atrav=E9s do=20
+<CODE>kmod</CODE> e ser=E1 automaticamente removido da mem=F3ria quando =
+n=E3o for mais=20
+usado.=20
+<P>No exemplo acima os m=F3dulos <EM>ne</EM> e <EM>8390</EM> n=E3o tem o =
+par=E2metro=20
+<EM>(autoclean)</EM> porque foram carregados pelo arquivo=20
+<CODE>/etc/modules</CODE> (veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-arquivos-modules">/etc/mo=
+dules,=20
+Se=E7=E3o 16.12.1</A>). Isto significa que n=E3o ser=E3o removidos da =
+mem=F3ria caso=20
+estiverem sem uso.=20
+<P>Qualquer m=F3dulo carregado pode ser removido manualmente atrav=E9s =
+do comandos=20
+<CODE>rmmod</CODE>.=20
+<HR>
+<A name=3Ds-kern-insmod></A>
+<H2>16.6 insmod</H2>
+<P>Carrega um m=F3dulo manualmente. Para carregar m=F3dulos que dependem =
+de outros=20
+m=F3dulos para que funcionem, voc=EA duas op=E7=F5es: Carregar os =
+m=F3dulos manualmente ou=20
+usar o <CODE>modprobe</CODE> que verifica e carrega as depend=EAncias=20
+correspondentes.=20
+<P>A sintaxe do comando =E9: <SAMP>insmod [<EM>m=F3dulo</EM>]=20
+[<EM>op=E7=F5es_m=F3dulo</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT>m=F3dulo=20
+  <DD>=C9 o nome do m=F3dulo que ser=E1 carregado.=20
+  <DT>op=E7=F5es_m=F3dulo=20
+  <DD>Op=E7=F5es que ser=E3o usadas pelo m=F3dulo. Variam de m=F3dulo =
+para m=F3dulo, alguns=20
+  precisam de op=E7=F5es outros n=E3o, tente primeiro carregar sem =
+op=E7=F5es, caso seja=20
+  mostrada uma mensagem de erro verifique as op=E7=F5es usadas por ele. =
+Para=20
+  detalhes sobre que op=E7=F5es s=E3o suportadas por cada m=F3dulo, veja =
+a sua=20
+  documenta=E7=E3o no c=F3digo fonte do kernel em=20
+  <CODE>/usr/src/linux/Documentation</CODE> </DD></DL>
+<P>Exemplo: <SAMP>insmod ne io=3D0x300 irq=3D10</SAMP>=20
+<HR>
+<A name=3Ds-kern-rmmod></A>
+<H2>16.7 rmmod</H2>
+<P>Remove m=F3dulos carregados no kernel. Para ver os nomes dos =
+m=F3dulos atualmente=20
+carregados no kernel digite <SAMP>lsmod</SAMP> e verifique na primeira =
+coluna o=20
+nome do m=F3dulo. Caso um m=F3dulo tenha depend=EAncias e voc=EA tentar =
+remover suas=20
+depend=EAncias, uma mensagem de erro ser=E1 mostrada alertando que o =
+m=F3dulo est=E1 em=20
+uso.=20
+<P>Exemplo: <SAMP>rmmod ne</SAMP>=20
+<HR>
+<A name=3Ds-kern-modprobe></A>
+<H2>16.8 modprobe</H2>
+<P>Carrega um m=F3dulo e suas depend=EAncias manualmente. Este comando =
+permite=20
+carregar diversos m=F3dulos e depend=EAncias de uma s=F3 vez. O =
+comportamento do=20
+<CODE>modprobe</CODE> =E9 modificado pelo arquivo =
+<CODE>/etc/modules.conf</CODE> .=20
+
+<P>A sintaxe deste comando =E9: <SAMP>modprobe [<EM>m=F3dulo</EM>]=20
+[<EM>op=E7=F5es_m=F3dulo</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT>m=F3dulo=20
+  <DD>=C9 o nome do m=F3dulo que ser=E1 carregado.=20
+  <DT>op=E7=F5es_m=F3dulo=20
+  <DD>Op=E7=F5es que ser=E3o usadas pelo m=F3dulo. Variam de m=F3dulo =
+para m=F3dulo, alguns=20
+  precisam de op=E7=F5es outros n=E3o, tente primeiro carregar sem =
+op=E7=F5es, caso seja=20
+  mostrada uma mensagem de erro verifique as op=E7=F5es usadas por ele. =
+Para=20
+  detalhes sobre que op=E7=F5es s=E3o suportadas por cada m=F3dulo, veja =
+a sua=20
+  documenta=E7=E3o no c=F3digo fonte do kernel em=20
+  <CODE>/usr/src/linux/Documentation</CODE> </DD></DL>
+<P>Nem todos os m=F3dulos s=E3o carregados corretamente pelo =
+<CODE>modprobe</CODE>,=20
+o <CODE>plip</CODE>, por exemplo, mostra uma mensagem sobre porta I/O =
+inv=E1lida=20
+mas n=E3o caso seja carregado pelo <CODE>insmod</CODE>.=20
+<P>Exemplo: <SAMP>modprobe ne io=3D0x300 irq=3D10</SAMP>, <SAMP>modprobe =
+sb io=3D0x220=20
+irq=3D5 dma=3D1 dma16=3D5 mpuio=3D0x330</SAMP>=20
+<HR>
+<A name=3Ds-kern-depmod></A>
+<H2>16.9 depmod</H2>
+<P>Verifica a depend=EAncia de m=F3dulos. As depend=EAncias dos =
+m=F3dulos s=E3o=20
+verificadas pelos scripts em <CODE>/etc/init.d</CODE> usando o comando=20
+<SAMP>depmod -a</SAMP> e o resultado gravado no arquivo=20
+<CODE>/lib/modules/versao_do_kernel/modules.dep</CODE>. Esta checagem =
+serve para=20
+que todas as depend=EAncias de m=F3dulos estejam corretamente =
+dispon=EDveis na=20
+inicializa=E7=E3o do sistema. O comportamento do <CODE>depmod</CODE> =
+pode ser=20
+modificado atrav=E9s do arquivo <CODE>/etc/modules.conf</CODE> . =C9 =
+poss=EDvel criar=20
+a depend=EAncia de m=F3dulos imediatamente ap=F3s a compila=E7=E3o do =
+kernel digitando=20
+<SAMP>depmod -a [<EM>vers=E3o_do_kernel</EM>]</SAMP>.=20
+<P>Exemplo: <SAMP>depmod -a</SAMP>=20
+<HR>
+<A name=3Ds-kern-modconf></A>
+<H2>16.10 modconf</H2>
+<P>Este programa permite um meio mais f=E1cil de configurar a =
+ativa=E7=E3o de m=F3dulos=20
+e op=E7=F5es atrav=E9s de uma interface atrav=E9s de menus. Selecione a =
+categoria de=20
+m=F3dulos atrav=E9s das setas acima e abaixo e pressione enter para =
+selecionar os=20
+m=F3dulos existentes. Ser=E3o pedidas as op=E7=F5es do m=F3dulo (como =
+DMA, IRQ, I/O) para=20
+que sua inicializa=E7=E3o seja poss=EDvel, estes par=E2metros s=E3o =
+espec=EDficos de cada=20
+m=F3dulo e devem ser vistos na documenta=E7=E3o do c=F3digo fonte do =
+kernel no diret=F3rio=20
+<CODE>/usr/src/linux/Documentation</CODE>. Note que tamb=E9m existem =
+m=F3dulos com=20
+auto-detec=E7=E3o mas isto deixa o sistema um pouco mais lento, porque =
+ele far=E1 uma=20
+varredura na faixa de endere=E7os especificados pelo m=F3dulo para achar =
+o=20
+dispositivo. As op=E7=F5es s=E3o desnecess=E1rias em alguns tipos de =
+m=F3dulos.=20
+<P>As modifica=E7=F5es feitas por este programa s=E3o gravadas no =
+diret=F3rio=20
+<CODE>/etc/modutils</CODE> em arquivos separados como=20
+<CODE>/etc/modutils/alias</CODE> - alias de m=F3dulos,=20
+<CODE>/etc/modutils/modconf</CODE> - op=E7=F5es usadas por m=F3dulos,=20
+<CODE>/etc/modutils/paths</CODE> - Caminho onde os m=F3dulos do sistema =
+s=E3o=20
+encontrados. Dentro de <CODE>/etc/modutils</CODE> =E9 ainda encontrado =
+um=20
+sub-diret=F3rio chamado <CODE>arch</CODE> que cont=E9m op=E7=F5es =
+espec=EDficas por=20
+arquiteturas.=20
+<P>A sincroniza=E7=E3o dos arquivos gerados pelo <CODE>modconf</CODE> =
+com o=20
+<CODE>/etc/modules.conf</CODE> =E9 feita atrav=E9s do utilit=E1rio=20
+<CODE>update-modules</CODE>. Ele =E9 normalmente executado ap=F3s =
+modifica=E7=F5es nos=20
+m=F3dulos feitas pelo <CODE>modconf</CODE>.=20
+<HR>
+<A name=3Ds-kern-recompilando></A>
+<H2>16.11 Recompilando o Kernel</H2>
+<P>Ser=E1 que vou precisar recompilar o meu kernel? voc=EA deve estar se =
+perguntando=20
+agora. Abaixo alguns motivos para esclarecer suas d=FAvidas:=20
+<UL>
+  <LI>Melhora o desempenho do kernel. O kernel padr=E3o que acompanha as =
+
+  distribui=E7=F5es <CODE>GNU/Linux</CODE> foi feito para funcionar em =
+qualquer tipo=20
+  de sistema e garantir seu funcionamento e inclui suporte a =
+praticamente tudo.=20
+  Isto pode gerar desde instabilidade at=E9 uma grade pausa do kernel na =
+
+  inicializa=E7=E3o quando estiver procurando pelos dispositivos que =
+simplesmente=20
+  n=E3o existem em seu computador!=20
+  <P>A compila=E7=E3o permite escolher somente o suporte aos =
+dispositivos existentes=20
+  em seu computador e assim diminuir o tamanho do kernel, desocupar a =
+mem=F3ria=20
+  RAM com dispositivos que nunca usar=E1 e assim voc=EA ter=E1 um =
+desempenho bem=20
+  melhor do que teria com um kernel pesado. </P></LI></UL>
+<UL>
+  <LI>Incluir suporte a alguns hardwares que est=E3o desativados no =
+kernel padr=E3o=20
+  (SMP, APM, Firewall, drivers experimentais, etc). </LI></UL>
+<UL>
+  <LI>Se aventurar em compilar um kernel (sistema operacional) =
+personalizado em=20
+  seu sistema. </LI></UL>
+<UL>
+  <LI>Impressionar os seus amigos, tentando coisas novas. </LI></UL>
+<P>Ser=E3o necess=E1rios uns 70Mb de espa=E7o em disco dispon=EDvel para =
+copiar e=20
+descompactar o c=F3digo fonte do kernel e alguns pacotes de =
+desenvolvimento como o=20
+<CODE>gcc</CODE>, <CODE>cpp</CODE>, <CODE>binutils</CODE>,=20
+<CODE>gcc-i386-gnu</CODE>, <CODE>bin86</CODE>, <CODE>make</CODE>,=20
+<CODE>dpkg-dev</CODE>, <CODE>perl</CODE>, <CODE>kernel-package</CODE> =
+(os tr=EAs=20
+=FAltimos somente para a distribui=E7=E3o <CODE>Debian</CODE>).=20
+<P>Na distribui=E7=E3o <CODE>Debian</CODE>, o melhor m=E9todo =E9 =
+atrav=E9s do=20
+<CODE>kernel-package</CODE> que faz tudo para voc=EA (menos escolher o =
+que ter=E1 o=20
+n=E3o o suporte no kernel) e gera um pacote <CODE>.deb</CODE> que =
+poder=E1 ser usado=20
+para instalar o kernel em seu sistema ou em qualquer outro que execute a =
+
+<CODE>Debian</CODE> ou distribui=E7=F5es baseadas (<CODE>Corel =
+Linux</CODE>,=20
+<CODE>Libranet</CODE>, etc). Devido a sua facilidade, a compila=E7=E3o =
+do kernel=20
+atrav=E9s do <CODE>kernel-package</CODE> =E9 muito recomendado para =
+usu=E1rios=20
+iniciantes e para aqueles que usam somente um kernel no sistema (=E9 =
+poss=EDvel usar=20
+mais de dois ao mesmo tempo, veja o processo de compila=E7=E3o manual =
+adiante neste=20
+cap=EDtulo). Siga este passos para recompilar seu kernel atrav=E9s do=20
+<CODE>kernel-package</CODE>:=20
+<OL type=3D1>
+  <LI>Descompacte o c=F3digo fonte do kernel (atrav=E9s do arquivo =
+linux-2.2.XX)=20
+  para o diret=F3rio <CODE>/usr/src</CODE>. Caso use os pacotes da=20
+  <CODE>Debian</CODE> eles ter=E3o o nome de =
+<CODE>kernel-source-2.2.XX</CODE>,=20
+  para detalhes de como instalar um pacote, veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm#s-dpkg-instalar">Instalar=20
+  pacotes, Se=E7=E3o 20.1.2</A>. </LI></OL>
+<OL type=3D1 start=3D2>
+  <LI>Ap=F3s isto, entre no diret=F3rio onde o c=F3digo fonte do kernel =
+foi instalado=20
+  com <SAMP>cd /usr/src/linux</SAMP> (este ser=E1 assumido o lugar onde =
+o c=F3digo=20
+  fonte do kernel se encontra). </LI></OL>
+<OL type=3D1 start=3D3>
+  <LI>Como usu=E1rio <SAMP>root</SAMP>, digite <SAMP>make config</SAMP>. =
+Voc=EA=20
+  tamb=E9m pode usar <SAMP>make menuconfig</SAMP> (configura=E7=E3o =
+atrav=E9s de menus)=20
+  ou <SAMP>make xconfig</SAMP> (configura=E7=E3o em modo gr=E1fico) mas =
+precisar=E1 de=20
+  pacotes adicionais para que estes dois funcionem corretamente.=20
+  <P>Ser=E3o feitas perguntas sobre se deseja suporte a tal dispositivo, =
+etc.=20
+  Pressione <SAMP>Y</SAMP> para incluir o suporte diretamente no kernel, =
+
+  <SAMP>M</SAMP> para incluir o suporte como m=F3dulo ou <SAMP>N</SAMP> =
+para n=E3o=20
+  incluir o suporte. Note que nem todos os drivers podem ser compilados =
+como=20
+  m=F3dulos.=20
+  <P>Escolha as op=E7=F5es que se encaixam em seu sistema. se estiver em =
+d=FAvida=20
+  sobre a pergunta digite <SAMP>?</SAMP> e tecle Enter para ter uma =
+explica=E7=E3o=20
+  sobre o que aquela op=E7=E3o faz. Se n=E3o souber do que se trata, =
+recomendo incluir=20
+  a op=E7=E3o (pressionando <SAMP>Y</SAMP> ou <SAMP>M</SAMP>. Este passo =
+pode levar=20
+  entre 5 minutos e 1 Hora (usu=E1rios que est=E3o fazendo isto pela =
+primeira vez=20
+  tendem a levar mais tempo lendo e conhecendo os recursos que o=20
+  <CODE>GNU/Linux</CODE> possui, antes de tomar qualquer decis=E3o). =
+N=E3o se=20
+  preocupe se esquecer de incluir o suporte a alguma coisa, voc=EA pode =
+repetir o=20
+  passo <SAMP>make config</SAMP> (todas as suas escolhas s=E3o gravadas =
+no arquivo=20
+  <CODE>.config</CODE>), recompilar o kernel e instalar em cima do =
+antigo a=20
+  qualquer hora que quiser. </P></LI></OL>
+<OL type=3D1 start=3D4>
+  <LI>Ap=F3s o <SAMP>make config</SAMP> chegar ao final, digite =
+<SAMP>make-kpkg=20
+  clean</SAMP> para limpar constru=E7=F5es anteriores do kernel. =
+</LI></OL>
+<OL type=3D1 start=3D5>
+  <LI>Agora compile o kernel digitando <SAMP>make-kpkg =
+--revision=3Dteste.1.0=20
+  kernel-image</SAMP>. A palavra <SAMP>teste</SAMP> pode ser =
+substitu=EDda por=20
+  qualquer outra que voc=EA quiser e n=FAmero da vers=E3o =
+<SAMP>1.0</SAMP> serve=20
+  apenas como controle de suas compila=E7=F5es (pode ser qualquer =
+n=FAmero).=20
+  <P>Observa=E7=E3o: N=E3o inclua h=EDfens (<SAMP>-</SAMP>) no =
+par=E2metro --revision, use=20
+  somente pontos. </P></LI></OL>
+<OL type=3D1 start=3D6>
+  <LI>Agora ap=F3s compilar, o kernel ser=E1 gravado no diret=F3rio =
+superior (..) com=20
+  um nome do tipo <SAMP>kernel-image-2.2.10-i386_teste.1.0.deb</SAMP>. =
+Basta=20
+  voc=EA digitar <SAMP>dpkg -i =
+kernel-image-2.2.10-i386_teste.1.0.deb</SAMP> e o=20
+  <CODE>dpkg</CODE> far=E1 o resto da instala=E7=E3o do kernel para =
+voc=EA e perguntar=E1=20
+  se deseja criar um disquete de inicializa=E7=E3o (recomend=E1vel). =
+</LI></OL>
+<OL type=3D1 start=3D7>
+  <LI>Reinicie seu computador, seu novo kernel iniciar=E1 e voc=EA j=E1 =
+perceber=E1 a=20
+  primeira diferen=E7a pela velocidade que o <CODE>GNU/Linux</CODE> =E9 =
+iniciado=20
+  (voc=EA inclui somente suporte a dispositivos em seu sistema). O =
+desempenho dos=20
+  programas tamb=E9m melhorar=E1 pois cortou o suporte a =
+dispositivos/fun=E7=F5es que=20
+  seu computador n=E3o precisa.=20
+  <P>Caso alguma coisa sair errada, coloque o disquete que gravou no =
+passo=20
+  anterior e reinicie o computador para fazer as corre=E7=F5es. =
+</P></LI></OL>
+<P>Para recompilar o kernel usando o m=E9todo padr=E3o, siga os =
+seguintes passos:=20
+<OL type=3D1>
+  <LI>Descompacte o c=F3digo fonte do kernel (atrav=E9s do arquivo =
+linux-2.2.XX)=20
+  para o diret=F3rio <CODE>/usr/src</CODE>. O c=F3digo fonte do kernel =
+pode ser=20
+  encontrado em <CODE><A=20
+  href=3D"ftp://ftp.kernel.org/">ftp://ftp.kernel.org/</A></CODE>.=20
+  <LI>Ap=F3s isto, entre no diret=F3rio onde o c=F3digo fonte do kernel =
+foi instalado=20
+  com <SAMP>cd /usr/src/linux</SAMP> (este ser=E1 assumido o lugar onde =
+o c=F3digo=20
+  fonte do kernel se encontra).=20
+  <LI>Como usu=E1rio <SAMP>root</SAMP>, digite <SAMP>make config</SAMP>. =
+Voc=EA=20
+  tamb=E9m pode usar <SAMP>make menuconfig</SAMP> (configura=E7=E3o =
+atrav=E9s de menus)=20
+  ou <SAMP>make xconfig</SAMP> (configura=E7=E3o em modo gr=E1fico) mas =
+precisar=E1 de=20
+  pacotes adicionais.=20
+  <P>Ser=E3o feitas perguntas sobre se deseja suporte a tal dispositivo, =
+etc.=20
+  Pressione <SAMP>Y</SAMP> para incluir o suporte diretamente no kernel, =
+
+  <SAMP>M</SAMP> para incluir o suporte como m=F3dulo ou <SAMP>N</SAMP> =
+para n=E3o=20
+  incluir o suporte. Note que nem todos os drivers podem ser compilados =
+como=20
+  m=F3dulos.=20
+  <P>Escolha as op=E7=F5es que se encaixam em seu sistema. se estiver em =
+d=FAvida=20
+  sobre a pergunta digite <SAMP>?</SAMP> e tecle Enter para ter uma =
+explica=E7=E3o=20
+  sobre o que aquela op=E7=E3o faz. Se n=E3o souber do que se trata, =
+recomendo incluir=20
+  a op=E7=E3o (pressionando <SAMP>Y</SAMP> ou <SAMP>M</SAMP>. Este passo =
+pode levar=20
+  entre 5 minutos e 1 Hora (usu=E1rios que est=E3o fazendo isto pela =
+primeira vez=20
+  tendem a levar mais tempo lendo e conhecendo os recursos que o=20
+  <CODE>GNU/Linux</CODE> possui antes de tomar qualquer decis=E3o). =
+N=E3o se=20
+  preocupe se esquecer de incluir o suporte a alguma coisa, voc=EA pode =
+repetir o=20
+  passo <SAMP>make config</SAMP>, recompilar o kernel e instalar em cima =
+do=20
+  antigo a qualquer hora que quiser. </P>
+  <LI>Digite o comando <SAMP>make dep</SAMP> para verificar as =
+depend=EAncias dos=20
+  m=F3dulos.=20
+  <LI>Digite o comando <SAMP>make clean</SAMP> para limpar =
+constru=E7=F5es=20
+  anteriores do kernel.=20
+  <LI>Digite o comando <SAMP>make zImage</SAMP> para iniciar a =
+compila=E7=E3o do=20
+  kernel est=E1tico (outro comando compila os m=F3dulos). Aguarde a =
+compila=E7=E3o, o=20
+  tempo pode variar dependendo da quantidade de recursos que adicionou =
+ao=20
+  kernel, a velocidade de seu computador e a quantidade de mem=F3ria RAM =
+
+  dispon=EDvel.=20
+  <P>Caso tenha acrescentado muitos =EDtens no Kernel, =E9 poss=EDvel =
+que o comando=20
+  <SAMP>make zImage</SAMP> falhe no final (especialmente se o tamanho do =
+kernel=20
+  est=E1tico for maior que 505Kb). Neste caso use <SAMP>make =
+bzImage</SAMP>. A=20
+  diferen=E7a entre <EM>zImage</EM> e <EM>bzImage</EM> =E9 que o =
+primeiro possui um=20
+  limite de tamanho porque =E9 descompactado na mem=F3ria b=E1sica =
+(recomendado para=20
+  alguns Notebooks), j=E1 a <EM>bzImage</EM>, =E9 descompactada na =
+mem=F3ria estendida=20
+  e n=E3o possui as limita=E7=F5es da <EM>zImage</EM>. </P>
+  <LI>Ap=F3s terminada a compila=E7=E3o do kernel est=E1tico, execute =
+<SAMP>make=20
+  modules</SAMP> para compilar os m=F3dulos referentes =E0quele kernel. =
+A velocidade=20
+  de compila=E7=E3o pode variar de acordo com os motivos do passo =
+anterior.=20
+  <LI>A compila=E7=E3o neste ponto est=E1 completa, voc=EA agora tem =
+duas op=E7=F5es para=20
+  instalar o kernel: Substituir o kernel anterior pelo rec=E9m compilado =
+ou usar=20
+  os dois. A segunda quest=E3o =E9 recomend=E1vel se voc=EA n=E3o tem =
+certeza se o kernel=20
+  funcionar=E1 corretamente e deseja iniciar pelo antigo no caso de =
+alguma coisa=20
+  dar errado.=20
+  <P>Se voc=EA optar por substituir o kernel anterior:=20
+  <OL type=3D1>
+    <LI>=C9 recomend=E1vel renomear o diret=F3rio=20
+    <CODE>/lib/modules/vers=E3o_do_kernel</CODE> para=20
+    <CODE>/lib/modules/vers=E3o_do_kernel.old</CODE>, isto ser=E1 =FAtil =
+para=20
+    restaura=E7=E3o completa dos m=F3dulos antigos caso alguma coisa der =
+errado.=20
+    <LI>Execute o comando <SAMP>make modules_install</SAMP> para =
+instalar os=20
+    m=F3dulos do kernel rec=E9m compilado em=20
+    <CODE>/lib/modules/vers=E3o_do_kernel</CODE>.=20
+    <LI>Copie o arquivo <CODE>zImage</CODE> que cont=E9m o kernel de=20
+    <CODE>/usr/src/linux/arch/i386/boot/zImage</CODE> para=20
+    <CODE>/boot/vmlinuz-2.XX.XX</CODE> (<EM>2.XX.XX</EM> =E9 a vers=E3o =
+do kernel=20
+    anterior)=20
+    <LI>Verifique se o link simb=F3lico <CODE>/vmlinuz</CODE> aponta =
+para a vers=E3o=20
+    do kernel que compilou atualmente (com <SAMP>ls -la /</SAMP>). Caso=20
+    contr=E1rio, apague o arquivo <CODE>/vmlinuz</CODE> do diret=F3rio =
+ra=EDz e crie=20
+    um novo link com <SAMP>ln -s /boot/vmlinuz-2.XX.Xx /vmlinuz</SAMP> =
+apontando=20
+    para o kernel correto.=20
+    <LI>Execute o comando <SAMP>lilo</SAMP> para gerar um novo setor de =
+partida=20
+    no disco r=EDgido. Para detalhes veja <A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-lilo">LILO,=20
+    Se=E7=E3o 6.1</A>.=20
+    <LI>Reinicie o sistema (<SAMP>shutdown -r now</SAMP>).=20
+    <LI>Caso tudo esteja funcionando normalmente, apague o diret=F3rio =
+antigo de=20
+    m=F3dulos que salvou e o kernel antigo de <CODE>/boot</CODE>. Caso =
+algo tenha=20
+    dado errado e seu sistema n=E3o inicializa, inicie a partir de um =
+disquete,=20
+    apague o novo kernel, apague os novos m=F3dulos, renomeie o =
+diret=F3rio de=20
+    m=F3dulos antigos para o nome original, ajuste o link simb=F3lico=20
+    <CODE>/vmlinuz</CODE> para apontar para o antigo kernel e execute o=20
+    <SAMP>lilo</SAMP>. Ap=F3s reiniciar seu computador voltar=E1 como =
+estava antes.=20
+    </LI></OL>
+  <P>Se voc=EA optar por manter o kernel anterior e selecionar qual =
+ser=E1 usado na=20
+  partida do sistema (=FAtil para um kernel em testes):=20
+  <OL type=3D1>
+    <LI>Execute o comando <SAMP>make modules_install</SAMP> para =
+instalar os=20
+    m=F3dulos rec=E9m compilados do kernel em=20
+    <CODE>/lib/modules/versao_do_kernel</CODE>.=20
+    <LI>Copie o arquivo <CODE>zImage</CODE> que cont=E9m o kernel de=20
+    <CODE>/usr/src/linux/arch/i386/boot/zImage</CODE> para=20
+    <CODE>/boot/vmlinuz-2.XX.XX</CODE> (<EM>2.XX.XX</EM> =E9 a vers=E3o =
+do kernel=20
+    anterior)=20
+    <LI>Crie um link simb=F3lico no diret=F3rio ra=EDz (<CODE>/</CODE>) =
+apontando para=20
+    o novo kernel. Como exemplos ser=E1 usado =
+<CODE>/vmlinuz-novo</CODE>.=20
+    <LI>Modifique o arquivo <CODE>/etc/lilo.conf</CODE> para incluir a =
+nova=20
+    imagem de kernel. Por exemplo: <PRE>     Antes da modifica=E7=E3o:
+    =20
+     boot=3D/dev/hda
+     prompt
+     timeout=3D200
+     delay=3D200
+     map=3D/boot/map
+     install=3Dmenu
+    =20
+     image =3D /vmlinuz
+       root =3D /dev/hda1
+       label =3D 1
+       read-only
+    =20
+     Depois da modifica=E7=E3o:
+    =20
+     boot=3D/dev/hda
+     prompt
+     timeout=3D200
+     delay=3D200
+     map=3D/boot/map
+     install=3Dmenu
+    =20
+     image =3D /vmlinuz
+       root =3D /dev/hda1
+       label =3D 1
+       read-only
+    =20
+     image =3D /vmlinuz-new
+       root =3D /dev/hda1
+       label =3D 2
+       read-only
+</PRE>
+    <P>Se voc=EA digitar <SAMP>1</SAMP> no aviso de <SAMP>boot:</SAMP> =
+do=20
+    <CODE>Lilo</CODE>, o kernel antigo ser=E1 carregado, caso digitar=20
+    <SAMP>2</SAMP> o novo kernel ser=E1 carregado. Para detalhes veja <A =
+
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-lilo-cfg">Criando=20
+    o arquivo de configura=E7=E3o do LILO, Se=E7=E3o 6.1.1</A> e <A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-lilo-exemplo">Um=20
+    exemplo do arquivo de configura=E7=E3o lilo.conf, Se=E7=E3o =
+6.1.3</A>. </P>
+    <LI>Execute o comando <SAMP>lilo</SAMP> para gravar o novo setor de =
+boot=20
+    para o disco r=EDgido.=20
+    <LI>Reinicie o computador=20
+    <LI>Carregue o novo kernel escolhendo a op=E7=E3o <SAMP>2</SAMP> no =
+aviso de=20
+    <SAMP>boot:</SAMP> do <CODE>Lilo</CODE>. Caso tiver problemas, =
+escolha a=20
+    op=E7=E3o <SAMP>1</SAMP> para iniciar com o kernel antigo e =
+verifique os passos=20
+    de configura=E7=E3o (o arquivo <CODE>lilo.conf</CODE> foi modificado =
+
+    corretamente?. </LI></OL></LI></OL>
+<P>Em alguns casos (como nos kernels empacotados em distribui=E7=F5es=20
+<CODE>GNU/Linux</CODE>) o c=F3digo fonte do kernel =E9 gravado em um =
+diret=F3rio=20
+chamado <CODE>kernel-source-xx.xx.xx</CODE>. =C9 recomend=E1vel fazer um =
+link com um=20
+diret=F3rio <CODE>GNU/Linux</CODE>, pois =E9 o padr=E3o usado pelas =
+atualiza=E7=E3o do=20
+c=F3digo fonte atrav=E9s de patches (veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-patches">Aplicando=20
+Patches no kernel, Se=E7=E3o 16.13</A>).=20
+<P>Para criar o link simb=F3lico, entre em <CODE>/usr/src</CODE> e =
+digite:=20
+<SAMP>ln -s kernel-source-xx.xx.xx linux</SAMP>.=20
+<P>Se quiser mais detalhes sobre a compila=E7=E3o do kernel, consulte o =
+documento=20
+<EM>kernel-howto</EM>.=20
+<HR>
+<A name=3Ds-kern-arquivos></A>
+<H2>16.12 Arquivos relacionados com o Kernel e M=F3dulos</H2>
+<P>Esta se=E7=E3o descreve os arquivos usados pelo kernel e m=F3dulos, a =
+fun=E7=E3o de=20
+cada um no sistema, a sintaxe, etc.=20
+<HR>
+<A name=3Ds-kern-arquivos-modules></A>
+<H3>16.12.1 /etc/modules</H3>
+<P>A fun=E7=E3o deste arquivo =E9 carregar m=F3dulos especificados na =
+inicializa=E7=E3o do=20
+sistema e mant=EA-los carregado todo o tempo. =C9 =FAtil para m=F3dulos =
+de placas de=20
+rede que precisam ser carregados antes da configura=E7=E3o de rede feita =
+pela=20
+distribui=E7=E3o e n=E3o podem ser removidos quando a placa de rede =
+estiver sem uso=20
+(isto retiraria seu computador da rede).=20
+<P>Seu conte=FAdo =E9 uma lista de m=F3dulos (um por linha) que ser=E3o =
+carregados na=20
+inicializa=E7=E3o do sistema. Os m=F3dulos carregados pelo arquivo=20
+<CODE>/etc/modules</CODE> pode ser listados usando o comando =
+<CODE>lsmod</CODE>=20
+(veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-lsmod">lsmod,=20
+Se=E7=E3o 16.5</A>.=20
+<P>Se o par=E2metro <SAMP>auto</SAMP> estiver especificado como um =
+m=F3dulo, o=20
+<CODE>kmod</CODE> ser=E1 ativado e carregar=E1 os m=F3dulos somente em =
+demanda, caso=20
+seja especificado <SAMP>noauto</SAMP> o programa <CODE>kmod</CODE> =
+ser=E1=20
+desativado. O <CODE>kmod</CODE> =E9 ativado por padr=E3o nos n=EDveis de =
+execu=E7=E3o 2 ao=20
+5.=20
+<P>Ele pode ser editado em qualquer editor de textos comum ou modificado =
+
+automaticamente atrav=E9s do utilit=E1rio <CODE>modconf</CODE>.=20
+<HR>
+<A name=3Ds-kern-arquivos-modulesconf></A>
+<H3>16.12.2 modules.conf</H3>
+<P>O arquivo <CODE>/etc/modules.conf</CODE> permite controlar as =
+op=E7=F5es de todos=20
+os m=F3dulos do sistema. Ele =E9 consultado pelos programas =
+<CODE>modprobe</CODE> e=20
+<CODE>depmod</CODE>. As op=E7=F5es especificadas neste arquivo facilita =
+o=20
+gerenciamento de m=F3dulos, evitando a digita=E7=E3o de op=E7=F5es =
+atrav=E9s da linha de=20
+comando.=20
+<P>Note que =E9 recomendado o uso do utilit=E1rio <CODE>modconf</CODE> =
+para=20
+configurar quaisquer m=F3dulos em seu sistema e o utilit=E1rio=20
+<CODE>update-modules</CODE> para sincroniza=E7=E3o dos arquivos gerados =
+pelo=20
+<CODE>modconf</CODE> em <CODE>/etc/modutils</CODE> com o=20
+<CODE>/etc/modules.conf</CODE> (geralmente isto =E9 feito =
+automaticamente ap=F3s o=20
+uso do <CODE>modconf</CODE>). Por este motivo n=E3o =E9 recomend=E1vel =
+modifica-lo=20
+manualmente, a n=E3o ser que seja um usu=E1rio experiente e saiba o que =
+est=E1=20
+fazendo. Veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-modconf">modconf,=20
+Se=E7=E3o 16.10</A>=20
+<P>Por exemplo: adicionando as linhas: <PRE>     alias sound sb=20
+     options sb io=3D0x220 irq=3D5 dma=3D1 dma16=3D5 mpuio=3D0x330
+</PRE>
+<P>permitir=E1 que seja usado somente o comando <SAMP>modprobe sb</SAMP> =
+para=20
+ativar a placa de som.=20
+<HR>
+<A name=3Ds-kern-patches></A>
+<H2>16.13 Aplicando Patches no kernel</H2>
+<P><EM>Patches</EM> s=E3o modifica=E7=F5es geradas pelo programa =
+<CODE>diff</CODE> em=20
+que servem para atualizar um programa ou texto. Este recurso =E9 muito =
+=FAtil para=20
+os desenvolvedores, pois podem gerar um arquivo contendo as diferen=E7as =
+entre um=20
+programa antigo e um novo (usando o comando <CODE>diff</CODE>) e enviar =
+o=20
+arquivo contendo as diferen=E7as para outras pessoas.=20
+<P>As pessoas interessadas em atualizar o programa antigo, podem =
+simplesmente=20
+pegar o arquivo contendo as diferen=E7as e atualizar o programa usando o =
+
+<CODE>patch</CODE>.=20
+<P>Isto =E9 muito usado no desenvolvimento do kernel do =
+<CODE>GNU/Linux</CODE> em=20
+que novas vers=F5es s=E3o lan=E7adas freq=FCentemente e o tamanho kernel =
+completo=20
+compactado ocupa cerca de 18MB. Voc=EA pode atualizar seu kernel pegando =
+um patch=20
+seguinte a vers=E3o que possui em <CODE><A=20
+href=3D"ftp://ftp.kernel.org/">ftp://ftp.kernel.org/</A></CODE>.=20
+<P>Para aplicar um patch que atualizar=E1 seu kernel 2.2.13 para a =
+vers=E3o 2.2.14=20
+voc=EA deve proceder da seguinte forma:=20
+<UL>
+  <LI>Descompacte o c=F3digo fonte do kernel 2.2.13 em =
+<CODE>/usr/src/linux</CODE>=20
+  ou certifique-se que existe um link simb=F3lico do c=F3digo fonte do =
+kernel para=20
+  <CODE>/usr/src/linux</CODE>.=20
+  <LI>Copie o arquivo <CODE>patch-2.2.14.gz</CODE> de <CODE><A=20
+  href=3D"ftp://ftp.kernel.org/">ftp://ftp.kernel.org/</A></CODE> para=20
+  <CODE>/usr/src</CODE>.=20
+  <LI>Use o comando <SAMP>gzip -dc patch-2.2.14|patch -p0 -N -E</SAMP> =
+para=20
+  atualizar o c=F3digo fonte em <CODE>/usr/src/linux</CODE> para a =
+vers=E3o 2.2.14.=20
+  <P>Alternativamente voc=EA pode primeiro descompactar o arquivo=20
+  <CODE>patch-2.2.14.gz</CODE> com o <CODE>gzip</CODE> e usar o comando=20
+  <SAMP>patch -p0 -N -E &lt;patch-2.2.14</SAMP> para atualizar o =
+c=F3digo fonte do=20
+  kernel. O <CODE>GNU/Linux</CODE> permite que voc=EA obtenha o mesmo =
+resultado=20
+  atrav=E9s de diferentes m=E9todos, a escolha =E9 somente sua. =
+</P></LI></UL>
+<P>Caso deseja atualizar o kernel 2.2.10 para 2.2.14, como no exemplo =
+acima,=20
+voc=EA dever=E1 aplicar os patches em seq=FC=EAncia (do patch 2.2.11 ao =
+2.2.14). Vale a=20
+pena observar se o tamanho total dos patches ultrapassa ou chega perto o =
+tamanho=20
+do kernel completo.=20
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ 16 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

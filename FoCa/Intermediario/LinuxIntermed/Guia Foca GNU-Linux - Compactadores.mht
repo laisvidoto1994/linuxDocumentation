@@ -1,0 +1,1193 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: Guia Foca GNU/Linux - Compactadores
+Date: Mon, 6 Aug 2007 11:22:27 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-cpctd.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Compactadores</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-cpctd></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ 18 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 18 - Compactadores </H1>
+<HR>
+
+<P>Esta se=E7=E3o explica o que s=E3o e como usar programas =
+compactadores no=20
+<CODE>GNU/Linux</CODE>, as caracter=EDsticas de cada um, como =
+identificar um=20
+arquivo compactado e como descompactar um arquivo compactado usando o =
+programa=20
+correspondente.=20
+<P>A utiliza=E7=E3o de arquivos compactados =E9 m=E9todo =FAtil =
+principalmente para=20
+reduzir o consumo de espa=E7o em disco ou permitir grandes quantidades =
+de texto=20
+serem transferidas para outro computador atrav=E9s de disquetes.=20
+<HR>
+<A name=3Ds-cpctd-oque></A>
+<H2>18.1 O que fazem os compactadores/descompactadores?</H2>
+<P>Compactadores s=E3o programas que diminuem o tamanho de um arquivo =
+(ou=20
+arquivos) atrav=E9s da substitui=E7=E3o de caracteres repetidos. Para =
+entender melhor=20
+como eles funcionam, veja o pr=F3ximo exemplo: <PRE>     compactadores =
+compactam e deixam arquivos compactados.
+    =20
+     -- ap=F3s a compacta=E7=E3o da frase --
+    =20
+     %dores %m e deixam arquivos %dos
+</PRE>
+<P>O que aconteceu realmente foi que a palavra <SAMP>compacta</SAMP> se=20
+encontrava 3 vezes na frase acima, e foi substitu=EDda por um sinal de=20
+<SAMP>%</SAMP>. Para descompactar o processo seria o contr=E1rio: Ele =
+substituiria=20
+% por <SAMP>compacta</SAMP> e n=F3s temos a frase novamente restaurada.=20
+<P>Voc=EA deve ter notado que o tamanho da frase <SAMP>compactada</SAMP> =
+caiu=20
+quase pela metade. A quantidade de compacta=E7=E3o de um arquivo =E9 =
+chamada de=20
+<EM>taxa de compacta=E7=E3o</EM>. Assim se o tamanho do arquivo for =
+diminu=EDdo a=20
+metade ap=F3s a compacta=E7=E3o, dizemos que conseguiu uma <EM>taxa de=20
+compacta=E7=E3o</EM> de 2:1 (l=EA-se dois para um), se o arquivo =
+diminuiu 4 vezes,=20
+dizemos que conseguiu uma compacta=E7=E3o de 4:1 (quatro para um) e =
+assim por=20
+diante.=20
+<P>Para controle dos caracteres que s=E3o usados nas substitui=E7=F5es, =
+os programas=20
+de compacta=E7=E3o mant=E9m cabe=E7alhos com todas as substitui=E7=F5es =
+usadas durante a=20
+compacta=E7=E3o. O tamanho do cabe=E7alho pode ser fixo ou definido pelo =
+usu=E1rio,=20
+depende do programa usado na compacta=E7=E3o.=20
+<P>Este =E9 um exemplo bem simples para entender o que acontece durante =
+a=20
+compacta=E7=E3o, os programas de compacta=E7=E3o executam instru=E7=F5es =
+muito avan=E7adas e=20
+c=F3digos complexos para atingir um alta taxa de compacta=E7=E3o.=20
+<P>Observa=E7=F5es:=20
+<UL>
+  <LI>N=E3o =E9 poss=EDvel trabalhar diretamente com arquivos =
+compactados! =C9=20
+  necess=E1rio descompactar o arquivo para usa-lo. Note que alguns =
+programas=20
+  atualmente suportam a abertura de arquivos compactados, mas na =
+realidade eles=20
+  apenas simplificam a tarefa descompactando o arquivo, abrindo e o=20
+  recompactando assim que o trabalho estiver conclu=EDdo.=20
+  <LI>Arquivos de texto tem uma taxa de compacta=E7=E3o muito melhor que =
+arquivos=20
+  bin=E1rios, porque possuem mais caracteres repetidos. =C9 normal =
+atingir taxas de=20
+  compacta=E7=E3o de 10 para 1 ou mais quando se compacta um arquivo =
+texto. Arquivos=20
+  bin=E1rios, como programas, possuem uma taxa de compacta=E7=E3o =
+m=E9dia de 2:1.=20
+  <LI>Note que tamb=E9m existem programas compactadores especialmente=20
+  desenvolvidos para compacta=E7=E3o de m=FAsicas, arquivos bin=E1rios, =
+imagens, textos.=20
+  </LI></UL>
+<HR>
+<A name=3Ds-cpctd-tipos></A>
+<H3>18.1.1 Tipos de compacta=E7=E3o</H3>
+<P>Existem basicamente dois tipos de compacta=E7=E3o, a compacta=E7=E3o =
+<EM>sem=20
+perdas</EM> e a compacta=E7=E3o <EM>com perdas</EM>.=20
+<P>Os exemplos a seguir tentam explicar de forma simples os conceitos=20
+envolvidos.=20
+<P>A compacta=E7=E3o sem perdas, como o pr=F3prio nome diz n=E3o causa =
+nenhuma perda nas=20
+informa=E7=F5es contidas no arquivo. Quando voc=EA compacta e =
+descompacta um arquivo,=20
+o conte=FAdo =E9 o mesmo do original.=20
+<P>A compacta=E7=E3o com perdas =E9 um tipo espec=EDfico de =
+compacta=E7=E3o desenvolvido=20
+para atingir altas taxas, por=E9m com perdas parciais dos dados. =C9 =
+aplicada a=20
+tipos de arquivos especiais, como m=FAsicas e imagens ou arquivos que =
+envolvam a=20
+percep=E7=E3o humana.=20
+<P>Sabe-se que o ouvido humano n=E3o =E9 t=E3o sens=EDvel a determinados =
+sons e=20
+freq=FC=EAncias, ent=E3o a compacta=E7=E3o de um arquivo de m=FAsica =
+poderia deixar de=20
+gravar os sons que seriam pouco percebidos, resultando em um arquivo =
+menor. Uma=20
+compacta=E7=E3o do tipo <EM>ogg</EM> ou <EM>mp3</EM> utiliza-se destes =
+recursos. O=20
+arquivo resultante =E9 muito menor que o original, por=E9m alguns dados =
+sonoros s=E3o=20
+perdidos. Voc=EA s=F3 notaria se estivesse reproduzindo a m=FAsica em um =
+equipamento=20
+de alta qualidade e se tivesse um ouvido bem agu=E7ado. Para efeitos =
+pr=E1ticos,=20
+voc=EA est=E1 ouvindo a mesma m=FAsica e economizando muito espa=E7o em =
+disco.=20
+<P>Outro exemplo de compacta=E7=E3o com perdas s=E3o as imagens =
+<EM>jpg</EM>. Imagine=20
+que voc=EA tem uma imagem com 60000 tons de cor diferentes, mas alguns =
+tons s=E3o=20
+muito pr=F3ximos de outros, ent=E3o o compactador resume para 20000 tons =
+de cor e a=20
+imagem ter=E1 1/3 do tamanho original e o nosso olho conseguir=E1 =
+entender a imagem=20
+sem problemas e quase n=E3o perceber=E1 a diferen=E7a. Exemplos de =
+extens=F5es=20
+utilizadas em imagens compactadas s=E3o <EM>jpg</EM>, <EM>png</EM>, =
+<EM>gif</EM>.=20
+<P>Apesar das vantagens da grande taxa de compacta=E7=E3o conseguida nos =
+processos=20
+com perdas, nem sempre podemos utiliz=E1-lo. Quando compactamos um texto =
+ou um=20
+programa, n=E3o podemos ter perdas, sen=E3o o nosso texto sofre =
+altera=E7=F5es ou o=20
+programa n=E3o executa. Nem mesmo podemos tem perdas quando compactamos =
+imagens ou=20
+musicas que ser=E3o utilizadas em processos posteriores de =
+masteriza=E7=E3o, mixagem=20
+ou impress=E3o em alta qualidade.=20
+<HR>
+<A name=3Ds-cpctd-extensoes></A>
+<H2>18.2 Extens=F5es de arquivos compactados</H2>
+<P>As extens=F5es identificam o tipo de um arquivo e assim o programa o =
+programa=20
+necess=E1rio para trabalhar com aquele tipo de arquivo. Existem dezenas =
+de=20
+extens=F5es que identificam arquivos compactados. Quando um arquivo (ou =
+arquivos)=20
+=E9 compactado, uma extens=E3o correspondente ao programa usado =E9 =
+adicionada ao nome=20
+do arquivo (caso o arquivo seja compactado pelo <CODE>gzip</CODE> =
+receber=E1 a=20
+extens=E3o <CODE>.gz</CODE>, por exemplo). Ao descompactar acontece o =
+contr=E1rio: a=20
+extens=E3o =E9 retirada do arquivo. Abaixo segue uma listagem de =
+extens=F5es mais=20
+usadas e os programas correspondentes:=20
+<UL>
+  <LI><CODE>.gz</CODE> - Arquivo compactado pelo <CODE>gzip</CODE>. Use =
+o=20
+  programa <CODE>gzip</CODE> para descompacta-lo (para detalhes veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm#s-cpctd-gzip">gzip,=20
+  Se=E7=E3o 18.3</A>). <CODE>.bz2</CODE> - Arquivo compactado pelo=20
+  <CODE>bzip2</CODE>. Use o programa <CODE>bzip2</CODE> para =
+descompacta-lo=20
+  (para detalhes veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm#s-cpctd-bzip2">bzip2,=20
+  Se=E7=E3o 18.7</A>). </LI></UL>
+<UL>
+  <LI><CODE>.Z</CODE> - Arquivo compactado pelo programa =
+<CODE>compress</CODE>.=20
+  Use o programa <CODE>uncompress</CODE> para descompacta-lo. </LI></UL>
+<UL>
+  <LI><CODE>.zip</CODE> - Arquivo compactado pelo programa =
+<CODE>zip</CODE>. Use=20
+  o programa <CODE>unzip</CODE> para descompacta-lo. </LI></UL>
+<UL>
+  <LI><CODE>.rar</CODE> - Arquivo compactado pelo programa =
+<CODE>rar</CODE>. Use=20
+  o programa <CODE>rar</CODE> para descompacta-lo. </LI></UL>
+<UL>
+  <LI><CODE>.tar.gz</CODE> - Arquivo compactado pelo programa =
+<CODE>gzip</CODE>=20
+  no utilit=E1rio de arquivamento <CODE>tar</CODE>. Para descompacta-lo, =
+voc=EA pode=20
+  usar o <CODE>gzip</CODE> e depois o <CODE>tar</CODE> ou somente o =
+programa=20
+  <CODE>tar</CODE> usando a op=E7=E3o <SAMP>-z</SAMP>. Para detalhes =
+veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm#s-cpctd-gzip">gzip,=20
+  Se=E7=E3o 18.3</A> e <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm#s-cpctd-tar">tar,=20
+  Se=E7=E3o 18.6</A>. </LI></UL>
+<UL>
+  <LI><CODE>.tgz</CODE> - Abrevia=E7=E3o de <CODE>.tar.gz</CODE>. =
+</LI></UL>
+<UL>
+  <LI><CODE>.tar.bz2</CODE> - Arquivo compactado pelo programa=20
+  <CODE>bzip2</CODE> no utilit=E1rio de arquivamento <CODE>tar</CODE>. =
+Para=20
+  descompacta-lo, voc=EA pode usar o <CODE>bzip2</CODE> e depois o=20
+  <CODE>tar</CODE> ou somente o programa <CODE>tar</CODE> usando a =
+op=E7=E3o=20
+  <SAMP>-j</SAMP>. Para detalhes veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm#s-cpctd-bzip2">bzip2,=20
+  Se=E7=E3o 18.7</A> e <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm#s-cpctd-tar">tar,=20
+  Se=E7=E3o 18.6</A>. </LI></UL>
+<UL>
+  <LI><CODE>.tar.Z</CODE> - Arquivo compactado pelo programa=20
+  <CODE>compress</CODE> no utilit=E1rio de arquivamento =
+<CODE>tar</CODE>. Para=20
+  descompacta-lo, voc=EA pode usar o <CODE>uncompress</CODE> e depois o=20
+  <CODE>tar</CODE> ou somente o programa <CODE>tar</CODE> usando a =
+op=E7=E3o=20
+  <SAMP>-Z</SAMP>. Para detalhes veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm#s-cpctd-tar">tar,=20
+  Se=E7=E3o 18.6</A>. </LI></UL>
+<HR>
+<A name=3Ds-cpctd-gzip></A>
+<H2>18.3 gzip</H2>
+<P>=C9 praticamente o compactador padr=E3o do <CODE>GNU/Linux</CODE>, =
+possui uma=20
+=F3tima taxa de compacta=E7=E3o e velocidade. A extens=E3o dos arquivos =
+compactados pelo=20
+<CODE>gzip</CODE> =E9 a <CODE>.gz</CODE>, na vers=E3o para =
+<CODE>DOS</CODE>,=20
+<CODE>Windows NT</CODE> =E9 usada a extens=E3o <CODE>.z</CODE>.=20
+<P><SAMP>gzip [<EM>op=E7=F5es</EM>] [<EM>arquivos</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT>arquivos=20
+  <DD>Especifica quais arquivos ser=E3o compactados pelo =
+<CODE>gzip</CODE>. Caso=20
+  seja usado um <SAMP>-</SAMP>, ser=E1 assumido a entrada padr=E3o. =
+Curingas podem=20
+  ser usados para especificar v=E1rios arquivos de uma s=F3 vez (veja <A =
+
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm#s-basico-curingas">Curingas,=20
+  Se=E7=E3o 2.3</A>).=20
+  <DT>Op=E7=F5es=20
+  <DT>-d, --decompress [arquivo]=20
+  <DD>Descompacta um arquivo.=20
+  <DT>-f=20
+  <DD>For=E7a a compacta=E7=E3o, compactando at=E9 mesmo links.=20
+  <DT>-l [arquivo]=20
+  <DD>Lista o conte=FAdo de um arquivo compactado pelo =
+<CODE>gzip</CODE>.=20
+  <DT>-r=20
+  <DD>Compacta diret=F3rios e sub-diret=F3rios.=20
+  <DT>-c [arquivo]=20
+  <DD>Descompacta o arquivo para a sa=EDda padr=E3o.=20
+  <DT>-t [arquivo]=20
+  <DD>Testa o arquivo compactado pelo <CODE>gzip</CODE>.=20
+  <DT>-[num], --fast, --best=20
+  <DD>Ajustam a taxa de compacta=E7=E3o/velocidade da compacta=E7=E3o. =
+Quanto melhor a=20
+  taxa menor =E9 a velocidade de compacta=E7=E3o e vice versa. A =
+op=E7=E3o=20
+  <SAMP>--fast</SAMP> permite uma compacta=E7=E3o r=E1pida e tamanho do =
+arquivo maior.=20
+  A op=E7=E3o <SAMP>--best</SAMP> permite uma melhor compacta=E7=E3o e =
+uma velocidade=20
+  menor.=20
+  <P>O uso da op=E7=E3o <SAMP>-[n=FAmero]</SAMP> permite especificar uma =
+compacta=E7=E3o=20
+  individualmente usando n=FAmeros entre 1 (menor compacta=E7=E3o) e 9 =
+(melhor=20
+  compacta=E7=E3o). =C9 =FAtil para buscar um bom equilibro entre taxa =
+de=20
+  compacta=E7=E3o/velocidade (especialmente em computadores muito =
+lentos).=20
+</P></DD></DL>
+<P>Quando um arquivo =E9 compactado pelo <CODE>gzip</CODE>, =E9 =
+automaticamente=20
+acrescentada a extens=E3o <CODE>.gz</CODE> ao seu nome.=20
+<P>O <CODE>gzip</CODE> tamb=E9m reconhece arquivos compactados pelos =
+programas=20
+<CODE>zip</CODE>, <CODE>compress</CODE>, <CODE>compress -H</CODE> e=20
+<CODE>pack</CODE>. As permiss=F5es de acesso dos arquivos s=E3o tamb=E9m =
+armazenadas=20
+no arquivo compactado.=20
+<P>Exemplos:=20
+<UL>
+  <LI><SAMP>gzip -9 texto.txt</SAMP> - Compacta o arquivo =
+<CODE>texto.txt</CODE>=20
+  usando a compacta=E7=E3o m=E1xima (compare o tamanho do arquivo =
+compactado usando o=20
+  comando <SAMP>ls -la</SAMP>).=20
+  <LI><SAMP>gzip -d texto.txt.gz</SAMP> - Descompacta o arquivo=20
+  <CODE>texto.txt</CODE>=20
+  <LI><SAMP>gzip -c texto.txt.gz</SAMP> - Descompacta o arquivo=20
+  <CODE>texto.txt</CODE> para a tela=20
+  <LI><SAMP>gzip -9 *.txt</SAMP> - Compacta todos os arquivos que =
+terminam com=20
+  <CODE>.txt</CODE>=20
+  <LI><SAMP>gzip -t texto.txt.gz</SAMP> - Verifica o arquivo=20
+  <CODE>texto.txt.gz</CODE>. </LI></UL>
+<HR>
+<A name=3Ds-cpctd-zip></A>
+<H2>18.4 zip</H2>
+<P>Utilit=E1rio de compacta=E7=E3o compat=EDvel com <CODE>pkzip</CODE> =
+(do=20
+<CODE>DOS</CODE>) e trabalha com arquivos de extens=E3o =
+<CODE>.zip</CODE>. Possui=20
+uma =F3tima taxa de compacta=E7=E3o e velocidade no processamento dos =
+arquivos=20
+compactados (comparando-se ao <CODE>gzip</CODE>).=20
+<P><SAMP>zip [<EM>op=E7=F5es</EM>] [<EM>arquivo-destino</EM>]=20
+[<EM>arquivos-origem</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT>arquivo-destino=20
+  <DD>Nome do arquivo compactado que ser=E1 gerado.=20
+  <DT>arquivos-origem=20
+  <DD>Arquivos/Diret=F3rios que ser=E3o compactados. Podem ser usados =
+curingas para=20
+  especificar mais de um arquivo de uma s=F3 vez (veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm#s-basico-curingas">Curingas,=20
+  Se=E7=E3o 2.3</A>).=20
+  <DT>op=E7=F5es=20
+  <DT>-r=20
+  <DD>Compacta arquivos e sub-diret=F3rios.=20
+  <DT>-e=20
+  <DD>Permite encriptar o conte=FAdo de um arquivo <CODE>.zip</CODE> =
+atrav=E9s de=20
+  senha. A senha ser=E1 pedida no momento da compacta=E7=E3o.=20
+  <DT>-f=20
+  <DD>Somente substitui um arquivo compactado existente dentro do =
+arquivo=20
+  <CODE>.zip</CODE> somente se a vers=E3o =E9 mais nova que a atual. =
+N=E3o acrescenta=20
+  arquivos ao arquivo compactado. Deve ser executado no mesmo =
+diret=F3rio onde o=20
+  programa <CODE>zip</CODE> foi executado anteriormente.=20
+  <DT>-F=20
+  <DD>Repara um arquivo <CODE>.zip</CODE> danificado.=20
+  <DT>-[NUM]=20
+  <DD>Ajusta a qualidade/velocidade da compacta=E7=E3o. Pode ser =
+especificado um=20
+  n=FAmero de 1 a 9. O 1 permite m=EDnima compacta=E7=E3o e m=E1xima =
+velocidade, 9 permite=20
+  uma melhor compacta=E7=E3o e menor velocidade.=20
+  <DT>-i [arquivos]=20
+  <DD>Compacta somente os [arquivos] especificados.=20
+  <DT>-j=20
+  <DD>Se especificado, n=E3o armazena caminhos de diret=F3rios.=20
+  <DT>-m=20
+  <DD>Apaga os arquivos originais ap=F3s a compacta=E7=E3o.=20
+  <DT>-T [arquivo]=20
+  <DD>Procura por erros em um arquivo <CODE>.zip</CODE>. Caso sejam =
+detectados=20
+  problemas, utilize a op=E7=E3o <SAMP>-F</SAMP> para corrigi-los.=20
+  <DT>-y=20
+  <DD>Armazena links simb=F3licos no arquivo <CODE>.zip</CODE>. Por =
+padr=E3o, os=20
+  links simb=F3licos s=E3o ignorados durante a compacta=E7=E3o.=20
+  <DT>-k [arquivo]=20
+  <DD>Modifica o [arquivo] para ter compatibilidade total com o=20
+  <CODE>pkzip</CODE> do <CODE>DOS</CODE>.=20
+  <DT>-l=20
+  <DD>Converte saltos de linha <CODE>UNIX</CODE> (LF) para o formato =
+CR+LF=20
+  (usados pelo <CODE>DOS</CODE>). Use esta op=E7=E3o com arquivos Texto. =
+
+  <DT>-ll=20
+  <DD>Converte saltos de linha <CODE>DOS</CODE> (CR+LF) para o formato=20
+  <CODE>UNIX</CODE> (LF). Use esta op=E7=E3o com arquivos texto.=20
+  <DT>-n [extens=E3o]=20
+  <DD>N=E3o compacta arquivos identificados por [extens=E3o]. Ele =E9 =
+armazenado sem=20
+  compacta=E7=E3o no arquivo <CODE>.zip</CODE>, muito =FAtil para uso =
+com arquivos j=E1=20
+  compactados.=20
+  <P>Caso sejam especificados diversas extens=F5es de arquivos, elas =
+devem ser=20
+  separadas por <SAMP>:</SAMP> - Por exemplo, <SAMP>zip -n .zip:.tgz =
+arquivo.zip=20
+  *.txt</SAMP>. </P>
+  <DT>-q=20
+  <DD>N=E3o mostra mensagens durante a compacta=E7=E3o do arquivo.=20
+  <DT>-u=20
+  <DD>Atualiza/adiciona arquivos ao arquivo <CODE>.zip</CODE>=20
+  <DT>-X=20
+  <DD>N=E3o armazena detalhes de permiss=F5es, UID, GID e datas dos =
+arquivos.=20
+  <DT>-z=20
+  <DD>Permite incluir um coment=E1rio no arquivo <CODE>.zip</CODE>. =
+</DD></DL>
+<P>Caso o nome de arquivo de destino n=E3o termine com =
+<CODE>.zip</CODE>, esta=20
+extens=E3o ser=E1 automaticamente adicionada. Para a descompacta=E7=E3o =
+de arquivos=20
+<CODE>.zip</CODE> no <CODE>GNU/Linux</CODE>, =E9 necess=E1rio o uso do =
+utilit=E1rio=20
+<CODE>unzip</CODE>. Exemplos:=20
+<UL>
+  <LI><SAMP>zip textos.zip *.txt</SAMP> - Compacta todos os arquivos com =
+a=20
+  extens=E3o <CODE>.txt</CODE> para o arquivo <CODE>textos.zip</CODE> =
+(compare o=20
+  tamanho do arquivo compactado digitando <SAMP>ls -la</SAMP>).=20
+  <LI><SAMP>zip -r textos.zip /usr/*.txt</SAMP> - Compacta todos os =
+arquivos com=20
+  a extens=E3o <CODE>.txt</CODE> do diret=F3rio <CODE>/usr</CODE> e =
+sub-diret=F3rios=20
+  para o arquivo <CODE>textos.zip</CODE>.=20
+  <LI><SAMP>zip -9 textos.zip *</SAMP> - Compacta todos os arquivos do =
+diret=F3rio=20
+  atual usando a compacta=E7=E3o m=E1xima para o arquivo =
+<CODE>textos.zip</CODE>.=20
+  <LI><SAMP>zip -T textos.zip</SAMP> - Verifica se o arquivo=20
+  <CODE>textos.zip</CODE> cont=E9m erros. </LI></UL>
+<HR>
+<A name=3Ds-cpctd-unzip></A>
+<H2>18.5 unzip</H2>
+<P>Descompacta arquivos <CODE>.zip</CODE> criados com o programa=20
+<CODE>zip</CODE>. Este programa tamb=E9m =E9 compat=EDvel com arquivos =
+compactados=20
+pelo <CODE>pkzip</CODE> do <CODE>DOS</CODE>.=20
+<P><SAMP>unzip [<EM>op=E7=F5es</EM>] [<EM>arquivo.zip</EM>]=20
+[<EM>arquivos-extrair</EM>] [<EM>-d diret=F3rio</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT>arquivo.zip=20
+  <DD>Nome do arquivo que deseja descompactar. Podem ser usados curingas =
+para=20
+  especificar mais de um arquivo para ser descompactado.=20
+  <DT>arquivos-extrair=20
+  <DD>Nome dos arquivos (separados por espa=E7o) que ser=E3o =
+descompactados do=20
+  arquivo <CODE>.zip</CODE>. Caso n=E3o seja especificado, =E9 assumido=20
+  <SAMP>*</SAMP> (todos os arquivos ser=E3o descompactados).=20
+  <P>Se for usado <SAMP>-x arquivos</SAMP>, os arquivos especificados =
+n=E3o ser=E3o=20
+  descompactados. O uso de curingas =E9 permitido. </P>
+  <DT>-d diret=F3rio=20
+  <DD>Diret=F3rio onde os arquivos ser=E3o descompactados. Caso n=E3o =
+for=20
+  especificado, os arquivos ser=E3o descompactados no diret=F3rio atual. =
+
+  <DT>op=E7=F5es=20
+  <DT>-c=20
+  <DD>Descompacta os arquivos para stdout (sa=EDda padr=E3o) ao inv=E9s =
+de criar=20
+  arquivos. Os nomes dos arquivos tamb=E9m s=E3o mostrados (veja a =
+op=E7=E3o=20
+  <SAMP>-p</SAMP>).=20
+  <DT>-f=20
+  <DD>Descompacta somente arquivos que existam no disco e mais novos que =
+os=20
+  atuais.=20
+  <DT>-l=20
+  <DD>Lista os arquivos existentes dentro do arquivo <CODE>.zip</CODE>.=20
+  <DT>-M=20
+  <DD>Efetua uma pausa a cada tela de dados durante o processamento (a =
+mesma=20
+  fun=E7=E3o do comando <CODE>more</CODE>).=20
+  <DT>-n=20
+  <DD>Nunca substitui arquivos j=E1 existentes. Se um arquivo existe ele =
+=E9 pulado.=20
+
+  <DT>-o=20
+  <DD>Substitui arquivos existentes sem perguntar. Tem a fun=E7=E3o =
+contr=E1ria a=20
+  op=E7=E3o <SAMP>-n</SAMP>.=20
+  <DT>-P [SENHA]=20
+  <DD>Permite descompactar arquivos <CODE>.zip</CODE> usando a [SENHA]. =
+CUIDADO!=20
+  qualquer usu=E1rio conectado em seu sistema pode ver a senha digitada =
+na linha=20
+  de comando digitada.=20
+  <DT>-p=20
+  <DD>Descompacta os arquivos para stdout (sa=EDda padr=E3o) ao inv=E9s =
+de criar=20
+  arquivos. Os nomes dos arquivos n=E3o s=E3o mostrados (veja a =
+op=E7=E3o=20
+  <SAMP>-c</SAMP>).=20
+  <DT>-q=20
+  <DD>N=E3o mostra mensagens.=20
+  <DT>-t=20
+  <DD>Verifica o arquivo <CODE>.zip</CODE> em busca de erros.=20
+  <DT>-u=20
+  <DD>Id=EAntico a op=E7=E3o <SAMP>-f</SAMP> s=F3 que tamb=E9m cria =
+arquivos que n=E3o=20
+  existem no diret=F3rio.=20
+  <DT>-v=20
+  <DD>Mostra mais detalhes sobre o processamento do <CODE>unzip</CODE>.=20
+  <DT>-z=20
+  <DD>Mostra somente o coment=E1rio existente no arquivo. </DD></DL>
+<P>Por padr=E3o o <CODE>unzip</CODE> tamb=E9m descompacta =
+sub-diret=F3rios caso o=20
+arquivo <CODE>.zip</CODE> tenha sido gerado com <CODE>zip -r</CODE>.=20
+<P>Exemplos:=20
+<UL>
+  <LI><SAMP>unzip texto.zip</SAMP> - Descompacta o conte=FAdo do arquivo =
+
+  <CODE>texto.zip</CODE> no diret=F3rio atual.=20
+  <LI><SAMP>unzip texto.zip carta.txt</SAMP> - Descompacta somente o =
+arquivo=20
+  <CODE>carta.txt</CODE> do arquivo <CODE>texto.zip</CODE>.=20
+  <LI><SAMP>unzip texto.zip -d /tmp/texto</SAMP> - Descompacta o =
+conte=FAdo do=20
+  arquivo <CODE>texto.zip</CODE> para o diret=F3rio =
+<CODE>/tmp/texto</CODE>.=20
+  <LI><SAMP>unzip -l texto.zip</SAMP> - Lista o conte=FAdo do arquivo=20
+  <CODE>texto.zip</CODE>.=20
+  <LI><SAMP>unzip -t texto.zip</SAMP> - Verifica o arquivo=20
+  <CODE>texto.zip</CODE>. </LI></UL>
+<HR>
+<A name=3Ds-cpctd-tar></A>
+<H2>18.6 tar</H2>
+<P>Na verdade o <CODE>tar</CODE> n=E3o =E9 um compactador e sim um =
+"arquivador" (ele=20
+junta v=E1rios arquivos em um s=F3), mas pode ser usado em conjunto com =
+um compactar=20
+(como o <CODE>gzip</CODE> ou <CODE>zip</CODE>) para armazena-los =
+compactados. O=20
+<CODE>tar</CODE> tamb=E9m =E9 muito usado para c=F3pias de arquivos =
+especiais ou=20
+dispositivos do sistema. =C9 comum encontrar arquivos com a extens=E3o=20
+<CODE>.tar</CODE>, <CODE>.tar.gz</CODE>, <CODE>.tgz</CODE>,=20
+<CODE>.tar.bz2</CODE>, <CODE>.tar.Z</CODE>, <CODE>.tgZ</CODE>, o =
+primeiro =E9 um=20
+arquivo normal gerado pelo <CODE>tar</CODE> e todos os outros s=E3o =
+arquivos=20
+gerados atrav=E9s <CODE>tar</CODE> junto com um programa de =
+compacta=E7=E3o=20
+(<CODE>gzip</CODE> (<CODE>.gz</CODE>), <CODE>bzip2</CODE> =
+(<CODE>.bz2</CODE>) e=20
+<CODE>compress</CODE> (<CODE>.Z</CODE>).=20
+<P><SAMP>tar [<EM>op=E7=F5es</EM>] [<EM>arquivo-destino</EM>]=20
+[<EM>arquivos-origem</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT>arquivo-destino=20
+  <DD>=C9 o nome do arquivo de destino. Normalmente especificado com a =
+extens=E3o=20
+  <CODE>.tar</CODE> caso seja usado somente o arquivamento ou=20
+  <CODE>.tar.gz</CODE>/<CODE>.tgz</CODE> caso seja usada a =
+compacta=E7=E3o (usando a=20
+  op=E7=E3o <SAMP>-z</SAMP>).=20
+  <DT>arquivos-origem=20
+  <DD>Especifica quais arquivos/diret=F3rios ser=E3o compactados.=20
+  <DT>op=E7=F5es=20
+  <DT>-c, --create=20
+  <DD>Cria um novo arquivo <CODE>.tar</CODE>=20
+  <DT>-t, --list=20
+  <DD>Lista o conte=FAdo de um arquivo <CODE>.tar</CODE>=20
+  <DT>-u, --update=20
+  <DD>Atualiza arquivos compactados no arquivo <CODE>.tar</CODE>=20
+  <DT>-f, --file [HOST:]F=20
+  <DD>Usa o arquivo especificado para grava=E7=E3o ou o dispositivo=20
+  <CODE>/dev/rmt0</CODE>.=20
+  <DT>-j, --bzip2=20
+  <DD>Usa o programa <CODE>bzip2</CODE> para processar os arquivos do=20
+  <CODE>tar</CODE>=20
+  <DT>-l, --one-file-system=20
+  <DD>N=E3o processa arquivos em um sistema de arquivos diferentes de =
+onde o=20
+  <CODE>tar</CODE> foi executado.=20
+  <DT>-M, --multi-volume=20
+  <DD>Cria/lista/descompacta arquivos em m=FAltiplos volumes. O uso de =
+arquivos em=20
+  m=FAltiplos volumes permite que uma grande c=F3pia de arquivos que =
+n=E3o cabe em um=20
+  disquete, por exemplo, seja feita em mais de um disquete.=20
+  <DT>-o=20
+  <DD>Grava o arquivo no formato VT7 ao inv=E9s do ANSI.=20
+  <DT>-O, --to-stdout=20
+  <DD>Descompacta arquivos para a sa=EDda padr=E3o ao inv=E9s de gravar =
+em um arquivo.=20
+
+  <DT>--remove-files=20
+  <DD>Apaga os arquivos de origem ap=F3s serem processados pelo =
+<CODE>tar</CODE>.=20
+  <DT>-R, --record-number=20
+  <DD>Mostra o n=FAmero de registros dentro de um arquivo =
+<CODE>tar</CODE> em cada=20
+  mensagem.=20
+  <DT>--totals=20
+  <DD>Mostra o total de bytes gravados com a op=E7=E3o =
+<SAMP>--create</SAMP>.=20
+  <DT>-v=20
+  <DD>Mostra os nomes dos arquivos enquanto s=E3o processados.=20
+  <DT>-V [NOME]=20
+  <DD>Inclui um [NOME] no arquivo <CODE>tar</CODE>.=20
+  <DT>-W, --verify=20
+  <DD>Tenta verificar o arquivo gerado pelo <CODE>tar</CODE> ap=F3s =
+grava-lo.=20
+  <DT>x=20
+  <DD>Extrai arquivos gerados pelo <CODE>tar</CODE>=20
+  <DT>-X [ARQUIVO]=20
+  <DD>Tenta apagar o [ARQUIVO] dentro de um arquivo compactado=20
+  <CODE>.tar</CODE>.=20
+  <DT>-Z=20
+  <DD>Usa o programa <CODE>compress</CODE> durante o processamento dos =
+arquivos.=20
+
+  <DT>-z=20
+  <DD>Usa o programa <CODE>gzip</CODE> durante o processamento dos =
+arquivos.=20
+  <DT>--use-compress-program [PROGRAMA]=20
+  <DD>Usa o [PROGRAMA] durante o processamento dos arquivos. Ele deve =
+aceitar a=20
+  op=E7=E3o <SAMP>-d</SAMP>.=20
+  <DT>-[0-7][lmh]=20
+  <DD>Especifica a unidade e sua densidade. </DD></DL>
+<P>A extens=E3o precisa ser especificada no arquivo de destino para a=20
+identifica=E7=E3o correta:=20
+<UL>
+  <LI>Arquivos gerados pelo <CODE>tar</CODE> precisam ter a extens=E3o=20
+  <CODE>.tar</CODE>=20
+  <LI>Caso seja usada a op=E7=E3o <SAMP>-j</SAMP> para compacta=E7=E3o, =
+a extens=E3o=20
+  dever=E1 ser <CODE>.tar.bz2</CODE>=20
+  <LI>Caso seja usada a op=E7=E3o <SAMP>-z</SAMP> para compacta=E7=E3o, =
+a extens=E3o=20
+  dever=E1 ser <CODE>.tar.gz</CODE> ou <CODE>.tgz</CODE>=20
+  <LI>Caso seja usada a op=E7=E3o <SAMP>-Z</SAMP> para a =
+compacta=E7=E3o, a extens=E3o=20
+  dever=E1 ser <CODE>.tar.Z</CODE> ou <CODE>.tgZ</CODE> </LI></UL>
+<P>=C9 importante saber qual qual o tipo de compactador usado durante a =
+gera=E7=E3o do=20
+arquivo <CODE>.tar</CODE> pois ser=E1 necess=E1rio especificar a =
+op=E7=E3o apropriada=20
+para descompacta-lo (para detalhes veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm#s-cpctd-extensoes">Extens=F5es =
+
+de arquivos compactados, Se=E7=E3o 18.2</A>).=20
+<P>Exemplos:=20
+<UL>
+  <LI><SAMP>tar -cf index.txt.tar index.txt</SAMP> - Cria um arquivo =
+chamado=20
+  <CODE>index.txt.tar</CODE> que armazenar=E1 o arquivo =
+<CODE>index.txt</CODE>.=20
+  Voc=EA pode notar digitando <SAMP>ls -la</SAMP> que o arquivo=20
+  <CODE>index.txt</CODE> foi somente arquivado (sem compacta=E7=E3o), =
+isto =E9 =FAtil=20
+  para juntar diversos arquivos em um s=F3.=20
+  <LI><SAMP>tar -xf index.txt.tar</SAMP> - Desarquiva o arquivo=20
+  <CODE>index.txt</CODE> criado pelo comando acima.=20
+  <LI><SAMP>tar -czf index.txt.tar.gz index.txt</SAMP> - O mesmo que o =
+exemplo=20
+  de arquivamento anterior, s=F3 que agora =E9 usado a op=E7=E3o =
+<SAMP>-z</SAMP>=20
+  (compacta=E7=E3o atrav=E9s do programa <CODE>gzip</CODE>). Voc=EA =
+agora pode notar=20
+  digitando <SAMP>ls -la</SAMP> que o arquivo <CODE>index.txt</CODE> foi =
+
+  compactado e depois arquivado no arquivo <CODE>index.txt.tar.gz</CODE> =
+(voc=EA=20
+  tamb=E9m pode chama-lo de <CODE>index.txt.tgz</CODE> que tamb=E9m =
+identifica um=20
+  arquivo <CODE>.tar</CODE> compactado pelo <CODE>gzip</CODE>)=20
+  <LI><SAMP>tar -xzf index.txt.tar.gz</SAMP> - Descompacta e desarquiva =
+o=20
+  arquivo <CODE>index.txt.tar.gz</CODE> criado com o comando acima.=20
+  <LI><SAMP>gzip -dc index.tar.gz | tar -xf -</SAMP> - Faz o mesmo que o =
+comando=20
+  acima s=F3 que de uma forma diferente: Primeiro descompacta o arquivo=20
+  <CODE>index.txt.tar.gz</CODE> e envia a sa=EDda do arquivo =
+descompactado para o=20
+  <CODE>tar</CODE> que desarquivar=E1 o arquivo <CODE>index.txt</CODE>.=20
+  <LI><SAMP>tar -cjf index.txt.tar.bz2 index.txt</SAMP> - Arquiva o =
+arquivo=20
+  <CODE>index.txt</CODE> em <CODE>index.txt.tar.bz2</CODE> compactando =
+atrav=E9s=20
+  do <CODE>bzip2</CODE> (op=E7=E3o -j).=20
+  <LI><SAMP>tar -xjf index.txt.tar.bz2</SAMP> - Descompacta e desarquiva =
+o=20
+  arquivo <CODE>index.txt.tar.bz2</CODE> criado com o comando acima.=20
+  <LI><SAMP>bzip2 -dc index.txt.tar.bz2 | tar -xf -</SAMP> - Faz o mesmo =
+que o=20
+  comando acima s=F3 que de uma forma diferente: Primeiro descompacta o =
+arquivo=20
+  <CODE>index.txt.tar.bz2</CODE> e envia a sa=EDda do arquivo =
+descompactado para o=20
+  <CODE>tar</CODE> que desarquivar=E1 o arquivo <CODE>index.txt</CODE>.=20
+  <LI><SAMP>tar -t index.txt.tar</SAMP> - Lista o conte=FAdo de um =
+arquivo=20
+  <CODE>.tar</CODE>.=20
+  <LI><SAMP>tar -tz index.txt.tar.gz</SAMP> - Lista o conte=FAdo de um =
+arquivo=20
+  <CODE>.tar.gz</CODE>. </LI></UL>
+<HR>
+<A name=3Ds-cpctd-bzip2></A>
+<H2>18.7 bzip2</H2>
+<P>=C9 um novo compactador que vem sendo cada vez mais usado porque =
+consegue=20
+atingir a melhor compacta=E7=E3o em arquivos texto se comparado aos j=E1 =
+existentes=20
+(em conseq=FC=EAncia sua velocidade de compacta=E7=E3o tamb=E9m =E9 =
+menor; quase duas vezes=20
+mais lento que o <CODE>gzip</CODE>). Suas op=E7=F5es s=E3o praticamente =
+as mesmas=20
+usadas no <CODE>gzip</CODE> e voc=EA tamb=E9m pode usa-lo da mesma =
+forma. A extens=E3o=20
+dos arquivos compactados pelo <CODE>bzip2</CODE> =E9 a <CODE>.bz2</CODE> =
+
+<P><SAMP>bzip2 [<EM>op=E7=F5es</EM>] [<EM>arquivos</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT>arquivos=20
+  <DD>Especifica quais arquivos ser=E3o compactados pelo =
+<CODE>bzip2</CODE>. Caso=20
+  seja usado um <SAMP>-</SAMP>, ser=E1 assumido a entrada padr=E3o. =
+Curingas podem=20
+  ser usados para especificar v=E1rios arquivos de uma s=F3 vez (veja <A =
+
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm#s-basico-curingas">Curingas,=20
+  Se=E7=E3o 2.3</A>).=20
+  <DT>Op=E7=F5es=20
+  <DT>-d, --decompress [arquivo]=20
+  <DD>Descompacta um arquivo.=20
+  <DT>-f=20
+  <DD>For=E7a a compacta=E7=E3o, compactando at=E9 mesmo links.=20
+  <DT>-l [arquivo]=20
+  <DD>Lista o conte=FAdo de um arquivo compactado pelo =
+<CODE>bzip2</CODE>.=20
+  <DT>-r=20
+  <DD>Compacta diret=F3rios e sub-diret=F3rios.=20
+  <DT>-c [arquivo]=20
+  <DD>Descompacta o arquivo para a sa=EDda padr=E3o.=20
+  <DT>-t [arquivo]=20
+  <DD>Testa o arquivo compactado pelo <CODE>bzip2</CODE>.=20
+  <DT>-[num], --fast, --best=20
+  <DD>Ajustam a taxa de compacta=E7=E3o/velocidade da compacta=E7=E3o. =
+Quanto melhor a=20
+  taxa menor =E9 a velocidade de compacta=E7=E3o e vice versa. A =
+op=E7=E3o=20
+  <SAMP>--fast</SAMP> permite uma compacta=E7=E3o r=E1pida e tamanho do =
+arquivo maior.=20
+  A op=E7=E3o <SAMP>--best</SAMP> permite uma melhor compacta=E7=E3o e =
+uma velocidade=20
+  menor.=20
+  <P>O uso da op=E7=E3o <SAMP>-[n=FAmero]</SAMP> permite especificar uma =
+compacta=E7=E3o=20
+  individualmente usando n=FAmeros entre 1 (menor compacta=E7=E3o) e 9 =
+(melhor=20
+  compacta=E7=E3o). =C9 =FAtil para buscar um bom equilibro entre taxa =
+de=20
+  compacta=E7=E3o/velocidade (especialmente em computadores muito =
+lentos).=20
+</P></DD></DL>
+<P>Quando um arquivo =E9 compactado pelo <CODE>bzip2</CODE>, =E9 =
+automaticamente=20
+acrescentada a extens=E3o <CODE>.bz2</CODE> ao seu nome. As permiss=F5es =
+de acesso=20
+dos arquivos s=E3o tamb=E9m armazenadas no arquivo compactado.=20
+<P>Exemplos:=20
+<UL>
+  <LI><SAMP>bzip2 -9 texto.txt</SAMP> - Compacta o arquivo=20
+  <CODE>texto.txt</CODE> usando a compacta=E7=E3o m=E1xima (compare o =
+tamanho do=20
+  arquivo compactado usando o comando <SAMP>ls -la</SAMP>).=20
+  <LI><SAMP>bzip2 -d texto.txt.bz2</SAMP> - Descompacta o arquivo=20
+  <CODE>texto.txt</CODE>=20
+  <LI><SAMP>bzip2 -c texto.txt.bz2</SAMP> - Descompacta o arquivo=20
+  <CODE>texto.txt</CODE> para a sa=EDda padr=E3o (tela)=20
+  <LI><SAMP>bzip2 -9 *.txt</SAMP> - Compacta todos os arquivos que =
+terminam com=20
+  <CODE>.txt</CODE>=20
+  <LI><SAMP>bzip2 -t texto.txt.bz2</SAMP> - Verifica o arquivo=20
+  <CODE>texto.txt.bz2</CODE>. </LI></UL>
+<HR>
+<A name=3Ds-cpctd-rar></A>
+<H2>18.8 rar</H2>
+<P><CODE>rar</CODE> =E9 um compactador desenvolvido por <SAMP>Eugene =
+Roshal</SAMP>=20
+e possui vers=F5es para <CODE>GNU/Linux</CODE>, <CODE>DOS</CODE>,=20
+<CODE>Windows</CODE>, <CODE>OS/2</CODE> e <CODE>Macintosh</CODE>. =
+Trabalha com=20
+arquivos de extens=E3o <CODE>.rar</CODE> e permite armazenar arquivos =
+compactados=20
+em v=E1rios disquetes (m=FAltiplos volumes). Se trata de um produto =
+comercial, mas=20
+decidi coloca-lo aqui porque possui boas vers=F5es Shareware e pode ser =
+muito =FAtil=20
+em algumas situa=E7=F5es.=20
+<P><SAMP>rar [<EM>a=E7=F5es</EM>] [<EM>op=E7=F5es</EM>] =
+[<EM>arquivo-destino.rar</EM>]=20
+[<EM>arquivos-origem</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT>arquivo-destino.rar=20
+  <DD>=C9 o nome do arquivo de destino=20
+  <DT>arquivos-origem=20
+  <DD>Arquivos que ser=E3o compactados. Podem ser usados curingas para =
+especificar=20
+  mais de um arquivo.=20
+  <DT>a=E7=F5es=20
+  <DT>a=20
+  <DD>Compacta arquivos=20
+  <DT>x=20
+  <DD>Descompacta arquivos=20
+  <DT>d=20
+  <DD>Apaga arquivos especificados=20
+  <DT>t=20
+  <DD>Verifica o arquivo compactado em busca de erros.=20
+  <DT>c=20
+  <DD>Inclui coment=E1rio no arquivo compactado=20
+  <DT>r=20
+  <DD>Repara um arquivo <CODE>.rar</CODE> danificado=20
+  <DT>l=20
+  <DD>Lista arquivos armazenados no arquivo compactado=20
+  <DT>u=20
+  <DD>Atualiza arquivos existentes no arquivo compactado.=20
+  <DT>m=20
+  <DD>Compacta e apaga os arquivos de origem (move).=20
+  <DT>e=20
+  <DD>Descompacta arquivos para o diret=F3rio atual=20
+  <DT>p=20
+  <DD>Mostra o conte=FAdo do arquivo na sa=EDda padr=E3o=20
+  <DT>rr=20
+  <DD>Adiciona um registro de verifica=E7=E3o no arquivo=20
+  <DT>s=20
+  <DD>Converte um arquivo <CODE>.rar</CODE> normal em arquivo =
+auto-extr=E1ctil.=20
+  Arquivos auto-extr=E1cteis s=E3o =FAteis para enviar arquivos a =
+pessoas que n=E3o tem=20
+  o programa <CODE>rar</CODE>. Basta executar o arquivo e ele ser=E1=20
+  automaticamente descompactado (usando o sistema operacional que foi =
+criado).=20
+  Note que esta op=E7=E3o requer que o arquivo <CODE>default.sfx</CODE> =
+esteja=20
+  presente no diret=F3rio home do usu=E1rio. Use o comando =
+<CODE>find</CODE> para=20
+  localiza-lo em seu sistema.=20
+  <DT>op=E7=F5es=20
+  <DT>o+=20
+  <DD>Substitui arquivos j=E1 existentes sem perguntar=20
+  <DT>o-=20
+  <DD>N=E3o substitui arquivos existentes=20
+  <DT>sfx=20
+  <DD>Cria arquivos auto-extr=E1cteis. Arquivos auto-extr=E1cteis s=E3o =
+=FAteis para=20
+  enviar arquivos a pessoas que n=E3o tem o programa <CODE>rar</CODE>. =
+Basta=20
+  executar o arquivo e ele ser=E1 automaticamente descompactado. Note =
+que este=20
+  processo requer que o arquivo <CODE>default.sfx</CODE> esteja presente =
+no=20
+  diret=F3rio home do usu=E1rio. Use o comando <CODE>find</CODE> para =
+localiza-lo em=20
+  seu sistema.=20
+  <DT>y=20
+  <DD>Assume <SAMP>sim</SAMP> para todas as perguntas=20
+  <DT>r=20
+  <DD>Inclui sub-diret=F3rios no arquivo compactado=20
+  <DT>x [ARQUIVO]=20
+  <DD>Processa tudo menos o [ARQUIVO]. Pode ser usados curingas=20
+  <DT>v[TAMANHO]=20
+  <DD>Cria arquivos com um limite de tamanho. Por padr=E3o, o tamanho =
+=E9=20
+  especificado em bytes, mas o n=FAmero pode ser seguido de =
+<SAMP>k</SAMP>=20
+  (kilobytes) ou <SAMP>m</SAMP>(megabytes).=20
+  <P>Exemplo: <SAMP>rar a -v1440k ...</SAMP> ou <SAMP>rar a -v10m =
+...</SAMP>=20
+</P>
+  <DT>p [SENHA]=20
+  <DD>Inclui senha no arquivo. CUIDADO, pessoas conectadas em seu =
+sistema podem=20
+  capturar a linha de comando facilmente e descobrir sua senha.=20
+  <DT>m [0-5]=20
+  <DD>Ajusta a taxa de compacta=E7=E3o/velocidade de compacta=E7=E3o. 0 =
+n=E3o faz=20
+  compacta=E7=E3o alguma (mais r=E1pido) somente armazena os arquivos, 5 =
+=E9 o n=EDvel que=20
+  usa mais compacta=E7=E3o (mais lento).=20
+  <DT>ed=20
+  <DD>N=E3o inclui diret=F3rios vazios no arquivo=20
+  <DT>isnd=20
+  <DD>Ativa emiss=E3o de sons de alerta pelo programa=20
+  <DT>ierr=20
+  <DD>Envia mensagens de erro para stderr=20
+  <DT>inul=20
+  <DD>Desativa todas as mensagens=20
+  <DT>ow=20
+  <DD>Salva o dono e grupo dos arquivos.=20
+  <DT>ol=20
+  <DD>Salva links simb=F3licos no arquivo ao inv=E9s do arquivo f=EDsico =
+que o link=20
+  faz refer=EAncia.=20
+  <DT>mm[f]=20
+  <DD>Usa um m=E9todo especial de compacta=E7=E3o para arquivos =
+multim=EDdia (sons,=20
+  v=EDdeos, etc). Caso for usado <SAMP>mmf</SAMP>, for=E7a o uso do =
+m=E9todo=20
+  multim=EDdia mesmo que o arquivo compactado n=E3o seja deste tipo. =
+</DD></DL>
+<P>Os arquivos gerados pelo <CODE>rar</CODE> do <CODE>GNU/Linux</CODE> =
+podem ser=20
+usados em outros sistemas operacionais, basta ter o <CODE>rar</CODE> =
+instalado.=20
+Quando =E9 usada a op=E7=E3o <SAMP>-v</SAMP> para a cria=E7=E3o de =
+m=FAltiplos volumes, a=20
+numera=E7=E3o dos arquivos =E9 feita na forma: <CODE>arquivo.rar</CODE>, =
+
+<CODE>arquivo.r00</CODE>, <CODE>arquivo.r01</CODE>, etc, durante a=20
+descompacta=E7=E3o os arquivos ser=E3o pedidos em ordem. Se voc=EA =
+receber a mensagem=20
+<SAMP>cannot modify volume</SAMP> durante a cria=E7=E3o de um arquivo=20
+<CODE>.rar</CODE>, provavelmente o arquivo j=E1 existe. Apague o arquivo =
+existente=20
+e tente novamente.=20
+<P>Exemplos:=20
+<UL>
+  <LI><SAMP>rar a texto.rar texto.txt</SAMP> - Compacta o arquivo=20
+  <CODE>texto.txt</CODE> em um arquivo com o nome <CODE>texto.rar</CODE> =
+
+  <LI><SAMP>rar x texto.rar</SAMP> - Descompacta o arquivo=20
+  <CODE>texto.rar</CODE>=20
+  <LI><SAMP>rar a -m5 -v1400k textos.rar *</SAMP> - Compacta todos os =
+arquivos=20
+  do diret=F3rio atual, usando a compacta=E7=E3o m=E1xima no arquivo=20
+  <CODE>textos.rar</CODE>. Note que o tamanho m=E1ximo de cada arquivo =
+=E9 1440 para=20
+  ser poss=EDvel grava-lo em partes para disquetes.=20
+  <LI><SAMP>rar x -v -y textos.rar</SAMP> - Restaura os arquivos em =
+m=FAltiplos=20
+  volumes criados com o processo anterior. Todos os arquivos devem ter =
+sido=20
+  copiados dos disquetes para o diret=F3rio atual antes de prosseguir. A =
+op=E7=E3o=20
+  <SAMP>-y</SAMP> =E9 =FAtil para n=E3o precisar-mos responder =
+<SAMP>yes</SAMP> a toda=20
+  pergunta que o <CODE>rar</CODE> fizer.=20
+  <LI><SAMP>rar t textos.rar</SAMP> - Verifica se o arquivo=20
+  <CODE>textos.rar</CODE> possui erros.=20
+  <LI><SAMP>rar r textos.rar</SAMP> - Repara um arquivo =
+<CODE>.rar</CODE>=20
+  danificado. </LI></UL>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ 18 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

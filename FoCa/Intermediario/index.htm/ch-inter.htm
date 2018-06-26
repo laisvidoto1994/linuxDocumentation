@@ -1,0 +1,466 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Guia Foca GNU/Linux - Conectando seu computador a Internet</title>
+
+</head>
+
+<body>
+
+<a name="ch-inter"></a>
+<hr>
+
+[ <a href="ch-etc.htm">anterior</a> ]
+[ <a href="index.htm#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ <a href="ch-hardw.htm">3</a> ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ <a href="ch-cmdd.htm">8</a> ]
+[ <a href="ch-cmd.htm">9</a> ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ <a href="ch-cmdc.htm">12</a> ]
+[ <a href="ch-perm.htm">13</a> ]
+[ <a href="ch-redir.htm">14</a> ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ <a href="ch-cpctd.htm">18</a> ]
+[ <a href="ch-deb.htm">19</a> ]
+[ <a href="ch-dpkg.htm">20</a> ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ <a href="ch-cfg.htm">23</a> ]
+[ <a href="ch-tasks.htm">24</a> ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ <a href="ch-etc.htm">27</a> ]
+[ 28 ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ <a href="ch-apend.htm">32</a> ]
+[ <a href="ch-x11.htm">próximo</a> ]
+
+<hr>
+
+<h1>
+Guia Foca GNU/Linux
+<br>Capítulo 28 - Conectando seu computador a Internet
+</h1>
+
+<hr>
+
+<p>
+Este capítulo descreve como configurar seu sistema para se conectar a Internet,
+navegar, enviar/receber mensagens, etc.
+
+<hr>
+
+<a name="s-inter-conectando"></a>
+<h2>28.1 Conectando-se a Internet</h2>
+
+<p>
+Conectar-se a Internet através da <code>Debian</code> é fácil, e todo o
+trabalho de configuração pode ser feito através do programa
+<code>pppconfig</code> ou modificando manualmente os arquivos em
+<code>/etc/ppp</code>.  Para criar uma conexão internet através do
+<code>pppconfig</code>, entre como usuário root no sistema, digite
+<samp>pppconfig</samp> e siga os passos de configuração (esta configuração
+serve para usuários domésticos e assume que você possui o kernel com suporte a
+PPP):
+<ol type="1" start="1" >
+<li>
+No primeiro menu, escolha a opção <samp>Create</samp> para criar uma nova
+conexão.  As outras opções disponíveis são <samp>Change</samp> para modificar
+uma conexão a Internet criada anteriormente, <samp>Delete</samp> para apagar
+uma conexão.  A opção <samp>Quit</samp> sai do programa.
+</li>
+</ol>
+<ol type="1" start="2" >
+<li>
+Agora o sistema perguntará qual será o nome da conexão que será criada.  O nome
+<samp>provider</samp> é o padrão, e será usado caso digite <samp>pon</samp>
+para iniciar uma conexão internet sem nenhum argumento.
+</li>
+</ol>
+<ol type="1" start="3" >
+<li>
+O próximo passo é especificar como os servidores de nomes serão acessados.
+Escolha <samp>Static</samp> se não tiver nenhum tipo de rede local ou
+<samp>None</samp> para usar os servidores especificados no arquivo
+<code>/etc/resolv.conf</code>.
+
+<p>
+Aperte a tecla <samp>TAB</samp> e tecle <samp>ENTER</samp> para seguir para o
+próximo passo.
+</li>
+</ol>
+<ol type="1" start="4" >
+<li>
+Agora digite o endereço do servidor DNS especificado pelo seu provedor de
+acesso.  Um servidor DNS converte os nomes como
+<samp>www.blablabla.com.br</samp> para o endereço IP correspondente para que
+seu computador possa fazer conexão.
+
+<p>
+Tecle <samp>ENTER</samp> para seguir para o próximo passo.
+</li>
+</ol>
+<ol type="1" start="5" >
+<li>
+Você pode digitar um endereço de um segundo computador que será usado na
+resolução de nomes DNS.  Siga as instruções anteriores caso tiver um segundo
+servidor de nomes ou <samp>ENTER</samp> para continuar.
+</li>
+</ol>
+<ol type="1" start="6" >
+<li>
+Agora você precisará especificar qual é o método de autenticação usado pelo seu
+provedor de acesso.  O <em>Password Autentication Protocol</em> é usado pela
+maioria dos provedores de acesso.  Desta forma escolha a opção <samp>PAP</samp>
+</li>
+</ol>
+<ol type="1" start="7" >
+<li>
+Agora entre com o seu login no provedor de acesso, ou seja, o nome para acesso
+ao sistema que escolheu no momento que fez sua assinatura.
+</li>
+</ol>
+<ol type="1" start="8" >
+<li>
+Agora especifique a sua senha.
+</li>
+</ol>
+<ol type="1" start="9" >
+<li>
+O próximo passo será especificar a taxa de transmissão da porta serial do
+micro.  O valor de 115200 deve funcionar com todas as configurações mais
+recentes.
+
+<p>
+Uma configuração serial DTE detalhada pode ser feita com a ferramenta
+<code>setserial</code>.
+</li>
+</ol>
+<ol type="1" start="10" >
+<li>
+Agora será necessário selecionar o modo de discagem usado pelo seu fax-modem.
+Escolha <samp>tone</samp> para linha digital e <samp>pulse</samp> se possuir
+uma linha telefônica analógica.
+
+<p>
+Pressione <samp>TAB</samp> e tecle <samp>ENTER</samp> para prosseguir.
+</li>
+</ol>
+<ol type="1" start="11" >
+<li>
+Agora digite o número do telefone para fazer conexão com o seu provedor de
+acesso.
+</li>
+</ol>
+<ol type="1" start="12" >
+<li>
+O próximo passo será a identificação do seu fax-modem, escolha <samp>YES</samp>
+para que seja utilizada a auto-detecção ou <samp>NO</samp> para especificar a
+localização do seu fax-modem manualmente.
+</li>
+</ol>
+<ol type="1" start="13" >
+<li>
+Se você quiser especificar mais detalhes sobre sua configuração, como strings
+de discagem, tempo de desconexão, auto-discagem, etc., faça isto através do
+menu <samp>Advanced</samp>.
+
+<p>
+Escolha a opção <samp>Finished</samp> para salvar a sua configuração e retornar
+ao menu principal.  Escolha a opção <samp>Quit</samp> para sair do programa.
+</li>
+</ol>
+
+<p>
+Pronto!  todos os passos para você se conectar a Internet estão concluídos,
+basta digitar <samp>pon</samp> para se conectar e <samp>poff</samp> para se
+desconectar da Internet.  Caso tenha criado uma conexão com o nome diferente de
+<samp>provider</samp> você terá que especifica-la no comando <code>pon</code>
+(por exemplo, <samp>pon provedor2</samp>).
+
+<p>
+A conexão pode ser monitorada através do comando <code>plog</code> e os pacotes
+enviados/recebidos através do <code>pppconfig</code>.
+
+<p>
+Para uma navegação mais segura, é recomendável que leia e compreenda alguns
+ítens que podem aumentar consideravelmente a segurança do seu sistema em <a
+href="ch-rede.htm#s-rede-seg">Segurança da Rede e controle de Acesso, Seção
+15.8</a>, <a href="ch-rede.htm#s-rede-seg-tcpd-a">/etc/hosts.allow, Seção
+15.8.3.1</a>, <a href="ch-rede.htm#s-rede-seg-tcpd-d">/etc/hosts.deny, Seção
+15.8.3.2</a>.  A seção <a
+href="ch-rede.htm#s-rede-dns-a-resolv">/etc/resolv.conf, Seção 15.6.2.1</a>
+pode ser também útil.
+
+<hr>
+
+<a name="s-inter-navegando"></a>
+<h2>28.2 Navegando na Internet</h2>
+
+<p>
+Existem diversos tipos de navegadores web para <code>GNU/Linux</code> e a
+escolha depende dos recursos que pretende utilizar (e do poder de processamento
+de seu computador).
+
+<p>
+Para navegar na Internet com muitos recursos, você pode usar o navegador
+<code>Netscape Navigator</code>, ele suporta plug-ins, java, flash, etc.  Você
+também tem a escolha do <code>Mozilla</code> que inspirou a criação do
+<code>Netscape</code>.
+
+<p>
+O <code>Arena</code> é uma boa alternativa para aqueles que desejam um
+navegador em modo gráfico, mas eles não tem suporte a Java e Frames.
+
+<p>
+Os usuários e administradores de servidores que operam em modo texto podem
+optar pelo <code>Lynx</code>.  Uma listagem mais detalhada e recursos
+requeridos por cada navegador podem ser encontrados em <a
+href="ch-aplic.htm#s-aplic-b-internet">Internet, Seção 30.1.3</a>.
+
+<hr>
+
+<a name="s-inter-emails-r"></a>
+<h2>28.3 Recebimento de E-Mails através do <code>fetchmail</code></h2>
+
+<p>
+É o programa mais tradicional no recebimento de mensagens através dos serviços
+<em>pop3</em>, <em>imap</em>, <em>pop2</em>, etc.  no <code>GNU/Linux</code>.
+Ele pega as mensagens de seu servidor <em>pop3</em> e as entrega ao MDA local
+ou nos arquivos de e-mails dos usuários do sistema em <code>/var/mail</code>
+
+<p>
+Todo o funcionamento do <code>fetchmail</code> é controlado pelo arquivo
+<code>~/.fetchmailrc</code>.  Segue abaixo um modelo padrão deste arquivo:
+
+<pre>
+      poll pop3.seuprovedor.com.br protocol pop3
+        user gleydson password sua_senha keep fetchall is gleydson here
+</pre>
+
+<p>
+Este arquivo é lido pelo <code>fetchmail</code> na ordem que foi escrito.  Veja
+a explicação abaixo sobre o arquivo exemplo:
+<ul>
+<li>
+A palavra <samp>poll</samp> especifica o servidor de onde suas mensagens serão
+baixadas, o servidor especificado no exemplo é
+<samp>pop3.seuprovedor.com.bt</samp>.  A palavra <samp>skip</samp> pode ser
+especificada, mas as mensagens no servidor especificado por <samp>skip</samp>
+somente serão baixadas caso o nome do servidor de mensagens for especificado
+através da linha de comando do <code>fetchmail</code>.
+</li>
+<li>
+<samp>protocol</samp> é o protocolo que será usado para a transferência de
+mensagens do servidor.  O <code>fetchmail</code> utilizará a auto-detecção de
+protocolo caso este não seja especificado.
+</li>
+<li>
+<samp>user</samp> define o nome do usuário no servidor pop3.seuprovedor.com.br,
+que no exemplo acima é <samp>gleydson</samp>.
+</li>
+<li>
+<samp>password</samp> define a senha do usuário <samp>gleydson</samp> (acima),
+especificada como <samp>sua_senha</samp> no exemplo.
+</li>
+<li>
+<samp>keep</samp> é opcional e serve para não apagar as mensagens do servidor
+após baixa-las (útil para testes e acesso a uma única conta de e-mail através
+de vários locais, como na empresa e sua casa por exemplo).
+</li>
+<li>
+<samp>fetchall</samp> baixa todas as mensagens do provedor marcadas como lidas
+e não lidas.
+</li>
+<li>
+<samp>is gleydson here</samp> é um modo de especificar que as mensagens obtidas
+de <samp>pop3.seuprovedor.com.br</samp> do usuário <samp>gleydson</samp> com a
+senha <samp>sua_senha</samp> serão entregues para o usuário local
+<samp>gleydson</samp> no diretório <code>/var/mail/gleydson</code>.
+<p>
+As palavras <samp>is</samp> e <samp>here</samp> são completamente ignoradas
+pelo <code>fetchmail</code>, servem somente para dar um tom de linguagem
+natural na configuração do programa e da mesma forma facilitar a compreensão da
+configuração.
+</li>
+</ul>
+
+<p>
+Se possuir várias contas no servidor <samp>pop3.seuprovedor.com.br</samp>, não
+é necessário repetir toda a configuração para cada conta, ao invés disso
+especifique somente os outros usuários do mesmo servidor:
+
+<pre>
+     poll pop3.seuprovedor.com.br protocol pop3
+      user gleydson password sua_senha keep fetchall is gleydson here
+      user conta2 password sua_senha2 fetchall is gleydson here
+      user conta3 password sua_senha3 fetchall is gleydson here
+</pre>
+
+<p>
+Note que todos os e-mails das contas <samp>gleydson</samp>, <samp>conta2</samp>
+e <samp>conta3</samp> do servidor de mensagens
+<samp>pop3.seuprovedor.com.br</samp> são entregues ao usuário local
+<samp>gleydson</samp> (arquivo <code>/var/mail/gleydson</code>).
+
+<p>
+Agora você pode usar um programa MUA como o <code>mutt</code> ou
+<code>pine</code> para ler localmente as mensagens.  O armazenamento de
+mensagens no diretório <code>/var/mail</code> é preferido pois permite a
+utilização de programas de notificação de novos e-mais como o
+<code>comsat</code>, <code>mailleds</code>, <code>biff</code>, etc.
+
+<p>
+Também é possível utilizar um processador de mensagens ao invés do MTA para a
+entrega de mensagens.  O programa <code>procmail</code> é um exemplo de
+processador de mensagens rápido e funcional que pode separar as mensagens em
+arquivos de acordo com sua origem, destino, assunto, enviar respostas
+automáticas, listas de discussão, envio de arquivos através de requisição, etc.
+Veja <a href="#s-inter-procmail">Processamento de mensagens através do
+procmail, Seção 28.3.1</a> para detalhes.
+
+<p>
+Para mais detalhes sobre outras opções específicas de outros protocolos,
+checagem de mensagens, criptografia, etc, veja a página de manual do
+<code>fetchmail</code>.
+
+<hr>
+
+<a name="s-inter-procmail"></a>
+<h3>28.3.1 Processamento de mensagens através do procmail</h3>
+
+<p>
+O processamento de mensagens pode ser usado para inúmeras finalidades, dentre
+elas a mais comum é separar uma mensagem em arquivos/diretórios de acordo com
+sua origem, prioridade, assuntos, destinatário, conteúdo, etc., programar
+auto-respostas, programa de férias, servidor de arquivos, listas de discussão,
+etc.
+
+<p>
+O <code>procmail</code> é um programa que reúne estas funções e permitem muito
+mais, dependendo da habilidades e conhecimento das ferramentas
+<code>GNU/Linux</code> para saber integra-las corretamente.  Toda a operação do
+<code>procmail</code> é controlada pelo arquivo <code>/etc/procmailrc</code> e
+<code>~/.procmailrc</code>.  Abaixo um modelo do arquivo
+<code>~/.procmailrc</code> usado para enviar todas as mensagens contendo a
+palavra <samp>GNU/Linux</samp> no assunto para o arquivo
+<code>mensagens-linux</code>:
+
+<pre>
+     PATH=/usr/bin:/bin:/usr/local/bin:
+     MAILDIR=$HOME/Mail
+     DEFAULT=$MAILDIR/mbox
+     LOGFILE=$MAILDIR/log
+     
+     :0: 
+     * ^Subject:.*Linux
+     mensagens-linux
+</pre>
+
+<p>
+A variável de ambiente <code>MAILDIR</code> especifica o diretório que serão
+armazenadas as mensagens e logs das operações do <code>procmail</code>.  A
+variável <code>DEFAULT</code> especifica a caixa de correio padrão onde todas
+as mensagens que não se encaixam nas descrições do filtro do
+<code>procmailrc</code> serão enviadas.  A variável <code>LOGFILE</code>
+especifica o arquivo que registrará todas as operações realizadas durante o
+processamento de mensagens do <code>procmail</code>.
+
+<p>
+O arquivo <code>mensagens-linux</code> é criado dentro do diretório
+especificado por <code>MAILDIR</code>.
+
+<p>
+Para que o <code>procmail</code> entre em ação toda vez que as mensagens forem
+baixadas via <code>fetchmail</code>, é preciso modificar o arquivo
+<code>.fechmailrc</code> e incluir a linha <samp>mda /usr/bin/procmail -d
+%T</samp> no final do arquivo e retirar as linhas <samp>is [usuáriolocal]
+here</samp> para que o processamento das mensagens seja feita pelo MDA local
+(neste caso, o <code>procmail</code>).
+
+<p>
+Se quiser que o <code>procmail</code> seja executado pelo MDA local, basta
+criar um arquivo <code>~/.forward</code> no diretório do usuário e incluir a
+linha <samp>exec /usr/bin/procmail</samp> (note que em algumas implementações
+do <code>exim</code>, o <code>procmail</code> é executado automaticamente caso
+um arquivo <code>~/.procmailrc</code> seja encontrado, caso contrário será
+necessário adicionar a linha &quot;/usr/bin/procmail&quot; ao arquivo
+<code>~/.forward</code> (somente <code>exim</code>).
+
+<p>
+Para mais detalhes, veja a página de manual do <code>procmail</code>,
+<code>procmailrc</code> e HOWTOs relacionados com e-mails no
+<code>GNU/Linux</code>.
+
+<hr>
+
+[ <a href="ch-etc.htm">anterior</a> ]
+[ <a href="index.htm#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ <a href="ch-hardw.htm">3</a> ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ <a href="ch-cmdd.htm">8</a> ]
+[ <a href="ch-cmd.htm">9</a> ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ <a href="ch-cmdc.htm">12</a> ]
+[ <a href="ch-perm.htm">13</a> ]
+[ <a href="ch-redir.htm">14</a> ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ <a href="ch-cpctd.htm">18</a> ]
+[ <a href="ch-deb.htm">19</a> ]
+[ <a href="ch-dpkg.htm">20</a> ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ <a href="ch-cfg.htm">23</a> ]
+[ <a href="ch-tasks.htm">24</a> ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ <a href="ch-etc.htm">27</a> ]
+[ 28 ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ <a href="ch-apend.htm">32</a> ]
+[ <a href="ch-x11.htm">próximo</a> ]
+
+<hr>
+
+<p>
+Guia Foca GNU/Linux
+
+<address>
+Versão 5.45 - segunda, 30 de outubro de 2006<br>
+<br>
+Gleydson Mazioli da Silva <code><a href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</a></code><br>
+<br>
+</address>
+
+<hr>
+
+</body>
+
+</html>
+

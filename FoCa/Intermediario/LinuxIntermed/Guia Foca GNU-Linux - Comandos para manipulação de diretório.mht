@@ -1,0 +1,482 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: =?iso-8859-1?Q?Guia_Foca_GNU/Linux_-_Comandos_para_manipula=E7=E3o_de_d?=
+	=?iso-8859-1?Q?iret=F3rio?=
+Date: Mon, 6 Aug 2007 11:21:03 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-cmdd.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Comandos para manipula=E7=E3o =
+de diret=F3rio</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-cmdd></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ 8 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 8 - Comandos para manipula=E7=E3o =
+de diret=F3rio=20
+</H1>
+<HR>
+
+<P>Abaixo comandos =FAteis para a manipula=E7=E3o de diret=F3rios.=20
+<HR>
+<A name=3Ds-comando-ls></A>
+<H2>8.1 ls</H2>
+<P>Lista os arquivos de um diret=F3rio.=20
+<P><SAMP>ls [<EM>op=E7=F5es</EM>] [<EM>caminho/arquivo</EM>]=20
+[<EM>caminho1/arquivo1</EM>] ...</SAMP>=20
+<P>onde:=20
+<DL>
+  <DT><EM>caminho/arquivo</EM>=20
+  <DD>Diret=F3rio/arquivo que ser=E1 listado.=20
+  <DT><EM>caminho1/arquivo1</EM>=20
+  <DD>Outro Diret=F3rio/arquivo que ser=E1 listado. Podem ser feitas =
+v=E1rias=20
+  listagens de uma s=F3 vez.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-a, --all=20
+  <DD>Lista todos os arquivos (inclusive os ocultos) de um diret=F3rio.=20
+  <DT>-A, --almost-all=20
+  <DD>Lista todos os arquivos (inclusive os ocultos) de um diret=F3rio, =
+exceto o=20
+  diret=F3rio atual e o de n=EDvel anterior.=20
+  <DT>-B, --ignore-backups=20
+  <DD>N=E3o lista arquivos que terminam com ~ (Backup).=20
+  <DT>--color=3DPARAM=20
+  <DD>Mostra os arquivos em cores diferentes, conforme o tipo de =
+arquivo. PARAM=20
+  pode ser:=20
+  <UL>
+    <LI><EM>never</EM> - Nunca lista em cores (mesma coisa de n=E3o usar =
+o=20
+    par=E2metro --color).=20
+    <LI><EM>always</EM> - Sempre lista em cores conforme o tipo de =
+arquivo.=20
+    <LI><EM>auto</EM> - Somente colore a listagem se estiver em um =
+terminal.=20
+    </LI></UL>
+  <DT>-d, --directory=20
+  <DD>Lista os nomes dos diret=F3rios ao inv=E9s do conte=FAdo.=20
+  <DT>-f=20
+  <DD>N=E3o classifica a listagem.=20
+  <DT>-F=20
+  <DD>Insere um caracter ap=F3s arquivos execut=E1veis ('*'), =
+diret=F3rios ('/'),=20
+  soquete ('=3D'), link simb=F3lico ('@') e pipe ('|'). Seu uso =E9 =
+=FAtil para=20
+  identificar de forma f=E1cil tipos de arquivos nas listagens de =
+diret=F3rios.=20
+  <DT>-G, --no-group=20
+  <DD>Oculta a coluna de grupo do arquivo.=20
+  <DT>-h, --human-readable=20
+  <DD>Mostra o tamanho dos arquivos em Kbytes, Mbytes, Gbytes.=20
+  <DT>-H=20
+  <DD>Faz o mesmo que <SAMP>-h</SAMP>, mas usa unidades de 1000 ao =
+inv=E9s de 1024=20
+  para especificar Kbytes, Mbytes, Gbytes.=20
+  <DT>-l=20
+  <DD>Usa o formato longo para listagem de arquivos. Lista as =
+permiss=F5es, data=20
+  de modifica=E7=E3o, donos, grupos, etc.=20
+  <DT>-n=20
+  <DD>Usa a identifica=E7=E3o de usu=E1rio e grupo num=E9rica ao inv=E9s =
+dos nomes.=20
+  <DT>-L, --dereference=20
+  <DD>Lista o arquivo original e n=E3o o link referente ao arquivo.=20
+  <DT>-o=20
+  <DD>Usa a listagem longa sem os donos dos arquivos (mesma coisa que =
+-lG).=20
+  <DT>-p=20
+  <DD>Mesma coisa que -F, mas n=E3o inclui o s=EDmbolo '*' em arquivos =
+execut=E1veis.=20
+  Esta op=E7=E3o =E9 t=EDpica de sistemas <CODE>Linux</CODE>.=20
+  <DT>-R=20
+  <DD>Lista diret=F3rios e sub-diret=F3rios recursivamente.=20
+  <DT>--full-time=20
+  <DD>Lista data e hora completa.=20
+  <DT>Classifica=E7=E3o da listagem=20
+  <DD>A listagem pode ser classificada usando-se as seguintes =
+op=E7=F5es:=20
+  <DL>
+    <DT>-f=20
+    <DD>N=E3o classifica, e usa -au para listar os arquivos.=20
+    <DT>-r=20
+    <DD>Inverte a ordem de classifica=E7=E3o.=20
+    <DT>-c=20
+    <DD>Classifica pela data de altera=E7=E3o.=20
+    <DT>-X=20
+    <DD>Classifica pela extens=E3o.=20
+    <DT>-U=20
+    <DD>N=E3o classifica, lista os arquivos na ordem do diret=F3rio.=20
+</DD></DL></DD></DL>
+<P>Uma listagem feita com o comando <SAMP>ls -la</SAMP> normalmente =E9 =
+mostrada=20
+da seguinte maneira: <PRE>     -rwxr-xr--  1  gleydson user    8192 nov =
+4 16:00 teste
+</PRE>
+<P>Abaixo as explica=E7=F5es de cada parte:=20
+<DL>
+  <DT><SAMP>-rwxr-xr--</SAMP>=20
+  <DD>S=E3o as permiss=F5es de acesso ao arquivo teste. A primeira letra =
+(da=20
+  esquerda) identifica o tipo do arquivo, se tiver um <SAMP>d</SAMP> =E9 =
+um=20
+  diret=F3rio, se tiver um "-" =E9 um arquivo normal.=20
+  <P>As permiss=F5es de acesso =E9 explicada em detalhes em <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">Permiss=F5es=20
+  de acesso a arquivos e diret=F3rios, Cap=EDtulo 13</A>. </P>
+  <DT><SAMP>1</SAMP>=20
+  <DD>Se for um diret=F3rio, mostra a quantidade de sub-diret=F3rios =
+existentes=20
+  dentro dele. Caso for um arquivo, ser=E1 1.=20
+  <DT><SAMP>gleydson</SAMP>=20
+  <DD>Nome do dono do arquivo <CODE>teste</CODE>.=20
+  <DT><SAMP>user</SAMP>=20
+  <DD>Nome do grupo que o arquivo <CODE>teste</CODE> pertence.=20
+  <DT><SAMP>8192</SAMP>=20
+  <DD>Tamanho do arquivo (em bytes).=20
+  <DT><SAMP>nov</SAMP>=20
+  <DD>M=EAs da cria=E7=E3o/ =FAltima modifica=E7=E3o do arquivo.=20
+  <DT><SAMP>4</SAMP>=20
+  <DD>Dia que o arquivo foi criado.=20
+  <DT><SAMP>16:00</SAMP>=20
+  <DD>Hora em que o arquivo foi criado/modificado. Se o arquivo foi =
+criado h=E1=20
+  mais de um ano, em seu lugar =E9 mostrado o ano da cria=E7=E3o do =
+arquivo.=20
+  <DT><CODE>teste</CODE>=20
+  <DD>Nome do arquivo. </DD></DL>
+<P>Exemplos do uso do comando <CODE>ls</CODE>:=20
+<UL>
+  <LI><SAMP>ls</SAMP> - Lista os arquivos do diret=F3rio atual.=20
+  <LI><SAMP>ls /bin /sbin</SAMP> - Lista os arquivos do diret=F3rio /bin =
+e /sbin=20
+  <LI><SAMP>ls -la /bin</SAMP> - Listagem completa (vertical) dos =
+arquivos do=20
+  diret=F3rio /bin inclusive os ocultos. </LI></UL>
+<HR>
+<A name=3Ds-comando-cd></A>
+<H2>8.2 cd</H2>
+<P>Entra em um diret=F3rio. Voc=EA precisa ter a permiss=E3o de =
+execu=E7=E3o para entrar=20
+no diret=F3rio.=20
+<P><SAMP>cd [<EM>diret=F3rio</EM>]</SAMP>=20
+<P>onde:=20
+<P><EM>diret=F3rio</EM> - diret=F3rio que deseja entrar.=20
+<P>Exemplos:=20
+<UL>
+  <LI>Usando <SAMP>cd</SAMP> sem par=E2metros ou <SAMP>cd ~</SAMP>, =
+voc=EA retornar=E1=20
+  ao seu diret=F3rio de usu=E1rio (diret=F3rio home).=20
+  <LI><SAMP>cd /</SAMP>, retornar=E1 ao diret=F3rio ra=EDz.=20
+  <LI><SAMP>cd -</SAMP>, retornar=E1 ao diret=F3rio anteriormente =
+acessado.=20
+  <LI><SAMP>cd ..</SAMP>, sobe um diret=F3rio.=20
+  <LI><SAMP>cd ../[<EM>diret=F3rio</EM>]</SAMP>, sobe um diret=F3rio e =
+entra=20
+  imediatamente no pr=F3ximo (por exemplo, quando voc=EA est=E1 em=20
+  <CODE>/usr/sbin</CODE>, voc=EA digita <SAMP>cd ../bin</SAMP>, o =
+comando=20
+  <CODE>cd</CODE> retorna um diret=F3rio (<CODE>/usr</CODE>) e entra =
+imediatamente=20
+  no diret=F3rio <CODE>bin</CODE> (<CODE>/usr/bin</CODE>). </LI></UL>
+<HR>
+<A name=3Ds-comando-pwd></A>
+<H2>8.3 pwd</H2>
+<P>Mostra o nome e caminho do diret=F3rio atual.=20
+<P>Voc=EA pode usar o comando pwd para verificar em qual diret=F3rio se =
+encontra=20
+(caso seu aviso de comandos n=E3o mostre isso).=20
+<HR>
+<A name=3Ds-comando-mkdir></A>
+<H2>8.4 mkdir</H2>
+<P>Cria um diret=F3rio no sistema. Um diret=F3rio =E9 usado para =
+armazenar arquivos de=20
+um determinado tipo. O diret=F3rio pode ser entendido como uma =
+<EM>pasta</EM> onde=20
+voc=EA guarda seus papeis (arquivos). Como uma pessoa organizada, voc=EA =
+utilizar=E1=20
+uma pasta para guardar cada tipo de documento, da mesma forma voc=EA =
+pode criar um=20
+diret=F3rio <CODE>vendas</CODE> para guardar seus arquivos relacionados =
+com vendas=20
+naquele local.=20
+<P><SAMP>mkdir [<EM>op=E7=F5es</EM>] [<EM>caminho/diret=F3rio</EM>]=20
+[<EM>caminho1/diret=F3rio1</EM>]</SAMP>=20
+<P>onde:=20
+<DL>
+  <DT><EM>caminho</EM>=20
+  <DD>Caminho onde o diret=F3rio ser=E1 criado.=20
+  <DT><EM>diret=F3rio</EM>=20
+  <DD>Nome do diret=F3rio que ser=E1 criado.=20
+  <DT><EM>op=E7=F5es:</EM>=20
+  <DT>--verbose=20
+  <DD>Mostra uma mensagem para cada diret=F3rio criado. As mensagens de =
+erro ser=E3o=20
+  mostradas mesmo que esta op=E7=E3o n=E3o seja usada. </DD></DL>
+<P>Para criar um novo diret=F3rio, voc=EA deve ter permiss=E3o de =
+grava=E7=E3o. Por=20
+exemplo, para criar um diret=F3rio em /tmp com o nome de =
+<CODE>teste</CODE> que=20
+ser=E1 usado para gravar arquivos de teste, voc=EA deve usar o comando =
+<CODE>"mkdir=20
+/tmp/teste"</CODE>.=20
+<P>Podem ser criados mais de um diret=F3rio com um =FAnico comando =
+(<SAMP>mkdir=20
+/tmp/teste /tmp/teste1 /tmp/teste2</SAMP>).=20
+<HR>
+<A name=3Ds-comando-rmdir></A>
+<H2>8.5 rmdir</H2>
+<P>Remove um diret=F3rio do sistema. Este comando faz exatamente o =
+contr=E1rio do=20
+<CODE>mkdir</CODE>. O diret=F3rio a ser removido deve estar vazio e =
+voc=EA deve ter=20
+permiss=E3o de grava=E7=E3o para remove-lo.=20
+<P><SAMP>rmdir [<EM>caminho/diret=F3rio</EM>]=20
+[<EM>caminho1/diret=F3rio1</EM>]</SAMP>=20
+<P>onde:=20
+<DL>
+  <DT><EM>caminho</EM>=20
+  <DD>Caminho do diret=F3rio que ser=E1 removido.=20
+  <DT><EM>diret=F3rio</EM>=20
+  <DD>Nome do diret=F3rio que ser=E1 removido. </DD></DL>
+<P>=C9 necess=E1rio que esteja um n=EDvel acima do diret=F3rio(s) que =
+ser=E1(=E3o)=20
+removido(s). Para remover diret=F3rios que contenham arquivos, use o =
+comando=20
+<CODE>rm</CODE> com a op=E7=E3o <SAMP>-r</SAMP> (para maiores detalhes, =
+veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm#s-comando-rm">rm,=20
+Se=E7=E3o 9.3</A>).=20
+<P>Por exemplo, para remover o diret=F3rio <CODE>/tmp/teste</CODE> =
+voc=EA deve estar=20
+no diret=F3rio <CODE>tmp</CODE> e executar o comando <SAMP>rmdir =
+teste</SAMP>.=20
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ 8 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

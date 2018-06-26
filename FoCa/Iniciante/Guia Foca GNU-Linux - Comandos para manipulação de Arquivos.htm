@@ -1,0 +1,265 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Comandos para manipulação de Arquivos</TITLE>
+<META http-equiv=content-type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2900.3059" name=GENERATOR></HEAD>
+<BODY><A name=ch-cmd></A>
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6</A> 
+] [ 7 ] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">próximo</A> 
+] 
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Capítulo 7 - Comandos para manipulação de Arquivos 
+</H1>
+<HR>
+
+<P>Abaixo, comandos utilizados para manipulação de arquivos. 
+<HR>
+<A name=s-comandos-cat></A>
+<H2>7.1 cat</H2>
+<P>Mostra o conteúdo de um arquivo binário ou texto. 
+<P><SAMP>cat [opções] [<EM>diretório/arquivo</EM>] 
+[<EM>diretório1/arquivo1</EM>]</SAMP> 
+<DL>
+  <DT><EM>diretório/arquivo</EM> 
+  <DD>Localização do arquivo que deseja visualizar o conteúdo. 
+  <DT><EM>opções</EM> 
+  <DT>-n, --number 
+  <DD>Mostra o número das linhas enquanto o conteúdo do arquivo é mostrado. 
+  <DT>-s, --squeeze-blank 
+  <DD>Não mostra mais que uma linha em branco entre um parágrafo e outro. 
+  <DT>- 
+  <DD>Lê a entrada padrão. </DD></DL>
+<P>O comando <CODE>cat</CODE> trabalha com arquivos texto. Use o comando 
+<CODE>zcat</CODE> para ver diretamente arquivos compactados com 
+<CODE>gzip</CODE>. 
+<P>Exemplo: <SAMP>cat /usr/doc/copyright/GPL</SAMP> 
+<HR>
+<A name=s-comando-tac></A>
+<H2>7.2 tac</H2>
+<P>Mostra o conteúdo de um arquivo binário ou texto (como o <CODE>cat</CODE>) só 
+que em ordem inversa. 
+<P><SAMP>tac [opções] [<EM>diretório/arquivo</EM>] 
+[<EM>diretório1/arquivo1</EM>]</SAMP> 
+<DL>
+  <DT><EM>diretório/arquivo</EM> 
+  <DD>Localização do arquivo que deseja visualizar o conteúdo 
+  <DT><EM>opções</EM> 
+  <DT>-s [string] 
+  <DD>Usa o [string] como separador de registros. 
+  <DT>- 
+  <DD>Lê a entrada padrão. </DD></DL>
+<P>Exemplo: <SAMP>tac /usr/doc/copyright/GPL</SAMP>. 
+<HR>
+<A name=s-comando-rm></A>
+<H2>7.3 rm</H2>
+<P>Apaga arquivos. Também pode ser usado para apagar diretórios e sub-diretórios 
+vazios ou que contenham arquivos. 
+<P><SAMP>rm [<EM>opções</EM>][<EM>caminho</EM>][<EM>arquivo/diretório</EM>] 
+[<EM>caminho1</EM>][<EM>arquivo1/diretório1</EM>]</SAMP> 
+<P>onde: 
+<DL>
+  <DT><EM>caminho</EM> 
+  <DD>Localização do arquivo que deseja apagar. Se omitido, assume que o arquivo 
+  esteja no diretório atual. 
+  <DT><EM>arquivo/diretório</EM> 
+  <DD>Arquivo que será apagado. 
+  <DT><EM>opções</EM> 
+  <DT>-i, --interactive 
+  <DD>Pergunta antes de remover, esta é ativada por padrão. 
+  <DT>-v, --verbose 
+  <DD>Mostra os arquivos na medida que são removidos. 
+  <DT>-r, --recursive 
+  <DD>Usado para remover arquivos em sub-diretórios. Esta opção também pode ser 
+  usada para remover sub-diretórios. 
+  <DT>-f, --force 
+  <DD>Remove os arquivos sem perguntar. 
+  <DT>-- arquivo 
+  <DD>Remove arquivos/diretórios que contém caracteres especiais. O separador 
+  "--" funciona com todos os comandos do shell e permite que os caracteres 
+  especiais como "*", "?", "-", etc. sejam interpretados como caracteres comuns. 
+  </DD></DL>
+<P>Use com atenção o comando <CODE>rm</CODE>, uma vez que os arquivos e 
+diretórios forem apagados, eles não poderão ser mais recuperados. 
+<P>Exemplos: 
+<UL>
+  <LI><SAMP>rm teste.txt</SAMP> - Apaga o arquivo <CODE>teste.txt</CODE> no 
+  diretório atual. 
+  <LI><SAMP>rm *.txt</SAMP> - Apaga todos os arquivos do diretório atual que 
+  terminam com <CODE>.txt</CODE>. 
+  <LI><SAMP>rm *.txt teste.novo</SAMP> - Apaga todos os arquivos do diretório 
+  atual que terminam com <CODE>.txt</CODE> e também o arquivo 
+  <CODE>teste.novo</CODE>. 
+  <LI><SAMP>rm -rf /tmp/teste/*</SAMP> - Apaga todos os arquivos e 
+  sub-diretórios do diretório <CODE>/tmp/teste</CODE> mas mantém o sub-diretório 
+  <CODE>/tmp/teste</CODE>. 
+  <LI><SAMP>rm -rf /tmp/teste</SAMP> - Apaga todos os arquivos e sub-diretórios 
+  do diretório <CODE>/tmp/teste</CODE>, inclusive <CODE>/tmp/teste</CODE>. 
+  <LI><SAMP>rm -f -- --arquivo--</SAMP> - Remove o arquivo de nome 
+  <CODE>--arquivo--</CODE>. </LI></UL>
+<HR>
+<A name=s-comando-cp></A>
+<H2>7.4 cp</H2>
+<P>Copia arquivos. 
+<P><SAMP>cp [<EM>opções</EM>] [<EM>origem</EM>] [<EM>destino</EM>]</SAMP> 
+<P>onde: 
+<DL>
+  <DT><EM>origem</EM> 
+  <DD>Arquivo que será copiado. Podem ser especificados mais de um arquivo para 
+  ser copiado usando "Curingas" (veja <A 
+  href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-curingas">Curingas, 
+  Seção 2.12</A>). 
+  <DT><EM>destino</EM> 
+  <DD>O caminho ou nome de arquivo onde será copiado. Se o destino for um 
+  diretório, os arquivos de origem serão copiados para dentro do diretório. 
+  <DT><EM>opções</EM> 
+  <DT>i, --interactive 
+  <DD>Pergunta antes de substituir um arquivo existente. 
+  <DT>-f, --force 
+  <DD>Não pergunta, substitui todos os arquivos caso já exista. 
+  <DT>-r 
+  <DD>Copia arquivos dos diretórios e subdiretórios da origem para o destino. É 
+  recomendável usar -R ao invés de -r. 
+  <DT>-R, --recursive 
+  <DD>Copia arquivos e sub-diretórios (como a opção -r) e também os arquivos 
+  especiais FIFO e dispositivos. 
+  <DT>-v, --verbose 
+  <DD>Mostra os arquivos enquanto estão sendo copiados. </DD></DL>
+<P>O comando <CODE>cp</CODE> copia arquivos da ORIGEM para o DESTINO. Ambos 
+origem e destino terão o mesmo conteúdo após a cópia. 
+<P>Exemplos: 
+<DL>
+  <DT><SAMP>cp teste.txt teste1.txt</SAMP> 
+  <DD>Copia o arquivo <CODE>teste.txt</CODE> para <CODE>teste1.txt</CODE>. 
+  <DT><SAMP>cp teste.txt /tmp</SAMP> 
+  <DD>Copia o arquivo <CODE>teste.txt</CODE> para dentro do diretório 
+  <CODE>/tmp</CODE>. 
+  <DT><SAMP>cp * /tmp</SAMP> 
+  <DD>Copia todos os arquivos do diretório atual para <CODE>/tmp</CODE>. 
+  <DT><SAMP>cp /bin/* .</SAMP> 
+  <DD>Copia todos os arquivos do diretório <CODE>/bin</CODE> para o diretório em 
+  que nos encontramos no momento. 
+  <DT><SAMP>cp -R /bin /tmp</SAMP> 
+  <DD>Copia o diretório <CODE>/bin</CODE> e todos os arquivos/sub-diretórios 
+  existentes para o diretório <CODE>/tmp</CODE>. 
+  <DT><SAMP>cp -R /bin/* /tmp</SAMP> 
+  <DD>Copia todos os arquivos do diretório <CODE>/bin</CODE> (exceto o diretório 
+  <CODE>/bin</CODE>) e todos os arquivos/sub-diretórios existentes dentro dele 
+  para <CODE>/tmp</CODE>. 
+  <DT><SAMP>cp -R /bin /tmp</SAMP> 
+  <DD>Copia todos os arquivos e o diretório <CODE>/bin</CODE> para 
+  <CODE>/tmp</CODE>. </DD></DL>
+<HR>
+<A name=s-comando-mv></A>
+<H2>7.5 mv</H2>
+<P>Move ou renomeia arquivos e diretórios. O processo é semelhante ao do comando 
+<CODE>cp</CODE> mas o arquivo de origem é apagado após o término da cópia. 
+<P><SAMP>mv [<EM>opções</EM>] [<EM>origem</EM>] [<EM>destino</EM>]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT><EM>origem</EM> 
+  <DD>Arquivo/diretório de origem. 
+  <DT><EM>destino</EM> 
+  <DD>Local onde será movido ou novo nome do arquivo/diretório. 
+  <DT><EM>opções</EM> 
+  <DT>-f, --force 
+  <DD>Substitui o arquivo de destino sem perguntar. 
+  <DT>-i, --interactive 
+  <DD>Pergunta antes de substituir. É o padrão. 
+  <DT>-v, --verbose 
+  <DD>Mostra os arquivos que estão sendo movidos. </DD></DL>
+<P>O comando <CODE>mv</CODE> copia um arquivo da <EM>ORIGEM</EM> para o 
+<EM>DESTINO</EM> (semelhante ao <CODE>cp</CODE>), mas após a cópia, o arquivo de 
+<EM>ORIGEM</EM> é apagado. 
+<P>Exemplos: 
+<DL>
+  <DT><SAMP>mv teste.txt teste1.txt</SAMP> 
+  <DD>Muda o nome do arquivo <CODE>teste.txt</CODE> para 
+  <CODE>teste1.txt</CODE>. 
+  <DT><SAMP>mv teste.txt /tmp</SAMP> 
+  <DD>Move o arquivo teste.txt para <CODE>/tmp</CODE>. Lembre-se que o arquivo 
+  de origem é apagado após ser movido. 
+  <DT><SAMP>mv teste.txt teste.new</SAMP> (supondo que <CODE>teste.new</CODE> já 
+  exista) 
+  <DD>Copia o arquivo <CODE>teste.txt</CODE> por cima de <CODE>teste.new</CODE> 
+  e apaga <CODE>teste.txt</CODE> após terminar a cópia. </DD></DL>
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6</A> 
+] [ 7 ] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">próximo</A> 
+] 
+<HR>
+
+<P>Guia Foca GNU/Linux 
+<ADDRESS>Versão 3.99 - segunda, 30 de outubro de 2006<BR><BR>Gleydson Mazioli da 
+Silva <CODE><A 
+href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR><BR></ADDRESS>
+<HR>
+</BODY></HTML>

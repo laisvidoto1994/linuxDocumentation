@@ -1,0 +1,1768 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: Guia Foca GNU/Linux - Comandos Diversos
+Date: Mon, 6 Aug 2007 11:21:49 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-cmdv.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Comandos Diversos</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-cmdv></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ 10 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 10 - Comandos Diversos </H1>
+<HR>
+
+<P>Comandos de uso diversos no sistema.=20
+<HR>
+<A name=3Ds-cmdv-clear></A>
+<H2>10.1 clear</H2>
+<P>Limpa a tela e posiciona o cursor no canto superior esquerdo do =
+v=EDdeo.=20
+<P><SAMP>clear</SAMP>=20
+<HR>
+<A name=3Ds-cmdv-date></A>
+<H2>10.2 date</H2>
+<P>Permite ver/modificar a Data e Hora do Sistema. Voc=EA precisa estar =
+como=20
+usu=E1rio root para modificar a data e hora. Muitos programas do =
+sistema, arquivos=20
+de registro (log) e tarefas agendadas funcionam com base na data e hora=20
+fornecidas pelo sistema, assim esteja consciente das modifica=E7=F5es =
+que a=20
+data/hora pode trazer a estes programas (principalmente em se tratando =
+de uma=20
+rede com muitos usu=E1rios) .=20
+<P><SAMP>date MesDiaHoraMinuto[AnoSegundos]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT>MesDiaHoraMinuto[AnoSegundos]=20
+  <DD>S=E3o respectivamente os n=FAmeros do m=EAs, dia, hora e minutos =
+sem espa=E7os.=20
+  Opcionalmente voc=EA pode especificar o Ano (com 2 ou 4 d=EDgitos) e =
+os Segundos.=20
+  <DT>+[FORMATO]=20
+  <DD>Define o formato da listagem que ser=E1 usada pelo comando=20
+  <CODE>date</CODE>. Os seguintes formatos s=E3o os mais usados:=20
+  <UL>
+    <LI><SAMP>%d</SAMP> - Dia do M=EAs (00-31).=20
+    <LI><SAMP>%m</SAMP> - M=EAs do Ano (00-12).=20
+    <LI><SAMP>%y</SAMP> - Ano (dois d=EDgitos).=20
+    <LI><SAMP>%Y</SAMP> - Ano (quatro d=EDgitos).=20
+    <LI><SAMP>%H</SAMP> - Hora (00-24).=20
+    <LI><SAMP>%I</SAMP> - Hora (00-12).=20
+    <LI><SAMP>%M</SAMP> - Minuto (00-59).=20
+    <LI><SAMP>%j</SAMP> - Dia do ano (1-366).=20
+    <LI><SAMP>%p</SAMP> - AM/PM (=FAtil se utilizado com %d).=20
+    <LI><SAMP>%r</SAMP> - Formato de 12 horas completo (hh:mm:ss AM/PM). =
+
+    <LI><SAMP>%T</SAMP> - Formato de 24 horas completo (hh:mm:ss).=20
+    <LI><SAMP>%w</SAMP> - Dia da semana (0-6). </LI></UL>
+  <P>Outros formatos podem ser obtidos atrav=E9s da p=E1gina de manual =
+do=20
+  <CODE>date</CODE>. </P></DD></DL>
+<P>Para maiores detalhes, veja a p=E1gina de manual do comando =
+<CODE>date</CODE>.=20
+<P>Para ver a data atual digite: <SAMP>date</SAMP>=20
+<P>Se quiser mudar a Data para 25/12 e a hora para 08:15 digite: =
+<SAMP>date=20
+12250815</SAMP>=20
+<P>Para mostrar somente a data no formato dia/m=EAs/ano: <SAMP>date=20
++%d/%m/%Y</SAMP>=20
+<HR>
+<A name=3Ds-cmdv-df></A>
+<H2>10.3 df</H2>
+<P>Mostra o espa=E7o livre/ocupado de cada parti=E7=E3o.=20
+<P><SAMP>df [<EM>op=E7=F5es</EM>]</SAMP>=20
+<P>onde:=20
+<DL>
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-a=20
+  <DD>Inclui sistemas de arquivos com 0 blocos.=20
+  <DT>-h, --human-readable=20
+  <DD>Mostra o espa=E7o livre/ocupado em <EM>MB, KB, GB</EM> ao inv=E9s =
+de blocos.=20
+  <DT>-H=20
+  <DD>Id=EAntico a <SAMP>-h</SAMP> mas usa 1000 ao inv=E9s de 1024 como =
+unidade de=20
+  c=E1lculo.=20
+  <DT>-k=20
+  <DD>Lista em Kbytes.=20
+  <DT>-l=20
+  <DD>Somente lista sistema de arquivos locais.=20
+  <DT>-m=20
+  <DD>Lista em Mbytes (equivalente a --block-size=3D1048576).=20
+  <DT>--sync=20
+  <DD>Executa o <CODE>sync</CODE> antes de mostrar os dados.=20
+  <DT>-T=20
+  <DD>Lista o tipo de sistema de arquivos de cada parti=E7=E3o=20
+  <DT>-t <EM>tipo</EM>=20
+  <DD>Lista somente sistema de arquivos do tipo <EM>tipo</EM>.=20
+  <DT>-x <EM>tipo</EM>=20
+  <DD>N=E3o lista sistemas de arquivos do tipo <EM>tipo</EM>. </DD></DL>
+<P>Exemplos: <SAMP>df</SAMP>, <SAMP>df -h</SAMP>, <SAMP>df -t =
+vfat</SAMP>.=20
+<HR>
+<A name=3Ds-cmdv-ln></A>
+<H2>10.4 ln</H2>
+<P>Cria links para arquivos e diret=F3rios no sistema. O link =E9 um =
+mecanismo que=20
+faz refer=EAncia a outro arquivo ou diret=F3rio em outra =
+localiza=E7=E3o. O link em=20
+sistemas <CODE>GNU/Linux</CODE> faz refer=EAncia reais ao =
+arquivo/diret=F3rio=20
+podendo ser feita c=F3pia do link (ser=E1 copiado o arquivo alvo), =
+entrar no=20
+diret=F3rio (caso o link fa=E7a refer=EAncia a um diret=F3rio), etc.=20
+<P><SAMP>ln [<EM>op=E7=F5es</EM>] [<EM>origem</EM>] =
+[<EM>link</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>origem</EM>=20
+  <DD>Diret=F3rio ou arquivo de onde ser=E1 feito o link.=20
+  <DT><EM>link</EM>=20
+  <DD>Nome do link que ser=E1 criado.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-s=20
+  <DD>Cria um link simb=F3lico. Usado para criar liga=E7=F5es com o =
+arquivo/diret=F3rio=20
+  de destino.=20
+  <DT>-v=20
+  <DD>Mostra o nome de cada arquivo antes de fazer o link.=20
+  <DT>-d=20
+  <DD>Cria um hard link para diret=F3rios. Somente o root pode usar esta =
+op=E7=E3o.=20
+  </DD></DL>
+<P>Existem 2 tipos de links: <EM>simb=F3licos</EM> e <EM>hardlinks</EM>. =
+
+<UL>
+  <LI>O <EM>link simb=F3lico</EM> cria um arquivo especial no disco (do =
+tipo link)=20
+  que tem como conte=FAdo o caminho para chegar at=E9 o arquivo alvo =
+(isto pode ser=20
+  verificado pelo tamanho do arquivo do link). Use a op=E7=E3o =
+<SAMP>-s</SAMP> para=20
+  criar links simb=F3licos.=20
+  <LI>O <EM>hardlink</EM> faz refer=EAncia ao mesmo inodo do arquivo =
+original,=20
+  desta forma ele ser=E1 perfeitamente id=EAntico, inclusive nas =
+permiss=F5es de=20
+  acesso, ao arquivo original.=20
+  <P>Ao contr=E1rio dos links simb=F3licos, n=E3o =E9 poss=EDvel fazer =
+um hardlink para um=20
+  diret=F3rio ou fazer refer=EAncia a arquivos que estejam em =
+parti=E7=F5es diferentes.=20
+  </P></LI></UL>
+<P>Observa=E7=F5es:=20
+<UL>
+  <LI>Se for usado o comando <CODE>rm</CODE> com um link, somente o link =
+ser=E1=20
+  removido.=20
+  <LI>Se for usado o comando <CODE>cp</CODE> com um link, o arquivo =
+original=20
+  ser=E1 copiado ao inv=E9s do link.=20
+  <LI>Se for usado o comando <CODE>mv</CODE> com um link, a =
+modifica=E7=E3o ser=E1=20
+  feita no link.=20
+  <LI>Se for usado um comando de visualiza=E7=E3o (como o =
+<CODE>cat</CODE>), o=20
+  arquivo original ser=E1 visualizado. </LI></UL>
+<P>Exemplos:=20
+<UL>
+  <LI><SAMP>ln -s /dev/ttyS1 /dev/modem</SAMP> - Cria o link=20
+  <CODE>/dev/modem</CODE> para o arquivo <CODE>/dev/ttyS1</CODE>.=20
+  <LI><SAMP>ln -s /tmp ~/tmp</SAMP> - Cria um link <CODE>~/tmp</CODE> =
+para o=20
+  diret=F3rio <CODE>/tmp</CODE>. </LI></UL>
+<HR>
+<A name=3Ds-cmdv-du></A>
+<H2>10.5 du</H2>
+<P>Mostra o espa=E7o ocupado por arquivos e sub-diret=F3rios do =
+diret=F3rio atual.=20
+<P><SAMP>du [<EM>op=E7=F5es</EM>]</SAMP>=20
+<P>onde:=20
+<DL>
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-a, --all=20
+  <DD>Mostra o espa=E7o ocupado por todos os arquivos.=20
+  <DT>-b, --bytes=20
+  <DD>Mostra o espa=E7o ocupado em bytes.=20
+  <DT>-c, --total=20
+  <DD>Faz uma totaliza=E7=E3o de todo espa=E7o listado.=20
+  <DT>-D=20
+  <DD>N=E3o conta links simb=F3licos.=20
+  <DT>-h, --human=20
+  <DD>Mostra o espa=E7o ocupado em formato leg=EDvel por humanos (Kb, =
+Mb) ao inv=E9s=20
+  de usar blocos.=20
+  <DT>-H=20
+  <DD>Como o anterior mas usa 1000 e n=E3o 1024 como unidade de =
+c=E1lculo.=20
+  <DT>-k=20
+  <DD>Mostra o espa=E7o ocupado em Kbytes.=20
+  <DT>-m=20
+  <DD>Mostra o espa=E7o ocupado em Mbytes.=20
+  <DT>-S, --separate-dirs=20
+  <DD>N=E3o calcula o espa=E7o ocupado por sub-diret=F3rios.=20
+  <DT>-x=20
+  <DD>N=E3o faz a contagem de diret=F3rios em sistemas de arquivos =
+diferentes do=20
+  atual. </DD></DL>
+<P>Exemplo: <SAMP>du -h</SAMP>, <SAMP>du -hc</SAMP>.=20
+<HR>
+<A name=3Ds-cmdv-find></A>
+<H2>10.6 find</H2>
+<P>Procura por arquivos/diret=F3rios no disco. <CODE>find</CODE> pode =
+procurar=20
+arquivos atrav=E9s de sua data de modifica=E7=E3o, tamanho, etc =
+atrav=E9s do uso de=20
+op=E7=F5es. <CODE>find</CODE>, ao contr=E1rio de outros programas, usa =
+op=E7=F5es longas=20
+atrav=E9s de um <SAMP>"-"</SAMP>.=20
+<P><SAMP>find [<EM>diret=F3rio</EM>] =
+[<EM>op=E7=F5es/express=E3o</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>diret=F3rio</EM>=20
+  <DD>Inicia a procura neste diret=F3rio, percorrendo seu =
+sub-diret=F3rios.=20
+  <DT><EM>op=E7=F5es/express=E3o</EM>=20
+  <DT>-name [express=E3o]=20
+  <DD>Procura pelo nome [express=E3o] nos nomes de arquivos e =
+diret=F3rios=20
+  processados.=20
+  <DT>-depth=20
+  <DD>Processa os sub-diret=F3rios primeiro antes de processar os =
+arquivos do=20
+  diret=F3rio principal.=20
+  <DT>-maxdepth [num]=20
+  <DD>Faz a procura at=E9 [num] sub-diret=F3rios dentro do diret=F3rio =
+que est=E1 sendo=20
+  pesquisado.=20
+  <DT>-mindepth [num]=20
+  <DD>N=E3o faz nenhuma procura em diret=F3rios menores que [num] =
+n=EDveis.=20
+  <DT>-mount, -xdev=20
+  <DD>N=E3o faz a pesquisa em sistemas de arquivos diferentes daquele de =
+onde o=20
+  comando <CODE>find</CODE> foi executado.=20
+  <DT>-amin [num]=20
+  <DD>Procura por arquivos que foram acessados [num] minutos atr=E1s. =
+Caso for=20
+  antecedido por "-", procura por arquivos que foram acessados entre =
+[num]=20
+  minutos atr=E1s at=E9 agora.=20
+  <DT>-atime [num]=20
+  <DD>Procura por arquivos que foram acessados [num] dias atr=E1s. Caso =
+for=20
+  antecedido por "-", procura por arquivos que foram acessados entre =
+[num] dias=20
+  atr=E1s e a data atual.=20
+  <DT>-gid [num]=20
+  <DD>Procura por arquivos que possuam a identifica=E7=E3o num=E9rica do =
+grupo igual a=20
+  [num].=20
+  <DT>-group [nome]=20
+  <DD>Procura por arquivos que possuam a identifica=E7=E3o de nome do =
+grupo igual a=20
+  [nome].=20
+  <DT>-uid [num]=20
+  <DD>Procura por arquivos que possuam a identifica=E7=E3o num=E9rica do =
+usu=E1rio igual=20
+  a [num].=20
+  <DT>-user [nome]=20
+  <DD>Procura por arquivos que possuam a identifica=E7=E3o de nome do =
+usu=E1rio igual=20
+  a [nome].=20
+  <DT>-inum [num]=20
+  <DD>Procura por arquivos que est=E3o localizados no inodo [num].=20
+  <DT>-links [num]=20
+  <DD>Procura por arquivos que possuem [num] links como refer=EAncia.=20
+  <DT>-mmin [num]=20
+  <DD>Procura por arquivos que tiveram seu conte=FAdo modificado h=E1 =
+[num] minutos.=20
+  Caso for antecedido por "-", procura por arquivos que tiveram seu =
+conte=FAdo=20
+  modificado entre [num] minutos atr=E1s at=E9 agora.=20
+  <DT>-mtime [num]=20
+  <DD>Procura por arquivos que tiveram seu conte=FAdo modificado h=E1 =
+[num] dias.=20
+  Caso for antecedido por "-", procura por arquivos que tiveram seu =
+conte=FAdo=20
+  modificado entre [num] dias atr=E1s at=E9 agora.=20
+  <DT>-ctime [num]=20
+  <DD>Procura por arquivos que teve seu status modificado h=E1 [num] =
+dias. Caso=20
+  for antecedido por "-", procura por arquivos que tiveram seu =
+conte=FAdo=20
+  modificado entre [num] dias atr=E1s at=E9 agora.=20
+  <DT>-nouser=20
+  <DD>Procura por arquivos que n=E3o correspondam a identifica=E7=E3o do =
+usu=E1rio=20
+  atual.=20
+  <DT>-nogroup=20
+  <DD>Procura por arquivos que n=E3o correspondam a identifica=E7=E3o do =
+grupo do=20
+  usu=E1rio atual.=20
+  <DT>-perm [modo]=20
+  <DD>Procura por arquivos que possuam os modos de permiss=E3o [modo]. =
+Os [modo]=20
+  de permiss=E3o pode ser num=E9rico (octal) ou literal.=20
+  <DT>-used [num]=20
+  <DD>O arquivo foi acessado [num] vezes antes de ter seu status =
+modificado.=20
+  <DT>-size [num]=20
+  <DD>Procura por arquivos que tiverem o tamanho [num]. [num] pode ser=20
+  antecedido de "+" ou "-" para especificar um arquivo maior ou menor =
+que [num].=20
+  A op=E7=E3o -size pode ser seguida de:=20
+  <UL>
+    <LI><SAMP>b</SAMP> - Especifica o tamanho em blocos de 512 bytes. =
+=C9 o padr=E3o=20
+    caso [num] n=E3o seja acompanhado de nenhuma letra.=20
+    <LI><SAMP>c</SAMP> - Especifica o tamanho em bytes.=20
+    <LI><SAMP>k</SAMP> - Especifica o tamanho em Kbytes. </LI></UL>
+  <DT>-type [tipo]=20
+  <DD>Procura por arquivos do [tipo] especificado. Os seguintes tipos =
+s=E3o=20
+  aceitos:=20
+  <UL>
+    <LI><SAMP>b</SAMP> - bloco=20
+    <LI><SAMP>c</SAMP> - caracter=20
+    <LI><SAMP>d</SAMP> - diret=F3rio=20
+    <LI><SAMP>p</SAMP> - pipe=20
+    <LI><SAMP>f</SAMP> - arquivo regular=20
+    <LI><SAMP>l</SAMP> - link simb=F3lico=20
+    <LI><SAMP>s</SAMP> - sockete </LI></UL></DD></DL>
+<P>A maior parte dos argumentos num=E9ricos podem ser precedidos por "+" =
+ou "-".=20
+Para detalhes sobre outras op=E7=F5es e argumentos, consulte a p=E1gina =
+de manual.=20
+<P>Exemplo:=20
+<UL>
+  <LI><SAMP>find / -name grep</SAMP> - Procura no diret=F3rio ra=EDz e=20
+  sub-diret=F3rios um arquivo/diret=F3rio chamado <CODE>grep</CODE>.=20
+  <LI><SAMP>find / -name grep -maxdepth 3</SAMP> - Procura no =
+diret=F3rio ra=EDz e=20
+  sub-diret=F3rios at=E9 o 3o. n=EDvel, um arquivo/diret=F3rio chamado=20
+  <CODE>grep</CODE>.=20
+  <LI><SAMP>find . -size +1000k</SAMP> - Procura no diret=F3rio atual e=20
+  sub-diret=F3rios um arquivo com tamanho maior que 1000 kbytes =
+(1Mbyte).=20
+  <LI><SAMP>find / -mmin 10</SAMP> - Procura no diret=F3rio ra=EDz e =
+sub-diret=F3rios=20
+  um arquivo que foi modificado h=E1 10 minutos atr=E1s.=20
+  <LI><SAMP>find / -links 4</SAMP> - Procura no diret=F3rio ra=EDz e =
+sub-diret=F3rios,=20
+  todos os arquivos que possuem 4 links como refer=EAncia. </LI></UL>
+<HR>
+<A name=3Ds-cmdv-free></A>
+<H2>10.7 free</H2>
+<P>Mostra detalhes sobre a utiliza=E7=E3o da mem=F3ria RAM do sistema.=20
+<P><SAMP>free [<EM>op=E7=F5es</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-b=20
+  <DD>Mostra o resultado em bytes.=20
+  <DT>-k=20
+  <DD>Mostra o resultado em Kbytes.=20
+  <DT>-m=20
+  <DD>Mostra o resultado em Mbytes.=20
+  <DT>-o=20
+  <DD>Oculta a linha de buffers.=20
+  <DT>-t=20
+  <DD>Mostra uma linha contendo o total.=20
+  <DT>-s [num]=20
+  <DD>Mostra a utiliza=E7=E3o da mem=F3ria a cada [num] segundos. =
+</DD></DL>
+<P>O <CODE>free</CODE> =E9 uma interface ao arquivo =
+<CODE>/proc/meminfo</CODE>.=20
+<HR>
+<A name=3Ds-cmdv-grep></A>
+<H2>10.8 grep</H2>
+<P>Procura por um texto dentro de um arquivo(s) ou no dispositivo de =
+entrada=20
+padr=E3o.=20
+<P><SAMP>grep [<EM>express=E3o</EM>] [<EM>arquivo</EM>] =
+[<EM>op=E7=F5es</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>express=E3o</EM>=20
+  <DD>palavra ou frase que ser=E1 procurada no texto. Se tiver mais de 2 =
+palavras=20
+  voc=EA deve identifica-la com aspas "" caso contr=E1rio o =
+<CODE>grep</CODE>=20
+  assumir=E1 que a segunda palavra =E9 o arquivo!=20
+  <DT><EM>arquivo</EM>=20
+  <DD>Arquivo onde ser=E1 feita a procura.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-A [n=FAmero]=20
+  <DD>Mostra o [n=FAmero] de linhas ap=F3s a linha encontrada pelo=20
+  <CODE>grep</CODE>.=20
+  <DT>-B [n=FAmero]=20
+  <DD>Mostra o [n=FAmero] de linhas antes da linha encontrada pelo=20
+  <CODE>grep</CODE>.=20
+  <DT>-f [arquivo]=20
+  <DD>Especifica que o texto que ser=E1 localizado, esta no arquivo =
+[arquivo].=20
+  <DT>-h, --no-filename=20
+  <DD>N=E3o mostra os nomes dos arquivos durante a procura.=20
+  <DT>-i, --ignore-case=20
+  <DD>Ignora diferen=E7a entre mai=FAsculas e min=FAsculas no texto =
+procurado e=20
+  arquivo.=20
+  <DT>-n, --line-number=20
+  <DD>Mostra o nome de cada linha encontrada pelo <CODE>grep</CODE>.=20
+  <DT>-U, --binary=20
+  <DD>Trata o arquivo que ser=E1 procurado como bin=E1rio. </DD></DL>
+<P>Se n=E3o for especificado o nome de um arquivo ou se for usado um =
+h=EDfen "-",=20
+<CODE>grep</CODE> procurar=E1 a string no dispositivo de entrada =
+padr=E3o. O=20
+<CODE>grep</CODE> faz sua pesquisa em arquivos texto. Use o comando=20
+<CODE>zgrep</CODE> para pesquisar diretamente em arquivos compactados =
+com=20
+<CODE>gzip</CODE>, os comandos e op=E7=F5es s=E3o as mesmas.=20
+<P>Exemplos: <SAMP>grep "capitulo" texto.txt</SAMP>, <SAMP>ps ax|grep=20
+inetd</SAMP>, <SAMP>grep "capitulo" texto.txt -A 2 -B 2</SAMP>.=20
+<HR>
+<A name=3Ds-cmdv-head></A>
+<H2>10.9 head</H2>
+<P>Mostra as linhas iniciais de um arquivo texto.=20
+<P><SAMP>head [<EM>op=E7=F5es</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT>-c [numero]=20
+  <DD>Mostra o [numero] de bytes do inicio do arquivo.=20
+  <DT>-n [numero]=20
+  <DD>Mostra o [numero] de linhas do inicio do arquivo. Caso n=E3o for=20
+  especificado, o <CODE>head</CODE> mostra as 10 primeiras linhas. =
+</DD></DL>
+<P>Exemplos: <SAMP>head teste.txt</SAMP>, <SAMP>head -n 20 =
+teste.txt</SAMP>.=20
+<HR>
+<A name=3Ds-cmdv-nl></A>
+<H2>10.10 nl</H2>
+<P>Mostra o n=FAmero de linhas junto com o conte=FAdo de um arquivo.=20
+<P><SAMP>nl [<EM>op=E7=F5es</EM>] [<EM>arquivo</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT>-f [opc]=20
+  <DD>Faz a filtragem de sa=EDda de acordo com [opc]:=20
+  <DL>
+    <DT>a=20
+    <DD>Numera todas as linhas.=20
+    <DT>t=20
+    <DD>N=E3o numera linhas vazias.=20
+    <DT>n=20
+    <DD>Numera linhas vazias.=20
+    <DT>texto=20
+    <DD>Numera somente linhas que cont=E9m o [texto]. </DD></DL>
+  <DT>-v [num]=20
+  <DD>N=FAmero inicial (o padr=E3o =E9 1).=20
+  <DT>-i [num]=20
+  <DD>N=FAmero de linhas adicionadas a cada linha do arquivo (o padr=E3o =
+=E9 1).=20
+</DD></DL>
+<P>Exemplos: <SAMP>nl /etc/passwd</SAMP>, <SAMP>nl -i 2 =
+/etc/passwd</SAMP>.=20
+<HR>
+<A name=3Ds-cmdv-more></A>
+<H2>10.11 more</H2>
+<P>Permite fazer a pagina=E7=E3o de arquivos ou da entrada padr=E3o. O =
+comando=20
+<CODE>more</CODE> pode ser usado como comando para leitura de arquivos =
+que=20
+ocupem mais de uma tela. Quando toda a tela =E9 ocupada, o =
+<CODE>more</CODE>=20
+efetua uma pausa e permite que voc=EA pressione <SAMP>Enter</SAMP> ou=20
+<SAMP>espa=E7o</SAMP> para continuar avan=E7ando no arquivo sendo =
+visualizado. Para=20
+sair do <CODE>more</CODE> pressione <SAMP>q</SAMP>.=20
+<P><SAMP>more [<EM>arquivo</EM>]</SAMP>=20
+<P>Onde: <EM>arquivo</EM> =C9 o arquivo que ser=E1 paginado.=20
+<P>Para visualizar diretamente arquivos texto compactados pelo =
+<CODE>gzip</CODE>=20
+<CODE>.gz</CODE> use o comando <CODE>zmore</CODE>.=20
+<P>Exemplos: <SAMP>more /etc/passwd</SAMP>, <SAMP>cat =
+/etc/passwd|more</SAMP>.=20
+<HR>
+<A name=3Ds-cmdv-less></A>
+<H2>10.12 less</H2>
+<P>Permite fazer a pagina=E7=E3o de arquivos ou da entrada padr=E3o. O =
+comando=20
+<CODE>less</CODE> pode ser usado como comando para leitura de arquivos =
+que=20
+ocupem mais de uma tela. Quando toda a tela =E9 ocupada, o =
+<CODE>less</CODE>=20
+efetua uma pausa (semelhante ao <CODE>more</CODE>) e permite que voc=EA =
+pressione=20
+Seta para Cima e Seta para Baixo ou PgUP/PgDown para fazer o rolamento =
+da=20
+p=E1gina. Para sair do <CODE>less</CODE> pressione <SAMP>q</SAMP>.=20
+<P><SAMP>less [<EM>arquivo</EM>]</SAMP>=20
+<P>Onde: <EM>arquivo</EM> =C9 o arquivo que ser=E1 paginado.=20
+<P>Para visualizar diretamente arquivos texto compactados pelo =
+utilit=E1rio=20
+<CODE>gzip</CODE> (arquivos <CODE>.gz</CODE>), use o comando =
+<CODE>zless</CODE>.=20
+
+<P>Exemplos: <SAMP>less /etc/passwd</SAMP>, <SAMP>cat =
+/etc/passwd|less</SAMP>=20
+<HR>
+<A name=3Ds-cmdv-sort></A>
+<H2>10.13 sort</H2>
+<P>Organiza as linhas de um arquivo texto ou da entrada padr=E3o. A =
+organiza=E7=E3o =E9=20
+feita por linhas e as linhas s=E3o divididas em <EM>campos</EM> que =E9 =
+a ordem que=20
+as palavras aparecem na linha separadas por um delimitador (normalmente =
+um=20
+espa=E7o).=20
+<P><SAMP>sort [<EM>op=E7=F5es</EM>] [<EM>arquivo</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>arquivo</EM>=20
+  <DD>=C9 o nome do arquivo que ser=E1 organizado. Caso n=E3o for =
+especificado, ser=E1=20
+  usado o dispositivo de entrada padr=E3o (normalmente o teclado ou um =
+"|").=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-b=20
+  <DD>Ignora linhas em branco.=20
+  <DT>-d=20
+  <DD>Somente usa letras, d=EDgitos e espa=E7os durante a =
+organiza=E7=E3o.=20
+  <DT>-f=20
+  <DD>Ignora a diferen=E7a entre mai=FAsculas e min=FAsculas.=20
+  <DT>-r=20
+  <DD>Inverte o resultado da compara=E7=E3o.=20
+  <DT>-n=20
+  <DD>Caso estiver organizando um campo que cont=E9m n=FAmeros, os =
+n=FAmeros ser=E3o=20
+  organizados na ordem aritm=E9tica. Por exemplo, se voc=EA tiver um =
+arquivo com os=20
+  n=FAmeros <PRE>     100
+     10
+     50
+</PRE>
+  <P>Usando a op=E7=E3o <SAMP>-n</SAMP>, o arquivo ser=E1 organizado =
+desta maneira: <PRE>     10
+     50=20
+     100
+</PRE>
+  <P>Caso esta op=E7=E3o <STRONG>n=E3o</STRONG> for usada com o =
+<CODE>sort</CODE>, ele=20
+  organizar=E1 como uma listagem alfab=E9tica (que come=E7am de =
+<SAMP>a</SAMP> at=E9=20
+  <SAMP>z</SAMP> e do <SAMP>0</SAMP> at=E9 <SAMP>9</SAMP>) <PRE>     10=20
+     100
+     50
+</PRE>
+  <DT>-c=20
+  <DD>Verifica se o arquivo j=E1 esta organizado. Caso n=E3o estiver, =
+retorna a=20
+  mensagem "disorder on <EM>arquivo</EM>".=20
+  <DT>-o <EM>arquivo</EM>=20
+  <DD>Grava a sa=EDda do comando <CODE>sort</CODE> no <EM>arquivo</EM>.=20
+  <DT>-m <EM>arquivo1</EM> <EM>arquivo2</EM>=20
+  <DD>Combina o conte=FAdo de <EM>arquivo1</EM> e <EM>arquivo2</EM> =
+gerando um=20
+  =FAnico arquivo. Os dois arquivos precisam estar ordenados antes de se =
+utilizar=20
+  esta op=E7=E3o.=20
+  <DT>-i=20
+  <DD>Ignora os caracteres fora da faixa octal ASCII 040-0176 durante a=20
+  organiza=E7=E3o.=20
+  <DT>-t <EM>caracter</EM>=20
+  <DD>Usa <EM>caracter</EM> como delimitador durante a organiza=E7=E3o =
+de linhas.=20
+  Por padr=E3o =E9 usado um <EM>espa=E7o em branco</EM> como delimitador =
+de=20
+  caracteres.=20
+  <DT><EM>+num1 -num2</EM>=20
+  <DD>Especifica qual o campo dentro na linha que ser=E1 usado na =
+organiza=E7=E3o.=20
+  O(s) campo(s) usado(s) para organiza=E7=E3o estar=E1 entre =
+<EM>+num1</EM> e=20
+  <EM>+num2</EM>. O delimitador padr=E3o utilizado =E9 um <EM>espa=E7o =
+em branco</EM>=20
+  (use a op=E7=E3o <SAMP>-t</SAMP> para especificar outro). A contagem =
+=E9 iniciada em=20
+  "0". Caso n=E3o for especificada, a organiza=E7=E3o =E9 feita no =
+primeiro campo. Caso=20
+  <EM>-num2</EM> n=E3o seja especificado, a organiza=E7=E3o ser=E1 feita =
+usando a coluna=20
+  <EM>+num1</EM> at=E9 o fim da linha.=20
+  <DT>-k <EM>num1</EM>, <EM>num2</EM>=20
+  <DD>Esta =E9 uma alternativa ao m=E9todo acima para especificar as =
+chaves de=20
+  organiza=E7=E3o. O uso =E9 id=EAntico, mas o delimitador =E9 iniciado =
+em "1". </DD></DL>
+<P>Abaixo, exemplos de uso do comando <CODE>sort</CODE>:=20
+<UL>
+  <LI><SAMP>sort <CODE>texto.txt</CODE></SAMP> - Organiza o arquivo=20
+  <CODE>texto.txt</CODE> em ordem crescente.=20
+  <LI><SAMP>sort <CODE>texto.txt</CODE> -r</SAMP> - Organiza o =
+conte=FAdo do=20
+  arquivo <CODE>texto.txt</CODE> em ordem decrescente.=20
+  <LI><SAMP>cat <CODE>texto.txt</CODE>|sort</SAMP> - Faz a mesma coisa =
+que o=20
+  primeiro exemplo, s=F3 que neste caso a sa=EDda do comando =
+<CODE>cat</CODE> =E9=20
+  redirecionado a entrada padr=E3o do comando <CODE>sort</CODE>.=20
+  <LI><SAMP>sort -f <CODE>texto.txt</CODE></SAMP> - Ignora diferen=E7as =
+entre=20
+  letras mai=FAsculas e min=FAsculas durante a organiza=E7=E3o.=20
+  <LI><SAMP>sort +1 -3 texto.txt</SAMP> - Organiza o arquivo=20
+  <CODE>texto.txt</CODE> usando como refer=EAncia a segunda at=E9 a =
+quarta palavra=20
+  (segundo ao quarto campo) que constam naquela linha.=20
+  <LI><SAMP>sort -t : +2 -3 passwd</SAMP> - Organiza o arquivo=20
+  <CODE>passwd</CODE> usando como refer=EAncia a terceira at=E9 a quarta =
+palavra=20
+  (terceiro ao quarto campo). Note que a op=E7=E3o <SAMP>-t</SAMP> =
+especifica o=20
+  caracter ":" como delimitador de campos ao inv=E9s do espa=E7o. Neste =
+caso, o que=20
+  estiver ap=F3s ":" ser=E1 considerado o pr=F3ximo campo. </LI></UL>
+<HR>
+<A name=3Ds-cmdv-tail></A>
+<H2>10.14 tail</H2>
+<P>Mostra as linhas finais de um arquivo texto.=20
+<P><SAMP>tail [<EM>op=E7=F5es</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT>-c [numero]=20
+  <DD>Mostra o [numero] de bytes do final do arquivo.=20
+  <DT>-n [numero]=20
+  <DD>Mostra o [numero] de linhas do final do arquivo. </DD></DL>
+<P>Exemplos: <SAMP>tail teste.txt</SAMP>, <SAMP>tail -n 20 =
+teste.txt</SAMP>.=20
+<HR>
+<A name=3Ds-cmdv-time></A>
+<H2>10.15 time</H2>
+<P>Mede o tempo gasto para executar um processo (programa).=20
+<P><SAMP>time [<EM>comando</EM>]</SAMP>=20
+<P>Onde: <EM>comando</EM> =E9 o comando/programa que deseja medir o =
+tempo gasto=20
+para ser conclu=EDdo.=20
+<P>Exemplo: <SAMP>time ls</SAMP>, <SAMP>time find / -name =
+crontab</SAMP>.=20
+<HR>
+<A name=3Ds-cmdv-touch></A>
+<H2>10.16 touch</H2>
+<P>Muda a data e hora que um arquivo foi criado. Tamb=E9m pode ser usado =
+para=20
+criar arquivos vazios. Caso o <CODE>touch</CODE> seja usado com arquivos =
+que n=E3o=20
+existam, por padr=E3o ele criar=E1 estes arquivos.=20
+<P><SAMP>touch [<EM>op=E7=F5es</EM>] [<EM>arquivos</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>arquivos</EM>=20
+  <DD>Arquivos que ter=E3o sua data/hora modificados.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-t MMDDhhmm[ANO.segundos]=20
+  <DD>Usa Minutos (MM), Dias (DD), Horas (hh), minutos (mm) e =
+opcionalmente o=20
+  ANO e segundos para modifica=E7=E3o do(s) arquivos ao inv=E9s da data =
+e hora atual.=20
+  <DT>-a, --time=3Datime=20
+  <DD>Faz o <CODE>touch</CODE> mudar somente a data e hora do acesso ao =
+arquivo.=20
+
+  <DT>-c, --no-create=20
+  <DD>N=E3o cria arquivos vazios, caso os <EM>arquivos</EM> n=E3o =
+existam.=20
+  <DT>-m, --time=3Dmtime=20
+  <DD>Faz o <CODE>touch</CODE> mudar somente a data e hora da =
+modifica=E7=E3o.=20
+  <DT>-r [arquivo]=20
+  <DD>Usa as horas no [arquivo] como refer=EAncia ao inv=E9s da hora =
+atual. </DD></DL>
+<P>Exemplos:=20
+<UL>
+  <LI><SAMP>touch teste</SAMP> - Cria o arquivo <CODE>teste</CODE> caso =
+ele n=E3o=20
+  existir. </LI></UL>
+<UL>
+  <LI><SAMP>touch -t 10011230 teste</SAMP> - Altera da data e hora do =
+arquivo=20
+  para 01/10 e 12:30. </LI></UL>
+<UL>
+  <LI><SAMP>touch -t 120112301999.30 teste</SAMP> - Altera da data, hora =
+ano, e=20
+  segundos do arquivo para 01/12/1999 e 12:30:30. </LI></UL>
+<UL>
+  <LI><SAMP>touch -t 12011200 *</SAMP> - Altera a data e hora do arquivo =
+para=20
+  01/12 e 12:00. </LI></UL>
+<HR>
+<A name=3Ds-cmdv-uptime></A>
+<H2>10.17 uptime</H2>
+<P>Mostra o tempo de execu=E7=E3o do sistema desde que o computador foi =
+ligado.=20
+<P><SAMP>uptime</SAMP>=20
+<HR>
+<A name=3Ds-cmdv-dmesg></A>
+<H2>10.18 dmesg</H2>
+<P>Mostra as mensagens de inicializa=E7=E3o do kernel. S=E3o mostradas =
+as mensagens da=20
+=FAltima inicializa=E7=E3o do sistema.=20
+<P><SAMP>dmesg|less</SAMP>=20
+<HR>
+<A name=3Ds-cmdv-mesg></A>
+<H2>10.19 mesg</H2>
+<P>Permite ou n=E3o o recebimentos de requisi=E7=F5es de =
+<CODE>talk</CODE> de outros=20
+usu=E1rios.=20
+<P><SAMP>mesg [<EM>y/n</EM>]</SAMP>=20
+<P>Onde: <EM>y</EM> permite que voc=EA receba "talks" de outros =
+usu=E1rios.=20
+<P>Digite <SAMP>mesg</SAMP> para saber se voc=EA pode ou n=E3o receber =
+"talks" de=20
+outros usu=E1rios. Caso a resposta seja "n" voc=EA poder=E1 enviar um =
+talk para algu=E9m=20
+mas o seu sistema se recusar=E1 em receber talks de outras pessoas.=20
+<P>=C9 interessante colocar o comando <SAMP>mesg y</SAMP> em seu arquivo =
+de=20
+inicializa=E7=E3o <CODE>.bash_profile</CODE> para permitir o recebimento =
+de "talks"=20
+toda vez que entrar no sistema.=20
+<P>Para detalhes sobre como se comunicar com outros usu=E1rios, veja o =
+comando <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm#s-cmdn-talk">talk,=20
+Se=E7=E3o 11.8</A>.=20
+<HR>
+<A name=3Ds-cmdv-echo></A>
+<H2>10.20 echo</H2>
+<P>Mostra mensagens. Este comando =E9 =FAtil na constru=E7=E3o de =
+scripts para mostrar=20
+mensagens na tela para o usu=E1rio acompanhar sua execu=E7=E3o.=20
+<P><SAMP>echo [<EM>mensagem</EM>]</SAMP>=20
+<P>A op=E7=E3o <SAMP>-n</SAMP> pode ser usada para que n=E3o ocorra o =
+salto de linha=20
+ap=F3s a mensagem ser mostrada.=20
+<HR>
+<A name=3Ds-cmdv-su></A>
+<H2>10.21 su</H2>
+<P>Permite o usu=E1rio mudar sua identidade para outro usu=E1rio sem =
+fazer o logout.=20
+=DAtil para executar um programa ou comando como root sem ter que =
+abandonar a=20
+se=E7=E3o atual.=20
+<P><SAMP>su [<EM>usu=E1rio</EM>]</SAMP>=20
+<P>Onde: <EM>usu=E1rio</EM> =E9 o nome do usu=E1rio que deseja usar para =
+acessar o=20
+sistema. Se n=E3o digitado, =E9 assumido o usu=E1rio <SAMP>root</SAMP>.=20
+<P>Ser=E1 pedida a senha do superusu=E1rio para autentica=E7=E3o. Digite =
+
+<SAMP>exit</SAMP> quando desejar retornar a identifica=E7=E3o de =
+usu=E1rio anterior.=20
+<HR>
+<A name=3Ds-cmdv-sync></A>
+<H2>10.22 sync</H2>
+<P>Grava os dados do cache de disco na mem=F3ria RAM para todos os =
+discos r=EDgidos=20
+e flex=EDveis do sistema. O cache um mecanismo de acelera=E7=E3o que =
+permite que um=20
+arquivo seja armazenado na mem=F3ria ao inv=E9s de ser imediatamente =
+gravado no=20
+disco, quando o sistema estiver ocioso, o arquivo =E9 gravado para o =
+disco. O=20
+<CODE>GNU/Linux</CODE> procura utilizar toda mem=F3ria RAM dispon=EDvel =
+para o cache=20
+de programas acelerando seu desempenho de leitura/grava=E7=E3o.=20
+<P><SAMP>sync</SAMP>=20
+<P>O uso do <CODE>sync</CODE> =E9 =FAtil em disquetes quando gravamos um =
+programa e=20
+precisamos que os dados sejam gravados imediatamente para retirar o =
+disquete da=20
+unidade. Mas o m=E9todo recomendado =E9 especificar a op=E7=E3o =
+<SAMP>sync</SAMP>=20
+durante a montagem da unidade de disquetes (para detalhes veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-fstab">fstab,=20
+Se=E7=E3o 5.13.1</A>.=20
+<HR>
+<A name=3Ds-cmdv-uname></A>
+<H2>10.23 uname</H2>
+<P>Retorna o nome e vers=E3o do kernel atual.=20
+<P><SAMP>uname</SAMP>=20
+<HR>
+<A name=3Ds-cmdv-reboot></A>
+<H2>10.24 reboot</H2>
+<P>Reinicia o computador.=20
+<HR>
+<A name=3Ds-cmdv-shutdown></A>
+<H2>10.25 shutdown</H2>
+<P>Desliga/reinicia o computador imediatamente ou ap=F3s determinado =
+tempo=20
+(program=E1vel) de forma segura. Todos os usu=E1rios do sistema s=E3o =
+avisados que o=20
+computador ser=E1 desligado . Este comando somente pode ser executado =
+pelo usu=E1rio=20
+root ou quando =E9 usada a op=E7=E3o <SAMP>-a</SAMP> pelos usu=E1rios =
+cadastrados no=20
+arquivo <CODE>/etc/shutdown.allow</CODE> que estejam logados no console =
+virtual=20
+do sistema.=20
+<P><SAMP>shutdown [<EM>op=E7=F5es</EM>] [<EM>hora</EM>] =
+[<EM>mensagem</EM>]</SAMP>=20
+<DL>
+  <DT><EM>hora</EM>=20
+  <DD>Momento que o computador ser=E1 desligado. Voc=EA pode usar =
+<SAMP>HH:MM</SAMP>=20
+  para definir a hora e minuto, <SAMP>MM</SAMP> para definir minutos,=20
+  <SAMP>+SS</SAMP> para definir ap=F3s quantos segundos, ou =
+<SAMP>now</SAMP> para=20
+  imediatamente (equivalente a +0).=20
+  <P>O <CODE>shutdown</CODE> criar=E1 o arquivo =
+<CODE>/etc/nologin</CODE> para n=E3o=20
+  permitir que novos usu=E1rios fa=E7am login no sistema (com excess=E3o =
+do root).=20
+  Este arquivo =E9 removido caso a execu=E7=E3o do <CODE>shutdown</CODE> =
+seja=20
+  cancelada (op=E7=E3o -c) ou ap=F3s o sistema ser reiniciado. </P>
+  <DT><EM>mensagem</EM>=20
+  <DD>Mensagem que ser=E1 mostrada a todos os usu=E1rios alertando sobre =
+o=20
+  reinicio/desligamento do sistema.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-h=20
+  <DD>Inicia o processo para desligamento do computador.=20
+  <DT>-r=20
+  <DD>Reinicia o sistema=20
+  <DT>-c=20
+  <DD>Cancela a execu=E7=E3o do <CODE>shutdown</CODE>. Voc=EA pode =
+acrescentar uma=20
+  mensagem avisando aos usu=E1rios sobre o fato.=20
+  <DT>-a=20
+  <DD>Permite que os nomes de usu=E1rios contidos no arquivo=20
+  <CODE>/etc/shutdown.allow</CODE> possam utilizar o =
+<CODE>shutdown</CODE> para=20
+  reinicializar/desligar o sistema. Deve ser colocado um nome de =
+usu=E1rio por=20
+  linha. O limite m=E1ximo de usu=E1rios neste arquivo =E9 de 32.=20
+  <P>Este arquivo =E9 =FAtil quando o <CODE>shutdown</CODE> =E9 usado =
+para controlar o=20
+  pressionamento das teclas <SAMP>CTRL+ALT+DEL</SAMP> no=20
+  <CODE>/etc/inittab</CODE>. </P>
+  <DT>-k=20
+  <DD>Simula o desligamento/reinicio do sistema, enviando mensagem aos =
+usu=E1rios.=20
+
+  <DT>-f=20
+  <DD>N=E3o executa a checagem do sistema de arquivos durante a =
+inicializa=E7=E3o do=20
+  sistema. Este processo =E9 feito gravando-se um arquivo =
+<CODE>/fastboot</CODE>=20
+  que =E9 interpretado pelos scripts respons=E1veis pela execu=E7=E3o do =
+
+  <CODE>fsck</CODE> durante a inicializa=E7=E3o do sistema.=20
+  <DT>-F=20
+  <DD>For=E7a a checagem do sistema de arquivos durante a =
+inicializa=E7=E3o. =C9 gravado=20
+  um arquivo chamado <CODE>/forcefsck</CODE> que =E9 interpretado pelos =
+scripts=20
+  respons=E1veis pela execu=E7=E3o do <CODE>fsck</CODE> durante a =
+inicializa=E7=E3o do=20
+  sistema.=20
+  <DT>-n=20
+  <DD>Faz com que o <CODE>shutdown</CODE> ignore a execu=E7=E3o do =
+<CODE>init</CODE>=20
+  fechando todos os processos.=20
+  <DT>-t [num]=20
+  <DD>Faz com que o <CODE>shutdown</CODE> envie um sinal de t=E9rmino =
+aos=20
+  processos e aguarde [num] segundos antes de enviar o sinal KILL. =
+</DD></DL>
+<P>O <CODE>shutdown</CODE> envia uma mensagem a todos os usu=E1rios do =
+sistema=20
+alertando sobre o desligamento durante os 15 minutos restantes e assim =
+permite=20
+que finalizem suas tarefas. Ap=F3s isto, o <CODE>shutdown</CODE> muda o =
+n=EDvel de=20
+execu=E7=E3o atrav=E9s do comando <CODE>init</CODE> para 0 =
+(desligamento), 1 (modo=20
+monousu=E1rio), 6 (reinicializa=E7=E3o). =C9 recomendado utilizar o =
+s=EDmbolo "&amp;" no=20
+final da linha de comando para que o <CODE>shutdown</CODE> seja =
+executado em=20
+segundo plano.=20
+<P>Quando restarem apenas 5 minutos para o reinicio/desligamento do =
+sistema, o=20
+programa <CODE>login</CODE> ser=E1 desativado, impedindo a entrada de =
+novos=20
+usu=E1rios no sistema.=20
+<P>O programa <CODE>shutdown</CODE> pode ser chamado pelo =
+<CODE>init</CODE>=20
+atrav=E9s do pressionamento da combina=E7=E3o das teclas de =
+reinicializa=E7=E3o=20
+<SAMP>CTRL+ALT+DEL</SAMP> alterando-se o arquivo =
+<CODE>/etc/inittab</CODE>. Isto=20
+permite que somente os usu=E1rios autorizados (ou o root) possam =
+reinicializar o=20
+sistema.=20
+<P>Exemplos:=20
+<UL>
+  <LI><SAMP>"shutdown -h now"</SAMP> - Desligar o computador =
+imediatamente.=20
+  <LI><SAMP>"shutdown -r now"</SAMP> - Reinicia o computador =
+imediatamente.=20
+  <LI><SAMP>"shutdown 19:00 A manuten=E7=E3o do servidor ser=E1 iniciada =
+=E0s=20
+  19:00"</SAMP> - Faz o computador entrar em modo monousu=E1rio (init 1) =
+=E0s 19:00=20
+  enviando a mensagem <EM>A manuten=E7=E3o do servidor ser=E1 iniciada =
+=E0s 19:00</EM> a=20
+  todos os usu=E1rios conectados ao sistema.=20
+  <LI><SAMP>"shutdown -r 15:00 O sistema ser=E1 reiniciado =E0s 15:00 =
+horas"</SAMP>=20
+  - Faz o computador ser reiniciado (init 6) =E0s 15:00 horas enviando a =
+mensagem=20
+  <EM>O sistema ser=E1 reiniciado =E0s 15:00 horas</EM> a todos os =
+usu=E1rios=20
+  conectados ao sistema.=20
+  <LI><SAMP>shutdown -r 20</SAMP> - Faz o sistema ser reiniciado ap=F3s =
+20=20
+  minutos.=20
+  <LI><SAMP>shutdown -c</SAMP> - Cancela a execu=E7=E3o do =
+<CODE>shutdown</CODE>.=20
+  <LI><SAMP>shutdown -t 30 -r 20</SAMP> - Reinicia o sistema ap=F3s 20 =
+minutos,=20
+  espera 30 segundos ap=F3s o sinal de t=E9rmino para enviar o sinal =
+KILL a todos os=20
+  programas abertos. </LI></UL>
+<HR>
+<A name=3Ds-cmdv-wc></A>
+<H2>10.26 wc</H2>
+<P>Conta o n=FAmero de palavras, bytes e linhas em um arquivo ou entrada =
+padr=E3o.=20
+Se as op=E7=F5es forem omitidas, o <CODE>wc</CODE> mostra a quantidade =
+de linhas,=20
+palavras, e bytes.=20
+<P><SAMP>wc [<EM>op=E7=F5es</EM>] [<EM>arquivo</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>arquivo</EM>=20
+  <DD>Arquivo que ser=E1 verificado pelo comando <CODE>wc</CODE>.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-c, --bytes=20
+  <DD>Mostra os bytes do arquivo.=20
+  <DT>-w, --words=20
+  <DD>Mostra a quantidade de palavras do arquivo.=20
+  <DT>-l, --lines=20
+  <DD>Mostra a quantidade de linhas do arquivo. </DD></DL>
+<P>A ordem da listagem dos par=E2metros =E9 =FAnica, e modificando a =
+posi=E7=E3o das=20
+op=E7=F5es n=E3o modifica a ordem que os par=E2metros s=E3o listados.=20
+<P>Exemplo:=20
+<UL>
+  <LI><SAMP>wc /etc/passwd</SAMP> - Mostra a quantidade de linhas, =
+palavras e=20
+  letras (bytes) no arquivo <CODE>/etc/passwd</CODE>.=20
+  <LI><SAMP>wc -w /etc/passwd</SAMP> - Mostra a quantidade de palavras.=20
+  <LI><SAMP>wc -l /etc/passwd</SAMP> - Mostra a quantidade de linhas.=20
+  <LI><SAMP>wc -l -w /etc/passwd</SAMP> - Mostra a quantidade de linhas =
+e=20
+  palavras no arquivo <CODE>/etc/passwd</CODE>. </LI></UL>
+<HR>
+<A name=3Ds-cmdv-seq></A>
+<H2>10.27 seq</H2>
+<P>Imprime uma seq=FC=EAncia de n=FAmeros come=E7ando em [primeiro] e =
+terminando em=20
+[=FAltimo], utilizando [incremento] para avan=E7ar.=20
+<P><SAMP>seq [<EM>op=E7=F5es</EM>] [<EM>primeiro</EM>] =
+[<EM>incremento</EM>]=20
+[<EM>=FAltimo</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>primeiro</EM>=20
+  <DD>N=FAmero inicial da seq=FC=EAncia.=20
+  <DT><EM>incremento</EM>=20
+  <DD>N=FAmero utilizado para avan=E7ar na seq=FC=EAncia.=20
+  <DT><EM>=FAltimo</EM>=20
+  <DD>N=FAmero final da seq=FC=EAncia.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-f, --format=3D[formato]=20
+  <DD>Formato de sa=EDda dos n=FAmeros da seq=FC=EAncia. Utilize o =
+estilo do printf para=20
+  ponto flutuante (valor padr=E3o: %g).=20
+  <DT>-s, --separator=3D[string]=20
+  <DD>Usa [string] para separar a seq=FC=EAncia de n=FAmeros (valor =
+padr=E3o: \n).=20
+  <DT>-w, --equal-width=20
+  <DD>Insere zeros na frente dos n=FAmeros mantendo a seq=FC=EAncia =
+alinhada. </DD></DL>
+<P>Observa=E7=F5es:=20
+<UL>
+  <LI>Se [primeiro] ou [incremento] forem omitidos, o valor padr=E3o 1 =
+ser=E1=20
+  utilizado.=20
+  <LI>Os n=FAmeros recebidos s=E3o interpretados como n=FAmeros em ponto =
+flutuante.=20
+  <LI>[incremento] deve ser positivo se [primeiro] for menor do que o =
+=FAltimo, e=20
+  negativo caso contr=E1rio.=20
+  <LI>Quando utilizarmos a op=E7=E3o --format, o argumento deve ser =
+exatamente %e,=20
+  %f ou %g. </LI></UL>
+<P>Exemplos: <SAMP>seq 0 2 10</SAMP>, <SAMP>seq -w 0 10</SAMP>, =
+<SAMP>seq -f%f 0=20
+10</SAMP>, <SAMP>seq -s", " 0 10</SAMP>=20
+<HR>
+<A name=3Ds-cmdv-chattr></A>
+<H2>10.28 chattr</H2>
+<P>Modifica atributos de arquivos/diret=F3rios. N=E3o confunda atributos =
+de arquivo=20
+com permiss=F5es de acesso (<A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">Permiss=F5es=20
+de acesso a arquivos e diret=F3rios, Cap=EDtulo 13</A>), os atributos =
+s=E3o diferentes=20
+e definem outras caracter=EDsticas especiais para os =
+arquivos/diret=F3rios=20
+especificados.=20
+<P><SAMP>chattr [<EM>op=E7=F5es</EM>] [<EM>atributos</EM>]=20
+[<EM>arquivos/diret=F3rios</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>arquivos/diret=F3rios</EM>=20
+  <DD>Arquivos/Diret=F3rios que ter=E3o os atributos modificados. Podem =
+ser usados=20
+  curingas=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-R=20
+  <DD>Modifica atributos em subdiret=F3rios=20
+  <DT>-V=20
+  <DD>Mostra detalhes sobre a modifica=E7=E3o de atributos.=20
+  <DT><EM>atributos</EM>=20
+  <DD>Os atributos de arquivos/diret=F3rios podem ser especificados da =
+seguinte=20
+  maneira:=20
+  <UL>
+    <LI><SAMP>+</SAMP> - Adiciona o atributo=20
+    <LI><SAMP>-</SAMP> - Remove o atributo=20
+    <LI><SAMP>=3D</SAMP> - Define o atributo exatamente como =
+especificado </LI></UL>
+  <P>Os atributos s=E3o os seguintes:=20
+  <UL>
+    <LI><SAMP>A</SAMP> - N=E3o modifica a hora de acesso de arquivos. =
+Poder=20
+    aumentar consideravelmente a performance em Notebooks devido a =
+diminui=E7=E3o de=20
+    I/O no disco r=EDgido. Quando especificada em diret=F3rios, faz com =
+que todos os=20
+    arquivos e subdiret=F3rios residentes nele n=E3o tenham a hora de =
+acesso=20
+    modificada.=20
+    <P>Este atributo funciona apenas em kernels 2.2 e superiores </P>
+    <LI><SAMP>a</SAMP> - Append-Only - Arquivos com este atributo podem =
+somente=20
+    ser gravados em modo incrementais (o conte=FAdo poder=E1 somente ser =
+adicionado=20
+    ao final do arquivo). Eles n=E3o poder=E3o ser removidos, renomeados =
+e novos=20
+    links n=E3o poder=E3o ser criados para estes arquivos.=20
+    <P>Em diret=F3rios faz com que os arquivos sejam apenas adicionados. =
+Somente o=20
+    root pode especificar ou retirar este atributo. </P>
+    <LI><SAMP>c</SAMP> - Permite compacta=E7=E3o nos arquivos =
+especificados de forma=20
+    transparente para o usu=E1rio. Durante a leitura, o kernel retorna =
+dados=20
+    descompactados e durante a grava=E7=E3o os dados s=E3o compactados e =
+gravados no=20
+    disco.=20
+    <P>Este atributo ainda n=E3o foi totalmente implementado no c=F3digo =
+atual do=20
+    kernel. </P>
+    <LI><SAMP>d</SAMP> - Este atributo n=E3o =E9 usado pelo kernel, mas =
+faz com que=20
+    o programa <CODE>dump</CODE> evitar backup dos arquivos marcados com =
+este=20
+    atributo.=20
+    <LI><SAMP>i</SAMP> - Imut=E1vel - Arquivos imut=E1veis n=E3o podem =
+ser=20
+    modificados, os dados tamb=E9m n=E3o podem ser gravados para estes =
+arquivos, n=E3o=20
+    podem ser removidos, renomeados. At=E9 mesmo o usu=E1rio root n=E3o =
+poder=E1=20
+    modificar estes arquivos.=20
+    <P>Em diret=F3rios, faz com que arquivos n=E3o possam ser =
+adicionados ou=20
+    apagados. Somente o usu=E1rio root pode especificar ou retirar este =
+atributo.=20
+    </P>
+    <LI><SAMP>s</SAMP> - O arquivo especificado =E9 marcado como =
+"apagamento=20
+    seguro"; quando o arquivo =E9 apagado, seus blocos s=E3o zerados e =
+gravados de=20
+    volta no disco (eliminando qualquer possibilidade de =
+recupera=E7=E3o).=20
+    <LI><SAMP>S</SAMP> - Faz a grava=E7=E3o imediatamente para o arquivo =
+
+    especificado. =C9 como especificar a op=E7=E3o "sync" na montagem do =
+sistema de=20
+    arquivos ext2, mas afeta somente os arquivos especificados. N=E3o =
+tem efeito=20
+    em diret=F3rios.=20
+    <LI><SAMP>u</SAMP> - O arquivo especificado =E9 marcado como =
+recuper=E1vel.=20
+    Quando o arquivo =E9 apagado, seu conte=FAdo =E9 salvo para permitir =
+futura=20
+    recupera=E7=E3o.=20
+    <P>Este atributo ainda n=E3o foi implementado totalmente no c=F3digo =
+atual do=20
+    kernel. </P></LI></UL></DD></DL>
+<P>Os atributos de arquivos/diret=F3rios s=E3o visualizados atrav=E9s do =
+utilit=E1rio=20
+<CODE>lsattr</CODE>. Existem patches para os kernels da s=E9rie 2.2 que =
+adicionam=20
+o suporte experimental aos atributos "c" e "u".=20
+<P>Exemplos:=20
+<UL>
+  <LI><SAMP>chattr +AacdiSsu teste.txt</SAMP> - Adiciona todos os =
+atributos=20
+  <LI><SAMP>chattr =3DASs teste.txt</SAMP> - Define os atributos para =
+"ASs"=20
+  <LI><SAMP>chattr +i -A teste.txt</SAMP> - Retira o atributo "A" e =
+adiciona "i"=20
+
+  <LI><SAMP>chattr =3D teste.txt</SAMP> - Retira todos os atributos =
+</LI></UL>
+<HR>
+<A name=3Ds-cmdv-lsattr></A>
+<H2>10.29 lsattr</H2>
+<P>Lista atributos de um arquivo/diret=F3rio. Os atributos podem ser =
+modificados=20
+atrav=E9s do comando <CODE>chattr</CODE>.=20
+<P><SAMP>lsattr [<EM>op=E7=F5es</EM>] =
+[<EM>arquivos/diret=F3rios</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>arquivos/diret=F3rios</EM>=20
+  <DD>Arquivos/diret=F3rios que deseja listar os atributos. Podem ser =
+usados=20
+  curingas.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-a=20
+  <DD>Lista todos os arquivos, incluindo ocultos (iniciando com um "."). =
+
+  <DT>-d=20
+  <DD>Lista os atributos de diret=F3rios ao inv=E9s de listar os =
+arquivos que ele=20
+  cont=E9m.=20
+  <DT>-R=20
+  <DD>Faz a listagem em diret=F3rios e subdiret=F3rios.=20
+  <DT>-v=20
+  <DD>Mostra vers=F5es dos arquivos. </DD></DL>
+<P>Caso seja especificado sem par=E2metros, o <CODE>lsattr</CODE> =
+listar=E1 os=20
+atributos de todos os arquivos e diret=F3rios do diret=F3rio atual. O=20
+<CODE>lsattr</CODE> mostrar=E1 mensagens de erro caso seja usado em um =
+diret=F3rio=20
+de pontos de montagem ou arquivos que n=E3o sejam <EM>ext2</EM>.=20
+<P>Exemplo: <SAMP>lsattr -d</SAMP>, <SAMP>lsattr -R</SAMP>, <SAMP>lsattr =
+-R=20
+*.txt</SAMP>=20
+<HR>
+<A name=3Ds-cmdv-cut></A>
+<H2>10.30 cut</H2>
+<P>Mostra se=E7=F5es de cada linha do arquivo dependendo das op=E7=F5es =
+passadas ao=20
+programa.=20
+<P><SAMP>cut [<EM>op=E7=F5es</EM>] [<EM>arquivo</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>arquivo</EM>=20
+  <DD>Arquivo que ser=E1 verificado pelo comando <CODE>cut</CODE>.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-b, --bytes [bytes]=20
+  <DD>Mostra somente a lista de [bytes] do arquivo.=20
+  <DT>-c, --characters [numero]=20
+  <DD>Mostra somente o [n=FAmero] de caracteres no arquivo. =C9 =
+semelhante a op=E7=E3o=20
+  "-b" mas tabs e espa=E7os s=E3o tratados como qualquer caracter.=20
+  <DT>-f, --field [campos]=20
+  <DD>Mostra somente a lista de [campos].=20
+  <DT>-d, --delimite [delimitador]=20
+  <DD>Para uso com a op=E7=E3o -f, os campos s=E3o separados pelo =
+primeiro caracter em=20
+  [delimitador] ao inv=E9s de tabula=E7=F5es.=20
+  <DT>-s=20
+  <DD>Para uso com a op=E7=E3o -f, somente mostra linhas que cont=E9m o =
+caracter=20
+  separador de campos. </DD></DL>
+<P>Devem ser especificadas op=E7=F5es para o funcionamento deste =
+comando. Os bytes,=20
+campos e delimitadores podem ser especificados atrav=E9s de intervalos =
+de=20
+caracteres (usando a-z), atrav=E9s de v=EDrgulas (a,b,d) ou da =
+combina=E7=E3o entre=20
+eles.=20
+<UL>
+  <LI><SAMP>cut -b 1,3 /etc/passwd</SAMP> - Pega a primeira e terceira =
+letra=20
+  (byte) de cada linha do arquivo <CODE>/etc/passwd</CODE>=20
+  <LI><SAMP>cut -b 1,3-10 /etc/passwd</SAMP> - Pega a primeira letra =
+(byte) e=20
+  terceira a d=E9cima letra de cada linha do arquivo =
+<CODE>/etc/passwd</CODE>.=20
+  <LI><SAMP>cut -c 1,3-10 /etc/passwd</SAMP> - Pega o primeiro caracter =
+e=20
+  terceiro ao d=E9cimo caracter de cada linha do arquivo =
+<CODE>/etc/passwd</CODE>.=20
+  </LI></UL>
+<HR>
+<A name=3Ds-cmdv-cmp></A>
+<H2>10.31 cmp</H2>
+<P>Compara dois arquivos de qualquer tipo (bin=E1rio ou texto). Os dois =
+arquivos=20
+especificados ser=E3o comparado e caso exista diferen=E7a entre eles, =
+=E9 mostrado o=20
+n=FAmero da linha e byte onde ocorreu a primeira diferen=E7a na sa=EDda =
+padr=E3o (tela)=20
+e o programa retorna o c=F3digo de sa=EDda 1.=20
+<P><SAMP>cmp [<EM>arquivo1</EM>] [<EM>arquivo2</EM>] =
+[<EM>op=E7=F5es</EM>]</SAMP>=20
+<P>Op=E7=F5es:=20
+<DL>
+  <DT><EM>arquivo1/arquivo2</EM>=20
+  <DD>Arquivos que ser=E3o comparados.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-l=20
+  <DD>Mostra o n=FAmero do byte (hexadecimal) e valores diferentes de =
+bytes=20
+  (octal) para cada diferen=E7a.=20
+  <DT>-s=20
+  <DD>N=E3o mostra nenhuma diferen=E7a, s=F3 retorna o c=F3digo de =
+sa=EDda do programa.=20
+  </DD></DL>
+<P>Use o comando <CODE>zcmp</CODE> para comparar diretamente arquivos=20
+bin=E1rios/texto compactados com <CODE>gzip</CODE>.=20
+<P>Exemplo: <SAMP>cmp teste.txt teste1.txt</SAMP>.=20
+<HR>
+<A name=3Ds-cmdv-dirname></A>
+<H2>10.32 dirname</H2>
+<P>Obt=E9m o nome do diret=F3rio atrav=E9s do caminho passado ao =
+programa.=20
+<P><SAMP>dirname [<EM>diret=F3rio/arquivo</EM>]</SAMP>=20
+<P><SAMP>dirname /usr/bin/dirname</SAMP>, <SAMP>dirname /tmp/*</SAMP>.=20
+<HR>
+<A name=3Ds-cmdv-diff></A>
+<H2>10.33 diff</H2>
+<P>Compara dois arquivos e mostra as diferen=E7as entre eles. O comando=20
+<CODE>diff</CODE> =E9 usado somente para a compara=E7=E3o de arquivos em =
+formato=20
+texto. As diferen=E7as encontradas podem ser redirecionadas para um =
+arquivo que=20
+poder=E1 ser usado pelo comando <CODE>patch</CODE> para aplicar as =
+altera=E7=F5es em=20
+um arquivo que n=E3o cont=E9m as diferen=E7as. Isto =E9 =FAtil para =
+grandes textos porque=20
+=E9 poss=EDvel copiar somente as modifica=E7=F5es (geradas atrav=E9s do =
+diff, que s=E3o=20
+muito pequenas) e aplicar no arquivo para atualiza-lo (atrav=E9s do=20
+<CODE>patch</CODE>) ao inv=E9s de copiar a nova vers=E3o. Este =E9 um =
+sistema de=20
+atualiza=E7=E3o muito usado na atualiza=E7=E3o dos c=F3digo fonte do =
+kernel do=20
+<CODE>GNU/Linux</CODE>.=20
+<P><SAMP>diff [<EM>diret=F3rio1/arquivo1</EM>] =
+[<EM>diret=F3rio2/arquivo2</EM>]=20
+[<EM>op=E7=F5es</EM>]</SAMP>=20
+<P>Op=E7=F5es:=20
+<DL>
+  <DT><EM>diret=F3rio1/arquivo1 diret=F3rio2/arquivo2</EM>=20
+  <DD>Arquivos /diret=F3rios que ser=E3o comparados. Normalmente =E9 =
+usado como=20
+  primeiro arquivo/diret=F3rio o mais antigo e o mais novo como segundo. =
+
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-lines [num]=20
+  <DD>Gera a diferen=E7a com [num] linhas de contexto. Por padr=E3o o=20
+  <CODE>diff</CODE> gera um arquivo com 2 linhas que =E9 o m=EDnimo =
+necess=E1rio para=20
+  o correto funcionamento do <CODE>patch</CODE>.=20
+  <DT>-a=20
+  <DD>Compara os dois arquivos como arquivos texto.=20
+  <DT>-b=20
+  <DD>Ignora espa=E7os em branco como diferen=E7as.=20
+  <DT>-B=20
+  <DD>Ignora linhas em branco inseridas ou apagadas nos arquivos.=20
+  <DT>-i=20
+  <DD>Ignora diferen=E7as entre mai=FAsculas e min=FAsculas nos =
+arquivos.=20
+  <DT>-H=20
+  <DD>Usa an=E1lise heur=EDstica para verificar os arquivos.=20
+  <DT>-N=20
+  <DD>Em uma compara=E7=E3o de diret=F3rios, se o arquivo apenas existe =
+em um=20
+  diret=F3rio, trata-o como presente mas vazio no outro diret=F3rio.=20
+  <DT>-P=20
+  <DD>Em uma compara=E7=E3o de diret=F3rios, se o arquivos apenas existe =
+no segundo=20
+  diret=F3rio, trata-o como presente mas vazio no primeiro diret=F3rio.=20
+  <DT>-q=20
+  <DD>Mostra somente se os dois arquivos possuem diferen=E7as. N=E3o =
+mostra as=20
+  diferen=E7as entre eles.=20
+  <DT>-r=20
+  <DD>Compara diret=F3rios e sub-diret=F3rios existentes.=20
+  <DT>-S [nome]=20
+  <DD>Inicia a compara=E7=E3o de diret=F3rios pelo arquivo [nome]. =C9 =
+=FAtil quando=20
+  cancelamos uma compara=E7=E3o.=20
+  <DT>-t=20
+  <DD>Aumenta a tabula=E7=E3o das diferen=E7as encontradas.=20
+  <DT>-u=20
+  <DD>Usa o formato de compara=E7=E3o unificado. </DD></DL>
+<P>Use o comando <CODE>zdiff</CODE> para comparar diretamente arquivos=20
+compactados pelo utilit=E1rio <CODE>gzip</CODE>=20
+<P>Use o comando <CODE>sdiff</CODE> para visualizar as linhas diferentes =
+entre=20
+os dois arquivos em formato texto simples.=20
+<P>Exemplo:=20
+<UL>
+  <LI><SAMP>diff texto.txt texto1.txt</SAMP> - Compara o arquivo=20
+  <CODE>texto.txt</CODE> com <CODE>texto1.txt</CODE> e exibe suas =
+diferen=E7as na=20
+  tela. </LI></UL>
+<UL>
+  <LI><SAMP>diff -Bu texto.txt texto1.txt</SAMP> - Compara o arquivo=20
+  <CODE>texto.txt</CODE> com <CODE>texto1.txt</CODE> ignorando linhas em =
+branco=20
+  diferentes entre os dois arquivos e usando o formato unificado. =
+</LI></UL>
+<UL>
+  <LI><SAMP>diff texto.txt texto1.txt &gt;texto.diff</SAMP> - Compara o =
+arquivo=20
+  <CODE>texto.txt</CODE> com <CODE>texto1.txt</CODE> e gera um arquivo =
+chamado=20
+  <CODE>texto.diff</CODE> contendo a diferen=E7a entre eles. Este =
+arquivo poder=E1=20
+  ser usado pelo <CODE>patch</CODE> para aplicar as diferen=E7as =
+existente entre=20
+  os dois no arquivo <CODE>texto.txt</CODE>. </LI></UL>
+<UL>
+  <LI><SAMP>diff -r /usr/src/linux-2.2.13 /usr/src/linux-2.2.14=20
+  &gt;patch-2.2.14.diff</SAMP> - Compara o diret=F3rio e =
+sub-diret=F3rios=20
+  <CODE>linux-2.2.13</CODE> e <CODE>linux-2.2.14</CODE> e grava as =
+diferen=E7as=20
+  entre eles no arquivo <CODE>patch-2.2.14.diff</CODE>. </LI></UL>
+<HR>
+<A name=3Ds-cmdv-pr></A>
+<H2>10.34 pr</H2>
+<P>P=E1gina arquivos texto ou a entrada padr=E3o para impress=E3o. Este =
+comando faz a=20
+pagina=E7=E3o de um arquivo texto e opcionalmente ajusta o n=FAmero de =
+colunas e=20
+mostra o resultado na sa=EDda padr=E3o.=20
+<P><SAMP>pr [<EM>op=E7=F5es</EM>] [<EM>arquivo</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>arquivo</EM>=20
+  <DD>Arquivo que ser=E1 paginado para impress=E3o.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>+[NUM]=20
+  <DD>Inicia a numera=E7=E3o de p=E1ginas na p=E1gina [PAGINA]=20
+  <DT>-[NUM]=20
+  <DD>Mostra a sa=EDda com [NUM] colunas.=20
+  <DT>-c=20
+  <DD>Imprime o caracter CTRL como <SAMP>"^"</SAMP> na sa=EDda padr=E3o. =
+
+  <DT>-F, -f=20
+  <DD>Usa avan=E7o de p=E1gina ao inv=E9s de linhas em branco para =
+separar p=E1ginas.=20
+  <DT>-e[caracter][tamanho]=20
+  <DD>Usa o caracter [caracter] como tabula=E7=E3o (o padr=E3o =E9 tab) =
+e o espa=E7o da=20
+  tabula=E7=E3o [tamanho].=20
+  <DT>-h [nome]=20
+  <DD>Mostra [nome] ao inv=E9s do nome do arquivo no cabe=E7alho.=20
+  <DT>-l [num]=20
+  <DD>Define o n=FAmero m=E1ximo de linhas por p=E1gina para [num].=20
+  <DT>-m=20
+  <DD>Imprime v=E1rios arquivos em paralelo, um por coluna.=20
+  <DT>-r=20
+  <DD>Oculta mensagens de erro de abertura de arquivos.=20
+  <DT>-w [num]=20
+  <DD>Ajusta a largura da p=E1gina para [num] colunas (o padr=E3o =E9 =
+72). </DD></DL>
+<P>Exemplo: <SAMP>pr -l 50 -h "Teste do comando pr" teste.txt</SAMP>.=20
+<HR>
+<A name=3Ds-cmdv-patch></A>
+<H2>10.35 patch</H2>
+<P>Atualiza arquivos texto atrav=E9s das diferen=E7as geradas pelo =
+comando=20
+<CODE>diff</CODE>.=20
+<P><SAMP>patch [<EM>op=E7=F5es</EM>] [<EM>arquivo.diff</EM>]</SAMP> ou =
+<SAMP>patch=20
+[<EM>op=E7=F5es</EM>] &lt; [<EM>arquivo.diff</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>arquivo.diff</EM>=20
+  <DD>Arquivo contendo as diferen=E7as geradas pelo comando =
+<CODE>diff</CODE>.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-p [num]=20
+  <DD>N=EDvel do diret=F3rio onde o <CODE>patch</CODE> ser=E1 aplicado, =
+se igual a 0,=20
+  o <CODE>patch</CODE> assume que os arquivos que ser=E3o atualizados =
+est=E3o no=20
+  diret=F3rio atual, se 1, assume que os arquivos que ser=E3o atualizado =
+est=E3o no=20
+  diret=F3rio acima (..), se 2, 2 diret=F3rios acima ...=20
+  <DT>-b=20
+  <DD>Cria c=F3pias de seguran=E7a dos arquivos originais ao aplica o =
+patch.=20
+  <DT>-binary=20
+  <DD>L=EA e grava arquivo usando modo bin=E1rio.=20
+  <DT>-d [dir]=20
+  <DD>Muda para o diret=F3rio [dir] antes de aplica o patch.=20
+  <DT>-E=20
+  <DD>Remove arquivos vazios ap=F3s a aplica=E7=E3o do patch.=20
+  <DT>-n=20
+  <DD>Interpreta o arquivo de patch como um <CODE>.diff</CODE> normal.=20
+  <DT>-N=20
+  <DD>N=E3o desfaz patches j=E1 aplicados.=20
+  <DT>-s=20
+  <DD>N=E3o mostra mensagens de erro.=20
+  <DT>-u=20
+  <DD>Interpreta o patch em formato unificado. </DD></DL>
+<P>As diferen=E7as s=E3o aplicadas em arquivos originais gerados pelo =
+comando=20
+<CODE>diff</CODE>. =C9 importante entender os comandos =
+<CODE>patch</CODE> e=20
+<CODE>diff</CODE> pois s=E3o comandos muito utilizados para =
+desenvolvimento feito=20
+por equipes de pessoas.=20
+<P>Exemplo:=20
+<UL>
+  <LI><SAMP>patch -p0&lt;texto.diff</SAMP> - Aplica as diferen=E7as =
+contidas no=20
+  arquivo <CODE>texto.diff</CODE> nos arquivos originais. </LI></UL>
+<UL>
+  <LI><SAMP>patch -p0 texto.txt texto.diff</SAMP> - Aplica as =
+diferen=E7as=20
+  contidas no arquivo <CODE>texto.diff</CODE> nos arquivos originais. =
+Faz a=20
+  mesma coisa que o comando anterior. </LI></UL>
+<HR>
+<A name=3Ds-cmdv-whereis></A>
+<H2>10.36 whereis</H2>
+<P>Localiza o arquivo que cont=E9m uma p=E1gina de manual. A pesquisa =
+=E9 feita=20
+usando-se os caminhos de p=E1ginas de manuais configuradas no sistema =
+(normalmente=20
+o arquivo <CODE>/etc/manpath.config</CODE>).=20
+<P><SAMP>whereis [<EM>comando</EM>]</SAMP>=20
+<P>Exemplo: <SAMP>whereis ls</SAMP>, <SAMP>whereis cd</SAMP>.=20
+<HR>
+<A name=3Ds-cmdv-which></A>
+<H2>10.37 which</H2>
+<P>Mostra a localiza=E7=E3o de um arquivo execut=E1vel no sistema. A =
+pesquisa de=20
+arquivos execut=E1veis =E9 feita atrav=E9s do path do sistema.=20
+<P><SAMP>which [<EM>comando</EM>]</SAMP>=20
+<P>Exemplos: <SAMP>which ls</SAMP>, <SAMP>which shutdown</SAMP>, =
+<SAMP>which=20
+which</SAMP>.=20
+<HR>
+<A name=3Ds-cmdv-zforce></A>
+<H2>10.38 zforce</H2>
+<P>Renomeia extens=E3o de arquivos para <CODE>.gz</CODE>. Este comando =
+=E9 =FAtil=20
+quando fazemos downloads de arquivos compactados pelo <CODE>gzip</CODE> =
+mas que=20
+n=E3o est=E3o identificados pela extens=E3o <CODE>.gz</CODE>.=20
+<P><SAMP>zforce [<EM>arquivos</EM>]</SAMP>=20
+<P>Quando =E9 usado o <CODE>zforce</CODE> verifica se o arquivo =E9 um =
+arquivo=20
+compactado pelo <CODE>gzip</CODE>, caso seja, =E9 verificado se j=E1 tem =
+a extens=E3o=20
+<CODE>.gz</CODE>, caso n=E3o tiver, acrescenta a extens=E3o.=20
+<HR>
+<A name=3Ds-cmdv-gzexe></A>
+<H2>10.39 gzexe</H2>
+<P>Cria arquivos compactados <CODE>gzip</CODE> auto-extr=E1cteis. Este =
+comando =E9=20
+usado para compactar arquivos execut=E1veis que se auto-descompactam =
+assim que s=E3o=20
+solicitados. =C9 =FAtil para sistemas ou unidades de disco que possuem =
+pouco espa=E7o=20
+dispon=EDvel. Este comando deve somente ser usado para arquivos =
+execut=E1veis.=20
+<P><SAMP>gzexe [<EM>arquivo</EM>]</SAMP>=20
+<P>Onde: <EM>arquivo</EM> =E9 o arquivo execut=E1vel que ser=E1 =
+compactado.=20
+<P>Quando <CODE>gzexe</CODE> =E9 executado, uma c=F3pia do arquivo =
+original =E9=20
+gravada com o formato <CODE>nome_do_arquivo</CODE>~.=20
+<P>Exemplo: <SAMP>gzexe /tmp/teste</SAMP>.=20
+<HR>
+<A name=3Ds-cmdv-znew></A>
+<H2>10.40 znew</H2>
+<P>Recompacta arquivos do formato <CODE>compress</CODE> =
+(<CODE>.Z</CODE>) para o=20
+formato <CODE>gzip</CODE> (<CODE>.gz</CODE>). Ap=F3s a =
+re-compacta=E7=E3o, os arquivos=20
+de origem <CODE>.Z</CODE> s=E3o apagados.=20
+<P><SAMP>znew [<EM>op=E7=F5es</EM>] [<EM>arquivo</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>arquivo.Z</EM>=20
+  <DD>Arquivo compactado pelo <CODE>compress</CODE> que ser=E1 =
+re-compactado para=20
+  o <CODE>gzip</CODE>.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-f=20
+  <DD>Substitui o arquivo <CODE>.gz</CODE> caso j=E1 exista.=20
+  <DT>-t=20
+  <DD>Teste os novos arquivos criados antes de apagar os arquivos=20
+  <CODE>.Z</CODE>.=20
+  <DT>-v=20
+  <DD>Mostra o nome e porcentagem de compacta=E7=E3o para cada arquivo =
+processado.=20
+  <DT>-9=20
+  <DD>Usa a m=E1xima compacta=E7=E3o.=20
+  <DT>-P=20
+  <DD>Usa pipes durante a convers=E3o para reduzir o espa=E7o ocupado no =
+disco. A=20
+  data e hora do arquivo n=E3o =E9 mantida caso esta op=E7=E3o seja =
+usada.=20
+  <DT>-K=20
+  <DD>Mant=E9m o arquivo <CODE>.Z</CODE> caso seja menor que o arquivo=20
+  <CODE>.gz</CODE>. </DD></DL>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ 10 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

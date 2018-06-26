@@ -1,0 +1,725 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Comandos Diversos</TITLE>
+<META http-equiv=content-type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2900.3059" name=GENERATOR></HEAD>
+<BODY><A name=ch-cmdv></A>
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7</A> 
+] [ 8 ] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">próximo</A> 
+] 
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Capítulo 8 - Comandos Diversos </H1>
+<HR>
+
+<P>Comandos de uso diversos no sistema. 
+<HR>
+<A name=s-cmdv-clear></A>
+<H2>8.1 clear</H2>
+<P>Limpa a tela e posiciona o cursor no canto superior esquerdo do vídeo. 
+<P><SAMP>clear</SAMP> 
+<HR>
+<A name=s-cmdv-date></A>
+<H2>8.2 date</H2>
+<P>Permite ver/modificar a Data e Hora do Sistema. Você precisa estar como 
+usuário root para modificar a data e hora. . 
+<P><SAMP>date MesDiaHoraMinuto[AnoSegundos]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT>MesDiaHoraMinuto[AnoSegundos] 
+  <DD>São respectivamente os números do mês, dia, hora e minutos sem espaços. 
+  Opcionalmente você pode especificar o Ano (com 2 ou 4 dígitos) e os Segundos. 
+  <DT>+[FORMATO] 
+  <DD>Define o formato da listagem que será usada pelo comando 
+  <CODE>date</CODE>. Os seguintes formatos são os mais usados: 
+  <UL>
+    <LI><SAMP>%d</SAMP> - Dia do Mês (00-31). 
+    <LI><SAMP>%m</SAMP> - Mês do Ano (00-12). 
+    <LI><SAMP>%y</SAMP> - Ano (dois dígitos). 
+    <LI><SAMP>%Y</SAMP> - Ano (quatro dígitos). 
+    <LI><SAMP>%H</SAMP> - Hora (00-24). 
+    <LI><SAMP>%I</SAMP> - Hora (00-12). 
+    <LI><SAMP>%M</SAMP> - Minuto (00-59). 
+    <LI><SAMP>%j</SAMP> - Dia do ano (1-366). 
+    <LI><SAMP>%p</SAMP> - AM/PM (útil se utilizado com %d). 
+    <LI><SAMP>%r</SAMP> - Formato de 12 horas completo (hh:mm:ss AM/PM). 
+    <LI><SAMP>%T</SAMP> - Formato de 24 horas completo (hh:mm:ss). 
+    <LI><SAMP>%w</SAMP> - Dia da semana (0-6). </LI></UL>
+  <P>Outros formatos podem ser obtidos através da página de manual do 
+  <CODE>date</CODE>. </P></DD></DL>
+<P>Para maiores detalhes, veja a página de manual do comando <CODE>date</CODE>. 
+<P>Para ver a data atual digite: <SAMP>date</SAMP> 
+<P>Se quiser mudar a Data para 25/12 e a hora para 08:15 digite: <SAMP>date 
+12250815</SAMP> 
+<P>Para mostrar somente a data no formato dia/mês/ano: <SAMP>date 
++%d/%m/%Y</SAMP> 
+<HR>
+<A name=s-cmdv-df></A>
+<H2>8.3 df</H2>
+<P>Mostra o espaço livre/ocupado de cada partição. 
+<P><SAMP>df [<EM>opções</EM>]</SAMP> 
+<P>onde: 
+<DL>
+  <DT><EM>opções</EM> 
+  <DT>-a 
+  <DD>Inclui sistemas de arquivos com 0 blocos. 
+  <DT>-h, --human-readable 
+  <DD>Mostra o espaço livre/ocupado em <EM>MB, KB, GB</EM> ao invés de blocos. 
+  <DT>-H 
+  <DD>Idêntico a <SAMP>-h</SAMP> mas usa 1000 ao invés de 1024 como unidade de 
+  cálculo. 
+  <DT>-k 
+  <DD>Lista em Kbytes. 
+  <DT>-l 
+  <DD>Somente lista sistema de arquivos locais. 
+  <DT>-m 
+  <DD>Lista em Mbytes (equivalente a --block-size=1048576). </DD></DL>
+<P>Exemplos: <SAMP>df</SAMP>, <SAMP>df -h</SAMP>, <SAMP>df -t vfat</SAMP>. 
+<HR>
+<A name=s-cmdv-ln></A>
+<H2>8.4 ln</H2>
+<P>Cria links para arquivos e diretórios no sistema. O link é um mecanismo que 
+faz referência a outro arquivo ou diretório em outra localização. O link em 
+sistemas <CODE>GNU/Linux</CODE> faz referência reais ao arquivo/diretório 
+podendo ser feita cópia do link (será copiado o arquivo alvo), entrar no 
+diretório (caso o link faça referência a um diretório), etc. 
+<P><SAMP>ln [<EM>opções</EM>] [<EM>origem</EM>] [<EM>link</EM>]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT><EM>origem</EM> 
+  <DD>Diretório ou arquivo de onde será feito o link. 
+  <DT><EM>link</EM> 
+  <DD>Nome do link que será criado. 
+  <DT><EM>opções</EM> 
+  <DT>-s 
+  <DD>Cria um link simbólico. Usado para criar ligações com o arquivo/diretório 
+  de destino. 
+  <DT>-v 
+  <DD>Mostra o nome de cada arquivo antes de fazer o link. 
+  <DT>-d 
+  <DD>Cria um hard link para diretórios. Somente o root pode usar esta opção. 
+  </DD></DL>
+<P>Existem 2 tipos de links: <EM>simbólicos</EM> e <EM>hardlinks</EM>. 
+<UL>
+  <LI>O <EM>link simbólico</EM> cria um arquivo especial no disco (do tipo link) 
+  que tem como conteúdo o caminho para chegar até o arquivo alvo (isto pode ser 
+  verificado pelo tamanho do arquivo do link). Use a opção <SAMP>-s</SAMP> para 
+  criar links simbólicos. 
+  <LI>O <EM>hardlink</EM> faz referência ao mesmo inodo do arquivo original, 
+  desta forma ele será perfeitamente idêntico, inclusive nas permissões de 
+  acesso, ao arquivo original. 
+  <P>Ao contrário dos links simbólicos, não é possível fazer um hardlink para um 
+  diretório ou fazer referência a arquivos que estejam em partições diferentes. 
+  </P></LI></UL>
+<P>Observações: 
+<UL>
+  <LI>Se for usado o comando <CODE>rm</CODE> com um link, somente o link será 
+  removido. 
+  <LI>Se for usado o comando <CODE>cp</CODE> com um link, o arquivo original 
+  será copiado ao invés do link. 
+  <LI>Se for usado o comando <CODE>mv</CODE> com um link, a modificação será 
+  feita no link. 
+  <LI>Se for usado um comando de visualização (como o <CODE>cat</CODE>), o 
+  arquivo original será visualizado. </LI></UL>
+<P>Exemplos: 
+<UL>
+  <LI><SAMP>ln -s /dev/ttyS1 /dev/modem</SAMP> - Cria o link 
+  <CODE>/dev/modem</CODE> para o arquivo <CODE>/dev/ttyS1</CODE>. 
+  <LI><SAMP>ln -s /tmp ~/tmp</SAMP> - Cria um link <CODE>~/tmp</CODE> para o 
+  diretório <CODE>/tmp</CODE>. </LI></UL>
+<HR>
+<A name=s-cmdv-du></A>
+<H2>8.5 du</H2>
+<P>Mostra o espaço ocupado por arquivos e sub-diretórios do diretório atual. 
+<P><SAMP>du [<EM>opções</EM>]</SAMP> 
+<P>onde: 
+<DL>
+  <DT><EM>opções</EM> 
+  <DT>-a, --all 
+  <DD>Mostra o espaço ocupado por todos os arquivos. 
+  <DT>-b, --bytes 
+  <DD>Mostra o espaço ocupado em bytes. 
+  <DT>-c, --total 
+  <DD>Faz uma totalização de todo espaço listado. 
+  <DT>-D 
+  <DD>Não conta links simbólicos. 
+  <DT>-h, --human 
+  <DD>Mostra o espaço ocupado em formato legível por humanos (Kb, Mb) ao invés 
+  de usar blocos. 
+  <DT>-H 
+  <DD>Como o anterior mas usa 1000 e não 1024 como unidade de cálculo. 
+  <DT>-k 
+  <DD>Mostra o espaço ocupado em Kbytes. 
+  <DT>-m 
+  <DD>Mostra o espaço ocupado em Mbytes. 
+  <DT>-S, --separate-dirs 
+  <DD>Não calcula o espaço ocupado por sub-diretórios. </DD></DL>
+<P>Exemplo: <SAMP>du -h</SAMP>, <SAMP>du -hc</SAMP>. 
+<HR>
+<A name=s-cmdv-find></A>
+<H2>8.6 find</H2>
+<P>Procura por arquivos/diretórios no disco. <CODE>find</CODE> pode procurar 
+arquivos através de sua data de modificação, tamanho, etc através do uso de 
+opções. <CODE>find</CODE>, ao contrário de outros programas, usa opções longas 
+através de um <SAMP>"-"</SAMP>. 
+<P><SAMP>find [<EM>diretório</EM>] [<EM>opções/expressão</EM>]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT><EM>diretório</EM> 
+  <DD>Inicia a procura neste diretório, percorrendo seu sub-diretórios. 
+  <DT><EM>opções/expressão</EM> 
+  <DT>-name [expressão] 
+  <DD>Procura pelo nome [expressão] nos nomes de arquivos e diretórios 
+  processados. 
+  <DT>-depth 
+  <DD>Processa os sub-diretórios primeiro antes de processar os arquivos do 
+  diretório principal. 
+  <DT>-maxdepth [num] 
+  <DD>Faz a procura até [num] sub-diretórios dentro do diretório que está sendo 
+  pesquisado. 
+  <DT>-mindepth [num] 
+  <DD>Não faz nenhuma procura em diretórios menores que [num] níveis. 
+  <DT>-mount, -xdev 
+  <DD>Não faz a pesquisa em sistemas de arquivos diferentes daquele de onde o 
+  comando <CODE>find</CODE> foi executado. 
+  <DT>-size [num] 
+  <DD>Procura por arquivos que tiverem o tamanho [num]. [num] pode ser 
+  antecedido de "+" ou "-" para especificar um arquivo maior ou menor que [num]. 
+  A opção -size pode ser seguida de: 
+  <UL>
+    <LI><SAMP>b</SAMP> - Especifica o tamanho em blocos de 512 bytes. É o padrão 
+    caso [num] não seja acompanhado de nenhuma letra. 
+    <LI><SAMP>c</SAMP> - Especifica o tamanho em bytes. 
+    <LI><SAMP>k</SAMP> - Especifica o tamanho em Kbytes. </LI></UL>
+  <DT>-type [tipo] 
+  <DD>Procura por arquivos do [tipo] especificado. Os seguintes tipos são 
+  aceitos: 
+  <UL>
+    <LI><SAMP>b</SAMP> - bloco 
+    <LI><SAMP>c</SAMP> - caracter 
+    <LI><SAMP>d</SAMP> - diretório 
+    <LI><SAMP>p</SAMP> - pipe 
+    <LI><SAMP>f</SAMP> - arquivo regular 
+    <LI><SAMP>l</SAMP> - link simbólico 
+    <LI><SAMP>s</SAMP> - sockete </LI></UL></DD></DL>
+<P>A maior parte dos argumentos numéricos podem ser precedidos por "+" ou "-". 
+Para detalhes sobre outras opções e argumentos, consulte a página de manual. 
+<P>Exemplo: 
+<UL>
+  <LI><SAMP>find / -name grep</SAMP> - Procura no diretório raíz e 
+  sub-diretórios um arquivo/diretório chamado <CODE>grep</CODE>. 
+  <LI><SAMP>find / -name grep -maxdepth 3</SAMP> - Procura no diretório raíz e 
+  sub-diretórios até o 3o. nível, um arquivo/diretório chamado 
+  <CODE>grep</CODE>. 
+  <LI><SAMP>find . -size +1000k</SAMP> - Procura no diretório atual e 
+  sub-diretórios um arquivo com tamanho maior que 1000 kbytes (1Mbyte). </LI></UL>
+<HR>
+<A name=s-cmdv-free></A>
+<H2>8.7 free</H2>
+<P>Mostra detalhes sobre a utilização da memória RAM do sistema. 
+<P><SAMP>free [<EM>opções</EM>]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT><EM>opções</EM> 
+  <DT>-b 
+  <DD>Mostra o resultado em bytes. 
+  <DT>-k 
+  <DD>Mostra o resultado em Kbytes. 
+  <DT>-m 
+  <DD>Mostra o resultado em Mbytes. 
+  <DT>-o 
+  <DD>Oculta a linha de buffers. 
+  <DT>-t 
+  <DD>Mostra uma linha contendo o total. 
+  <DT>-s [num] 
+  <DD>Mostra a utilização da memória a cada [num] segundos. </DD></DL>
+<P>O <CODE>free</CODE> é uma interface ao arquivo <CODE>/proc/meminfo</CODE>. 
+<HR>
+<A name=s-cmdv-grep></A>
+<H2>8.8 grep</H2>
+<P>Procura por um texto dentro de um arquivo(s) ou no dispositivo de entrada 
+padrão. 
+<P><SAMP>grep [<EM>expressão</EM>] [<EM>arquivo</EM>] [<EM>opções</EM>]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT><EM>expressão</EM> 
+  <DD>palavra ou frase que será procurada no texto. Se tiver mais de 2 palavras 
+  você deve identifica-la com aspas "" caso contrário o <CODE>grep</CODE> 
+  assumirá que a segunda palavra é o arquivo! 
+  <DT><EM>arquivo</EM> 
+  <DD>Arquivo onde será feita a procura. 
+  <DT><EM>opções</EM> 
+  <DT>-A [número] 
+  <DD>Mostra o [número] de linhas após a linha encontrada pelo 
+  <CODE>grep</CODE>. 
+  <DT>-B [número] 
+  <DD>Mostra o [número] de linhas antes da linha encontrada pelo 
+  <CODE>grep</CODE>. 
+  <DT>-f [arquivo] 
+  <DD>Especifica que o texto que será localizado, esta no arquivo [arquivo]. 
+  <DT>-h, --no-filename 
+  <DD>Não mostra os nomes dos arquivos durante a procura. 
+  <DT>-i, --ignore-case 
+  <DD>Ignora diferença entre maiúsculas e minúsculas no texto procurado e 
+  arquivo. 
+  <DT>-n, --line-number 
+  <DD>Mostra o nome de cada linha encontrada pelo <CODE>grep</CODE>. 
+  <DT>-U, --binary 
+  <DD>Trata o arquivo que será procurado como binário. </DD></DL>
+<P>Se não for especificado o nome de um arquivo ou se for usado um hífen "-", 
+<CODE>grep</CODE> procurará a string no dispositivo de entrada padrão. O 
+<CODE>grep</CODE> faz sua pesquisa em arquivos texto. Use o comando 
+<CODE>zgrep</CODE> para pesquisar diretamente em arquivos compactados com 
+<CODE>gzip</CODE>, os comandos e opções são as mesmas. 
+<P>Exemplos: <SAMP>grep "capitulo" texto.txt</SAMP>, <SAMP>ps ax|grep 
+inetd</SAMP>, <SAMP>grep "capitulo" texto.txt -A 2 -B 2</SAMP>. 
+<HR>
+<A name=s-cmdv-head></A>
+<H2>8.9 head</H2>
+<P>Mostra as linhas iniciais de um arquivo texto. 
+<P><SAMP>head [<EM>opções</EM>]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT>-c [numero] 
+  <DD>Mostra o [numero] de bytes do inicio do arquivo. 
+  <DT>-n [numero] 
+  <DD>Mostra o [numero] de linhas do inicio do arquivo. Caso não for 
+  especificado, o <CODE>head</CODE> mostra as 10 primeiras linhas. </DD></DL>
+<P>Exemplos: <SAMP>head teste.txt</SAMP>, <SAMP>head -n 20 teste.txt</SAMP>. 
+<HR>
+<A name=s-cmdv-nl></A>
+<H2>8.10 nl</H2>
+<P>Mostra o número de linhas junto com o conteúdo de um arquivo. 
+<P><SAMP>nl [<EM>opções</EM>] [<EM>arquivo</EM>]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT>-f [opc] 
+  <DD>Faz a filtragem de saída de acordo com [opc]: 
+  <DL>
+    <DT>a 
+    <DD>Numera todas as linhas. 
+    <DT>t 
+    <DD>Não numera linhas vazias. 
+    <DT>n 
+    <DD>Numera linhas vazias. 
+    <DT>texto 
+    <DD>Numera somente linhas que contém o [texto]. </DD></DL>
+  <DT>-v [num] 
+  <DD>Número inicial (o padrão é 1). 
+  <DT>-i [num] 
+  <DD>Número de linhas adicionadas a cada linha do arquivo (o padrão é 1). 
+</DD></DL>
+<P>Exemplos: <SAMP>nl /etc/passwd</SAMP>, <SAMP>nl -i 2 /etc/passwd</SAMP>. 
+<HR>
+<A name=s-cmdv-more></A>
+<H2>8.11 more</H2>
+<P>Permite fazer a paginação de arquivos ou da entrada padrão. O comando 
+<CODE>more</CODE> pode ser usado como comando para leitura de arquivos que 
+ocupem mais de uma tela. Quando toda a tela é ocupada, o <CODE>more</CODE> 
+efetua uma pausa e permite que você pressione <SAMP>Enter</SAMP> ou 
+<SAMP>espaço</SAMP> para continuar avançando no arquivo sendo visualizado. Para 
+sair do <CODE>more</CODE> pressione <SAMP>q</SAMP>. 
+<P><SAMP>more [<EM>arquivo</EM>]</SAMP> 
+<P>Onde: <EM>arquivo</EM> É o arquivo que será paginado. 
+<P>Para visualizar diretamente arquivos texto compactados pelo <CODE>gzip</CODE> 
+<CODE>.gz</CODE> use o comando <CODE>zmore</CODE>. 
+<P>Exemplos: <SAMP>more /etc/passwd</SAMP>, <SAMP>cat /etc/passwd|more</SAMP>. 
+<HR>
+<A name=s-cmdv-less></A>
+<H2>8.12 less</H2>
+<P>Permite fazer a paginação de arquivos ou da entrada padrão. O comando 
+<CODE>less</CODE> pode ser usado como comando para leitura de arquivos que 
+ocupem mais de uma tela. Quando toda a tela é ocupada, o <CODE>less</CODE> 
+efetua uma pausa (semelhante ao <CODE>more</CODE>) e permite que você pressione 
+Seta para Cima e Seta para Baixo ou PgUP/PgDown para fazer o rolamento da 
+página. Para sair do <CODE>less</CODE> pressione <SAMP>q</SAMP>. 
+<P><SAMP>less [<EM>arquivo</EM>]</SAMP> 
+<P>Onde: <EM>arquivo</EM> É o arquivo que será paginado. 
+<P>Para visualizar diretamente arquivos texto compactados pelo utilitário 
+<CODE>gzip</CODE> (arquivos <CODE>.gz</CODE>), use o comando <CODE>zless</CODE>. 
+
+<P>Exemplos: <SAMP>less /etc/passwd</SAMP>, <SAMP>cat /etc/passwd|less</SAMP> 
+<HR>
+<A name=s-cmdv-sort></A>
+<H2>8.13 sort</H2>
+<P>Organiza as linhas de um arquivo texto ou da entrada padrão. 
+<P><SAMP>sort [<EM>opções</EM>] [<EM>arquivo</EM>]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT><EM>arquivo</EM> 
+  <DD>É o nome do arquivo que será organizado. Caso não for especificado, será 
+  usado o dispositivo de entrada padrão (normalmente o teclado ou um "|"). 
+  <DT><EM>opções</EM> 
+  <DT>-b 
+  <DD>Ignora linhas em branco. 
+  <DT>-d 
+  <DD>Somente usa letras, dígitos e espaços durante a organização. 
+  <DT>-f 
+  <DD>Ignora a diferença entre maiúsculas e minúsculas. 
+  <DT>-r 
+  <DD>Inverte o resultado da comparação. 
+  <DT>-n 
+  <DD>Caso estiver organizando um campo que contém números, os números serão 
+  organizados na ordem aritmética. Por exemplo, se você tiver um arquivo com os 
+  números <PRE>     100
+     10
+     50
+</PRE>
+  <P>Usando a opção <SAMP>-n</SAMP>, o arquivo será organizado desta maneira: <PRE>     10
+     50 
+     100
+</PRE>
+  <P>Caso esta opção <STRONG>não</STRONG> for usada com o <CODE>sort</CODE>, ele 
+  organizará como uma listagem alfabética (que começam de <SAMP>a</SAMP> até 
+  <SAMP>z</SAMP> e do <SAMP>0</SAMP> até <SAMP>9</SAMP>) <PRE>     10 
+     100
+     50
+</PRE>
+  <DT>-c 
+  <DD>Verifica se o arquivo já esta organizado. Caso não estiver, retorna a 
+  mensagem "disorder on <EM>arquivo</EM>". 
+  <DT>-o <EM>arquivo</EM> 
+  <DD>Grava a saída do comando <CODE>sort</CODE> no <EM>arquivo</EM>. </DD></DL>
+<P>Abaixo, exemplos de uso do comando <CODE>sort</CODE>: 
+<UL>
+  <LI><SAMP>sort <CODE>texto.txt</CODE></SAMP> - Organiza o arquivo 
+  <CODE>texto.txt</CODE> em ordem crescente. 
+  <LI><SAMP>sort <CODE>texto.txt</CODE> -r</SAMP> - Organiza o conteúdo do 
+  arquivo <CODE>texto.txt</CODE> em ordem decrescente. 
+  <LI><SAMP>cat <CODE>texto.txt</CODE>|sort</SAMP> - Faz a mesma coisa que o 
+  primeiro exemplo, só que neste caso a saída do comando <CODE>cat</CODE> é 
+  redirecionado a entrada padrão do comando <CODE>sort</CODE>. 
+  <LI><SAMP>sort -f <CODE>texto.txt</CODE></SAMP> - Ignora diferenças entre 
+  letras maiúsculas e minúsculas durante a organização. </LI></UL>
+<HR>
+<A name=s-cmdv-tail></A>
+<H2>8.14 tail</H2>
+<P>Mostra as linhas finais de um arquivo texto. 
+<P><SAMP>tail [<EM>opções</EM>]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT>-c [numero] 
+  <DD>Mostra o [numero] de bytes do final do arquivo. 
+  <DT>-n [numero] 
+  <DD>Mostra o [numero] de linhas do final do arquivo. </DD></DL>
+<P>Exemplos: <SAMP>tail teste.txt</SAMP>, <SAMP>tail -n 20 teste.txt</SAMP>. 
+<HR>
+<A name=s-cmdv-time></A>
+<H2>8.15 time</H2>
+<P>Mede o tempo gasto para executar um processo (programa). 
+<P><SAMP>time [<EM>comando</EM>]</SAMP> 
+<P>Onde: <EM>comando</EM> é o comando/programa que deseja medir o tempo gasto 
+para ser concluído. 
+<P>Exemplo: <SAMP>time ls</SAMP>, <SAMP>time find / -name crontab</SAMP>. 
+<HR>
+<A name=s-cmdv-touch></A>
+<H2>8.16 touch</H2>
+<P>Muda a data e hora que um arquivo foi criado. Também pode ser usado para 
+criar arquivos vazios. Caso o <CODE>touch</CODE> seja usado com arquivos que não 
+existam, por padrão ele criará estes arquivos. 
+<P><SAMP>touch [<EM>opções</EM>] [<EM>arquivos</EM>]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT><EM>arquivos</EM> 
+  <DD>Arquivos que terão sua data/hora modificados. 
+  <DT><EM>opções</EM> 
+  <DT>-t MMDDhhmm[ANO.segundos] 
+  <DD>Usa Minutos (MM), Dias (DD), Horas (hh), minutos (mm) e opcionalmente o 
+  ANO e segundos para modificação do(s) arquivos ao invés da data e hora atual. 
+  <DT>-a, --time=atime 
+  <DD>Faz o <CODE>touch</CODE> mudar somente a data e hora do acesso ao arquivo. 
+
+  <DT>-c, --no-create 
+  <DD>Não cria arquivos vazios, caso os <EM>arquivos</EM> não existam. 
+  <DT>-m, --time=mtime 
+  <DD>Faz o <CODE>touch</CODE> mudar somente a data e hora da modificação. 
+  <DT>-r [arquivo] 
+  <DD>Usa as horas no [arquivo] como referência ao invés da hora atual. </DD></DL>
+<P>Exemplos: 
+<UL>
+  <LI><SAMP>touch teste</SAMP> - Cria o arquivo <CODE>teste</CODE> caso ele não 
+  existir. </LI></UL>
+<UL>
+  <LI><SAMP>touch -t 10011230 teste</SAMP> - Altera da data e hora do arquivo 
+  para 01/10 e 12:30. </LI></UL>
+<UL>
+  <LI><SAMP>touch -t 120112301999.30 teste</SAMP> - Altera da data, hora ano, e 
+  segundos do arquivo para 01/12/1999 e 12:30:30. </LI></UL>
+<UL>
+  <LI><SAMP>touch -t 12011200 *</SAMP> - Altera a data e hora do arquivo para 
+  01/12 e 12:00. </LI></UL>
+<HR>
+<A name=s-cmdv-uptime></A>
+<H2>8.17 uptime</H2>
+<P>Mostra o tempo de execução do sistema desde que o computador foi ligado. 
+<P><SAMP>uptime</SAMP> 
+<HR>
+<A name=s-cmdv-dmesg></A>
+<H2>8.18 dmesg</H2>
+<P>Mostra as mensagens de inicialização do kernel. São mostradas as mensagens da 
+última inicialização do sistema. 
+<P><SAMP>dmesg|less</SAMP> 
+<HR>
+<A name=s-cmdv-mesg></A>
+<H2>8.19 mesg</H2>
+<P>Permite ou não o recebimentos de requisições de <CODE>talk</CODE> de outros 
+usuários. 
+<P><SAMP>mesg [<EM>y/n</EM>]</SAMP> 
+<P>Onde: <EM>y</EM> permite que você receba "talks" de outros usuários. 
+<P>Digite <SAMP>mesg</SAMP> para saber se você pode ou não receber "talks" de 
+outros usuários. Caso a resposta seja "n" você poderá enviar um talk para alguém 
+mas o seu sistema se recusará em receber talks de outras pessoas. 
+<P>É interessante colocar o comando <SAMP>mesg y</SAMP> em seu arquivo de 
+inicialização <CODE>.bash_profile</CODE> para permitir o recebimento de "talks" 
+toda vez que entrar no sistema. 
+<P>Para detalhes sobre como se comunicar com outros usuários, veja o comando <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html#s-cmdn-talk">talk, 
+Seção 9.8</A>. 
+<HR>
+<A name=s-cmdv-echo></A>
+<H2>8.20 echo</H2>
+<P>Mostra mensagens. Este comando é útil na construção de scripts para mostrar 
+mensagens na tela para o usuário acompanhar sua execução. 
+<P><SAMP>echo [<EM>mensagem</EM>]</SAMP> 
+<P>A opção <SAMP>-n</SAMP> pode ser usada para que não ocorra o salto de linha 
+após a mensagem ser mostrada. 
+<HR>
+<A name=s-cmdv-su></A>
+<H2>8.21 su</H2>
+<P>Permite o usuário mudar sua identidade para outro usuário sem fazer o logout. 
+Útil para executar um programa ou comando como root sem ter que abandonar a 
+seção atual. 
+<P><SAMP>su [<EM>usuário</EM>]</SAMP> 
+<P>Onde: <EM>usuário</EM> é o nome do usuário que deseja usar para acessar o 
+sistema. Se não digitado, é assumido o usuário <SAMP>root</SAMP>. 
+<P>Será pedida a senha do superusuário para autenticação. Digite 
+<SAMP>exit</SAMP> quando desejar retornar a identificação de usuário anterior. 
+<HR>
+<A name=s-cmdv-sync></A>
+<H2>8.22 sync</H2>
+<P>Grava os dados do cache de disco na memória RAM para todos os discos rígidos 
+e flexíveis do sistema. O cache um mecanismo de aceleração que permite que um 
+arquivo seja armazenado na memória ao invés de ser imediatamente gravado no 
+disco, quando o sistema estiver ocioso, o arquivo é gravado para o disco. O 
+<CODE>GNU/Linux</CODE> procura utilizar toda memória RAM disponível para o cache 
+de programas acelerando seu desempenho de leitura/gravação. 
+<P><SAMP>sync</SAMP> 
+<P>O uso do <CODE>sync</CODE> é útil em disquetes quando gravamos um programa e 
+precisamos que os dados sejam gravados imediatamente para retirar o disquete da 
+unidade. Mas o método recomendado é especificar a opção <SAMP>sync</SAMP> 
+durante a montagem da unidade de disquetes (para detalhes veja <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html#s-disc-fstab">fstab, 
+Seção 4.5.1</A>. 
+<HR>
+<A name=s-cmdv-uname></A>
+<H2>8.23 uname</H2>
+<P>Retorna o nome e versão do kernel atual. 
+<P><SAMP>uname</SAMP> 
+<HR>
+<A name=s-cmdv-reboot></A>
+<H2>8.24 reboot</H2>
+<P>Reinicia o computador. 
+<HR>
+<A name=s-cmdv-shutdown></A>
+<H2>8.25 shutdown</H2>
+<P>Desliga/reinicia o computador imediatamente ou após determinado tempo 
+(programável) de forma segura. Todos os usuários do sistema são avisados que o 
+computador será desligado . Este comando somente pode ser executado pelo usuário 
+root ou quando é usada a opção <SAMP>-a</SAMP> pelos usuários cadastrados no 
+arquivo <CODE>/etc/shutdown.allow</CODE> que estejam logados no console virtual 
+do sistema. 
+<P><SAMP>shutdown [<EM>opções</EM>] [<EM>hora</EM>] [<EM>mensagem</EM>]</SAMP> 
+<DL>
+  <DT><EM>hora</EM> 
+  <DD>Momento que o computador será desligado. Você pode usar <SAMP>HH:MM</SAMP> 
+  para definir a hora e minuto, <SAMP>MM</SAMP> para definir minutos, 
+  <SAMP>+SS</SAMP> para definir após quantos segundos, ou <SAMP>now</SAMP> para 
+  imediatamente (equivalente a +0). 
+  <P>O <CODE>shutdown</CODE> criará o arquivo <CODE>/etc/nologin</CODE> para não 
+  permitir que novos usuários façam login no sistema (com excessão do root). 
+  Este arquivo é removido caso a execução do <CODE>shutdown</CODE> seja 
+  cancelada (opção -c) ou após o sistema ser reiniciado. </P>
+  <DT><EM>mensagem</EM> 
+  <DD>Mensagem que será mostrada a todos os usuários alertando sobre o 
+  reinicio/desligamento do sistema. 
+  <DT><EM>opções</EM> 
+  <DT>-h 
+  <DD>Inicia o processo para desligamento do computador. 
+  <DT>-r 
+  <DD>Reinicia o sistema 
+  <DT>-c 
+  <DD>Cancela a execução do <CODE>shutdown</CODE>. Você pode acrescentar uma 
+  mensagem avisando aos usuários sobre o fato. </DD></DL>
+<P>O <CODE>shutdown</CODE> envia uma mensagem a todos os usuários do sistema 
+alertando sobre o desligamento durante os 15 minutos restantes e assim permite 
+que finalizem suas tarefas. Após isto, o <CODE>shutdown</CODE> muda o nível de 
+execução através do comando <CODE>init</CODE> para 0 (desligamento), 1 (modo 
+monousuário), 6 (reinicialização). É recomendado utilizar o símbolo "&amp;" no 
+final da linha de comando para que o <CODE>shutdown</CODE> seja executado em 
+segundo plano. 
+<P>Quando restarem apenas 5 minutos para o reinicio/desligamento do sistema, o 
+programa <CODE>login</CODE> será desativado, impedindo a entrada de novos 
+usuários no sistema. 
+<P>O programa <CODE>shutdown</CODE> pode ser chamado pelo <CODE>init</CODE> 
+através do pressionamento da combinação das teclas de reinicialização 
+<SAMP>CTRL+ALT+DEL</SAMP> alterando-se o arquivo <CODE>/etc/inittab</CODE>. Isto 
+permite que somente os usuários autorizados (ou o root) possam reinicializar o 
+sistema. 
+<P>Exemplos: 
+<UL>
+  <LI><SAMP>"shutdown -h now"</SAMP> - Desligar o computador imediatamente. 
+  <LI><SAMP>"shutdown -r now"</SAMP> - Reinicia o computador imediatamente. 
+  <LI><SAMP>"shutdown 19:00 A manutenção do servidor será iniciada às 
+  19:00"</SAMP> - Faz o computador entrar em modo monousuário (init 1) às 19:00 
+  enviando a mensagem <EM>A manutenção do servidor será iniciada às 19:00</EM> a 
+  todos os usuários conectados ao sistema. 
+  <LI><SAMP>"shutdown -r 15:00 O sistema será reiniciado às 15:00 horas"</SAMP> 
+  - Faz o computador ser reiniciado (init 6) às 15:00 horas enviando a mensagem 
+  <EM>O sistema será reiniciado às 15:00 horas</EM> a todos os usuários 
+  conectados ao sistema. 
+  <LI><SAMP>shutdown -r 20</SAMP> - Faz o sistema ser reiniciado após 20 
+  minutos. 
+  <LI><SAMP>shutdown -c</SAMP> - Cancela a execução do <CODE>shutdown</CODE>. 
+  </LI></UL>
+<HR>
+<A name=s-cmdv-wc></A>
+<H2>8.26 wc</H2>
+<P>Conta o número de palavras, bytes e linhas em um arquivo ou entrada padrão. 
+Se as opções forem omitidas, o <CODE>wc</CODE> mostra a quantidade de linhas, 
+palavras, e bytes. 
+<P><SAMP>wc [<EM>opções</EM>] [<EM>arquivo</EM>]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT><EM>arquivo</EM> 
+  <DD>Arquivo que será verificado pelo comando <CODE>wc</CODE>. 
+  <DT><EM>opções</EM> 
+  <DT>-c, --bytes 
+  <DD>Mostra os bytes do arquivo. 
+  <DT>-w, --words 
+  <DD>Mostra a quantidade de palavras do arquivo. 
+  <DT>-l, --lines 
+  <DD>Mostra a quantidade de linhas do arquivo. </DD></DL>
+<P>A ordem da listagem dos parâmetros é única, e modificando a posição das 
+opções não modifica a ordem que os parâmetros são listados. 
+<P>Exemplo: 
+<UL>
+  <LI><SAMP>wc /etc/passwd</SAMP> - Mostra a quantidade de linhas, palavras e 
+  letras (bytes) no arquivo <CODE>/etc/passwd</CODE>. 
+  <LI><SAMP>wc -w /etc/passwd</SAMP> - Mostra a quantidade de palavras. 
+  <LI><SAMP>wc -l /etc/passwd</SAMP> - Mostra a quantidade de linhas. 
+  <LI><SAMP>wc -l -w /etc/passwd</SAMP> - Mostra a quantidade de linhas e 
+  palavras no arquivo <CODE>/etc/passwd</CODE>. </LI></UL>
+<HR>
+<A name=s-cmdv-seq></A>
+<H2>8.27 seq</H2>
+<P>Imprime uma seqüência de números começando em [primeiro] e terminando em 
+[último], utilizando [incremento] para avançar. 
+<P><SAMP>seq [<EM>opções</EM>] [<EM>primeiro</EM>] [<EM>incremento</EM>] 
+[<EM>último</EM>]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT><EM>primeiro</EM> 
+  <DD>Número inicial da seqüência. 
+  <DT><EM>incremento</EM> 
+  <DD>Número utilizado para avançar na seqüência. 
+  <DT><EM>último</EM> 
+  <DD>Número final da seqüência. 
+  <DT><EM>opções</EM> 
+  <DT>-f, --format=[formato] 
+  <DD>Formato de saída dos números da seqüência. Utilize o estilo do printf para 
+  ponto flutuante (valor padrão: %g). 
+  <DT>-s, --separator=[string] 
+  <DD>Usa [string] para separar a seqüência de números (valor padrão: \n). 
+  <DT>-w, --equal-width 
+  <DD>Insere zeros na frente dos números mantendo a seqüência alinhada. </DD></DL>
+<P>Observações: 
+<UL>
+  <LI>Se [primeiro] ou [incremento] forem omitidos, o valor padrão 1 será 
+  utilizado. 
+  <LI>Os números recebidos são interpretados como números em ponto flutuante. 
+  <LI>[incremento] deve ser positivo se [primeiro] for menor do que o último, e 
+  negativo caso contrário. 
+  <LI>Quando utilizarmos a opção --format, o argumento deve ser exatamente %e, 
+  %f ou %g. </LI></UL>
+<P>Exemplos: <SAMP>seq 0 2 10</SAMP>, <SAMP>seq -w 0 10</SAMP>, <SAMP>seq -f%f 0 
+10</SAMP>, <SAMP>seq -s", " 0 10</SAMP> 
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7</A> 
+] [ 8 ] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">próximo</A> 
+] 
+<HR>
+
+<P>Guia Foca GNU/Linux 
+<ADDRESS>Versão 3.99 - segunda, 30 de outubro de 2006<BR><BR>Gleydson Mazioli da 
+Silva <CODE><A 
+href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR><BR></ADDRESS>
+<HR>
+</BODY></HTML>

@@ -1,0 +1,375 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: Guia Foca GNU/Linux - Redirecionamentos e Pipe
+Date: Mon, 6 Aug 2007 11:33:51 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-redir.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Redirecionamentos e =
+Pipe</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-redir></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ 14 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 14 - Redirecionamentos e Pipe =
+</H1>
+<HR>
+
+<P>Esta se=E7=E3o explica o funcionamento dos recursos de direcionamento =
+de entrada=20
+e sa=EDda do sistema <CODE>GNU/Linux</CODE>.=20
+<HR>
+<A name=3Ds-redir-maior></A>
+<H2>14.1 &gt;</H2>
+<P>Redireciona a sa=EDda de um programa/comando/script para algum =
+dispositivo ou=20
+arquivo ao inv=E9s do dispositivo de sa=EDda padr=E3o (tela). Quando =E9 =
+usado com=20
+arquivos, este redirecionamento cria ou substitui o conte=FAdo do =
+arquivo.=20
+<P>Por exemplo, voc=EA pode usar o comando <CODE>ls</CODE> para listar =
+arquivos e=20
+usar <SAMP>ls &gt;listagem</SAMP> para enviar a sa=EDda do comando para =
+o arquivo=20
+<CODE>listagem</CODE>. Use o comando <CODE>cat</CODE> para visualizar o =
+conte=FAdo=20
+do arquivo <CODE>listagem</CODE>.=20
+<P>O mesmo comando pode ser redirecionado para o segundo console=20
+<CODE>/dev/tty2</CODE> usando: <SAMP>ls &gt;/dev/tty2</SAMP>, o =
+resultado do=20
+comando <CODE>ls</CODE> ser=E1 mostrado no segundo console (pressione=20
+<SAMP>ALT</SAMP> e <SAMP>F2</SAMP> para mudar para o segundo console e=20
+<SAMP>ALT</SAMP> e <SAMP>F1</SAMP> para retornar ao primeiro).=20
+<HR>
+<A name=3Ds-redir-maior2></A>
+<H2>14.2 &gt;&gt;</H2>
+<P>Redireciona a sa=EDda de um programa/comando/script para algum =
+dispositivo ou=20
+final de arquivo ao inv=E9s do dispositivo de sa=EDda padr=E3o (tela). A =
+diferen=E7a=20
+entre este redirecionamento duplo e o simples, =E9 se caso for usado com =
+arquivos,=20
+adiciona a sa=EDda do comando ao final do arquivo existente ao inv=E9s =
+de substituir=20
+seu conte=FAdo. .=20
+<P>Por exemplo, voc=EA pode acrescentar a sa=EDda do comando =
+<CODE>ls</CODE> ao=20
+arquivo <CODE>listagem</CODE> do cap=EDtulo anterior usando <SAMP>ls /=20
+&gt;&gt;listagem</SAMP>. Use o comando <CODE>cat</CODE> para visualizar =
+o=20
+conte=FAdo do arquivo <CODE>listagem</CODE>.=20
+<HR>
+<A name=3Ds-redir-menor></A>
+<H2>14.3 &lt;</H2>
+<P>Direciona a entrada padr=E3o de arquivo/dispositivo para um comando. =
+Este=20
+comando faz o contr=E1rio do anterior, ele envia dados ao comando.=20
+<P>Voc=EA pode usar o comando <SAMP>cat &lt;teste.txt</SAMP> para enviar =
+o=20
+conte=FAdo do arquivo <CODE>teste.txt</CODE> ao comando <CODE>cat</CODE> =
+que=20
+mostrar=E1 seu conte=FAdo (=E9 claro que o mesmo resultado pode ser =
+obtido com=20
+<SAMP>cat teste.txt</SAMP> mas este exemplo serviu para mostrar a =
+funcionalidade=20
+do &lt;).=20
+<HR>
+<A name=3Ds-redir-menor2></A>
+<H2>14.4 &lt;&lt;</H2>
+<P>Este redirecionamento serve principalmente para marcar o fim de =
+exibi=E7=E3o de=20
+um bloco. Este =E9 especialmente usado em conjunto com o comando =
+<CODE>cat</CODE>,=20
+mas tamb=E9m tem outras aplica=E7=F5es. Por exemplo: <PRE>      cat =
+&lt;&lt; final
+     este arquivo
+     ser=E1 mostrado
+     at=E9 que a palavra final seja=20
+     localizada no inicio da linha
+     final
+</PRE>
+<HR>
+<A name=3Ds-redir-pipe></A>
+<H2>14.5 | (pipe)</H2>
+<P>Envia a sa=EDda de um comando para a entrada do pr=F3ximo comando =
+para=20
+continuidade do processamento. Os dados enviados s=E3o processados pelo =
+pr=F3ximo=20
+comando que mostrar=E1 o resultado do processamento.=20
+<P>Por exemplo: <SAMP>ls -la|more</SAMP>, este comando faz a listagem =
+longa de=20
+arquivos que =E9 enviado ao comando <CODE>more</CODE> (que tem a =
+fun=E7=E3o de efetuar=20
+uma pausa a cada 25 linhas do arquivo).=20
+<P>Outro exemplo =E9 o comando <SAMP>"locate find|grep bin/"</SAMP>, =
+neste comando=20
+todos os caminhos/arquivos que cont=E9m <EM>find</EM> na listagem =
+ser=E3o mostrados=20
+(inclusive man pages, bibliotecas, etc.), ent=E3o enviamos a sa=EDda =
+deste comando=20
+para <SAMP>grep bin/</SAMP> para mostrar somente os diret=F3rios que =
+cont=E9m=20
+bin=E1rios. Mesmo assim a listagem ocupe mais de uma tela, podemos =
+acrescentar o=20
+<CODE>more</CODE>: <SAMP>locate find|grep bin/|more</SAMP>.=20
+<P>Podem ser usados mais de um comando de redirecionamento (&lt;, &gt;, =
+|) em um=20
+mesmo comando.=20
+<HR>
+<A name=3Ds14.6></A>
+<H2>14.6 Diferen=E7a entre o "|" e o "&gt;"</H2>
+<P>A principal diferen=E7a entre o "|" e o "&gt;", =E9 que o Pipe =
+envolve=20
+processamento entre comandos, ou seja, a sa=EDda de um comando =E9 =
+enviado a entrada=20
+do pr=F3ximo e o "&gt;" redireciona a sa=EDda de um comando para um=20
+arquivo/dispositivo.=20
+<P>Voc=EA pode notar pelo exemplo acima (<SAMP>ls -la|more</SAMP>) que =
+ambos=20
+<SAMP>ls</SAMP> e <SAMP>more</SAMP> s=E3o comandos porque est=E3o =
+separados por um=20
+"|"! Se um deles n=E3o existir ou estiver digitado incorretamente, =
+ser=E1 mostrada=20
+uma mensagem de erro.=20
+<P>Um resultado diferente seria obtido usando um <SAMP>"&gt;"</SAMP> no =
+lugar do=20
+<SAMP>"|"</SAMP>; A sa=EDda do comando <SAMP>ls -la</SAMP> seria gravada =
+em um=20
+arquivo chamado <CODE>more</CODE>.=20
+<HR>
+<A name=3Ds-redir-tee></A>
+<H2>14.7 tee</H2>
+<P>Envia o resultado do programa para a sa=EDda padr=E3o (tela) e para =
+um arquivo ao=20
+mesmo tempo. Este comando deve ser usado com o pipe "|".=20
+<P><SAMP><EM>comando</EM>|tee [<EM>arquivo</EM>]</SAMP>=20
+<P>Exemplo: <SAMP>ls -la|tee listagem.txt</SAMP>, a sa=EDda do comando =
+ser=E1=20
+mostrada normalmente na tela e ao mesmo tempo gravada no arquivo=20
+<CODE>listagem.txt</CODE>.=20
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ 14 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

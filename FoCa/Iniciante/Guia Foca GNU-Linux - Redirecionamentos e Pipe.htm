@@ -1,0 +1,185 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Redirecionamentos e Pipe</TITLE>
+<META http-equiv=content-type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2900.3059" name=GENERATOR></HEAD>
+<BODY><A name=ch-redir></A>
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11</A> 
+] [ 12 ] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">próximo</A> 
+] 
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Capítulo 12 - Redirecionamentos e Pipe </H1>
+<HR>
+
+<P>Esta seção explica o funcionamento dos recursos de direcionamento de entrada 
+e saída do sistema <CODE>GNU/Linux</CODE>. 
+<HR>
+<A name=s-redir-maior></A>
+<H2>12.1 &gt;</H2>
+<P>Redireciona a saída de um programa/comando/script para algum dispositivo ou 
+arquivo ao invés do dispositivo de saída padrão (tela). Quando é usado com 
+arquivos, este redirecionamento cria ou substitui o conteúdo do arquivo. 
+<P>Por exemplo, você pode usar o comando <CODE>ls</CODE> para listar arquivos e 
+usar <SAMP>ls &gt;listagem</SAMP> para enviar a saída do comando para o arquivo 
+<CODE>listagem</CODE>. Use o comando <CODE>cat</CODE> para visualizar o conteúdo 
+do arquivo <CODE>listagem</CODE>. 
+<P>O mesmo comando pode ser redirecionado para o segundo console 
+<CODE>/dev/tty2</CODE> usando: <SAMP>ls &gt;/dev/tty2</SAMP>, o resultado do 
+comando <CODE>ls</CODE> será mostrado no segundo console (pressione 
+<SAMP>ALT</SAMP> e <SAMP>F2</SAMP> para mudar para o segundo console e 
+<SAMP>ALT</SAMP> e <SAMP>F1</SAMP> para retornar ao primeiro). 
+<HR>
+<A name=s-redir-maior2></A>
+<H2>12.2 &gt;&gt;</H2>
+<P>Redireciona a saída de um programa/comando/script para algum dispositivo ou 
+final de arquivo ao invés do dispositivo de saída padrão (tela). A diferença 
+entre este redirecionamento duplo e o simples, é se caso for usado com arquivos, 
+adiciona a saída do comando ao final do arquivo existente ao invés de substituir 
+seu conteúdo. . 
+<P>Por exemplo, você pode acrescentar a saída do comando <CODE>ls</CODE> ao 
+arquivo <CODE>listagem</CODE> do capítulo anterior usando <SAMP>ls / 
+&gt;&gt;listagem</SAMP>. Use o comando <CODE>cat</CODE> para visualizar o 
+conteúdo do arquivo <CODE>listagem</CODE>. 
+<HR>
+<A name=s-redir-menor></A>
+<H2>12.3 &lt;</H2>
+<P>Direciona a entrada padrão de arquivo/dispositivo para um comando. Este 
+comando faz o contrário do anterior, ele envia dados ao comando. 
+<P>Você pode usar o comando <SAMP>cat &lt;teste.txt</SAMP> para enviar o 
+conteúdo do arquivo <CODE>teste.txt</CODE> ao comando <CODE>cat</CODE> que 
+mostrará seu conteúdo (é claro que o mesmo resultado pode ser obtido com 
+<SAMP>cat teste.txt</SAMP> mas este exemplo serviu para mostrar a funcionalidade 
+do &lt;). 
+<HR>
+<A name=s-redir-menor2></A>
+<H2>12.4 &lt;&lt;</H2>
+<P>Este redirecionamento serve principalmente para marcar o fim de exibição de 
+um bloco. Este é especialmente usado em conjunto com o comando <CODE>cat</CODE>, 
+mas também tem outras aplicações. Por exemplo: <PRE>      cat &lt;&lt; final
+     este arquivo
+     será mostrado
+     até que a palavra final seja 
+     localizada no inicio da linha
+     final
+</PRE>
+<HR>
+<A name=s-redir-pipe></A>
+<H2>12.5 | (pipe)</H2>
+<P>Envia a saída de um comando para a entrada do próximo comando para 
+continuidade do processamento. Os dados enviados são processados pelo próximo 
+comando que mostrará o resultado do processamento. 
+<P>Por exemplo: <SAMP>ls -la|more</SAMP>, este comando faz a listagem longa de 
+arquivos que é enviado ao comando <CODE>more</CODE> (que tem a função de efetuar 
+uma pausa a cada 25 linhas do arquivo). 
+<P>Outro exemplo é o comando <SAMP>"locate find|grep bin/"</SAMP>, neste comando 
+todos os caminhos/arquivos que contém <EM>find</EM> na listagem serão mostrados 
+(inclusive man pages, bibliotecas, etc.), então enviamos a saída deste comando 
+para <SAMP>grep bin/</SAMP> para mostrar somente os diretórios que contém 
+binários. Mesmo assim a listagem ocupe mais de uma tela, podemos acrescentar o 
+<CODE>more</CODE>: <SAMP>locate find|grep bin/|more</SAMP>. 
+<P>Podem ser usados mais de um comando de redirecionamento (&lt;, &gt;, |) em um 
+mesmo comando. 
+<HR>
+<A name=s12.6></A>
+<H2>12.6 Diferença entre o "|" e o "&gt;"</H2>
+<P>A principal diferença entre o "|" e o "&gt;", é que o Pipe envolve 
+processamento entre comandos, ou seja, a saída de um comando é enviado a entrada 
+do próximo e o "&gt;" redireciona a saída de um comando para um 
+arquivo/dispositivo. 
+<P>Você pode notar pelo exemplo acima (<SAMP>ls -la|more</SAMP>) que ambos 
+<SAMP>ls</SAMP> e <SAMP>more</SAMP> são comandos porque estão separados por um 
+"|"! Se um deles não existir ou estiver digitado incorretamente, será mostrada 
+uma mensagem de erro. 
+<P>Um resultado diferente seria obtido usando um <SAMP>"&gt;"</SAMP> no lugar do 
+<SAMP>"|"</SAMP>; A saída do comando <SAMP>ls -la</SAMP> seria gravada em um 
+arquivo chamado <CODE>more</CODE>. 
+<HR>
+<A name=s-redir-tee></A>
+<H2>12.7 tee</H2>
+<P>Envia o resultado do programa para a saída padrão (tela) e para um arquivo ao 
+mesmo tempo. Este comando deve ser usado com o pipe "|". 
+<P><SAMP><EM>comando</EM>|tee [<EM>arquivo</EM>]</SAMP> 
+<P>Exemplo: <SAMP>ls -la|tee listagem.txt</SAMP>, a saída do comando será 
+mostrada normalmente na tela e ao mesmo tempo gravada no arquivo 
+<CODE>listagem.txt</CODE>. 
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11</A> 
+] [ 12 ] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">próximo</A> 
+] 
+<HR>
+
+<P>Guia Foca GNU/Linux 
+<ADDRESS>Versão 3.99 - segunda, 30 de outubro de 2006<BR><BR>Gleydson Mazioli da 
+Silva <CODE><A 
+href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR><BR></ADDRESS>
+<HR>
+</BODY></HTML>

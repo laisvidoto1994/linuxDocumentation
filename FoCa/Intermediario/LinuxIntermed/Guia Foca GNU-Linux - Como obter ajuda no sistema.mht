@@ -1,0 +1,4274 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: Guia Foca GNU/Linux - Como obter ajuda no sistema
+Date: Mon, 6 Aug 2007 11:18:57 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-ajuda.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Como obter ajuda no =
+sistema</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-ajuda></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ 31 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 31 - Como obter ajuda no sistema =
+</H1>
+<HR>
+
+<P>D=FAvidas s=E3o comuns durante o uso do <CODE>GNU/Linux</CODE> e =
+existem v=E1rias=20
+maneiras de se obter ajuda e encontrar a resposta para algum problema. O =
+
+<CODE>GNU/Linux</CODE> =E9 um sistema bem documentado, provavelmente =
+tudo o que=20
+imaginar fazer ou aprender j=E1 esta dispon=EDvel para leitura e =
+aprendizado. Abaixo=20
+segue algumas formas =FAteis para encontrar a solu=E7=E3o de sua =
+d=FAvida, vale a pena=20
+conhece-las.=20
+<HR>
+<A name=3Ds-ajuda-man></A>
+<H2>31.1 P=E1ginas de Manual</H2>
+<P>As <EM>p=E1ginas de manual</EM> acompanham quase todos os programas=20
+<CODE>GNU/Linux</CODE>. Elas trazem uma descri=E7=E3o b=E1sica do =
+comando/programa e=20
+detalhes sobre o funcionamento de op=E7=E3o. Uma p=E1gina de manual =E9 =
+visualizada na=20
+forma de texto =FAnico com rolagem vertical. Tamb=E9m documenta =
+par=E2metros usados em=20
+alguns arquivos de configura=E7=E3o.=20
+<P>A utiliza=E7=E3o da p=E1gina de manual =E9 simples, digite:=20
+<P><SAMP>man [<EM>se=E7=E3o</EM>] [<EM>comando/arquivo</EM>]</SAMP>=20
+<P><EM>onde:</EM>=20
+<DL>
+  <DT><EM>se=E7=E3o</EM>=20
+  <DD>=C9 a se=E7=E3o de manual que ser=E1 aberta, se omitido, mostra a=20
+  <EM>primeira</EM> se=E7=E3o sobre o comando encontrada (em ordem =
+crescente).=20
+  <DT><EM>comando/arquivo</EM>=20
+  <DD>Comando/arquivo que deseja pesquisar. </DD></DL>
+<P>A navega=E7=E3o dentro das p=E1ginas de manual =E9 feita usando-se as =
+teclas:=20
+<UL>
+  <LI>q - Sai da p=E1gina de manual=20
+  <LI>PageDown ou f - Rola 25 linhas abaixo=20
+  <LI>PageUP ou w - Rola 25 linhas acima=20
+  <LI>SetaAcima ou k - Rola 1 linha acima=20
+  <LI>SetaAbaixo ou e - Rola 1 linha abaixo=20
+  <LI>r - Redesenha a tela (refresh)=20
+  <LI>p ou g - Inicio da p=E1gina=20
+  <LI>h - Ajuda sobre as op=E7=F5es da p=E1gina de manual=20
+  <LI>s - Salva a p=E1gina de manual em formato texto no arquivo =
+especificado (por=20
+  exemplo: <CODE>/tmp/ls</CODE>). </LI></UL>
+<P>Cada se=E7=E3o da p=E1gina de manual cont=E9m explica=E7=F5es sobre =
+uma determinada parte=20
+do sistema. As se=E7=F5es s=E3o organizadas em diret=F3rios separados e =
+localizadas no=20
+diret=F3rio <CODE>/usr/man</CODE>. Os programas/arquivos s=E3o =
+classificados nas=20
+seguintes se=E7=F5es:=20
+<OL type=3D1>
+  <LI>Programas execut=E1veis ou comandos internos </LI></OL>
+<OL type=3D1 start=3D2>
+  <LI>Chamadas do sistema (fun=E7=F5es oferecidas pelo kernel) =
+</LI></OL>
+<OL type=3D1 start=3D3>
+  <LI>Chamadas de Bibliotecas (fun=E7=F5es dentro de bibliotecas do =
+sistema)=20
+</LI></OL>
+<OL type=3D1 start=3D4>
+  <LI>Arquivos especiais (normalmente encontrados no diret=F3rio=20
+  <CODE>/dev</CODE>) </LI></OL>
+<OL type=3D1 start=3D5>
+  <LI>Formatos de arquivos e conven=E7=F5es (<CODE>/etc/inittab</CODE> =
+por exemplo).=20
+  </LI></OL>
+<OL type=3D1 start=3D6>
+  <LI>Jogos </LI></OL>
+<OL type=3D1 start=3D7>
+  <LI>Pacotes de macros e conven=E7=F5es (por exemplo <CODE>man</CODE>) =
+</LI></OL>
+<OL type=3D1 start=3D8>
+  <LI>Comandos de Administra=E7=E3o do sistema (normalmente usados pelo =
+root)=20
+</LI></OL>
+<OL type=3D1 start=3D9>
+  <LI>Rotinas do kernel (n=E3o padr=F5es) </LI></OL>
+<P>A documenta=E7=E3o de um programa tamb=E9m pode ser encontrada em 2 =
+ou mais=20
+categorias, como =E9 o caso do arquivo <CODE>host_access</CODE> que =E9 =
+documentado=20
+na se=E7=E3o 3 (bibliotecas) e 5 (formatos de arquivo). Por este motivo =
+=E9 necess=E1rio=20
+digitar <SAMP>man 5 hosts_access</SAMP> para ler a p=E1gina sobre o =
+formato do=20
+arquivo, porque o comando <CODE>man</CODE> procura a p=E1gina de manual =
+nas se=E7=F5es=20
+em ordem crescente e a digita=E7=E3o do comando <CODE>man =
+hosts_access</CODE>=20
+abriria a se=E7=E3o 3.=20
+<P>As p=E1ginas de manual cont=E9m algumas regras para facilitar a =
+compreens=E3o do=20
+comando:=20
+<UL>
+  <LI>Texto Negrito - Deve ser digitado exatamente como =E9 mostrado=20
+  <LI>[bla bla bla] - Qualquer coisa dentro de <SAMP>[]</SAMP> s=E3o =
+opcionais=20
+  </LI></UL>
+<P>Exemplo, <SAMP>man ls</SAMP>, <SAMP>man 5 hosts_access</SAMP>.=20
+<HR>
+<A name=3Ds-ajuda-info></A>
+<H2>31.2 Info Pages</H2>
+<P>Id=EAntico as p=E1ginas de manual, mas =E9 usada navega=E7=E3o entre =
+as p=E1ginas. Se=20
+pressionarmos &lt;Enter&gt; em cima de uma palavra destacada, a =
+<CODE>info=20
+pages</CODE> nos levar=E1 a se=E7=E3o correspondente. A <EM>info =
+pages</EM> =E9 =FAtil=20
+quando sabemos o nome do comando e queremos saber para o que ele serve. =
+Tamb=E9m=20
+traz explica=E7=F5es detalhadas sobre uso, op=E7=F5es e comandos.=20
+<P>Para usar a info pages, digite:=20
+<P><SAMP>info [<EM>comando/programa</EM>]</SAMP>=20
+<P>Se o nome do <EM>comando/programa</EM> n=E3o for digitado, a info =
+pages mostra=20
+a lista de todos os manuais de <EM>comandos/programas</EM> =
+dispon=EDveis. A=20
+navega=E7=E3o da info pages =E9 feita atrav=E9s de nomes marcados com um =
+"*"=20
+(hipertextos) que se pressionarmos &lt;Enter&gt;, nos levar=E1 at=E9 a =
+se=E7=E3o=20
+correspondente. A <EM>info pages</EM> possui algumas teclas de =
+navega=E7=E3o =FAteis:=20
+<UL>
+  <LI>q - Sai da info pages=20
+  <LI>? - Mostra a tela de ajuda (que cont=E9m a lista completa de =
+teclas de=20
+  navega=E7=E3o e muitos outras op=E7=F5es).=20
+  <LI>n - Avan=E7a para a pr=F3xima p=E1gina=20
+  <LI>p - Volta uma p=E1gina=20
+  <LI>u - Sobre um n=EDvel do conte=FAdo (at=E9 checar ao =EDndice de =
+documentos)=20
+  <LI>m - Permite usar a localiza=E7=E3o para encontrar uma p=E1gina do=20
+  <CODE>info</CODE>. Pressione <SAMP>m</SAMP>, digite o comando e tecle=20
+  &lt;Enter&gt; que ser=E1 levado automaticamente a p=E1gina =
+correspondente.=20
+  <LI>d - Volta ao =EDndice de documentos. </LI></UL>
+<P>Existem muitos outras teclas de navega=E7=E3o =FAteis na info pages, =
+mas estas s=E3o=20
+as mais usadas. Para mais detalhes, entre no programa <CODE>info</CODE> =
+e=20
+pressione <SAMP>?</SAMP>.=20
+<P>Exemplo, <SAMP>info cvs</SAMP>.=20
+<HR>
+<A name=3Ds-ajuda-helponline></A>
+<H2>31.3 Help on line</H2>
+<P>Ajuda r=E1pida, =E9 =FAtil para sabermos quais op=E7=F5es podem ser =
+usadas com o=20
+comando/programa. Quase todos os comandos/programas =
+<CODE>GNU/Linux</CODE>=20
+oferecem este recurso que =E9 =FAtil para consultas r=E1pidas (e quando =
+n=E3o precisamos=20
+dos detalhes das p=E1ginas de manual). =C9 =FAtil quando se sabe o nome =
+do programa=20
+mas deseja saber quais s=E3o as op=E7=F5es dispon=EDveis e para o que =
+cada uma serve.=20
+Para acionar o <EM>help on line</EM>, digite:=20
+<P><SAMP>[<EM>comando</EM>] --help</SAMP>=20
+<P><EM>comando</EM> - =E9 o comando/programa que desejamos ter uma =
+explica=E7=E3o=20
+r=E1pida.=20
+<P>O Help on Line n=E3o funciona com comandos internos (embutidos no =
+Bash), para=20
+ter uma ajuda r=E1pida sobre os comandos internos, veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-help">help,=20
+Se=E7=E3o 31.4</A>.=20
+<P>Por exemplo, <SAMP>ls --help</SAMP>.=20
+<HR>
+<A name=3Ds-ajuda-help></A>
+<H2>31.4 help</H2>
+<P>Ajuda r=E1pida, =FAtil para saber que op=E7=F5es podem ser usadas com =
+os <EM>comandos=20
+internos</EM> do interpretador de comandos. O comando <CODE>help</CODE> =
+somente=20
+mostra a ajuda para comandos internos, para ter uma ajuda similar para =
+comandos=20
+externos, veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-helponline">Help=20
+on line, Se=E7=E3o 31.3</A>. Para usar o <CODE>help</CODE> digite:=20
+<P><SAMP>help [<EM>comando</EM>]</SAMP>=20
+<P>Por exemplo, <SAMP>help echo</SAMP>, <SAMP>help exit</SAMP>=20
+<HR>
+<A name=3Ds-ajuda-apropos></A>
+<H2>31.5 apropos/whatis</H2>
+<P>Apropos procura por <EM>programas/comandos</EM> atrav=E9s da =
+descri=E7=E3o. =C9 =FAtil=20
+quando precisamos fazer alguma coisa mas n=E3o sabemos qual comando =
+usar. Ele faz=20
+sua pesquisa nas p=E1ginas de manual existentes no sistema e lista os=20
+comandos/programas que atendem a consulta. Para usar o comando=20
+<CODE>apropos</CODE> digite:=20
+<P><SAMP>apropos [<EM>descri=E7=E3o</EM>]</SAMP>=20
+<P>Digitando <SAMP>apropos copy</SAMP>, ser=E1 mostrado todos os =
+comandos que tem=20
+a palavra <SAMP>copy</SAMP> em sua descri=E7=E3o (provavelmente os =
+programas que=20
+copiam arquivos, mas podem ser mostrados outros tamb=E9m).=20
+<HR>
+<A name=3Ds-ajuda-locate></A>
+<H2>31.6 locate</H2>
+<P>Localiza uma palavra na estrutura de arquivos/diret=F3rios do =
+sistema. =C9 =FAtil=20
+quando queremos localizar onde um comando ou programa se encontra (para=20
+copia-lo, curiosidade, etc). A pesquisa =E9 feita em um banco de dados =
+constru=EDdo=20
+com o comando <CODE>updatedb</CODE> sendo feita a partir do diret=F3rio =
+ra=EDz=20
+<SAMP>/</SAMP> e sub-diret=F3rios. Para fazer uma consulta com o=20
+<CODE>locate</CODE> usamos:=20
+<P><SAMP>locate [<EM>express=E3o</EM>]</SAMP>=20
+<P>A <EM>express=E3o</EM> deve ser o nome de um arquivo diret=F3rio ou =
+ambos que=20
+ser=E3o procurados na estrutura de diret=F3rios do sistema. Como a =
+consulta por um=20
+programa costuma localizar tamb=E9m sua p=E1gina de manual, =E9 =
+recomend=E1vel usar=20
+<EM>"pipes"</EM> para filtrar a sa=EDda do comando (para detalhes veja =
+<A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm#s-redir-pipe">|=20
+(pipe), Se=E7=E3o 14.5</A> .=20
+<P>Por exemplo, para listar os diret=F3rios que cont=E9m o nome =
+"<EM>cp</EM>":=20
+<SAMP>locate cp</SAMP>. Agora mostrar somente arquivos bin=E1rios, =
+usamos:=20
+<SAMP>locate cp|grep bin/</SAMP>=20
+<HR>
+<A name=3Ds-ajuda-which></A>
+<H2>31.7 which</H2>
+<P>Localiza um programa na estrutura de diret=F3rios do path. =C9 muito =
+semelhante=20
+ao <CODE>locate</CODE>, mas a busca =E9 feita no <SAMP>path</SAMP> do =
+sistema e=20
+somente s=E3o mostrados arquivos execut=E1veis .=20
+<P><SAMP>which [<EM>programa/comando</EM>]</SAMP>.=20
+<HR>
+<A name=3Ds-ajuda-howto></A>
+<H2>31.8 Documentos HOWTO's</H2>
+<P>S=E3o documentos em formato <EM>texto</EM>, <EM>html</EM>, etc, que =
+explicam=20
+como fazer determinada tarefa ou como um programa funciona. Normalmente =
+s=E3o=20
+feitos na linguagem <CODE>SGML</CODE> e convertidos para outros formatos =
+(como o=20
+texto, HTML, Pos Script) depois de prontos.=20
+<P>Estes trazem explica=E7=F5es detalhadas desde como usar o =
+<CODE>bash</CODE> at=E9=20
+sobre como funciona o modem ou como montar um <EM>servidor internet=20
+completo</EM>. Os HOWTO=B4s podem ser encontrados no diret=F3rio do =
+projeto de=20
+documenta=E7=E3o do <CODE>GNU/Linux</CODE> (LDP) em <CODE><A=20
+href=3D"ftp://metalab.unc.edu/pub/Linux/docs/HOWTO/">ftp://metalab.unc.ed=
+u/pub/Linux/docs/HOWTO/</A></CODE>=20
+ou traduzidos para o Portugu=EAs pelo LDP-BR em <CODE><A=20
+href=3D"http://www.tldp.org/projetos/howto/traduzidos.php">http://www.tld=
+p.org/projetos/howto/traduzidos.php</A></CODE>.=20
+Caso tenha optado por instalar o pacote de HOWTO's de sua =
+distribui=E7=E3o=20
+<CODE>GNU/Linux</CODE>, eles podem ser encontrados em:=20
+<CODE>/usr/doc/how-to</CODE>=20
+<HR>
+<A name=3Ds-ajuda-howto-listagem></A>
+<H3>31.8.1 Listagem de HOWTO's</H3>
+<P>Esta se=E7=E3o tem a inten=E7=E3o de facilitar a localiza=E7=E3o de =
+um documento que=20
+trata do assunto desejado ou te despertar a curiosidade sobre alguns =
+assuntos do=20
+SO-GNU/Linux atrav=E9s da descri=E7=E3o contida nos documentos. Segue =
+abaixo uma=20
+listagem de HOWTO's do projeto LDP organizadas por sub-se=E7=F5es com a =
+descri=E7=E3o do=20
+assunto que cada um deles aborda.=20
+<HR>
+<A name=3Ds31.8.1.1></A>
+<H4>31.8.1.1 Introdu=E7=E3o ao Sistema / Instala=E7=E3o / =
+Configura=E7=F5es / Kernel</H4>
+<DL>
+  <DT>Access-HOWTO=20
+  <DD>O HOWTO de Acesso ao <CODE>GNU/Linux</CODE> cobre o uso de =
+tecnologia=20
+  adaptada para tornar o <CODE>GNU/Linux</CODE> acess=EDvel =E0queles =
+que n=E3o o=20
+  utilizam. Ele cobre =E1reas onde ele pode usar solu=E7=F5es =
+tecnol=F3gicas adaptadas.=20
+  </DD></DL>
+<DL>
+  <DT>Bash-Prompt-HOWTO=20
+  <DD>Explica como criar e controlar um terminal e aviso de comando =
+xterm,=20
+  incluindo seq=FC=EAncias de escape incorporadas para passar o nome do =
+usu=E1rio,=20
+  diret=F3rio atual, hora, uso de cores ANSI, etc. </DD></DL>
+<DL>
+  <DT>Bootdisk-HOWTO=20
+  <DD>Explica como criar seu pr=F3prio disco de inicializa=E7=E3o/ra=EDz =
+para o=20
+  <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>BootPrompt-HOWTO=20
+  <DD>Este documento re=FAne a maioria dos par=E2metros de =
+inicializa=E7=E3o que podem=20
+  ser passados ao kernel do <CODE>GNU/Linux</CODE> durante a =
+inicializa=E7=E3o do=20
+  sistema. Tamb=E9m explica como o kernel classifica os argumentos de=20
+  inicializa=E7=E3o e tamb=E9m os softwares usados para =
+inicializa=E7=E3o do kernel do=20
+  GNU/Linux. </DD></DL>
+<DL>
+  <DT>Compaq-Remote-Insight-Board-HOWTO=20
+  <DD>Descreve como instalar o Linux no servidor Compaq ProLiant. =
+</DD></DL>
+<DL>
+  <DT>Config-HOWTO=20
+  <DD>Este documento ensina como fazer um ajuste fino em sua m=E1quina=20
+  <CODE>GNU/Linux</CODE> rec=E9m instalada r=E1pido e f=E1cil. Neste =
+documento voc=EA=20
+  encontrar=E1 um conjunto de configura=E7=F5es para as aplica=E7=F5es e =
+servi=E7os mais=20
+  populares. </DD></DL>
+<DL>
+  <DT>Distribution-HOWTO=20
+  <DD>Este documento tem a inten=E7=E3o de ajudar novos usu=E1rios =
+escolherem uma=20
+  distribui=E7=E3o <CODE>GNU/Linux</CODE> e ajudar usu=E1rios =
+experientes a avaliar o=20
+  estado do marketing no <CODE>GNU/Linux</CODE> Ele n=E3o planeja ser =
+uma lista=20
+  completa de distribui=E7=F5es <CODE>GNU/Linux</CODE> para todas as =
+plataformas,=20
+  mas ao inv=E9s disso se focaliza nas distribui=E7=F5es em Ingl=EAs =
+baseadas no=20
+  processador Intel, dispon=EDveis em CD-ROM e acess=EDveis a usu=E1rios =
+novatos no=20
+  sistema. </DD></DL>
+<DL>
+  <DT>From-PowerUp-To-Bash-Prompt-HOWTO=20
+  <DD>Cont=E9m uma breve descri=E7=E3o sobre o que acontece no sistema=20
+  <CODE>GNU/Linux</CODE>, do momento que liga o seu computador at=E9 o =
+login no=20
+  aviso do bash. Ele =E9 organizado por pacotes para torna-lo f=E1cil =
+para pessoas=20
+  que desejam construir um sistema atrav=E9s do c=F3digo fonte. =
+Entendendo isto ser=E1=20
+  =FAtil quando precisar resolver problemas ou configurar o seu sistema. =
+</DD></DL>
+<DL>
+  <DT>Installation-HOWTO=20
+  <DD>Este documento descreve como obter e instalar o software=20
+  <CODE>GNU/Linux</CODE>. Ele =E9 o primeiro documento que um novo =
+usu=E1rio=20
+  <CODE>GNU/Linux</CODE> dev ler para iniciar no sistema. </DD></DL>
+<DL>
+  <DT>INFO-SHEET=20
+  <DD>Este documento oferece informa=E7=F5es b=E1sicas sobre o sistema =
+operacional=20
+  <CODE>GNU/Linux</CODE>, incluindo uma explica=E7=E3o sobre o sistema, =
+uma lista de=20
+  caracter=EDsticas, alguns requerimentos e alguns recursos. </DD></DL>
+<DL>
+  <DT>Kernel-HOWTO=20
+  <DD>Este =E9 um guia detalhado de configura=E7=E3o do kernel, =
+compila=E7=E3o, upgrades e=20
+  problemas para sistemas baseados. </DD></DL>
+<DL>
+  <DT>PLIP-Install-HOWTO=20
+  <DD>Descreve como instalar uma distribui=E7=E3o GNU/Linux em um =
+computador sem=20
+  placa Ethernet, ou CD-ROM, mas apenas com uma unidade de disquetes =
+local e um=20
+  servidor NFS remoto conectado via um cabo paralelo. </DD></DL>
+<DL>
+  <DT>Reading-List-HOWTO=20
+  <DD>Lista os livros mais valiosos para uma pessoa que deseja aprender =
+o=20
+  sistema operacional Unix (especialmente o <CODE>GNU/Linux</CODE>). =
+</DD></DL>
+<DL>
+  <DT>Software-Building-HOWTO=20
+  <DD>Guia compreensivo de como construir e instalar distribui=E7=F5es =
+de softwares=20
+  "gen=E9ricas" UNIX sob o <CODE>GNU/Linux</CODE>. Adicionalmente existe =
+alguma=20
+  cobertura dos bin=E1rios pr=E9-empacotados "rpm" e "deb". </DD></DL>
+<DL>
+  <DT>Tips-HOWTO=20
+  <DD>Este documento descreve algumas dicas dif=EDceis de encontrar e =
+truques que=20
+  fazem o GNU/Linux um pouco melhor. </DD></DL>
+<DL>
+  <DT>Unix-and-Internet-Fundamentals-HOWTO=20
+  <DD>Este documento descreve a base de funcionamento dos computadores =
+da classe=20
+  PC, sistemas operacionais Unix e a Internet em linguagem n=E3o =
+t=E9cnica. </DD></DL>
+<DL>
+  <DT>User-Authentication-HOWTO=20
+  <DD>Explica como as informa=E7=F5es de usu=E1rio e grupo s=E3o =
+armazenadas e como os=20
+  usu=E1rios s=E3o autenticados no sistema <CODE>GNU/Linux</CODE> (PAM) =
+e como=20
+  melhorar a autentica=E7=E3o de seu sistema. </DD></DL>
+<HR>
+<A name=3Ds31.8.1.2></A>
+<H4>31.8.1.2 Adapta=E7=E3o do <CODE>GNU/Linux</CODE> para idiomas =
+espec=EDficos</H4>
+<DL>
+  <DT>Belarusian-HOWTO=20
+  <DD>Adicionando o suporte ao idioma Belarusian no Linux. </DD></DL>
+<DL>
+  <DT>Belgian-HOWTO=20
+  <DD>Este documento ensina a configura=E7=E3o do sistema =
+<CODE>GNU/Linux</CODE>=20
+  para o idioma Belgo. </DD></DL>
+<DL>
+  <DT>Chinese-HOWTO=20
+  <DD>Este documento explica como configurar o idioma Chin=EAs no=20
+  <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>Cyrillic-HOWTO=20
+  <DD>Explica como utilizar o <CODE>GNU/Linux</CODE> com o idioma Russo. =
+
+</DD></DL>
+<DL>
+  <DT>Danish-HOWTO=20
+  <DD>Descreve como configurar o <CODE>GNU/Linux</CODE> e v=E1rios =
+aplicativos=20
+  <CODE>GNU/Linux</CODE> para este idioma. </DD></DL>
+<DL>
+  <DT>Esperanto-HOWTO=20
+  <DD>Configura=E7=E3o do GNU/Linux para o idioma Esperanto. </DD></DL>
+<DL>
+  <DT>Finnish-HOWTO=20
+  <DD>Descreve como usar o sistema <CODE>GNU/Linux</CODE> no idioma =
+Finland=EAs.=20
+  </DD></DL>
+<DL>
+  <DT>Francophones-HOWTO=20
+  <DD>Descreve como usar o <CODE>GNU/Linux</CODE> no idioma Franc=EAs. =
+</DD></DL>
+<DL>
+  <DT>German-HOWTO=20
+  <DD>Descreve como usar o GNU/Linux com o idioma Alem=E3o. </DD></DL>
+<DL>
+  <DT>Hebrew-HOWTO=20
+  <DD>Descreve como configurar o GNU/Linux para exibir caracteres =
+Hebreus no=20
+  X-Window e Console. </DD></DL>
+<DL>
+  <DT>Hellenic-HOWTO=20
+  <DD>Guia para configura=E7=E3o do GNU/Linux. </DD></DL>
+<DL>
+  <DT>Italian-HOWTO=20
+  <DD>Descreve como configurar o GNU/Linux no idioma Italiano. =
+</DD></DL>
+<DL>
+  <DT>Polish-HOWTO=20
+  <DD>Configurando seu sistema GNU/Linux para o idioma Polon=EAs. =
+</DD></DL>
+<DL>
+  <DT>Portuguese-HOWTO=20
+  <DD>Configurando seu sistema GNU/Linux para o idioma Portugu=EAs. =
+</DD></DL>
+<DL>
+  <DT>Serbian-HOWTO=20
+  <DD>Configurando seu sistema GNU/Linux para o idioma Servio. =
+</DD></DL>
+<DL>
+  <DT>Slovenian-HOWTO=20
+  <DD>Como configurar os par=E2metros do sistema GNU/Linux para este =
+idioma.=20
+</DD></DL>
+<DL>
+  <DT>Spanish-HOWTO=20
+  <DD>Configurando o sistema GNU/Linux para o idioma Espanhol. =
+</DD></DL>
+<DL>
+  <DT>Thai-HOWTO=20
+  <DD>Descreve como usar o idioma Tailand=EAs com o =
+<CODE>GNU/Linux</CODE>.=20
+</DD></DL>
+<DL>
+  <DT>Turkish-HOWTO=20
+  <DD>Configurando o GNU/Linux para o idioma Turco. </DD></DL>
+<HR>
+<A name=3Ds31.8.1.3></A>
+<H4>31.8.1.3 Discos / Sistemas de Arquivos / Desempenho</H4>
+<DL>
+  <DT>Filesystems-HOWTO=20
+  <DD>Descreve sistemas de arquivos e o acesso aos sistemas de arquivos. =
+
+</DD></DL>
+<DL>
+  <DT>Large-Disk-HOWTO=20
+  <DD>Tudo sobre a geometria e o limite de 1024 cilindros para os =
+discos.=20
+</DD></DL>
+<DL>
+  <DT>LVM-HOWTO=20
+  <DD>Um HOWTO descritivo sobre o GNU/Linux LVM. </DD></DL>
+<DL>
+  <DT>Loopback-Encrypted-Filesystem-HOWTO=20
+  <DD>Este documento explica como criar e utilizar um sistema de =
+arquivos que,=20
+  quando montado por um usu=E1rios, encripta transparentemente e =
+dinamicamente seu=20
+  conte=FAdo. O sistema de arquivos =E9 armazenado em um arquivo =
+regular, que pode=20
+  ser oculto ou nomeado para algo que n=E3o chama a aten=E7=E3o, como =
+algo que nunca=20
+  seria procurado. Isto permite um alto n=EDvel de seguran=E7a dos dados =
+
+  armazenados. </DD></DL>
+<DL>
+  <DT>Multi-Disk-HOWTO=20
+  <DD>Este documento descreve como utilizar da melhor maneira =
+m=FAltiplos discos e=20
+  parti=E7=F5es em um sistema <CODE>GNU/Linux</CODE>. Muitos dos =
+detalhes descritos=20
+  aqui podem tamb=E9m ser aplicados a outros sistemas operacionais =
+multi-tarefas.=20
+  </DD></DL>
+<DL>
+  <DT>MultiOS-HOWTO=20
+  <DD>Este documento cobre os procedimentos para utilizar discos =
+r=EDgidos=20
+  remov=EDveis para instalar e gerenciar m=FAltiplos sistemas =
+operacionais=20
+  alternativos enquanto deixa um disco r=EDgido simples fixo para =
+proteger o=20
+  sistema operacional prim=E1rio. =C9 muito escal=E1vel e oferece uma =
+boa grade de=20
+  prote=E7=E3o e um ambiente de disco est=E1vel para o sistema =
+operacional prim=E1rio.=20
+  </DD></DL>
+<DL>
+  <DT>Optical-Disk-HOWTO=20
+  <DD>Este documento descreve a instala=E7=E3o e configura=E7=E3o de =
+unidades de disco=20
+  =F3ticos para <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>Root-RAID-HOWTO=20
+  <DD>Este documento somente se aplica a ferramentas RAID ANTIGAS, =
+vers=E3o 0.50 e=20
+  inferiores. Os detalhes contidos neste documento se tornaram obsoletos =
+com a=20
+  vasta melhoria das ferramentas RAID 0.90 e acompanhadas do patch nos =
+kernels=20
+  das s=E9ries 2.0.37, 2.2x e 2.3x. </DD></DL>
+<DL>
+  <DT>SCSI-Programming-HOWTO=20
+  <DD>Este documento fala sobre a programa=E7=E3o da interface SCSI =
+gen=E9rica no=20
+  <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>UMSDOS-HOWTO=20
+  <DD>O UMSDOS =E9 um sistema de arquivos <CODE>GNU/Linux</CODE>. Ele =
+oferece uma=20
+  alternativa do sistema de arquivos EXT2. Sua maior caracter=EDstica =
+=E9 a=20
+  coexist=EAncia com os dados DOS existentes, compartilhando a mesma =
+parti=E7=E3o.=20
+  </DD></DL>
+<HR>
+<A name=3Ds31.8.1.4></A>
+<H4>31.8.1.4 Escrita de Documenta=E7=E3o / Editores</H4>
+<DL>
+  <DT>C-editing-with-VIM-HOWTO=20
+  <DD>Oferece dicas para editar arquivos desta linguagem e com sintaxe =
+similar=20
+  como <CODE>C++</CODE> e <CODE>Java</CODE>. </DD></DL>
+<DL>
+  <DT>Emacs-Beginner-HOWTO=20
+  <DD>Este documento introduz os usu=E1rios <CODE>GNU/Linux</CODE> no =
+editor=20
+  Emacs. Ele assume o m=EDnimo de conhecimento com o editor de texto=20
+  <CODE>vi</CODE> ou similar. </DD></DL>
+<DL>
+  <DT>Emacspeak-HOWTO=20
+  <DD>Este documento descreve como um usu=E1rio pode usar o sistema com =
+um=20
+  sintetizador de voz no lugar do monitor de v=EDdeo. Ele descreve como =
+ter o=20
+  <CODE>GNU/Linux</CODE> rodando em seu PC e como configura-lo para =
+falar. Ele=20
+  tamb=E9m sugere como aprender sobre o Unix. </DD></DL>
+<DL>
+  <DT>HOWTO-HOWTO=20
+  <DD>Lista de ferramentas, processos e dicas para ajudar os autores de =
+HOWTO's=20
+  aumentarem sua produtividade. </DD></DL>
+<DL>
+  <DT>LinuxDoc+Emacs+Ispell-HOWTO=20
+  <DD>Este documento =E9 de interesse de escritores e tradutores dos =
+HOWTO's do=20
+  <CODE>GNU/Linux</CODE> ou qualquer outro papel para o Projeto de =
+Documenta=E7=E3o=20
+  do GNU/Linux. Ele oferece dicas sobre o uso de ferramentas incluindo o =
+Emacs e=20
+  Ispell. </DD></DL>
+<DL>
+  <DT>TeTeX-HOWTO=20
+  <DD>Este documento cobre a instala=E7=E3o b=E1sico e uso das =
+implementa=E7=F5es TeTeX,=20
+  TeX e LaTeX sob as maiores distribui=E7=F5es de <CODE>GNU/Linux</CODE> =
+Inglesas e=20
+  pacotes auxiliares como o GhostScript. </DD></DL>
+<DL>
+  <DT>Vim-HOWTO=20
+  <DD>Este documento =E9 uma guia para configurar rapidamente o editor =
+colorido=20
+  Vim nos sistemas Unix e GNU/Linux. Os detalhes aqui aumentar=E3o a =
+produtividade=20
+  dos programadores porque o editor Vim suporta a coloriza=E7=E3o de =
+c=F3digo e fontes=20
+  negrito, aumentando a "legibilidade" do c=F3digo do programa. A =
+produtividade do=20
+  programador aumenta de 2 a 3 vezes com um editor colorido como Vim. =
+</DD></DL>
+<HR>
+<A name=3Ds31.8.1.5></A>
+<H4>31.8.1.5 Hardware</H4>
+<DL>
+  <DT>3Dfx-HOWTO=20
+  <DD>Este documento descreve o suporte do <CODE>GNU/Linux</CODE> aos =
+chips=20
+  aceleradores 3Dfx. Tamb=E9m lista alguns hardwares suportados, =
+descreve como=20
+  configurar os drivers e responde perguntas freq=FC=EAntes. </DD></DL>
+<DL>
+  <DT>4mb-Laptops=20
+  <DD>Como instalar o Linux em um notebook com 4MB de RAM e com HDs =
+menores que=20
+  200 MB. </DD></DL>
+<DL>
+  <DT>Acer Laptop-HOWTO=20
+  <DD>Descreve como instalar o Linux em notebooks Acer. </DD></DL>
+<DL>
+  <DT>Busmouse-HOWTO=20
+  <DD>Descreve como instalar, configurar e usar um barramento de mouse =
+sob o=20
+  <CODE>GNU/Linux</CODE>. Ele cont=E9m uma lista de barramentos =
+suportados e tenta=20
+  responder as quest=F5es mais freq=FC=EAntes relacionadas ao assunto. =
+</DD></DL>
+<DL>
+  <DT>CDServer-HOWTO=20
+  <DD>Oferece as dicas e passos para criar um servidor de CD no=20
+  <CODE>Linux</CODE> para serem compartilhados via rede com =
+<CODE>Windows</CODE>=20
+  e outros sistemas operacionais. </DD></DL>
+<DL>
+  <DT>CPU-Design-HOWTO=20
+  <DD>Oferece refer=EAncias para mostrar como uma CPU =E9 projetada e =
+fabricada.=20
+  Bastante interessante para estudantes de computa=E7=E3o e outros =
+profissionais da=20
+  =E1rea. </DD></DL>
+<DL>
+  <DT>Ftape-HOWTO=20
+  <DD>Este HOWTO discute o controlador de unidades tape para=20
+  <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>HP-HOWTO=20
+  <DD>Este documento descreve o uso dos produtos dispon=EDveis no =
+cat=E1logo=20
+  Hewlett-Packard (HP) com o <CODE>GNU/Linux</CODE> e alguns programas =
+free=20
+  software. Ele explica o estado do suporte para hardwares, softwares =
+utilizados=20
+  e respostas para alguns quest=F5es freq=FC=EAntes. </DD></DL>
+<DL>
+  <DT>Hardware-HOWTO=20
+  <DD>Este documento lista a maioria dos hardware suportados pelo=20
+  <CODE>GNU/Linux</CODE> e lhe ajuda a localizar os controladores =
+necess=E1rios.=20
+  </DD></DL>
+<DL>
+  <DT>Jaz-Drive-HOWTO=20
+  <DD>Este HOWTO cobre a configura=E7=E3o e uso dos drivers Iomega 1Gb e =
+2Gb sob o=20
+  <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>Kodak-Digitalcam-HOWTO=20
+  <DD>Fazendo uma c=E2mera Kodak digital funcionar sob GNU/GNU/Linux. =
+</DD></DL>
+<DL>
+  <DT>Laptop-HOWTO=20
+  <DD>Os Notebooks s=E3o diferentes de computadores desktops/torres. =
+Eles usam=20
+  certos hardwares como cart=F5es PCMCIA, portas infravermelho, =
+baterias, esta=E7=F5es=20
+  de encaixe. Freq=FCentemente seus hardwares s=E3o mais limitados (i.e. =
+espa=E7o em=20
+  disco, velocidade da CPU) ent=E3o sua performance se torna menor. Em =
+algumas=20
+  inst=E2ncias, os notebooks podem se tornar uma substitui=E7=E3o ao =
+sistema desktop.=20
+  O suporte de hardware para o <CODE>GNU/Linux</CODE> (e outros sistemas =
+
+  operacionais) =E9 algumas vezes mais limitado (i.e. chips gr=E1ficos, =
+modens=20
+  internos). Os Notebooks freq=FCentemente utilizam hardware =
+especializado, no=20
+  qual a localiza=E7=E3o de um controlador adequado pode se tornar uma =
+dificuldade.=20
+  Os Notebooks s=E3o utilizados em ambientes m=F3veis, assim existe a =
+necessidade de=20
+  m=FAltiplas configura=E7=F5es e estrat=E9gias adicionais de =
+seguran=E7a. </DD></DL>
+<DL>
+  <DT>Modem-HOWTO=20
+  <DD>Ajuda com a sele=E7=E3o, conex=E3o, configura=E7=E3o, =
+resolu=E7=E3o de problemas e=20
+  compreens=E3o de modens de um PC. Veja o Serial-HOWTO para detalhes =
+sobre=20
+  m=FAltiplas placas seriais. </DD></DL>
+<DL>
+  <DT>PCI-HOWTO=20
+  <DD>Informa=E7=F5es sobre o que funciona com o <CODE>GNU/Linux</CODE> =
+e placas=20
+  <CODE>PCI</CODE> e que o n=E3o funciona. </DD></DL>
+<DL>
+  <DT>Plug-and-Play-HOWTO=20
+  <DD>Este documento ajuda a compreens=E3o e opera=E7=E3o do =
+Plug-and-Play e como=20
+  incluir o suporte do seu sistema <CODE>GNU/Linux</CODE> ao =
+Plug-and-Play.=20
+</DD></DL>
+<DL>
+  <DT>Serial-HOWTO=20
+  <DD>Este documento descreve caracter=EDsticas da porta serial ao =
+inv=E9s de outros=20
+  detalhes que devem ser cobertos pelos documentos Modem-HOWTO, =
+PPP-HOWTO,=20
+  Serial-Programming-HOWTO, ou Text-Terminal-HOWTO. Ele lista detalhes =
+sobre=20
+  m=FAltiplas placas seriais contendo informa=E7=F5es t=E9cnicas =
+detalhadas sobre a=20
+  pr=F3pria porta serial em mais detalhes do que os encontrados nos =
+HOWTO's acima=20
+  e deve ser o suficiente para corre=E7=E3o de problemas quando o =
+problema =E9 a=20
+  pr=F3pria porta serial. Se estiver trabalhando com um Modem, PPP =
+(usado para=20
+  acesso a Internet atrav=E9s de uma Linha telef=F4nica), ou um Terminal =
+baseado em=20
+  modo texto, seus respectivos HOWTO's devem ser primeiramente =
+consultados.=20
+</DD></DL>
+<DL>
+  <DT>Serial-Programming-HOWTO=20
+  <DD>Explica como programar comunica=E7=F5es com dispositivos atrav=E9s =
+de uma porta=20
+  serial em um computador com o <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>UPS-HOWTO=20
+  <DD>Este documento te ajudar=E1 a conectar um uninterruptable power =
+supply (No=20
+  Break) em seu computador <CODE>GNU/Linux</CODE>... se tiver a sorte de =
+possuir=20
+  um... </DD></DL>
+<DL>
+  <DT>Wacom-Tablet-HOWTO=20
+  <DD>Instala=E7=E3o do (n=E3o somente) Wacom graphic tablets sob o=20
+  <CODE>GNU/Linux</CODE> e / ou xfree86. </DD></DL>
+<DL>
+  <DT>Wearable-HOWTO=20
+  <DD>Computa=E7=E3o m=F3vel com <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>Winmodems-and-Linux-HOWTO=20
+  <DD>Este documento cont=E9m detalhes sobre a configura=E7=E3o de =
+Winmodems no=20
+  <CODE>GNU/Linux</CODE>. </DD></DL>
+<HR>
+<A name=3Ds31.8.1.6></A>
+<H4>31.8.1.6 Software</H4>
+<DL>
+  <DT>AI-Alife-HOWTO=20
+  <DD>Este howto cont=E9m informa=E7=F5es prim=E1rias sobre, e links =
+para, v=E1rias=20
+  bibliotecas relacionadas com o AI, aplicativos, etc. que funcionam na=20
+  plataforma GNU/Linux. Todos eles (pelo menos) livres para uso pessoal. =
+
+</DD></DL>
+<DL>
+  <DT>Apache-Overview-HOWTO=20
+  <DD>Oferece uma vis=E3o do servidor Web Apache e projetos =
+relacionados. </DD></DL>
+<DL>
+  <DT>Commercial-HOWTO=20
+  <DD>Este documento cont=E9m uma listagem de programas comerciais e =
+aplica=E7=F5es=20
+  que s=E3o oferecidas para o <CODE>GNU/Linux</CODE> </DD></DL>
+<DL>
+  <DT>Glibc2-HOWTO=20
+  <DD>Este documento cobre a instala=E7=E3o e uso da Biblioteca GNU C =
+vers=E3o 2 nos=20
+  sistemas GNU/Linux. </DD></DL>
+<DL>
+  <DT>RPM-HOWTO=20
+  <DD>Explica como utilizar o sistema de gerenciamento de pacotes RPM. =
+</DD></DL>
+<DL>
+  <DT>Program-Library-HOWTO=20
+  <DD>Este documento para programadores discute como criar e usar =
+bibliotecas no=20
+  <CODE>GNU/Linux</CODE>. Estas incluem bibliotecas est=E1ticas, =
+bibliotecas=20
+  compartilhadas e bibliotecas carregadas dinamicamente. </DD></DL>
+<DL>
+  <DT>Secure-Programs-HOWTO=20
+  <DD>Este documento oferece um conjunto de designs e regras de =
+implementa=E7=E3o=20
+  para escrever programas seguros para os sistemas Unix e Linux. Tais =
+programas=20
+  incluem programas aplicativos usados para visualizadores de dados =
+remotos,=20
+  scripts CGI, servidores de rede, programas setuid/setgid. Guias =
+espec=EDficos=20
+  sobre C, C++, Java, Perl, Python, e Ada95 est=E3o inclu=EDdos. =
+</DD></DL>
+<DL>
+  <DT>Software-RAID-0.4x-HOWTO=20
+  <DD>RAID significa "Redundant Array of Inexpensive Disks", e significa =
+ser um=20
+  m=E9todo de criar um r=E1pido e confi=E1vel subsistema de unidades de =
+disco ao inv=E9s=20
+  de discos individuais. O RAID pode se prevenir de falhas de disco e =
+pode=20
+  tamb=E9m aumentar a performance obtida atrav=E9s de uma simples =
+unidade de disco.=20
+  Este documento =E9 um tutorial/HOWTO/FAQ para usu=E1rios do kernel do =
+Linux com=20
+  extens=F5es MD, as ferramentas associadas, e seu uso. A extens=E3o MD =
+implementa o=20
+  RAID-0 (striping), RAID-1 (mirroring), RAID-4 e RAID-5 no software. O =
+que=20
+  significa que, com MD, nenhum hardware especial ou controladoras de =
+disco s=E3o=20
+  requeridas para obter muitos dos benef=EDcios do RAID. </DD></DL>
+<DL>
+  <DT>Software-RAID-HOWTO=20
+  <DD>Este documento descreve como usar o software RAID sob o GNU/Linux. =
+Ele=20
+  endere=E7a uma vers=E3o espec=EDfica da camada de software do RAID, =
+nomeada camada=20
+  RAID 0.90, feita por Ingo Molnar e outros. Esta =E9 a camada RAID que =
+ser=E1=20
+  padronizada no Linux-2.4, e tamb=E9m =E9 a vers=E3o usada por kernels =
+2.2 do=20
+  <CODE>GNU/Linux</CODE> vendidos por alguns vendedores. O suporte RAID =
+0.90=20
+  est=E1 dispon=EDvel com patches para os kernels do 2.0 e 2.2 do=20
+  <CODE>GNU/Linux</CODE> e tamb=E9m =E9 considerado ser mais est=E1vel =
+que o antigo=20
+  suporte RAID j=E1 inclu=EDdo nestes kernels. </DD></DL>
+<DL>
+  <DT>Software-Release-Practice-HOWTO=20
+  <DD>Este documento descreve boas pr=E1ticas de lan=E7amento para o =
+projeto de=20
+  c=F3digo-aberto <CODE>GNU/Linux</CODE>. Seguindo estas pr=E1ticas, =
+ser=E1 f=E1cil e=20
+  poss=EDvel para os usu=E1rios construir seu c=F3digo e usa-lo, e para =
+outros=20
+  desenvolvedores entender seu c=F3digo e cooperar com voc=EA para =
+melhora-lo. Este=20
+  documento deve ser lido por desenvolvedores iniciantes. =
+Desenvolvedores=20
+  experientes devem revisa-lo quando desejarem lan=E7ar um novo projeto. =
+Este=20
+  documento =E9 revisado periodicamente para refletir a evolu=E7=E3o das =
+boas pr=E1ticas=20
+  de lan=E7amento. </DD></DL>
+<HR>
+<A name=3Ds31.8.1.7></A>
+<H4>31.8.1.7 Plataformas n=E3o Intel (x86)</H4>
+<DL>
+  <DT>Alpha-HOWTO=20
+  <DD>Este documento =E9 uma vis=E3o r=E1pida das CPUs Alpha, chipsets e =
+sistemas=20
+  existentes. </DD></DL>
+<DL>
+  <DT>MILO-HOWTO=20
+  <DD>Este documento descreve o MIniLOader, um programa para sistemas =
+baseados=20
+  na arquitetura Alpha que pode ser usado para inicializar a m=E1quina e =
+carregar=20
+  o <CODE>GNU/Linux</CODE>. O Linux Miniloader do Alpha (seu nome =
+completo) =E9=20
+  tamb=E9m conhecido como MILO. </DD></DL>
+<DL>
+  <DT>MIPS-HOWTO=20
+  <DD>Esta FAQ descreve o porte do MIPS para o sistema operacional =
+Linux,=20
+  problemas comuns e suas solu=E7=F5es, disponibilidade e mais. Ele =
+tamb=E9m tenta ser=20
+  um pouco =FAtil a outras pessoas que desejam ler esta FAQ em uma =
+tentativa de=20
+  encontrar informa=E7=F5es que atualmente seriam cobertas em outro =
+lugar. </DD></DL>
+<DL>
+  <DT>SRM-HOWTO=20
+  <DD>Este documento descreve como inicializar no =
+<CODE>Linux/Alpha</CODE>=20
+  usando o console SRM, que =E9 a firmware de console tamb=E9m usada =
+para=20
+  inicializar o Unix Compaq Tru64 (tamb=E9m conhecido com Digital Unix e =
+OSF/1) e=20
+  OpenVMS. </DD></DL>
+<HR>
+<A name=3Ds31.8.1.8></A>
+<H4>31.8.1.8 Programa=E7=E3o / Compiladores / Banco de Dados</H4>
+<DL>
+  <DT>Assembly-HOWTO=20
+  <DD>Este documento descreve como programar em linguagem Assembler =
+usando=20
+  ferramentas de programa=E7=E3o livres, focalizando-se no =
+desenvolvimento para ou=20
+  do Sistema Operacional <CODE>GNU/Linux</CODE>, mais na plataforma =
+IA-32=20
+  (i386). </DD></DL>
+<DL>
+  <DT>Bash-Prog-Intro-HOWTO=20
+  <DD>Este documento tem a inten=E7=E3o de te ajudar a iniciar na =
+programa=E7=E3o de=20
+  shell scripts. Ele n=E3o tem a inten=E7=E3o de ser uma documento =
+avan=E7ado. </DD></DL>
+<DL>
+  <DT>C++Programming-HOWTO=20
+  <DD>Discute os m=E9todos para evitar problemas de mem=F3ria no C++ e =
+tamb=E9m te=20
+  ajudar=E1 a programar corretamente na linguagem C++. As =
+informa=E7=F5es contidas=20
+  neste documento se aplicam a todos os sistemas operacionais que s=E3o=20
+  <CODE>GNU/Linux</CODE>, <CODE>DOS</CODE>, <CODE>BeOS</CODE>, =
+<CODE>Apple=20
+  Macintosh OS</CODE>, <CODE>Windows 95/98/NT/2000</CODE>, =
+<CODE>OS/2</CODE>,=20
+  <CODE>Sistemas IBM</CODE> (MVS, AS/400, etc...), <CODE>VAX VMS</CODE>, =
+
+  <CODE>Novell Netware</CODE>, todos os tipos de Unix como o Solaris, =
+HPUX, AIX,=20
+  SCO, Sinix, BSD, etc., e todos os outros sistemas operacionais que =
+suportam o=20
+  compilador "C++" (quase todos os sistemas operacionais deste =
+planeta!).=20
+</DD></DL>
+<DL>
+  <DT>C-C++Beautifier-HOWTO=20
+  <DD>Este documento ajudar=E1 a formatar (de forma organizada) os =
+programas C/C++=20
+  assim ser=E1 mais leg=EDvel e seguir=E1 os padr=F5es de =
+codifica=E7=E3o C/C++. As=20
+  informa=E7=F5es deste documento se aplica a quase todos os sistemas =
+operacionais=20
+  do planeta! </DD></DL>
+<DL>
+  <DT>DB2-HOWTO=20
+  <DD>Este documento explica como instalar o DB2 Universal Database =
+vers=E3o 7.1=20
+  para <CODE>GNU/Linux</CODE> nas seguintes distribui=E7=F5es baseadas =
+no Intel x86:=20
+  Caldera Caldera OpenLinux 2.4, Debian, Red Hat Linux 6.2, SuSE Linux =
+6.2 e=20
+  6.3, e TurboLinux 6.0. Ap=F3s instalar o DB2, voc=EA pode usar um =
+banco de dados=20
+  de exemplo, conectar-se ao servidor DB2 de uma m=E1quina remota e =
+administrar o=20
+  DB2 usando o DB2 Control Center. </DD></DL>
+<DL>
+  <DT>Enterprise-Java-for-Linux-HOWTO=20
+  <DD>Como configurar um ambiente Java Enterprise no =
+<CODE>GNU/Linux</CODE>=20
+  incluindo o Java Development Kit, um servidor Web, suportando Java =
+servlets,=20
+  acessando um banco de dados via JDBC e suportado Enterprise Java Beans =
+(EJBs).=20
+  </DD></DL>
+<DL>
+  <DT>GCC-HOWTO=20
+  <DD>Este documento explica como configurar o compilador GNU C e =
+bibliotecas de=20
+  desenvolvimento sob o <CODE>GNU/Linux</CODE> e te d=E1 uma vis=E3o de =
+compila=E7=E3o,=20
+  linkagem, execu=E7=E3o e programas de depura=E7=E3o. </DD></DL>
+<DL>
+  <DT>IngresII-HOWTO=20
+  <DD>Este documento cobre a instala=E7=E3o do Ingres II Relational =
+Database=20
+  management System no <CODE>GNU/Linux</CODE>. Ele cobre a =
+configura=E7=E3o de ambos=20
+  o Kit de desenvolvimento e vers=E3o completa do Ingres. Algumas =
+se=E7=F5es explicam=20
+  como iniciar o uso do Ingres. </DD></DL>
+<DL>
+  <DT>Oracle-7-HOWTO=20
+  <DD>Um guia para instalar e configurar o Servidor do Banco de Dados =
+Oracle em=20
+  um sistema <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>Oracle-8-HOWTO=20
+  <DD>Com este HOWTO, =E9 um pouco de sorte, voc=EA ser=E1 capaz de ter =
+o Oracle 8i=20
+  Enterprise Edition para GNU/Linux instalado, criar um banco de dados e =
+
+  conectar a ele atrav=E9s de um computador remoto. O foco principal =
+deste guia =E9=20
+  o RedHat 6.0, no entanto ele pode funcionar em outros =
+distribui=E7=F5es recentes=20
+  ap=F3s algumas modifica=E7=F5es. </DD></DL>
+<DL>
+  <DT>PHP-HOWTO=20
+  <DD>Ensina como desenvolver programas em PHP e tamb=E9m migrar todas =
+as=20
+  aplica=E7=F5es GUI do Windows 95 para o poderoso conjunto PHP + HTML + =
+DHTML + XML=20
+  + Applets Java + Javascript. As explica=E7=F5es descritas neste =
+documento se=20
+  aplicam a todo os sistemas operacionais para onde o PHP est=E1 portado =
+que s=E3o:=20
+  Linux, Windows 95/98/NT/2000, OS/2, todos os tipos de Unix como o =
+Solaris,=20
+  HPUX, AIX, SCO, Sinix, BSD, etc... </DD></DL>
+<DL>
+  <DT>PostgreSQL-HOWTO=20
+  <DD>Este documento =E9 um "guia pr=E1tico" para rapidamente colocar =
+para funcionar=20
+  um banco de dados SQL e suas ferramentas de comunica=E7=E3o em um =
+sistema Unix.=20
+  Ele tamb=E9m discute a linguagem padr=E3o Internacional ANSI/ISO SQL e =
+revisa os=20
+  m=E9ritos/vantagens do SQL Database engine desenvolvido pela Internet =
+ao redor=20
+  do mundo em um ambiente de desenvolvimento aberto. Tamb=E9m como =
+configurar a=20
+  pr=F3xima gera=E7=E3o do banco de dados relacional a objetos SQL =
+"PostgreSQL" em um=20
+  sistema Unix que pode ser usado como um Servidor de Aplicativos de =
+banco de=20
+  dados ou como um Servidor de banco de dados Web. </DD></DL>
+<DL>
+  <DT>TclTk-HOWTO=20
+  <DD>Este documento descreve o uso do Tcl no <CODE>GNU/Linux</CODE>, =
+uma=20
+  linguagem de scripting. Ela =E9 uma linguagem interpretada f=E1cil de =
+aprender que=20
+  usa pouca digita=E7=E3o para obter um alto n=EDvel de programa=E7=E3o =
+e desenvolvimento=20
+  r=E1pido de aplicativos (RAD). O Tk toolkit =E9 um ambiente de =
+programa=E7=E3o para=20
+  criar interfaces gr=E1ficas do usu=E1rio (GUI) sob o Sistema X Window. =
+Suas=20
+  capacidades incluem a possibilidade de estender e incluir em outros=20
+  aplicativos, desenvolvimento r=E1pido e f=E1cil de usar. Juntos o Tcl =
+e Tk=20
+  oferecem muitos benef=EDcios para o desenvolvedor e usu=E1rio. As =
+interfaces=20
+  baseadas no Tk tendem a ser mais personaliz=E1veis e din=E2micas que =
+aquelas=20
+  feitas de toolkits C ou C++. O Tk implementa o Visual e Uso do Motif. =
+Um=20
+  grande n=FAmero de aplica=E7=F5es X interessantes s=E3o implementadas =
+completamente em=20
+  Tk, com nenhum comandos espec=EDficos de aplicativo. </DD></DL>
+<HR>
+<A name=3Ds31.8.1.9></A>
+<H4>31.8.1.9 Computa=E7=E3o Paralela / Clusters</H4>
+<DL>
+  <DT>Beowulf-HOWTO=20
+  <DD>Este documento =E9 uma introdu=E7=E3o a arquitetura de =
+Supercomputador Beowulf e=20
+  oferece informa=E7=F5es sobre programa=E7=E3o paralela, incluindo =
+links para=20
+  documentos mais espec=EDficos e p=E1ginas internet. </DD></DL>
+<DL>
+  <DT>Cluster-HOWTO=20
+  <DD>Como configurar clusters de computador GNU/Linux de alta =
+performance.=20
+</DD></DL>
+<DL>
+  <DT>Parallel-Processing-HOWTO=20
+  <DD>O Processamento Paralelo =E9 uma forma de acelerar a execu=E7=E3o =
+de um programa=20
+  dividindo o programa em m=FAltiplos fragmentos que podem ser =
+executados=20
+  simultaneamente, cada um em seu pr=F3prio processador. Um programa =
+sendo=20
+  executado em N processadores pode ser executado N vezes mais r=E1pido =
+que seria=20
+  usando somente um processador. Este documento discute os quatro =
+m=E9todos para=20
+  realizar processamento paralelo que est=E3o dispon=EDveis aos =
+usu=E1rios do sistema=20
+  operacional GNU/Linux: Sistemas Linux SMP, Sistemas Linux em Clusters =
+de rede,=20
+  execu=E7=E3o paralela usando as instru=E7=F5es multim=EDdia do =
+processador (i.e. MMX) e=20
+  processadores (paralelos) conectados no sistema =
+<CODE>GNU/Linux</CODE>.=20
+</DD></DL>
+<DL>
+  <DT>SMP-HOWTO=20
+  <DD>Este HOWTO revisa principais assuntos (e eu espero que =
+solu=E7=F5es)=20
+  relacionadas com as configura=E7=F5es SMP sob o =
+<CODE>GNU/Linux</CODE>. </DD></DL>
+<HR>
+<A name=3Ds31.8.1.10></A>
+<H4>31.8.1.10 Configura=E7=E3o de Teclado / V=EDdeo / Console</H4>
+<DL>
+  <DT>Font-HOWTO=20
+  <DD>Como usar e configurar corretamente tipos de fontes no ambiente =
+GNU/Linux.=20
+  </DD></DL>
+<DL>
+  <DT>Framebuffer-HOWTO=20
+  <DD>Descreve como utilizar dispositivos framebuffer no =
+<CODE>GNU/Linux</CODE>=20
+  com uma variedade de plataformas. Isto tamb=E9m inclui como ajustar =
+telas=20
+  multi-headed. </DD></DL>
+<DL>
+  <DT>Keyboard-and-Console-HOWTO=20
+  <DD>Este documento cont=E9m algumas informa=E7=F5es sobre o teclado e =
+console no=20
+  <CODE>GNU/Linux</CODE>, e o uso de caracteres n=E3o-ASCII. Ele =
+descreve o=20
+  <CODE>GNU/Linux</CODE> 2.0. </DD></DL>
+<DL>
+  <DT>Text-Terminal-HOWTO=20
+  <DD>Explica o que s=E3o os terminais texto, como funcionam, como =
+instalar e=20
+  configura-los e oferece muitos detalhes de como conserta-los. Se n=E3o =
+tiver um=20
+  manual do terminal, poder=E1 ser de grande ajuda. Enquanto =E9 escrito =
+para=20
+  terminais reais no sistema <CODE>GNU/Linux</CODE> alguns deles =
+tamb=E9m s=E3o=20
+  aplic=E1veis a emula=E7=E3o de terminal e pode ser =FAtil para =
+sistemas n=E3o Linux.=20
+  </DD></DL>
+<DL>
+  <DT>Unicode-HOWTO=20
+  <DD>Explica como alterar seu sistema <CODE>GNU/Linux</CODE> para =
+utilizar a=20
+  codifica=E7=E3o de texto baseada no UTF-8. - </DD></DL>
+<HR>
+<A name=3Ds31.8.1.11></A>
+<H4>31.8.1.11 Ambiente Gr=E1fico</H4>
+<DL>
+  <DT>MGR-HOWTO=20
+  <DD>O MGR (ManaGeR) =E9 um sistema de janelas gr=E1fico. O servidor =
+MGR oferece um=20
+  gerenciador de janelas embutido e emula=E7=E3o de terminal gr=E1fico =
+em janela em=20
+  monitor colorido ou monocrom=E1tico. O MGR =E9 controlado por menus =
+pop-up, por=20
+  intera=E7=E3o do teclado e por seq=FCencias de escapa escrita em =
+pseudo-terminais=20
+  pelo software cliente. </DD></DL>
+<DL>
+  <DT>XFree86-HOWTO=20
+  <DD>Este documento descreve como obter, instalar e configurar a =
+vers=E3o 4.0 do=20
+  XFree86 do X Window System (X11R6) para sistemas =
+<CODE>GNU/Linux</CODE>. Ele =E9=20
+  um guia passo a passo para configurar o XFree86 em seu sistema. =
+</DD></DL>
+<DL>
+  <DT>XFree86-Touch-Screen-HOWTO=20
+  <DD>Descreve como configurar um dispositivo de entrada touch screen =
+sob o=20
+  XFree86. </DD></DL>
+<DL>
+  <DT>XFree86-Video-Timings-HOWTO=20
+  <DD>Como configurar os modos de v=EDdeo de sua placa/monitor sob o =
+XFree86.=20
+</DD></DL>
+<DL>
+  <DT>XWindow-User-HOWTO=20
+  <DD>Este documento cont=E9m detalhes sobre a configura=E7=E3o do =
+ambiente X Windows=20
+  para o usu=E1rio <CODE>GNU/Linux</CODE>, tamb=E9m como o administrador =
+de sistemas=20
+  iniciantes tentando aprender os mais diversos tipos de op=E7=F5es de =
+configura=E7=E3o=20
+  e detalhes do X Window. =C9 assumido um conhecimento b=E1sico de =
+configura=E7=F5es de=20
+  software e instala=E7=E3o. </DD></DL>
+<DL>
+  <DT>Xinerama-HOWTO=20
+  <DD>Este documento descreve como configurar o XFree86 vers=E3o 4.0 com =
+monitores=20
+  multim=EDdia com as extens=F5es Xinerama. </DD></DL>
+<HR>
+<A name=3Ds31.8.1.12></A>
+<H4>31.8.1.12 Suporte ao Sistema / Grupos de Usu=E1rios / Listas de =
+Discuss=E3o</H4>
+<DL>
+  <DT>Consultants-HOWTO=20
+  <DD>Cont=E9m uma lista de empresas e consultores oferecendo suporte =
+comercial=20
+  relacionado ao sistema <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>Online-Troubleshooting-HOWTO=20
+  <DD>Este documento direciona usu=E1rios <CODE>GNU/Linux</CODE> a =
+lugares=20
+  dispon=EDveis na Internet que oferecem acesso a uma vasta quantidade =
+de=20
+  documentos =FAteis relacionados ao sistema em situa=E7=F5es de =
+problema. </DD></DL>
+<DL>
+  <DT>User-Group-HOWTO=20
+  <DD>Este documento descreve como fundar, manter e organizar um grupo =
+de=20
+  usu=E1rios <CODE>GNU/Linux</CODE>. </DD></DL>
+<HR>
+<A name=3Ds31.8.1.13></A>
+<H4>31.8.1.13 Migra=E7=E3o / Conviv=EAncia com Outras Plataformas</H4>
+<DL>
+  <DT>DOS-Win-to-Linux-HOWTO=20
+  <DD>Este documento tem a inten=E7=E3o de ajudar o leitor traduzir seu =
+conhecimento=20
+  do DOS e Windows para o ambiente <CODE>GNU/Linux</CODE>, tamb=E9m como =
+oferecer=20
+  dicas de manipula=E7=E3o de arquivos e utiliza=E7=E3o de recursos =
+entre os dois=20
+  sistemas. </DD></DL>
+<DL>
+  <DT>VMS-to-Linux-HOWTO=20
+  <DD>Este documento =E9 escrito para todos aqueles que tem usado o VMS =
+e agora=20
+  precisam migrar para o <CODE>GNU/Linux</CODE> um clone gratuito do=20
+  <CODE>UNIX</CODE>. A transi=E7=E3o =E9 feita (felizmente) atrav=E9s de =
+uma compara=E7=E3o=20
+  passo a passo de comandos e ferramentas existentes. </DD></DL>
+<HR>
+<A name=3Ds31.8.1.14></A>
+<H4>31.8.1.14 Tarefas Espec=EDficas</H4>
+<DL>
+  <DT>Astronomy-HOWTO=20
+  <DD>Este documento compartilha dicas e recursos para utilizar =
+solu=E7=F5es do=20
+  <CODE>GNU/Linux</CODE> no mundo da Astronomia. </DD></DL>
+<DL>
+  <DT>CD-Writing-HOWTO=20
+  <DD>Este documento explica como gravar CD-ROMs sob o =
+<CODE>GNU/Linux</CODE>.=20
+  </DD></DL>
+<DL>
+  <DT>CDROM-HOWTO=20
+  <DD>Este documento descreve como instalar, configurar e usar uma =
+unidade de=20
+  CD-ROM sob o <CODE>GNU/Linux</CODE>. Ele lista hardwares suportados e =
+responde=20
+  a um n=FAmero de quest=F5es freq=FC=EAntes. </DD></DL>
+<DL>
+  <DT>CVS-RCS-HOWTO=20
+  <DD>Este documento =E9 um <EM>guia pr=E1tico</EM> para rapidamente =
+configurar o=20
+  sistema de controle do c=F3digo fonte CVS/RCS. Este documento tamb=E9m =
+possui=20
+  shell scripts personalizados que s=E3o trocados no topo do CVS. Estes =
+scripts=20
+  oferecem uma interface f=E1cil entre o usu=E1rio e o CVS. </DD></DL>
+<DL>
+  <DT>DVD-Playing-HOWTO=20
+  <DD>Uma explica=E7=E3o f=E1cil de seguir de como obter seu DVD =
+funcionando no=20
+  <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>Diskless-HOWTO=20
+  <DD>Este documento descreve como configurar uma m=E1quina sem disco =
+r=EDgido no=20
+  <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>Java-Decompiler-HOWTO=20
+  <DD>Este documento te ajudar=E1 a descompilar programas class feitos =
+em Java.=20
+  Este documento cont=E9m uma lista de descompiladores que podem =
+reverter o=20
+  engineer os arquivos Java class e gerar arquivos de c=F3digo fonte =
+Java. Isto =E9=20
+  muito =FAtil se voc=EA n=E3o tem o arquivo com o c=F3digo fonte Java. =
+</DD></DL>
+<DL>
+  <DT>JavaStation-HOWTO=20
+  <DD>Este HOWTO descreve como ativar o SO GNU/Linux no NC Sun Java =
+Station.=20
+  </DD></DL>
+<DL>
+  <DT>KickStart-HOWTO=20
+  <DD>Este documento descreve como usar o sistema Linux RedHat para =
+instalar=20
+  rapidamente o sistema em um grande n=FAmero de m=E1quinas =
+<CODE>GNU/Linux</CODE>.=20
+  </DD></DL>
+<DL>
+  <DT>Kiosk-HOWTO=20
+  <DD>Este documento oferece um guia para ajustar um kiosk baseado em =
+WWW usando=20
+  o <CODE>GNU/Linux</CODE>, X11R6, FVWM2, Netscape Navigator 4.X e um =
+trackball=20
+  customizado. </DD></DL>
+<DL>
+  <DT>Linux-From-Scratch-HOWTO=20
+  <DD>Este documento descreve o processo de criar seu pr=F3prio sistema=20
+  <CODE>GNU/Linux</CODE> do nada atrav=E9s de uma distribui=E7=E3o j=E1 =
+instalada,=20
+  usando nada mais que o c=F3digo fonte dos softwares que precisamos. =
+</DD></DL>
+<DL>
+  <DT>MP3-HOWTO=20
+  <DD>Este documento descreve o hardware, software e processos =
+necess=E1rios, para=20
+  encodificar, tocar, mixar e decodificar arquivos de som MP3 sob o=20
+  <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>Majordomo-MajorCool-HOWTO=20
+  <DD>Este documento tem a inten=E7=E3o de guiar o usu=E1rio atrav=E9s =
+do software de=20
+  gerenciamento de listas de discuss=E3o Majordomo e MajorCool. O =
+MajorCool =E9 um=20
+  utilit=E1rio para gerenciar listas Majordomo via script CGI; muitas =
+pessoas que=20
+  n=E3o est=E3o familiar com o Majordomo baseado em modo texto podem =
+preferir uma=20
+  interface mais amig=E1vel via web do MajorCool. </DD></DL>
+<DL>
+  <DT>Mutt-GnuPG-PGP-HOWTO=20
+  <DD>Este documento explica como configurar rapidamente o Mutt-i, PGP e =
+GnuPG=20
+  em suas diferentes vers=F5es (2.6.x, 5.x e GnuPG), nada dos problemas =
+que podem=20
+  ocorrer enquanto envia e-mails criptografados e assinados para ser =
+lidos por=20
+  clientes de e-mail que n=E3o s=E3o compat=EDveis com PGP/MIME como =
+definido na RFC=20
+  2015 e em outros sistemas operacionais. </DD></DL>
+<DL>
+  <DT>NC-HOWTO=20
+  <DD>Este documento tenta descrever como colocar uma Netstation da IBM =
+em sua=20
+  rede local usando um computador <CODE>GNU/Linux</CODE> como servidor. =
+</DD></DL>
+<DL>
+  <DT>NCD-HOWTO=20
+  <DD>Este documento tenta descreve como colocar uma ThinSTAR NCD em sua =
+rede=20
+  local usando um computador <CODE>GNU/Linux</CODE> como servidor. =
+</DD></DL>
+<DL>
+  <DT>PalmOS-HOWTO=20
+  <DD>Este documento explica como usar seu dispositivo Palm OS com um =
+sistema=20
+  <CODE>GNU/Linux</CODE>. Este HOWTO n=E3o aborda somente o sistema =
+operacional=20
+  <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>Printing-HOWTO=20
+  <DD>Este =E9 o Printing HOWTO do <CODE>GNU/Linux</CODE>, uma =
+cole=E7=E3o de=20
+  informa=E7=F5es sobre como gerar, ver, imprimir e enviar fax de tudo =
+sob o=20
+  <CODE>GNU/Linux</CODE> (e outros UNIXes em geral). </DD></DL>
+<DL>
+  <DT>Printing-Usage-HOWTO=20
+  <DD>Descreve como usar o sistema de spooling oferecido pelo sistema=20
+  operacional <CODE>GNU/Linux</CODE>. Este HOWTO =E9 um documento =
+suplementar ao=20
+  Linux Printing Setup, que discute a instala=E7=E3o e configura=E7=E3o =
+do sistema de=20
+  impress=E3o do <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>Psion-HOWTO=20
+  <DD>Este documento descreve como usar Palmtops Psion com o=20
+  <CODE>GNU/Linux</CODE>, mas n=E3o cobre a execu=E7=E3o do Linux no =
+Palmtop Psion.=20
+  Veja o projeto <EM>Linux 7k</EM> em <CODE><A=20
+  href=3D"http://www.calcaria.net/">http://www.calcaria.net/</A></CODE>. =
+</DD></DL>
+<DL>
+  <DT>Quake-HOWTO=20
+  <DD>Este documento explica como instalar, executar e corrigir =
+problemas no=20
+  Quake, QuakeWorld e Quake II em um sistema <CODE>GNU/Linux</CODE> =
+Intel.=20
+</DD></DL>
+<DL>
+  <DT>RedHat-CD-HOWTO=20
+  <DD>Descreve como fazer seus pr=F3prios CDs da distribui=E7=E3o Red =
+Hat, a estrutura=20
+  da distribui=E7=E3o e tamb=E9m como incluir RPMs atualizados na =
+distribui=E7=E3o.=20
+</DD></DL>
+<DL>
+  <DT>Sound-HOWTO=20
+  <DD>Este documento descreve o suporte ao som no =
+<CODE>GNU/Linux</CODE>,=20
+  arquiteturas de som suportadas e como incluir o suporte ao som no =
+kernel. Este=20
+  documento tamb=E9m responde algumas quest=F5es freq=FC=EAntes sobre o =
+suporte ao som=20
+  no <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>Sound-Playing-HOWTO=20
+  <DD>Este documento lista aplicativos que podem tocar v=E1rios formatos =
+de sons=20
+  no <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>VME-HOWTO=20
+  <DD>Este documento mostra como executar o <CODE>GNU/Linux</CODE> em =
+seu=20
+  Pentium VMEbus e outros barramentos PCI baseados no design de =
+processador=20
+  VMEbus. </DD></DL>
+<HR>
+<A name=3Ds31.8.1.15></A>
+<H4>31.8.1.15 Rede / Administra=E7=E3o / Firewall / Proxy / =
+Seguran=E7a</H4>
+<DL>
+  <DT>AX25-HOWTO=20
+  <DD>Talvez o <CODE>GNU/Linux</CODE> seja o =FAnico sistema operacional =
+no mundo=20
+  que possui suporte nativo e padr=E3o ao protocolo de pacotes de =
+r=E1dio AX.25=20
+  usado por Operadores de R=E1dio Amador ao redor do mundo. Este =
+documento explica=20
+  como instalar e configurar este suporte. </DD></DL>
+<DL>
+  <DT>Adv-Routing-HOWTO=20
+  <DD>Roteamento avan=E7ado. Explica=E7=F5es sobre o =
+<CODE>iproute2</CODE>,=20
+  <CODE>traffic shaper</CODE> e <CODE>netfilter</CODE>. </DD></DL>
+<DL>
+  <DT>Bandwidth-Limiting-HOWTO=20
+  <DD>Descreve como configurar o servidor Linux para limitar banda. =
+</DD></DL>
+<DL>
+  <DT>BRIDGE-STP-HOWTO=20
+  <DD>Este documento explica o que =E9 uma ponte entre redes e como =
+criar uma=20
+  utilizando o Spanning Tree Protocol (STP). Este =E9 um m=E9todo de =
+manter os=20
+  dispositivos Ethernet conectados e funcionando em m=FAltiplos =
+caminhos. Os=20
+  participantes negociam a troca atrav=E9s do caminho mais curto =
+atrav=E9s do STP.=20
+  </DD></DL>
+<DL>
+  <DT>Cable-Modem=20
+  <DD>Fornece instru=E7=F5es de como usar o Linux para se conectar a um =
+provedor de=20
+  Cable modem. </DD></DL>
+<DL>
+  <DT>Chroot-BIND8-HOWTO=20
+  <DD>Este documento descreve a instala=E7=E3o do servidor de nomes BIND =
+8 para ser=20
+  executado em uma jaula chroot e como um usu=E1rio n=E3o-root, para =
+oferecer=20
+  seguran=E7a adicional e minimizar efeitos potenciais que podem =
+comprometer a=20
+  seguran=E7a. </DD></DL>
+<DL>
+  <DT>Cyrus-IMAP=20
+  <DD>Um guia compreensivo para a instala=E7=E3o, configura=E7=E3o e =
+execu=E7=E3o do=20
+  <CODE>Cyrus Imap</CODE> e <CODE>Cyrus SASL</CODE>. </DD></DL>
+<DL>
+  <DT>DNS-HOWTO=20
+  <DD>Como configurar seu servidor DNS em pouco tempo. </DD></DL>
+<DL>
+  <DT>Diald-HOWTO=20
+  <DD>Este documento mostra alguns cen=E1rios t=EDpicos para iniciar o =
+uso do=20
+  <CODE>Diald</CODE> facilmente. Este cen=E1rios incluem uma conex=E3o =
+de um=20
+  computador local a um provedor usando o PPP atrav=E9s de um modem sem =
+usar o=20
+  pon/poff ou ppp-pon/ppp-off para um servidor proxy/firewall com =
+diferentes=20
+  conex=F5es Internet atrav=E9s de v=E1rios provedores. </DD></DL>
+<DL>
+  <DT>Diskless-root-NFS-HOWTO=20
+  <DD>Explica como configurar um servidor e clientes para opera=E7=E3o =
+sem disco=20
+  atrav=E9s de uma rede. </DD></DL>
+<DL>
+  <DT>DSL-HOWTO=20
+  <DD>Este documento examina a fam=EDlia DSL de servi=E7os Internet de =
+alta=20
+  velocidade. Descreve como instalar, configurar depurar. </DD></DL>
+<DL>
+  <DT>Ethernet-HOWTO=20
+  <DD>Este documento =E9 uma cole=E7=E3o de dados sobre dispositivos =
+Ethernet que=20
+  podem ser usados no <CODE>GNU/Linux</CODE> e como configura-los. Note =
+que este=20
+  HOWTO est=E1 focalizado no hardware e aspectos de baixo n=EDvel de =
+controladores=20
+  das placas ethernet e n=E3o cobre assuntos de software como os =
+programas=20
+  <CODE>ifconfig</CODE> e <CODE>route</CODE> (veja o Network-HOWTO se =
+procura=20
+  por estes materiais). </DD></DL>
+<DL>
+  <DT>Firewall-HOWTO=20
+  <DD>Descreve os sistemas b=E1sicos de firewall e alguns detalhes de =
+como ajustar=20
+  firewalls proxy e de filtragem de pacotes em sistemas baseados no=20
+  <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>IP-Masquerade-HOWTO=20
+  <DD>Este documento descreve como ativar a caracter=EDstica IP =
+Masquerade no=20
+  <CODE>GNU/Linux</CODE>. O IP Masquerade =E9 uma forma do Network =
+Address=20
+  Translation ou NAT que permite que computadores conectados =
+internamente que=20
+  n=E3o tem um ou mais endere=E7os Internet registrados ter a habilidade =
+de se=20
+  comunicar com a Internet via uma =FAnica m=E1quina =
+<CODE>GNU/Linux</CODE> com um=20
+  =FAnico endere=E7o IP. </DD></DL>
+<DL>
+  <DT>IPCHAINS-HOWTO=20
+  <DD>Descreve como obter, instalar e configurar o programa avan=E7ado =
+de firewall=20
+  para o <CODE>GNU/Linux</CODE> e algumas id=E9ia de como usa-lo. =
+</DD></DL>
+<DL>
+  <DT>IPX-HOWTO=20
+  <DD>Descreve como obter, instalar e configurar as v=E1rias ferramentas =
+
+  dispon=EDveis para o sistema operacional <CODE>GNU/Linux</CODE> para =
+utilizar o=20
+  suporte do protocolo IPX no kernel do <CODE>GNU/Linux</CODE>. =
+</DD></DL>
+<DL>
+  <DT>Infrared-HOWTO=20
+  <DD>Uma introdu=E7=E3o ao <CODE>GNU/Linux</CODE> e dispositivos =
+infra-vermelho e=20
+  como usar programas oferecidos pelo projeto Linux/IrDA. </DD></DL>
+<DL>
+  <DT>ISP-Hookup-HOWTO=20
+  <DD>Descreve como usar o <CODE>GNU/Linux</CODE> para conectar a um =
+Provedor=20
+  Internet via modem dial-up via conex=E3o TCP/IP. Tamb=E9m como o =
+procedimento de=20
+  discagem inicial e estabelecimento de IP, recebimento de email e news. =
+
+</DD></DL>
+<DL>
+  <DT>ISP-Setup-RedHat-HOWTO=20
+  <DD>Descreve como configurar servi=E7os de ISP no Red Hat. Dom=EDnios, =
+virtual=20
+  hosts, pop3 e emails. </DD></DL>
+<DL>
+  <DT>Intranet-Server-HOWTO=20
+  <DD>Este documento descreve como configurar uma Intranet usando o=20
+  <CODE>GNU/Linux</CODE> como um servidor que se comunica com Unix, =
+Netware, NT=20
+  e Windows. </DD></DL>
+<DL>
+  <DT>Java-CGI-HOWTO=20
+  <DD>Este documento explica como configurar seu servidor para permitir=20
+  programas CGI escritos em Java e como usar Java para escrever =
+programas CGI.=20
+  </DD></DL>
+<DL>
+  <DT>LDAP-HOWTO=20
+  <DD>Informa=E7=F5es sobre a instala=E7=E3o, configura=E7=E3o, =
+execu=E7=E3o e manuten=E7=E3o de um=20
+  Servidor LDAP (Lightweight Directory Access Protocol) em uma m=E1quina =
+
+  <CODE>GNU/Linux</CODE> =E9 descrita neste documento. Existe tamb=E9m =
+detalhes=20
+  sobre como criar bancos de dados LDAP, como atualizar e apagar =
+informa=E7=F5es no=20
+  banco de dados, como implementar roaming access e como usar o Livro de =
+
+  Endere=E7os do Netscape. </DD></DL>
+<DL>
+  <DT>LDAP-Implementation-HOWTO=20
+  <DD>Descreve aspectos t=E9cnicos de armazenamento de dados de =
+aplica=E7=F5es em um=20
+  servidor LDAP. </DD></DL>
+<DL>
+  <DT>Mail-Administrator-HOWTO=20
+  <DD>Este documento descreve a configura=E7=E3o e uso do Correio =
+Eletr=F4nico=20
+  (E-mail) sob o <CODE>GNU/Linux</CODE>. =C9 primariamente mais indicado =
+para=20
+  administradores do que usu=E1rios. </DD></DL>
+<DL>
+  <DT>Mail-User-HOWTO=20
+  <DD>Este documento =E9 uma introdu=E7=E3o ao mundo do Correio =
+Eletr=F4nico sob o=20
+  <CODE>GNU/Linux</CODE> </DD></DL>
+<DL>
+  <DT>Masquerading-Simple-HOWTO=20
+  <DD>Descreve de forma pr=E1tica como conectar diversas m=E1quinas de =
+sua rede=20
+  Interna a Internet. </DD></DL>
+<DL>
+  <DT>MindTerm-SSH-HOWTO=20
+  <DD>Este documento descreve como usar o SSH o programa MindTerm =
+baseado em=20
+  Java para criar de forma r=E1pida, segura e confi=E1vel uma VPN sobre =
+redes=20
+  inseguras. </DD></DL>
+<DL>
+  <DT>Multicast-HOWTO=20
+  <DD>Este HOWTO tenta cobrir muitos aspectos relacionados com o =
+multicast sobre=20
+  redes TCP/IP. Assim, muitas informa=E7=F5es que n=E3o s=E3o =
+espec=EDficas do sistema=20
+  Linux (apenas no caso de n=E3o usar o GNU/Linux... ainda). </DD></DL>
+<DL>
+  <DT>NFS-HOWTO=20
+  <DD>Como configurar servidores e clientes NFS&gt; </DD></DL>
+<DL>
+  <DT>NetMeeting-HOWTO=20
+  <DD>Descreve como fazer o Microsoft NetMeeting se integrar com o =
+Linux.=20
+</DD></DL>
+<DL>
+  <DT>NIS-HOWTO=20
+  <DD>Este documento descreve como configurar o <CODE>GNU/Linux</CODE> =
+como um=20
+  cliente NIS (YS) ou NIS+ e como instala-lo como um servidor NIS. =
+</DD></DL>
+<DL>
+  <DT>Network-boot-HOWTO=20
+  <DD>Descreve como configurar um servidor Linux para permitir que =
+esta=E7=F5es sem=20
+  disco r=EDgido fa=E7am boot via rede e iniciem o sistema Linux (=E9 =
+uma regrava=E7=E3o=20
+  parcial do Diskless-howto). </DD></DL>
+<DL>
+  <DT>Net-HOWTO=20
+  <DD>Este documento cobre as =E1rea de software e tecnologias de rede =
+no=20
+  <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>Networking-Overview-HOWTO=20
+  <DD>O prop=F3sito deste documento =E9 lhe oferecer uma vis=E3o das =
+capacidades de=20
+  rede do sistema operacional <CODE>GNU/Linux</CODE> e oferecer =
+ponteiros para=20
+  outros documentos e detalhes de implementa=E7=E3o. </DD></DL>
+<DL>
+  <DT>PPP-HOWTO=20
+  <DD>Este documento mostra como conectar seu PC <CODE>GNU/Linux</CODE> =
+a um=20
+  servidor PPP (Protocolo Ponto a Ponto), como usar o PPP para ligar =
+duas redes=20
+  e oferece um m=E9todo de configurar seu computador =
+<CODE>GNU/Linux</CODE> como=20
+  um servidor PPP. Este documento tamb=E9m oferece ajuda na solu=E7=E3o =
+de problemas=20
+  relacionados com o PPP. </DD></DL>
+<DL>
+  <DT>Qmail-VMailMgr-Courier-imap-HOWTO=20
+  <DD>Este documento =E9 sobre a constru=E7=E3o de um servidor de e-mail =
+que suportar=E1=20
+  hospedagem de dom=EDnios din=E2micos e oferecer=E1 os servi=E7os smtp, =
+pop3 e imap,=20
+  usando uma poderosa alternativa ao sendmail. </DD></DL>
+<DL>
+  <DT>Remote-Serial-Console-HOWTO=20
+  <DD>A porta RS232 permite que o Linux ser controlado de um terminal ou =
+modem=20
+  conectado a uma porta serial ass=EDncrona. Este documento descreve =
+como=20
+  configurar o Linux para se conectar ao console serial. </DD></DL>
+<DL>
+  <DT>Sat-HOWTO=20
+  <DD>Descreve base e refer=EAncias sober a tecnologia SAP, as =
+caracter=EDsticas de=20
+  larga banda para download, etc. </DD></DL>
+<DL>
+  <DT>Serial-Laplink-HOWTO=20
+  <DD>Descreve como criar uma conex=E3o serial entre dois computadores =
+para=20
+  compartilhamento de dados. Este permite tamb=E9m efetuar conex=F5es =
+seriais entre=20
+  outros tipos de sistemas operacionais como Windows 9X, NT. </DD></DL>
+<DL>
+  <DT>SMB-HOWTO=20
+  <DD>Este =E9 o HOWTO SMB. Ele descreve como usar o protocolo Server =
+Message=20
+  Block (SMB), tamb=E9m chamado de Session Message Block, NetBIOS ou =
+protocolo=20
+  LanManager, com o <CODE>GNU/Linux</CODE> e usando o Samba. </DD></DL>
+<DL>
+  <DT>Securing-Domain-HOWTO=20
+  <DD>Este documento descreve as coisas que provavelmente deve fazer =
+quando=20
+  desejar configurar uma rede de computadores sob seu pr=F3prio =
+dom=EDnio. Ele cobre=20
+  a configura=E7=E3o de par=E2metros de rede, servi=E7os de rede e =
+configura=E7=F5es de=20
+  seguran=E7a. </DD></DL>
+<DL>
+  <DT>Security-HOWTO=20
+  <DD>Este documento =E9 uma vis=E3o geral dos assuntos de seguran=E7a =
+que enfrente o=20
+  administrador de sistemas <CODE>GNU/Linux</CODE> Ele cobre a filosofia =
+geral=20
+  de seguran=E7a e um n=FAmero de exemplos espec=EDficos de como =
+melhorar a seguran=E7a=20
+  de seu sistema <CODE>GNU/Linux</CODE> Tamb=E9m est=E3o inclu=EDdos =
+ponteiros para=20
+  materiais relacionados com programas e seguran=E7a. </DD></DL>
+<DL>
+  <DT>Shadow-Password-HOWTO=20
+  <DD>Este documento tenta descrever como obter, instalar e configurar o =
+Linux=20
+  password Shadow Suite. Tamb=E9m discute como obter e reinstalar outros =
+softwares=20
+  e daemons de rede que requerem acesso as senhas do usu=E1rio. =
+</DD></DL>
+<DL>
+  <DT>SSL-RedHat-HOWTO=20
+  <DD>Fornece refer=EAncias sobre como o PKI e SSL funcionam juntos =
+</DD></DL>
+<DL>
+  <DT>Tango-HOWTO=20
+  <DD>Descreve a instala=E7=E3o, configura=E7=E3o e corre=E7=E3o de =
+problemas b=E1sicos do=20
+  Pervasive Software's Tango Application Server no Sun Solaris e =
+v=E1rios sabores=20
+  de <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>Thinclient-HOWTO=20
+  <DD>Como converter computadores comuns em r=E1pidos terminais usando o =
+poder de=20
+  seu computador principal, voc=EA precisar=E1 de: Um computador =
+r=E1pido para atuar=20
+  como servidor, um computador cliente (antigo e n=E3o desejado). Placas =
+de rede=20
+  compat=EDveis com o <CODE>GNU/Linux</CODE>. Uma conex=E3o entre os =
+computadores.=20
+  Como centralizar a administra=E7=E3o do sistema usando o NFS (i.e. =
+colocando todo=20
+  o sistema de arquivos de um cliente r=E1pido no servidor). </DD></DL>
+<DL>
+  <DT>UUCP-HOWTO=20
+  <DD>Este documento descreve a configura=E7=E3o do UUCP sob o=20
+  <CODE>GNU/Linux</CODE>. Voc=EA deve ler este documento se planejar =
+conectar a=20
+  sites remotos via UUCP via modem, conex=E3o direta ou via Internet.=20
+  Provavelmente n=E3o precisar=E1 ler este documento se n=E3o souber o =
+que =E9 UUCP ou=20
+  se seu computador n=E3o possuir este suporte. </DD></DL>
+<DL>
+  <DT>VMailMgr-HOWTO=20
+  <DD>Explica como configurar o suporte ao VMailMgr servi=E7os de =
+dom=EDnio virtual=20
+  pop3 em conjunto com o Qmail. </DD></DL>
+<DL>
+  <DT>VoIP-HOWTO=20
+  <DD>Ensina como configurar o sistema Linux para comunica=E7=E3o via =
+voz usando a=20
+  Internet. Descreve protocolos e m=E9todos para transmiss=E3o de voz =
+aproveitando=20
+  recursos de redes de baixa velocidade. </DD></DL>
+<DL>
+  <DT>VPN-HOWTO=20
+  <DD>Descreve como configurar uma Virtual Private Network com o=20
+  <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>VPN-Masquerade-HOWTO=20
+  <DD>Descreve como configurar um Firewall <CODE>GNU/Linux</CODE> para o =
+
+  masquerade em tr=E1fego baseado no IPsec- e PPTP Virtual Private =
+Network=20
+  Traffic, permitindo estabelecer uma conex=E3o VPN sem perder a =
+seguran=E7a e=20
+  flexibilidade de sua conex=E3o Internet com o firewall =
+<CODE>GNU/Linux</CODE> e=20
+  permitindo fazer um servidor VPN dispon=EDvel que n=E3o possui um =
+endere=E7o IP=20
+  registrado na Internet. Tamb=E9m est=E3o inclu=EDdos detalhes de como =
+configurar um=20
+  cliente e servidor VPN. </DD></DL>
+<DL>
+  <DT>Virtual-Services-HOWTO=20
+  <DD>Este documento fala sobre tudo que precisa saber para virtualizar =
+um=20
+  servi=E7o. </DD></DL>
+<DL>
+  <DT>Windows-LAN-Server-HOWTO=20
+  <DD>Ajuda na configura=E7=E3o do Linux em ambientes onde existiam =
+primariamente=20
+  m=E1quinas executando o Windows 9x. </DD></DL>
+<DL>
+  <DT>Wireless-HOWTO=20
+  <DD>Explica como como configurar uma rede sem fio em ambiente Linux,=20
+  limita=E7=F5es, requerimentos, etc. </DD></DL>
+<DL>
+  <DT>WWW-HOWTO=20
+  <DD>Explica como configurar servi=E7os WWW sob o =
+<CODE>GNU/Linux</CODE> (ambos=20
+  cliente e servidor). Ele n=E3o tenta ser um manual detalhada mas uma =
+vis=E3o e um=20
+  bom ponto de refer=EAncia. </DD></DL>
+<DL>
+  <DT>WWW-mSQL-HOWTO=20
+  <DD>Descreve como construir um banco de dados cliente/servidor usando =
+a WWW e=20
+  HTML para a interface com o usu=E1rio. </DD></DL>
+<DL>
+  <DT>phhttpd-HOWTO=20
+  <DD>O phttpd =E9 um acelerador HTTP. Ele serve uma r=E1pida =
+requisi=E7=E3o est=E1tica=20
+  HTTP atrav=E9s de um sistema de arquivos locai e passa as =
+requisi=E7=F5es menos=20
+  din=E2micas para um servidor de espera. Suas caracter=EDsticas s=E3o =
+uma compreens=E3o=20
+  do I/O e um cache de conte=FAdo agressivo que o ajuda a fazer um =
+trabalho=20
+  eficiente. </DD></DL>
+<HR>
+<A name=3Ds31.8.1.16></A>
+<H4>31.8.1.16 Outros</H4>
+<DL>
+  <DT>Benchmarking-HOWTO=20
+  <DD>Este documento discute assuntos relacionados ao desempenho dos =
+sistemas=20
+  Linux e recomenda algumas ferramentas para medida do desempenho do =
+sistema.=20
+  </DD></DL>
+<DL>
+  <DT>DOSEMU-HOWTO=20
+  <DD>Ensina como utilizar, configurar o emulador do ambiente DOS para =
+Linux.=20
+  </DD></DL>
+<DL>
+  <DT>Ecology-HOWTO=20
+  <DD>Este documento discute m=E9todos de como os computadores com o=20
+  <CODE>GNU/Linux</CODE> podem ser usados para proteger nosso ambiente, =
+usando=20
+  caracter=EDsticas como economia de energia ou papel. Como ele n=E3o =
+requer grandes=20
+  requerimentos de hardware, o <CODE>GNU/Linux</CODE> pode ser usado com =
+
+  computadores antigos e tornar seu ciclo de vida longo. Os jogos podem =
+ser=20
+  usados em ambientes educativos e est=E3o dispon=EDveis programas para =
+simular os=20
+  processos ecol=F3gicos. </DD></DL>
+<DL>
+  <DT>Process-Monitor-HOWTO=20
+  <DD>Este documento descreve como monitorar os processos (programas) no =
+
+  <CODE>Linux/Unix</CODE> e como reinicia-los automaticamente se eles =
+s=E3o=20
+  destru=EDdos sem interven=E7=E3o manual. Este documento tamb=E9m tem =
+URLs para FAQs=20
+  sobre "Processos no Unix". </DD></DL>
+<DL>
+  <DT>VAR-HOWTO=20
+  <DD>Cont=E9m uma lista de empresas de servi=E7o que n=E3o fabricam =
+hardwares ou=20
+  criam pacotes de softwares, mas incluem valores ao produtos =
+existentes.=20
+</DD></DL>
+<HR>
+<A name=3Ds-ajuda-howto-listagem-m></A>
+<H3>31.8.2 Listagem de Mini-HOWTO's</H3>
+<P>Segue abaixo uma listagem de Mini-HOWTO's do projeto LDP organizados =
+por=20
+sub-se=E7=F5es com a descri=E7=E3o do assunto que cada um deles aborda.=20
+<HR>
+<A name=3Ds31.8.2.1></A>
+<H4>31.8.2.1 Introdu=E7=E3o ao Sistema / Instala=E7=E3o / =
+Configura=E7=E3o / Kernel</H4>
+<DL>
+  <DT>Alsa-sound=20
+  <DD>Descreve a instala=E7=E3o dos controladores de som ALSA para =
+Linux. Estes=20
+  controladores de som podem ser usados em substitui=E7=E3o aos =
+controladores de com=20
+  regular, como s=E3o totalmente compat=EDveis. </DD></DL>
+<DL>
+  <DT>Install-From-ZIP=20
+  <DD>Descreve como instalar o <CODE>GNU/Linux</CODE> atrav=E9s de um =
+zip drive=20
+  conectado a porta paralela usando a distribui=E7=E3o Slackware do=20
+  <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>Install-Strategies=20
+  <DD>Descreve algumas formas de instala=E7=E3o para aqueles que tem a =
+inten=E7=E3o de=20
+  fazer dual boot entre o Linux e Windows. </DD></DL>
+<DL>
+  <DT>Lego=20
+  <DD>Mostra solu=E7=F5es em software livre para utiliza=E7=E3o com os =
+kits de rob=F3tica=20
+  da The Lego Group's Mindstorm Robotics Invention System (RIS). =
+</DD></DL>
+<DL>
+  <DT>Kerneld=20
+  <DD>Explica como configurar e utilizar o daemon kerneld. </DD></DL>
+<DL>
+  <DT>Loadlin+Win95=20
+  <DD>Este documento descreve como usar o Loadlin com o Windows 95 para=20
+  inicializar o <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>Modules=20
+  <DD>Explica como incluir seu suporte no kernel, configurar e utilizar =
+m=F3dulos=20
+  no <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>Path=20
+  <DD>Descreve truques comuns e problemas com as vari=E1veis de ambiente =
+no=20
+  <CODE>GNU/Linux</CODE>/<CODE>Unix</CODE>, especialmente a vari=E1vel =
+PATH. PATH=20
+  =E9 uma lista de diret=F3rios onde os comandos s=E3o pesquisados. Os =
+detalhes se=20
+  aplicam a distribui=E7=E3o <CODE>Debian</CODE> 1.3. </DD></DL>
+<DL>
+  <DT>Pre-Installation-Checklist=20
+  <DD>Voc=EA =E9 um novato no Linux? Voc=EA =E9 um guru no Linux? Em =
+ambos os casos esta=20
+  checklist ser=E1 de grande ajuda para voc=EA. Quantas vezes voc=EA se =
+encontrou com=20
+  problemas no meio de um processo de instala=E7=E3o do =
+<CODE>GNU/Linux</CODE>=20
+  porque algum detalhe vital sobre o hardware alvo n=E3o =E9 conhecido? =
+</DD></DL>
+<DL>
+  <DT>Post-Installation-Checklist=20
+  <DD>Lembra alguns passos que devem ser verificados logo ap=F3s a =
+instala=E7=E3o de=20
+  um novo sistema Linux. </DD></DL>
+<DL>
+  <DT>RPM+Slackware=20
+  <DD>Este documento descreve como ter o RPM instalado e funcionando=20
+  corretamente sob o Slackware. </DD></DL>
+<DL>
+  <DT>Update=20
+  <DD>Descreve como se manter atualizado sobre o desenvolvimento no =
+mundo=20
+  <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>Upgrade=20
+  <DD>Dicas e truques de como atualizar de uma distribui=E7=E3o=20
+  <CODE>GNU/Linux</CODE> para outra. </DD></DL>
+<DL>
+  <DT>VAIO+Linux=20
+  <DD>Explica a instala=E7=E3o do <CODE>GNU/Linux</CODE> em computadores =
+Sony VAIO.=20
+  </DD></DL>
+<HR>
+<A name=3Ds31.8.2.2></A>
+<H4>31.8.2.2 Discos / Sistema de Arquivos / Desempenho</H4>
+<DL>
+  <DT>Automount=20
+  <DD>Descreve a montagem autom=E1tica de sistemas de arquivos autofs, =
+como=20
+  configura-lo e alguns problemas que devem ser evitados. </DD></DL>
+<DL>
+  <DT>Ext2fs-Undeletion=20
+  <DD>Imagina isto: Voc=EA passou os =FAltimos tr=EAs dias sem dormir, =
+sem comer. Sua=20
+  compuls=E3o hacker foi paga: voc=EA finalizou aquele programa que lhe =
+dar=E1 fama e=20
+  reconhecimento. Todo o que voc=EA precisa fazer =E9 coloca-lo no =
+Metalab. Oh, e=20
+  apagar aqueles arquivos de backup do Emacs. Assim voc=EA fadigado =
+digita=20
+  <SAMP>rm * ~.</SAMP>. E bem mais tarde voc=EA notou o espa=E7o extra =
+naquele=20
+  comando. Voc=EA simplesmente apagou todo o seu trabalho! Mas a ajuda =
+est=E1 na=20
+  m=E3o. Este documento oferece uma discuss=E3o de como recuperar =
+arquivos apagados=20
+  atrav=E9s do Second Extend File System (EXT2). Talvez, voc=EA ser=E1 =
+capaz de lan=E7ar=20
+  aquele programa depois disso... </DD></DL>
+<DL>
+  <DT>Ext2fs-Undeletion-Dir-Struct=20
+  <DD>Fornece um complemento ao ext2-undeletion-howto e descreve formas =
+de=20
+  recuperar estrutura de diret=F3rios de forma segura. </DD></DL>
+<DL>
+  <DT>Hard-Disk-Upgrade=20
+  <DD>Como copiar um sistema <CODE>GNU/Linux</CODE> de um disco para =
+outro.=20
+</DD></DL>
+<DL>
+  <DT>Loopback-Root-FS=20
+  <DD>Este documento explica como usar o dispositivo de loopback do =
+Linux para=20
+  criar um formato nativo de sistema de arquivos atrav=E9s de uma =
+parti=E7=E3o DOS sem=20
+  reparticionamento. </DD></DL>
+<DL>
+  <DT>Partition-Rescue-mini-HOWTO=20
+  <DD>Como recuperar uma parti=E7=E3o pelo <CODE>GNU/Linux</CODE>. =
+</DD></DL>
+<DL>
+  <DT>Quota=20
+  <DD>Descreve como ativar a quota nos sistemas de arquivos para =
+usu=E1rios e=20
+  grupos de uma m=E1quina <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>Swap-Space=20
+  <DD>Descreve como compartilhar sua parti=E7=E3o swap do =
+<CODE>GNU/Linux</CODE> com=20
+  o Windows. </DD></DL>
+<DL>
+  <DT>Ultra-DMA=20
+  <DD>Explica como usar Ultra-DMA como discos r=EDgidos e interfaces =
+Ultra ATA,=20
+  Ultra 33 e Ultra66 com o <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>ZIP-Drive=20
+  <DD>Este documente oferece uma refer=EAncia r=E1pida para a =
+configura=E7=E3o e uso da=20
+  unidade de ZIP drive Iomega com o <CODE>GNU/Linux</CODE>. </DD></DL>
+<HR>
+<A name=3Ds31.8.2.3></A>
+<H4>31.8.2.3 Escrita de Documenta=E7=E3o / Editores</H4>
+<DL>
+  <DT>DocBook-Install=20
+  <DD>Descreve de forma r=E1pida e pr=E1tica como ajustar novatos a ter =
+de forma=20
+  r=E1pida o DocBook instalado para processamento de arquivos SGML em =
+HTML.=20
+</DD></DL>
+<DL>
+  <DT>Howtos-with-LinuxDoc=20
+  <DD>Descreve como escrever documentos HOWTOs usando o LinuxDoc =
+(refer=EAncia=20
+  para iniciantes). </DD></DL>
+<DL>
+  <DT>Man-Page=20
+  <DD>Descreve o que deve ter em mente quando estiver escrevendo =
+documenta=E7=E3o=20
+  on-line -- tamb=E9m chamada de p=E1gina de manual (man page). =
+</DD></DL>
+<HR>
+<A name=3Ds31.8.2.4></A>
+<H4>31.8.2.4 Hardware</H4>
+<DL>
+  <DT>3-Button-Mouse=20
+  <DD>Como ter um mouse serial de 3 bot=F5es funcionando no=20
+  <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>ACP-Modem=20
+  <DD>Descreve como configurar e utilizar a caracter=EDstica ACP (Mwave) =
+de=20
+  m=E1quinas IBM, como o IBM Thinkpad. </DD></DL>
+<DL>
+  <DT>BTTV-Mini-HOWTO-0.3=20
+  <DD>Este documento descreve o hardware, software e procedimentos =
+necess=E1rios=20
+  para se usar um chipset baseado no bt8x8 frame grabber ou placa =
+sintonizadora=20
+  de TV sob o <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>Boca=20
+  <DD>Instalando uma placa serial Boca 16-portas (Boca 2016) no=20
+  <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>GTEK-BBS-550=20
+  <DD>Ensina como configurar a placa serial de 8 portas GTEK's BBS-550 =
+com=20
+  16C550 UARTS. Somente uma IRQ pode ser usada para todas 8 portas. Ele =
+n=E3o=20
+  requer qualquer controlador no <CODE>GNU/Linux</CODE> no entanto o =
+kernel=20
+  precisa ter o suporte a portas seriais. </DD></DL>
+<DL>
+  <DT>Handspring-Visor=20
+  <DD>Usando o Visor com o <CODE>GNU/Linux</CODE> e sua porta USB. =
+</DD></DL>
+<DL>
+  <DT>IO-Port-Programming=20
+  <DD>Este documento descreve a programa=E7=E3o de portas I/O de =
+hardware. </DD></DL>
+<HR>
+<A name=3Ds31.8.2.5></A>
+<H4>31.8.2.5 Software</H4>
+<DL>
+  <DT>ADSM-Backup=20
+  <DD>Descreve como instalar e usar um cliente para o sistema de backup=20
+  comercial ADSM para Linux Intel. </DD></DL>
+<DL>
+  <DT>Bzip2=20
+  <DD>Explica como usar o programa de compacta=E7=E3o =
+<CODE>bzip2</CODE>. </DD></DL>
+<DL>
+  <DT>GIS-GRASS=20
+  <DD>Este documento descreve como adquirir, instalar e configurar o =
+poderoso=20
+  sistema de informa=E7=F5es cient=EDficas e geogr=E1ficas de dom=EDnio =
+p=FAblico (GIS): o=20
+  Geographic Resources Analysis Support System (GRASS). </DD></DL>
+<DL>
+  <DT>LILO=20
+  <DD>O <CODE>LILO</CODE> =E9 o gerenciador de inicializa=E7=E3o mais =
+usado na=20
+  plataforma Intel do Linux. Este documento descreve alguns tipos de =
+instala=E7=F5es=20
+  do LILO. </DD></DL>
+<HR>
+<A name=3Ds31.8.2.6></A>
+<H4>31.8.2.6 Plataformas n=E3o Intel (x86)</H4>
+<DL>
+  <DT>Mac-Terminal=20
+  <DD>Descreve o 1,002nd uso para um Macintosh (grin) morto: como =
+configurar o=20
+  Mac para uso como um terminal <CODE>GNU/Linux</CODE>. </DD></DL>
+<HR>
+<A name=3Ds31.8.2.7></A>
+<H4>31.8.2.7 Programa=E7=E3o / Compiladores / Banco de Dados</H4>
+<DL>
+  <DT>Programming-Languages=20
+  <DD>Uma breve compara=E7=E3o das maiores linguagens de programa=E7=E3o =
+para o=20
+  <CODE>GNU/Linux</CODE> e maiores bibliotecas para para cria=E7=E3o de =
+interfaces=20
+  gr=E1ficas com o usu=E1rio (GUIs) sob o <CODE>GNU/Linux</CODE>. =
+</DD></DL>
+<HR>
+<A name=3Ds31.8.2.8></A>
+<H4>31.8.2.8 Configura=E7=E3o de Teclado / Video / Console</H4>
+<DL>
+  <DT>Intkeyb=20
+  <DD>Mini-Howto experimental para o <CODE>GNU/Linux</CODE> para a =
+configura=E7=E3o=20
+  de teclados. </DD></DL>
+<HR>
+<A name=3Ds31.8.2.9></A>
+<H4>31.8.2.9 Ambiente Gr=E1fico</H4>
+<DL>
+  <DT>3D-Modelling=20
+  <DD>Oferece detalhes sobre instru=E7=F5es de instala=E7=E3o de um =
+ambiente desktop de=20
+  renderiza=E7=E3o e modelamento usando o RedHat Linux. </DD></DL>
+<DL>
+  <DT>FDU=20
+  <DD>Como corrigir fontes feias e ileg=EDveis no X. </DD></DL>
+<DL>
+  <DT>LBX=20
+  <DD>O LBX (Low Bandwidth X) =E9 uma extens=E3o do servidor X que =
+realiza=20
+  compress=E3o no protocolo X. Isto significa que pode ser usado em =
+conjunto com=20
+  aplicativos X e um servidor X que est=E3o separados atrav=E9s de uma =
+conex=E3o de=20
+  rede de baixa velocidade, para aumentar o tempo de resposta. =
+</DD></DL>
+<DL>
+  <DT>Nvidia-OpenGL-Configuration=20
+  <DD>Ensina como instalar os drivers OpenGL para a placa de v=EDdeo =
+Nvidia.=20
+</DD></DL>
+<DL>
+  <DT>Remote-X-Apps=20
+  <DD>Descreve como executar aplicativos X remotos. </DD></DL>
+<DL>
+  <DT>TT-XFree86=20
+  <DD>Ensina como usar fontes true type com o XFree 4.0.x </DD></DL>
+<DL>
+  <DT>XDM-Xterm=20
+  <DD>Ensina como utilizar o XDM para gerenciar terminais X. Uma =
+refer=EAncia=20
+  completa do assunto pode ser encontrada no Thin-client HOWTO. =
+</DD></DL>
+<DL>
+  <DT>XFree86-Second-Mouse=20
+  <DD>Instru=E7=F5es de como usar um segundo mouse no X. </DD></DL>
+<DL>
+  <DT>X-Big-Cursor=20
+  <DD>Descreve como usar cursores grandes no X. </DD></DL>
+<DL>
+  <DT>XFree86-XInside=20
+  <DD>Como converte um modeline XFree86 em um XInside/XiGraphics. =
+</DD></DL>
+<DL>
+  <DT>Xterm-Title=20
+  <DD>Explica como usar seq=FC=EAncias de escape para alterar =
+dinamicamente os=20
+  t=EDtulos e =EDcones de janelas de um xterm. </DD></DL>
+<HR>
+<A name=3Ds31.8.2.10></A>
+<H4>31.8.2.10 Migra=E7=E3o/Conviv=EAncia com outras plataformas</H4>
+<DL>
+  <DT>Linux+DOS+Win95+OS2=20
+  <DD>Este documento oferece um procedimento para fazer 4 sistemas =
+operacionais=20
+  coexistirem no mesmo disco r=EDgido. </DD></DL>
+<DL>
+  <DT>Linux+FreeBSD=20
+  <DD>Descreve como usar o Linux e FreeBSD no mesmo sistema. </DD></DL>
+<DL>
+  <DT>Linux+NT-Loader=20
+  <DD>Descreve como usar o gerenciador de inicializa=E7=E3o do Windows =
+NT para=20
+  iniciar o <CODE>GNU/Linux</CODE>. Este processo foi testado com o =
+Windows NT=20
+  4.0 WorkStation. </DD></DL>
+<DL>
+  <DT>Linux+Solaris=20
+  <DD>Descreve como usar o Linux (X86) e Solaris (x86) no mesmo =
+computador.=20
+</DD></DL>
+<DL>
+  <DT>Linux+Win95=20
+  <DD>Descreve como usar o Linux e Windows 95-98 na mesma m=E1quina. =
+</DD></DL>
+<DL>
+  <DT>Loadlin+Win95-98-ME=20
+  <DD>Descreve como usar o Loadlin com o Windows 95/98/ME para =
+inicializar no=20
+  Linux. </DD></DL>
+<DL>
+  <DT>Multiboot-with-GRUB=20
+  <DD>Descreve como instalar o Windows 98, 2000, DOS e Linux usando o =
+GRUB.=20
+</DD></DL>
+<DL>
+  <DT>Multiboot-with-LILO=20
+  <DD>Descreve como usar m=FAltipla inicializa=E7=E3o entre o Windows =
+95, Windows NT e=20
+  Linux. </DD></DL>
+<HR>
+<A name=3Ds31.8.2.11></A>
+<H4>31.8.2.11 Tarefas Espec=EDficas</H4>
+<DL>
+  <DT>Backup-With-MSDOS=20
+  <DD>Descreve como usar uma unidade de tape compat=EDvel com o=20
+  <CODE>GNU/Linux</CODE> instalado em uma m=E1quina DOS para fazer o =
+backup do=20
+  sistema de arquivos de uma m=E1quina <CODE>GNU/Linux</CODE>. =
+</DD></DL>
+<DL>
+  <DT>Battery-Powered=20
+  <DD>Descreve como reduzir o consumo de energia do sistema=20
+  <CODE>GNU/Linux</CODE> atrav=E9s de alguns ajustes de =
+configura=E7=E3o. Isto ser=E1=20
+  =FAtil para qualquer um quer executar o <CODE>GNU/Linux</CODE> em um =
+sistema de=20
+  computador port=E1til. Tamb=E9m cont=E9m dicas de uso da bateria. Se =
+estiver usando=20
+  o <CODE>GNU/Linux</CODE> em um sistema desktop, voc=EA provavelmente =
+n=E3o=20
+  precisar=E1 ler todo este documento. </DD></DL>
+<DL>
+  <DT>Clock=20
+  <DD>Como manter o rel=F3gio de seu computador na hora. </DD></DL>
+<DL>
+  <DT>Coffee=20
+  <DD>Uma dos mais extremos dos documentos. Eu j=E1 pensei se era =
+poss=EDvel usar o=20
+  <CODE>GNU/Linux</CODE> para fazer caf=E9... e descobri que o=20
+  <CODE>GNU/Linux</CODE> faz caf=E9!=20
+  <P>Por um longo tempo a humanidade estava se perguntando se um =
+computador=20
+  podia fazer caf=E9... As pessoas precisam de caf=E9 para n=E3o =
+dormirem na frente do=20
+  computador. Todo mundo sabe que =E9 melhor programar de noite... =
+</P></DD></DL>
+<DL>
+  <DT>Divert-Sockets-mini-HOWTO=20
+  <DD>Descreve como obter, compilar e usar os soquetes divert FreeBSD =
+sob o=20
+  <CODE>GNU/Linux</CODE> 2.2.12. </DD></DL>
+<DL>
+  <DT>Home-Electrical-Control=20
+  <DD>Cont=E9m refer=EAncias para fazer o Linux controlar praticamente =
+qualquer=20
+  dispositivo el=E9trico. </DD></DL>
+<DL>
+  <DT>Leased-Line=20
+  <DD>Configurando seu modem e pppd para usar 2 pares de cabos leased =
+line.=20
+</DD></DL>
+<DL>
+  <DT>Linux-Modem-Sharing=20
+  <DD>Descreve como configurar o sistema <CODE>GNU/Linux</CODE> para=20
+  compartilhar um modem conectado a este sistema com outros atrav=E9s de =
+uma rede=20
+  TCP/IP. </DD></DL>
+<DL>
+  <DT>Mail2News=20
+  <DD>Descreve como enviar mensagens de uma lista de discuss=E3o para um =
+servidor=20
+  news. </DD></DL>
+<DL>
+  <DT>MP3-CD-Burning=20
+  <DD>Uma refer=EAncia completa para a cria=E7=E3o de CDs de audio e =
+dados de arquivos=20
+  MP3. </DD></DL>
+<DL>
+  <DT>MSSQL6-Openlink-PHP-ODBC=20
+  <DD>Ensina como conectar o servidor de banco de dados MS SQL 6.x ou =
+superior=20
+  via ODBC do PHP3 (e superior) compilado com os drivers Openlink sob o =
+Linux.=20
+  </DD></DL>
+<DL>
+  <DT>NCD-X-Terminal=20
+  <DD>Descreve como conectar um terminal NCD X a um computador UNIX. =
+</DD></DL>
+<DL>
+  <DT>NFS-Root=20
+  <DD>Este documento tenta explicar como configurar uma esta=E7=E3o de =
+trabalho "sem=20
+  disco" no <CODE>GNU/Linux</CODE>, que monta seu sistema de arquivos =
+ra=EDz via=20
+  NFS. </DD></DL>
+<DL>
+  <DT>NFS-Root-Client-mini-HOWTO=20
+  <DD>O prop=F3sito deste documento =E9 explicar como criar um cliente =
+dos=20
+  diret=F3rios ra=EDz em um servidor que est=E1 usando clientes com NFS =
+root montados.=20
+  </DD></DL>
+<DL>
+  <DT>Netscape+Proxy=20
+  <DD>Este documento descreve o processo de configurar uma REDE =
+(INTRANET) em=20
+  casa. Ent=E3o configura o NETSCAPE das m=E1quinas dos clientes para =
+acessarem a=20
+  internet. </DD></DL>
+<DL>
+  <DT>News-Leafsite=20
+  <DD>Este documento ajudar=E1 a configura=E7=E3o de um pequeno leafsite =
+para a Usenet=20
+  News usando o Leadnode do pacote free software. </DD></DL>
+<DL>
+  <DT>Offline-Mailing=20
+  <DD>Explica como usar o sistema de mensagens do <CODE>GNU/Linux</CODE> =
+
+  off-line, receber emails para m=FAltiplos usu=E1rios somente com uma =
+conta de=20
+  e-mail, e sem estar 24-24 horas on-line na Internet. Se voc=EA n=E3o =
+pode pagar=20
+  uma linha para estar conectado por 24-24 horas e ainda deseja que seus =
+
+  usu=E1rios recebem emails em sua m=E1quina Linux; tamb=E9m n=E3o pague =
+por uma conta=20
+  multi-drop em seu provedor, voc=EA pode usar este sistema usando =
+somente um=20
+  endere=E7o de e-mail para dividir seus endere=E7os de e-mails dos =
+usu=E1rios.=20
+</DD></DL>
+<DL>
+  <DT>Outlook-to-Unix-Mailbox=20
+  <DD>Mostra formas de converter mensagens de email do Microsoft Outlook =
+(exceto=20
+  do Outlook Express) para formatos de arquivos t=EDpicos do Unix. =
+</DD></DL>
+<DL>
+  <DT>Pager=20
+  <DD>Ensina como compilar, instalar e configurar um Gateway de emails =
+para=20
+  Pager. </DD></DL>
+<DL>
+  <DT>Partition=20
+  <DD>Descreve como criar parti=E7=F5es em discos r=EDgidos IDE e SCSI. =
+Tamb=E9m =E9=20
+  coberta a recupera=E7=E3o de tabelas de parti=E7=E3o perdidas. =
+</DD></DL>
+<DL>
+  <DT>Partition-Rescue=20
+  <DD>Descreve formas para recuperar uma parti=E7=E3o de disco apagada. =
+</DD></DL>
+<DL>
+  <DT>Process-Accounting=20
+  <DD>Descreve como ativar a conta de processos em uma m=E1quina=20
+  <CODE>GNU/Linux</CODE>, o uso de v=E1rios comandos de =
+contabiliza=E7=E3o de=20
+  processos. </DD></DL>
+<DL>
+  <DT>RCS=20
+  <DD>Este documento cobre a instala=E7=E3o e uso b=E1sicos do RCS, o =
+GNU Revision=20
+  Control System sob o <CODE>GNU/Linux</CODE>. </DD></DL>
+<DL>
+  <DT>Saving-Space=20
+  <DD>Este documento mostra maneiras de diminuir sua instala=E7=E3o=20
+  <CODE>GNU/Linux</CODE> consumindo o m=EDnimo poss=EDvel de espa=E7o. =
+</DD></DL>
+<DL>
+  <DT>Secure-POP+SSH=20
+  <DD>Este documento explica como usar conex=F5es POP seguras via ssh. =
+</DD></DL>
+<DL>
+  <DT>Small-Memory=20
+  <DD>O prop=F3sito deste documento =E9 descrever como executar o=20
+  <CODE>GNU/Linux</CODE> em um sistema com pequena quantidade de =
+mem=F3ria.=20
+  Assumindo que a compra de mem=F3ria esta fora de quest=E3o aqui. =
+</DD></DL>
+<DL>
+  <DT>Soundblaster-AWE=20
+  <DD>Descreve como instalar e configurar a placa de som Sound Blaster =
+32 (SB=20
+  AWE 32, SB AWE 64) da Creative Labs em um Sistema Linux usando a =
+extens=E3o do=20
+  driver de som AWE escrito por Takashi Iwai. </DD></DL>
+<DL>
+  <DT>StarOffice=20
+  <DD>Instalando o StarOffice 3.1 da StarDivision no =
+<CODE>GNU/Linux</CODE>.=20
+  </DD></DL>
+<DL>
+  <DT>TT-Debian=20
+  <DD>Descreve como configurar o suporte das fontes True Type na=20
+  <CODE>Debian</CODE>. </DD></DL>
+<DL>
+  <DT>TkRat=20
+  <DD>Este documento foi escrito para qualquer um que tem interesse em =
+usar seu=20
+  computador <CODE>GNU/Linux</CODE> para enviar e receber E-mails pela =
+Internet.=20
+  </DD></DL>
+<DL>
+  <DT>Visual-Bell=20
+  <DD>Explica como usar o termcap para configurar um aviso visual no =
+sistema ao=20
+  inv=E9s do beep e como desativar o sinal de audio. </DD></DL>
+<DL>
+  <DT>Wacom-USB-mini-HOWTO=20
+  <DD>Descreve como configurar um Wacom Graphire USB tablet para uso no=20
+  <CODE>GNU/Linux</CODE> (console e X), iniciando com a configura=E7=E3o =
+do kernel=20
+  para o n=EDvel da aplica=E7=E3o. </DD></DL>
+<DL>
+  <DT>WordPerfect=20
+  <DD>Discute a execu=E7=E3o do WordPerfect no <CODE>GNU/Linux</CODE> =
+incluindo uma=20
+  breve discuss=E3o sobre o WordPerfect 7.0. </DD></DL>
+<DL>
+  <DT>ZIP-Install=20
+  <DD>Este documento somente =E9 =FAtil para aqueles que possuem a =
+vers=E3o em porta=20
+  paralela de um ZIP drive e que deseja fazer o backup do sistema=20
+  <CODE>GNU/Linux</CODE> em um disco ZIP. </DD></DL>
+<DL>
+  <DT>call-back-mini-HOWTO=20
+  <DD>Descreve como configurar um call-back usando um sistema=20
+  <CODE>GNU/Linux</CODE> e um modem. </DD></DL>
+<HR>
+<A name=3Ds31.8.2.12></A>
+<H4>31.8.2.12 Rede / Administra=E7=E3o / Firewall / Seguran=E7a</H4>
+<DL>
+  <DT>ADSL=20
+  <DD>Configurando o <CODE>GNU/Linux</CODE> para funcionar com =
+Asymmetric=20
+  Digital Subscriber Loop (ADSL), uma nova tecnologia de acesso digital =
+de alta=20
+  velocidade atrav=E9s de linhas dispon=EDvel atrav=E9s da Telcos. O =
+ADSL =E9 uma das=20
+  tecnologias dispon=EDveis da fam=EDlia da digital subscriber line =
+(DSL)=20
+  dispon=EDveis para usu=E1rios residenciais e comerciais usando copper =
+loops,=20
+  oferecendo velocidades que variam de 384kbps a 1.5Mbps. Este documento =
+cont=E9m=20
+  uma introdu=E7=E3o ao ADSL e informa=E7=F5es de como instalar, =
+configurar e colocar o=20
+  ADSL para funcionar. </DD></DL>
+<DL>
+  <DT>Apache+SSL+PHP+fp=20
+  <DD>Este documento explica como construir um servidor web que =
+suportar=E1=20
+  conte=FAdo web din=E2mico via a linguagem de scripting PHP/FI, =
+transmiss=E3o de=20
+  dados segura baseado no SSL do Netscape, execu=E7=E3o segura de CGI's =
+e extens=F5es=20
+  do M$ Frontpage Server. </DD></DL>
+<DL>
+  <DT>Apache-mods=20
+  <DD>Detalhes sobre a instala=E7=E3o do servidor web baseado no Apache =
+configurado=20
+  para manipular DSO e v=E1rios m=F3dulos =FAteis incluindo perl, ssl, e =
+php. </DD></DL>
+<DL>
+  <DT>Bridge=20
+  <DD>Este documento descreve como ajustar uma ponte ethernet (bridge). =
+O que =E9=20
+  uma ponte ethernet? =C9 um dispositivo que controla os pacotes de =
+dados dentro=20
+  de uma subrede na tentativa de cortar o excesso de tr=E1fego. Uma =
+ponte =E9=20
+  colocada normalmente entre dois grupos separados de computadores que =
+falam=20
+  entre eles, mas n=E3o muito com computadores no outro grupo. Um bom =
+exemplo=20
+  disto =E9 considerar um grupo de Macintoshes e um grupo de m=E1quinas =
+Unix. Ambos=20
+  destes grupos de m=E1quinas tendem falar uma com as outras, e o =
+tr=E1fego que=20
+  produzem na rede causam colis=F5es para as outras m=E1quinas que =
+est=E3o tentando=20
+  falar uma com a outra. Uma ponte pode ser colocada entre estes dois =
+grupos de=20
+  computadores. A tarefa da ponte =E9 ent=E3o examinar o destino dos =
+pacotes de=20
+  dados um por vez e decidir o que passar ou n=E3o para o outro lado do =
+segmento=20
+  ethernet. O resultado =E9 uma rede r=E1pida com menos colis=F5es. =
+</DD></DL>
+<DL>
+  <DT>Bridge+Firewall=20
+  <DD>Como configurar uma ponte com um firewall. </DD></DL>
+<DL>
+  <DT>Bridge+Firewall+DSL=20
+  <DD>Configurando um sistema <CODE>GNU/Linux</CODE> para funcionar como =
+um=20
+  firewall e ponte com uma conex=E3o de rede DSL. </DD></DL>
+<DL>
+  <DT>Cipe+Masq=20
+  <DD>Como configurar uma VPN usando o Cipe em um firewall=20
+  <CODE>GNU/Linux</CODE> masquerading. </DD></DL>
+<DL>
+  <DT>Compressed-TCP=20
+  <DD>Se=E7=F5es TCP/IP compactadas usando ferramentas como SSH. =
+</DD></DL>
+<DL>
+  <DT>DHCP=20
+  <DD>Este documento tenta responder quest=F5es b=E1sicas de como =
+configurar seu=20
+  computador <CODE>GNU/Linux</CODE> para servir de cliente ou servidor =
+DHCP.=20
+  </DD></DL>
+<DL>
+  <DT>DPT-Hardware-RAID=20
+  <DD>Como ajustar o hardware RAID sob o <CODE>GNU/Linux</CODE>. =
+</DD></DL>
+<DL>
+  <DT>Domain=20
+  <DD>Este documento explica as coisas que voc=EA provavelmente deve =
+fazer quando=20
+  desejar construir uma rede de computadores sob seu pr=F3prio =
+dom=EDnio. Ele cobre=20
+  a configura=E7=E3o dos par=E2metros de rede, servi=E7os de rede e =
+seguran=E7a. </DD></DL>
+<DL>
+  <DT>FTP=20
+  <DD>Como usar clientes e servidores FTP. </DD></DL>
+<DL>
+  <DT>Fax-Server=20
+  <DD>Descreve os m=E9todos mais simples de configurar um servidor de =
+fax em seu=20
+  sistema <CODE>GNU/Linux</CODE>. O fax est=E1 dispon=EDvel aos =
+usu=E1rios do seu=20
+  sistema local e rede de usu=E1rios. </DD></DL>
+<DL>
+  <DT>Firewall-Piercing=20
+  <DD>M=E9todos de usar PPP atrav=E9s de telnet para tornar os materiais =
+da rede=20
+  transparentes atrav=E9s de um firewall Internet. </DD></DL>
+<DL>
+  <DT>Home-Network-mini-HOWTO=20
+  <DD>Um tutorial simples de configura=E7=E3o do sistema Red Hat 6 e =
+variantes para=20
+  operar como um gateway na internet para uma pequena rede dom=E9stica =
+ou de=20
+  escrit=F3rio. Entre os t=F3picos cobertos est=E3o inclu=EDdos =
+masquerading, DNS, DHCP=20
+  e seguran=E7a b=E1sica. </DD></DL>
+<DL>
+  <DT>IP-Alias=20
+  <DD>Descreve como utilizar v=E1rios IPs em uma =FAnica interface de =
+rede. Em=20
+  adi=E7=E3o, est=E3o inclu=EDdas instru=E7=F5es de como ajustar a =
+m=E1quina para receber=20
+  e-mais em IPs alises. </DD></DL>
+<DL>
+  <DT>IP-Subnetworking=20
+  <DD>Descreve porque e como subdividir uma rede IP - que est=E1 usando =
+uma=20
+  simples classe de rede A, B ou C para funcionar corretamente em =
+diversas redes=20
+  interconectadas. </DD></DL>
+<DL>
+  <DT>IPMasquerading+Napster=20
+  <DD>Descreve como permitir usu=E1rios atrav=E9s de um sistema =
+IPMasquerade usar o=20
+  Napster. </DD></DL>
+<DL>
+  <DT>ISP-Connectivity=20
+  <DD>Descreve como configurar o PPP, conectar-se ao seu Provedor, =
+configurar o=20
+  E-mail e news, obter um IP permanente (se dispon=EDvel), obter um nome =
+de=20
+  dom=EDnio. </DD></DL>
+<DL>
+  <DT>Mail-Queue=20
+  <DD>Queue E-mails remotos + Entregar e-mails locais as =
+configura=E7=F5es=20
+  necess=E1rias para fazer o Sendmail enviar mensagens locais =
+***Agora*** e=20
+  entregar mensagens remotas "quando quiser". </DD></DL>
+<DL>
+  <DT>Netrom-Node=20
+  <DD>Este documento descreve como configurar o pacote de utilit=E1rios =
+ax25 para=20
+  R=E1dio Amadores. </DD></DL>
+<DL>
+  <DT>PLIP=20
+  <DD>Este documento lhe ajudar=E1 a usar sua porta Paralela para =
+conex=E3o entre=20
+  computadores. </DD></DL>
+<DL>
+  <DT>ppp-ssh=20
+  <DD>Descreve como configurar uma rede VPN usando ssh sobre ppp. =
+</DD></DL>
+<DL>
+  <DT>PortSlave=20
+  <DD>Configurando e usando um roteador Linux para conex=E3o remota, =
+radius,=20
+  console serial. </DD></DL>
+<DL>
+  <DT>Proxy-ARP-Subnet=20
+  <DD>Este documento discute o uso do Proxy Address Resolution Protocol =
+(ARP)=20
+  com subrede em ordem para fazer uma pequena rede de computadores =
+vis=EDvel a=20
+  outra sub rede IP (eu chamo isto de sub-subrede). isto faz todas as =
+m=E1quinas=20
+  na rede local (rede 0 onde estamos agora) aparecer como se estivessem=20
+  conectadas a rede principal (rede 1). </DD></DL>
+<DL>
+  <DT>Public-Web-Browser=20
+  <DD>A id=E9ia b=E1sica =E9 dar acesso web a pessoas que desejam, =
+limitando suas=20
+  habilidades de causar problemas. </DD></DL>
+<DL>
+  <DT>Qmail+MH=20
+  <DD>Ensina como usar o Qmail em conjunto com o MH. </DD></DL>
+<DL>
+  <DT>Remote-Boot=20
+  <DD>Este documento descreve como configurar um servidor de =
+inicializa=E7=E3o=20
+  robusto e seguro para um grupo de PCS, permitindo cada cliente =
+escolher em=20
+  tempo de inicializa=E7=E3o qual sistema operacional executar. =
+</DD></DL>
+<DL>
+  <DT>SLIP-PPP-Emulator=20
+  <DD>Descreve como obter seu computador Linux conectado a um site =
+gen=E9rico via=20
+  emulador SLIP/PPP, tal como SLiRP ou TIA. </DD></DL>
+<DL>
+  <DT>Sendmail+UUCP=20
+  <DD>Como utilizar o Sendmail em conjunto com o UUCP. </DD></DL>
+<DL>
+  <DT>Sendmail-Address-Rewrite=20
+  <DD>Breve descri=E7=E3o de como ajustar o arquivo de configura=E7=E3o =
+do sendmail para=20
+  o usu=E1rio dom=E9stico que utiliza o acesso dial-up a </DD></DL>
+<DL>
+  <DT>Sybase-PHP-Apache=20
+  <DD>Explica como usar o PHP + Apache para acesso a uma base de dados=20
+  Sybase-ASE. </DD></DL>
+<DL>
+  <DT>Term-Firewall=20
+  <DD>M=E9todos de usar o "term" para tornar os materiais de rede =
+transparentes=20
+  atrav=E9s de um firewall TCP que parece n=E3o ser capaz. </DD></DL>
+<DL>
+  <DT>Token-Ring=20
+  <DD>Fazendo o Token Ring funcionar no <CODE>GNU/Linux</CODE>. =
+</DD></DL>
+<DL>
+  <DT>TransparentProxy=20
+  <DD>Como configurar um servidor proxy transparente de cache HTTP =
+usando=20
+  somente o <CODE>GNU/Linux</CODE> e o Squid. </DD></DL>
+<DL>
+  <DT>VPN=20
+  <DD>Ensina como configurar uma Virtual Protected Network no=20
+  <CODE>GNU/Linux</CODE>. </DD></DL>
+<HR>
+<A name=3Ds31.8.2.13></A>
+<H4>31.8.2.13 Outros</H4>
+<DL>
+  <DT>Advocacy=20
+  <DD>Este documento oferece sugest=F5es de como a comunidade Linux pode =
+defender=20
+  efetivamente o uso do Linux. </DD></DL>
+<DL>
+  <DT>BogoMips=20
+  <DD>Detalhes sobre BogoMips. Este texto foi criado a partir de =
+v=E1rios arquivos=20
+  <CODE>GNU/Linux</CODE> no arquivo <CODE>HOWTO/mini/BogoMips</CODE>. =
+</DD></DL>
+<DL>
+  <DT>Commercial-Port-Advocacy=20
+  <DD>Este documento discute m=E9todos que podem ser usados como =
+aproxima=E7=E3o de=20
+  empresas comerciais para convence-las a portar seus programas para o=20
+  <CODE>GNU/Linux</CODE>. </DD></DL>
+<HR>
+<A name=3Ds-ajuda-docs></A>
+<H2>31.9 Documenta=E7=E3o de Programas</H2>
+<P>S=E3o documentos instalados junto com os programas. Alguns programas =
+tamb=E9m=20
+trazem o <EM>aviso de copyright, changelogs, modelos, scripts, exemplos =
+e FAQs=20
+(perguntas freq=FC=EAntes)</EM> junto com a documenta=E7=E3o normal.=20
+<P>Seu princ=EDpio =E9 o mesmo do How-to; documentar o programa. Estes =
+arquivos=20
+est=E3o localizados em:=20
+<P><CODE>/usr/doc/<CODE>[<EM>programa</EM>]</CODE></CODE>.=20
+<P><EM>Programa</EM> =E9 o nome do programa ou comando procurado.=20
+<HR>
+<A name=3Ds-ajuda-faq></A>
+<H2>31.10 FAQ</H2>
+<P><EM>FAQ</EM> =E9 um arquivo de perguntas e respostas mais =
+freq=FC=EAntes sobre o=20
+programa. Os arquivos de FAQ est=E3o localizados em:=20
+<P><CODE>/usr/doc/FAQ/<CODE>[<EM>programa</EM>]</CODE></CODE>.=20
+<P><EM>Programa</EM> =E9 o nome do programa ou comando procurado.=20
+<HR>
+<A name=3Ds-ajuda-rfcs></A>
+<H2>31.11 RFC's</H2>
+<P>S=E3o textos que cont=E9m normas para a padroniza=E7=E3o dos =
+servi=E7os e protocolos da=20
+Internet (como a porta padr=E3o de opera=E7=E3o, comandos que devem ser =
+utilizados,=20
+respostas) e outros detalhes usados para padronizar o uso de servi=E7os =
+Internet=20
+entre as mais diversas plataformas de computadores, com o objetivo de =
+garantir a=20
+perfeita comunica=E7=E3o entre ambos. As RFC's podem ser obtidas de =
+<CODE><A=20
+href=3D"http://rfc.net/">http://rfc.net/</A></CODE>.=20
+<P>O arquivo de uma RFC segue o formato <CODE>RFC+N=FAmero</CODE>, onde=20
+<SAMP>RFC</SAMP> descreve que o documento =E9 uma RFC e =
+<SAMP>N=FAmero</SAMP> =E9 o=20
+seu n=FAmero de identifica=E7=E3o, como o documento <CODE>RFC1939</CODE> =
+que documenta=20
+o funcionamento e comandos do protocolo POP3. Os arquivos de RFC's podem =
+ser=20
+encontrados no pacote <CODE>doc-rfc</CODE> da distribui=E7=E3o =
+<CODE>Debian</CODE> e=20
+baseadas .=20
+<P>Segue abaixo o =EDndice principal do diret=F3rio de RFC's que =
+poder=E1 ser usado=20
+para localizar RFC's espec=EDficas de um determinado servi=E7o/assunto:=20
+<DL>
+  <DT>0001=20
+  <DD>PADR=D5ES OFICIAIS DO PROTOCOLO INTERNET. J. Reynolds, R. Braden. =
+Mar=E7o=20
+  2000. (Formato: TXT=3D86139 bytes) (Deixa obsoleto RFC2500, RFC2400, =
+RFC2300,=20
+  RFC2200, RFC2000, RFC1920, RFC1880, RFC1800, RFC1780, RFC1720, =
+RFC1610,=20
+  RFC1600, RFC1540, RFC1500, RFC1410, RFC1360, RFC1280, RFC1250, =
+RFC1200,=20
+  RFC1140, RFC1130, RFC1100, RFC1083) (Tamb=E9m RFC2600) </DD></DL>
+<DL>
+  <DT>0002=20
+  <DD>N=FAmeros designados. J. Reynolds, J. Postel. Outubro 1994. =
+(Formato:=20
+  TXT=3D458860 bytes) (Tamb=E9m RFC1700) </DD></DL>
+<DL>
+  <DT>0003=20
+  <DD>Requerimentos do sistema. R. Braden. Outubro 1989. (Formato: =
+TXT=3D528939=20
+  bytes) (Tamb=E9m RFC1122, RFC1123) </DD></DL>
+<DL>
+  <DT>0004=20
+  <DD>Requerimentos do Gateway. R. Braden, J. Postel. Junho 1987. =
+(Formato:=20
+  TXT=3D125039 bytes) (Tamb=E9m RFC1009) </DD></DL>
+<DL>
+  <DT>0005=20
+  <DD>Protocolo Internet. J. Postel. Setembro 1981. (Formato: =
+TXT=3D241903 bytes)=20
+  (Tamb=E9m RFC0791, RFC0950, RFC0919, RFC0922, RFC792, RFC1112) =
+</DD></DL>
+<DL>
+  <DT>0006=20
+  <DD>User Datagram Protocol. J. Postel. Agosto 1980. (Formato: =
+TXT=3D5896 bytes)=20
+  (Tamb=E9m RFC0768) </DD></DL>
+<DL>
+  <DT>0007=20
+  <DD>Transmission Control Protocol. J. Postel. September 1981. =
+(Formato:=20
+  TXT=3D172710 bytes) (Tamb=E9m RFC0793) </DD></DL>
+<DL>
+  <DT>0008=20
+  <DD>Protocolo Telnet. J. Postel, J. Reynolds. Maio 1983. (Formato: =
+TXT=3D44639=20
+  bytes) (Tamb=E9m RFC0854, RFC0855) </DD></DL>
+<DL>
+  <DT>0009=20
+  <DD>File Transfer Protocol. J. Postel, J. Reynolds. Outubro 1985. =
+(Formato:=20
+  TXT=3D148316 bytes) (Tamb=E9m RFC0959) </DD></DL>
+<DL>
+  <DT>0010=20
+  <DD>SMTP Service Extensions. J. Klensin, N. Freed, M. Rose, E. =
+Stefferud &amp;=20
+  D. Crocker. Novembro 1995. (Formato: TXT=3D23299 bytes) (Deixa =
+obsoleto RFC1651)=20
+  (Tamb=E9m RFC821, RFC1869) </DD></DL>
+<DL>
+  <DT>0011=20
+  <DD>Standard for the format of ARPA Internet text messages. D. =
+Crocker.=20
+  13-Ago-1982. (Formato: TXT=3D109200 bytes) (Deixa obsoleto RFC1653) =
+(Tamb=E9m=20
+  RFC0822) </DD></DL>
+<DL>
+  <DT>0012=20
+  <DD>Network Time Protocol. D. Mills. Setembro 1989. (Formato: =
+TXT=3D193 bytes)=20
+  (Tamb=E9m RFC1119) </DD></DL>
+<DL>
+  <DT>0013=20
+  <DD>Domain Name System. P. Mockapetris. Novembro 1987. (Formato: =
+TXT=3D248726=20
+  bytes) (Tamb=E9m RFC1034, RFC1035) </DD></DL>
+<DL>
+  <DT>0014=20
+  <DD>Mail Routing and the Domain System. C. Partridge. Janeiro 1986. =
+(Formato:=20
+  TXT=3D18182 bytes) (Tamb=E9m RFC0974) </DD></DL>
+<DL>
+  <DT>0015=20
+  <DD>Simple Network Management Protocol. J. Case, M. Fedor, M. =
+Schoffstall, J.=20
+  Davin. Maio 1990. (Formato: TXT=3D72876 bytes) (Tamb=E9m RFC1157) =
+</DD></DL>
+<DL>
+  <DT>0016=20
+  <DD>Structure of Management Information. M. Rose, K. McCloghrie. Maio =
+1990.=20
+  (Formato: TXT=3D82279 bytes) (Deixa obsoleto RFC1065) (Tamb=E9m =
+RFC1155) </DD></DL>
+<DL>
+  <DT>0017=20
+  <DD>Management Information Base. K. McCloghrie, M. Rose. March 1991. =
+(Formato:=20
+  TXT=3D142158 bytes) (Deixa obsoleto RFC1158) (Tamb=E9m RFC1213) =
+</DD></DL>
+<DL>
+  <DT>0018=20
+  <DD>Exterior Gateway Protocol. D. Mills. Abril 1984. (Formato: =
+TXT=3D63836=20
+  bytes) (Tamb=E9m RFC0904) </DD></DL>
+<DL>
+  <DT>0019=20
+  <DD>NetBIOS Service Protocols. NetBIOS Working Group. Mar=E7o 1987. =
+(Formato:=20
+  TXT=3D319750 bytes) (Tamb=E9m RFC1001, RFC1002) </DD></DL>
+<DL>
+  <DT>0020=20
+  <DD>Echo Protocol. J. Postel. Maio 1983. (Formato: TXT=3D1237 bytes) =
+(Tamb=E9m=20
+  RFC0862) </DD></DL>
+<DL>
+  <DT>0021=20
+  <DD>Discard Protocol. J. Postel. Maio 1983. (Formato: TXT=3D1239 =
+bytes) (Tamb=E9m=20
+  RFC0863) </DD></DL>
+<DL>
+  <DT>0022=20
+  <DD>Character Generator Protocol. J. Postel. Maio 1983. (Formato: =
+TXT=3D6842=20
+  bytes) (Tamb=E9m RFC0864) </DD></DL>
+<DL>
+  <DT>0023=20
+  <DD>Quote of the Day Protocol. J. Postel. Maio 1983. (Formato: =
+TXT=3D1676 bytes)=20
+  (Tamb=E9m RFC0865) </DD></DL>
+<DL>
+  <DT>0024=20
+  <DD>Active Users Protocol. J. Postel. Maio 1983. (Formato: TXT=3D2029 =
+bytes)=20
+  (Tamb=E9m RFC0866) </DD></DL>
+<DL>
+  <DT>0025=20
+  <DD>Daytime Protocol. J. Postel. Maio 1983. (Formato: TXT=3D2289 =
+bytes) (Tamb=E9m=20
+  RFC0867) </DD></DL>
+<DL>
+  <DT>0026=20
+  <DD>Time Server Protocol. J. Postel. Maio 1983. (Formato: TXT=3D3024 =
+bytes)=20
+  (Tamb=E9m RFC0868) </DD></DL>
+<DL>
+  <DT>0027=20
+  <DD>Binary Transmission Telnet Option. J. Postel, J. Reynolds. Maio =
+1983.=20
+  (Formato: TXT=3D8965 bytes) (Tamb=E9m RFC0856) </DD></DL>
+<DL>
+  <DT>0028=20
+  <DD>Echo Telnet Option. J. Postel, J. Reynolds. Maio 1983. (Formato: =
+TXT=3D10859=20
+  bytes) (Tamb=E9m RFC0857) </DD></DL>
+<DL>
+  <DT>0029=20
+  <DD>Suppress Go Ahead Telnet Option. J. Postel, J. Reynolds. Maio =
+1983.=20
+  (Formato: TXT=3D3712 bytes) (Tamb=E9m RFC0858) </DD></DL>
+<DL>
+  <DT>0030=20
+  <DD>Status Telnet Option. J. Postel, J. Reynolds. Maio 1983. (Formato: =
+
+  TXT=3D4273 bytes) (Tamb=E9m RFC0859) </DD></DL>
+<DL>
+  <DT>0031=20
+  <DD>Timing Mark Telnet Option. J. Postel, J. Reynolds. Maio 1983. =
+(Formato:=20
+  TXT=3D7881 bytes) (Tamb=E9m RFC0860) </DD></DL>
+<DL>
+  <DT>0032=20
+  <DD>Extended Options List Telnet Option. J. Postel, J. Reynolds. Maio =
+1983.=20
+  (Formato: TXT=3D3068 bytes) (Tamb=E9m RFC0861) </DD></DL>
+<DL>
+  <DT>0033=20
+  <DD>Trivial File Transfer Protocol. K. Sollins. Julho 1992. (Formato:=20
+  TXT=3D24599 bytes) (Tamb=E9m RFC1350) </DD></DL>
+<DL>
+  <DT>0034=20
+  <DD>Routing Information Protocol. C. Hedrick. Junho 1988. (Formato: =
+TXT=3D91435=20
+  bytes) (Tamb=E9m RFC1058) </DD></DL>
+<DL>
+  <DT>0035=20
+  <DD>ISO Transport Service on top of the TCP (Version: 3). M. Rose, D. =
+Cass.=20
+  Maio 1978. (Formato: TXT=3D30662 bytes) (Tamb=E9m RFC1006) </DD></DL>
+<DL>
+  <DT>0036=20
+  <DD>Transmission of IP and ARP over FDDI Networks. D. Katz. Janeiro =
+1993.=20
+  (Formato: TXT=3D22077 bytes) (Tamb=E9m RFC1390) </DD></DL>
+<DL>
+  <DT>0037=20
+  <DD>An Ethernet Address Resolution Protocol. David C. Plummer. =
+Novembro 1982.=20
+  (Formato: TXT=3D21556 bytes) (Tamb=E9m RFC0826) </DD></DL>
+<DL>
+  <DT>0038=20
+  <DD>A Reverse Address Resolution Protocol. Ross Finlayson, Timothy =
+Mann,=20
+  Jeffrey Mogul, Marvin Theimer. Junho 1984. (Formato: TXT=3D9345 bytes) =
+(Tamb=E9m=20
+  RFC0903) </DD></DL>
+<DL>
+  <DT>0039=20
+  <DD>Interface Message Processor: Especifica=E7=F5es para a =
+Interconex=E3o de um=20
+  computador e um IMP (Revisado). BBN. Dezembro 1981. (fora de linha) =
+</DD></DL>
+<DL>
+  <DT>0040=20
+  <DD>Host Access Protocol specification. Bolt Beranek and Newman. =
+Agosto 1993.=20
+  (Formato: TXT=3D152740 bytes) (Deixa obsoleto RFC0907) (Tamb=E9m =
+RFC1221) </DD></DL>
+<DL>
+  <DT>0041=20
+  <DD>Standard for the transmission of IP datagrams over Ethernet =
+networks. C.=20
+  Hornig. Abril 1984. (Formato: TXT=3D5697 bytes) (Tamb=E9m RFC0894) =
+</DD></DL>
+<DL>
+  <DT>0042=20
+  <DD>Standard for the transmission of IP datagrams over experimental=20
+  Ethernetnetworks. J. Postel. Abril 1984. (Formato: TXT=3D4985 bytes) =
+(Tamb=E9m=20
+  RFC0895) </DD></DL>
+<DL>
+  <DT>0043=20
+  <DD>Standard for the transmission of IP datagrams over IEEE 802 =
+networks. J.=20
+  Postel, J.K. Reynolds. Agosto 1993. (Formato: TXT=3D34359 bytes) =
+(Deixa obsoleto=20
+  RFC0948) (Tamb=E9m RFC1042) </DD></DL>
+<DL>
+  <DT>0044=20
+  <DD>DCN Local-Network Protocols. D.L. Mills. Agosto 1993. (Formato: =
+TXT=3D65340=20
+  bytes) (Tamb=E9m RFC0891) </DD></DL>
+<DL>
+  <DT>0045=20
+  <DD>Internet Protocol on Network System's HYPERchannel: Protocol=20
+  Specification. K. Hardwick, J. Lekashman. Augosto 1993. (Formato: =
+TXT=3D100836=20
+  bytes) (Tamb=E9m RFC1044) </DD></DL>
+<DL>
+  <DT>0046=20
+  <DD>Transmitting IP traffic over ARCNET networks. D. Provan. Agosto =
+1993.=20
+  (Formato: TXT=3D16565 bytes) (Deixa obsoleto RFC1051) (Tamb=E9m =
+RFC1201) </DD></DL>
+<DL>
+  <DT>0047=20
+  <DD>Nonstandard for transmission of IP datagrams over serial lines: =
+SLIP. J.L.=20
+  Romkey. Agosto 1993. (Formato: TXT=3D12578 bytes) (Tamb=E9m RFC1055) =
+</DD></DL>
+<DL>
+  <DT>0048=20
+  <DD>Standard for the transmission of IP datagrams over NetBIOS =
+networks. L.J.=20
+  McLaughlin. Agosto 1993. (Formato: TXT=3D5579 bytes) (Tamb=E9m =
+RFC1088) </DD></DL>
+<DL>
+  <DT>0049=20
+  <DD>Standard for the transmission of 802.2 packets over IPX networks. =
+L.J.=20
+  McLaughlin. Agosto 1993. (Formato: TXT=3D7902 bytes) (Tamb=E9m =
+RFC1132) </DD></DL>
+<DL>
+  <DT>0050=20
+  <DD>Definitions of Managed Objects for the Ethernet-like Interface =
+Types. F.=20
+  Kastenholz. Julho 1994. (Formato: TXT=3D39008, bytes) (Deixa obsoleto =
+RFC1623,=20
+  RFC1398) (Tamb=E9m RFC1643) </DD></DL>
+<DL>
+  <DT>0051=20
+  <DD>The Point-to-Point Protocol (PPP). W. Simpson, Editor. Julho 1994. =
+
+  (Formato: TXT=3D151158 bytes) (Deixa obsoleto: RFC1549) (Tamb=E9m =
+RFC1661,=20
+  RFC1662) </DD></DL>
+<DL>
+  <DT>0052=20
+  <DD>The Transmission of IP Datagrams over the SMDS Service. D. =
+Piscitello, J.=20
+  Lawrence. Mar=E7o 1991. (Formato: TXT=3D24662 bytes) (Tamb=E9m =
+RFC1209) </DD></DL>
+<DL>
+  <DT>0053=20
+  <DD>Post Office Protocol - Version 3. J. Myers &amp; M. Rose. Maio =
+1996.=20
+  (Formato: TXT=3D47018 bytes) (Deixa Obsoleto: RFC1725) (Tamb=E9m =
+RFC1939) </DD></DL>
+<DL>
+  <DT>0054=20
+  <DD>OSPF Version 2. J. Moy. Abril 1998. (Formato: TXT=3D447367 bytes) =
+(Tamb=E9m=20
+  RFC2328) </DD></DL>
+<DL>
+  <DT>0055=20
+  <DD>Multiprotocol Interconnect over Frame Relay. C. Brown, A. Malis. =
+Setembro=20
+  1998. (Formato: TXT=3D74671 bytes) (Deixa Obsoleto: RFC1490, RFC1294) =
+(Tamb=E9m=20
+  RFC2427) </DD></DL>
+<DL>
+  <DT>0056=20
+  <DD>RIP Version 2. G. Malkin. Novembro 1998. (Formato: TXT=3D98462 =
+bytes)=20
+  (Atualiza RFC1723, RFC1388) (Tamb=E9m RFC2453) </DD></DL>
+<DL>
+  <DT>0057=20
+  <DD>RIP Version 2 Protocol Applicability Statement. G. Malkin. =
+Novembro 1994.=20
+  (Formato: TXT=3D10236 bytes) (Tamb=E9m RFC1722) </DD></DL>
+<DL>
+  <DT>0058=20
+  <DD>Structure of Management Information Version 2 (SMIv2. K. =
+McCloghrie, D.=20
+  Perkins, J. Schoenwaelder. Abril 1999. (Formato: TXT=3D89712 bytes) =
+(Deixa=20
+  Obsoleto RFC1902) (Tamb=E9m RFC2578, RFC2579) </DD></DL>
+<DL>
+  <DT>0059=20
+  <DD>Remote Network Monitoring Management Information Base. S. =
+Waldbusser. Maio=20
+  2000. (Formato: TXT=3D198676 bytes) (Deixa Obsoleto RFC1757) (Tamb=E9m =
+RFC2819)=20
+  </DD></DL>
+<HR>
+<A name=3Ds-ajuda-internet></A>
+<H2>31.12 Internet</H2>
+<P>Certamente o melhor suporte ao <CODE>GNU/Linux</CODE> =E9 via =
+Internet, veja=20
+abaixo alguns locais =FAteis de onde pode obter ajuda ou se atualizar.=20
+<HR>
+<A name=3Ds-ajuda-paginas></A>
+<H3>31.12.1 P=E1ginas Internet de Refer=EAncia</H3>
+<P>Existem boas p=E1ginas Internet Nacionais e Internacionais sobre o=20
+<CODE>GNU/Linux</CODE> e assuntos relacionados com este sistema. A =
+maioria=20
+trazem documentos e explica=E7=F5es sobre configura=E7=E3o, =
+instala=E7=E3o, manuten=E7=E3o,=20
+documenta=E7=E3o, suporte, etc.=20
+<P>Estas p=E1ginas podem ser encontradas atrav=E9s de ferramentas de =
+busca. Entre=20
+outras p=E1ginas, posso citar as seguintes:=20
+<UL>
+  <LI><SAMP><CODE><A=20
+  =
+href=3D"http://debian-br.cipsga.org.br/">http://debian-br.cipsga.org.br/<=
+/A></CODE></SAMP>=20
+  Projeto Debian-Br. A <CODE>Debian</CODE> =E9 uma distribui=E7=E3o de=20
+  <CODE>Linux</CODE> conhecida por sua qualidade, grande n=FAmero de =
+pacotes,=20
+  estabilidade, facilidade de atualiza=E7=E3o, desenvolvimento aberto, =
+seguran=E7a,=20
+  ferramentas de gerenciamento de servidores e comprometimento com o =
+software=20
+  livre.=20
+  <P>A Debian =E9 feita originalmente em ingl=EAs e traduzida por grupos =
+em v=E1rios=20
+  lugares do mundo. O projeto <STRONG>Debian-br</STRONG> destina-se a =
+colaborar=20
+  na tradu=E7=E3o da <CODE>Debian</CODE> para o Portugu=EAs (nossa =
+l=EDngua-m=E3e).=20
+  Atrav=E9s desse projeto, todos poder=E3o, da forma colaborativa como =
+na=20
+  <CODE>Debian</CODE>, trazer essa excelente distribui=E7=E3o em nosso =
+idioma!=20
+  <P>Participe:=20
+  <UL>
+    <LI>Voc=EA pode pegar um documento pra traduzir=20
+    <LI>Reformular a p=E1gina do projeto=20
+    <LI>Programando para o projeto=20
+    <LI>Sendo um desenvolvedor da Debian=20
+    <LI>A pagina do projeto =E9 a <CODE><A=20
+    =
+href=3D"http://debian-br.cipsga.org.br/">http://debian-br.cipsga.org.br/<=
+/A></CODE>=20
+
+    <LI>Revisar documenta=E7=E3o=20
+    <LI>Ou participar de outras tarefas do seu interesse! </LI></UL>
+  <P>Entre em contato com o respons=E1vel pelo projeto pelo email =
+<CODE><A=20
+  =
+href=3D"mailto:debian-br@listas.cipsga.org.br">debian-br@listas.cipsga.or=
+g.br</A></CODE>=20
+  para saber como entrar no projeto ou visite a p=E1gina <CODE><A=20
+  =
+href=3D"http://debian-br.cipsga.org.br/">http://debian-br.cipsga.org.br/<=
+/A></CODE>.=20
+  Todos os interessados est=E3o convidados a participar do projeto! =
+</P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A=20
+  =
+href=3D"http://debian-br.cipsga.org.br/contador-debian/contador.html">htt=
+p://debian-br.cipsga.org.br/contador-debian/contador.html</A></CODE></SAM=
+P>=20
+  - O contador Debian =E9 uma p=E1gina idealizada para que fossem =
+geradas=20
+  estat=EDsticas f=E1ceis de se aplicar quanto ao n=FAmero e =
+caracter=EDsticas pr=F3prias=20
+  de cada grupo de usu=E1rios Debian no Brasil.=20
+  <P>Sua base =E9 constru=EDda em PHP com uso do banco de dados MySQL, =
+hospedado no=20
+  Source Forge =E9 mantido pelo pessoal do projeto Debian-BR o contador =
+tem tamb=E9m=20
+  a facilidade de integrar-se com o bot apt-br facilitando a vida dos =
+usu=E1rios=20
+  do canal IRC do projeto.=20
+  <P>Respons=E1vel pela p=E1gina: Gustavo Noronha <CODE><A=20
+  href=3D"mailto:dockov@zaz.com.br">dockov@zaz.com.br</A></CODE> =
+endere=E7o:=20
+  <CODE><A=20
+  =
+href=3D"http://debian-br.cipsga.org.br/contador-debian/contador.html">htt=
+p://debian-br.cipsga.org.br/contador-debian/contador.html</A></CODE>=20
+  </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A=20
+  =
+href=3D"http://www.linux.trix.net/">http://www.linux.trix.net/</A></CODE>=
+</SAMP>=20
+  - Boletim di=E1rio com as noticias mais recentes sobre =
+<CODE>GNU/Linux</CODE>,=20
+  testes, redes, descri=E7=E3o/configura=E7=E3o/ avalia=E7=E3o de =
+programas, entrevistas,=20
+  downloads, dica do dia, mecanismo de busca no site, links, etc. Em =
+Portugu=EAs.=20
+  <P>Respons=E1vel pela p=E1gina: Augusto Campos <CODE><A=20
+  href=3D"mailto:brain@matrix.com.br">brain@matrix.com.br</A></CODE> =
+endere=E7o:=20
+  <CODE><A=20
+  =
+href=3D"http://www.linux.trix.net/">http://www.linux.trix.net/</A></CODE>=
+.=20
+  </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A=20
+  =
+href=3D"http://www.olinux.com.br/">http://www.olinux.com.br/</A></CODE></=
+SAMP> -=20
+  Trata o <CODE>GNU/Linux</CODE> com o foco jornal=EDstico e tem a =
+inten=E7=E3o de=20
+  prover informa=E7=F5es eficazes e esclarecedoras capazes de instruir, =
+reciclar e=20
+  tornar acess=EDvel aos usu=E1rios o conhecimento e aprofundamento de =
+temas=20
+  relacionados a plataforma <CODE>GNU/Linux</CODE>.=20
+  <P>Publica=E7=E3o di=E1ria de Artigos que s=E3o feitos para que o =
+usu=E1rio possa=20
+  resolver problemas e tirar d=FAvidas deste sistema. Assuntos diversos =
+sobre=20
+  programas, servi=E7os e utilit=E1rios. Tamb=E9m conta com se=E7=F5es =
+de programa=E7=E3o,=20
+  jogos, seguran=E7a e entrevistas com personalidades do cen=E1rio =
+<EM>software=20
+  livre/c=F3digo aberto</EM>. Atualiza=E7=E3o di=E1ria.=20
+  <P>Respons=E1vel pela p=E1gina: Linux Solutions <CODE><A=20
+  =
+href=3D"mailto:baptista@linuxsolutions.com.br">baptista@linuxsolutions.co=
+m.br</A></CODE>=20
+  endere=E7o: <CODE><A=20
+  =
+href=3D"http://www.olinux.com.br/">http://www.olinux.com.br/</A></CODE>. =
+
+  </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A=20
+  =
+href=3D"http://come.to/linuxworld/">http://come.to/linuxworld/</A></CODE>=
+</SAMP>=20
+  - Informa=E7=F5es sobre distribui=E7=F5es Linux, downloads, =
+gerenciadores de janelas=20
+  (Enlightenment, Window Maker, etc) temas com fotos ilustrativas, =
+se=E7=E3o=20
+  programa do m=EAs (onde =E9 falado sobre um programa interessante), =
+se=E7=E3o sobre=20
+  jogos (para as pessoas enviarem suas d=FAvidas de jogos). Em =
+Portugu=EAs.=20
+  <P>Esta home page tamb=E9m traz uma se=E7=E3o onde as pessoas escrevem =
+suas d=FAvidas,=20
+  que s=E3o recebidas pelo respons=E1vel pela p=E1gina, solucionadas e =
+respondidas.=20
+  <P>Respons=E1vel pela p=E1gina: Luiz Estev=E3o Baptista de Oliveira =
+<CODE><A=20
+  href=3D"mailto:luizestevao@yahoo.com">luizestevao@yahoo.com</A></CODE> =
+endere=E7o:=20
+  <CODE><A=20
+  =
+href=3D"http://come.to/linuxworld/">http://come.to/linuxworld/</A></CODE>=
+.=20
+  </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A=20
+  =
+href=3D"http://www.linuxsecurity.com.br/">http://www.linuxsecurity.com.br=
+/</A></CODE></SAMP>=20
+  - Boletins de seguran=E7a, publica=E7=F5es de textos nacionais, =
+tradu=E7=F5es de sites=20
+  especializados em seguran=E7a, programas relacionados com criptografia =
+e=20
+  seguran=E7a no ambiente <CODE>Linux</CODE>. A p=E1gina requer um =
+navegador com=20
+  suporte a Java.=20
+  <P>Endere=E7o: <CODE><A=20
+  =
+href=3D"http://www.linuxsecurity.com.br/">http://www.linuxsecurity.com.br=
+/</A></CODE>.=20
+  </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A=20
+  href=3D"http://www.tldp.org/">http://www.tldp.org/</A></CODE></SAMP> - =
+Projeto=20
+  de documenta=E7=E3o do <CODE>GNU/Linux</CODE> no Brasil. Toda a =
+documenta=E7=E3o=20
+  traduzida para o Portugu=EAs do Brasil pode ser encontrada l=E1.=20
+  <P>Respons=E1vel pela p=E1gina: <CODE><A=20
+  =
+href=3D"mailto:ricardo@conectiva.com.br">ricardo@conectiva.com.br</A></CO=
+DE>=20
+  endere=E7o: <CODE><A=20
+  href=3D"http://www.tldp.org/">http://www.tldp.org/</A></CODE>. =
+</P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A=20
+  =
+href=3D"http://expansion.onweb.cx/">http://expansion.onweb.cx/</A></CODE>=
+</SAMP>=20
+  - Site que visa juntar e divulgar principalmente a documenta=E7=E3o do =
+
+  <CODE>GNU/Linux</CODE>, sejam HOW-TOs ou simples dicas.=20
+  <P>Respons=E1vel pela p=E1gina: <CODE><A=20
+  =
+href=3D"mailto:netstart@linuxbr.com.br">netstart@linuxbr.com.br</A></CODE=
+>=20
+  endere=E7o: <CODE><A=20
+  =
+href=3D"http://expansion.onweb.cx/">http://expansion.onweb.cx/</A></CODE>=
+.=20
+  </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A=20
+  =
+href=3D"http://www.guiadohardware.net/">http://www.guiadohardware.net/</A=
+></CODE></SAMP>=20
+  - Site de Hardware, conta com not=EDcias di=E1rias, cursos on-line, =
+artigos,=20
+  tutoriais, an=E1lises de equipamentos, f=F3rum, dicion=E1rio de =
+termos, dicas sobre=20
+  overclock, palm pilot e sess=E3o FAQ com mais de 300 d=FAvidas =
+respondidas.=20
+  <P>Atualiza=E7=F5es di=E1rias, possui um servi=E7o de envio de dicas =
+por e-mail.=20
+  <P>Respons=E1vel pela p=E1gina: Carlos E. Morimoto <CODE><A=20
+  =
+href=3D"mailto:morimoto@guiadohardware.net">morimoto@guiadohardware.net</=
+A></CODE>=20
+  endere=E7o: <CODE><A=20
+  =
+href=3D"http://www.guiadohardware.net/">http://www.guiadohardware.net/</A=
+></CODE>.=20
+  </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A=20
+  =
+href=3D"http://br.linuxchix.org/">http://br.linuxchix.org/</A></CODE></SA=
+MP> -=20
+  <P>O <EM>LinuxChix Brasil</EM>, assim como o Projeto <EM>LinuxChix=20
+  internacional</EM>, =E9 uma comunidade para mulheres que gostam de =
+Linux, e para=20
+  apoiar as mulheres na computa=E7=E3o em geral. As participantes v=E3o =
+desde novatas=20
+  =E0 usu=E1rias experientes, e incluem programadoras profissionais e =
+amadoras,=20
+  administradoras de sistemas e documentadoras t=E9cnicas.=20
+  <P>Respons=E1vel pela p=E1gina: Lista LinuxChix <CODE><A=20
+  =
+href=3D"mailto:linuxchix@listas.cipsga.org.br">linuxchix@listas.cipsga.or=
+g.br</A></CODE>=20
+  endere=E7o: <CODE><A=20
+  =
+href=3D"http://www.guiadohardware.net/">http://www.guiadohardware.net/</A=
+></CODE>.=20
+  </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A=20
+  =
+href=3D"http://www.noticiaslinux.com.br/">http://www.noticiaslinux.com.br=
+/</A></CODE></SAMP>=20
+  -=20
+  <P>Not=EDcias di=E1rias sobre GNU/Linux e Software Livre no site, por =
+e-mail ou=20
+  RSS.=20
+  <P>Respons=E1vel pela p=E1gina: <CODE><A=20
+  =
+href=3D"mailto:deivison@noticiaslinux.com.br">deivison@noticiaslinux.com.=
+br</A></CODE>=20
+  endere=E7o: <CODE><A=20
+  =
+href=3D"http://www.noticiaslinux.com.br/">http://www.noticiaslinux.com.br=
+/</A></CODE>=20
+  </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A=20
+  href=3D"http://www.linux.org/">http://www.linux.org/</A></CODE></SAMP> =
+- P=E1gina=20
+  oficial do <CODE>GNU/Linux</CODE> mantida pela <EM>Transmeta</EM> (a =
+empresa=20
+  que Linus Torvalds vem trabalhando atualmente). Muita refer=EAncia =
+sobre=20
+  <CODE>GNU/Linux</CODE>, distribui=E7=F5es, hardwares, softwares, =
+downloads, etc.=20
+  <P>Respons=E1vel pela p=E1gina: <CODE><A=20
+  href=3D"mailto:webmaster@linux.org">webmaster@linux.org</A></CODE> =
+endere=E7o:=20
+  <CODE><A =
+href=3D"http://www.linux.org/">http://www.linux.org/</A></CODE>.=20
+  </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A=20
+  =
+href=3D"http://counter.li.org/">http://counter.li.org/</A></CODE></SAMP> =
+- Este=20
+  =E9 um servi=E7o que tem o objetivo de contar os usu=E1rios, =
+m=E1quinas, grupos de=20
+  usu=E1rios <CODE>Linux</CODE> existentes ao redor do mundo. Te =
+encorajo a se=20
+  registrar neste site e indica-lo aos seus amigos, =E9 de =
+<STRONG>gra=E7a</STRONG>,=20
+  voc=EA estar=E1 contribuindo para o aumento das estat=EDsticas do =
+n=FAmero de usu=E1rios=20
+  no mundo, pa=EDs, sua cidade, etc.=20
+  <P>O site tamb=E9m conta com um sistema de estat=EDsticas de =
+usu=E1rios, m=E1quinas e=20
+  grupos de usu=E1rios espalhados ao redor do mundo. Voc=EA pode saber =
+em poucos=20
+  segundos a quantidade de usu=E1rios Linux em seu pa=EDs, cidade, etc.=20
+  <P>Respons=E1vel pela p=E1gina: Harald T. Alvestrand <CODE><A=20
+  href=3D"mailto:harald@alvestrand.no">harald@alvestrand.no</A></CODE> =
+endere=E7o:=20
+  <CODE><A =
+href=3D"http://counter.li.org/">http://counter.li.org/</A></CODE>.=20
+  </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A=20
+  =
+href=3D"http://metalab.unc.edu/">http://metalab.unc.edu/</A></CODE></SAMP=
+> - O=20
+  ponto de refer=EAncia mais tradicional de softwares =
+<CODE>GNU/Linux</CODE> do=20
+  mundo. Voc=EA pode encontrar desde dicas, documenta=E7=E3o (todos os =
+How-Tos) at=E9=20
+  diversas distribui=E7=F5es <CODE>GNU/Linux</CODE>.=20
+  <P>Respons=E1vel pelo site: <CODE><A=20
+  =
+href=3D"mailto:webmaster@sunsite.unc.edu">webmaster@sunsite.unc.edu</A></=
+CODE>=20
+  endere=E7o: <CODE><A=20
+  href=3D"http://metalab.unc.edu/">http://metalab.unc.edu/</A></CODE>.=20
+</P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A=20
+  =
+href=3D"http://www.themes.org/">http://www.themes.org/</A></CODE></SAMP> =
+- Neste=20
+  site voc=EA encontra milhares de temas divididos em categorias para os =
+mais=20
+  diversos gerenciadores de janelas no <CODE>GNU/Linux</CODE>. O site =
+=E9 muito=20
+  pesado, por causa das fotos, =E9 recomend=E1vel um bom fax-modem ou =
+muita=20
+  paci=EAncia.=20
+  <P>Respons=E1vel pela p=E1gina: <CODE><A=20
+  href=3D"mailto:webmaster@themes.org">webmaster@themes.org</A></CODE> =
+endere=E7o:=20
+  <CODE><A =
+href=3D"http://www.themes.org/">http://www.themes.org/</A></CODE>.=20
+  </P></LI></UL>
+<UL>
+  <LI><SAMP><CODE><A=20
+  =
+href=3D"http://www.oreill.com/safari/">http://www.oreill.com/safari/</A><=
+/CODE></SAMP>=20
+  - Neste site voc=EA encontra os livros publicados sobre a licen=E7a =
+OpenBook da=20
+  Orreil. Na maioria livros que n=E3o atende mais prop=F3sitos =
+atualmente e livros=20
+  em que os autores concordaram em licenciar sob os termos OpenBook.=20
+  <P>Endere=E7o: <CODE><A=20
+  =
+href=3D"http://www.oreill.com/safari/">http://www.oreill.com/safari/</A><=
+/CODE>.=20
+  </P></LI></UL>
+<P>Caso conhecer uma p=E1gina de Internet que contenha materiais =FAteis =
+a=20
+comunidade <CODE>GNU/Linux</CODE> ou desejar incluir a sua, entre em =
+contato=20
+para sua inclus=E3o na pr=F3xima vers=E3o do guia junto com uma =
+descri=E7=E3o da p=E1gina.=20
+<HR>
+<A name=3Ds-ajuda-listas></A>
+<H3>31.12.2 Listas de discuss=E3o</H3>
+<P>S=E3o grupos de usu=E1rios que trocam mensagens entre si, resolvem =
+d=FAvidas,=20
+ajudam na configura=E7=E3o de programas, instala=E7=E3o, etc. =C9 =
+considerado o melhor=20
+suporte ao <CODE>GNU/Linux</CODE> pois qualquer participante pode ser =
+beneficiar=20
+das solu=E7=F5es discutidas. Existem milhares de listas de discuss=F5es =
+sobre o=20
+<CODE>GNU/Linux</CODE> espalhadas pelo mundo, em Portugu=EAs existem =
+algumas=20
+dezenas.=20
+<P>Algumas listas s=E3o espec=EDficas a um determinado assunto do =
+sistema, algumas=20
+s=E3o feitas para usu=E1rios iniciantes ou avan=E7ados, outras falam =
+praticamente de=20
+tudo. Existem desde usu=E1rios iniciantes, hackers, consultores, =
+administradores=20
+de redes experientes e gurus participando de listas e oferecendo suporte =
+de=20
+gra=E7a a quem se aventurar em instalar e usar o sistema =
+<CODE>GNU/Linux</CODE>.=20
+<P>A lista de discuss=E3o funciona da seguinte forma: voc=EA se inscreve =
+na lista=20
+enviando uma mensagem ao endere=E7o de inscri=E7=E3o, ser=E1 enviada um =
+pedido de=20
+confirma=E7=E3o por e-mail, simplesmente d=EA um reply na mensagem para =
+ser=20
+cadastrado. Pronto! agora voc=EA estar=E1 participando do grupo de =
+usu=E1rios e=20
+receber=E1 todas as mensagens dos participantes do grupo. Assim voc=EA =
+poder=E1 enviar=20
+sua mensagem e ela ser=E1 vista por todos os participantes da lista.=20
+<P>Da mesma forma, voc=EA pode responder uma d=FAvida de outro usu=E1rio =
+da lista ou=20
+discutir algum assunto, tirar alguma d=FAvida sobre a d=FAvida de outra =
+pessoa, etc.=20
+
+<P>N=E3o tenha vergonha de enviar sua pergunta, participar de listas de =
+discuss=E3o=20
+=E9 uma experi=EAncia quase obrigat=F3rio de um <SAMP>Linuxer</SAMP>. =
+Abaixo segue uma=20
+rela=E7=E3o de listas de discuss=E3o em Portugu=EAs com a descri=E7=E3o, =
+endere=E7o de=20
+inscri=E7=E3o, e o que voc=EA deve fazer para ser cadastrado:=20
+<DL>
+  <DT><CODE><A=20
+  =
+href=3D"mailto:debian-user-portuguese@lists.debian.org">debian-user-portu=
+guese@lists.debian.org</A></CODE>=20
+
+  <DD>Lista de discuss=E3o para usu=E1rios Portugueses da =
+<CODE>Debian</CODE>.=20
+  Tamb=E9m s=E3o discutidos assuntos relacionados ao Linux em geral. A =
+inscri=E7=E3o =E9=20
+  aberta a todos os interessados.=20
+  <P>Para se inscrever, envie uma mensagem para <CODE><A=20
+  =
+href=3D"mailto:debian-user-portuguese-request@lists.debian.org">debian-us=
+er-portuguese-request@lists.debian.org</A></CODE>=20
+  contendo a palavra <SAMP>subscribe</SAMP> no assunto da mensagem. =
+Ser=E1 enviada=20
+  uma mensagem a voc=EA pedindo a confirma=E7=E3o da inscri=E7=E3o na =
+lista de discuss=E3o,=20
+  simplesmente d=EA um reply na mensagem (responder) e voc=EA estar=E1 =
+cadastrado e=20
+  poder=E1 enviar e receber mensagens dos participantes. </P></DD></DL>
+<DL>
+  <DT><CODE><A=20
+  =
+href=3D"mailto:debian-news-portuguese@lists.debian.org">debian-news-portu=
+guese@lists.debian.org</A></CODE>=20
+
+  <DD>A <CODE>Debian</CODE> =E9 extremamente bem estruturada quanto a =
+divulga=E7=F5es=20
+  e not=EDcias, v=E1rias listas de email e v=E1rias p=E1ginas comp=F5e =
+essa base. A=20
+  <EM>Debian Weekly News</EM> =E9 especialmente importante pois d=E1 uma =
+vis=E3o geral=20
+  do que se passou na <CODE>Debian</CODE> durante a semana. Sua vers=E3o =
+
+  Brasileira =E9 editada e traduzida por <EM>Gustavo Noronha Silva =
+(kov)</EM> e=20
+  conta com a lista de pacotes traduzida por <EM>Adriano Freitas =
+(afreitas)</EM>=20
+  e revisada por <EM>Hilton Fernandes</EM> e n=E3o traz apenas =
+tradu=E7=F5es mas=20
+  tamb=E9m adi=E7=F5es dos acontecimentos atuais da <CODE>Debian</CODE> =
+no Brasil, ou=20
+  projetos conclu=EDdos ou lan=E7ados pela equipe <EM>Debian-br</EM> =
+(<CODE><A=20
+  =
+href=3D"http://debian-br.cipsga.org.br/">http://debian-br.cipsga.org.br/<=
+/A></CODE>).=20
+
+  <P>Essa lista <SAMP>N=C3O</SAMP> =E9 usada para resolu=E7=E3o de =
+d=FAvidas e problemas,=20
+  apenas para o RECEBIMENTO de not=EDcias relacionadas a Debian. N=E3o =
+poste=20
+  mensagens nela!=20
+  <P>Para se inscrever, envie uma mensagem para <CODE><A=20
+  =
+href=3D"mailto:debian-news-portuguese-request@lists.debian.org">debian-ne=
+ws-portuguese-request@lists.debian.org</A></CODE>=20
+  contendo a palavra <SAMP>subscribe</SAMP> no assunto da mensagem. =
+Ser=E1 enviada=20
+  uma mensagem a voc=EA pedindo a confirma=E7=E3o da inscri=E7=E3o na =
+lista de discuss=E3o,=20
+  simplesmente d=EA um reply na mensagem (responder) e voc=EA passar=E1 =
+a receber as=20
+  not=EDcias sobre a Debian em Portugu=EAs. </P></DD></DL>
+<DL>
+  <DT><CODE><A =
+href=3D"mailto:linux-br@unicamp.br">linux-br@unicamp.br</A></CODE>=20
+  <DD>Lista de discuss=E3o que cobre assuntos diversos. Esta lista =E9 =
+voltada para=20
+  usu=E1rios com bons conhecimentos no <CODE>GNU/Linux</CODE>, s=E3o =
+abordados=20
+  assuntos como redes, configura=E7=F5es, etc. Esta =E9 uma lista =
+moderada, o que=20
+  significa que a mensagem que envia passam por uma pessoa que verifica =
+(modera)=20
+  e a libera caso estejam dentro das normas adotada na lista. =C9 uma =
+lista de=20
+  alto n=EDvel e recomendada para quem deseja fugir de mensagens como =
+<SAMP>n=E3o=20
+  consigo instalar o Linux</SAMP>, <SAMP>n=E3o sei compilar o =
+kernel</SAMP>,=20
+  <SAMP>o que eu fa=E7o quando vejo uma tela com o nome login:?</SAMP>, =
+etc.=20
+  <P>Para se inscrever nesta lista, envie uma mensagem para: <CODE><A=20
+  =
+href=3D"mailto:linux-br-request@unicamp.br">linux-br-request@unicamp.br</=
+A></CODE>=20
+  contendo a palavra <SAMP>subscribe</SAMP> no assunto da mensagem e =
+aguarde o=20
+  recebimento da confirma=E7=E3o da inscri=E7=E3o. Apenas responda a =
+mensagem de=20
+  confirma=E7=E3o para se inscrever. Para se descadastrar envie uma =
+mensagem para o=20
+  mesmo endere=E7o mas use a palavra <SAMP>unsubscribe</SAMP>. =
+</P></DD></DL>
+<DL>
+  <DT><CODE><A =
+href=3D"mailto:dicas-l@unicamp.br">dicas-l@unicamp.br</A></CODE>=20
+  <DD>Esta lista envia diariamente uma dica de <CODE>Unix</CODE>, =
+sistemas da=20
+  Microsoft ou novidades da Internet.=20
+  <P>Para se inscreve nesta lista de discuss=E3o, envie uma mensagem =
+para:=20
+  <CODE><A=20
+  =
+href=3D"mailto:dicas-l-request@unicamp.br">dicas-l-request@unicamp.br</A>=
+</CODE>=20
+  contendo a palavra <SAMP>subscribe</SAMP> no corpo da mensagem e =
+aguarde o=20
+  recebimento da confirma=E7=E3o da inscri=E7=E3o. Apenas responda a =
+mensagem de=20
+  confirma=E7=E3o para confirmar sua inscri=E7=E3o na lista. Para se =
+descadastrar envie=20
+  uma mensagem para o mesmo endere=E7o mas use a palavra =
+<SAMP>unsubscribe</SAMP>.=20
+  </P></DD></DL>
+<DL>
+  <DT><CODE><A=20
+  =
+href=3D"mailto:linux-br@listas.conectiva.com.br">linux-br@listas.conectiv=
+a.com.br</A></CODE>=20
+
+  <DD>Discute todos os aspectos relacionados ao uso, instala=E7=E3o, =
+atualiza=E7=E3o e=20
+  opera=E7=E3o do <CODE>GNU/Linux</CODE>.=20
+  <P>Para se inscreve nesta lista de discuss=E3o, envie uma mensagem =
+para:=20
+  <CODE><A=20
+  =
+href=3D"mailto:linux-br-request@listas.conectiva.com.br">linux-br-request=
+@listas.conectiva.com.br</A></CODE>=20
+  contendo a palavra <SAMP>subscribe</SAMP> no corpo da mensagem e =
+aguarde o=20
+  recebimento da confirma=E7=E3o da inscri=E7=E3o. Apenas responda a =
+mensagem de=20
+  confirma=E7=E3o para confirmar sua inscri=E7=E3o na lista. Para se =
+descadastrar envie=20
+  uma mensagem para o mesmo endere=E7o mas use a palavra =
+<SAMP>unsubscribe</SAMP>.=20
+  </P></DD></DL>
+<P>Esta listagem deveria estar mais completa, mas eu n=E3o lembro de =
+todas as=20
+listas!. Tamb=E9m recomendo dar uma olhada em <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-netiqueta-listas">Lista=
+s=20
+de Discuss=E3o via Email, Se=E7=E3o 31.13.5</A> que descreve =
+recomenda=E7=F5es de=20
+comportamento em listas de discuss=E3o.=20
+<HR>
+<A name=3Ds-ajuda-netiqueta></A>
+<H2>31.13 Netiqueta</H2>
+<P>S=E3o recomenda=E7=F5es que tem como objetivo facilitar a para =
+comunica=E7=E3o atrav=E9s=20
+dos recursos de uma rede. O nome <EM>Netiqueta</EM> vem de "Etiqueta de =
+Rede"=20
+(<EM>Net Etiquete</EM>). O material desta se=E7=E3o foi escrito com base =
+nos anos de=20
+observa=E7=E3o que tive via internet e tamb=E9m com refer=EAncia a rfc =
+1855.=20
+<HR>
+<A name=3Ds-ajuda-netiqueta-geral></A>
+<H3>31.13.1 Recomenda=E7=F5es Gerais sobre a Comunica=E7=E3o =
+Eletr=F4nica</H3>
+<UL>
+  <LI>Como recomenda=E7=E3o geral, lembre-se que a conversa via internet =
+=E9 feita=20
+  sempre de uma para outra pessoa ou de uma para v=E1rias pessoas, e que =
+a forma=20
+  de comunica=E7=E3o =E9 a mesma que utilizaria se estivesse de frente a =
+frente com a=20
+  pessoa. Nunca diga algo que n=E3o diria se estivesse diante da outra =
+pessoa.=20
+  Existem pessoas que por estar atr=E1s de um monitor, se sentem =
+"maiores" se=20
+  esquecendo disso e causando preju=EDzos de comunica=E7=E3o (e sem =
+imaginar que a=20
+  pessoa do outro lado da linha existe).=20
+  <P>Apesar do modo que as frases s=E3o escritas expressarem o jeito que =
+a outra=20
+  pessoa est=E1 do outro lado da linha e seu tom de comunica=E7=E3o no =
+decorrer da=20
+  conversar, existem algumas coisas que n=E3o podem ser totalmente =
+expressadas=20
+  atrav=E9s da Internet, como por exemplo a express=E3o da "face" das =
+pessoas. Para=20
+  isto foram criados s=EDmbolos chamados <EM>smileys</EM> que expressam =
+a face da=20
+  outra pessoa em determinado momento, e dependendo do sentido da =
+conversa, um=20
+  smiley pode expressar corretamente a inten=E7=E3o de sua frase. Os =
+mais usados s=E3o=20
+  os seguintes: <PRE>     :-)   --&gt; Sorriso
+    =20
+     :-(   --&gt; Triste
+    =20
+     ;-)   --&gt; Piscadinha
+    =20
+     :-O   --&gt; De boca aberta
+    =20
+     :-|   --&gt; Sem gra=E7a
+    =20
+     8-)   --&gt; De =F3culos=20
+    =20
+     |-)   --&gt; Com sono e feliz
+    =20
+     &lt;:-)  --&gt; Bobo
+</PRE>
+  <P>Para entender o sentido do smiley, veja ele de lado (45 graus). Use =
+os=20
+  smileys em suas conversa=E7=F5es, mas com cautela. N=E3o espere que a =
+inclus=E3o de um=20
+  smiley sorridente ":-)" deixe o destinat=E1rio da mensagem contente =
+com um=20
+  coment=E1rio rude ou insulto. </P>
+  <LI>ESCREVER EM MAI=DASCULAS significa gritar quando escrever =
+mensagens=20
+  eletr=F4nicas.=20
+  <LI>Use *asteriscos* para destacar uma palavra ou frase. _Isso_ indica =
+uma=20
+  palavra/frase sublinhada.=20
+  <LI>Se voc=EA troca mensagens com pessoas do mundo todo, n=E3o espere =
+que um=20
+  japon=EAs responda logo seu e-mail que enviou as 15:00 da tarde. A =
+essa hora no=20
+  pa=EDs dele, ele est=E1 roncando forte na cama e sonhando com a placa =
+3D que vai=20
+  ganhar para melhorar o desempenho de seus jogos de <CODE>Linux</CODE>. =
+
+  <LI>Durante a comunica=E7=E3o com pessoas de diferentes regi=F5es (ou =
+pa=EDses), evite=20
+  a utiliza=E7=E3o de g=EDrias, ou express=F5es regionais. Uma =
+interpreta=E7=E3o em uma=20
+  determinada regi=E3o n=E3o garante que ela tenha o mesmo significado =
+para seu=20
+  destinat=E1rio, as vezes pode ser at=E9 ofensiva.=20
+  <LI>Assuma que sua mensagem est=E1 trafegando sobre uma via n=E3o =
+segura, desta=20
+  forma n=E3o envie informa=E7=F5es pessoais que n=E3o enviaria em uma =
+carta comum. O=20
+  uso de criptografia pode garantir melhor seguran=E7a na transmiss=E3o =
+de dados.=20
+  </LI></UL>
+<HR>
+<A name=3Ds-ajuda-netiqueta-email></A>
+<H3>31.13.2 Email</H3>
+<UL>
+  <LI>Tenha o h=E1bito de colocar sempre um assunto na mensagem que =
+envia para=20
+  identificar seu conte=FAdo.=20
+  <LI>Respeite os direitos autorais das mensagens de e-mail. Se precisar =
+
+  encaminhar mensagens, preserve seu conte=FAdo original.=20
+  <LI>Procure limitar o tamanho da linha a 70 caracteres. Muitos =
+usu=E1rios=20
+  utilizam cliente de e-mail em modo texto, e nem todo mundo usa a mesma =
+
+  resolu=E7=E3o que voc=EA.=20
+  <LI>Caso o e-mail que responda tenha mais que 100 linhas, =E9 =
+recomend=E1vel=20
+  colocar a palavra "LONGA" no assunto da mensagem. Se poss=EDvel corte =
+as partes=20
+  n=E3o necess=E1rias da mensagens de respostas tendo o cuidado de n=E3o =
+"cortar" de=20
+  forma mal educada a mensagem de outra pessoa.=20
+  <LI>N=E3o espere que o espa=E7amento ou desenhos ASCII usados em uma =
+mensagem=20
+  sejam mostrados corretamente em todos os sistemas.=20
+  <LI>Utilize sempre uma assinatura no final da mensagem para =
+identificar voc=EA e=20
+  principalmente seu endere=E7o de e-mail. Em alguns cliente de e-mail, =
+o campo=20
+  <SAMP>Reply-to</SAMP> =E9 bagun=E7ado, e em e-mails redirecionados o =
+endere=E7o de=20
+  resposta =E9 exclu=EDdo. A assinatura facilita encontrar o remetente =
+da mensagem.=20
+  Tente manter a assinatura em um tamanho de no m=E1ximo 4 linhas.=20
+  <LI>N=E3o repasse mensagens de corrente por e-mail. Elas tem somente o =
+objetivo=20
+  de espalhar boatos na Internet e se espalhar. Normalmente elas vem com =
+uma=20
+  hist=F3ria bonita e no final diz se n=E3o repassar acontecer=E1 tudo =
+ao contr=E1rio=20
+  com voc=EA ou algo do tipo. <EM>N=E3o vai acontecer nada! ignore isso =
+e n=E3o entre=20
+  na corrente!</EM>=20
+  <P>Pelas pol=EDticas da Internet, voc=EA pode ter sua conta de e-mail =
+perdida se=20
+  fizer mal uso dele. </P></LI></UL>
+<HR>
+<A name=3Ds-ajuda-netiqueta-talk></A>
+<H3>31.13.3 Talk</H3>
+<UL>
+  <LI>Use sempre quebra de linhas ao escrever suas mensagens, use pelo =
+menos 70=20
+  caracteres para escrever suas mensagens de talk. Evita escrever =
+continuamente=20
+  at=E9 a borda para fazer quebra de linha autom=E1tica, alguns clientes =
+de talk n=E3o=20
+  aceitam isso corretamente.=20
+  <LI>Sempre que termina uma frase, deixe uma linha em branco (tecle =
+enter 2=20
+  vezes) para indicar que a outra pessoa pode iniciar a digita=E7=E3o.=20
+  <LI>Sempre se despe=E7a da outra pessoa e espere ela responder antes =
+de fechar=20
+  uma se=E7=E3o de conversa=E7=E3o. O respeito m=FAtuo durante um =
+di=E1logo =E9 essencial :-)=20
+  <LI>Lembre-se que o talk normalmente interrompe as pessoas que =
+trabalham=20
+  nativamente no console. Evite dar talk para estranhos, pois podem =
+fazer uma m=E1=20
+  impress=E3o de voc=EA. Tente antes estabelecer outros meios de =
+comunica=E7=E3o.=20
+  <LI>Se a outra pessoa n=E3o responder, n=E3o assuma de cara que ela =
+est=E1 ignorando=20
+  voc=EA ou n=E3o levando sua conversa muito bem. Ela pode simplesmente =
+estar=20
+  ocupada, trabalhando, ou com problemas no cliente de talk. Alguns =
+cliente de=20
+  talk d=E3o problemas durante a comunica=E7=E3o remota, lembre-se =
+tamb=E9m que sua=20
+  comunica=E7=E3o =E9 via UDP :-)=20
+  <LI>Se a pessoa n=E3o responder seus talks durante certo tempo, n=E3o =
+deixe ele=20
+  infinitamente beepando a pessoa. Tente mais tarde :-)=20
+  <LI>Seja atencioso caso utilize mais de uma se=E7=E3o de talk ao mesmo =
+tempo.=20
+  <LI>O talk tamb=E9m leva em considera=E7=E3o sua habilidade de =
+digita=E7=E3o. Muitos=20
+  erros e corre=E7=F5es cont=EDnuas fazem a outra pessoa ter uma =
+no=E7=E3o de voc=EA, suas=20
+  experi=EAncias, etc ;-) </LI></UL>
+<HR>
+<A name=3Ds-ajuda-netiqueta-icq></A>
+<H3>31.13.4 ICQ</H3>
+<P>O ICQ =E9 uma excelente ferramenta de comunica=E7=E3o em tempo real, =
+usada=20
+principalmente para localizar quando uma pessoa est=E1 on-line. Este =
+documento=20
+inclui algumas recomenda=E7=F5es de ICtiQueta (Etiqueta no ICQ) para =
+melhor os=20
+usu=E1rios aproveitarem melhor esta ferramenta.=20
+<UL>
+  <LI>De aten=E7=E3o ao status do ICQ da outra pessoa. Se ela estiver =
+"on-line" ou=20
+  "free for chat" significa que ela est=E1 desocupada e que pode =
+conversar naquele=20
+  instante. Se estiver como n=E3o perturbe, envie somente mensagens se =
+for mesmo=20
+  preciso.=20
+  <LI>Seja tamb=E9m sensato ao usar o ICQ. N=E3o entre nele caso n=E3o =
+possa=20
+  conversar, ou avise isso mudando seu status para o mais adequado para =
+a=20
+  situa=E7=E3o, assim os outros poder=E3o entender que est=E1 longe do =
+computador, n=E3o=20
+  dispon=EDvel ou ocupado.=20
+  <LI>=C9 recomend=E1vel ser prudente quanto ao envio de mensagens no =
+ICQ, n=E3o envie=20
+  mais do que 4 mensagens seguidas, pois a outra pessoa ter=E1 =
+dificuldades para=20
+  responder a todas elas mais outra que talvez possa estar recebendo de =
+outras.=20
+  <LI>Guarde seu login e senha de ICQ em um lugar seguro. Caso ela seja =
+perdida,=20
+  voc=EA ter=E1 trabalho para avisar a todos de sua lista de contato.=20
+  <LI>Caso algu=E9m de sua lista de contatos esteja sempre on-line e =
+n=E3o lhe envia=20
+  mensagens h=E1 muito tempo, n=E3o fique com a impress=E3o de que ela =
+n=E3o quer trocar=20
+  mais mensagens com voc=EA. Pode ser apenas que ela tenha reinstalado =
+seu=20
+  programa de ICQ e n=E3o tenha anotados todos seus UIN's.=20
+  <P>Normalmente quando se envia uma mensagem para a pessoa, o UIN =E9=20
+  automaticamente cadastrado em sua lista. </P>
+  <LI>N=E3o pense que a op=E7=E3o "Requer Autoriza=E7=E3o" te de o =
+controle total de quem=20
+  ter=E1 ou n=E3o seu n=FAmero de ICQ em sua lista. Utilize as =
+op=E7=F5es de privacidade=20
+  para configurar.=20
+  <LI>Sempre que enviar uma URL, procure descrever algo para seu =
+interlocutor na=20
+  mensagem.=20
+  <LI>No modo de chat, use as recomenda=E7=F5es descritas sobre o talk =
+(em <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm#s-ajuda-netiqueta-talk">Talk,=20
+  Se=E7=E3o 31.13.3</A>).=20
+  <LI>Como em toda comunica=E7=E3o on-line, seja cauteloso quando a =
+pessoa que=20
+  conversa. Nem sempre quem conversamos do outro lado =E9 a pessoa que =
+esperamos=20
+  encontrar. Lembre-se que um registro falso e uma identidade pode ser =
+criada=20
+  sem dificuldades por qualquer pessoa. </LI></UL>
+<HR>
+<A name=3Ds-ajuda-netiqueta-listas></A>
+<H3>31.13.5 Listas de Discuss=E3o via Email</H3>
+<UL>
+  <LI>Tente se manter dentro do assunto quando responder mensagens de =
+listas.=20
+  Seja claro e explicativo ao mesmo tempo :-)=20
+  <LI>Sempre coloque um assunto (subject) na mensagem. O assunto serve =
+como um=20
+  resumo do problema ou d=FAvida que tem. Alguns usu=E1rios, =
+principalmente os que=20
+  participam de v=E1rias listas de discuss=E3o, verificam o assunto da =
+mensagem e=20
+  podem simplesmente descartar a mensagem sem l=EA-la porque as vezes =
+ele n=E3o=20
+  conhece sobre aquele assunto.=20
+  <LI>Nunca use "Socorro!", "Help!" ou coisa do g=EAnero como assunto, =
+seja=20
+  objetivo sobre o problema/d=FAvida que tem: <EM>"Falha ao carregar =
+m=F3dulo no do=20
+  kernel"</EM>, <EM>"SMAIL retorna a mensagem Access denied"</EM>,=20
+  <EM>"Novidades: Nova vers=E3o do guia Foca Linux"</EM> ;-).=20
+  <LI>Procure enviar mensagens em formato <SAMP>texto</SAMP> ao inv=E9s =
+de=20
+  <SAMP>HTML</SAMP> para as listas de discuss=E3o pois isto faz com que =
+a mensagem=20
+  seja vista por todos os participantes (muitos dos usu=E1rios=20
+  <CODE>GNU/Linux</CODE> usam leitores de e-mail que n=E3o suportam =
+formato html)=20
+  e diminui dr=E1sticamente o tamanho da mensagem porque o formato texto =
+n=E3o usa=20
+  tags e outros elementos que a linguagem HTML cont=E9m (muitos dos =
+usu=E1rios=20
+  costumam participar de v=E1rias listas de discuss=E3o, e mensagens em =
+HTML levam a=20
+  um excesso de tr=E1fego e tempo de conex=E3o).=20
+  <LI>Tenha cautela e bom censo em suas mensagens para listas e grupos =
+de=20
+  discuss=E3o, considere que cada mensagem que posta =E9 s=E3o =
+arquivadas para futura=20
+  refer=EAncia.=20
+  <LI>Quando o conte=FAdo das mensagem tomar outro rumo, =E9 =E9tico =
+modificar o=20
+  assunto do e-mail para se adequar ao novo conte=FAdo da mensagem. Por =
+exemplo,=20
+  <SAMP>Corre=E7=E3o nas regras de Netiqueta</SAMP> para <SAMP>Conversa =
+de pessoa=20
+  para pessoa (Era: Corre=E7=E3o das regras de Netiqueta</SAMP>).=20
+  <LI>Quando a conversa em grupo sair do assunto e envolver apenas duas =
+pessoas,=20
+  =E9 conveniente retirar os endere=E7os das pessoas/listas do CC.=20
+  <LI>N=E3o mande arquivos grandes para as listas, principalmente se =
+eles tiverem=20
+  mais que 40Kb de tamanho. Se precisar enviar arquivos maiores que =
+isso, envie=20
+  diretamente para os e-mails dos interessados depois de perguntar.=20
+  <LI>Quando enviar mensagens para listas de discuss=E3o, seja educado e =
+cordial=20
+  quanto ao conte=FAdo de sua mensagem. Envie CC's para as pessoas que =
+dizem=20
+  respeito ao assunto, assim com a lista.=20
+  <LI>Tente ignorar ou n=E3o responda mensagens de "Guerras" em listas =
+(<EM>Flame=20
+  Wars</EM>), caso queira reponde-la por algum tipo de agress=E3o de =
+quem mandou a=20
+  mensagem, esperar para responde-la a noite (nunca =E9 garantida uma =
+boa resposta=20
+  no momento que est=E1 de cabe=E7a quente). Lembre-se de quando =
+responde uma=20
+  mensagem de "Flame War" a "altura" de quem mandou seus ataques, est=E1 =
+sendo=20
+  igualmente t=E3o baixo quando o "n=EDvel" dessa pessoa.=20
+  <LI>Caso se desentenda com alguma pessoa em uma lista de discuss=E3o, =
+n=E3o envie=20
+  mensagens agressivas para a listas, se precisar, fa=E7a isso =
+diretamente para a=20
+  pessoa! Voc=EA pode se arrepender disso mais tarde.=20
+  <LI>N=E3o culpe o administrador da lista pelos usu=E1rios que =
+participam dela.=20
+  Notifique somente usu=E1rios que n=E3o estejam colaborando com a lista =
+e outras=20
+  coisas que prejudiquem seu funcionamento. Administradores preservam o=20
+  funcionamento das listas, e n=E3o o policiamento dos usu=E1rios.=20
+  <LI>N=E3o use auto respostas para listas de discuss=E3o. Pelos =
+inconvenientes=20
+  causados, voc=EA pode ser descadastrado ou banido de se inscrever na=20
+  lista/newsgroup.=20
+  <LI>Salve as mensagens de inscri=E7=E3o que recebe da lista. Ela =
+cont=E9m detalhes=20
+  sobre seus recursos, e a senha usada muitas vezes para se descadastrar =
+dela ou=20
+  modificar suas permiss=F5es de usu=E1rio. O administrador pode te =
+ajudar nessa=20
+  tarefa, mas n=E3o espere que ele esteja sempre dispon=EDvel para =
+realizar tarefas=20
+  que podem ser feitas pelo pr=F3prio usu=E1rio.=20
+  <LI>Muitas pessoas reclamam do excesso de mensagens recebidas das =
+listas de=20
+  discuss=E3o. Se voc=EA recebe muitas mensagens, procure usar os =
+<EM>filtros de=20
+  mensagens</EM> para organiza-las. O que eles fazem =E9 procurar por =
+campos na=20
+  mensagem, como o remetente, e enviar para um local separado. No final =
+da=20
+  filtragem, todas as mensagens de listas de discuss=E3o estar=E3o em =
+locais=20
+  separados e as mensagens enviadas diretamente a voc=EA entrar=E3o na =
+caixa de=20
+  correio principal, por exemplo.=20
+  <P>Um filtro de mensagens muito usado no <CODE>GNU/Linux</CODE> =E9 o=20
+  <CODE>procmail</CODE>, para maiores detalhes consulte a =
+documenta=E7=E3o deste=20
+  programa.=20
+  <P>O Netscape tamb=E9m tem recursos de filtros de mensagem que podem =
+ser criadas=20
+  facilmente atrav=E9s da op=E7=E3o "Arquivo/Nova SubPasta" ("File/New =
+Subfolder") do=20
+  programa de E-mail. Ent=E3o defina as regras atrav=E9s do menu =
+"Editar/Filtros de=20
+  Mensagens" ("Edit/Message filters") clicando no bot=E3o "Novo"("New"). =
+
+</P></LI></UL>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ 31 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

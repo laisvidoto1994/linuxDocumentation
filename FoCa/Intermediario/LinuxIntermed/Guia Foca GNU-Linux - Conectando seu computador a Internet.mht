@@ -1,0 +1,594 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: Guia Foca GNU/Linux - Conectando seu computador a Internet
+Date: Mon, 6 Aug 2007 11:24:18 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-inter.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Conectando seu computador a =
+Internet</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-inter></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ 28 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 28 - Conectando seu computador a =
+Internet=20
+</H1>
+<HR>
+
+<P>Este cap=EDtulo descreve como configurar seu sistema para se conectar =
+a=20
+Internet, navegar, enviar/receber mensagens, etc.=20
+<HR>
+<A name=3Ds-inter-conectando></A>
+<H2>28.1 Conectando-se a Internet</H2>
+<P>Conectar-se a Internet atrav=E9s da <CODE>Debian</CODE> =E9 f=E1cil, =
+e todo o=20
+trabalho de configura=E7=E3o pode ser feito atrav=E9s do programa=20
+<CODE>pppconfig</CODE> ou modificando manualmente os arquivos em=20
+<CODE>/etc/ppp</CODE>. Para criar uma conex=E3o internet atrav=E9s do=20
+<CODE>pppconfig</CODE>, entre como usu=E1rio root no sistema, digite=20
+<SAMP>pppconfig</SAMP> e siga os passos de configura=E7=E3o (esta =
+configura=E7=E3o serve=20
+para usu=E1rios dom=E9sticos e assume que voc=EA possui o kernel com =
+suporte a PPP):=20
+<OL type=3D1>
+  <LI>No primeiro menu, escolha a op=E7=E3o <SAMP>Create</SAMP> para =
+criar uma nova=20
+  conex=E3o. As outras op=E7=F5es dispon=EDveis s=E3o =
+<SAMP>Change</SAMP> para modificar=20
+  uma conex=E3o a Internet criada anteriormente, <SAMP>Delete</SAMP> =
+para apagar=20
+  uma conex=E3o. A op=E7=E3o <SAMP>Quit</SAMP> sai do programa. =
+</LI></OL>
+<OL type=3D1 start=3D2>
+  <LI>Agora o sistema perguntar=E1 qual ser=E1 o nome da conex=E3o que =
+ser=E1 criada. O=20
+  nome <SAMP>provider</SAMP> =E9 o padr=E3o, e ser=E1 usado caso digite=20
+  <SAMP>pon</SAMP> para iniciar uma conex=E3o internet sem nenhum =
+argumento.=20
+</LI></OL>
+<OL type=3D1 start=3D3>
+  <LI>O pr=F3ximo passo =E9 especificar como os servidores de nomes =
+ser=E3o acessados.=20
+  Escolha <SAMP>Static</SAMP> se n=E3o tiver nenhum tipo de rede local =
+ou=20
+  <SAMP>None</SAMP> para usar os servidores especificados no arquivo=20
+  <CODE>/etc/resolv.conf</CODE>.=20
+  <P>Aperte a tecla <SAMP>TAB</SAMP> e tecle <SAMP>ENTER</SAMP> para =
+seguir para=20
+  o pr=F3ximo passo. </P></LI></OL>
+<OL type=3D1 start=3D4>
+  <LI>Agora digite o endere=E7o do servidor DNS especificado pelo seu =
+provedor de=20
+  acesso. Um servidor DNS converte os nomes como=20
+  <SAMP>www.blablabla.com.br</SAMP> para o endere=E7o IP correspondente =
+para que=20
+  seu computador possa fazer conex=E3o.=20
+  <P>Tecle <SAMP>ENTER</SAMP> para seguir para o pr=F3ximo passo. =
+</P></LI></OL>
+<OL type=3D1 start=3D5>
+  <LI>Voc=EA pode digitar um endere=E7o de um segundo computador que =
+ser=E1 usado na=20
+  resolu=E7=E3o de nomes DNS. Siga as instru=E7=F5es anteriores caso =
+tiver um segundo=20
+  servidor de nomes ou <SAMP>ENTER</SAMP> para continuar. </LI></OL>
+<OL type=3D1 start=3D6>
+  <LI>Agora voc=EA precisar=E1 especificar qual =E9 o m=E9todo de =
+autentica=E7=E3o usado=20
+  pelo seu provedor de acesso. O <EM>Password Autentication =
+Protocol</EM> =E9=20
+  usado pela maioria dos provedores de acesso. Desta forma escolha a =
+op=E7=E3o=20
+  <SAMP>PAP</SAMP> </LI></OL>
+<OL type=3D1 start=3D7>
+  <LI>Agora entre com o seu login no provedor de acesso, ou seja, o nome =
+para=20
+  acesso ao sistema que escolheu no momento que fez sua assinatura. =
+</LI></OL>
+<OL type=3D1 start=3D8>
+  <LI>Agora especifique a sua senha. </LI></OL>
+<OL type=3D1 start=3D9>
+  <LI>O pr=F3ximo passo ser=E1 especificar a taxa de transmiss=E3o da =
+porta serial do=20
+  micro. O valor de 115200 deve funcionar com todas as configura=E7=F5es =
+mais=20
+  recentes.=20
+  <P>Uma configura=E7=E3o serial DTE detalhada pode ser feita com a =
+ferramenta=20
+  <CODE>setserial</CODE>. </P></LI></OL>
+<OL type=3D1 start=3D10>
+  <LI>Agora ser=E1 necess=E1rio selecionar o modo de discagem usado pelo =
+seu=20
+  fax-modem. Escolha <SAMP>tone</SAMP> para linha digital e =
+<SAMP>pulse</SAMP>=20
+  se possuir uma linha telef=F4nica anal=F3gica.=20
+  <P>Pressione <SAMP>TAB</SAMP> e tecle <SAMP>ENTER</SAMP> para =
+prosseguir.=20
+  </P></LI></OL>
+<OL type=3D1 start=3D11>
+  <LI>Agora digite o n=FAmero do telefone para fazer conex=E3o com o seu =
+provedor de=20
+  acesso. </LI></OL>
+<OL type=3D1 start=3D12>
+  <LI>O pr=F3ximo passo ser=E1 a identifica=E7=E3o do seu fax-modem, =
+escolha=20
+  <SAMP>YES</SAMP> para que seja utilizada a auto-detec=E7=E3o ou =
+<SAMP>NO</SAMP>=20
+  para especificar a localiza=E7=E3o do seu fax-modem manualmente. =
+</LI></OL>
+<OL type=3D1 start=3D13>
+  <LI>Se voc=EA quiser especificar mais detalhes sobre sua =
+configura=E7=E3o, como=20
+  strings de discagem, tempo de desconex=E3o, auto-discagem, etc., =
+fa=E7a isto=20
+  atrav=E9s do menu <SAMP>Advanced</SAMP>.=20
+  <P>Escolha a op=E7=E3o <SAMP>Finished</SAMP> para salvar a sua =
+configura=E7=E3o e=20
+  retornar ao menu principal. Escolha a op=E7=E3o <SAMP>Quit</SAMP> para =
+sair do=20
+  programa. </P></LI></OL>
+<P>Pronto! todos os passos para voc=EA se conectar a Internet est=E3o =
+conclu=EDdos,=20
+basta digitar <SAMP>pon</SAMP> para se conectar e <SAMP>poff</SAMP> para =
+se=20
+desconectar da Internet. Caso tenha criado uma conex=E3o com o nome =
+diferente de=20
+<SAMP>provider</SAMP> voc=EA ter=E1 que especifica-la no comando =
+<CODE>pon</CODE>=20
+(por exemplo, <SAMP>pon provedor2</SAMP>).=20
+<P>A conex=E3o pode ser monitorada atrav=E9s do comando =
+<CODE>plog</CODE> e os=20
+pacotes enviados/recebidos atrav=E9s do <CODE>pppconfig</CODE>.=20
+<P>Para uma navega=E7=E3o mais segura, =E9 recomend=E1vel que leia e =
+compreenda alguns=20
+=EDtens que podem aumentar consideravelmente a seguran=E7a do seu =
+sistema em <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-seg">Seguran=E7a=20
+da Rede e controle de Acesso, Se=E7=E3o 15.8</A>, <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-seg-tcpd-a">/etc/hosts.al=
+low,=20
+Se=E7=E3o 15.8.3.1</A>, <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-seg-tcpd-d">/etc/hosts.de=
+ny,=20
+Se=E7=E3o 15.8.3.2</A>. A se=E7=E3o <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-dns-a-resolv">/etc/resolv=
+.conf,=20
+Se=E7=E3o 15.6.2.1</A> pode ser tamb=E9m =FAtil.=20
+<HR>
+<A name=3Ds-inter-navegando></A>
+<H2>28.2 Navegando na Internet</H2>
+<P>Existem diversos tipos de navegadores web para <CODE>GNU/Linux</CODE> =
+e a=20
+escolha depende dos recursos que pretende utilizar (e do poder de =
+processamento=20
+de seu computador).=20
+<P>Para navegar na Internet com muitos recursos, voc=EA pode usar o =
+navegador=20
+<CODE>Netscape Navigator</CODE>, ele suporta plug-ins, java, flash, etc. =
+Voc=EA=20
+tamb=E9m tem a escolha do <CODE>Mozilla</CODE> que inspirou a =
+cria=E7=E3o do=20
+<CODE>Netscape</CODE>.=20
+<P>O <CODE>Arena</CODE> =E9 uma boa alternativa para aqueles que desejam =
+um=20
+navegador em modo gr=E1fico, mas eles n=E3o tem suporte a Java e Frames. =
+
+<P>Os usu=E1rios e administradores de servidores que operam em modo =
+texto podem=20
+optar pelo <CODE>Lynx</CODE>. Uma listagem mais detalhada e recursos =
+requeridos=20
+por cada navegador podem ser encontrados em <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm#s-aplic-b-internet">Internet,=20
+Se=E7=E3o 30.1.3</A>.=20
+<HR>
+<A name=3Ds-inter-emails-r></A>
+<H2>28.3 Recebimento de E-Mails atrav=E9s do <CODE>fetchmail</CODE></H2>
+<P>=C9 o programa mais tradicional no recebimento de mensagens atrav=E9s =
+dos=20
+servi=E7os <EM>pop3</EM>, <EM>imap</EM>, <EM>pop2</EM>, etc. no=20
+<CODE>GNU/Linux</CODE>. Ele pega as mensagens de seu servidor =
+<EM>pop3</EM> e as=20
+entrega ao MDA local ou nos arquivos de e-mails dos usu=E1rios do =
+sistema em=20
+<CODE>/var/mail</CODE>=20
+<P>Todo o funcionamento do <CODE>fetchmail</CODE> =E9 controlado pelo =
+arquivo=20
+<CODE>~/.fetchmailrc</CODE>. Segue abaixo um modelo padr=E3o deste =
+arquivo: <PRE>      poll pop3.seuprovedor.com.br protocol pop3
+        user gleydson password sua_senha keep fetchall is gleydson here
+</PRE>
+<P>Este arquivo =E9 lido pelo <CODE>fetchmail</CODE> na ordem que foi =
+escrito.=20
+Veja a explica=E7=E3o abaixo sobre o arquivo exemplo:=20
+<UL>
+  <LI>A palavra <SAMP>poll</SAMP> especifica o servidor de onde suas =
+mensagens=20
+  ser=E3o baixadas, o servidor especificado no exemplo =E9=20
+  <SAMP>pop3.seuprovedor.com.bt</SAMP>. A palavra <SAMP>skip</SAMP> pode =
+ser=20
+  especificada, mas as mensagens no servidor especificado por =
+<SAMP>skip</SAMP>=20
+  somente ser=E3o baixadas caso o nome do servidor de mensagens for =
+especificado=20
+  atrav=E9s da linha de comando do <CODE>fetchmail</CODE>.=20
+  <LI><SAMP>protocol</SAMP> =E9 o protocolo que ser=E1 usado para a =
+transfer=EAncia de=20
+  mensagens do servidor. O <CODE>fetchmail</CODE> utilizar=E1 a =
+auto-detec=E7=E3o de=20
+  protocolo caso este n=E3o seja especificado.=20
+  <LI><SAMP>user</SAMP> define o nome do usu=E1rio no servidor=20
+  pop3.seuprovedor.com.br, que no exemplo acima =E9 =
+<SAMP>gleydson</SAMP>.=20
+  <LI><SAMP>password</SAMP> define a senha do usu=E1rio =
+<SAMP>gleydson</SAMP>=20
+  (acima), especificada como <SAMP>sua_senha</SAMP> no exemplo.=20
+  <LI><SAMP>keep</SAMP> =E9 opcional e serve para n=E3o apagar as =
+mensagens do=20
+  servidor ap=F3s baixa-las (=FAtil para testes e acesso a uma =FAnica =
+conta de e-mail=20
+  atrav=E9s de v=E1rios locais, como na empresa e sua casa por exemplo). =
+
+  <LI><SAMP>fetchall</SAMP> baixa todas as mensagens do provedor =
+marcadas como=20
+  lidas e n=E3o lidas.=20
+  <LI><SAMP>is gleydson here</SAMP> =E9 um modo de especificar que as =
+mensagens=20
+  obtidas de <SAMP>pop3.seuprovedor.com.br</SAMP> do usu=E1rio=20
+  <SAMP>gleydson</SAMP> com a senha <SAMP>sua_senha</SAMP> ser=E3o =
+entregues para=20
+  o usu=E1rio local <SAMP>gleydson</SAMP> no diret=F3rio=20
+  <CODE>/var/mail/gleydson</CODE>.=20
+  <P>As palavras <SAMP>is</SAMP> e <SAMP>here</SAMP> s=E3o completamente =
+ignoradas=20
+  pelo <CODE>fetchmail</CODE>, servem somente para dar um tom de =
+linguagem=20
+  natural na configura=E7=E3o do programa e da mesma forma facilitar a =
+compreens=E3o=20
+  da configura=E7=E3o. </P></LI></UL>
+<P>Se possuir v=E1rias contas no servidor =
+<SAMP>pop3.seuprovedor.com.br</SAMP>,=20
+n=E3o =E9 necess=E1rio repetir toda a configura=E7=E3o para cada conta, =
+ao inv=E9s disso=20
+especifique somente os outros usu=E1rios do mesmo servidor: <PRE>     =
+poll pop3.seuprovedor.com.br protocol pop3
+      user gleydson password sua_senha keep fetchall is gleydson here
+      user conta2 password sua_senha2 fetchall is gleydson here
+      user conta3 password sua_senha3 fetchall is gleydson here
+</PRE>
+<P>Note que todos os e-mails das contas <SAMP>gleydson</SAMP>,=20
+<SAMP>conta2</SAMP> e <SAMP>conta3</SAMP> do servidor de mensagens=20
+<SAMP>pop3.seuprovedor.com.br</SAMP> s=E3o entregues ao usu=E1rio local=20
+<SAMP>gleydson</SAMP> (arquivo <CODE>/var/mail/gleydson</CODE>).=20
+<P>Agora voc=EA pode usar um programa MUA como o <CODE>mutt</CODE> ou=20
+<CODE>pine</CODE> para ler localmente as mensagens. O armazenamento de =
+mensagens=20
+no diret=F3rio <CODE>/var/mail</CODE> =E9 preferido pois permite a =
+utiliza=E7=E3o de=20
+programas de notifica=E7=E3o de novos e-mais como o <CODE>comsat</CODE>, =
+
+<CODE>mailleds</CODE>, <CODE>biff</CODE>, etc.=20
+<P>Tamb=E9m =E9 poss=EDvel utilizar um processador de mensagens ao =
+inv=E9s do MTA para a=20
+entrega de mensagens. O programa <CODE>procmail</CODE> =E9 um exemplo de =
+
+processador de mensagens r=E1pido e funcional que pode separar as =
+mensagens em=20
+arquivos de acordo com sua origem, destino, assunto, enviar respostas=20
+autom=E1ticas, listas de discuss=E3o, envio de arquivos atrav=E9s de =
+requisi=E7=E3o, etc.=20
+Veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm#s-inter-procmail">Processamento=
+=20
+de mensagens atrav=E9s do procmail, Se=E7=E3o 28.3.1</A> para detalhes.=20
+<P>Para mais detalhes sobre outras op=E7=F5es espec=EDficas de outros =
+protocolos,=20
+checagem de mensagens, criptografia, etc, veja a p=E1gina de manual do=20
+<CODE>fetchmail</CODE>.=20
+<HR>
+<A name=3Ds-inter-procmail></A>
+<H3>28.3.1 Processamento de mensagens atrav=E9s do procmail</H3>
+<P>O processamento de mensagens pode ser usado para in=FAmeras =
+finalidades, dentre=20
+elas a mais comum =E9 separar uma mensagem em arquivos/diret=F3rios de =
+acordo com=20
+sua origem, prioridade, assuntos, destinat=E1rio, conte=FAdo, etc., =
+programar=20
+auto-respostas, programa de f=E9rias, servidor de arquivos, listas de =
+discuss=E3o,=20
+etc.=20
+<P>O <CODE>procmail</CODE> =E9 um programa que re=FAne estas fun=E7=F5es =
+e permitem=20
+muito mais, dependendo da habilidades e conhecimento das ferramentas=20
+<CODE>GNU/Linux</CODE> para saber integra-las corretamente. Toda a =
+opera=E7=E3o do=20
+<CODE>procmail</CODE> =E9 controlada pelo arquivo =
+<CODE>/etc/procmailrc</CODE> e=20
+<CODE>~/.procmailrc</CODE>. Abaixo um modelo do arquivo=20
+<CODE>~/.procmailrc</CODE> usado para enviar todas as mensagens contendo =
+a=20
+palavra <SAMP>GNU/Linux</SAMP> no assunto para o arquivo=20
+<CODE>mensagens-linux</CODE>: <PRE>     =
+PATH=3D/usr/bin:/bin:/usr/local/bin:
+     MAILDIR=3D$HOME/Mail
+     DEFAULT=3D$MAILDIR/mbox
+     LOGFILE=3D$MAILDIR/log
+    =20
+     :0:=20
+     * ^Subject:.*Linux
+     mensagens-linux
+</PRE>
+<P>A vari=E1vel de ambiente <CODE>MAILDIR</CODE> especifica o =
+diret=F3rio que ser=E3o=20
+armazenadas as mensagens e logs das opera=E7=F5es do =
+<CODE>procmail</CODE>. A=20
+vari=E1vel <CODE>DEFAULT</CODE> especifica a caixa de correio padr=E3o =
+onde todas as=20
+mensagens que n=E3o se encaixam nas descri=E7=F5es do filtro do=20
+<CODE>procmailrc</CODE> ser=E3o enviadas. A vari=E1vel =
+<CODE>LOGFILE</CODE>=20
+especifica o arquivo que registrar=E1 todas as opera=E7=F5es realizadas =
+durante o=20
+processamento de mensagens do <CODE>procmail</CODE>.=20
+<P>O arquivo <CODE>mensagens-linux</CODE> =E9 criado dentro do =
+diret=F3rio=20
+especificado por <CODE>MAILDIR</CODE>.=20
+<P>Para que o <CODE>procmail</CODE> entre em a=E7=E3o toda vez que as =
+mensagens=20
+forem baixadas via <CODE>fetchmail</CODE>, =E9 preciso modificar o =
+arquivo=20
+<CODE>.fechmailrc</CODE> e incluir a linha <SAMP>mda /usr/bin/procmail =
+-d=20
+%T</SAMP> no final do arquivo e retirar as linhas <SAMP>is =
+[usu=E1riolocal]=20
+here</SAMP> para que o processamento das mensagens seja feita pelo MDA =
+local=20
+(neste caso, o <CODE>procmail</CODE>).=20
+<P>Se quiser que o <CODE>procmail</CODE> seja executado pelo MDA local, =
+basta=20
+criar um arquivo <CODE>~/.forward</CODE> no diret=F3rio do usu=E1rio e =
+incluir a=20
+linha <SAMP>exec /usr/bin/procmail</SAMP> (note que em algumas =
+implementa=E7=F5es do=20
+<CODE>exim</CODE>, o <CODE>procmail</CODE> =E9 executado automaticamente =
+caso um=20
+arquivo <CODE>~/.procmailrc</CODE> seja encontrado, caso contr=E1rio =
+ser=E1=20
+necess=E1rio adicionar a linha "/usr/bin/procmail" ao arquivo=20
+<CODE>~/.forward</CODE> (somente <CODE>exim</CODE>).=20
+<P>Para mais detalhes, veja a p=E1gina de manual do =
+<CODE>procmail</CODE>,=20
+<CODE>procmailrc</CODE> e HOWTOs relacionados com e-mails no=20
+<CODE>GNU/Linux</CODE>.=20
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ 28 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

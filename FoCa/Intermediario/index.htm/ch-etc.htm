@@ -1,0 +1,938 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Guia Foca GNU/Linux - Principais arquivos de configuração do diretório /etc</title>
+
+</head>
+
+<body>
+
+<a name="ch-etc"></a>
+<hr>
+
+[ <a href="ch-manut.htm">anterior</a> ]
+[ <a href="index.htm#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ <a href="ch-hardw.htm">3</a> ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ <a href="ch-cmdd.htm">8</a> ]
+[ <a href="ch-cmd.htm">9</a> ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ <a href="ch-cmdc.htm">12</a> ]
+[ <a href="ch-perm.htm">13</a> ]
+[ <a href="ch-redir.htm">14</a> ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ <a href="ch-cpctd.htm">18</a> ]
+[ <a href="ch-deb.htm">19</a> ]
+[ <a href="ch-dpkg.htm">20</a> ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ <a href="ch-cfg.htm">23</a> ]
+[ <a href="ch-tasks.htm">24</a> ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ 27 ]
+[ <a href="ch-inter.htm">28</a> ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ <a href="ch-apend.htm">32</a> ]
+[ <a href="ch-inter.htm">próximo</a> ]
+
+<hr>
+
+<h1>
+Guia Foca GNU/Linux
+<br>Capítulo 27 - Principais arquivos de configuração do diretório <code>/etc</code>
+</h1>
+
+<hr>
+
+<p>
+Este capítulo descreve a função, parâmetros e exemplos de utilização de alguns
+arquivos/diretórios de configuração em <code>/etc</code>.  Estes arquivos estão
+disponíveis por padrão na instalação básica do <code>GNU/Linux</code>, o que
+assegura um máximo de aproveitamento deste capítulo.  Não serão descritos aqui
+arquivos de configuração específicos de servidores ou daemons (com exceção do
+<code>inetd</code>).
+
+<hr>
+
+<a name="s-etc-alternatives"></a>
+<h2>27.1 Diretório <code>/etc/alternatives</code></h2>
+
+<p>
+Este diretório contém links para diversos aplicativos padrões utilizados pelo
+sistema.  Dentre eles são encontrados links para o <code>editor</code> do
+sistema e o <code>xterm</code> padrão usado pelo sistema.
+
+<p>
+Por exemplo, se você quiser usar o editor <code>jed</code> ao invés do
+<code>ae</code> ou <code>vi</code>, remova o link <code>editor</code> com o
+comando <samp>rm editor</samp>, localize o arquivo executável do
+<code>jed</code> com <samp>which jed</samp> e crie um link para ele <samp>ln -s
+/usr/bin/jed editor</samp>.  De agora em diante o editor padrão usado pela
+maioria dos aplicativos será o <code>jed</code>.
+
+<hr>
+
+<a name="s-etc-devpts"></a>
+<h2>27.2 Arquivo <code>/etc/default/devpts</code></h2>
+
+<p>
+Este arquivo contém algumas configurações para os pseudo terminais em
+<code>/dev/pts</code>.
+
+<hr>
+
+<a name="s-etc-rcs"></a>
+<h2>27.3 Arquivo <code>/etc/default/rcs</code></h2>
+
+<p>
+Contém variáveis padrões que alteram o comportamento de inicialização dos
+scripts em <code>/etc/rcS.d</code>
+
+<p>
+Por exemplo, se quiser menos mensagens na inicialização do sistema, ajuste o
+valor da variável <code>VERBOSE</code> para <samp>no</samp>.
+
+<p>
+OBS: Somente modifique aquilo que tem certeza do que está fazendo, um valor
+modificado incorretamente poderá causar falhas na segurança de sua rede ou no
+sistemas de arquivos do disco.
+
+<hr>
+
+<a name="s-etc-config"></a>
+<h2>27.4 Arquivo <code>/etc/kbd/config</code></h2>
+
+<p>
+Este arquivo contém configurações padrões do pacote <code>kbd</code> para as
+fontes de tela e mapas de teclado usados pelo sistema.  A fonte de tela é
+especificada neste arquivo (as fontes disponíveis no sistema estão localizadas
+em <code>/usr/share/consolefonts</code>).
+
+<p>
+O arquivo do mapa de teclados pode ser copiado para o diretório
+<code>/etc/kbd</code> com o nome <code>default.kmap</code> para que seja
+utilizado na inicialização do sistema ou escolhido interativamente através do
+utilitário <code>kbdconfig</code>.
+
+<hr>
+
+<a name="s-etc-menu-methods"></a>
+<h2>27.5 Diretório <code>/etc/menu-methods</code></h2>
+
+<p>
+Este diretório contém uma lista de arquivos que são executados pelo programa
+<code>update-menu</code> para criar os menus dos programas.
+
+<hr>
+
+<a name="s-etc-menu-translate"></a>
+<h2>27.6 Arquivo <code>/etc/menu-methods/menu-translate</code></h2>
+
+<p>
+Este arquivo permite fazer a tradução de nomes de menus, identificação ou
+títulos usados no ambiente gráfico.
+
+<hr>
+
+<a name="s-etc-networks"></a>
+<h2>27.7 Arquivo <code>/etc/networks</code></h2>
+
+<p>
+Este local contém as configurações das interfaces (placas) de rede do sistema e
+outras opções úteis para a configuração/segurança da rede.
+
+<hr>
+
+<a name="s-etc-network-interfaces"></a>
+<h2>27.8 Arquivo <code>/etc/network/interfaces</code></h2>
+
+<p>
+Este é o arquivo de configuração usado pelos programas <code>ifup</code> e
+<code>ifdown</code>, respectivamente para ativar e desativas as interfaces de
+rede.
+
+<p>
+O que estes utilitários fazem na realidade é carregar os utilitários
+<code>ifconfig</code> e <code>route</code> através dos argumentos passados do
+arquivo <code>/etc/network/interfaces</code>, permitindo que o usuário
+iniciante configure uma interface de rede com mais facilidade.
+
+<p>
+Abaixo um exemplo do arquivo <code>interfaces</code> é o seguinte:
+
+<pre>
+     iface eth0 inet static
+        address 192.168.1.1
+        netmask 255.255.255.0 
+        network 192.168.1.0
+        broadcast 192.168.1.255
+</pre>
+
+<p>
+As interfaces e roteamentos são configurados na ordem que aparecem neste
+arquivo.  Cada configuração de interface inicia com a palavra chave
+<samp>iface</samp>.  A próxima palavra é o nome da interface que deseja
+configurar (da mesma forma que é utilizada pelos comandos <code>ifconfig</code>
+e <code>route</code>).  Você pode também usar <samp>IP aliases</samp>
+especificando <code>eth0:0</code> mas tenha certeza que a interface real
+(<code>eth0</code>) é inicializada antes.
+
+<p>
+A próxima palavra especifica a familia de endereços da interface; Escolha
+<samp>inet</samp> para a rede TCP/IP, <samp>ipx</samp> para interfaces IPX e
+<samp>IPv6</samp> para interfaces configuradas com o protocolo IPV6.
+
+<p>
+A palavra <samp>static</samp> especifica o método que a interface será
+configurada, neste caso é uma interface com endereço estático (fixo).
+
+<p>
+Outros métodos e seus parâmetros são especificados abaixo (traduzido da página
+do arquivo <code>interfaces</code>):
+<dl>
+<dt>O método <em>loopback</em></dt>
+<dd>
+É usado para configurar a interface <em>loopback</em> (lo) IPv4.
+</dd>
+</dl>
+<dl>
+<dt>O método <em>static</em></dt>
+<dd>
+É usado para configurar um endereço IPv4 fixo para a interface.  As opções que
+podem ser usadas com o métodos <em>static</em> são as seguintes (opções
+marcadas com * no final são requeridas na configuração):
+<dl>
+<dt>address <em>endereço</em> *</dt>
+<dd>
+Endereço IP da Interface de rede (por exemplo, 192.168.1.1).
+</dd>
+<dt>netmask <em>máscara</em> *</dt>
+<dd>
+Máscara de rede da Interface de rede (por exemplo, 255.255.255.0).
+</dd>
+<dt>broadcast <em>endereço</em></dt>
+<dd>
+Endereço de Broadcast da interface (por exemplo, 192.168.1.255).
+</dd>
+<dt>network <em>endereço</em></dt>
+<dd>
+Endereço da rede (por exemplo, 192.168.0.0).
+</dd>
+<dt>gateway <em>endereço</em></dt>
+<dd>
+Endereço do gateway padrão (por exemplo, 192.168.1.10).  O gateway é o endereço
+do computador responsável por conectar o seu computador a outra rede.  Use
+somente se for necessário em sua rede.
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>O método <em>dhcp</em></dt>
+<dd>
+Este método é usado para obter os parâmetros de configuração através de um
+servidor DHCP da rede através das ferramentas: <code>dhclient</code>,
+<code>pump</code> (somente Kernels 2.2.x) ou <code>dpcpcp</code> (somente
+kernels 2.0.x e 2.2.x)
+<dl>
+<dt>hostname <em>nome</em></dt>
+<dd>
+Nome da estação de trabalho que será requisitado.  (pump, dhcpcd)
+</dd>
+<dt>leasehours <em>leasttime</em></dt>
+<dd>
+Lease time preferida em horas (pump)
+</dd>
+<dt>leasetime <em>leasetime</em></dt>
+<dd>
+Lease time preferida em segundos (dhcpcd)
+</dd>
+<dt>vendor <em>vendedor</em></dt>
+<dd>
+Identificador do vendedor (dhcpcd)
+</dd>
+<dt>cliente <em>identificação</em></dt>
+<dd>
+Identificação do cliente (dhcpcd)
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>O método <em>bootp</em></dt>
+<dd>
+Este método pode ser usado para obter um endereço via <code>bootp</code>:
+<dl>
+<dt>bootfile <code>arquivo</code></dt>
+<dd>
+Diz ao servidor para utilizar <code>arquivo</code> como arquivo de
+inicialização
+</dd>
+<dt>server <em>endereço</em></dt>
+<dd>
+Especifica o endereço do servidor <code>bootp</code>.
+</dd>
+<dt>hwaddr <em>endereço</em></dt>
+<dd>
+Usa <em>endereço</em> como endereço de hardware no lugar do endereço original.
+</dd>
+</dl>
+</dd>
+</dl>
+
+<p>
+Algumas opções se aplicam a todas as interfaces e são as seguintes:
+<dl>
+<dt>noauto</dt>
+<dd>
+Não configura automaticamente a interface quando o <code>ifup</code> ou
+<code>ifdown</code> são executados com a opção <samp>-a</samp> (normalmente
+usada durante a inicialização ou desligamento do sistema).
+</dd>
+<dt>pre-up <samp>comando</samp></dt>
+<dd>
+Executa o <samp>comando</samp> antes da inicialização da interface.
+</dd>
+<dt>up <samp>comando</samp></dt>
+<dd>
+Executa o <samp>comando</samp> após a interface ser iniciada.
+</dd>
+<dt>down <samp>comando</samp></dt>
+<dd>
+Executa o <samp>comando</samp> antes de desativar a interface.
+</dd>
+<dt>pre-down <samp>comando</samp></dt>
+<dd>
+Executa o <samp>comando</samp> após desativar a interface.
+</dd>
+</dl>
+
+<p>
+Os comandos que são executados através das opções <em>up</em>, <em>pre-up</em>
+e <em>down</em> podem aparecer várias vezes na mesma interface, eles são
+executados na seqüência que aparecem.  Note que se um dos comandos falharem,
+nenhum dos outros será executado.  Você pode ter certeza que os próximos
+comandos serão executados adicionando <samp>|| true</samp> ao final da linha de
+comando.
+
+<hr>
+
+<a name="s-etc-networks-options"></a>
+<h2>27.9 Arquivo <code>/etc/networks/options</code></h2>
+
+<p>
+Este arquivo contém opções que serão aplicadas as interfaces de rede durante a
+inicialização do sistema.  Este arquivo é lido pelo script de inicialização
+<code>/etc/init.d/network</code> que verifica os valores e aplica as
+modificações apropriadas no kernel.
+
+<hr>
+
+<a name="s-etc-spoof-protect"></a>
+<h2>27.10 Arquivo <code>/etc/networks/spoof-protect</code></h2>
+
+<p>
+Permite especificar os endereços IPs locais e interfaces de rede que serão
+protegidas contra a técnica de IP spoofing (falsificação de endereço IP).
+
+<hr>
+
+<a name="s-etc-pam"></a>
+<h2>27.11 Diretório <code>/etc/pam.d</code></h2>
+
+<p>
+Este diretório possui arquivos de configuração de diversos módulos PAM
+existentes em seu sistema.
+
+<hr>
+
+<a name="s-etc-ppp"></a>
+<h2>27.12 Diretório <code>/etc/ppp</code></h2>
+
+<p>
+Contém arquivos de configuração usados pelo daemon pppd para fazer uma conexão
+com uma rede PPP externa, criados manualmente ou através do
+<code>pppconfig</code>.
+
+<hr>
+
+<a name="s-etc-security"></a>
+<h2>27.13 Diretório <code>/etc/security</code></h2>
+
+<p>
+Este diretório contém arquivos para controle de segurança e limites que serão
+aplicados aos usuários do sistema.  O funcionamento de muitos dos arquivos
+deste diretório depende de modificações nos arquivos em <code>/etc/pam.d</code>
+para habilitar as funções de controle, acesso e restrições.
+
+<hr>
+
+<a name="s-etc-security-access"></a>
+<h2>27.14 Arquivo <code>/etc/security/access.conf</code></h2>
+
+<p>
+É lido no momento do login do usuário e permite definir quem terá acesso ao
+sistema e de onde tem permissão de acessar sua conta.  O formato deste arquivo
+são 3 campos separados por <samp>:</samp>, cada linha contendo uma regra de
+acesso.
+
+<p>
+O primeiro campo deve conter o caracter <samp>+</samp> ou <samp>-</samp> para
+definir se aquela regra permitirá (+) ou bloqueará(-) o acesso do usuário.
+
+<p>
+O segundo campo deve conter uma lista de logins, grupos, usuário@computador ou
+a palavra <samp>ALL</samp> (confere com tudo) e <samp>EXCEPT</samp> (excessão).
+
+<p>
+O terceiro campo deve conter uma lista de terminais tty (para logins locais),
+nomes de computadores, nomes de domínios (iniciando com um <samp>.</samp>),
+endereço IP de computadores ou endereço IP de redes (finalizando com
+<samp>.</samp>).  Também pode ser usada a palavra <samp>ALL</samp>,
+<samp>LOCAL</samp> e <samp>EXCEPT</samp> (atinge somente máquinas locais
+conhecidas pelo sistema).
+
+<p>
+Abaixo um exemplo do <code>access.conf</code>
+
+<pre>
+     # Somente permite o root entrar em tty1
+     #
+     -:ALL EXCEPT root:tty1
+     
+     # bloqueia o logins do console a todos exceto whell, shutdown e sync.
+     #
+     -:ALL EXCEPT wheel shutdown sync:console
+     
+     # Bloqueia logins remotos de contas privilegiadas (grupo wheel).
+     #
+     -:wheel:ALL EXCEPT LOCAL .win.tue.nl
+     
+     # Algumas contas não tem permissão de acessar o sistema de nenhum lugar:
+     #
+     -:wsbscaro wsbsecr wsbspac wsbsym wscosor wstaiwde:ALL
+     
+     # Todas as outras contas que não se encaixam nas regras acima, podem acessar de 
+     # qualquer lugar
+</pre>
+
+<hr>
+
+<a name="s-etc-securith-limits"></a>
+<h2>27.15 Arquivo <code>/etc/security/limits.conf</code></h2>
+
+<p>
+Defini limites de uso dos recursos do sistema para cada usuário ou grupos de
+usuários.  Os recursos são descritos em linhas da seguinte forma:
+
+<pre>
+     #&lt;dominio&gt;          &lt;tipo&gt;  &lt;item&gt;  &lt;valor&gt;
+</pre>
+
+<p>
+O <samp>domínio</samp> pode ser um nome de usuário, um grupo (especificado como
+<samp>@grupo</samp>) ou o curinga <samp>*</samp>.
+
+<p>
+O <samp>tipo</samp> pode ser <samp>soft</samp> para o limite mínimos e
+<samp>hard</samp> para o limite máximo.  O campo <samp>item</samp> pode ser um
+dos seguintes:
+<ul>
+<li>
+<samp>core</samp> - limita o tamanho do arquivo core (KB)
+</li>
+<li>
+<samp>data</samp> - tamanho máximo de dados (KB)
+</li>
+<li>
+<samp>fsize</samp> - Tamanho máximo de arquivo (KB)
+</li>
+<li>
+<samp>memlock</samp> - Espaço máximo de endereços bloqueados na memória (KB)
+</li>
+<li>
+<samp>nofile</samp> - Número máximo de arquivos abertos
+</li>
+<li>
+<samp>rss</samp> - Tamanho máximo dos programas residentes (KB)
+</li>
+<li>
+<samp>stack</samp> - Tamanho máximo de pilha (KB)
+</li>
+<li>
+<samp>cpu</samp> - Tempo máximo usado na CPU (MIN)
+</li>
+<li>
+<samp>nproc</samp> - Número máximo de processos
+</li>
+<li>
+<samp>as</samp> - Limite de espaço de endereços
+</li>
+<li>
+<samp>maxlogins</samp> - Número máximo de logins deste usuário
+</li>
+<li>
+<samp>priority</samp> - Prioridade que os programas deste usuário serão
+executados
+</li>
+</ul>
+
+<p>
+Abaixo um exemplo de arquivo <code>/etc/security/limits.conf</code>:
+
+<pre>
+      
+     #&lt;dominio&gt;      &lt;tipo&gt;  &lt;item&gt;         &lt;valor&gt;
+     
+     *               soft    core            0
+     *               hard    rss             10000
+     @student        hard    nproc           20
+     @faculty        soft    nproc           20
+     @faculty        hard    nproc           50
+     ftp             hard    nproc           0
+     @student        -       maxlogins       4
+</pre>
+
+<hr>
+
+<a name="s-etc-crontab"></a>
+<h2>27.16 Arquivo <code>/etc/crontab</code></h2>
+
+<p>
+Arquivo que contém a programação de programas que serão executados em
+horários/datas programadas.
+
+<p>
+Veja <a href="ch-manut.htm#s-manut-cron">cron, Seção 26.11</a> para mais
+detalhes sobre o formato deste arquivo e outras opções.
+
+<hr>
+
+<a name="s27.17"></a>
+<h2>27.17 Arquivo <code>/etc/fstab</code></h2>
+
+<p>
+Contém detalhes para a montagem dos sistemas de arquivos do sistema.  Veja <a
+href="ch-disc.htm#s-disc-fstab">fstab, Seção 5.13.1</a> para detalhes sobre o
+formato deste arquivo.
+
+<hr>
+
+<a name="s27.18"></a>
+<h2>27.18 Arquivo <code>/etc/group</code></h2>
+
+<p>
+Lista de grupos existentes no sistema.  Veja <a
+href="ch-cmdc.htm#s-cmdc-incluirgrupo">Adicionando o usuário a um grupo extra,
+Seção 12.10</a> para mais detalhes sobre o formato deste arquivo.
+
+<hr>
+
+<a name="s-etc-gshadow"></a>
+<h2>27.19 Arquivo <code>/etc/gshadow</code></h2>
+
+<p>
+Senhas ocultas dos grupos existentes no sistema (somente o usuário
+<samp>root</samp> pode ter acesso a elas).  Use o utilitário
+<code>shadowconfig</code> para ativar/desativar o suporte a senhas ocultas.
+
+<hr>
+
+<a name="s27.20"></a>
+<h2>27.20 Arquivo <code>/etc/host.conf</code></h2>
+
+<p>
+Veja <a href="ch-rede.htm#s-rede-dns-a-hostconf">/etc/host.conf, Seção
+15.6.2.2</a>.
+
+<hr>
+
+<a name="s27.21"></a>
+<h2>27.21 Arquivo <code>/etc/hostname</code></h2>
+
+<p>
+Arquivo lido pelo utilitário <code>hostname</code> para definir o nome de sua
+estação de trabalho.
+
+<hr>
+
+<a name="s27.22"></a>
+<h2>27.22 Arquivo <code>/etc/hosts</code></h2>
+
+<p>
+Banco de dados DNS estático que mapeia o nome ao endereço IP da estação de
+trabalho (ou vice versa).  Veja <a
+href="ch-rede.htm#s-rede-dns-a-hosts">/etc/hosts, Seção 15.6.2.3</a> para mais
+detalhes sobre o formato deste arquivo.
+
+<hr>
+
+<a name="s27.23"></a>
+<h2>27.23 Arquivo <code>/etc/hosts.allow</code></h2>
+
+<p>
+Controle de acesso do wrapper TCPD que permite o acesso de determinadas de
+determinados endereços/grupos aos serviços da rede.  Veja <a
+href="ch-rede.htm#s-rede-seg-tcpd-a">/etc/hosts.allow, Seção 15.8.3.1</a> para
+detalhes sobre o formato deste arquivo.
+
+<hr>
+
+<a name="s27.24"></a>
+<h2>27.24 Arquivo <code>/etc/hosts.deny</code></h2>
+
+<p>
+Controle de acesso do wrapper TCPD que bloqueia o acesso de determinados
+endereços/grupos aos serviços da rede.  Este arquivo é somente lido caso o
+<code>/etc/hosts.allow</code> não tenha permitido acesso aos serviços que
+contém.  Um valor padrão razoavelmente seguro que pode ser usado neste arquivo
+que serve para a maioria dos usuários domésticos é:
+
+<pre>
+     ALL: ALL
+</pre>
+
+<p>
+caso o acesso ao serviço não tenha sido bloqueado no <code>hosts.deny</code>, o
+acesso ao serviço é permitido.
+
+<p>
+Veja <a href="ch-rede.htm#s-rede-seg-tcpd-d">/etc/hosts.deny, Seção
+15.8.3.2</a> para detalhes sobre o formato deste arquivo.
+
+<hr>
+
+<a name="s27.25"></a>
+<h2>27.25 Arquivo <code>/etc/hosts.equiv</code></h2>
+
+<p>
+Veja <a href="ch-rede.htm#s-rede-seg-tcpd-e">/etc/hosts.equiv e
+/etc/shosts.equiv, Seção 15.8.3.3</a>.
+
+<hr>
+
+<a name="s27.26"></a>
+<h2>27.26 Arquivo <code>/etc/inetd.conf</code></h2>
+
+<p>
+Veja <a href="ch-rede.htm#s-rede-servicos-inetd-c">/etc/inetd.conf, Seção
+15.7.2.1</a>.
+
+<hr>
+
+<a name="s-etc-inittab"></a>
+<h2>27.27 Arquivo <code>/etc/inittab</code></h2>
+
+<p>
+Este é o arquivo de configuração utilizado pelo programa <code>init</code> para
+a inicialização do sistema.  Para mais detalhes sobre o formato deste arquivo,
+consulte a página de manual do <em>inittab</em>.
+
+<hr>
+
+<a name="s-etc-inputrc"></a>
+<h2>27.28 Arquivo <code>/etc/inputrc</code></h2>
+
+<p>
+Este arquivo contém parâmetros para a configuração do teclado.  Veja o final da
+seção <a href="ch-cfg.htm#s-cfg-acentuacao-t">Acentuação em modo Texto, Seção
+23.1.1</a> e a página de manual do <em>inputrc</em> para mais detalhes.
+
+<hr>
+
+<a name="s-etc-isapnp-c"></a>
+<h2>27.29 Arquivo <code>/etc/isapnp.conf</code></h2>
+
+<p>
+Gerado pelo utilitário <code>pnpdump</code> e utilizado pelo utilitário
+<code>isapnp</code> para configurar os recursos de hardware dos dispositivos
+Plug-and-Play no <code>GNU/Linux</code>.
+
+<hr>
+
+<a name="s-etc-isapnp-g"></a>
+<h2>27.30 Arquivo <code>/etc/isapnp.gone</code></h2>
+
+<p>
+Contém uma lista de endereços reservados que não deverão ser usados pelo
+<code>isapnp</code>.
+
+<hr>
+
+<a name="s-etc-issue"></a>
+<h2>27.31 Arquivo <code>/etc/issue</code></h2>
+
+<p>
+Contém um texto ou mensagem que será mostrada antes do login do sistema.
+
+<hr>
+
+<a name="s-etc-issue-n"></a>
+<h2>27.32 Arquivo <code>/etc/issue.net</code></h2>
+
+<p>
+Mesma utilidade do <code>/etc/issue</code> mas é mostrado antes do login de uma
+seção <code>telnet</code>.  Outra diferença é que este arquivo aceita os
+seguintes tipos de variáveis:
+<ul>
+<li>
+<samp>%t</samp> - Mostra o terminal tty atual.
+</li>
+<li>
+<samp>%h</samp> - Mostra o nome de domínio completamente qualificado (FQDN).
+</li>
+<li>
+<samp>%D</samp> - Mostra o nome do domínio NIS.
+</li>
+<li>
+<samp>%d</samp> - Mostra a data e hora atual.
+</li>
+<li>
+<samp>%s</samp> - Mostra o nome do Sistema Operacional.
+</li>
+<li>
+<samp>%m</samp> - Mostra o tipo de hardware do computador.
+</li>
+<li>
+<samp>%r</samp> - Mostra a revisão do Sistema Operacional.
+</li>
+<li>
+<samp>%v</samp> - Mostra a versão do Sistema Operacional.
+</li>
+<li>
+<samp>%%</samp> - Mostra um simples sinal de porcentagem (%).
+</li>
+</ul>
+
+<hr>
+
+<a name="s27.33"></a>
+<h2>27.33 Arquivo <code>/etc/lilo.conf</code></h2>
+
+<p>
+Arquivo de configuração do gerenciador de partida <code>lilo</code>.  Veja <a
+href="ch-boot.htm#s-boot-lilo">LILO, Seção 6.1</a> e <a
+href="ch-boot.htm#s-boot-lilo-exemplo">Um exemplo do arquivo de configuração
+lilo.conf, Seção 6.1.3</a>.
+
+<hr>
+
+<a name="s-etc-login-d"></a>
+<h2>27.34 Arquivo <code>/etc/login.defs</code></h2>
+
+<p>
+Definições de configuração para o pacote login
+
+<hr>
+
+<a name="s27.35"></a>
+<h2>27.35 Arquivo <code>/etc/modules</code></h2>
+
+<p>
+Veja <a href="ch-kern.htm#s-kern-arquivos-modules">/etc/modules, Seção
+16.12.1</a>.
+
+<hr>
+
+<a name="s27.36"></a>
+<h2>27.36 Arquivo <code>/etc/modules.conf</code></h2>
+
+<p>
+Veja <a href="ch-kern.htm#s-kern-arquivos-modulesconf">modules.conf, Seção
+16.12.2</a>.
+
+<hr>
+
+<a name="s-etc-motd"></a>
+<h2>27.37 Arquivo <code>/etc/motd</code></h2>
+
+<p>
+Mostra um texto ou mensagem após o usuário se logar com sucesso no sistema.
+Também é usado pelo telnet, ftp, e outros servidores que requerem autenticação
+do usuário (nome e senha).
+
+<hr>
+
+<a name="s-etc-mtab"></a>
+<h2>27.38 Arquivo <code>/etc/mtab</code></h2>
+
+<p>
+Lista os sistemas de arquivos montados atualmente no sistema.  Sua função é
+idêntica ao <code>/proc/mounts</code>.
+
+<hr>
+
+<a name="s27.39"></a>
+<h2>27.39 Arquivo <code>/etc/networks</code></h2>
+
+<p>
+Veja <a href="ch-rede.htm#s-rede-dns-a-networks">/etc/networks, Seção
+15.6.2.4</a>.
+
+<hr>
+
+<a name="s-etc-passwd"></a>
+<h2>27.40 Arquivo <code>/etc/passwd</code></h2>
+
+<p>
+É o arquivo mais cobiçado por Hackers porque contém os dados pessoais do
+usuário como o login, uid, telefone e senha (caso seu sistema esteja usando
+senhas ocultas, a senha terá um <samp>*</samp> no lugar e as senhas reais
+estarão armazenadas no arquivo <code>/etc/shadow</code>).
+
+<hr>
+
+<a name="s-etc-printcap"></a>
+<h2>27.41 Arquivo <code>/etc/printcap</code></h2>
+
+<p>
+Banco de dados de configuração da impressora, usado por daemons de impressão
+como o <code>lpr</code> e <code>lprng</code>.
+
+<hr>
+
+<a name="s27.42"></a>
+<h2>27.42 Arquivo <code>/etc/protocols</code></h2>
+
+<p>
+Veja <a href="ch-rede.htm#s-rede-outros-protocols">/etc/protocols, Seção
+15.9.2</a>.
+
+<hr>
+
+<a name="s27.43"></a>
+<h2>27.43 Arquivo <code>/etc/resolv.conf</code></h2>
+
+<p>
+Veja <a href="ch-rede.htm#s-rede-dns-a-resolv">/etc/resolv.conf, Seção
+15.6.2.1</a>.
+
+<hr>
+
+<a name="s-serial-c"></a>
+<h2>27.44 Arquivo <code>/etc/serial.conf</code></h2>
+
+<p>
+Configurações das portas seriais do sistema.  Veja a página de manual do
+<em>serial.conf</em> e a página de manual do utilitário <code>setserial</code>
+para detalhes de como configurar adequadamente a taxa de transmissão serial
+conforme seu dispositivo.
+
+<hr>
+
+<a name="s27.45"></a>
+<h2>27.45 Arquivo <code>/etc/services</code></h2>
+
+<p>
+Veja <a href="ch-rede.htm#s-rede-outros-services">/etc/services, Seção
+15.9.1</a>.
+
+<hr>
+
+<a name="s-etc-shadow"></a>
+<h2>27.46 Arquivo <code>/etc/shadow</code></h2>
+
+<p>
+Este arquivo armazena as senhas criptografadas caso estiver usando o recurso de
+senhas ocultas.  Este arquivo somente pode ser lido pelo usuário
+<samp>root</samp>.
+
+<hr>
+
+<a name="s-etc-shells"></a>
+<h2>27.47 Arquivo <code>/etc/shells</code></h2>
+
+<p>
+Contém uma lista de interpretadores de comando (shells) válidos no sistema.
+
+<hr>
+
+<a name="s-etc-syslog-c"></a>
+<h2>27.48 Arquivo <code>/etc/syslog.conf</code></h2>
+
+<p>
+Contém configurações para definir o que será registrado nos arquivos de log em
+<code>/var/log</code> do sistema.  Veja a página de manual <em>syslog.conf</em>
+e dos programas <code>klog</code> e <code>syslogd</code> para entender o
+formato usado neste arquivo.
+
+<hr>
+
+<a name="s-etc-timezones"></a>
+<h2>27.49 Arquivo <code>/etc/timezone</code></h2>
+
+<p>
+Contém a sua localização para cálculo correto do seu fuso-horário local.
+
+<hr>
+
+[ <a href="ch-manut.htm">anterior</a> ]
+[ <a href="index.htm#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ <a href="ch-hardw.htm">3</a> ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ <a href="ch-cmdd.htm">8</a> ]
+[ <a href="ch-cmd.htm">9</a> ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ <a href="ch-cmdc.htm">12</a> ]
+[ <a href="ch-perm.htm">13</a> ]
+[ <a href="ch-redir.htm">14</a> ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ <a href="ch-cpctd.htm">18</a> ]
+[ <a href="ch-deb.htm">19</a> ]
+[ <a href="ch-dpkg.htm">20</a> ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ <a href="ch-cfg.htm">23</a> ]
+[ <a href="ch-tasks.htm">24</a> ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ 27 ]
+[ <a href="ch-inter.htm">28</a> ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ <a href="ch-apend.htm">32</a> ]
+[ <a href="ch-inter.htm">próximo</a> ]
+
+<hr>
+
+<p>
+Guia Foca GNU/Linux
+
+<address>
+Versão 5.45 - segunda, 30 de outubro de 2006<br>
+<br>
+Gleydson Mazioli da Silva <code><a href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</a></code><br>
+<br>
+</address>
+
+<hr>
+
+</body>
+
+</html>
+

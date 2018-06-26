@@ -1,0 +1,2128 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: Guia Foca GNU/Linux - Hardware
+Date: Mon, 6 Aug 2007 11:23:38 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-hardw.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Hardware</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-hardw></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ 3 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 3 - Hardware </H1>
+<HR>
+
+<P>Hardware =E9 tudo que diz respeito a parte f=EDsica do computador. =
+Nesta se=E7=E3o=20
+ser=E3o abordados assuntos relacionados com a configura=E7=E3o de =
+hardwares, escolha=20
+de bons hardwares, dispositivos for Windows, etc.=20
+<HR>
+<A name=3Ds-hardw-placas></A>
+<H2>3.1 Placa de expans=E3o</H2>
+<P>=C9 um circuito eletr=F4nico encaixado na placa m=E3e que tem por =
+objetivo=20
+adicionar novas funcionalidades ao computador. Esta placa pode ser uma:=20
+<UL>
+  <LI><SAMP>placa de som</SAMP> - para fazer o computador emitir sons, =
+m=FAsicas,=20
+  ligar um joystick, etc. </LI></UL>
+<UL>
+  <LI><SAMP>fax-modem</SAMP> - para enviar/receber fax, conectar-se a =
+internet,=20
+  BBS, acesso remoto, bina, etc. </LI></UL>
+<UL>
+  <LI><SAMP>rede</SAMP> - para permitir a comunica=E7=E3o com outros =
+computadores em=20
+  uma rede interna </LI></UL>
+<UL>
+  <LI><SAMP>controladora de perif=E9ricos</SAMP> - Para ligar discos =
+r=EDgidos,=20
+  unidades de disquete, impressora, mouse, joystick, etc. </LI></UL>
+<UL>
+  <LI><SAMP>SCSI</SAMP> - Para ligar unidades de disco r=EDgidos e =
+perif=E9ricos de=20
+  alto desempenho. </LI></UL>
+<UL>
+  <LI><SAMP>Controladora de Scanner</SAMP> - Para ligar um Scanner =
+externo ao=20
+  micro computador. </LI></UL>
+<P>O encaixe da placa m=E3e que recebe as placas de expans=E3o s=E3o =
+chamados de=20
+<EM>Slots</EM>.=20
+<HR>
+<A name=3Ds-hardw-nomesdisp></A>
+<H2>3.2 Nomes de dispositivos</H2>
+<P>Seria terr=EDvel se ao configurar CADA programa que utilize o mouse =
+ou o modem=20
+precis=E1ssemos nos se referir a ele pela IRQ, I/O, etc... para evitar =
+isso s=E3o=20
+usados os <EM>nomes de dispositivos</EM>.=20
+<P>Os <EM>nomes de dispositivos</EM> no sistema <CODE>GNU/Linux</CODE> =
+s=E3o=20
+acessados atrav=E9s do diret=F3rio <CODE>/dev</CODE>. Ap=F3s configurar =
+corretamente o=20
+modem, com sua porta I/O 0x2F8 e IRQ 3, ele =E9 identificado =
+automaticamente por=20
+<CODE>/dev/ttyS1</CODE> (equivalente a <CODE>COM2</CODE> no =
+<CODE>DOS</CODE>).=20
+Daqui para frente basta se referir a <CODE>/dev/ttyS1</CODE> para fazer =
+alguma=20
+coisa com o modem.=20
+<P>Voc=EA tamb=E9m pode fazer um link de <CODE>/dev/ttyS1</CODE> para um =
+arquivo=20
+chamado <CODE>/dev/modem</CODE> usando: <SAMP>ln -s /dev/ttyS1=20
+/dev/modem</SAMP>, fa=E7a a configura=E7=E3o dos seus programas usando=20
+<CODE>/dev/modem</CODE> ao inv=E9s de <CODE>/dev/ttyS1</CODE> e se =
+precisar=20
+reconfigurar o seu modem e a porta serial mudar para =
+<CODE>/dev/ttyS3</CODE>,=20
+ser=E1 necess=E1rio somente apagar o link <CODE>/dev/modem</CODE> antigo =
+e criar um=20
+novo apontando para a porta serial <CODE>/dev/ttyS3</CODE>.=20
+<P>N=E3o ser=E1 necess=E1rio reconfigurar os programas que usam o modem =
+pois eles=20
+est=E3o usando <CODE>/dev/modem</CODE> que est=E1 apontando para a =
+localiza=E7=E3o=20
+correta. Isto =E9 muito =FAtil para um bom gerenciamento do sistema.=20
+<P>Abaixo uma tabela com o nome do dispositivo no =
+<CODE>GNU/Linux</CODE>, portas=20
+I/O, IRQ, DMA e nome do dispositivo no <CODE>DOS</CODE> (os nomes de=20
+dispositivos est=E3o localizados no diret=F3rio <CODE>/dev</CODE>): =
+<PRE>     Dispos.   Dispos.
+      Linux     DOS       IRQ     DMA     I/O
+    =20
+     ttyS0      COM1       4       -      0x3F8
+     ttyS1      COM2       3       -      0x2F8
+     ttyS2      COM3       4       -      0x3E8
+     ttyS3      COM4       3       -      0x2E8
+     lp0        LPT1       7      3(ECP)  0x378
+     lp1        LPT2       5      3(ECP)  0x278
+     /dev/hda1  C:        14       -      0x1F0,0x3F6
+     /dev/hda2  D: *      14       -      0x1F0,0x3F6
+     /dev/hdb1  D: *      15       -      0x170,0x376
+</PRE>
+<P>* A designa=E7=E3o de letras de unidade do <CODE>DOS</CODE> n=E3o =E9 =
+padr=E3o como no=20
+<CODE>GNU/Linux</CODE> e depende da exist=EAncia de outras unidades=20
+f=EDsicas/l=F3gicas no computador.=20
+<HR>
+<A name=3Ds-hardw-cfg></A>
+<H2>3.3 Configura=E7=E3o de Hardware</H2>
+<P>A configura=E7=E3o consiste em ajustar as op=E7=F5es de funcionamento =
+dos=20
+dispositivos (perif=E9ricos) para comunica=E7=E3o com a placa m=E3e. Um =
+sistema bem=20
+configurado consiste em cada dispositivo funcionando com suas portas =
+I/O, IRQ,=20
+DMA bem definidas, n=E3o existindo conflitos com outros dispositivos. =
+Isto tamb=E9m=20
+permitir=E1 a adi=E7=E3o de novos dispositivos ao sistema sem problemas. =
+
+<P>=C9 importante conhecer bem a configura=E7=E3o dos dispositivos do =
+sistema para=20
+saber identificar e corrigir poss=EDveis problemas de conflitos e o que =
+deve ser=20
+modificado, caso seja necess=E1rio.=20
+<P>Os par=E2metros usados para configurar dispositivos de hardware s=E3o =
+a=20
+<EM>IRQ</EM>, <EM>DMA</EM> e <EM>I/O</EM>. Nem todo dispositivo usam =
+estes tr=EAs=20
+par=E2metros, alguns apenas a <EM>I/O</EM> e <EM>IRQ</EM>, outros apenas =
+a=20
+<EM>I/O</EM>, etc.=20
+<HR>
+<A name=3Ds-hardw-cfg-irq></A>
+<H3>3.3.1 IRQ - Requisi=E7=E3o de Interrup=E7=E3o</H3>
+<P>Existem dois tipos b=E1sicos de interrup=E7=F5es: as usadas por =
+dispositivos (para=20
+a comunica=E7=E3o com a placa m=E3e) e programas (para obter a =
+aten=E7=E3o do=20
+processador). As <EM>interrup=E7=F5es de software</EM> s=E3o mais usadas =
+por=20
+programas, incluindo o sistema operacional e <EM>interrup=E7=F5es de =
+hardware</EM>=20
+mais usado por perif=E9ricos. Daqui para frente ser=E1 explicado somente =
+detalhes=20
+sobre interrup=E7=F5es de hardware.=20
+<P>Os antigos computadores 8086/8088 (XT) usavam somente <SAMP>8</SAMP>=20
+interrup=E7=F5es de hardware operando a 8 bits. Com o surgimento do AT =
+foram=20
+inclu=EDdas 8 novas interrup=E7=F5es, operando a 16 bits. Os =
+computadores 286 e=20
+superiores tem <SAMP>16</SAMP> interrup=E7=F5es de hardware numeradas de =
+0 a 15.=20
+Estas interrup=E7=F5es oferecem ao dispositivo associado a capacidade de =
+interromper=20
+o que o processador estiver fazendo, pedindo aten=E7=E3o imediata.=20
+<P>As interrup=E7=F5es do sistema podem ser visualizadas no kernel com o =
+comando=20
+<SAMP>cat /proc/interrupts</SAMP>. Abaixo um resumo do uso mais comum =
+das 16=20
+interrup=E7=F5es de hardware: <PRE>     0     Timer do Sistema  - Fixa
+    =20
+     01    Teclado - Fixa
+    =20
+     02    Controlador de Interrup=E7=E3o Program=E1vel - Fixa.=20
+           Esta interrup=E7=E3o =E9 usada como ponte para a IRQ 9 e vem =
+dos=20
+           antigos processadores 8086/8088 que somente tinham 8 IRQs.=20
+           Assim, pera tornar processadores 8088 e 80286 comunic=E1veis, =
+
+           a IRQ 2 =E9 usada como um redirecionador quando se utiliza =
+uma
+           interrup=E7=E3o acima da 8.=20
+    =20
+     03    Normalmente usado por /dev/ttyS1 mas seu uso depende dos=20
+           dispositivos instalados em seu sistema (como fax-modem, =20
+           placas de rede 8 bits, etc).=20
+    =20
+     04    Normalmente usado por /dev/ttyS0 e quase sempre usada pelo =
+mouse=20
+           serial a n=E3o ser que um mouse PS2 esteja instalado no =
+sistema.=20
+    =20
+     05    Normalmente a segunda porta paralela. Muitos micros n=E3o tem =
+a segunda=20
+           porta paralela, assim =E9 comum encontrar placas de som e =
+outros=20
+           dispositivos usando esta IRQ.=20
+    =20
+     06    Controlador de Disquete - Esta interrup=E7=E3o pode ser =
+compartilhada=20
+           com placas aceleradoras de disquete usadas em tapes (unidades =
+de fita).=20
+    =20
+     07    Primeira porta de impressora. Pessoas tiveram sucesso =
+compartilhando=20
+           esta porta de impressora com a segunda porta de impressora.=20
+           Muitas impressoras n=E3o usam IRQs.=20
+    =20
+     08    Rel=F3gio em tempo real do CMOS - N=E3o pode ser usado por =
+nenhum=20
+           outro dispositivo.
+    =20
+     09    Esta =E9 uma ponte para IRQ2 e deve ser a =FAltima IRQ a ser=20
+           utilizada. No entanto pode ser usada por dispositivos.=20
+    =20
+     10   Interrup=E7=E3o normalmente livre para dispositivos. O =
+controlador
+          USB utiliza essa interrup=E7=E3o quando presente, mas n=E3o =
+=E9 regra.
+    =20
+     11   Interrup=E7=E3o livre para dispositivos
+    =20
+     12   Interrup=E7=E3o normalmente livre para dispositivos. O mouse =
+PS/2,=20
+          quando presente, utiliza esta interrup=E7=E3o.=20
+    =20
+     13   Processador de dados num=E9ricos - N=E3o pode ser usada ou =
+compartilhada=20
+    =20
+     14  Esta interrup=E7=E3o =E9 usada pela primeira controladora de =
+discos=20
+         r=EDgidos e n=E3o pode ser compartilhada.=20
+    =20
+     15  Esta =E9 a interrup=E7=E3o usada pela segunda controladora de =
+discos=20
+         e n=E3o pode ser compartilhada. Pode ser usada caso a segunda=20
+         controladora esteja desativada.
+</PRE>
+<P>Dispositivos ISA, VESA, EISA, SCSI n=E3o permitem o compartilhamento =
+de uma=20
+mesma IRQ, talvez isto ainda seja poss=EDvel caso n=E3o haja outras =
+op=E7=F5es=20
+dispon=EDveis e/ou os dois dispositivos n=E3o acessem a IRQ ao mesmo =
+tempo, mas isto=20
+=E9 uma solu=E7=E3o prec=E1ria.=20
+<P>Conflitos de IRQ ocorrem quando dois dispositivos disputam uma mesma =
+IRQ, e=20
+normalmente ocasionam a parada ou mal funcionamento de um dispositivo =
+e/ou de=20
+todo o sistema. Para resolver um conflito de IRQs, deve-se conhecer =
+quais IRQs=20
+est=E3o sendo usadas por quais dispositivos (usando <SAMP>cat=20
+/proc/interrupts</SAMP>) e configurar as interrup=E7=F5es de forma que =
+uma n=E3o entre=20
+em conflito com outra. Isto normalmente =E9 feito atrav=E9s dos jumpers =
+de placas ou=20
+atrav=E9s de software (no caso de dispositivos jumperless ou =
+plug-and-play).=20
+<P>Dispositivos PCI s=E3o projetados para permitir o compartilhamento de =
+uma mesma=20
+IRQ pois as manipulam de forma diferente. Se for necess=E1rio usar uma =
+interrup=E7=E3o=20
+normal, o chipset (ou BIOS) mapear=E1 a interrup=E7=E3o para uma =
+interrup=E7=E3o normal do=20
+sistema (normalmente usando alguma interrup=E7=E3o entre a IRQ 9 e IRQ =
+12).=20
+<HR>
+<A name=3Ds3.3.1.1></A>
+<H4>3.3.1.1 Prioridade das Interrup=E7=F5es</H4>
+<P>Cada IRQ no sistema tem um n=FAmero que identifica a prioridade que =
+ser=E1=20
+atendida pelo processador. Nos antigos sistemas XT as prioridades eram=20
+identificadas em seq=FC=EAncia de acordo com as interrup=E7=F5es =
+existentes: <PRE>     IRQ 0 1 2 3 4 5 6 7 8=20
+     PRI 1 2 3 4 5 6 7 8 9
+</PRE>
+<P>Com o surgimento do barramento AT (16 bits), as interrup=E7=F5es =
+passaram a ser=20
+identificadas da seguinte forma: <PRE>     IRQ 0  1  2  (9  10  11  12  =
+13  14  15)  3  4  5  6  7  8=20
+     PRI 1  2  3   4   5   6   7   8   9  10  11 12 13 14 15 16
+</PRE>
+<P>Note que a prioridade segue em seq=FC=EAncia atrav=E9s da =
+<SAMP>ponte</SAMP> da IRQ=20
+2 para IRQ 9. Os dispositivos com prioridade mais baixa s=E3o atendidos =
+primeiro,=20
+mas =E9 uma diferen=E7a de desempenho praticamente impercept=EDvel de =
+ser notada nos=20
+sistemas atuais.=20
+<HR>
+<A name=3Ds-hardw-cfg-dma></A>
+<H3>3.3.2 DMA - Acesso Direto a Mem=F3ria</H3>
+<P>A <EM>DMA</EM> =E9 usada para permitir a transfer=EAncia de dados =
+entre=20
+dispositivos I/O e a mem=F3ria sem precisar do processador faze-lo. Ele =
+livra esta=20
+carga do processador e resulta em uma r=E1pida transfer=EAncia de dados. =
+
+<P>O PC padr=E3o tem dois controladores de DMA. O primeiro controla os =
+canais=20
+<SAMP>0, 1, 2, 3</SAMP> e o segundo os canais <SAMP>4, 5, 6, 7,</SAMP> =
+assim=20
+temos <SAMP>8</SAMP> canais. No entanto, o canal <SAMP>4</SAMP> =E9 =
+perdido porque=20
+=E9 usado pelo <EM>controlador de acesso direto a mem=F3ria</EM>. Os =
+canais 0-3 s=E3o=20
+chamados de canais baixos porque podem somente mover um byte (<EM>8 =
+bits</EM>)=20
+por transfer=EAncia enquanto canais altos movem 2 bytes (<EM>16 =
+bits</EM>) por=20
+transfer=EAncia.=20
+<P>Os dados movidos usando a DMA <STRONG>n=E3o</STRONG> s=E3o movidos =
+atrav=E9s do=20
+controlador de DMA. Isto oferece uma limita=E7=E3o porque a DMA somente =
+podem mover=20
+dados entre os dispositivos (portas I/O) e a mem=F3ria. N=E3o =E9 =
+poss=EDvel mover dados=20
+entre as portas ou entre a mem=F3ria.=20
+<P>Existem dois controladores de DMA nos computadores AT e superiores. =
+Ao=20
+contr=E1rio do que acontece com os dois controladores de IRQ, o primeiro =
+
+controlador =E9 ligado ao segundo e n=E3o o segundo ao primeiro. Os =
+canais de DMA=20
+altos (5 ao 7) somente podem ser acessados por dispositivos de 16 bits =
+(aqueles=20
+que utilizam a segunda parte do slot AT). Como resultado temos 8 canais =
+de DMA,=20
+de 0 a 7, sendo que a DMA 4 =E9 usada como liga=E7=E3o entre eles.=20
+<P>Os canais de DMA em uso no sistema podem ser visualizados com =
+<SAMP>cat=20
+/proc/dma</SAMP>. Abaixo uma listagem de uso mais comum dos canais de =
+DMA. <PRE>     DMA    Barram.    Uso
+     0        -        Usada pelo circuito de refresh da mem=F3ria DRAM
+     1     8/16 bits   Normalmente usado por placas de som (canal 8 =
+bits),=20
+                       porta paralela ECP, adaptadoras SCSI, placas de =
+rede ou=20
+                       controladora de scanner.=20
+     2     8/16 bits   Normalmente usado pela controladora de disquetes =
+ou=20
+                       controladoras de tapes.=20
+     3     8/6 bits    Usado pela porta paralela ECP, placa de som,=20
+                       controladoras de tapes, controladoras SCSI ou=20
+                       controladora de scanner antiga.=20
+     4        -        Usada como ponte para a outra controladora de DMA =
+(0-3)
+     5     16 bits     Normalmente usada pela placa de som (canal 16 =
+bits),=20
+                       placas controladoras SCSI, placas de rede ou=20
+                       controladora de scanner.=20
+     6     16 bits     Placa de som (canal 16 bits), controladora de =
+scanner =20
+                       ou placa de rede.=20
+     7     16 bits     Placa de som (canal 16 bits), controladora de =
+scanner=20
+                       ou placa de rede.
+</PRE>
+<P>Somente dispositivos ISA e derivados dele, como o EISA e VESA, usam =
+os canais=20
+de DMA padr=E3o. Os atuais dispositivos de alta taxa de transfer=EAncia =
+(normalmente=20
+PCI) possuem seu pr=F3prio controlador de DMA embutido, muito mais =
+r=E1pido do que a=20
+DMA padr=E3o. Este controlador de DMA =E9 chamado de <EM>Bus =
+Mastering</EM> e muito=20
+usado nos discos r=EDgidos atuais e pode atingir taxas de 33,3MB/s (no =
+modo 2) e=20
+66MB/s (no modo 4 - requer um cabo IDE com aterramento para evitar=20
+interfer=EAncias de ru=EDdos externos).=20
+<HR>
+<A name=3Ds3.3.2.1></A>
+<H4>3.3.2.1 Conflitos de DMA</H4>
+<P>Um canal de DMA n=E3o pode ser compartilhado entre dispositivos. =
+Ainda =E9=20
+poss=EDvel configurar dois dispositivos para usarem um mesmo canal de =
+DMA, desde=20
+que ele n=E3o seja usado ao mesmo tempo. Isto acontece com Scanners =
+paralelos que=20
+compartilham a mesma porta paralela com a impressora. Se voc=EA for uma =
+pessoa que=20
+explora os recursos de multitarefa de seu Linux e seu desempenho, evite =
+estes=20
+tipos de dispositivos, prefira aqueles que utilizam seus pr=F3prios =
+recursos.=20
+<P>Quando ocorre um conflito de DMA, os dados podem ser misturados e =
+ocorrerem=20
+coisas estranhas at=E9 o travamento total do sistema. Este tipo de =
+conflito =E9=20
+dif=EDcil de se diagnosticar, a n=E3o ser que o t=E9cnico seja =
+experiente o bastante e=20
+tenha desconfiado do que o problema se trata...=20
+<HR>
+<A name=3Ds-hardw-cfg-io></A>
+<H3>3.3.3 I/O - Porta de Entrada/Sa=EDda</H3>
+<P>Cada dispositivo possui um endere=E7o de porta. O endere=E7o =E9 uma =
+localiza=E7=E3o da=20
+mem=F3ria usada pelo computador para enviar dados ao dispositivo e onde =
+o=20
+dispositivo envia dados ao computador. Ao contr=E1rios da IRQ e DMA, o =
+dispositivo=20
+pode usar mais de uma porta de Entrada/Sa=EDda ou uma faixa de =
+endere=E7os. Por=20
+exemplo, uma placa de som padr=E3o usa as portas 0x220, 0x330 e 0x388,=20
+respectivamente <SAMP>audio digital</SAMP>, <SAMP>midi</SAMP> e=20
+<SAMP>opl3</SAMP>.=20
+<P>As placas de rede normalmente transferem grandes quantidades de =
+dados, assim=20
+ocupam uma faixa de endere=E7os. Minha NE2000, por exemplo, ocupa a =
+faixa de=20
+endere=E7os 0x260 a 0x27F (0x260-0x27F). O tamanho da faixa de =
+endere=E7os varia de=20
+acordo com o tipo de dispositivo.=20
+<P>Os endere=E7os de <EM>I/O</EM> em uso no sistema podem ser =
+visualizados com o=20
+comando <SAMP>cat /proc/ioports</SAMP>.=20
+<P>Endere=E7os das portas de entrada/sa=EDda n=E3o podem ser =
+compartilhados=20
+<HR>
+<A name=3Ds-hardw-metodoscfg></A>
+<H2>3.4 Hardwares configur=E1veis por jumpers, dip-switches, jumperless =
+e=20
+Plug-and-Play.</H2>
+<HR>
+<A name=3Ds-hardw-metodoscfg-jumpers></A>
+<H3>3.4.1 Jumpers</H3>
+<P>Hardwares configur=E1veis por <EM>jumpers</EM> (pinos met=E1licos =
+protegidos por=20
+uma capa pl=E1stica) tem sua configura=E7=E3o alterada atrav=E9s da =
+coloca=E7=E3o, retirada=20
+ou mudan=E7a de posi=E7=E3o. Hardwares configur=E1veis por jumpers s=E3o =
+os preferidos por=20
+t=E9cnicos de inform=E1tica muito experientes.=20
+<P>Estes hardwares possuem a caracter=EDstica de somente terem seus =
+par=E2metros=20
+modificados atrav=E9s da mudan=E7a da posi=E7=E3o dos jumpers da placa, =
+desta forma se=20
+obt=E9m uma configura=E7=E3o fixa (n=E3o podendo ser modificada por =
+qualquer tipo de=20
+programa) e o dispositivo estar=E1 sempre pronto para ser ativado ap=F3s =
+a=20
+inicializa=E7=E3o de qualquer sistema operacional.=20
+<P>O =FAnico inconveniente =E9 a necessidade de se retirar a placa do =
+computador=20
+para se ter acesso aos jumpers de configura=E7=E3o, a n=E3o ser que =
+estejam=20
+manualmente acess=EDveis. Alguns hardwares configur=E1veis atrav=E9s de =
+jumpers podem=20
+tamb=E9m funcionar como Plug-and-Play, atrav=E9s de um ajuste da =
+posi=E7=E3o dos jumpers=20
+para Plug-and-Play.=20
+<P>Normalmente as placas controladoras SIDE, rede, bons modelos de =
+fax-modens,=20
+placas de som, SCSI, etc., s=E3o configuradas por jumpers e possuem um =
+mapa de=20
+configura=E7=E3o gravado em seu circuito impresso que explica as =
+posi=E7=F5es de como os=20
+jumpers devem ser posicionados para operar na configura=E7=E3o desejada. =
+Normalmente=20
+=E9 poss=EDvel escolher uma entre v=E1rios tipos de configura=E7=E3o, =
+mas =E9 recomendado=20
+optar por valores padr=F5es (para detalhes veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfg-irq">IRQ=20
+- Requisi=E7=E3o de Interrup=E7=E3o, Se=E7=E3o 3.3.1</A>, <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfg-dma">DMA=20
+- Acesso Direto a Mem=F3ria, Se=E7=E3o 3.3.2</A> e <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfg-io">I/O=20
+- Porta de Entrada/Sa=EDda, Se=E7=E3o 3.3.3</A>).=20
+<P>As disposi=E7=E3o dos jumpers s=E3o normalmente definidas em=20
+<EM>fechado/aberto</EM> e <EM>multi-posi=E7=E3o</EM>. Na disposi=E7=E3o=20
+<EM>fechado/aberto</EM>, o jumper pode ou n=E3o ser colocado, definindo =
+a=20
+configura=E7=E3o do dispositivo: <PRE>     ::|::
+</PRE>
+<P>Esta disposi=E7=E3o =E9 facilmente encontrada na sele=E7=E3o de IRQ e =
+I/O em placas de=20
+fax-modem.=20
+<P>Na disposi=E7=E3o <EM>multi-posi=E7=E3o</EM>, os pinos de encaixe =
+s=E3o numerados de 1=20
+a 3 (ou 1 a 4, 1 a 5, etc) e os pinos podem ou n=E3o ser colocados na =
+placa e a=20
+posi=E7=E3o que s=E3o colocados tamb=E9m influencia os valores =
+escolhidos para o=20
+funcionamento do dispositivo (a posi=E7=E3o 1-2 especificam um valor =
+enquanto 2-3=20
+especificam outro). A associa=E7=E3o entre a posi=E7=E3o dos jumpers e a =
+configura=E7=E3o=20
+desejada =E9 feita consultando o mapa desenhado no circuito impresso da =
+placa ou o=20
+manual de instru=E7=F5es da placa.=20
+<P>A configura=E7=E3o de jumper atrav=E9s de multi-posi=E7=E3o =E9 =
+normalmente usada em=20
+placas m=E3e para definir a <EM>freq=FC=EAncia de opera=E7=E3o do =
+barramento</EM>, a=20
+<EM>freq=FC=EAncia de multiplica=E7=E3o</EM> ou o <EM>tipo do =
+processador</EM>.=20
+<P>Se n=E3o possuir o mapa de configura=E7=E3o de sua placa e/ou o =
+manual de=20
+instru=E7=F5es, ser=E1 necess=E1rio fazer um mapeamento manual da placa, =
+mas para isto=20
+voc=EA precisar=E1 conhecer detalhadamente a configura=E7=E3o de portas =
+I/O, DMA, IRQ=20
+usadas na m=E1quina que ser=E1 usada e anotar as diferen=E7as obtidas =
+atrav=E9s da=20
+modifica=E7=E3o da pinagem do dispositivo. Isto n=E3o =E9 f=E1cil, mas =
+t=E9cnicos de=20
+inform=E1tica experientes conhecer=E3o as <SAMP>armadilhas</SAMP> =
+encontradas pelo=20
+mapeamento manual de placas e far=E3o o esquema de configura=E7=E3o =
+completo do=20
+dispositivo, obtendo um excelente manual de instru=E7=F5es. Nesta hora a =
+experi=EAncia=20
+conta mais que o uso de programas de diagn=F3stico.=20
+<P>Outra caracter=EDstica de hardwares configurados atrav=E9s de jumpers =
+=E9 que=20
+raramente apresentam problemas de funcionamento, a n=E3o ser que seus =
+par=E2metros=20
+como IRQ, DMA, ou I/O estejam em conflitos com outro dispositivo, mas =
+isso n=E3o =E9=20
+culpa do fabricante e nem mesmo do dispositivo...=20
+<HR>
+<A name=3Ds-hardw-metodoscfg-dipswitche></A>
+<H3>3.4.2 Dip-Switches</H3>
+<P>=C9 a mesma coisa que os hardwares configur=E1veis por jumpers exceto =
+que s=E3o=20
+usados <EM>dip-switches</EM> no lugar de jumpers. O =
+<EM>dip-switches</EM> =E9 um=20
+conjunto de chaves numeradas que podem ser colocadas para cima ou para =
+baixo=20
+(como um disjuntor ou v=E1rios interruptores <EM>LIGA/DESLIGA</EM> =
+colocados um ao=20
+lado do outro) para se modificar a configura=E7=E3o do dispositivo.=20
+<P>Normalmente as chaves est=E3o acess=EDveis na parte met=E1lica da =
+placa (onde os=20
+hardwares s=E3o conectados) para permitir a f=E1cil mudan=E7a de =
+configura=E7=E3o sem=20
+retirar a placa. =C9 ainda comum encontrar isto em algumas placas de =
+fax-modem.=20
+<HR>
+<A name=3Ds-hardw-metodoscfg-jumperless></A>
+<H3>3.4.3 Jumperless (sem jumper)</H3>
+<P>Os hardwares <EM>jumperless</EM> n=E3o possuem jumpers e s=E3o =
+configurados=20
+atrav=E9s de um programa que acompanha a pr=F3pria placa. Neste programa =
+=E9 escolhida=20
+a IRQ, DMA, I/O e a configura=E7=E3o =E9 salva na pr=F3pria placa ou =
+restaurada ap=F3s=20
+cada inicializa=E7=E3o por um programa carregado na mem=F3ria. Devido a =
+configura=E7=E3o=20
+via software, se obt=E9m uma configura=E7=E3o fixa com muito mais =
+facilidade do que=20
+via jumpers (por n=E3o haver a necessidade de se retirar a placa).=20
+<P>A maioria das placas jumperless podem funcionar tamb=E9m como =
+Plug-and-Play.=20
+Existem muitas placas de rede, fax-modem, scanner jumperless no mercado. =
+
+<HR>
+<A name=3Ds-hardw-metodoscfg-plug-and-play></A>
+<H3>3.4.4 Plug-and-Play</H3>
+<P>O <EM>Plug-and-Play</EM> =E9 um protocolo que l=EA os valores de =
+opera=E7=E3o=20
+dispon=EDveis para a placa e permitem que o usu=E1rio possa especificar =
+facilmente=20
+qual ser=E1 sua IRQ, DMA, I/O.=20
+<P>A diferen=E7a em rela=E7=E3o ao modo jumperless =E9 que o mesmo =
+programa de=20
+configura=E7=E3o Plug-and-Play permite configurar todas as placas =
+Plug-and-Play e a=20
+placa somente recebe os valores de IRQ, DMA e I/O ap=F3s ser ativada por =
+este=20
+programa, normalmente o <CODE>isapnp</CODE> no Linux. Isto significa que =
+a placa=20
+n=E3o tem nenhum par=E2metro de IRQ, DMA e I/O na partida do sistema.=20
+<P>Desta forma, somente sistemas operacionais que possuem suporte ao=20
+Plug-and-Play (como o <CODE>GNU/Linux</CODE>, <CODE>Windows</CODE>) ou =
+programas=20
+acionadores PnP (como o <CODE>ICU</CODE> para o <CODE>DOS</CODE>) podem =
+ativar e=20
+usar estes tipos de placas.=20
+<P>Placas Plug-and-Play permitem muita flexibilidade de configura=E7=E3o =
+de=20
+dispositivos. O programa usado para a configura=E7=E3o de placas =
+Plug-and-Play no=20
+<CODE>GNU/Linux</CODE> =E9 o <CODE>isapnp</CODE> e a configura=E7=E3o de =
+todas as=20
+placas Plug-and-Play s=E3o definidas no arquivo =
+<CODE>/etc/isapnp.conf</CODE>.=20
+<P>Veja a pr=F3xima se=E7=E3o para entender como funciona o arquivo de =
+configura=E7=E3o=20
+<CODE>isapnp.conf</CODE> e assim poder ativar seu dispositivo =
+Plug-and-Play.=20
+<HR>
+<A name=3Ds-hardw-metodoscfg-plug-and-play-e></A>
+<H4>3.4.4.1 Entendendo o arquivo de configura=E7=E3o =
+<CODE>isapnp.conf</CODE></H4>
+<P>Segue abaixo um exemplo de arquivo <CODE>/etc/isapnp.conf</CODE> =
+gerado=20
+atrav=E9s do <CODE>pnpdump</CODE> para a configura=E7=E3o de uma placa =
+de Som=20
+<SAMP>Sound Blaster</SAMP> com porta IDE embutida no =
+<CODE>GNU/Linux</CODE>.=20
+<P>O objetivo =E9 configurar a placa Sound Blaster para operar na =
+configura=E7=E3o:=20
+<UL>
+  <LI><SAMP>IO=3D0x220</SAMP>=20
+  <LI><SAMP>IRQ=3D5</SAMP>=20
+  <LI><SAMP>DMA=3D1</SAMP>=20
+  <LI><SAMP>DMA16=3D5</SAMP>=20
+  <LI><SAMP>MIDI=3D0x330</SAMP>=20
+  <LI><SAMP>OPL=3D0x388</SAMP>=20
+  <LI><SAMP>IDE operando como placa controladora quarten=E1ria na porta=20
+  0x168/0x36e</SAMP> - N=F3s queremos ligar um HD na placa de som,=20
+  <STRONG>SIM</STRONG> o <CODE>GNU/Linux</CODE> permite isso, e ele =
+ser=E1=20
+  configurado como <CODE>/dev/hdg1</CODE>=20
+  <LI><SAMP>JOYSTICK na porta 0x220</SAMP> - =C9 bom para jogos e =
+controle do=20
+  <CODE>xmms</CODE> </LI></UL>
+<P>Observe que as linhas iniciando com <SAMP>#</SAMP> s=E3o apenas =
+coment=E1rios e=20
+n=E3o ser=E3o interpretadas pelo <CODE>isapnp</CODE>: <PRE>     # $Id: =
+pnpdump.c,v 1.21 1999/12/09 22:28:33 fox Exp $
+     # Release isapnptools-1.21 (library isapnptools-1.21)
+     #=20
+     # Para detalhes do formato do arquivo de sa=EDda, veja a p=E1gina =
+de=20
+     # manual do isapnp.conf
+     #=20
+    =20
+     # A se=E7=E3o abaixo faz o isolamento da placa atrav=E9s da BIOS =
+(normalmente n=E3o=20
+     # precisa ser alterado). Com a configura=E7=E3o abaixo, os dados =
+sobre=20
+     # dispositivos ser=E3o obtidos diretamente da BIOS.=20
+     # Em placas m=E3e que n=E3o suportam Plug-and-Play, =E9 =
+necess=E1rio apenas o=20
+     # par=E2metro (ISOLATE) para que o isapnp possa assumir totalmente =
+o controle=20
+     # para identifica=E7=E3o dos dispositivos Plug-and-Play
+     (READPORT 0x0273)
+     (ISOLATE PRESERVE)
+     (IDENTIFY *)
+     (VERBOSITY 2)
+     (CONFLICT (IO FATAL)(IRQ FATAL)(DMA FATAL)(MEM FATAL)) # ou WARNING
+    =20
+     # Card 1: (serial identifier fc 10 01 fb 5d 28 00 8c 0e)
+     # Vendor Id CTL0028, Serial Number 268565341, checksum 0xFC.
+     # Version 1.0, Vendor version 1.0
+     # ANSI string --&gt;Creative SB16 PnP&lt;--
+     #
+     # Descomente os valores desejados abaixo, selecionando a =
+configura=E7=E3o requerida.=20
+     # Note que o valor padr=E3o equivale ao primeiro par=E2metro =
+dispon=EDvel (Minimum)
+     # "(CONFIGURE" inicia um bloco de configura=E7=E3o e finaliza com =
+"(ACT Y)"
+     # Para ativar as configura=E7=F5es selecionadas, basta descomentar =
+a linha=20
+     # "#(ACT Y)" no final do bloco de configura=E7=E3o.=20
+    =20
+     (CONFIGURE CTL0028/268565341 (LD 0
+     #     ANSI string --&gt;Audio&lt;--
+     # Pela string acima, esta =E9 a configura=E7=E3o de Audio da Sound =
+Blaster
+     # Hora de m=FAltiplas escolhas, escolha apenas uma!
+    =20
+     #     Inicia fun=E7=F5es dependentes, classificada por prioridade =
+aceit=E1vel=20
+     #
+     #       IRQ 5, 7 ou 10.
+     (INT 0 (IRQ 5 (MODE +E)))
+     # Foi especificada a IRQ 5 na configura=E7=E3o acima
+    =20
+     #       Primeiro canal DMA 0, 1 ou 3.
+     #             Somente DMA de 8 bits=20
+     #             Dispositivo l=F3gico n=E3o =E9 um bus master
+     #             DMA may execute in count by byte mode
+     #             DMA may not execute in count by word mode
+     #             DMA channel speed in compatible mode
+     (DMA 0 (CHANNEL 1))
+     # O valor da DMA 8 bits padr=E3o =E9 0 (o mais baixo), mas este =
+n=E3o =E9 o valor=20
+     # que desejamos. Ajustamos o valor para 1.=20
+    =20
+     #       Next DMA channel 5, 6 or 7.
+     #             16 bit DMA only
+     #             Logical device is a bus master
+     #             DMA may not execute in count by byte mode
+     #             DMA may execute in count by word mode
+     #             DMA channel speed in compatible mode
+     (DMA 1 (CHANNEL 5))
+     # O canal DMA 16 bits desejado para a Sound Blaster =E9 o 5. Apenas =
+
+     # descomentamos a linha acima.=20
+    =20
+     #       Logical device decodes 16 bit IO address lines
+     #             Minimum IO base address 0x0220
+     #             Maximum IO base address 0x0280
+     #             IO base alignment 32 bytes
+     #             Number of IO addresses required: 16
+     (IO 0 (SIZE 16) (BASE 0x0220))
+     # Apenas descomentamos a linha.
+    =20
+     #       Logical device decodes 16 bit IO address lines
+     #             Minimum IO base address 0x0300
+     #             Maximum IO base address 0x0330
+     #             IO base alignment 48 bytes
+     #             Number of IO addresses required: 2
+     (IO 1 (SIZE 2) (BASE 0x0330))
+     # O valor padr=E3o =E9 0x0300 para a porta MIDI, mas n=F3s =
+desejamos usar o=20
+     # valor 0x0330. Descomentamos a linha e alteramos o valor da I/O.=20
+    =20
+     #       Logical device decodes 16 bit IO address lines
+     #             Minimum IO base address 0x0388
+     #             Maximum IO base address 0x0388
+     #             IO base alignment 1 bytes
+     #             Number of IO addresses required: 4
+     (IO 2 (SIZE 4) (BASE 0x0388))
+     # Apenas descomentamos a linha. 0x0388 =E9 um valor padr=E3o para =
+OPL
+    =20
+     #     Fim de fun=E7=F5es dependentes
+      (NAME "CTL0028/268565341[0]{Audio               }")
+     (ACT Y) #Descomentamos para ativar este bloco de configura=E7=E3o =
+acima
+     ))
+    =20
+    =20
+     ########################################
+     # Logical device id CTL2011
+     #
+     # Descomente os valores desejados abaixo, selecionando a =
+configura=E7=E3o requerida.=20
+     # Note que o valor padr=E3o equivale ao primeiro par=E2metro =
+dispon=EDvel (Minimum)
+     # "(CONFIGURE" inicia um bloco de configura=E7=E3o e finaliza com =
+"(ACT Y)"
+     # Para ativar as configura=E7=F5es selecionadas, basta descomentar =
+a linha=20
+     # "#(ACT Y)" no final do bloco de configura=E7=E3o.=20
+    =20
+     (CONFIGURE CTL0028/268565341 (LD 1
+     #     Compatible device id PNP0600
+     #     ANSI string --&gt;IDE&lt;--
+     # Pela string acima sabemos que esta =E9 a configura=E7=E3o da IDE =
+embutida na SB
+    =20
+     # Hora de m=FAltiplas escolhas, escolha apenas uma!
+    =20
+     #     Inicia fun=E7=F5es dependentes: Prioridade Preferida
+     #       IRQ 10.
+     (INT 0 (IRQ 10 (MODE +E)))
+     # Descomentamos e aceitamos o valor acima, pois n=E3o entra em =
+conflito com=20
+     # nenhum outro dispositivo do sistema.=20
+    =20
+     #       Logical device decodes 16 bit IO address lines
+     #             Minimum IO base address 0x0168
+     #             Maximum IO base address 0x0168
+     (IO 0 (SIZE 8) (BASE 0x0168))
+     # Descomentamos e aceitamos o valor acima, pois n=E3o entra em =
+conflito com=20
+     # nenhum outro dispositivo do sistema.=20
+    =20
+     #       Logical device decodes 16 bit IO address lines
+     #             Minimum IO base address 0x036e
+     #             Maximum IO base address 0x036e
+     #             IO base alignment 1 bytes
+     #             Number of IO addresses required: 2
+     (IO 1 (SIZE 2) (BASE 0x036e))
+     # Descomentamos e aceitamos o valor acima, pois n=E3o entra em =
+conflito com=20
+     # nenhum outro dispositivo do sistema.
+    =20
+     #     End dependent functions
+      (NAME "CTL0028/268565341[1]{IDE                 }")
+      (ACT Y) # Descomentando esta linha, a placa IDE da Sound Blaster =
+passar=E1 a=20
+              # funcionar como IDE quarten=E1ria (de acordo com os =
+recursos passados)
+     ))
+    =20
+    =20
+     #######################################
+     # Logical device id CTL7001
+     #
+     # Descomente os valores desejados abaixo, selecionando a =
+configura=E7=E3o requerida.=20
+     # Note que o valor padr=E3o equivale ao primeiro par=E2metro =
+dispon=EDvel (Minimum)
+     # "(CONFIGURE" inicia um bloco de configura=E7=E3o e finaliza com =
+"(ACT Y)"
+     # Para ativar as configura=E7=F5es selecionadas, basta descomentar =
+a linha=20
+     # "#(ACT Y)" no final do bloco de configura=E7=E3o.=20
+    =20
+     (CONFIGURE CTL0028/268565341 (LD 3
+     #     Compatible device id PNPb02f
+     #     ANSI string --&gt;Game&lt;--
+     # Pela string acima sabemos que =E9 a Entrada para Joystick
+    =20
+     #     Logical device decodes 16 bit IO address lines
+     #         Minimum IO base address 0x0200
+     #         Maximum IO base address 0x0200
+     #         IO base alignment 1 bytes
+     #         Number of IO addresses required: 8
+      (IO 0 (SIZE 8) (BASE 0x0200))
+      (NAME "CTL0028/268565341[3]{Jogo                }")
+      (ACT Y) # Sem muitos coment=E1rios... descomentamos a linha IO =
+acima e=20
+              # ativamos a configura=E7=E3o (descomentando (ACT Y)). A =
+diferen=E7a=20
+     	 # =E9 que especificamos o nome GAME para o recurso atrav=E9s da=20
+     	 # linha (NAME "CTL0028/268565341[3]{Jogo              }")
+              # Este nome ser=E1 mostrado quando o Joystick for ativado
+     ))
+    =20
+     # Returns all cards to the 'Wait for Key' state
+     (WAITFORKEY)
+</PRE>
+<P>Note ainda que o <CODE>isapnp.conf</CODE> gerado atrav=E9s do=20
+<CODE>pnpdump</CODE> cont=E9m v=E1rios tipos de prioridades de =
+configura=E7=E3o para o=20
+mesmo bloco de configura=E7=E3o e a prioridade que usamos acima foi =
+<SAMP>priority=20
+acceptable</SAMP> para o bloco de audio da Sound Blaster e =
+<SAMP>priority=20
+preferred</SAMP> para a porta IDE e Joystick. Os tipos de prioridades=20
+dispon=EDveis s=E3o:=20
+<UL>
+  <LI><SAMP>priority preferred</SAMP> - Configura=E7=E3o preferida para =
+o=20
+  funcionamento do hardware. =C9 a recomendada pelo fabricante do =
+hardware e=20
+  tamb=E9m recomend=E1vel se voc=EA n=E3o tem muita experi=EAncia na =
+configura=E7=E3o de=20
+  hardwares, pois lista somente uma configura=E7=E3o por recurso. Se a =
+placa entrar=20
+  em conflito com outras placas usando <SAMP>priority preferred</SAMP>, =
+tente a=20
+  <SAMP>priority acceptable</SAMP>. </LI></UL>
+<UL>
+  <LI><SAMP>priority acceptable</SAMP> - Lista todas as =
+configura=E7=F5es aceitas=20
+  pelo seu hardware. Ela =E9 minha op=E7=E3o preferida, pois permite =
+analisar=20
+  dinamicamente todas as configura=E7=F5es permitidas pelo hardware e =
+escolher qual=20
+  =E9 a mais adequada para funcionar sem problemas no sistema. =
+</LI></UL>
+<UL>
+  <LI><SAMP>priority functional</SAMP> - Pode conter 1 ou mais blocos de =
+
+  <SAMP>prioriade funcional</SAMP> por hardware. Note que alguns =
+recursos do=20
+  hardware podem n=E3o estar dispon=EDvel neste tipo de prioridade. =C9 =
+=FAtil para uso=20
+  em casos de conflito, quando o hardware pode ser colocado em =
+funcionamento de=20
+  forma alternativa ou parcial. </LI></UL>
+<P>Ap=F3s a grava=E7=E3o do arquivo <CODE>/etc/isapnp.conf</CODE>, basta =
+voc=EA digitar=20
+<SAMP>isapnp /etc/isapnp.conf</SAMP> para ativar a configura=E7=E3o dos =
+dispositivos=20
+listados com as configura=E7=F5es que voc=EA escolheu. Se o =
+<CODE>isapnp</CODE> lhe=20
+mostrar mensagens de conflito ou qualquer outro problema, verifique as=20
+configura=E7=F5es do hardware e modifique, se necess=E1rio. Depois =
+execute novamente o=20
+<CODE>/etc/isapnp.conf</CODE>. Para detalhes sobre outros par=E2metros =
+n=E3o=20
+explicados aqui, veja a p=E1gina de manual do <CODE>isapnp.conf</CODE>.=20
+<P>A maioria das distribui=E7=F5es <CODE>GNU/Linux</CODE> configura os =
+dispositivos=20
+Plug-and-Play existentes neste arquivo automaticamente na =
+inicializa=E7=E3o (como =E9=20
+o caso da <CODE>Debian</CODE> e a <CODE>Red Hat</CODE>). Se este n=E3o =
+for o seu=20
+caso, coloque a linha <SAMP>isapnp /etc/isapnp.conf</SAMP> em um dos =
+scripts de=20
+inicializa=E7=E3o de sua distribui=E7=E3o.=20
+<HR>
+<A name=3Ds-hardw-findhw></A>
+<H2>3.5 Listando as placas e outros hardwares em um computador</H2>
+<P>Administradores e t=E9cnicos ao configurar uma m=E1quina precisar=E3o =
+saber quais=20
+os hardwares ela possui, perif=E9ricos e at=E9 mesmo a revis=E3o de =
+dispositivos e=20
+clock para configurar as coisas e ver a necessidade de atualiza=E7=F5es =
+de=20
+dispositivos atuais.=20
+<P>Dispositivos PCI/AMR/CNR podem ser listados executando o comando =
+<SAMP>cat=20
+/proc/pci</SAMP>. Outra forma de listar tais dispositivos =E9 usando o=20
+<CODE>lspci</CODE>, se voc=EA precisa de mais detalhes como o mapeamento =
+de=20
+mem=F3ria, use <SAMP>lspci -vv</SAMP>.=20
+<P>O mapeamento de mem=F3ria de dispositivos podem ser mostrados com o =
+comando=20
+<SAMP>cat /proc/ioports</SAMP>, ou usando o comando <CODE>lsdev</CODE>.=20
+<P>O barramento USB e dispositivos conectados a ele podem ser listados =
+com o=20
+comando <CODE>lsusb</CODE> ou com <SAMP>cat =
+/proc/bus/usb/devices</SAMP>.=20
+<P>Hardwares dispon=EDveis na m=E1quina, como placa m=E3e, clock =
+multiplicador,=20
+discos, placas diversas, vers=F5es e n=FAmeros seriais de dispositivos =
+podem ser=20
+mostrados atrav=E9s do comando <CODE>lshw</CODE>. Use <SAMP>lshw =
+-html</SAMP> para=20
+produzir a listagem em formato HTML, bem interessante para relat=F3rios =
+:-)=20
+<HR>
+<A name=3Ds-hardw-conflitos></A>
+<H2>3.6 Conflitos de hardware</H2>
+<P>Ocorre quando um ou mais dispositivos usam a mesma <EM>IRQ</EM>, =
+<EM>I/O</EM>=20
+ou <EM>DMA</EM>. Um sistema com configura=E7=F5es de hardware em =
+conflito tem seu=20
+funcionamento inst=E1vel, travamentos constantes, mal funcionamento de =
+um ou mais=20
+dispositivos e at=E9 mesmo, em casos mais graves, a perda de dados.=20
+<P>Sempre que poss=EDvel conhe=E7a e utilize os valores padr=F5es para a =
+configura=E7=E3o=20
+de perif=E9ricos, isto pode te livrar de conflitos com outros =
+dispositivos e mal=20
+funcionamento do sistema. Alguns programas de diagn=F3stico ou de =
+auto-detec=E7=E3o=20
+podem n=E3o localizar seu dispositivo caso ele esteja usando um valor =
+muito=20
+diferente do padr=E3o.=20
+<P>Para resolver conflitos de hardware ser=E1 necess=E1rio conhecer a =
+configura=E7=E3o=20
+de cada dispositivo em seu sistema. Os comandos <SAMP>cat=20
+/proc/interrupts</SAMP>, <SAMP>cat /proc/dma</SAMP> e <SAMP>cat=20
+/proc/ioports</SAMP> podem ser =FAteis para se verificar as =
+configura=E7=F5es usadas.=20
+<P>Lembre-se que o barramento PCI permite o compartilhamento de IRQs =
+entre=20
+placas PCI.=20
+<HR>
+<A name=3Ds-hard-barramento></A>
+<H2>3.7 Barramento</H2>
+<P>O tipo de <EM>slot</EM> varia de acordo com o barramento usado no =
+sistema,=20
+que pode ser um(s) do(s) seguinte(s):=20
+<DL>
+  <DT>ISA 8 Bits=20
+  <DD><SAMP>Industry Standard Architecture</SAMP> - =C9 o padr=E3o mais =
+antigo,=20
+  encontrado em computadores PC/XT.=20
+  <DT>ISA 16 Bits=20
+  <DD>Evolu=E7=E3o do padr=E3o ISA 8 Bits, possui um conector maior e =
+permite a=20
+  conex=E3o de placas de 8 bits. Sua taxa de transfer=EAncia chega a =
+2MB/s.=20
+  <DT>VESA=20
+  <DD><SAMP>Video Electronics Standard Association</SAMP> - =C9 uma =
+interface=20
+  feita inicialmente para placas de v=EDdeo r=E1pidas. O barramento VESA =
+=E9=20
+  basicamente um ISA com um encaixe extra no final. Sua taxa de =
+transfer=EAncia=20
+  pode chegar a 132MB/s.=20
+  <DT>EISA=20
+  <DD><SAMP>Enhanced Industry Standard Architecture</SAMP> - =C9 um =
+barramento=20
+  mais encontrado em servidores. Tem a capacidade de bus mastering, que=20
+  possibilita a comunica=E7=E3o das placas sem a interfer=EAncia da CPU. =
+
+  <DT>MCA=20
+  <DD><SAMP>Micro Channel Architecture</SAMP> - Barramento 32 bits =
+propriet=E1rio=20
+  da IBM. Voc=EA n=E3o pode usar placas ISA nele, possui a =
+caracter=EDstica de bus=20
+  mastering, mas pode procurar por dispositivos conectados a ele, =
+procurando=20
+  configura=E7=E3o autom=E1tica.=20
+  <P>Este barramento estava presente no PS/1 e PS/2, hoje n=E3o =E9 mais =
+usado. </P>
+  <DT>PCI=20
+  <DD><SAMP>Peripheral Component Interconnect</SAMP> - =C9 outro =
+barramento r=E1pido=20
+  produzido pela Intel com a mesma velocidade que o VESA. O barramento =
+possui um=20
+  chipset de controle que faz a comunica=E7=E3o entre os slots PCI e o =
+processador.=20
+  O barramento se configura automaticamente (atrav=E9s do =
+Plug-and-Play). O PCI =E9=20
+  o barramento mais usado por Pentiums e est=E1 se tornando uma padr=E3o =
+no PC.=20
+  <DT>AGP=20
+  <DD><SAMP>Accelerated Graphics Port</SAMP> - =C9 um novo barramento =
+criado=20
+  exclusivamente para a liga=E7=E3o de placas de video. =C9 um slot =
+marrom (em sua=20
+  maioria) que fica mais separado do ponto de fixa=E7=E3o das placas no =
+chassis=20
+  (comparado ao PCI). Estas placas permitem obter um desempenho elevado =
+de v=EDdeo=20
+  se comparado as placas onboards com mem=F3ria compartilhada e mesmo =
+PCI=20
+  externas. O consumo de pot=EAncia em placas AGP x4 podem chegar at=E9 =
+a 100W,=20
+  portanto =E9 importante dimensionar bem o sistema e ter certeza que a =
+fonte de=20
+  alimenta=E7=E3o pode trabalhar com folga.=20
+  <DT>PCMCIA=20
+  <DD><SAMP>Personal Computer Memory Card International =
+Association</SAMP> - =C9=20
+  um slot especial usado para conex=F5es de placas externas (normalmente =
+
+  revestivas de pl=E1stico) e chamadas de <EM>cart=F5es PCMCIA</EM>. =
+Estes cart=F5es=20
+  podem adicionar mais mem=F3ria ao sistema, conter um fax-modem, placa =
+de rede,=20
+  disco r=EDgido, etc.=20
+  <P>Os cart=F5es PCMCIA s=E3o divididos em 3 tipos:=20
+  <DL>
+    <DT><SAMP>Tipo 1</SAMP>=20
+    <DD>Tem a espessura de 3.3 mil=EDmetros, e podem conter mais =
+mem=F3ria RAM ou=20
+    mem=F3ria Flash.=20
+    <DT><SAMP>Tipo 2</SAMP>=20
+    <DD>Tem a espessura de 5 mil=EDmetros e capacidade de opera=E7=F5es =
+I/O. =C9 um tipo=20
+    usado para placas de fax-modem, rede, som. Computadores que aceitam =
+cart=F5es=20
+    PCMCIA do tipo 2, mant=E9m a compatibilidade com o tipo 1.=20
+    <DT><SAMP>Tipo 3</SAMP>=20
+    <DD>Tem a espessura de 10.5 mil=EDmetros e normalmente usado para =
+discos=20
+    r=EDgidos PCMCIA. Slots PCMCIA do tipo 3 mant=E9m a compatibilidade =
+com o tipo 2=20
+    e 1. </DD></DL>
+  <DT>AMR=20
+  <DD><SAMP>Audio Modem Raise</SAMP> - Pequeno barramento criado pela =
+Intel para=20
+  a conex=E3o de placas de som e modem. Placas de som e modem AMR usam o =
+HSP (host=20
+  signal processor) e s=E3o como as Placas on-board e todo o =
+processamento =E9 feito=20
+  pela CPU do computador (veja detalhes em <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hard-onoffboard">Placas=20
+  on-board / off-board, Se=E7=E3o 3.8</A> e <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hard-forwindows">Hardwares=20
+  espec=EDficos ou "For Windows", Se=E7=E3o 3.9</A>.=20
+  <P>Sua vantagem =E9 o pre=E7o: um modem ou placa de som AMR custa em =
+torno de R$=20
+  25,00. </P>
+  <DT>CNR=20
+  <DD><SAMP>Communication and Networking Rise</SAMP> - Pequeno =
+barramento criado=20
+  pela Intel para a conex=E3o de placas de som, modens e placas de rede. =
+Este =E9 um=20
+  pequenino slot marrom que =E9 localizado no ponto de fixa=E7=E3o das =
+placas no=20
+  chassis do gabinete. Elas s=E3o como as Placas on-board e todo o =
+processamento =E9=20
+  feito pela CPU do computador (veja detalhes em <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hard-onoffboard">Placas=20
+  on-board / off-board, Se=E7=E3o 3.8</A> e <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hard-forwindows">Hardwares=20
+  espec=EDficos ou "For Windows", Se=E7=E3o 3.9</A>. </DD></DL>
+<HR>
+<A name=3Ds-hard-onoffboard></A>
+<H2>3.8 Placas on-board / off-board</H2>
+<P>Placas <EM>on-board</EM> s=E3o embutidas na placa m=E3e =
+(<EM>motherboard</EM>).=20
+Placas <EM>off-board</EM> s=E3o placas externas encaixadas nos slots de =
+expans=E3o=20
+da placa m=E3e.=20
+<P>No inicio da era do PC/XT todos as placas eram embutidas na placa =
+m=E3e (na=20
+=E9poca eram somente a placa de v=EDdeo e controladora). Com o =
+surgimento do padr=E3o=20
+AT, diversas empresas de inform=E1tica desenvolveram dispositivos =
+concorrentes e=20
+assim o usu=E1rio tinha a liberdade de escolha de qual dispositivo =
+colocar em sua=20
+placa m=E3e (ou o mais barato ou o de melhor qualidade e desempenho), =
+isto=20
+permitiu a adi=E7=E3o de perif=E9ricos de qualidade sem romper com seu =
+or=E7amento=20
+pessoal (comprando uma placa de som, depois uma de fax-modem, placa de =
+v=EDdeo=20
+melhor, etc).=20
+<P>Atualmente parece que voltamos ao ponto de partida e tudo vem =
+embutido na=20
+placa m=E3e (<EM>on-board</EM>) e o usu=E1rio n=E3o tem como escolher =
+qual dispositivo=20
+usar em seu computador. =C9 muito dif=EDcil (praticamente imposs=EDvel) =
+encontrar uma=20
+placa m=E3e que satisfa=E7a completamente as necessidades do usu=E1rio =
+ou=20
+recomenda=E7=F5es de um bom t=E9cnico de inform=E1tica (a n=E3o ser que =
+seja um t=E9cnico=20
+experiente e encontre alguma alternativa).=20
+<P>Certamente o =FAnico dispositivo que funciona melhor se embutido na =
+placa m=E3e =E9=20
+a <EM>placa controladora de perif=E9ricos</EM>. Esta placa =E9 usada =
+para se=20
+conectar unidades de disquete, discos r=EDgidos, CD-ROM, portas seriais, =
+
+paralelas, joystick ao computador. Os HDs conectados em uma controladora =
+
+embutida conseguem ter um desempenho muito maior do que em placas =
+conectadas=20
+externamente, sem causar nenhum tipo de problema. Felizmente os =
+=FAltimos modelos=20
+de placas m=E3e 486 e os Pentium j=E1 trazem a placa controladora de =
+perif=E9ricos=20
+embutida.=20
+<P>Hardwares embutidos na placa m=E3e (como fax-modem, v=EDdeo, som) =
+s=E3o em m=E9dia=20
+30% mais baratos que os vendidos separadamente mas quase sempre s=E3o =
+usados=20
+dispositivos de baixo desempenho e qualidade para reduzir o pre=E7o da =
+placa m=E3e e=20
+quase sempre usados hardwares <SAMP>For Windows</SAMP>.=20
+<P>Hoje em dia por causa do pre=E7o da placa m=E3e, =E9 comum encontrar =
+pessoas que=20
+verificam somente o pre=E7o e sequer procuram saber ou conhecem a =
+qualidade das=20
+placas embutidas na placa m=E3e. Pior ainda =E9 encontrar vendedores =
+despreparados=20
+que sequer sabem explicar o porque que uma placa de som Sound Blaster 64 =
+=E9 mais=20
+cara que uma de modelo gen=E9rico...=20
+<P>Certa vez fiz um teste de desempenho em um jogo chamado <EM>Network=20
+Rally</EM> do <EM>DOS</EM> com minha m=E1quina Pentium 120 MHz (s=F3 com =
+a <EM>placa=20
+controladora</EM> embutida), 16 MB RAM, placa de som Sound Blaster 16, =
+placa de=20
+v=EDdeo Trident 9680 com 1MB <EM>versus</EM> um computador Pentium 200 =
+MMX, 32 MB=20
+RAM, placa de v=EDdeo embutida (usando 2 MB de mem=F3ria compartilhada), =
+fax modem=20
+Rockwell embutido, e som CMI 8330 tamb=E9m embutido.=20
+<P>O resultado foi que o jogo rodava perfeito em meu pentium 120MHZ e no =
+outro=20
+computador com o som pipocando e imagem apresentando paradas. O problema =
+=E9 que=20
+em dispositivos de baixa qualidade e baratos, sua carga de processamento =
+=E9=20
+jogada para o processador, resultando em menos pot=EAncia para executar =
+os=20
+programas (veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hard-forwindows">Hardwares=20
+espec=EDficos ou "For Windows", Se=E7=E3o 3.9</A> para maiores detalhes =
+sobre o=20
+problema). A mem=F3ria de v=EDdeo compartilhada quer dizer que parte da =
+mem=F3ria RAM=20
+=E9 usada para mem=F3ria de v=EDdeo ao inv=E9s de uma mem=F3ria DRAM =
+espec=EDfica e=20
+desenvolvida exclusivamente para acelera=E7=E3o de v=EDdeo. Isto traz =
+mais lentid=E3o=20
+pois a mem=F3ria de v=EDdeo (RAM) tamb=E9m ser=E1 acessada pelo =
+barramento do=20
+computador, envolvendo mais carga para o processador, etc. A t=E9cnica =
+de mem=F3ria=20
+compartilhada =E9 exclusiva de placas de v=EDdeo embutidas.=20
+<P>Outro perif=E9rico que traz problemas e muita carga para o =
+processador =E9 o=20
+fax-modem for Windows, HSP, AMR, micromodem, etc. A maioria destes =
+perif=E9ricos=20
+se recusam a funcionar em computadores inferiores ao Pentium 150, n=E3o =
+trazem seu=20
+chip de processamento e o pior: o chip UART. Isto faz com que o =
+perif=E9rico,=20
+mesmo marcando conex=E3o a 57.600 ou mais tenha um desempenho de at=E9 =
+duas vezes=20
+menor que um fax-modem inteligente com chip de processamento pr=F3prio e =
+UART (sem=20
+contar com os controles internos do modem, como os protocolos de =
+corre=E7=E3o de=20
+erros, e sua extensa interface de programa=E7=E3o via comandos). A =
+economia, neste=20
+caso, ser=E1 paga em sua conta telef=F4nica.=20
+<P>Outra vantagem de fax-modens inteligentes =E9 que os modelos atuais =
+vem com=20
+<EM>FlashBios</EM> o que significa que podem ser reprogramados =
+facilmente para=20
+passar de 33.600 para 57.600 sem trocar a placa, ou aceitarem novas =
+tend=EAncias=20
+de tecnologia. Para detalhes veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hard-forwindows">Hardwares=20
+espec=EDficos ou "For Windows", Se=E7=E3o 3.9</A>.=20
+<P>Se voc=EA estiver em uma situa=E7=E3o destas, certamente os =
+computadores de menor=20
+pot=EAncia e com hardwares inteligentes (que possuem seus pr=F3prios =
+chips de=20
+controle e processamento) ter=E3o um desempenho muito melhor. Mas =
+tamb=E9m existem=20
+placas embutidas que tem a mesma qualidade de placas separadas (como =
+alguns=20
+modelos de placas m=E3e que trazem a <EM>Sound Blaster</EM> embutida). O =
+pre=E7o=20
+pode ser maior mas voc=EA estar=E1 pagando por um dispositivo de melhor =
+qualidade e=20
+que certamente trar=E1 benef=EDcios a voc=EA e ao seu sistema.=20
+<P>Consulte um t=E9cnico em inform=E1tica experiente para te indicar uma =
+placa m=E3e=20
+de bom pre=E7o e de qualidade. =C9 muito comum encontrar falta de =
+profissionalismo=20
+em pessoas que n=E3o sabem distinguir as caracter=EDsticas, fun=E7=F5es =
+e vantagens=20
+entre uma placa de boa qualidade e um hardware for Windows a n=E3o ser o =
+pre=E7o=20
+mais barato.=20
+<HR>
+<A name=3Ds-hard-forwindows></A>
+<H2>3.9 Hardwares espec=EDficos ou "For Windows"</H2>
+<P>Esta se=E7=E3o foi retirada do manual de instala=E7=E3o da Debian =
+GNU/Linux. Uma=20
+tend=EAncia que perturba =E9 a prolifera=E7=E3o de Modens e impressoras =
+espec=EDficos para=20
+Windows. Em muitos casos estes s=E3o especialmente fabricados para =
+operar com o=20
+Sistema Operacional Microsoft Windows e costumam ter a legenda=20
+<SAMP>WinModem</SAMP>, <SAMP>for Windows</SAMP>, ou <SAMP>Feito =
+especialmente=20
+para computadores baseados no Windows</SAMP>.=20
+<P>Geralmente estes dispositivos s=E3o feitos retirando os processadores =
+embutidos=20
+daquele hardware e o trabalho deles s=E3o feitos por drivers do Windows =
+que s=E3o=20
+executados pelo processador principal do computador. Esta estrat=E9gia =
+torna o=20
+hardware menos caro, mas o que =E9 poupado n=E3o =E9 passado para o =
+usu=E1rio e este=20
+hardware pode at=E9 mesmo ser mais caro quanto dispositivos equivalentes =
+que=20
+possuem intelig=EAncia embutida.=20
+<P>Voc=EA deve evitar o hardware baseado no Windows por duas raz=F5es:=20
+<OL type=3D1>
+  <LI>O primeiro =E9 que aqueles fabricantes n=E3o tornam os recursos =
+dispon=EDveis=20
+  para criar um driver para Linux. Geralmente, o hardware e a interface =
+de=20
+  software para o dispositivo =E9 propriet=E1ria, e a documenta=E7=E3o =
+n=E3o =E9 dispon=EDvel=20
+  sem o acordo de n=E3o revela=E7=E3o, se ele estiver dispon=EDvel. Isto =
+impede seu uso=20
+  como software livre, desde que os escritores de software gr=E1tis =
+descubram o=20
+  c=F3digo fonte destes programas. </LI></OL>
+<OL type=3D1 start=3D2>
+  <LI>A segunda raz=E3o =E9 que quando estes dispositivos tem os =
+processadores=20
+  embutidos removidos, o sistema operacional deve fazer o trabalho dos=20
+  processadores embutidos, freq=FCentemente em prioridade de tempo real, =
+e assim a=20
+  CPU n=E3o esta dispon=EDvel para executar programas enquanto ela esta =
+controlando=20
+  estes dispositivos. Um exemplo t=EDpico disso s=E3o os Modens for =
+Windows; Al=E9m da=20
+  carga jogada na CPU, o dispositivo n=E3o possui o chip UART 16550, que =
+=E9=20
+  essencial para uma boa taxa de transfer=EAncia do modem. O que alguns =
+destes=20
+  dispositivos fazem =E9 a emula=E7=E3o deste chip exigindo no m=EDnimo =
+uma CPU Pentium=20
+  de 166 MHZ para operar adequadamente nesta taxa de transmiss=E3o. =
+Mesmo assim,=20
+  devido a falta do chip UART, um modem destes inicia uma transmiss=E3o =
+de um=20
+  arquivo a 57.600, a tend=EAncia =E9 sua taxa de transfer=EAncia ir =
+caindo na medida=20
+  que um arquivo =E9 transferido (at=E9 se estabilizar em 21/25 Kbps).=20
+  <P>Assim o usu=E1rio t=EDpico do Windows n=E3o obt=E9m um =
+multi-processamento t=E3o=20
+  intensivo como um usu=E1rio do Linux, o fabricante espera que aquele =
+usu=E1rio do=20
+  Windows simplesmente n=E3o note a carga de trabalho que este hardware =
+p=F5e=20
+  naquela CPU. No entanto, qualquer sistema operacional de =
+multi-processamento,=20
+  at=E9 mesmo Windows 95 / 98 ou NT, s=E3o prejudicados quando =
+fabricantes de=20
+  perif=E9ricos retiram o processador embutido de suas placas e colocam =
+o=20
+  processamento do hardware na CPU. </P></LI></OL>
+<P>Voc=EA pode ajudar a reverter esta situa=E7=E3o encorajando estes =
+fabricantes a=20
+lan=E7arem a documenta=E7=E3o e outros recursos necess=E1rios para n=F3s =
+desenvolvermos=20
+drivers para estes hardwares, mas a melhor estrat=E9gia =E9 simplesmente =
+evitar=20
+estes tipos de hardwares at=E9 que ele esteja listado no HOWTO de =
+hardwares=20
+compat=EDveis com Linux.=20
+<P>Note que hoje j=E1 existem muitos drivers para WinModems e outros =
+hardwares for=20
+Windows para o Linux. Veja a lista de hardwares compat=EDveis no =
+HARDWARE-HOWTO ou=20
+procure o driver no site do fabricante de seu dispositivo. Mesmo assim a =
+dica =E9=20
+evitar hardwares for Windows e comprar hardwares inteligentes onde cada =
+um faz=20
+sua fun=E7=E3o sem carregar a CPU.=20
+<HR>
+<A name=3Ds3.10></A>
+<H2>3.10 Dispositivos espec=EDficos para GNU/Linux</H2>
+<P>Esta se=E7=E3o foi retirada do manual de instala=E7=E3o da Debian =
+GNU/Linux. Existem=20
+diversos vendedores, agora, que vendem sistemas com a =
+<CODE>Debian</CODE> ou=20
+outra distribui=E7=E3o do GNU/Linux pr=E9-instaladas. Voc=EA pode pagar =
+mais para ter=20
+este privil=E9gio, mas compra um n=EDvel de paz de mente, desde ent=E3o =
+voc=EA pode ter=20
+certeza que seu hardware =E9 bem compat=EDvel com GNU/Linux. =
+Praticamente todas as=20
+placas que possuem processadores pr=F3prios funcionam sem nenhum =
+problema no Linux=20
+(algumas placas da <SAMP>Turtle Beach</SAMP> e <SAMP>mwave</SAMP> tem =
+suporte de=20
+som limitado).=20
+<P>Se voc=EA tiver que comprar uma m=E1quina com Windows instalado, leia =
+
+cuidadosamente a licen=E7a que acompanha o Windows; voc=EA pode rejeitar =
+a licen=E7a e=20
+obter um desconto de seu vendedor.=20
+<P>Se n=E3o estiver comprando um computador com <CODE>GNU/Linux</CODE> =
+instalado,=20
+ou at=E9 mesmo um computador usado, =E9 importante verificar se os =
+hardwares=20
+existentes s=E3o suportados pelo kernel do <CODE>GNU/Linux</CODE>. =
+Verifique se=20
+seu hardware =E9 listado no <EM>Hardware Compatibility HOWTO</EM>, na =
+documenta=E7=E3o=20
+do c=F3digo fonte do kernel no diret=F3rio =
+<CODE>Documentation/sound</CODE> ou=20
+consulte um t=E9cnico de <CODE>GNU/Linux</CODE> experiente.=20
+<P>Deixe seu vendedor (se conhecer) saber que o que est=E1 comprando =E9 =
+para um=20
+sistema <CODE>GNU/Linux</CODE>. Desta forma isto servir=E1 de =
+experi=EAncia para que=20
+ele poder=E1 recomendar o mesmo dispositivo a outras pessoas que =
+procuram bons=20
+dispositivos para sistemas <CODE>GNU/Linux</CODE>. Ap=F3ie vendedores de =
+hardwares=20
+amigos do <CODE>GNU/Linux</CODE>.=20
+<HR>
+<A name=3Ds-hardw-cfgdisp></A>
+<H2>3.11 Configura=E7=F5es de Dispositivos</H2>
+<P>As se=E7=F5es abaixo explicam como fazer configura=E7=F5es em =
+dispositivos diversos=20
+no sistema <CODE>Linux</CODE> como placas de rede, som, gravador de CD =
+entre=20
+outras.=20
+<HR>
+<A name=3Ds-hardw-cfgdisp-rede></A>
+<H3>3.11.1 Configurando uma placa de rede</H3>
+<P>Para configurar sua placa de rede no <CODE>Linux</CODE> siga os =
+passos a=20
+seguir:=20
+<OL type=3D1>
+  <LI>Identifique se sua placa de rede =E9 ISA ou PCI. Caso seja ISA, =
+pode ser=20
+  preciso alterar a configura=E7=E3o de jumpers ou plug-and-play, =
+evitando conflitos=20
+  de hardware ou o n=E3o funcionamento da placa (veja como configura-la =
+em <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-metodoscfg">Hardwares=20
+  configur=E1veis por jumpers, dip-switches, jumperless e =
+Plug-and-Play., Se=E7=E3o=20
+  3.4</A>.=20
+  <LI>Identifique a marca/modelo de sua placa. O programa =
+<CODE>lshw</CODE> =E9=20
+  =FAtil para isto. Caso sua placa seja PCI ou CNR, execute o comando=20
+  <CODE>lspci</CODE> e veja a linha "Ethernet".=20
+  <P>Em =FAltimo caso, abra a m=E1quina e procure a marca na pr=F3pria =
+placa. Quase=20
+  todos os fabricantes colocam a marca da placa no pr=F3prio circuito =
+impresso ou=20
+  no CI principal da placa (normalmente =E9 o maior). </P>
+  <LI>Depois de identificar a placa, ser=E1 preciso carregar o m=F3dulo=20
+  correspondente para ser usada no <CODE>Linux</CODE>. Em algumas =
+instala=E7=F5es=20
+  padr=F5es o suporte j=E1 pode estar embutido no kernel, neste caso, =
+voc=EA poder=E1=20
+  pular este passo.=20
+  <P>Para carregar um m=F3dulo, digite o comando <SAMP>modprobe =
+modulo</SAMP>=20
+  (Veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-modprobe">modprobe,=20
+  Se=E7=E3o 16.8</A>) . Em placas ISA, geralmente =E9 preciso passar a =
+IRQ e porta de=20
+  I/O como argumentos para alocar os recursos corretamente. O=20
+  <CODE>modprobe</CODE> tentar=E1 auto-detectar a configura=E7=E3o em =
+placas ISA, mas=20
+  ela poder=E1 falhar por algum motivo. Por exemplo, para uma NE 2000:=20
+  <SAMP>modprobe ne io=3D0x300 irq=3D10</SAMP>.=20
+  <P>Para evitar a digita=E7=E3o destes par=E2metros toda vez que a =
+m=E1quina for=20
+  iniciada =E9 recomend=E1vel coloca-lo no arquivo =
+<CODE>/etc/modules.conf</CODE> da=20
+  seguinte forma: <PRE>     options ne io=3D0x300 irq=3D10
+</PRE>
+  <P>A partir de agora, voc=EA pode carregar o m=F3dulo de sua placa NE =
+2000 apenas=20
+  com o comando <SAMP>modprobe ne</SAMP>. O par=E2metro <SAMP>io=3D0x300 =
+
+  irq=3D10</SAMP> ser=E1 automaticamente adicionado. Em sistemas=20
+  <CODE>Debian</CODE>, o local correto para colocar as op=E7=F5es de um =
+m=F3dulo =E9 em=20
+  arquivos separados localizados dentro de <CODE>/etc/modutils</CODE>. =
+Crie um=20
+  arquivo chamado <CODE>/etc/modutils/ne</CODE> e coloque a linha: <PRE> =
+    options ne io=3D0x300 irq=3D10
+</PRE>
+  <P>Depois disso, execute o comando <SAMP>update-modules</SAMP> para o =
+sistema=20
+  gerar um novo arquivo <CODE>/etc/modules.conf</CODE> com todos os =
+m=F3dulos de=20
+  <CODE>/etc/modutils</CODE> e substituir o anterior. </P>
+  <LI>Ap=F3s carregar o m=F3dulo de sua placa de rede, resta apenas =
+configurar seus=20
+  par=E2metros de rede para coloca-la em rede. Veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-interfaces-c">Atribuindo =
+
+  um endere=E7o de rede a uma interface (ifconfig), Se=E7=E3o =
+15.4.2</A>. </LI></OL>
+<HR>
+<A name=3Ds-hardw-cfgdisp-som></A>
+<H3>3.11.2 Configurando uma placa de SOM no Linux</H3>
+<P>A configura=E7=E3o de dispositivos de audio no Linux n=E3o =E9 uma =
+coisa complicada,=20
+se resumindo na configura=E7=E3o de recursos de IRQ (caso a placa seja =
+ISA),=20
+carregar o seu respectivo m=F3dulo com seus par=E2metros e ajustar o =
+mixer.=20
+Atualmente existem 2 padr=F5es de som no sistema Linux: OSS (Open Sound =
+System) e=20
+ALSA (Advanced Linux Sound Architecture).=20
+<P>O OSS =E9 o primeiro padr=E3o existente no sistema Linux e embutido =
+por padr=E3o no=20
+kernel. O ALSA =E9 mais novo, suporta full duplex e outros recursos =
+adicionais,=20
+al=E9m de manter a compatibilidade com OSS. O ALSA =E9 um padr=E3o mais =
+moderno e=20
+garante mais performance para a CPU da m=E1quina, principalmente para a =
+exibi=E7=E3o=20
+de v=EDdeos, etc.=20
+<HR>
+<A name=3Ds-hardw-cfgdisp-som-hwreq></A>
+<H4>3.11.2.1 Reservando os recursos de hardware para sua placa de =
+som</H4>
+<P>Caso esteja usando uma placa ISA jumpeada, jumperless ou =
+Plug-and-Play, =E9=20
+preciso selecionar que recursos de hardware sua placa est=E1 usando e =
+como estes=20
+ser=E3o configurados.=20
+<P>O padr=E3o =E9 a utiliza=E7=E3o da IRQ 5, DMA1, DMA16, I/O 0x220, =
+0x330, 0x388 para=20
+PCM e MIDI. A configura=E7=E3o de uma placa Plug-and-Play =E9 descrita =
+em <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-metodoscfg-plug-and-pla=
+y">Plug-and-Play,=20
+Se=E7=E3o 3.4.4</A> e de uma placa jumpeada em <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-metodoscfg-jumpers">Jum=
+pers,=20
+Se=E7=E3o 3.4.1</A>. Como refer=EAncia, veja a tabela padr=E3o de uso de =
+interrup=E7=F5es em=20
+<A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfg-irq">IRQ=20
+- Requisi=E7=E3o de Interrup=E7=E3o, Se=E7=E3o 3.3.1</A>.=20
+<HR>
+<A name=3Ds-hardw-cfgdisp-som-oss></A>
+<H4>3.11.2.2 Configurando uma placa de som usando o padr=E3o OSS</H4>
+<P>O padr=E3o OSS =E9 o presente por padr=E3o desde que o suporte a som =
+foi inclu=EDdo=20
+no kernel. Para configurar uma placa de som para usar este sistema de =
+som,=20
+primeiro compile seu kernel com o suporte ao m=F3dulo de sua placa de =
+som. Caso=20
+seja uma placa ISA, voc=EA provavelmente ter=E1 que habilitar a =
+se=E7=E3o "Open Sound=20
+System" para ver as op=E7=F5es dispon=EDveis (entre elas, a Sound =
+Blaster e=20
+compat=EDveis). Uma olhada na ajuda de cada m=F3dulo deve ajuda-lo a =
+identificar=20
+quais placas cada op=E7=E3o do kernel suporta.=20
+<P>Caso seu kernel seja o padr=E3o de uma distribui=E7=E3o =
+<CODE>Linux</CODE>,=20
+provavelmente ter=E1 o suporte a todas as placas de som poss=EDveis. =
+Siga o passo a=20
+passo abaixo para configurar sua placa de som no sistema:=20
+<OL type=3D1>
+  <LI>Primeiro descubra se sua placa de som =E9 ISA. Caso seja, =
+verifique se os=20
+  seus recursos est=E3o alocados corretamente (veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-conflitos">Conflitos=20
+  de hardware, Se=E7=E3o 3.6</A>). Caso seja PCI, AMR, execute o comando =
+
+  <CODE>lspci</CODE>, procure pela linha "Multimedia" e veja o nome da =
+placa.=20
+  Voc=EA tamb=E9m poder=E1 executar o comando <CODE>lshw</CODE> para =
+descobrir qual=20
+  placa voc=EA possui (veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-findhw">Listando=20
+  as placas e outros hardwares em um computador, Se=E7=E3o 3.5</A>) para =
+detalhes.=20
+  <LI>Carregue o m=F3dulo da placa de som com o comando <SAMP>modprobe=20
+  m=F3dulo</SAMP> (veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-modprobe">modprobe,=20
+  Se=E7=E3o 16.8</A>). Na <CODE>Debian</CODE>, voc=EA pode executar o =
+comando=20
+  <CODE>modconf</CODE> para navegar visualmente entre os m=F3dulos =
+dispon=EDveis e=20
+  carregar os m=F3dulos necess=E1rios.=20
+  <P>Algumas placas (principalmente ISA) requerem que seja especificado =
+o=20
+  recurso de hardware sejam passados para seu m=F3dulo, ou simplesmente =
+voc=EA quer=20
+  especificar isto para manter o uso de hardware sobre seu controle. =
+Alguns dos=20
+  par=E2metros mais usados em placas Sound Blaster s=E3o os seguintes: =
+<PRE>     modprobe sb io=3D0x220 irq=3D5 dma=3D1 dma16=3D5 =
+mpu_io=3D0x330
+</PRE>
+  <P>Para evitar ter que passar estes par=E2metros todas as vezes para o =
+m=F3dulo,=20
+  voc=EA poder=E1 coloca-los no arquivo <CODE>/etc/modules.conf</CODE> =
+da seguinte=20
+  forma: <PRE>     options sb io=3D0x220 irq=3D5 dma=3D1 dma16=3D5 =
+mpu_io=3D0x330
+</PRE>
+  <P>Assim, quando der o comando <CODE>modprobe sb</CODE> ele ser=E1 =
+carregado com=20
+  as op=E7=F5es acima. Na distribui=E7=E3o <CODE>Debian</CODE>, voc=EA =
+dever=E1 criar um=20
+  arquivo chamado <CODE>/etc/modutils/sb</CODE> contendo a linha acima, =
+depois=20
+  execute o <CODE>update-modules</CODE> para "juntar" todos os arquivos =
+do=20
+  <CODE>/etc/modutils</CODE> e criar o <CODE>/etc/modules.conf</CODE>. =
+</P>
+  <LI>Ap=F3s carregar o m=F3dulo correto de sua placa de som, seu =
+sistema de som=20
+  dever=E1 estar funcionando. Se voc=EA utiliza uma distribui=E7=E3o =
+<CODE>Linux</CODE>,=20
+  os dispositivos de som como <CODE>/dev/audio</CODE>, =
+<CODE>/dev/dsp</CODE>,=20
+  <CODE>/dev/mixer</CODE> estar=E3o criados e ent=E3o poder=E1 passar =
+para o pr=F3ximo=20
+  passo. Caso n=E3o existam, entre no diret=F3rio <CODE>/dev</CODE> e =
+execute o=20
+  comando <SAMP>MAKEDEV audio</SAMP>.=20
+  <LI>O pr=F3ximo passo consiste em instalar um programa para controle =
+de volume,=20
+  tonalidade e outros recursos de sua placa de som. O recomendado =E9 o=20
+  <CODE>aumix</CODE> por ser simples, pequeno e funcional, e permitindo=20
+  restaurar os valores dos n=EDveis de volumes na inicializa=E7=E3o =
+(isso evita que=20
+  tenha que ajustar o volume toda vez que iniciar o sistema).=20
+  <P>Caso o <CODE>aumix</CODE> apare=E7a na tela, sua placa de som j=E1 =
+est=E1=20
+  funcionando! Caso acesse o sistema como usu=E1rio, n=E3o se esque=E7a =
+de adicionar=20
+  seu usu=E1rio ao grupo audio para ter permiss=E3o de usar os =
+dispositivos de som:=20
+  <SAMP>adduser usuario audio</SAMP> . </P></LI></OL>
+<HR>
+<A name=3Ds-hardw-cfgdisp-cdwritter></A>
+<H3>3.11.3 Configurando um gravador de CD no Linux</H3>
+<P>Configurar um gravador de CD no <CODE>Linux</CODE> n=E3o tem =
+mist=E9rios, apenas=20
+=E9 preciso que sejam seguidos passos para que a coisa funcione direito, =
+pois=20
+sempre funciona. Se algo n=E3o funcionou, ou =E9 porque os passos n=E3o =
+foram seguidos=20
+corretamente, algum problema no hardware, alguma falha no kernel =
+espec=EDfica que=20
+afeta seu gravador, ou o autor deste guia deu mancada em algo (por =
+favor, relate=20
+a falha) :-)=20
+<P>O tipo mais complicado de gravador, se tratando de configura=E7=E3o, =
+=E9 o IDE,=20
+pois seu funcionamento =E9 baseado na emula=E7=E3o SCSI. Para usar esta =
+interface, ele=20
+precisa ser identificado como um dispositivo SCSI usando emula=E7=E3o =
+SCSI do=20
+kernel, isto =E9 necess=E1rio porque o m=F3dulo padr=E3o ATAPI do kernel =
+para unidades=20
+de CD (<CODE>ide-cd</CODE>) n=E3o cont=E9m todos os comandos =
+necess=E1rios para=20
+permitir que uma unidade funcione como gravadora de CD. No =
+<CODE>Windows</CODE>=20
+a coisa tamb=E9m funciona desta forma, a unidade =E9 emulada como SCSI =
+para fazer a=20
+grava=E7=E3o, se voc=EA n=E3o sabia disso, tenho certeza que esta =
+gostando da forma como=20
+as coisas ficam claras quando se usa <CODE>Linux</CODE> :-)=20
+<P>Caso seu gravador seja IDE, veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfgdisp-cdwritter-ide">=
+Configurando=20
+o suporte a um gravador IDE, Se=E7=E3o 3.11.3.1</A> caso seja um =
+aut=EAntico gravador=20
+com barramento SCSI, v=E1 at=E9 <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfgdisp-cdwritter-scsi"=
+>Configurando=20
+o suporte a um gravador SCSI, Se=E7=E3o 3.11.3.2</A>.=20
+<HR>
+<A name=3Ds-hardw-cfgdisp-cdwritter-ide></A>
+<H4>3.11.3.1 Configurando o suporte a um gravador IDE</H4>
+<P>Para configurar seu gravador de CD IDE para ser usado no =
+<CODE>Linux</CODE>,=20
+siga os seguintes passos:=20
+<OL type=3D1>
+  <LI>Tenha certeza que compilou o suporte as seguintes =
+caracter=EDsticas no=20
+  kernel: <PRE>     Em "ATA/IDE/MFM/RLL support" marque as op=E7=F5es:
+     * Include IDE/ATAPI CDROM support
+     * SCSI emulation support
+    =20
+     Depois em "SCSI support" marque as op=E7=F5es:
+     * SCSI support
+     M SCSI CD-ROM Support
+     M SCSI Generic Support
+</PRE>
+  <P>As op=E7=F5es marcadas como "*" ser=E3o embutidas no kernel e as =
+"M" como=20
+  m=F3dulos. Note que ambas as op=E7=F5es "IDE/ATAPI CDROM" e "SCSI =
+Emulation" foram=20
+  marcadas como embutidas. Isto faz com que o driver ATAPI tenha =
+prioridade em=20
+  cima do SCSI, mas vou explicar mais adiante como dizer para o kernel =
+para=20
+  carregar o suporte a SCSI para determinada unidade. Isto =E9 =FAtil =
+quando temos=20
+  mais de 1 unidade de CD IDE no sistema e queremos configurar somente o =
+
+  gravador para SCSI, pois alguns aplicativos antigos n=E3o se comunicam =
+direito=20
+  tanto com gravadores SCSI como emulados.=20
+  <P>Voc=EA tamb=E9m pode marcar somente a op=E7=E3o "SCSI Emulation" =
+para que sua(s)=20
+  unidade(s) seja(m) automaticamente emulada(s) como SCSI. Caso tenha =
+usado esta=20
+  t=E9cnica, v=E1 at=E9 a se=E7=E3o <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfgdisp-cdwritter-teste=
+">Testando=20
+  o funcionamento, Se=E7=E3o 3.11.3.3</A>. </P>
+  <LI>O pr=F3ximo passo =E9 identificar o dispositivo de CD-Rom atual. =
+Isto =E9 feito=20
+  atrav=E9s do comando <SAMP>dmesg</SAMP>. Supondo que sua unidade de CD =
+=E9 "hdc"=20
+  (primeiro disco na segunda controladora IDE) e que compilou ambos o =
+suporte a=20
+  "IDE ATAPI" e "SCSI emulation" no kernel, adicione o argumento =
+"hdc=3Dide-scsi"=20
+  no <CODE>/etc/lilo.conf</CODE> ou no <CODE>grub</CODE>: <PRE>     # =
+Lilo
+     vmlinuz=3D/vmlinuz
+     append=3D"hdc=3Dide-scsi"
+</PRE></LI></OL>
+<P>Isto diz para o kernel que a unidade "hdc" usar=E1 emula=E7=E3o =
+"ide-scsi". Caso=20
+tenha outras unidades de CD no sistema, estas ainda utiliza=E7=E3o ATAPI =
+como=20
+protocolo de comunica=E7=E3o padr=E3o. Execute o <CODE>lilo</CODE> para =
+gerar=20
+novamente o setor de inicializa=E7=E3o com as modifica=E7=F5es e =
+reinicie o computador.=20
+<P><STRONG>OBS:</STRONG> Cuidado ao colocar um disco r=EDgido IDE como=20
+<CODE>hdc</CODE>! A linha <SAMP>hdc=3Dide-scsi</SAMP> dever=E1 ser =
+retirada, caso=20
+contr=E1rio, seu disco r=EDgido n=E3o ser=E1 detectado.=20
+<P>Agora, siga at=E9 <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfgdisp-cdwritter-teste=
+">Testando=20
+o funcionamento, Se=E7=E3o 3.11.3.3</A>.=20
+<HR>
+<A name=3Ds-hardw-cfgdisp-cdwritter-scsi></A>
+<H4>3.11.3.2 Configurando o suporte a um gravador SCSI</H4>
+<P>Caso tenha um autentico gravador SCSI, n=E3o ser=E1 preciso fazer =
+qualquer=20
+configura=E7=E3o de emula=E7=E3o, a unidade estar=E1 pronta para ser =
+usada, desde que seu=20
+suporte esteja no kernel. As seguintes op=E7=F5es do kernel s=E3o =
+necess=E1rias para=20
+funcionamento de gravadores SCSI: <PRE>     Depois em "SCSI support" =
+marque as op=E7=F5es:
+     * SCSI support
+     M SCSI CD-ROM Support
+     M SCSI Generic Support
+</PRE>
+<P>Al=E9m disso, deve ser adicionado o suporte EMBUTIDO no kernel a sua=20
+controladora SCSI. Se o seu disco r=EDgido tamb=E9m =E9 SCSI, e seu CD =
+est=E1 ligado na=20
+mesma controladora SCSI, ela j=E1 est=E1 funcionando e voc=EA poder=E1 =
+seguir para o=20
+passo <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfgdisp-cdwritter-teste=
+">Testando=20
+o funcionamento, Se=E7=E3o 3.11.3.3</A>. Caso contr=E1rio carregue o =
+suporte da sua=20
+placa adaptadora SCSI antes de seguir para este passo.=20
+<HR>
+<A name=3Ds-hardw-cfgdisp-cdwritter-teste></A>
+<H4>3.11.3.3 Testando o funcionamento</H4>
+<P>Para testar se o seu gravador, instale o pacote <CODE>cdrecord</CODE> =
+e=20
+execute o comando: <SAMP>cdrecord -scanbus</SAMP> para verificar se sua =
+unidade=20
+de CD-ROM =E9 detectada.=20
+<P>Voc=EA dever=E1 ver uma linha como: <PRE>     scsibus0:
+         0,0,0     0) 'CREATIVE' 'CD-RW RWXXXX   ' '1.00' Removable =
+CD-ROM
+         0,1,0     1) *
+         0,2,0     2) *
+</PRE>
+<P>O que significa que sua unidade foi reconhecida perfeitamente pelo =
+sistema e=20
+j=E1 pode ser usada para grava=E7=E3o. V=E1 at=E9 a se=E7=E3o <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm#s-tasks-cdwriting">Gravando=20
+CDs no Linux, Se=E7=E3o 24.1</A> para aprender como gravar CDs no=20
+<CODE>Linux</CODE>.=20
+<HR>
+<A name=3Ds-hardw-cfgdisp-apm></A>
+<H3>3.11.4 Configurando o gerenciamento de energia usando o APM</H3>
+<P>O APM (<EM>Advanced Power Management</EM> - <EM>Gerenciamento =
+Avan=E7ado de=20
+Energia</EM>) permite que sistemas gerenciem caracter=EDsticas =
+relacionadas com o=20
+uso e consumo de energia do computador. Ele opera a n=EDvel de BIOS e =
+tenta=20
+reduzir o consumo de energia de v=E1rias formas quando o sistema n=E3o =
+estiver em=20
+uso (como reduzindo o clock da CPU, desligar o HD, desligar o monitor, =
+etc.).=20
+<P>O uso de advanced power management tamb=E9m permite que computadores =
+com fonte=20
+de alimenta=E7=E3o ATX sejam desligados automaticamente quando voc=EA =
+executa o=20
+comando <CODE>halt</CODE>. Caso sua m=E1quina tenha suporte a =
+<EM>ACPI</EM>, este=20
+dever=E1 ser usado como prefer=EAncia ao inv=E9s do APM por ter recursos =
+mais=20
+sofisticados (veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm#s-hardw-cfgdisp-acpi">Configura=
+ndo=20
+o gerenciamento de energia usando ACPI, Se=E7=E3o 3.11.5</A>).=20
+<P>Para ativar o suporte a APM no <CODE>Linux</CODE>, compile seu kernel =
+com o=20
+suporte embutido a APM e tamb=E9m a "Advanced Power Management" (sen=E3o =
+sua m=E1quina=20
+n=E3o desligar=E1 sozinha no halt). Caso deseje compilar como m=F3dulo, =
+basta depois=20
+carregar o m=F3dulo <CODE>apm</CODE> adicionando no arquivo=20
+<CODE>/etc/modules</CODE>. Depois disso instale o daemon =
+<CODE>apmd</CODE> para=20
+gerenciar as caracter=EDsticas deste recurso no sistema.=20
+<P>Voc=EA pode desativar o uso de APM de 3 formas: removendo seu suporte =
+do=20
+kernel, passando o argumento <SAMP>apm=3Doff</SAMP> (quando compilado=20
+estaticamente no kernel) ou removendo o nome do m=F3dulo do arquivo=20
+<CODE>/etc/modules</CODE> (quando compilado como m=F3dulo). Depois disso =
+remova o=20
+daemon <CODE>apmd</CODE>.=20
+<HR>
+<A name=3Ds-hardw-cfgdisp-acpi></A>
+<H3>3.11.5 Configurando o gerenciamento de energia usando ACPI</H3>
+<P>O ACPI (<EM>Advanced Configuration and Power Interface</EM> - =
+<EM>Interface=20
+de Configura=E7=E3o e Gerenciamento de Energia Avan=E7ado</EM>) =E9 uma =
+camada de=20
+gerenciamento de energia que opera a n=EDvel de sistema operacional. =
+Apresenta os=20
+mesmos recursos que o APM, e outros como o desligamento da m=E1quina por =
+teclas=20
+especiais de teclado, controle de brilho e contraste de notebooks, =
+suspend para=20
+RAM, suspend para disco, redu=E7=E3o de velocidade de CPU manualmente, =
+monitoramento=20
+de perif=E9ricos, temperatura, hardwares, etc.=20
+<P>Desta forma, o ACPI varia de sistema para sistema em quest=F5es =
+relacionadas=20
+com suporte a recursos especiais, estes dados s=E3o armazenados em =
+tabelas=20
+chamadas DSDT. O <CODE>Linux</CODE> inclui suporte a recursos ACPI =
+gen=E9ricos=20
+entre placas m=E3e, recursos espec=EDficos devem ser extra=EDdos =
+diretamente da BIOS e=20
+disassemblados manualmente para a constru=E7=E3o de um kernel com =
+suporte espec=EDfico=20
+a tabela DSDT do hardware (n=E3o falarei das formas de se fazer disso =
+aqui,=20
+somente do suporte gen=E9rico).=20
+<P>=C9 recomend=E1vel pelo menos o uso do kernel 2.4.21 para suporte a =
+ACPI. Para=20
+compilar estaticamente, marque com <SAMP>Y</SAMP> a op=E7=E3o ACPI, =
+depois marque os=20
+m=F3dulos que voc=EA quer que ele monitore: <SAMP>button</SAMP> (bot=E3o =
+power),=20
+<SAMP>fan</SAMP> (ventoinhas), etc. Se compilou como m=F3dulo, adicione =
+o nome do=20
+m=F3dulo <SAMP>acpi</SAMP> no arquivo <CODE>/etc/modules</CODE>. N=E3o =
+h=E1 problema=20
+em compilar tamb=E9m o suporte a APM, pois n=E3o causar=E1 problemas com =
+um kernel com=20
+ACPI tamb=E9m compilado.=20
+<P>Caso n=E3o saiba quais m=F3dulos ACPI seu sistema aceita, marque o =
+suporte a=20
+todos e carregue-os. Ap=F3s isto, entre no diret=F3rio =
+<CODE>/proc/acpi</CODE> e de=20
+um <SAMP>ls</SAMP> entrando nos diret=F3rios e vendo se existem arquivos =
+dentro=20
+deles. Remova o m=F3dulo correspondente daqueles que n=E3o tiver =
+conte=FAdo.=20
+<P>Ap=F3s isto, instale o daemon <CODE>acpid</CODE> e configure-o para =
+monitorar=20
+algumas caracter=EDsticas do seu sistema. Por padr=E3o o =
+<CODE>acpid</CODE> monitora=20
+o bot=E3o POWER, assim se voc=EA pressionar o power, seu sistema =
+entrar=E1=20
+automaticamente em run-level 0, fechando todos os processos e desligando =
+sua=20
+m=E1quina.=20
+<P>O suporte a ACPI pode ser desativado de 3 formas: Removendo seu =
+suporte do=20
+kernel, passando o argumento <SAMP>acpi=3Doff</SAMP> ao kernel (caso =
+esteja=20
+compilado estaticamente) ou removendo o m=F3dulo de =
+<CODE>/etc/modules</CODE>=20
+(caso tenha compilado como m=F3dulo. Ap=F3s isto, remova o daemon =
+<CODE>acpid</CODE>=20
+do seu sistema.=20
+<HR>
+<A name=3Ds-hardw-cfgdisp-wol></A>
+<H3>3.11.6 Ativando WakeUP on Lan</H3>
+<P>Algumas placas m=E3e ATX possuem suporte a este interessante recurso, =
+que=20
+permite sua m=E1quina ser ligada atrav=E9s de uma rede. Isto =E9 feito =
+enviando-se uma=20
+seq=FC=EAncia especial de pacotes diretamente para o MAC (endere=E7o =
+f=EDsico) da placa=20
+de rede usando um programa especial.=20
+<P>Para usar este recurso, seu sistema dever=E1 ter as seguintes =
+caracter=EDsticas:=20
+<UL>
+  <LI>Placa m=E3e ATX=20
+  <LI>Fonte de alimenta=E7=E3o ATX compat=EDvel com o padr=E3o 2.0, com =
+fornecimento de=20
+  pelo menos 720ma de corrente na sa=EDda +3v.=20
+  <LI>Placa de rede com suporte a WakeUP-on-Lan (WOL), voc=EA poder=E1 =
+confirmar=20
+  isto vendo um conector branco de 3 terminais instalado na placa que =
+=E9 o local=20
+  onde o cabo wake-up =E9 conectado.=20
+  <LI>Suporte na BIOS tamb=E9m dever=E1 ter a op=E7=E3o para =
+WakeUP-on-Lan. </LI></UL>
+<P>Com todos esses =EDtens existentes, instale em uma m=E1quina da rede =
+o pacote=20
+<CODE>etherwake</CODE>. Depois disso, pegue o MAC address a placa de =
+rede da=20
+m=E1quina que tem o wakeup on lan e na m=E1quina da rede onde instalou o =
+pacote=20
+execute o seguinte comando: <PRE>     ether-wake AA:BB:CC:DD:EE:FF
+</PRE>
+<P>Onde <SAMP>AA:BB:CC:DD:EE:FF</SAMP> =E9 o endere=E7o MAC da placa de =
+rede. A=20
+m=E1quina dever=E1 ligar e realizar o procedimento padr=E3o de POST =
+normalmente.=20
+<P>Algumas das situa=E7=F5es onde o WOL n=E3o funciona =E9 quando sua =
+rede =E9 controlada=20
+por Switches (devido a natureza de funcionamento deste equipamentos) ou =
+caso=20
+esteja atr=E1s de um roteador que n=E3o faz proxy arp.=20
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ 3 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

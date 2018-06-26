@@ -1,0 +1,470 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Guia Foca GNU/Linux - Comandos para manipulação de diretório</title>
+
+</head>
+
+<body>
+
+<a name="ch-cmdd"></a>
+<hr>
+
+[ <a href="ch-run.htm">anterior</a> ]
+[ <a href="index.htm#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ <a href="ch-hardw.htm">3</a> ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ 8 ]
+[ <a href="ch-cmd.htm">9</a> ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ <a href="ch-cmdc.htm">12</a> ]
+[ <a href="ch-perm.htm">13</a> ]
+[ <a href="ch-redir.htm">14</a> ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ <a href="ch-cpctd.htm">18</a> ]
+[ <a href="ch-deb.htm">19</a> ]
+[ <a href="ch-dpkg.htm">20</a> ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ <a href="ch-cfg.htm">23</a> ]
+[ <a href="ch-tasks.htm">24</a> ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ <a href="ch-etc.htm">27</a> ]
+[ <a href="ch-inter.htm">28</a> ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ <a href="ch-apend.htm">32</a> ]
+[ <a href="ch-cmd.htm">próximo</a> ]
+
+<hr>
+
+<h1>
+Guia Foca GNU/Linux
+<br>Capítulo 8 - Comandos para manipulação de diretório
+</h1>
+
+<hr>
+
+<p>
+Abaixo comandos úteis para a manipulação de diretórios.
+
+<hr>
+
+<a name="s-comando-ls"></a>
+<h2>8.1 ls</h2>
+
+<p>
+Lista os arquivos de um diretório.
+
+<p>
+<samp>ls [<em>opções</em>] [<em>caminho/arquivo</em>]
+[<em>caminho1/arquivo1</em>] ...</samp>
+
+<p>
+onde:
+<dl>
+<dt><em>caminho/arquivo</em></dt>
+<dd>
+Diretório/arquivo que será listado.
+</dd>
+<dt><em>caminho1/arquivo1</em></dt>
+<dd>
+Outro Diretório/arquivo que será listado.  Podem ser feitas várias listagens de
+uma só vez.
+</dd>
+<dt><em>opções</em></dt>
+<dt>-a, --all</dt>
+<dd>
+Lista todos os arquivos (inclusive os ocultos) de um diretório.
+</dd>
+<dt>-A, --almost-all</dt>
+<dd>
+Lista todos os arquivos (inclusive os ocultos) de um diretório, exceto o
+diretório atual e o de nível anterior.
+</dd>
+<dt>-B, --ignore-backups</dt>
+<dd>
+Não lista arquivos que terminam com ~ (Backup).
+</dd>
+<dt>--color=PARAM</dt>
+<dd>
+Mostra os arquivos em cores diferentes, conforme o tipo de arquivo.  PARAM pode
+ser:
+<ul>
+<li>
+<em>never</em> - Nunca lista em cores (mesma coisa de não usar o parâmetro
+--color).
+</li>
+<li>
+<em>always</em> - Sempre lista em cores conforme o tipo de arquivo.
+</li>
+<li>
+<em>auto</em> - Somente colore a listagem se estiver em um terminal.
+</li>
+</ul>
+</dd>
+<dt>-d, --directory</dt>
+<dd>
+Lista os nomes dos diretórios ao invés do conteúdo.
+</dd>
+<dt>-f</dt>
+<dd>
+Não classifica a listagem.
+</dd>
+<dt>-F</dt>
+<dd>
+Insere um caracter após arquivos executáveis ('*'), diretórios ('/'), soquete
+('='), link simbólico ('@') e pipe ('|').  Seu uso é útil para identificar de
+forma fácil tipos de arquivos nas listagens de diretórios.
+</dd>
+<dt>-G, --no-group</dt>
+<dd>
+Oculta a coluna de grupo do arquivo.
+</dd>
+<dt>-h, --human-readable</dt>
+<dd>
+Mostra o tamanho dos arquivos em Kbytes, Mbytes, Gbytes.
+</dd>
+<dt>-H</dt>
+<dd>
+Faz o mesmo que <samp>-h</samp>, mas usa unidades de 1000 ao invés de 1024 para
+especificar Kbytes, Mbytes, Gbytes.
+</dd>
+<dt>-l</dt>
+<dd>
+Usa o formato longo para listagem de arquivos.  Lista as permissões, data de
+modificação, donos, grupos, etc.
+</dd>
+<dt>-n</dt>
+<dd>
+Usa a identificação de usuário e grupo numérica ao invés dos nomes.
+</dd>
+<dt>-L, --dereference</dt>
+<dd>
+Lista o arquivo original e não o link referente ao arquivo.
+</dd>
+<dt>-o</dt>
+<dd>
+Usa a listagem longa sem os donos dos arquivos (mesma coisa que -lG).
+</dd>
+<dt>-p</dt>
+<dd>
+Mesma coisa que -F, mas não inclui o símbolo '*' em arquivos executáveis.  Esta
+opção é típica de sistemas <code>Linux</code>.
+</dd>
+<dt>-R</dt>
+<dd>
+Lista diretórios e sub-diretórios recursivamente.
+</dd>
+<dt>--full-time</dt>
+<dd>
+Lista data e hora completa.
+</dd>
+<dt>Classificação da listagem</dt>
+<dd>
+A listagem pode ser classificada usando-se as seguintes opções:
+<dl>
+<dt>-f</dt>
+<dd>
+Não classifica, e usa -au para listar os arquivos.
+</dd>
+<dt>-r</dt>
+<dd>
+Inverte a ordem de classificação.
+</dd>
+<dt>-c</dt>
+<dd>
+Classifica pela data de alteração.
+</dd>
+<dt>-X</dt>
+<dd>
+Classifica pela extensão.
+</dd>
+<dt>-U</dt>
+<dd>
+Não classifica, lista os arquivos na ordem do diretório.
+</dd>
+</dl>
+</dd>
+</dl>
+
+<p>
+Uma listagem feita com o comando <samp>ls -la</samp> normalmente é mostrada da
+seguinte maneira:
+
+<pre>
+     -rwxr-xr--  1  gleydson user    8192 nov 4 16:00 teste
+</pre>
+
+<p>
+Abaixo as explicações de cada parte:
+<dl>
+<dt><samp>-rwxr-xr--</samp></dt>
+<dd>
+São as permissões de acesso ao arquivo teste.  A primeira letra (da esquerda)
+identifica o tipo do arquivo, se tiver um <samp>d</samp> é um diretório, se
+tiver um &quot;-&quot; é um arquivo normal.
+<p>
+As permissões de acesso é explicada em detalhes em <a
+href="ch-perm.htm">Permissões de acesso a arquivos e diretórios, Capítulo
+13</a>.
+</dd>
+<dt><samp>1</samp></dt>
+<dd>
+Se for um diretório, mostra a quantidade de sub-diretórios existentes dentro
+dele.  Caso for um arquivo, será 1.
+</dd>
+<dt><samp>gleydson</samp></dt>
+<dd>
+Nome do dono do arquivo <code>teste</code>.
+</dd>
+<dt><samp>user</samp></dt>
+<dd>
+Nome do grupo que o arquivo <code>teste</code> pertence.
+</dd>
+<dt><samp>8192</samp></dt>
+<dd>
+Tamanho do arquivo (em bytes).
+</dd>
+<dt><samp>nov</samp></dt>
+<dd>
+Mês da criação/ última modificação do arquivo.
+</dd>
+<dt><samp>4</samp></dt>
+<dd>
+Dia que o arquivo foi criado.
+</dd>
+<dt><samp>16:00</samp></dt>
+<dd>
+Hora em que o arquivo foi criado/modificado.  Se o arquivo foi criado há mais
+de um ano, em seu lugar é mostrado o ano da criação do arquivo.
+</dd>
+<dt><code>teste</code></dt>
+<dd>
+Nome do arquivo.
+</dd>
+</dl>
+
+<p>
+Exemplos do uso do comando <code>ls</code>:
+<ul>
+<li>
+<samp>ls</samp> - Lista os arquivos do diretório atual.
+</li>
+<li>
+<samp>ls /bin /sbin</samp> - Lista os arquivos do diretório /bin e /sbin
+</li>
+<li>
+<samp>ls -la /bin</samp> - Listagem completa (vertical) dos arquivos do
+diretório /bin inclusive os ocultos.
+</li>
+</ul>
+
+<hr>
+
+<a name="s-comando-cd"></a>
+<h2>8.2 cd</h2>
+
+<p>
+Entra em um diretório.  Você precisa ter a permissão de execução para entrar no
+diretório.
+
+<p>
+<samp>cd [<em>diretório</em>]</samp>
+
+<p>
+onde:
+
+<p>
+<em>diretório</em> - diretório que deseja entrar.
+
+<p>
+Exemplos:
+<ul>
+<li>
+Usando <samp>cd</samp> sem parâmetros ou <samp>cd ~</samp>, você retornará ao
+seu diretório de usuário (diretório home).
+</li>
+<li>
+<samp>cd /</samp>, retornará ao diretório raíz.
+</li>
+<li>
+<samp>cd -</samp>, retornará ao diretório anteriormente acessado.
+</li>
+<li>
+<samp>cd ..</samp>, sobe um diretório.
+</li>
+<li>
+<samp>cd ../[<em>diretório</em>]</samp>, sobe um diretório e entra
+imediatamente no próximo (por exemplo, quando você está em
+<code>/usr/sbin</code>, você digita <samp>cd ../bin</samp>, o comando
+<code>cd</code> retorna um diretório (<code>/usr</code>) e entra imediatamente
+no diretório <code>bin</code> (<code>/usr/bin</code>).
+</li>
+</ul>
+
+<hr>
+
+<a name="s-comando-pwd"></a>
+<h2>8.3 pwd</h2>
+
+<p>
+Mostra o nome e caminho do diretório atual.
+
+<p>
+Você pode usar o comando pwd para verificar em qual diretório se encontra (caso
+seu aviso de comandos não mostre isso).
+
+<hr>
+
+<a name="s-comando-mkdir"></a>
+<h2>8.4 mkdir</h2>
+
+<p>
+Cria um diretório no sistema.  Um diretório é usado para armazenar arquivos de
+um determinado tipo.  O diretório pode ser entendido como uma <em>pasta</em>
+onde você guarda seus papeis (arquivos).  Como uma pessoa organizada, você
+utilizará uma pasta para guardar cada tipo de documento, da mesma forma você
+pode criar um diretório <code>vendas</code> para guardar seus arquivos
+relacionados com vendas naquele local.
+
+<p>
+<samp>mkdir [<em>opções</em>] [<em>caminho/diretório</em>]
+[<em>caminho1/diretório1</em>]</samp>
+
+<p>
+onde:
+<dl>
+<dt><em>caminho</em></dt>
+<dd>
+Caminho onde o diretório será criado.
+</dd>
+<dt><em>diretório</em></dt>
+<dd>
+Nome do diretório que será criado.
+</dd>
+<dt><em>opções:</em></dt>
+<dt>--verbose</dt>
+<dd>
+Mostra uma mensagem para cada diretório criado.  As mensagens de erro serão
+mostradas mesmo que esta opção não seja usada.
+</dd>
+</dl>
+
+<p>
+Para criar um novo diretório, você deve ter permissão de gravação.  Por
+exemplo, para criar um diretório em /tmp com o nome de <code>teste</code> que
+será usado para gravar arquivos de teste, você deve usar o comando
+<code>&quot;mkdir /tmp/teste&quot;</code>.
+
+<p>
+Podem ser criados mais de um diretório com um único comando (<samp>mkdir
+/tmp/teste /tmp/teste1 /tmp/teste2</samp>).
+
+<hr>
+
+<a name="s-comando-rmdir"></a>
+<h2>8.5 rmdir</h2>
+
+<p>
+Remove um diretório do sistema.  Este comando faz exatamente o contrário do
+<code>mkdir</code>.  O diretório a ser removido deve estar vazio e você deve
+ter permissão de gravação para remove-lo.
+
+<p>
+<samp>rmdir [<em>caminho/diretório</em>] [<em>caminho1/diretório1</em>]</samp>
+
+<p>
+onde:
+<dl>
+<dt><em>caminho</em></dt>
+<dd>
+Caminho do diretório que será removido.
+</dd>
+<dt><em>diretório</em></dt>
+<dd>
+Nome do diretório que será removido.
+</dd>
+</dl>
+
+<p>
+É necessário que esteja um nível acima do diretório(s) que será(ão)
+removido(s).  Para remover diretórios que contenham arquivos, use o comando
+<code>rm</code> com a opção <samp>-r</samp> (para maiores detalhes, veja <a
+href="ch-cmd.htm#s-comando-rm">rm, Seção 9.3</a>).
+
+<p>
+Por exemplo, para remover o diretório <code>/tmp/teste</code> você deve estar
+no diretório <code>tmp</code> e executar o comando <samp>rmdir teste</samp>.
+
+<hr>
+
+[ <a href="ch-run.htm">anterior</a> ]
+[ <a href="index.htm#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ <a href="ch-hardw.htm">3</a> ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ 8 ]
+[ <a href="ch-cmd.htm">9</a> ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ <a href="ch-cmdc.htm">12</a> ]
+[ <a href="ch-perm.htm">13</a> ]
+[ <a href="ch-redir.htm">14</a> ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ <a href="ch-cpctd.htm">18</a> ]
+[ <a href="ch-deb.htm">19</a> ]
+[ <a href="ch-dpkg.htm">20</a> ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ <a href="ch-cfg.htm">23</a> ]
+[ <a href="ch-tasks.htm">24</a> ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ <a href="ch-etc.htm">27</a> ]
+[ <a href="ch-inter.htm">28</a> ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ <a href="ch-apend.htm">32</a> ]
+[ <a href="ch-cmd.htm">próximo</a> ]
+
+<hr>
+
+<p>
+Guia Foca GNU/Linux
+
+<address>
+Versão 5.45 - segunda, 30 de outubro de 2006<br>
+<br>
+Gleydson Mazioli da Silva <code><a href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</a></code><br>
+<br>
+</address>
+
+<hr>
+
+</body>
+
+</html>
+

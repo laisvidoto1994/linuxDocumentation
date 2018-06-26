@@ -1,0 +1,335 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Guia Foca GNU/Linux - Explicações Básicas</title>
+
+</head>
+
+<body>
+
+<a name="ch-bas"></a>
+<hr>
+
+[ <a href="ch-intro.html">anterior</a> ]
+[ <a href="index.html#contents">Conteúdo</a> ]
+[ <a href="ch-intro.html">1</a> ]
+[ 2 ]
+[ <a href="ch-hardw.html">3</a> ]
+[ <a href="ch-rede.html">4</a> ]
+[ <a href="ch-cfgrede.html">5</a> ]
+[ <a href="ch-log.html">6</a> ]
+[ <a href="ch-deb.html">7</a> ]
+[ <a href="ch-pers.html">8</a> ]
+[ <a href="ch-impr.html">9</a> ]
+[ <a href="ch-fw-iptables.html">10</a> ]
+[ <a href="ch-d-contas.html">11</a> ]
+[ <a href="ch-s-apache.html">12</a> ]
+[ <a href="ch-s-ident.html">13</a> ]
+[ <a href="ch-s-telnet.html">14</a> ]
+[ <a href="ch-s-ssh.html">15</a> ]
+[ <a href="ch-s-pop3.html">16</a> ]
+[ <a href="ch-s-cvs.html">17</a> ]
+[ <a href="ch-s-samba.html">18</a> ]
+[ <a href="ch-d-restr.html">19</a> ]
+[ <a href="ch-d-cripto.html">20</a> ]
+[ <a href="ch-apend.html">21</a> ]
+[ <a href="ch-hardw.html">próximo</a> ]
+
+<hr>
+
+<h1>
+Guia Foca GNU/Linux
+<br>Capítulo 2 - Explicações Básicas
+</h1>
+
+<hr>
+
+<p>
+Este capítulo traz explicações sobre os principais componentes existentes no
+computador e do sistema operacional.
+
+<hr>
+
+<a name="s-basico-monitlogs"></a>
+<h2>2.1 Monitorando os logs</h2>
+
+<p>
+Os arquivos de logs residem em <code>/var/log</code> e registram tudo o que
+acontecem com o kernel, com os daemons e utilitários do sistema.  Eles são
+muito importantes tanto para monitorar o que acontece com o seu sistema como
+para ajudar na solução de problemas diversos.
+
+<p>
+Acostume-se a olhar constantemente os arquivos de log em seu sistema, isto pode
+ser importante para encontrar possíveis falhas de segurança, tentativa de
+acesso ao sistema e, principalmente, solucionar problemas (principalmente os
+mais complicados).  Leia <a href="ch-log.html">Arquivos e daemons de Log,
+Capítulo 6</a> para mais detalhes.
+
+<hr>
+
+<a name="s-basico-delarquivos"></a>
+<h3>2.1.1 Destruindo arquivos/partições de forma segura</h3>
+
+<p>
+Esta seção tem a intenção de conscientizar o administrador do uso devido de
+técnicas para garantir que dados sensíveis sejam apagados de forma segura em
+seu sistema.
+
+<p>
+Quando um arquivo é apagado, apenas a entrada na tabela de inodes é mexida, e
+ele pode ainda ser recuperado com o <code>debugfs</code> e um pouco de
+paciência e engenharia.  O mesmo acontece com as partições, que podem ser
+recuperadas com facilidade (isto é explicado no nível Intermediário do guia).
+Esta recuperação é proporcionada pelas regras de funcionamento do sistema de
+arquivos e do esquema de particionamento, ou seja, são permitidas pelo SO.
+
+<p>
+Vou um pouco mais além: O disco rígido é uma mídia magnética e opera de forma
+mecânica para ler/gravar dados.  Quando um arquivo é apagado, seja por qualquer
+motivo, ainda é possível recupera-lo.  O que permite isto é porque o HD nem
+sempre tem a precisão de gravar <strong>exatamente</strong> no mesmo lugar
+(pois a cabeça é movida mecanicamente), gravando em trilhas microscópicamente
+vizinhas a anterior.  Então a imagem do arquivo que foi apagada continua lá.
+Segundo ouvi falar, a NASA possui recursos para recuperar até 60 regravações
+posteriores no disco.  É claro que isto pode ocorrer em pouco tempo, dependendo
+do tamanho de sua partição e se esta for uma <code>/var/spool</code> em um
+servidor de e-mails :-)
+
+<p>
+Baseado nesta teoria, você poderá apagar os dados de forma destrutiva usando o
+programa <code>shred</code>, que regrava o arquivo repetidamente com dados
+aleatórios.  Sua sintaxe é a seguinte:
+
+<pre>
+     shred -n 70 -v -u arquivo
+</pre>
+
+<p>
+Isto faz com que ele regrava o conteúdo do <code>arquivo</code> 70 vezes com
+dados aleatórios.  O <em>-u</em> trunca e remove o arquivo após concluído.
+
+<p>
+Note que o uso de dados aleatórios serve para destruir as possibilidades de uma
+recuperação simples, este é o motivo de se recomendar sempre o uso de
+<code>/dev/urandom</code> ao invés de <code>/dev/zero</code> para destruição de
+arquivos.
+
+<p>
+<strong>OBS1:</strong> Saiba exatamente o que está fazendo pois estes
+procedimentos servem para dificultar ao máximo a recuperação de dados.
+
+<p>
+<strong>OBS2:</strong> Devido as tecnologias de sistemas que utilizam
+journaling (<em>XFS</em>, <em>EXT3</em>, <em>JFS</em> e <em>ReiserFS</em>) e
+sistemas RAID, o <code>shred</code> não funcionará.  O <code>shred</code>
+também não funcionará com sistemas de arquivos via rede (<em>NFS</em>,
+<em>SMB</em>, etc.).  Se procura alguma forma de proteger seus dados, mesmo que
+apagados, utilize um método de criptografia como o <em>DM-CRYPTO</em>,
+<em>crypto-loop</em>, <em>gpg</em>, etc.
+
+<p>
+<strong>OBS3:</strong> Caso esteja usando um sistema de arquivos criptografado,
+estes procedimentos são quase desnecessários (dependendo do nível de segurança
+e algorítmos que você utiliza).
+
+<hr>
+
+<a name="s-basico-curingas"></a>
+<h2>2.2 Curingas</h2>
+
+<p>
+Curingas (ou referência global) é um recurso usado para especificar um ou mais
+arquivos ou diretórios do sistema de uma só vez.  Este é um recurso permite que
+você faça a filtragem do que será listado, copiado, apagado, etc.  São usados 4
+tipos de curingas no <code>GNU/Linux</code>:
+<ul>
+<li>
+&quot;*&quot; - Faz referência a um nome completo/restante de um
+arquivo/diretório.
+</li>
+</ul>
+<ul>
+<li>
+&quot;?&quot; - Faz referência a uma letra naquela posição.
+</li>
+</ul>
+<ul>
+<li>
+<samp>[padrão]</samp> - Faz referência a uma faixa de caracteres de um
+arquivo/diretório.  Padrão pode ser:
+<ul>
+<li>
+<samp>[a-z][0-9]</samp> - Faz referência a caracteres de <samp>a</samp> até
+<samp>z</samp> seguido de um caracter de <samp>0</samp> até <samp>9</samp>.
+</li>
+<li>
+<samp>[a,z][1,0]</samp> - Faz a referência aos caracteres <samp>a</samp> e
+<samp>z</samp> seguido de um caracter <samp>1</samp> ou <samp>0</samp> naquela
+posição.
+</li>
+<li>
+<samp>[a-z,1,0]</samp> - Faz referência a intervalo de caracteres de
+<samp>a</samp> até <samp>z</samp> ou <samp>1</samp> ou <samp>0</samp> naquela
+posição.
+</li>
+</ul>
+
+<p>
+A procura de caracteres é &quot;Case Sensitive&quot; assim se você deseja que
+sejam localizados todos os caracteres alfabéticos você deve usar
+<samp>[a-zA-Z]</samp>.
+
+<p>
+Caso a expressão seja precedida por um <samp>^</samp>, faz referência a
+qualquer caracter exceto o da expressão.  Por exemplo <samp>[^abc]</samp> faz
+referência a qualquer caracter exceto <samp>a</samp>, <samp>b</samp> e
+<samp>c</samp>.
+</li>
+</ul>
+<ul>
+<li>
+<samp>{padrões}</samp> - Expande e gera strings para pesquisa de padrões de um
+arquivo/diretório.
+<ul>
+<li>
+<samp>X{ab,01}</samp> - Faz referência a seqüencia de caracteres
+<samp>Xab</samp> ou <samp>X01</samp>
+</li>
+<li>
+<samp>X{a-z,10}</samp> Faz referencia a seqüencia de caracteres
+X<samp>a-z</samp> e <samp>X10</samp>.
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+O que diferencia este método de expansão dos demais é que a existência do
+arquivo/diretório é opcional para geração do resultado.  Isto é útil para a
+criação de diretórios.  Lembrando que os 4 tipos de curingas (&quot;*&quot;,
+&quot;?&quot;, &quot;[]&quot;, &quot;{}&quot;) podem ser usados juntos.  Para
+entender melhor vamos a prática:
+
+<p>
+Vamos dizer que tenha 5 arquivo no diretório <code>/usr/teste</code>:
+<code>teste1.txt, teste2.txt, teste3.txt, teste4.new, teste5.new</code>.
+
+<p>
+Caso deseje listar <strong>todos</strong> os arquivos do diretório
+<code>/usr/teste</code> você pode usar o coringa &quot;*&quot; para especificar
+todos os arquivos do diretório:
+
+<p>
+<samp>cd /usr/teste</samp> e <samp>ls *</samp> ou <samp>ls /usr/teste/*</samp>.
+
+<p>
+Não tem muito sentido usar o comando <code>ls</code> com &quot;*&quot; porque
+todos os arquivos serão listados se o <code>ls</code> for usado sem nenhum
+Coringa.
+
+<p>
+Agora para listar todos os arquivos <code>teste1.txt, teste2.txt,
+teste3.txt</code> com excessão de <code>teste4.new</code>,
+<code>teste5.new</code>, podemos usar inicialmente 3 métodos:
+
+<ol type="1" start="1" >
+<li>
+Usando o comando <samp>ls *.txt</samp> que pega todos os arquivos que começam
+com qualquer nome e terminam com <code>.txt</code>.
+</li>
+<li>
+Usando o comando <samp>ls teste?.txt</samp>, que pega todos os arquivos que
+começam com o nome <code>teste</code>, tenham qualquer caracter no lugar do
+coringa <samp>?</samp> e terminem com <code>.txt</code>.  Com o exemplo acima
+<samp>teste*.txt</samp> também faria a mesma coisa, mas se também tivéssemos um
+arquivo chamado <code>teste10.txt</code> este também seria listado.
+</li>
+<li>
+Usando o comando <samp>ls teste[1-3].txt</samp>, que pega todos os arquivos que
+começam com o nome <code>teste</code>, tenham qualquer caracter entre o número
+1-3 no lugar da 6a letra e terminem com <code>.txt</code>.  Neste caso se obtém
+uma filtragem mais exata, pois o coringa <em>?</em> especifica qualquer
+caracter naquela posição e [] especifica números, letras ou intervalo que será
+usado.
+</li>
+</ol>
+
+<p>
+Agora para listar somente <code>teste4.new</code> e <code>teste5.new</code>
+podemos usar os seguintes métodos:
+<ol type="1" start="1" >
+<li>
+<samp>ls *.new</samp> que lista todos os arquivos que terminam com
+<code>.new</code>
+</li>
+<li>
+<samp>ls teste?.new</samp> que lista todos os arquivos que começam com
+<code>teste</code>, contenham qualquer caracter na posição do coringa
+<em>?</em> e terminem com <code>.new</code>.
+</li>
+<li>
+<samp>ls teste[4,5].*</samp> que lista todos os arquivos que começam com
+<code>teste</code> contenham números de 4 e 5 naquela posição e terminem com
+qualquer extensão.
+</li>
+</ol>
+
+<p>
+Existem muitas outras formas de se fazer a mesma coisa, isto depende do gosto
+de cada um.  O que pretendi fazer aqui foi mostrar como especificar mais de um
+arquivo de uma só vez.  O uso de curingas será útil ao copiar arquivos, apagar,
+mover, renomear, e nas mais diversas partes do sistema.  Alias esta é uma
+característica do <code>GNU/Linux</code>: permitir que a mesma coisa possa ser
+feita com liberdade de várias maneiras diferentes.
+
+<hr>
+
+[ <a href="ch-intro.html">anterior</a> ]
+[ <a href="index.html#contents">Conteúdo</a> ]
+[ <a href="ch-intro.html">1</a> ]
+[ 2 ]
+[ <a href="ch-hardw.html">3</a> ]
+[ <a href="ch-rede.html">4</a> ]
+[ <a href="ch-cfgrede.html">5</a> ]
+[ <a href="ch-log.html">6</a> ]
+[ <a href="ch-deb.html">7</a> ]
+[ <a href="ch-pers.html">8</a> ]
+[ <a href="ch-impr.html">9</a> ]
+[ <a href="ch-fw-iptables.html">10</a> ]
+[ <a href="ch-d-contas.html">11</a> ]
+[ <a href="ch-s-apache.html">12</a> ]
+[ <a href="ch-s-ident.html">13</a> ]
+[ <a href="ch-s-telnet.html">14</a> ]
+[ <a href="ch-s-ssh.html">15</a> ]
+[ <a href="ch-s-pop3.html">16</a> ]
+[ <a href="ch-s-cvs.html">17</a> ]
+[ <a href="ch-s-samba.html">18</a> ]
+[ <a href="ch-d-restr.html">19</a> ]
+[ <a href="ch-d-cripto.html">20</a> ]
+[ <a href="ch-apend.html">21</a> ]
+[ <a href="ch-hardw.html">próximo</a> ]
+
+<hr>
+
+<p>
+Guia Foca GNU/Linux
+
+<address>
+Versão 6.40 - segunda, 30 de outubro de 2006<br>
+<br>
+Gleydson Mazioli da Silva <code><a href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</a></code><br>
+<br>
+</address>
+
+<hr>
+
+</body>
+
+</html>
+

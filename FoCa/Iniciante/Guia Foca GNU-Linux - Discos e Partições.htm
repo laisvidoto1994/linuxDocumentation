@@ -1,0 +1,402 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Discos e Partições</TITLE>
+<META http-equiv=content-type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2900.3059" name=GENERATOR></HEAD>
+<BODY><A name=ch-disc></A>
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ 4 ] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">próximo</A> 
+] 
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Capítulo 4 - Discos e Partições </H1>
+<HR>
+
+<P>Este capítulo traz explicações de como manipular discos rígidos e partições 
+no sistema <CODE>GNU/Linux</CODE> e como acessar seus discos de CD-ROM e 
+partições <CODE>DOS</CODE>, <CODE>Windows 95/98</CODE> no 
+<CODE>GNU/Linux</CODE>. 
+<HR>
+<A name=s-disc-particoes></A>
+<H2>4.1 Partições</H2>
+<P>São divisões existentes no disco rígido que marcam onde começa onde termina 
+um sistema de arquivos. Por causa destas divisões, nós podemos usar mais de um 
+sistema operacional no mesmo computador (como o <CODE>GNU/Linux</CODE>, 
+<CODE>Windows</CODE> e <CODE>DOS</CODE>), ou dividir o disco rígido em uma ou 
+mais partes para ser usado por um único sistema operacional. 
+<HR>
+<A name=s-disc-formatando></A>
+<H2>4.2 Formatando disquetes</H2>
+<P>As subseções seguintes explicarão maneiras de formatar seus disquetes para 
+serem usados no <CODE>GNU/Linux</CODE> e <CODE>DOS/Windows</CODE>. 
+<HR>
+<A name=s-disc-formatando-l></A>
+<H3>4.2.1 Formatando disquetes para serem usados no Linux</H3>
+<P>Para formatar disquetes para serem usados no <CODE>GNU/Linux</CODE> use o 
+comando: 
+<P><SAMP>mkfs.ext2 [<EM>-c</EM>] [<EM>/dev/fd0</EM>]</SAMP> 
+<P>Em alguns sistemas você deve usar <CODE>mke2fs</CODE> no lugar de 
+<CODE>mkfs.ext2</CODE>. A opção <SAMP>-c</SAMP> faz com que o 
+<CODE>mkfs.ext2</CODE> procure por blocos danificados no disquete e 
+<CODE>/dev/fd0</CODE> especifica a primeira unidade de disquetes para ser 
+formatada (equivalente a <SAMP>A:</SAMP> no DOS). Mude para 
+<CODE>/dev/fd1</CODE> para formatar um disquete da segunda unidade. 
+<P>OBS: Este comando cria um sistema de arquivos <EM>ext2</EM> no disquete que é 
+nativo do <CODE>GNU/Linux</CODE> e permite usar características como permissões 
+de acesso e outras. Isto também faz com que o disquete NÃO possa ser lido pelo 
+<CODE>DOS/Windows</CODE>. Para formatar um disquete no <CODE>GNU/Linux</CODE> 
+usando o <EM>FAT12</EM> (compatível com o DOS/Windows) veja próxima seção. 
+<P>Exemplo: <SAMP>mkfs.ext2 -c /dev/fd0</SAMP> 
+<HR>
+<A name=s-disc-formatando-d></A>
+<H3>4.2.2 Formatando disquetes compatíveis com o DOS/Windows</H3>
+<P>A formatação de disquetes <CODE>DOS</CODE> no <CODE>GNU/Linux</CODE> é feita 
+usando o comando <CODE>superformat</CODE> que é geralmente incluído no pacote 
+<CODE>mtools</CODE>. O <CODE>superformat</CODE> formata (cria um sistema de 
+arquivos) um disquete para ser usado no <CODE>DOS</CODE> e também possui opções 
+avançadas para a manipulação da unidade, formatação de intervalos de cilindros 
+específicos, formatação de discos em alta capacidade e verificação do disquete. 
+<P><SAMP>superformat [opções] [<EM>dispositivo</EM>]</SAMP> 
+<DL>
+  <DT><EM>dispositivo</EM> 
+  <DD>Unidade de disquete que será formatada. Normalmente <CODE>/dev/fd0</CODE> 
+  ou <CODE>/dev/fd1</CODE> especificando respectivamente a primeira e segunda 
+  unidade de disquetes. 
+  <DT><EM>opções</EM> 
+  <DT>-v [num] 
+  <DD>Especifica o nível de detalhes que serão exibidos durante a formatação do 
+  disquete. O nível 1 especifica um ponto mostrado na tela para cada trilha 
+  formatada. Veja a página de manual do <CODE>superformat</CODE> para detalhes. 
+  <DT>-superverify 
+  <DD>Verifica primeiro se a trilha pode ser lida antes de formata-la. Este é o 
+  padrão. 
+  <DT>--dosverify, -B 
+  <DD>Verifica o disquete usando o utilitário <CODE>mbadblocks</CODE>. Usando 
+  esta opção, as trilhas defeituosas encontradas serão automaticamente marcadas 
+  para não serem utilizadas. 
+  <DT>--verify_later, -V 
+  <DD>Verifica todo o disquete no final da formatação. 
+  <DT>--noverify, -f 
+  <DD>Não faz verificação de leitura. </DD></DL>
+<P>Na primeira vez que o <CODE>superformat</CODE> é executado, ele verifica a 
+velocidade de rotação da unidade e a comunicação com a placa controladora, pois 
+os discos de alta densidade são sensíveis a rotação da unidade. Após o teste 
+inicial ele recomendará adicionar uma linha no arquivo 
+<CODE>/etc/driveprm</CODE> como forma de evitar que este teste seja sempre 
+executado. OBS: Esta linha é calculada de acordo com a rotação de usa unidade de 
+disquetes, transferência de dados e comunicação com a placa controladora de 
+disquete. Desta forma ela varia de computador para computador Note que não é 
+necessário montar a unidade de disquetes para formata-la. 
+<P>Segue abaixo exemplos de como formatar seus disquetes com o 
+<CODE>superformat</CODE>: 
+<UL>
+  <LI><SAMP>superformat /dev/fd0</SAMP> - Formata o disquete na primeira unidade 
+  de disquetes usando os valores padrões. 
+  <LI><SAMP>superformat /dev/fd0 dd</SAMP> - Faz a mesma coisa que o acima, mas 
+  assume que o disquete é de Dupla Densidade (720Kb). 
+  <LI><SAMP>superformat -v 1 /dev/fd0</SAMP> - Faz a formatação da primeira 
+  unidade de disquetes (<CODE>/dev/fd0</CODE>) e especifica o nível de detalhes 
+  para 1, exibindo um <SAMP>ponto</SAMP> após cada trilha formatada. </LI></UL>
+<HR>
+<A name=s-disc-formatando-g></A>
+<H3>4.2.3 Programas de Formatação Gráficos</H3>
+<P>Além de programas de formatação em modo texto, existem outros para ambiente 
+gráfico (X11) que permitem fazer a mesma tarefa. 
+<P>Entre os diversos programas destaco o <CODE>gfloppy</CODE> que além de 
+permitir selecionar se o disquete será formatado para o <CODE>GNU/Linux</CODE> 
+(ext2) ou <CODE>DOS</CODE> (FAT12), permite selecionar a capacidade da unidade 
+de disquetes e formatação rápida do disco. 
+<HR>
+<A name=s-disc-pontomontagem></A>
+<H2>4.3 Pontos de Montagem</H2>
+<P>O <CODE>GNU/Linux</CODE> acessa as partições existente em seus discos rígidos 
+e disquetes através de diretórios. Os diretórios que são usados para acessar 
+(montar) partições são chamados de <EM>Pontos de Montagem</EM>. Para detalhes 
+sobre montagem de partições, veja <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html#s-disc-montagem">Montando 
+(acessando) uma partição de disco, Seção 4.5</A>. 
+<P>No <CODE>DOS</CODE> cada letra de unidade (C:, D:, E:) identifica uma 
+partição de disco, no <CODE>GNU/Linux</CODE> os pontos de montagem fazem parte 
+da grande estrutura do sistema de arquivos raiz. 
+<HR>
+<A name=s-disc-id></A>
+<H2>4.4 Identificação de discos e partições em sistemas Linux</H2>
+<P>No <CODE>GNU/Linux</CODE>, os dispositivos existentes em seu computador (como 
+discos rígidos, disquetes, tela, portas de impressora, modem, etc) são 
+identificados por um arquivo referente a este dispositivo no diretório 
+<CODE>/dev</CODE>. 
+<P>A identificação de discos rígidos no <CODE>GNU/Linux</CODE> é feita da 
+seguinte forma: <PRE>     /dev/hda1
+     |    | ||
+     |    | ||_Número que identifica o número da partição no disco rígido.
+     |    | |
+     |    | |_Letra que identifica o disco rígido (a=primeiro, b=segundo, etc...).
+     |    |
+     |    |_Sigla que identifica o tipo do disco rígido (hd=ide, sd=SCSI, xt=XT).
+     |
+     |_Diretório onde são armazenados os dispositivos existentes no sistema.
+</PRE>
+<P>Abaixo algumas identificações de discos e partições em sistemas Linux: 
+<UL>
+  <LI><EM>/dev/fd0</EM> - <SAMP>Primeira unidade de disquetes</SAMP>. </LI></UL>
+<UL>
+  <LI><EM>/dev/fd1</EM> - <SAMP>Segunda unidade de disquetes</SAMP>. </LI></UL>
+<UL>
+  <LI><EM>/dev/hda</EM> - <SAMP>Primeiro disco rígido na primeira controladora 
+  IDE do micro (primary master)</SAMP>. </LI></UL>
+<UL>
+  <LI><EM>/dev/hda1</EM> - <SAMP>Primeira partição do primeiro disco rígido 
+  IDE</SAMP>. </LI></UL>
+<UL>
+  <LI><EM>/dev/hdb</EM> - <SAMP>Segundo disco rígido na primeira controladora 
+  IDE do micro (primary slave)</SAMP>. </LI></UL>
+<UL>
+  <LI><EM>/dev/hdb1</EM> - <SAMP>Primeira partição do segundo disco rígido 
+  IDE</SAMP>. </LI></UL>
+<UL>
+  <LI><EM>/dev/sda</EM> - <SAMP>Primeiro disco rígido na primeira controladora 
+  SCSI</SAMP>. </LI></UL>
+<UL>
+  <LI><EM>/dev/sda1</EM> - <SAMP>Primeira partição do primeiro disco rígido 
+  SCSI</SAMP>. </LI></UL>
+<UL>
+  <LI><EM>/dev/sdb</EM> - <SAMP>Segundo disco rígido na primeira controladora 
+  SCSI</SAMP>. </LI></UL>
+<UL>
+  <LI><EM>/dev/sdb1</EM> - <SAMP>Primeira partição do segundo disco rígido 
+  SCSI</SAMP>. </LI></UL>
+<UL>
+  <LI><EM>/dev/sr0</EM> - <SAMP>Primeiro CD-ROM SCSI</SAMP>. </LI></UL>
+<UL>
+  <LI><EM>/dev/sr1</EM> - <SAMP>Segundo CD-ROM SCSI</SAMP>. </LI></UL>
+<UL>
+  <LI><EM>/dev/xda</EM> - <SAMP>Primeiro disco rígido XT</SAMP>. </LI></UL>
+<UL>
+  <LI><EM>/dev/xdb</EM> - <SAMP>Segundo disco rígido XT</SAMP>. </LI></UL>
+<P>As letras de identificação de discos rígidos podem ir além de 
+<SAMP>hdb</SAMP>, em meu micro, por exemplo, a unidade de CD-ROM está localizada 
+em <CODE>/dev/hdg</CODE> (Primeiro disco - quarta controladora IDE). 
+<P>É importante entender como os discos e partições são identificados no 
+sistema, pois será necessário usar os parâmetros corretos para monta-los. 
+<HR>
+<A name=s-disc-montagem></A>
+<H2>4.5 Montando (acessando) uma partição de disco</H2>
+<P>Você pode acessar uma partição de disco usando o comando <CODE>mount</CODE>. 
+<P><SAMP>mount [<EM>dispositivo</EM>] [<EM>ponto de montagem</EM>] 
+[<EM>opções</EM>]</SAMP> 
+<P>Onde: 
+<DL>
+  <DT><EM>dispositivo</EM> 
+  <DD>Identificação da unidade de disco/partição que deseja acessar (como 
+  <SAMP>/dev/hda1</SAMP> (disco rígido) ou <SAMP>/dev/fd0</SAMP> (primeira 
+  unidade de disquetes). 
+  <DT><EM>ponto de montagem</EM> 
+  <DD>Diretório de onde a <EM>unidade de disco/partição</EM> será acessado. O 
+  diretório deve estar vazio para montagem de um sistema de arquivo. Normalmente 
+  é usado o diretório <CODE>/mnt</CODE> para armazenamento de pontos de montagem 
+  temporários. 
+  <DT>-t [tipo] 
+  <DD>Tipo do sistema de arquivos usado pelo <EM>dispositivo</EM>. São aceitos 
+  os sistemas de arquivos: 
+  <UL>
+    <LI><EM>ext2</EM> - Para partições <CODE>GNU/Linux</CODE> usando o Extended 
+    File System versão 2 (a mais comum). 
+    <LI><EM>ext3</EM> - Para partições <CODE>GNU/Linux</CODE> usando o Extended 
+    File System versão 3, com suporte a journaling. 
+    <LI><EM>reiserfs</EM> - Para partições reiserfs, com suporte a journaling. 
+    <LI><EM>vfat</EM> - Para partições <CODE>Windows 95</CODE> que utilizam 
+    nomes extensos de arquivos e diretórios. 
+    <LI><EM>msdos</EM> - Para partições <CODE>DOS</CODE> normais. 
+    <LI><EM>iso9660</EM> - Para montar unidades de <CODE>CD-ROM</CODE>. É o 
+    padrão. 
+    <LI><EM>umsdos</EM> - Para montar uma partição <CODE>DOS</CODE> com recursos 
+    de partições <CODE>EXT2</CODE>, como permissões de acesso, links, etc. 
+  </LI></UL>
+  <P>Para mais detalhes sobre opções usadas com cada sistema de arquivos, veja a 
+  página de manual <EM>mount</EM>. </P>
+  <DT>-r 
+  <DD>Caso for especificada, monta a partição somente para leitura. 
+  <DT>-w 
+  <DD>Caso for especificada, monta a partição como leitura/gravação. É o padrão. 
+  </DD></DL>
+<P>Existem muitas outras opções que podem ser usadas com o comando 
+<CODE>mount</CODE>, mas aqui procurei somente mostrar o básico para "montar" 
+seus discos e partições no <CODE>GNU/Linux</CODE> (para mais opções, veja a 
+página de manual do <SAMP>mount</SAMP>). Caso você digitar <SAMP>mount</SAMP> 
+sem parâmetros, serão mostrados os sistemas de arquivos atualmente montados no 
+sistema. Esta mesma listagem pode ser vista em <CODE>/etc/mtab</CODE>. A 
+remontagem de partição também é muito útil, especialmente após reparos nos 
+sistema de arquivos do disco rígido. Veja alguns exemplos de remontagem abaixo. 
+<P>É necessário permissões de root para montar partições, a não ser que tenha 
+especificado a opção <SAMP>user</SAMP> no arquivo <CODE>/etc/fstab</CODE> (veja 
+<A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html#s-disc-fstab">fstab, 
+Seção 4.5.1</A>). 
+<P>Exemplo de Montagem: 
+<UL>
+  <LI>Montar uma partição Windows (vfat) de <CODE>/dev/hda1</CODE> em 
+  <CODE>/mnt</CODE> somente para leitura: <SAMP>mount /dev/hda1 /mnt -r -t 
+  vfat</SAMP> 
+  <LI>Montar a primeira unidade de disquetes <CODE>/dev/fd0</CODE> em 
+  <CODE>/floppy</CODE>: <SAMP>mount /dev/fd0 /floppy -t vfat</SAMP> 
+  <LI>Montar uma partição DOS localizada em um segundo disco rígido 
+  <CODE>/dev/hdb1</CODE> em <CODE>/mnt</CODE>: <SAMP>mount /dev/hdb1 /mnt -t 
+  msdos</SAMP>. 
+  <LI>Remontar a partição raíz como somente leitura: <SAMP>mount -o remount,rw 
+  /</SAMP> 
+  <LI>Remontar a partição raíz como <EM>leitura/gravação</EM> (a opção -n é 
+  usada porque o <CODE>mount</CODE> não conseguirá atualizar o arquivo 
+  <CODE>/etc/mtab</CODE> devido ao sistema de arquivos <CODE>/</CODE> estar 
+  montado como somente leitura atualmente: <SAMP>mount -n -o remount,rw 
+  /</SAMP>. </LI></UL>
+<HR>
+<A name=s-disc-fstab></A>
+<H3>4.5.1 fstab</H3>
+<P>O arquivo <CODE>/etc/fstab</CODE> permite que as partições do sistema sejam 
+montadas facilmente especificando somente o dispositivo ou o ponto de montagem. 
+Este arquivo contém parâmetros sobre as partições que são lidos pelo comando 
+<CODE>mount</CODE>. Cada linha deste arquivo contém a partição que desejamos 
+montar, o ponto de montagem, o sistema de arquivos usado pela partição e outras 
+opções. <CODE>fstab</CODE> tem a seguinte forma: <PRE>     Sistema_de_arquivos Ponto_de_Montagem Tipo    Opções           dump ordem
+     /dev/hda1           /                 ext2    defaults           0    1
+     /dev/hda2           /boot             ext2    defaults           0    2
+     /dev/hda3           /dos              msdos   defaults,noauto,rw 0    0
+     /dev/hdg            /cdrom            iso9660 defaults,noauto    0    0
+</PRE>
+<P>Onde: 
+<DL>
+  <DT>Sistema de Arquivos 
+  <DD>Partição que deseja montar. 
+  <DT>Ponto de montagem 
+  <DD>Diretório do <CODE>GNU/Linux</CODE> onde a partição montada será acessada. 
+
+  <DT>Tipo 
+  <DD>Tipo de sistema de arquivos usado na partição que será montada. Para 
+  partições <CODE>GNU/Linux</CODE> use <EM>ext2</EM>, para partições 
+  <CODE>DOS</CODE> (sem nomes extensos de arquivos) use <EM>msdos</EM>, para 
+  partições <CODE>Win 95</CODE> (com suporte a nomes extensos de arquivos) use 
+  <EM>vfat</EM>, para unidades de CD-ROM use <EM>iso9660</EM>. 
+  <DT>Opções 
+  <DD>Especifica as opções usadas com o sistema de arquivos. Abaixo, algumas 
+  opções de montagem para ext2/3 (a lista completa pode ser encontrada na página 
+  de manual do <CODE>mount</CODE>): 
+  <UL>
+    <LI><SAMP>defaults</SAMP> - Utiliza valores padrões de montagem. 
+    <LI><SAMP>noauto</SAMP> - Não monta os sistemas de arquivos durante a 
+    inicialização (útil para CD-ROMS e disquetes). 
+    <LI><SAMP>ro</SAMP> - Monta como somente leitura. 
+    <LI><SAMP>user</SAMP> - Permite que usuários montem o sistema de arquivos 
+    (não recomendado por motivos de segurança). 
+    <LI><SAMP>sync</SAMP> é recomendado para uso com discos removíveis 
+    (disquetes, zip drives, etc) para que os dados sejam gravados imediatamente 
+    na unidade (caso não seja usada, você deve usar o comando <A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-sync">sync, 
+    Seção 8.22</A> antes de retirar o disquete da unidade. </LI></UL>
+  <DT>dump 
+  <DD>Especifica a frequência de backup feita com o programa <CODE>dump</CODE> 
+  no sistema de arquivos. 0 desativa o backup. 
+  <DT>Ordem 
+  <DD>Define a ordem que os sistemas de arquivos serão verificados na 
+  inicialização do sistema. Se usar 0, o sistema de arquivos não é verificado. O 
+  sistema de arquivos raíz que deverá ser verificado primeiro é o raíz "/" . 
+  </DD></DL>
+<P>Após configurar o <CODE>/etc/fstab</CODE>, basta digitar o comando 
+<SAMP>mount /dev/hdg</SAMP> ou <SAMP>mount /cdrom</SAMP> para que a unidade de 
+CD-ROM seja montada. Você deve ter notado que não é necessário especificar o 
+sistema de arquivos da partição pois o <CODE>mount</CODE> verificará se ele já 
+existe no <CODE>/etc/fstab</CODE> e caso existir, usará as opções especificadas 
+neste arquivo. Para maiores detalhes veja as páginas de manual 
+<CODE>fstab</CODE> e <CODE>mount</CODE>. 
+<HR>
+<A name=s-disc-desmontagem></A>
+<H2>4.6 Desmontando uma partição de disco</H2>
+<P>Para desmontar um sistema de arquivos montado com o comando 
+<CODE>umount</CODE>, use o comando <CODE>umount</CODE>. Você deve ter permissões 
+de root para desmontar uma partição. 
+<P><SAMP>umount [<EM>dispositivo</EM>/<EM>ponto de montagem</EM>]</SAMP> 
+<P>Você pode tanto usar <SAMP>umount /dev/hda1</SAMP> como <SAMP>umount 
+/mnt</SAMP> para desmontar um sistema de arquivos <CODE>/dev/hda1</CODE> montado 
+em <CODE>/mnt</CODE>. 
+<P><EM>Observação:</EM> O comando <CODE>umount</CODE> executa o 
+<CODE>sync</CODE> automaticamente no momento da desmontagem para garantir que 
+todos os dados ainda não gravados serão salvos. 
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ 4 ] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">próximo</A> 
+] 
+<HR>
+
+<P>Guia Foca GNU/Linux 
+<ADDRESS>Versão 3.99 - segunda, 30 de outubro de 2006<BR><BR>Gleydson Mazioli da 
+Silva <CODE><A 
+href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR><BR></ADDRESS>
+<HR>
+</BODY></HTML>

@@ -1,0 +1,1735 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Guia Foca GNU/Linux - Rede</title>
+
+</head>
+
+<body>
+
+<a name="ch-rede"></a>
+<hr>
+
+[ <a href="ch-hardw.html">anterior</a> ]
+[ <a href="index.html#contents">Conteúdo</a> ]
+[ <a href="ch-intro.html">1</a> ]
+[ <a href="ch-bas.html">2</a> ]
+[ <a href="ch-hardw.html">3</a> ]
+[ 4 ]
+[ <a href="ch-cfgrede.html">5</a> ]
+[ <a href="ch-log.html">6</a> ]
+[ <a href="ch-deb.html">7</a> ]
+[ <a href="ch-pers.html">8</a> ]
+[ <a href="ch-impr.html">9</a> ]
+[ <a href="ch-fw-iptables.html">10</a> ]
+[ <a href="ch-d-contas.html">11</a> ]
+[ <a href="ch-s-apache.html">12</a> ]
+[ <a href="ch-s-ident.html">13</a> ]
+[ <a href="ch-s-telnet.html">14</a> ]
+[ <a href="ch-s-ssh.html">15</a> ]
+[ <a href="ch-s-pop3.html">16</a> ]
+[ <a href="ch-s-cvs.html">17</a> ]
+[ <a href="ch-s-samba.html">18</a> ]
+[ <a href="ch-d-restr.html">19</a> ]
+[ <a href="ch-d-cripto.html">20</a> ]
+[ <a href="ch-apend.html">21</a> ]
+[ <a href="ch-cfgrede.html">próximo</a> ]
+
+<hr>
+
+<h1>
+Guia Foca GNU/Linux
+<br>Capítulo 4 - Rede
+</h1>
+
+<hr>
+
+<p>
+Este capítulo descreve o que é uma rede, os principais dispositivos de rede no
+<code>GNU/Linux</code>, a identificação de cada um, como configurar os
+dispositivos, escolha de endereços IP, roteamento.
+
+<p>
+Parte deste capítulo, uns 70% pelo menos, é baseado no documento NET3-4-HOWTO.
+(seria perda de tempo reescrever este assunto pois existe um material desta
+qualidade já disponível).
+
+<hr>
+
+<a name="s-rede-oque"></a>
+<h2>4.1 O que é uma rede</h2>
+
+<p>
+Rede é a conexão de duas ou mais máquinas com o objetivo de compartilhar
+recursos entre uma máquina e outra.  Os recursos podem ser:
+<ul>
+<li>
+Compartilhamento do conteúdo de seu disco rígido (ou parte dele) com outros
+usuários.  Os outros usuários poderão acessar o disco como se estivesse
+instalado na própria máquina).  Também chamado de servidor de arquivos.
+</li>
+<li>
+Compartilhamento de uma impressora com outros usuários.  Os outros usuários
+poderão enviar seus trabalhos para uma impressora da rede.  Também chamado de
+servidor de impressão.
+</li>
+<li>
+Compartilhamento de acesso a Internet.  Outros usuários poderão navegar na
+Internet, pegar seus e-mails, ler noticias, bate-papo no IRC, ICQ através do
+servidor de acesso Internet.  Também chamado de servidor Proxy.
+</li>
+<li>
+Servidor de Internet/Intranet.  Outros usuários poderão navegar nas páginas
+Internet localizadas em seu computador, pegar e-mails, usar um servidor de IRC
+para chat na rede, servidor de ICQ, etc
+</li>
+</ul>
+
+<p>
+Com os ítens acima funcionando é possível criar permissões de acesso da rede,
+definindo quem terá ou não permissão para acessar cada compartilhamento ou
+serviço existente na máquina (www, ftp, irc, icq, etc), e registrando/avisando
+sobre eventuais tentativas de violar a segurança do sistema, firewalls, pontes,
+etc.
+
+<p>
+Entre outras ilimitadas possibilidades que dependem do conhecimento do
+indivíduo no ambiente <code>GNU/Linux</code>, já que ele permite muita
+flexibilidade para fazer qualquer coisa funcionar em rede.
+
+<p>
+A comunicação entre computadores em uma rede é feita através do <em>Protocolo
+de Rede</em>.
+
+<hr>
+
+<a name="s-rede-protocolo"></a>
+<h2>4.2 Protocolo de Rede</h2>
+
+<p>
+O protocolo de rede é a linguagem usada para a comunicação entre um computador
+e outro.  Existem vários tipos de protocolos usados para a comunicação de
+dados, alguns são projetados para pequenas redes (como é o caso do NetBios)
+outros para redes mundiais (TCP/IP que possui características de roteamento).
+
+<p>
+Dentre os protocolos, o que mais se destaca atualmente é o TCP/IP devido ao seu
+projeto, velocidade e capacidade de roteamento.
+
+<hr>
+
+<a name="s-rede-ip"></a>
+<h2>4.3 Endereço IP</h2>
+
+<p>
+O <em>endereço IP</em> são números que identificam seu computador em uma rede.
+Inicialmente você pode imaginar o IP como um número de telefone.  O IP é
+compostos por quatro bytes e a convenção de escrita dos números é chamada de
+&quot;notação decimal pontuada&quot;.  Por convenção, cada interface (placa
+usada p/ rede) do computador ou roteador tem um endereço IP.  Também é
+permitido que o mesmo endereço IP seja usado em mais de uma interface de uma
+mesma máquina mas normalmente cada interface tem seu próprio endereço IP.
+
+<p>
+As Redes do Protocolo Internet são seqüências contínuas de endereços IP's.
+Todos os endereços dentro da rede tem um número de dígitos dentro dos endereços
+em comum.  A porção dos endereços que são comuns entre todos os endereços de
+uma rede são chamados de <em>porção da rede</em>.  Os dígitos restantes são
+chamados de <em>porção dos hosts</em>.  O número de bits que são compartilhados
+por todos os endereços dentro da rede são chamados de <em>netmask</em> (máscara
+da rede) e o papel da <em>netmask</em> é determinar quais endereços pertencem
+ou não a rede.  Por exemplo, considere o seguinte:
+
+<pre>
+     -----------------  ---------------
+     Endereço do Host   192.168.110.23
+     Máscara da Rede    255.255.255.0
+     Porção da Rede     192.168.110.
+     Porção do Host                .23
+     -----------------  ---------------
+     Endereço da Rede   192.168.110.0
+     Endereço Broadcast 192.168.110.255
+     -----------------  ---------------
+</pre>
+
+<p>
+Qualquer endereço que é finalizado em zero em sua <em>netmask</em>, revelará o
+<em>endereço da rede</em> que pertence.  O endereço e rede é então sempre o
+menor endereço numérico dentro da escalas de endereços da rede e sempre possui
+a <em>porção host</em> dos endereços codificada como zeros.
+
+<p>
+O endereço de <em>broadcast</em> é um endereço especial que cada computador em
+uma rede &quot;escuta&quot; em adição a seu próprio endereço.  Este é um
+endereço onde os datagramas enviados são recebidos por todos os computadores da
+rede.  Certos tipos de dados como informações de roteamento e mensagens de
+alerta são transmitidos para o endereço <em>broadcast</em>, assim todo
+computador na rede pode recebe-las simultaneamente.
+
+<p>
+Existe dois padrões normalmente usados para especificar o endereço de
+<em>broadcast</em>.  O mais amplamente aceito é para usar o endereço <samp>mais
+alto</samp> da rede como endereço broadcast.  No exemplo acima este seria
+192.168.110.255.  Por algumas razões outros sites tem adotado a convenção de
+usar o <samp>endereço de rede</samp> como o endereço broadcast.  Na prática não
+importa muito se usar este endereço, mas você deve ter certeza que todo
+computador na rede esteja configurado para escutar o mesmo <em>endereço
+broadcast</em>.
+
+<hr>
+
+<a name="s-rede-ip-classes"></a>
+<h3>4.3.1 Classes de Rede IP</h3>
+
+<p>
+Por razões administrativas após algum pouco tempo no desenvolvimento do
+protocolo IP alguns grupos arbitrários de endereços foram formados em redes e
+estas redes foram agrupadas no que foram chamadas de <em>classes</em>.  Estas
+classes armazenam um tamanho padrão de redes que podem ser usadas.  As faixas
+alocadas são:
+
+<pre>
+     +--------------------------------------------------------+
+     | Classe  | Máscara de    | Endereço da Rede             |
+     |         | Rede          |                              |
+     +--------------------------------------------------------+
+     |    A    | 255.0.0.0     | 0.0.0.0    - 127.255.255.255 |
+     |    B    | 255.255.0.0   | 128.0.0.0  - 191.255.255.255 |
+     |    C    | 255.255.255.0 | 192.0.0.0  - 223.255.255.255 |
+     |Multicast| 240.0.0.0     | 224.0.0.0  - 239.255.255.255 |
+     +--------------------------------------------------------+
+</pre>
+
+<p>
+O tipo de endereço que você deve utilizar depende exatamente do que estiver
+fazendo.
+
+<hr>
+
+<a name="s-rede-ip-masks"></a>
+<h3>4.3.2 Referência rápida de máscara de redes</h3>
+
+<p>
+A tabela abaixo faz referência as máscaras de rede mais comuns e a quantidade
+de máquinas máximas que ela atinge.  Note que a especificação da máscara tem
+influência direta na classe de rede usada:
+
+<pre>
+     Máscara  Máscara                 Número 
+     (Forma   (Forma                  Máximo de 
+     octal)   32 bits)                Máquinas
+     
+     Classe A:
+     /8       /255.0.0.0              16,777,215
+     
+     Classe B:
+     /16      /255.255.0.0            65,535
+     /17      /255.255.128.0          32,767
+     /18      /255.255.192.0          16,383
+     /19      /255.255.224.0          8,191
+     /20      /255.255.240.0          4,095
+     /21      /255.255.248.0          2,047
+     /22      /255.255.252.0          1,023
+     /23      /255.255.254.0          511
+     
+     Classe C
+     /24      /255.255.255.0          255
+     /25      /255.255.255.128        127
+     /26      /255.255.255.192        63
+     /27      /255.255.255.224        31
+     /28      /255.255.255.240        15
+     /29      /255.255.255.248        7
+     /30      /255.255.255.252        3
+     /32      /255.255.255.255        1
+</pre>
+
+<p>
+Qualquer outra máscara fora desta tabela (principalmente para a classe A),
+deverá ser redimensionada com uma calculadora de IP para chegar a um número
+aproximado de redes/máquinas aproximados que deseja.
+
+<hr>
+
+<a name="s-rede-ip-nova"></a>
+<h3>4.3.3 Para instalar uma máquina usando o Linux em uma rede existente</h3>
+
+<p>
+Se você quiser instalar uma máquina <code>GNU/Linux</code> em uma rede TCP/IP
+existente então você deve contactar qualquer um dos administradores da sua rede
+e perguntar o seguinte:
+<ul>
+<li>
+Endereço IP de sua máquina
+</li>
+<li>
+Endereço IP da rede
+</li>
+<li>
+Endereço IP de broadcast
+</li>
+<li>
+Máscara da Rede IP
+</li>
+<li>
+Endereço do Roteador
+</li>
+<li>
+Endereço do Servidor de Nomes (DNS)
+</li>
+</ul>
+
+<p>
+Você deve então configurar seu dispositivo de rede <code>GNU/Linux</code> com
+estes detalhes.  Você não pode simplesmente escolhe-los e esperar que sua
+configuração funcione.
+
+<hr>
+
+<a name="s-rede-ip-privada"></a>
+<h3>4.3.4 Endereços reservados para uso em uma rede Privada</h3>
+
+<p>
+Se você estiver construindo uma rede privada que nunca será conectada a
+Internet, então você pode escolher qualquer endereço que quiser.  No entanto,
+para sua segurança e padronização, existem alguns endereços IP's que foram
+reservados especificamente para este propósito.  Eles estão especificados no
+RFC1597 e são os seguintes:
+
+<pre>
+     +---------------------------------------------------------+
+     |       ENDEREÇOS RESERVADOS PARA REDES PRIVADAS          |
+     +---------------------------------------------------------+
+     | Classe  | Máscara de    | Endereço da Rede              |
+     | de Rede | Rede          |                               |
+     +---------+---------------+-------------------------------+
+     |    A    | 255.0.0.0     | 10.0.0.0    - 10.255.255.255  |
+     |    B    | 255.255.0.0   | 172.16.0.0  - 172.31.255.255  |
+     |    C    | 255.255.255.0 | 192.168.0.0 - 192.168.255.255 |
+     +---------------------------------------------------------+
+</pre>
+
+<p>
+Você deve decidir primeiro qual será a largura de sua rede e então escolher a
+classe de rede que será usada.
+
+<hr>
+
+<a name="s-rede-interfaces"></a>
+<h2>4.4 Interface de rede</h2>
+
+<p>
+As interfaces de rede no <code>GNU/Linux</code> estão localizadas no diretório
+<code>/dev</code> e a maioria é criada dinamicamente pelos softwares quando são
+requisitadas.  Este é o caso das interfaces <samp>ppp</samp> e
+<samp>plip</samp> que são criadas dinamicamente pelos softwares.
+
+<p>
+Abaixo a identificação de algumas interfaces de rede no Linux (a <samp>?</samp>
+significa um número que identifica as interfaces seqüencialmente, iniciando em
+0):
+<ul>
+<li>
+<code>eth?</code> - Placa de rede Ethernet e WaveLan.
+</li>
+<li>
+<code>ppp?</code> - Interface de rede PPP (protocolo ponto a ponto).
+</li>
+<li>
+<code>slip?</code> - Interface de rede serial
+</li>
+<li>
+<code>eql</code> - Balanceador de tráfego para múltiplas linhas
+</li>
+<li>
+<code>plip?</code> - Interface de porta paralela
+</li>
+<li>
+<code>arc?e, arc?s</code> - Interfaces Arcnet
+</li>
+<li>
+<code>sl?, ax?</code> - Interfaces de rede AX25 (respectivamente para kernels
+2.0.xx e 2.2.xx.
+</li>
+<li>
+<code>fddi?</code> - Interfaces de rede FDDI.
+</li>
+<li>
+<code>dlci??, sdla?</code> - Interfaces Frame Relay, respectivamente para para
+dispositivos de encapsulamento DLCI e FRAD.
+</li>
+<li>
+<code>nr?</code> - Interface Net Rom
+</li>
+<li>
+<code>rs?</code> - Interfaces Rose
+</li>
+<li>
+<code>st?</code> - Interfaces Strip (Starmode Radio IP)
+</li>
+<li>
+<code>tr?</code> - Token Ring
+</li>
+</ul>
+
+<p>
+Para maiores detalhes sobre as interfaces acima, consulte o documento
+<em>NET3-4-HOWTO</em>.
+
+<hr>
+
+<a name="s-rede-interfaces-lo"></a>
+<h3>4.4.1 A interface loopback</h3>
+
+<p>
+A interface <em>loopback</em> é um tipo especial de interface que permite fazer
+conexões com você mesmo.  Todos os computadores que usam o protocolo TCP/IP
+utilizam esta interface e existem várias razões porque precisa fazer isto, por
+exemplo, você pode testar vários programas de rede sem interferir com ninguém
+em sua rede.  Por convenção, o endereço IP 127.0.0.1 foi escolhido
+especificamente para a loopback, assim se abrir uma conexão telnet para
+127.0.0.1, abrirá uma conexão para o próprio computador local.
+
+<p>
+A configuração da interface loopback é simples e você deve ter certeza que fez
+isto (mas note que esta tarefa é normalmente feita pelos scripts padrões de
+inicialização existentes em sua distribuição).
+
+<pre>
+     ifconfig lo 127.0.0.1
+</pre>
+
+<p>
+Caso a interface loopback não esteja configurada, você poderá ter problemas
+quando tentar qualquer tipo de conexão com as interfaces locais, tendo
+problemas até mesmo com o comando <code>ping</code>.
+
+<hr>
+
+<a name="s-rede-interfaces-c"></a>
+<h3>4.4.2 Atribuindo um endereço de rede a uma interface (ifconfig)</h3>
+
+<p>
+Após configurada fisicamente, a interface precisa receber um endereço IP para
+ser identificada na rede e se comunicar com outros computadores, além de outros
+parâmetros como o endereço de <em>broadcast</em> e a <em>máscara de rede</em>.
+O comando usado para fazer isso é o <code>ifconfig</code> (interface
+configure).
+
+<p>
+Para configurar a interface de rede Ethernet (<code>eth0</code>) com o endereço
+192.168.1.1, máscara de rede 255.255.255.0, podemos usar o comando:
+
+<pre>
+     ifconfig eth0 192.168.1.1 netmask 255.255.255.0 up
+</pre>
+
+<p>
+O comando acima ativa a interface de rede.  A palavra <samp>up</samp> pode ser
+omitida, pois a ativação da interface de rede é o padrão.  Para desativar a
+mesma interface de rede, basta usar usar o comando:
+
+<pre>
+     ifconfig eth0 down
+</pre>
+
+<p>
+Digitando <samp>ifconfig</samp> são mostradas todas as interfaces ativas no
+momento, pacotes enviados, recebidos e colisões de datagramas.  Para mostrar a
+configuração somente da interface eth0, use o comando: <samp>ifconfig
+eth0</samp> Em sistemas <code>Debian</code>, o arquivo correto para especificar
+os dados das interfaces é o <code>/etc/network/interfaces</code> .
+
+<p>
+Para mais detalhes, veja a página de manual do <code>ifconfig</code> ou o
+<em>NET3-4-HOWTO</em>.
+
+<hr>
+
+<a name="s-rede-rota"></a>
+<h2>4.5 Roteamento</h2>
+
+<p>
+Roteamento é quando uma máquina com múltiplas conexões de rede decide onde
+entregar os pacotes IP que recebeu, para que cheguem ao seu destino.
+
+<p>
+Pode ser útil ilustrar isto com um exemplo.  Imagine um simples roteador de
+escritório, ele pode ter um link intermitente com a Internet, um número de
+segmentos ethernet alimentando as estações de trabalho e outro link PPP
+intermitente fora de outro escritório.  Quando o roteador recebe um datagrama
+de qualquer de suas conexões de rede, o mecanismo que usa determina qual a
+próxima interface deve enviar o datagrama.  Computadores simples também
+precisam rotear, todos os computadores na Internet tem dois dispositivos de
+rede, um é a interface <em>loopback</em> (explicada acima) o outro é um usado
+para falar com o resto da rede, talvez uma ethernet, talvez uma interface
+serial PPP ou SLIP.
+
+<p>
+OK, viu como o roteamento funciona?  cada computador mantém uma lista de regras
+especiais de roteamento, chamada <em>tabela de roteamento</em>.  Esta tabela
+contém colunas que tipicamente contém no mínimo três campos, o primeiro é o
+<em>endereço de destino</em>, o segundo é o <em>nome da interface</em> que o
+datagrama deve ser roteado e o terceiro é opcionalmente o <em>endereço IP</em>
+da outra máquina que levará o datagrama em seu próximo passo através da rede.
+No <code>GNU/Linux</code> você pode ver a tabela de roteamento usando um dos
+seguintes comandos:
+
+<pre>
+     cat /proc/net/route
+     route -n
+     netstat -r
+</pre>
+
+<p>
+O processo de roteamento é muito simples: um datagrama (pacote IP) é recebido,
+o endereço de destino (para quem ele é) é examinado e comparado com cada item
+da tabela de roteamento.  O item que mais corresponder com o endereço é
+selecionado e o datagrama é direcionado a interface especificada.
+
+<p>
+Se o campo <em>gateway</em> estiver preenchido, então o datagrama é direcionado
+para aquele computador pela interface especificada, caso contrário o endereço
+de destino é assumido sendo uma rede suportada pela interface.
+
+<hr>
+
+<a name="s-rede-rota-c"></a>
+<h3>4.5.1 Configurando uma rota no Linux</h3>
+
+<p>
+A configuração da rota é feita através da ferramenta <code>route</code>.  Para
+adicionar uma rota para a rede 192.168.1.0 acessível através da interface eth0
+basta digitar o comando:
+
+<pre>
+     route add -net 192.168.1.0 eth0
+</pre>
+
+<p>
+Para apagar a rota acima da <em>tabela de roteamento</em>, basta substituir a
+palavra <samp>add</samp> por <samp>del</samp>.  A palavra <samp>net</samp> quer
+dizer que 192.168.1.0 é um endereço de rede (lembra-se das explicações em <a
+href="#s-rede-ip">Endereço IP, Seção 4.3</a>?)) para especificar uma máquina de
+destino, basta usar a palavra <samp>-host</samp>.  Endereços de máquina de
+destino são muito usadas em conexões de rede apenas entre dois pontos (como
+ppp, plip, slip).  Por padrão, a interface é especificada como último
+argumento.  Caso a interface precise especifica-la em outro lugar, ela deverá
+ser precedida da opção <samp>-dev</samp>.
+
+<p>
+Para adicionar uma rota padrão para um endereço que não se encontre na tabela
+de roteamento, utiliza-se o <em>gateway padrão da rede</em>.  Através do
+gateway padrão é possível especificar um computador (normalmente outro gateway)
+que os pacotes de rede serão enviados caso o endereço não confira com os da
+tabela de roteamento.  Para especificar o computador 192.168.1.1 como
+<em>gateway padrão</em> usamos:
+
+<pre>
+     route add default gw 192.168.1.1 eth0
+</pre>
+
+<p>
+O <em>gateway padrão</em> pode ser visualizado através do comando <samp>route
+-n</samp> e verificando o campo <samp>gateway</samp>.  A opção <samp>gw</samp>
+acima, especifica que o próximo argumento é um endereço IP (de uma rede já
+acessível através das tabelas de roteamento).
+
+<p>
+O computador <em>gateway</em> está conectado a duas ou mais redes ao mesmo
+tempo.  Quando seus dados precisam ser enviados para computadores fora da rede,
+eles são enviados através do computador <em>gateway</em> e o <em>gateway</em>
+os encaminham ao endereço de destino.  Desta forma, a resposta do servidor
+também é enviada através do <em>gateway</em> para seu computador (é o caso de
+uma típica conexão com a Internet).
+
+<p>
+A nossa configuração ficaria assim:
+
+<pre>
+     route add -net 192.168.1.0 eth0
+     route add default gw 192.168.1.1 eth0
+</pre>
+
+<p>
+Para mais detalhes, veja a página de manual do <code>route</code> ou o
+<em>NET3-4-HOWTO</em>.
+
+<hr>
+
+<a name="s-rede-dns"></a>
+<h2>4.6 Resolvedor de nomes (DNS)</h2>
+
+<p>
+<em>DNS</em> significa Domain Name System (sistema de nomes de domínio).  O
+<em>DNS</em> converte os nomes de máquinas para endereços IPs que todas as
+máquinas da Internet possuem.  Ele faz o mapeamento do nome para o endereço e
+do endereço para o nome e algumas outras coisas.  Um mapeamento é simplesmente
+uma associação entre duas coisas, neste caso um nome de computador, como
+www.cipsga.org.br, e o endereço IP desta máquina (ou endereços) como
+200.245.157.9.
+
+<p>
+O <em>DNS</em> foi criado com o objetivo de tornar as coisas mais fáceis para o
+usuário, permitindo assim, a identificação de computadores na Internet ou redes
+locais através de nomes (é como se tivéssemos apenas que decorar o nome da
+pessoa ao invés de um número de telefone).  A parte responsável por traduzir os
+nomes como <samp>www.nome.com.br</samp> em um endereço IP é chamada de
+<em>resolvedor de nomes</em>.
+
+<p>
+O <em>resolvedor de nomes</em> pode ser um banco de dados local (controlador
+por um arquivo ou programa) que converte automaticamente os nomes em endereços
+IP ou através de <em>servidores DNS</em> que fazem a busca em um banco de dados
+na Internet e retornam o endereço IP do computador desejado.  Um servidor DNS
+mais difundido na Internet é o <code>bind</code>.
+
+<p>
+Através do DNS é necessário apenas decorar o endereço sem precisar se preocupar
+com o endereço IP (alguns usuários simplesmente não sabem que isto existe...).
+Se desejar mais detalhes sobre <em>DNS</em>, veja o documento DNS-HOWTO.
+
+<hr>
+
+<a name="s-rede-dns-oque"></a>
+<h3>4.6.1 O que é um nome?</h3>
+
+<p>
+Você deve estar acostumado com o uso dos nomes de computadores na Internet, mas
+pode não entender como eles são organizados.  Os nomes de domínio na Internet
+são uma estrutura hierárquica, ou seja, eles tem uma estrutura semelhante aos
+diretórios de seu sistema.
+
+<p>
+Um <em>domínio</em> é uma família ou grupo de nomes.  Um domínio pode ser
+colocado em um <em>sub-domínio</em>.  Um <em>domínio principal</em> é um
+domínio que não é um sub-domínio.  Os domínios principais são especificados na
+RFC-920.  Alguns exemplos de domínios principais comuns são:
+<ul>
+<li>
+<samp>COM</samp> - Organizações Comerciais
+</li>
+<li>
+<samp>EDU</samp> - Organizações Educacionais
+</li>
+<li>
+<samp>GOV</samp> - Organizações Governamentais
+</li>
+<li>
+<samp>MIL</samp> - Organizações Militares
+</li>
+<li>
+<samp>ORG</samp> - Outras Organizações
+</li>
+<li>
+<samp>NET</samp> - Organizações relacionadas com a Internet
+</li>
+<li>
+<samp>Identificador do País</samp> - São duas letras que representam um país em
+particular.
+</li>
+</ul>
+
+<p>
+Cada um dos domínios principais tem sub-domínios.  Os domínios principais
+baseados no nome do país são freqüentemente divididos em sub-domínios baseado
+nos domínios <samp>.com</samp>, <samp>.edu</samp>, <samp>.gov</samp>,
+<samp>.mil</samp> e <samp>.org</samp>.  Assim, por exemplo, você pode
+finaliza-lo com: <samp>com.au</samp> e <samp>gov.au</samp> para organizações
+comerciais e governamentais na Austrália; note que isto não é uma regra geral,
+as organizações de domínio atuais dependem da autoridade na escolha de nomes de
+cada domínio.  Quando o endereço não especifica o domínio principal, como o
+endereço <samp>www.unicamp.br</samp>, isto quer dizer que é uma organização
+acadêmica.
+
+<p>
+O próximo nível da divisão representa o nome da organização.  Subdomínios
+futuros variam em natureza, freqüentemente o próximo nível do sub-domínio é
+baseado na estrutura departamental da organização mas ela pode ser baseada em
+qualquer critério considerado razoável e significantes pelos administradores de
+rede para a organização.
+
+<p>
+A porção mais a esquerda do nome é sempre o nome único da máquina chamado
+<em>hostname</em>, a porção do nome a direita do hostname é chamado <em>nome de
+domínio</em> e o nome completo é chamado <em>nome do domínio completamente
+qualificado</em> (<em>Fully Qualified Domain Name</em>).
+
+<p>
+Usando o computador <samp>www.debian.org.br</samp> como exemplo:
+<ul>
+<li>
+<samp>br</samp> - País onde o computador se encontra
+</li>
+<li>
+<samp>org</samp> - Domínio principal
+</li>
+<li>
+<samp>debian</samp> - Nome de Domínio
+</li>
+<li>
+<samp>www</samp> - Nome do computador
+</li>
+</ul>
+
+<p>
+A localização do computador <samp>www.debian.org.br</samp> através de
+servidores DNS na Internet obedece exatamente a seqüência de procura acima.  Os
+administradores do domínio <samp>debian.org.br</samp> podem cadastrar quantos
+sub-domínios e computadores quiserem (como
+<samp>www.non-us.debian.org.br</samp> ou <samp>cvs.debian.org.br</samp>).
+
+<hr>
+
+<a name="s-rede-dns-a"></a>
+<h3>4.6.2 Arquivos de configuração usados na resolução de nomes</h3>
+
+<p>
+Abaixo a descrição dos arquivos usados no processo de resolver um nome no
+sistema <code>GNU/Linux</code>.
+
+<hr>
+
+<a name="s-rede-dns-a-resolv"></a>
+<h4>4.6.2.1 /etc/resolv.conf</h4>
+
+<p>
+O <code>/etc/resolv.conf</code> é o arquivo de configuração principal do código
+do resolvedor de nomes.  Seu formato é um arquivo texto simples com um
+parâmetro por linha e o endereço de servidores DNS externos são especificados
+nele.  Existem três palavras chaves normalmente usadas que são:
+<dl>
+<dt>domain</dt>
+<dd>
+Especifica o nome do domínio local.
+</dd>
+<dt>search</dt>
+<dd>
+Especifica uma lista de nomes de domínio alternativos ao procurar por um
+computador, separados por espaços.  A linha search pode conter no máximo 6
+domínios ou 256 caracteres.
+</dd>
+<dt>nameserver</dt>
+<dd>
+Especifica o endereço IP de um servidor de nomes de domínio para resolução de
+nomes.  Pode ser usado várias vezes.
+</dd>
+</dl>
+
+<p>
+Como exemplo, o <code>/etc/resolv.conf</code> se parece com isto:
+
+<pre>
+     domain maths.wu.edu.au
+     search maths.wu.edu.au wu.edu.au
+     nameserver 192.168.10.1
+     nameserver 192.168.12.1
+</pre>
+
+<p>
+Este exemplo especifica que o nome de domínio a adicionar ao nome não
+qualificado (i.e.  hostnames sem o domínio) é <samp>maths.wu.edu.au</samp> e
+que se o computador não for encontrado naquele domínio então a procura segue
+para o domínio <samp>wu.edu.au</samp> diretamente.  Duas linhas de nomes de
+servidores foram especificadas, cada uma pode ser chamada pelo código
+resolvedor de nomes para resolver o nome.
+
+<hr>
+
+<a name="s-rede-dns-a-hostconf"></a>
+<h4>4.6.2.2 /etc/host.conf</h4>
+
+<p>
+O arquivo <code>/etc/host.conf</code> é o local onde é possível configurar
+alguns ítens que gerenciam o código do resolvedor de nomes.  O formato deste
+arquivo é descrito em detalhes na página de manual resolv+.  Em quase todas as
+situações, o exemplo seguinte funcionará:
+
+<pre>
+     order hosts,bind
+     multi on
+</pre>
+
+<p>
+Este arquivo de configuração diz ao resolvedor de nomes para checar o arquivo
+<code>/etc/hosts</code> (parâmetro <samp>hosts</samp>) antes de tentar
+verificar um <em>servidor de nomes</em> (parâmetro <samp>bind</samp>) e
+retornar um endereço IP válido para o computador procurado e <em>multi on</em>
+retornará todos os endereços IP resolvidos no arquivo <code>/etc/hosts</code>
+ao invés do primeiro.
+
+<p>
+Os seguintes parâmetros podem ser adicionados para evitar ataques de IP
+spoofing:
+
+<pre>
+     nospoof on
+     spoofalert on
+</pre>
+
+<p>
+O parâmetro <em>nospoof on</em> ativa a resolução reversa do nome da biblioteca
+resolv (para checar se o endereço pertence realmente àquele nome) e o
+<em>spoofalert on</em> registra falhas desta operação no <code>syslog</code>.
+
+<hr>
+
+<a name="s-rede-dns-a-hosts"></a>
+<h4>4.6.2.3 /etc/hosts</h4>
+
+<p>
+O arquivo <code>/etc/hosts</code> faz o relacionamento entre um nome de
+computador e endereço IP local.  Recomendado para IPs constantemente acessados
+e para colocação de endereços de virtual hosts (quando deseja referir pelo nome
+ao invés de IP).  A inclusão de um computador neste arquivo dispenda a consulta
+de um servidor de nomes para obter um endereço IP, sendo muito útil para
+máquinas que são acessadas frequentemente.  A desvantagem de fazer isto é que
+você mesmo precisará manter este arquivo atualizado e se o endereço IP de algum
+computador for modificado, esta alteração deverá ser feita em cada um dos
+arquivos <code>hosts</code> das máquinas da rede.  Em um sistema bem
+gerenciado, os únicos endereços de computadores que aparecerão neste arquivo
+serão da interface loopback e os nomes de computadores.
+
+<pre>
+     # /etc/hosts
+     127.0.0.1      localhost loopback
+     192.168.0.1    maquina.dominio.com.br
+</pre>
+
+<p>
+Você pode especificar mais que um nome de computador por linha como demonstrada
+pela primeira linha, a que identifica a interface loopback.  Certifique-se de
+que a entrada do nome de domínio neste arquivo aponta para a interface de rede
+e não para a interface loopback, ou terá problema com o comportamento de alguns
+serviços.
+
+<p>
+<strong>OBS:</strong> Caso encontre problemas de lentidão para resolver nomes e
+até para executar os aplicativos (como o <code>mc</code>, etc), verifique se
+existem erros neste arquivo de configuração.
+
+<p>
+Estes sintomas se confundem com erros de memória ou outro erro qualquer de
+configuração de hardware, e somem quando a interface de rede é desativada (a
+com o IP não loopback).  Isto é causados somente pela má configuração do
+arquivo <code>/etc/hosts</code>.  O bom funcionamento do <code>Unix</code>
+depende da boa atenção do administrador de sistemas para configurar os detalhes
+de seu servidor.
+
+<hr>
+
+<a name="s-rede-dns-a-networks"></a>
+<h4>4.6.2.4 /etc/networks</h4>
+
+<p>
+O arquivo <code>/etc/networks</code> tem uma função similar ao arquivo
+<code>/etc/hosts</code>.  Ele contém um banco de dados simples de nomes de
+redes contra endereços de redes.  Seu formato se difere por dois campos por
+linha e seus campos são identificados como:
+
+<pre>
+      Nome_da_Rede      Endereço_da_Rede
+</pre>
+
+<p>
+Abaixo um exemplo de como se parece este arquivo:
+
+<pre>
+     loopnet    127.0.0.0
+     localnet   192.168.1.0
+     amprnet    44.0.0.0
+</pre>
+
+<p>
+Quando usar comandos como <samp>route</samp>, se um destino é uma rede e esta
+rede se encontra no arquivo <code>/etc/networks</code>, então o comando
+<samp>route</samp> mostrará o <em>nome da rede</em> ao invés de seu endereço.
+
+<hr>
+
+<a name="s-rede-dns-servdns"></a>
+<h3>4.6.3 Executando um servidor de nomes</h3>
+
+<p>
+Se você planeja executar um servidor de nomes, você pode fazer isto facilmente.
+Por favor veja o documento <samp>DNS-HOWTO</samp> e quaisquer documentos
+incluídos em sua versão do BIND (Berkeley Internet Name Domain).
+
+<hr>
+
+<a name="s-rede-servicos"></a>
+<h2>4.7 Serviços de Rede</h2>
+
+<p>
+<em>Serviços de rede</em> é o que está disponível para ser acessado pelo
+usuário.  No TCP/IP, cada serviço é associado a um número chamado
+<em>porta</em> que é onde o servidor espera pelas conexões dos computadores
+clientes.  Uma porta de rede pode se referenciada tanto pelo número como pelo
+nome do serviço.
+
+<p>
+Abaixo, alguns exemplos de portas padrões usadas em serviços TCP/IP:
+<ul>
+<li>
+<samp>21</samp> - FTP (transferência de arquivos)
+</li>
+<li>
+<samp>23</samp> - Telnet (terminal virtual remoto)
+</li>
+<li>
+<samp>25</samp> - Smtp (envio de e-mails)
+</li>
+<li>
+<samp>53</samp> - DNS (resolvedor de nomes)
+</li>
+<li>
+<samp>79</samp> - Finger (detalhes sobre usuários do sistema)
+</li>
+<li>
+<samp>80</samp> - http (protocolo www - transferência de páginas Internet)
+</li>
+<li>
+<samp>110</samp> - Pop-3 (recebimento de mensagens)
+</li>
+<li>
+<samp>119</samp> - NNTP (usado por programas de noticias)
+</li>
+</ul>
+
+<p>
+O arquivo padrão responsável pelo mapeamento do nome dos serviços e das portas
+mais utilizadas é o <code>/etc/services</code> (para detalhes sobre o seu
+formato, veja a <a href="#s-rede-outros-services">/etc/services, Seção
+4.9.1</a>).
+
+<hr>
+
+<a name="s-rede-servicos-daemon"></a>
+<h3>4.7.1 Serviços iniciados como Daemons de rede</h3>
+
+<p>
+Serviços de rede iniciados como <em>daemons</em> ficam residente o tempo todo
+na memória <samp>esperando</samp> que alguém se conecte (também chamado de
+<em>modo standalone</em>).  Um exemplo de <em>daemon</em> é o servidor proxy
+<code>squid</code> e o servidor web <code>Apache</code> operando no modo
+<em>daemon</em>.
+
+<p>
+Alguns programas servidores oferecem a opção de serem executados como
+<em>daemons</em> ou através do <em>inetd</em>.  É recomendável escolher
+<em>daemon</em> se o serviço for solicitado freqüentemente (como é o caso dos
+servidores web ou proxy).
+
+<p>
+Para verificar se um programa está rodando como <em>daemon</em>, basta digitar
+<samp>ps ax</samp> e procurar o nome do programa, em caso positivo ele é um
+<em>daemon</em>.
+
+<p>
+Normalmente os programas que são iniciados como daemons possuem seus próprios
+recursos de segurança/autenticação para decidir quem tem ou não permissão de se
+conectar.
+
+<hr>
+
+<a name="s-rede-servicos-inetd"></a>
+<h3>4.7.2 Serviços iniciados através do inetd</h3>
+
+<p>
+Serviços iniciados pelo <em>inetd</em> são carregados para a memória somente
+quando são solicitados.  O controle de quais serviços podem ser carregados e
+seus parâmetros, são feitos através do arquivo <code>/etc/inetd.conf</code>.
+
+<p>
+Um <em>daemon</em> chamado <samp>inetd</samp> lê as configurações deste arquivo
+e permanece residente na memória, esperando pela conexão dos clientes.  Quando
+uma conexão é solicitada, o daemon <em>inetd</em> verifica as permissões de
+acesso nos arquivos <code>/etc/hosts.allow</code> e
+<code>/etc/hosts.deny</code> e carrega o programa servidor correspondente no
+arquivo <code>/etc/inetd.conf</code>.  Um arquivo também importante neste
+processo é o <code>/etc/services</code> que faz o mapeamento das portas e nomes
+dos serviços.
+
+<p>
+Alguns programas servidores oferecem a opção de serem executados como
+<em>daemons</em> ou através do <em>inetd</em>.  É recomendável escolher
+<em>inetd</em> se o serviço não for solicitado freqüentemente (como é o caso de
+servidores <samp>ftp</samp>, <samp>telnet</samp>, <samp>talk</samp>, etc).
+
+<hr>
+
+<a name="s-rede-servicos-inetd-c"></a>
+<h4>4.7.2.1 /etc/inetd.conf</h4>
+
+<p>
+O arquivo <code>/etc/inetd.conf</code> é um arquivo de configuração para o
+daemon servidor <em>inetd</em>.  Sua função é dizer ao <code>inetd</code> o que
+fazer quando receber uma requisição de conexão para um serviço em particular.
+Para cada serviço que deseja aceitar conexões, você precisa dizer ao
+<em>inetd</em> qual daemon servidor executar e como executa-lo.
+
+<p>
+Seu formato é também muito simples.  É um arquivo texto com cada linha
+descrevendo um serviço que deseja oferecer.  Qualquer texto em uma linha
+seguindo uma &quot;#&quot; é ignorada e considerada um comentário.  Cada linha
+contém sete campos separados por qualquer número de espaços em branco (tab ou
+espaços).  O formato geral é o seguinte:
+
+<pre>
+     serviço  tipo_soquete  proto  opções.num  usuário  caminho_serv. opções_serv.
+</pre>
+
+<dl>
+<dt>serviço</dt>
+<dd>
+É o serviço relevante a este arquivo de configuração pego do arquivo
+<code>/etc/services</code>.
+</dd>
+<dt>tipo_soquete</dt>
+<dd>
+Este campo descreve o tipo do soquete que este item utilizará, valores
+permitidos são: <samp>stream</samp>, <samp>dgram</samp>, <samp>raw</samp>,
+<samp>rdm</samp>, ou <samp>seqpacket</samp>.  Isto é um pouco técnico de
+natureza, mas como uma regra geral, todos os serviços baseados em <em>tcp</em>
+usam <samp>stream</samp> e todos os protocolos baseados em <em>udp</em> usam
+<samp>dgram</samp>.  Somente alguns tipos de daemons especiais de servidores
+usam os outros valores.
+</dd>
+<dt>protocolo</dt>
+<dd>
+O protocolo é considerado válido para esta item.  Isto deve bater com um item
+apropriado no arquivo <code>/etc/services</code> e tipicamente será tcp ou udp.
+Servidores baseados no Sun RPC (<em>Remote Procedure Call</em>), utilizam
+rpc/tcp ou rpc/udp.
+</dd>
+<dt>opções</dt>
+<dd>
+Existem somente duas configurações para este campo.  A configuração deste campo
+diz ao <em>inetd</em> se o programa servidor de rede libera o soquete após ele
+ser iniciado e então se inetd pode iniciar outra cópia na próxima requisição de
+conexão, ou se o inetd deve aguardar e assumir que qualquer servidor já em
+execução pegará a nova requisição de conexão.
+<p>
+Este é um pequeno truque de trabalho, mas como uma regra, todos os servidores
+tcp devem ter este parâmetro ajustado para <em>nowait</em> e a maior parte dos
+servidores udp deve tê-lo ajustado para <em>wait</em>.  Foi alertado que
+existem algumas excessões a isto, assim deixo isto como exemplo se não estiver
+seguro.
+<p>
+O <em>número</em> especificado após o &quot;.&quot; é opcional e define a
+quantidade máxima de vezes que o serviço poderá ser executado durante 1 minuto.
+Se o serviço for executado mais vezes do que este valor, ele será
+automaticamente desativado pelo inetd e uma mensagem será mostrada no log do
+sistema avisando sobre o fato.
+<p>
+Para reativar o serviço interrompido, reinicie o <code>inetd</code> com:
+<samp>killall -HUP inetd</samp>.  O valor padrão é <samp>40</samp>.
+</dd>
+<dt>usuário</dt>
+<dd>
+Este campo descreve que conta de usuário usuário no arquivo
+<code>/etc/passwd</code> será escolhida como <em>dono</em> do daemon de rede
+quando este for iniciado.  Isto é muito útil se você deseja diminuir os riscos
+de segurança.  Você pode ajustar o usuário de qualquer item para o usuário
+<em>nobody</em>, assim se a segurança do servidor de redes é quebrada, a
+possibilidade de problemas é minimizada.  Normalmente este campo é ajustado
+para <em>root</em>, porque muitos servidores requerem privilégios de usuário
+root para funcionarem corretamente.
+</dd>
+<dt>caminho_servidor</dt>
+<dd>
+Este campo é o caminho para o programa servidor atual que será executado.
+</dd>
+<dt>argumentos_servidor</dt>
+<dd>
+Este campo inclui o resto da linha e é opcional.  Você pode colocar neste campo
+qualquer argumento da linha de comando que deseje passar para o daemon servidor
+quando for iniciado.
+</dd>
+</dl>
+
+<p>
+Uma dica que pode aumentar significativamente a segurança de seu sistema é
+comentar (colocar uma <samp>#</samp>no inicio da linha) os serviços que não
+serão utilizados.
+
+<p>
+Abaixo um modelo de arquivo <code>/etc/inetd.conf</code> usado em sistemas
+<code>Debian</code>:
+
+<pre>
+     # /etc/inetd.conf:  veja inetd(8) para mais detalhes.
+     #
+     # Banco de Dados de configurações do servidor Internet
+     #
+     #
+     # Linhas iniciando com &quot;#:LABEL:&quot; ou &quot;#&lt;off&gt;#&quot; não devem 
+     # ser alteradas a não ser que saiba o que está fazendo!
+     #
+     #
+     # Os pacotes devem modificar este arquivo usando update-inetd(8)
+     #
+     # &lt;nome_serviço&gt; &lt;tipo_soquete&gt; &lt;proto&gt; &lt;opções&gt; &lt;usuário&gt; &lt;caminho_servidor&gt; &lt;args&gt;
+     #
+     #:INTERNO: Serviços internos
+     #echo           stream  tcp nowait  root    internal
+     #echo           dgram   udp wait    root    internal
+     #chargen        stream  tcp nowait  root    internal
+     #chargen        dgram   udp wait    root    internal
+     #discard        stream  tcp nowait  root    internal
+     #discard        dgram   udp wait    root    internal
+     #daytime        stream  tcp nowait  root    internal
+     #daytime        dgram   udp wait    root    internal
+     time		stream	tcp nowait  root    internal
+     #time		dgram	udp wait    root    internal
+     
+     #:PADRÕES: Estes são serviços padrões.
+     
+     #:BSD: Shell, login, exec e talk são protocolos BSD.
+     #shell          stream  tcp nowait  root     /usr/sbin/tcpd  /usr/sbin/in.rshd
+     #login          stream  tcp nowait  root     /usr/sbin/tcpd  /usr/sbin/in.rlogind
+     #exec           stream  tcp nowait  root     /usr/sbin/tcpd  /usr/sbin/in.rexecd
+     talk            dgram   udp wait.10    nobody.tty  /usr/sbin/tcpd  /usr/sbin/in.talkd
+     ntalk           dgram   udp wait.10    nobody.tty  /usr/sbin/tcpd  /usr/sbin/in.ntalkd
+     
+     #:MAIL: Mail, news e serviços uucp.
+     smtp		stream	tcp	nowait.60	mail	/usr/sbin/exim exim -bs
+     
+     #:INFO: Serviços informativos
+     
+     #:BOOT: O serviço Tftp é oferecido primariamente para a inicialização. Alguns sites
+     # o executam somente em máquinas atuando como &quot;servidores de inicialização&quot;.
+     
+     #:RPC: Serviços baseados em RPC
+     
+     #:HAM-RADIO: serviços de rádio amador
+     
+     #:OTHER: Outros serviços
+</pre>
+
+<hr>
+
+<a name="s-rede-seg"></a>
+<h2>4.8 Segurança da Rede e controle de Acesso</h2>
+
+<p>
+Deixe-me iniciar esta seção lhe alertando que a segurança da rede em sua
+máquina e ataques maliciosos são uma arte complexa.  Uma regra importante é:
+&quot;Não ofereça serviços de rede que não deseja utilizar&quot;.
+
+<p>
+Muitas distribuições vem configuradas com vários tipos de serviços que são
+iniciados automaticamente.  Para melhorar, mesmo que insignificantemente, o
+nível de segurança em seu sistema você deve editar se arquivo
+<code>/etc/inetd.conf</code> e comentar (colocar uma &quot;#&quot;) as linhas
+que contém serviços que não utiliza.
+
+<p>
+Bons candidatos são serviços tais como: <samp>shell</samp>, <samp>login</samp>,
+<samp>exec</samp>, <samp>uucp</samp>, <samp>ftp</samp> e serviços de informação
+tais como <samp>finger</samp>, <samp>netstat</samp> e <samp>sysstat</samp>.
+
+<p>
+Existem todos os tipos de mecanismos de segurança e controle de acesso, eu
+descreverei os mais importantes deles.
+
+<hr>
+
+<a name="s-rede-seg-ftpusers"></a>
+<h3>4.8.1 /etc/ftpusers</h3>
+
+<p>
+O arquivo <code>/etc/ftpusers</code> é um mecanismo simples que lhe permite
+bloquear a conexão de certos usuários via <em>ftp</em>.  O arquivo
+<code>/etc/ftpusers</code> é lido pelo programa daemon ftp (<em>ftpd</em>)
+quando um pedido de conexão é recebido.  O arquivo é uma lista simples de
+usuários que não tem permissão de se conectar.  Ele se parece com:
+
+<pre>
+     # /etc/ftpusers - login de usuários bloqueados via ftp
+     root
+     uucp
+     bin
+     mail
+</pre>
+
+<hr>
+
+<a name="s-rede-seg-securetty"></a>
+<h3>4.8.2 /etc/securetty</h3>
+
+<p>
+O arquivo <code>/etc/securetty</code> lhe permite especificar que dispositivos
+<code>tty</code> que o usuário <em>root</em> pode se conectar.  O arquivo
+/etc/securetty é lido pelo programa login (normalmente
+<code>/bin/login</code>).  Seu formato é uma lista de dispositivos
+<code>tty</code> onde a conexão é permitida, em todos os outros, a entrada do
+usuário <em>root</em> é bloqueada.
+
+<pre>
+     # /etc/securetty - terminais que o usuário root pode se conectar
+     tty1
+     tty2
+     tty3
+     tty4
+</pre>
+
+<hr>
+
+<a name="s-rede-seg-tcpd"></a>
+<h3>4.8.3 O mecanismo de controle de acessos tcpd</h3>
+
+<p>
+O programa <code>tcpd</code> que você deve ter visto listado no mesmo arquivo
+<code>/etc/inetd.conf</code>, oferece mecanismos de registro e controle de
+acesso para os serviços que esta configurado para proteger.  Ele é um tipo de
+firewall simples e fácil de configurar que pode evitar tipos indesejados de
+ataques e registrar possíveis tentativas de invasão.
+
+<p>
+Quando é executado pelo programa inetd, ele lê dos arquivos contendo regras de
+acesso e permite ou bloqueia o acesso ao servidor protegendo adequadamente.
+
+<p>
+Ele procura nos arquivos de regras até que uma regra confira.  Se nenhuma regra
+conferir, então ele assume que o acesso deve ser permitido a qualquer um.  Os
+arquivos que ele procura em seqüência são: <code>/etc/hosts.allow</code> e
+<code>/etc/hosts.deny</code>.  Eu descreverei cada um destes arquivos
+separadamente.
+
+<p>
+Para uma descrição completa desta facilidade, você deve verificar a página de
+manual apropriada (hosts_access (5) é um bom ponto de partida).
+
+<hr>
+
+<a name="s-rede-seg-tcpd-a"></a>
+<h4>4.8.3.1 /etc/hosts.allow</h4>
+
+<p>
+O arquivo <code>/etc/hosts.allow</code> é um arquivo de configuração do
+programa <code>/usr/sbin/tcpd</code>.  O arquivo <code>hosts.allow</code>
+contém regras descrevendo que hosts tem permissão de acessar um serviço em sua
+máquina.
+
+<p>
+O formato do arquivo é muito simples:
+
+<pre>
+     # /etc/hosts.allow
+     #
+     # lista de serviços: lista de hosts : comando
+</pre>
+
+<dl>
+<dt>lista de serviços</dt>
+<dd>
+É uma lista de nomes de serviços separados por vírgula que esta regra se
+aplica.  Exemplos de nomes de serviços são: <samp>ftpd</samp>,
+<samp>telnetd</samp> e <samp>fingerd</samp>.
+</dd>
+<dt>lista de hosts</dt>
+<dd>
+É uma lista de nomes de hosts separada por vírgula.  Você também pode usar
+endereços IP's aqui.  Adicionalmente, você pode especificar nomes de
+computadores ou endereço IP usando caracteres coringas para atingir grupos de
+hosts.
+<p>
+Exemplos incluem: <samp>gw.vk2ktj.ampr.org</samp> para conferir com um endereço
+de computador específico, <samp>.uts.edu.au</samp> para atingir qualquer
+endereço de computador finalizando com aquele string.  Use 200.200.200.  para
+conferir com qualquer endereço IP iniciando com estes dígitos.  Existem alguns
+parâmetros especiais para simplificar a configuração, alguns destes são:
+<samp>ALL</samp> atinge todos endereços, <samp>LOCAL</samp> atinge qualquer
+computador que não contém um &quot;.&quot; (ie.  está no mesmo domínio de sua
+máquina) e <samp>PARANOID</samp> atinge qualquer computador que o nome não
+confere com seu endereço (falsificação de nome).  Existe também um último
+parâmetro que é também útil: o parâmetro <samp>EXCEPT</samp> lhe permite fazer
+uma lista de exceções.  Isto será coberto em um exemplo adiante.
+</dd>
+<dt>comando</dt>
+<dd>
+É um parâmetro opcional.  Este parâmetro é o caminho completo de um comando que
+deverá ser executado toda a vez que esta regra conferir.  Ele pode executar um
+comando para tentar identificar quem esta conectado pelo host remoto, ou gerar
+uma mensagem via E-Mail ou algum outro alerta para um administrador de rede que
+alguém está tentando se conectar.
+<p>
+Existem um número de expansões que podem ser incluídas, alguns exemplos comuns
+são: %h expande o endereço do computador que está conectado ou endereço se ele
+não possuir um nome, %d o nome do daemon sendo chamado.
+</dd>
+</dl>
+
+<p>
+Se o computador tiver permissão de acessar um serviço através do
+<code>/etc/hosts.allow</code>, então o <code>/etc/hosts.deny</code> não será
+consultado e o acesso será permitido.
+
+<p>
+Como exemplo:
+
+<pre>
+     # /etc/hosts.allow
+     #
+     # Permite que qualquer um envie e-mails
+     in.smtpd: ALL
+     # Permitir telnet e ftp somente para hosts locais e myhost.athome.org.au
+     in.telnetd, in.ftpd: LOCAL, myhost.athome.org.au
+     # Permitir finger para qualquer um mas manter um registro de quem é
+     in.fingerd: ALL: (finger @%h | mail -s &quot;finger from %h&quot; root)
+</pre>
+
+<p>
+Qualquer modificação no arquivo <code>/etc/hosts.allow</code> entrará em ação
+após reiniciar o daemon <em>inetd</em>.  Isto pode ser feito com o comando
+<samp>kill -HUP [pid do inetd]</samp>, o <samp>pid</samp> do <em>inetd</em>
+pode ser obtido com o comando <samp>ps ax|grep inetd</samp>.
+
+<hr>
+
+<a name="s-rede-seg-tcpd-d"></a>
+<h4>4.8.3.2 /etc/hosts.deny</h4>
+
+<p>
+O arquivo <code>/etc/hosts.deny</code> é um arquivo de configuração das regras
+descrevendo quais computadores não tem a permissão de acessar um serviço em sua
+máquina.
+
+<p>
+Um modelo simples deste arquivo se parece com isto:
+
+<pre>
+     # /etc/hosts.deny
+     #
+     # Bloqueia o acesso de computadores com endereços suspeitos
+     ALL: PARANOID
+     #
+     # Bloqueia todos os computadores
+     ALL: ALL
+</pre>
+
+<p>
+A entrada <samp>PARANOID</samp> é realmente redundante porque a outra entrada
+nega tudo.  Qualquer uma destas linhas pode fazer uma segurança padrão
+dependendo de seu requerimento em particular.
+
+<p>
+Tendo um padrão <em>ALL: ALL</em> no arquivo <em>/etc/hosts.deny</em> e então
+ativando especificamente os serviços e permitindo computadores que você deseja
+no arquivo <code>/etc/hosts.allow</code> é a configuração mais segura.
+
+<p>
+Qualquer modificação no arquivo <code>/etc/hosts.deny</code> entrará em ação
+após reiniciar o daemon <em>inetd</em>.  Isto pode ser feito com o comando
+<samp>kill -HUP [pid do inetd]</samp>, o <samp>pid</samp> do <em>inetd</em>
+pode ser obtido com o comando <samp>ps ax|grep inetd</samp>.
+
+<hr>
+
+<a name="s-rede-seg-tcpd-e"></a>
+<h4>4.8.3.3 /etc/hosts.equiv e /etc/shosts.equiv</h4>
+
+<p>
+O arquivo <code>/etc/hosts.equiv</code> é usado para garantir/bloquear certos
+computadores e usuários o direito de acesso aos serviços &quot;r*&quot; (rsh,
+rexec, rcp, etc) sem precisar fornecer uma senha.  O
+<code>/etc/shosts.equiv</code> é equivalente mas é lido somente pelo serviço
+ssh.  Esta função é útil em um ambiente seguro onde você controla todas as
+máquinas, mesmo assim isto é um perigo de segurança (veja nas observações).  O
+formato deste arquivo é o seguinte:
+
+<pre>
+     #Acesso  Máquina                   Usuário
+     -        maquina2.dominio.com.br   usuario2
+     -        maquina4.dominio.com.br   usuario2
+     +        maquina1.dominio.com.br   +@usuarios
+</pre>
+
+<p>
+O primeiro campo especifica se o acesso será permitido ou negado caso o segundo
+e terceiro campo confiram.  Por razões de segurança deve ser especificado o
+FQDN no caso de nomes de máquinas.  Grupos de rede podem ser especificados
+usando a sintaxe &quot;+@grupo&quot;.
+
+<p>
+Para aumentar a segurança, não use este mecanismo e encoraje seus usuários a
+também não usar o arquivo <code>.rhosts</code>.
+
+<p>
+<strong>ATENÇÃO</strong> O uso do sinal &quot;+&quot; sozinho significa
+permitir acesso livre a qualquer pessoa de qualquer lugar.  Se este mecanismo
+for mesmo necessário, tenha muita atenção na especificação de seus campos.
+
+<p>
+Evita também A TODO CUSTO uso de nomes de usuários (a não ser para negar o
+acesso), pois é fácil forjar o login, entrar no sistema tomar conta de
+processos (como por exemplo do servidor <code>Apache</code> rodando sob o
+usuário <samp>www-data</samp> ou até mesmo o <strong>root</strong>), causando
+enormes estragos.
+
+<hr>
+
+<a name="s-rede-seg-tcpd-v"></a>
+<h4>4.8.3.4 Verificando a segurança do TCPD e a sintaxe dos arquivos</h4>
+
+<p>
+O utilitário <code>tcpdchk</code> é útil para verificar problemas nos arquivos
+<code>hosts.allow</code> e <code>hosts.deny</code>.  Quando é executado ele
+verifica a sintaxe destes arquivos e relata problemas, caso eles existam.
+
+<p>
+Outro utilitário útil é o <code>tcpdmatch</code>, o que ele faz é permitir que
+você simule a tentativa de conexões ao seu sistema e observar ser ela será
+permitida ou bloqueada pelos arquivos <code>hosts.allow</code> e
+<code>hosts.deny</code>.
+
+<p>
+É importante mostrar na prática como o <code>tcpdmatch</code> funciona através
+de um exemplo simulando um teste simples em um sistema com a configuração
+padrão de acesso restrito:
+<ul>
+<li>
+O arquivo <code>hosts.allow</code> contém as seguintes linhas:
+
+<pre>
+     ALL: 127.0.0.1
+     in.talkd, in.ntalkd: ALL
+     in.fingerd: 192.168.1. EXCEPT 192.168.1.30
+</pre>
+
+<p>
+A primeira linha permite o loopback (127.0.0.1) acessar qualquer serviço
+TCP/UDP em nosso computador, a segunda linha permite qualquer um acessar os
+servidor TALK (nós desejamos que o sistema nos avise quando alguém desejar
+conversar) e a terceira somente permite enviar dados do <code>finger</code>
+para computadores dentro de nossa rede privada (exceto para 192.168.1.30).
+</li>
+</ul>
+<ul>
+<li>
+O arquivo <code>hosts.deny</code> contém a seguinte linha:
+
+<pre>
+     ALL: ALL
+</pre>
+
+<p>
+Qualquer outra conexão será explicitamente derrubada.
+</li>
+</ul>
+
+<p>
+Vamos aos testes, digitando: &quot;tcpdmatch in.fingerd 127.0.0.1&quot;
+(verificar se o endereço 127.0.0.1 tem acesso ao finger):
+
+<pre>
+     client:   address  127.0.0.1
+     server:   process  in.fingerd
+     matched:  /etc/hosts.allow line 1
+     access:   granted
+</pre>
+
+<p>
+Ok, temos acesso garantido com especificado pela linha 1 do
+<code>hosts.allow</code> (a primeira linha que confere é usada).  Agora
+&quot;tcpdmatch in.fingerd 192.168.1.29&quot;:
+
+<pre>
+     client:   address  192.168.1.29
+     server:   process  in.fingerd
+     matched:  /etc/hosts.allow line 3
+     access:   granted
+</pre>
+
+<p>
+O acesso foi permitido através da linha 3 do <code>hosts.allow</code>.  Agora
+&quot;tcpdmatch in.fingerd 192.168.1.29&quot;:
+
+<pre>
+     client:   address  192.168.1.30
+     server:   process  in.fingerd
+     matched:  /etc/hosts.deny line 1
+     access:   denied
+</pre>
+
+<p>
+O que aconteceu?  como a linha 2 do <code>hosts.allow</code> permite o acesso a
+todos os computadores 192.168.1.* exceto 192.168.1.30, ela não bateu, então o
+processamento partiu para o <code>hosts.deny</code> que nega todos os serviços
+para qualquer endereço.  Agora um último exemplo: &quot;tcpdmatch in.talkd
+www.debian.org&quot;
+
+<pre>
+     client:   address  www.debian.org
+     server:   process  in.talkd
+     matched:  /etc/hosts.allow line 2
+     access:   granted
+</pre>
+
+<p>
+Ok, na linha 2 qualquer computador pode te chamar para conversar via talk na
+rede, mas para o endereço DNS conferir com um IP especificado, o
+<code>GNU/Linux</code> faz a resolução DNS, convertendo o endereço para IP e
+verificando se ele possui acesso.
+
+<p>
+No lugar do endereço também pode ser usado a forma
+<samp>daemon@computador</samp> ou <samp>cliente@computador</samp> para
+verificar respectivamente o acesso de daemons e cliente de determinados
+computadores aos serviços da rede.
+
+<p>
+Como pode ver o TCPD ajuda a aumentar a segurança do seu sistema, mas não
+confie nele além do uso em um sistema simples, é necessário o uso de um
+firewall verdadeiro para controlar minuciosamente a segurança do seu sistema e
+dos pacotes que atravessam os protocolos, roteamento e as interfaces de rede.
+Se este for o caso aprenda a trabalhar a fundo com firewalls e implemente a
+segurança da sua rede da forma que melhor planejar.
+
+<hr>
+
+<a name="s-rede-seg-firewall"></a>
+<h3>4.8.4 Firewall</h3>
+
+<p>
+Dentre todos os métodos de segurança, o <em>Firewall</em> é o mais seguro.  A
+função do Firewall é bloquear determinados tipos de tráfego de um endereço ou
+para uma porta local ou permitir o acesso de determinados usuários mas bloquear
+outros, bloquear a falsificação de endereços, redirecionar tráfego da rede,
+ping da morte, etc.
+
+<p>
+A implementação de um bom firewall dependerá da experiência, conhecimentos de
+rede (protocolos, roteamento, interfaces, endereçamento, masquerade, etc), da
+rede local, e sistema em geral do Administrador de redes, a segurança de sua
+rede e seus dados dependem da escolha do profissional correto, que entenda a
+fundo o TCP/IP, roteamento, protocolos, serviços e outros assuntos ligados a
+rede.
+
+<p>
+Freqüentemente tem se ouvido falar de empresas que tiveram seus sistemas
+invadidos, em parte isto é devido a escolha do sistema operacional indevido mas
+na maioria das vezes o motivo é a falta de investimento da empresa em políticas
+de segurança, que algumas simplesmente consideram a segurança de seus dados e
+sigilo interno como uma <samp>despesa a mais</samp>.
+
+<p>
+Um bom firewall que recomendo é o <code>ipchains</code>, <code>Sinus</code> e o
+<code>TIS</code>.  Particularmente gosto muito de usar o <code>ipchains</code>
+e o <code>Sinus</code> e é possível fazer coisas inimagináveis programando
+scripts para interagirem com estes programas...
+
+<hr>
+
+<a name="s-rede-outros"></a>
+<h2>4.9 Outros arquivos de configuração relacionados com a rede</h2>
+
+<hr>
+
+<a name="s-rede-outros-services"></a>
+<h3>4.9.1 /etc/services</h3>
+
+<p>
+O arquivo <code>/etc/services</code> é um banco de dados simples que associa um
+nome amigável a humanos a uma porta de serviço amigável a máquinas.  É um
+arquivo texto de formato muito simples, cada linha representa um item no banco
+de dados.  Cada item é dividido em três campos separados por qualquer número de
+espaços em branco (tab ou espaços).  Os campos são:
+
+<pre>
+       nome      porta/protocolo        apelido     # comentário
+</pre>
+
+<dl>
+<dt>name</dt>
+<dd>
+Uma palavra simples que representa o nome do serviço sendo descrito.
+</dd>
+<dt>porta/protocolo</dt>
+<dd>
+Este campo é dividido em dois sub-campos.
+<ul>
+<li>
+<samp>porta</samp> - Um número que especifica o número da porta em que o
+serviço estará disponível.  Muitos dos serviços comuns tem designados um número
+de serviço.  Estes estão descritos no RFC-1340.
+</li>
+<li>
+<samp>protocolo</samp> - Este sub-campo pode ser ajustado para <em>tcp</em> ou
+<em>udp</em>.  É importante notar que o item <em>18/tcp</em> é muito diferente
+do item <em>18/udp</em> e que não existe razão técnica porque o mesmo serviço
+precisa existir em ambos.  Normalmente o senso comum prevalece e que somente se
+um serviço esta disponível em ambos os protocolos <em>tcp</em> e <em>udp</em>,
+você precisará especificar ambos.
+</li>
+</ul>
+</dd>
+<dt>apelidos</dt>
+<dd>
+Outros nomes podem ser usados para se referir a entrada deste serviço.
+</dd>
+<dt>comentário</dt>
+<dd>
+Qualquer texto aparecendo em uma linha após um caracter &quot;#&quot; é
+ignorado e tratado como comentário.
+</dd>
+</dl>
+
+<hr>
+
+<a name="s-rede-outros-protocols"></a>
+<h3>4.9.2 /etc/protocols</h3>
+
+<p>
+O arquivo <code>/etc/protocols</code> é um banco de dados que mapeia números de
+identificação de protocolos novamente em nomes de protocolos.  Isto é usado por
+programadores para permiti-los especificar protocolos por nomes em seus
+programas e também por alguns programas tal como <em>tcpdump</em> permitindo-os
+mostrar <em>nomes</em> ao invés de <em>números</em> em sua saída.  A sintaxe
+geral deste arquivo é:
+
+<pre>
+        nomeprotocolo  número  apelidos
+</pre>
+
+<hr>
+
+<a name="s-rede-camadas"></a>
+<h2>4.10 Camadas de Rede</h2>
+
+<p>
+São organizações do protocolo TCP/IP que visam organizar e simplificar seu
+padrão e implementação pelos desenvolvedores.
+<ul>
+<li>
+Um <em>padrão</em> TCP é o conjunto de regras que devem ser seguidas para
+garantir a homogeneidade da comunicação entre diversos sistemas de diversos
+fabricantes (por exemplo, <em>Mac</em> com <em>Windows</em>, <em>Windows</em>
+com <em>Linux</em>, etc.).
+</li>
+<li>
+A <em>implementação</em> é o código escrito por cada desenvolvedor para
+integração ao sistema operacional seguindo as regras do padrão para garantir a
+comunicação entre as máquinas, portanto, a <em>implementação</em> do protocolo
+TCP varia de fabricante para fabricante.
+</li>
+</ul>
+
+<p>
+Existem dois tipos de padrões TCP: <em>Darpa</em> e <em>OSI</em>.  O padrão
+<em>Darpa</em> é dividido em 4 camadas e ainda é o padrão atualmente utilizado.
+O padrão <em>OSI</em> é mais recente, dividido em 7 camadas, mas ainda não se
+tornou um padrão como o <em>Darpa</em>.
+
+<p>
+Segue abaixo os padrões e a descrição de cada uma das camadas:
+<dl>
+<dt><em>Darpa</em></dt>
+<dd>
+<ul>
+<li>
+<samp>Aplicação</samp> - <em>www</em>, <em>ftp</em>, <em>dns</em>, etc.  Fazem
+interface com as aplicações do sistema.
+</li>
+<li>
+<samp>Transporte</samp> - Protocolo <em>tcp</em> e <em>udp</em>.  Cuidam da
+parte de transporte dos dados do sistema.
+</li>
+<li>
+<samp>Rede</samp> - <em>IP</em>, <em>icmp</em>, <em>igmp</em>, <em>arp</em>.
+Cuida de levar o pacote para seu destino (rotas) e condições de transmissão.
+</li>
+<li>
+<samp>Interface de Rede</samp> - <em>Ethernet</em>, <em>FDDI</em>, <em>Token
+Ring</em>.  Define qual o método que a mensagem transmitida será encapsulada
+para envio ao seu destino.
+</li>
+</ul>
+</dd>
+</dl>
+
+<p>
+Apesar dos padrões <em>Darpa</em> e <em>OSI</em>, o protocolo <em>TCP/IP</em> é
+oficialmente independente destas camadas.
+
+<hr>
+
+<a name="s-rede-rfcs"></a>
+<h2>4.11 RFCs de referência sobre protocolos de rede</h2>
+
+<p>
+Como referência de pesquisa, segue abaixo a listagem de números de RFCs para
+protocolos de rede mais utilizados:
+<dl>
+<dt>IP</dt>
+<dd>
+<code><a
+href="http://www.rfc-editor.org/rfc/rfc791.txt">http://www.rfc-editor.org/rfc/rfc791.txt</a></code>
+</dd>
+<dt>ICMP</dt>
+<dd>
+<code><a
+href="http://www.rfc-editor.org/rfc/rfc792.txt">http://www.rfc-editor.org/rfc/rfc792.txt</a></code>
+</dd>
+<dt>TCP</dt>
+<dd>
+<code><a
+href="http://www.rfc-editor.org/rfc/rfc793.txt">http://www.rfc-editor.org/rfc/rfc793.txt</a></code>
+</dd>
+<dt>UDP</dt>
+<dd>
+<code><a
+href="http://www.rfc-editor.org/rfc/rfc768.txt">http://www.rfc-editor.org/rfc/rfc768.txt</a></code>
+</dd>
+</dl>
+
+<hr>
+
+[ <a href="ch-hardw.html">anterior</a> ]
+[ <a href="index.html#contents">Conteúdo</a> ]
+[ <a href="ch-intro.html">1</a> ]
+[ <a href="ch-bas.html">2</a> ]
+[ <a href="ch-hardw.html">3</a> ]
+[ 4 ]
+[ <a href="ch-cfgrede.html">5</a> ]
+[ <a href="ch-log.html">6</a> ]
+[ <a href="ch-deb.html">7</a> ]
+[ <a href="ch-pers.html">8</a> ]
+[ <a href="ch-impr.html">9</a> ]
+[ <a href="ch-fw-iptables.html">10</a> ]
+[ <a href="ch-d-contas.html">11</a> ]
+[ <a href="ch-s-apache.html">12</a> ]
+[ <a href="ch-s-ident.html">13</a> ]
+[ <a href="ch-s-telnet.html">14</a> ]
+[ <a href="ch-s-ssh.html">15</a> ]
+[ <a href="ch-s-pop3.html">16</a> ]
+[ <a href="ch-s-cvs.html">17</a> ]
+[ <a href="ch-s-samba.html">18</a> ]
+[ <a href="ch-d-restr.html">19</a> ]
+[ <a href="ch-d-cripto.html">20</a> ]
+[ <a href="ch-apend.html">21</a> ]
+[ <a href="ch-cfgrede.html">próximo</a> ]
+
+<hr>
+
+<p>
+Guia Foca GNU/Linux
+
+<address>
+Versão 6.40 - segunda, 30 de outubro de 2006<br>
+<br>
+Gleydson Mazioli da Silva <code><a href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</a></code><br>
+<br>
+</address>
+
+<hr>
+
+</body>
+
+</html>
+

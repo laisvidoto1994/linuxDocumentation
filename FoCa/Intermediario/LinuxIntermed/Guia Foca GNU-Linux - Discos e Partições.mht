@@ -1,0 +1,2175 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: =?iso-8859-1?Q?Guia_Foca_GNU/Linux_-_Discos_e_Parti=E7=F5es?=
+Date: Mon, 6 Aug 2007 11:22:59 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-disc.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Discos e Parti=E7=F5es</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-disc></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ 5 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 5 - Discos e Parti=E7=F5es </H1>
+<HR>
+
+<P>Este cap=EDtulo traz explica=E7=F5es de como manipular discos =
+r=EDgidos e parti=E7=F5es=20
+no sistema <CODE>GNU/Linux</CODE> e como acessar seus discos de CD-ROM e =
+
+parti=E7=F5es <CODE>DOS</CODE>, <CODE>Windows 95/98</CODE> no=20
+<CODE>GNU/Linux</CODE>.=20
+<P>Tamb=E9m ser=E1 ensinado como utilizar o programa =
+<CODE>mkfs.ext2</CODE> para=20
+criar um sistema de arquivos <SAMP>EXT2</SAMP> (formatar o disco) e a =
+ferramenta=20
+<CODE>mkswap</CODE> (para criar uma parti=E7=E3o ou arquivo de mem=F3ria =
+virtual).=20
+<HR>
+<A name=3Ds-disc-particoes></A>
+<H2>5.1 Parti=E7=F5es</H2>
+<P>S=E3o divis=F5es existentes no disco r=EDgido que marcam onde =
+come=E7a onde termina=20
+um sistema de arquivos. Por causa destas divis=F5es, n=F3s podemos usar =
+mais de um=20
+sistema operacional no mesmo computador (como o <CODE>GNU/Linux</CODE>,=20
+<CODE>Windows</CODE> e <CODE>DOS</CODE>), ou dividir o disco r=EDgido em =
+uma ou=20
+mais partes para ser usado por um =FAnico sistema operacional.=20
+<P>Para gravar os dados, o disco r=EDgido deve ser primeiro particionado =
+(usando o=20
+fdisk), escolher o tipo da parti=E7=E3o (<EM>Linux Native</EM>, =
+<EM>Linux Swap</EM>,=20
+etc) e depois aquela parti=E7=E3o deve ser formatada com o =
+<CODE>mkfs.ext2</CODE>=20
+(veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-ext2">Parti=E7=E3o=20
+EXT2 (Linux Native), Se=E7=E3o 5.3</A>).=20
+<P>Ap=F3s criada e formatada, a parti=E7=E3o ser=E1 identificada como um =
+dispositivo no=20
+diret=F3rio <CODE>/dev</CODE> (veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-id">Identifica=E7=E3o=20
+de discos e parti=E7=F5es em sistemas Linux, Se=E7=E3o 5.12</A>) . e =
+dever=E1 ser montada=20
+(<A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-montagem">Montando=20
+(acessando) uma parti=E7=E3o de disco, Se=E7=E3o 5.13</A>) para permitir =
+seu uso no=20
+sistema.=20
+<P>Uma parti=E7=E3o de disco n=E3o interfere em outras parti=E7=F5es =
+existentes, por este=20
+motivo =E9 poss=EDvel usar o <CODE>Windows</CODE>, =
+<CODE>GNU/Linux</CODE> e qualquer=20
+outro sistema operacional no mesmo disco. Para escolher qual deles =
+ser=E1=20
+inicializado, veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">Gerenciadores=20
+de Partida (boot loaders), Cap=EDtulo 6</A>.=20
+<P>Para particionar (dividir) o disco r=EDgido em uma ou mais partes =E9 =
+necess=E1rio=20
+o uso de um programa de particionamento. Os programas mais conhecidos =
+para=20
+particionamento de discos no <CODE>GNU/Linux</CODE> s=E3o =
+<CODE>fdisk</CODE>,=20
+<CODE>cfdisk</CODE> e o <CODE>Disk Druid</CODE>.=20
+<P>Lembre-se:=20
+<UL>
+  <LI>Quando se apaga uma parti=E7=E3o, voc=EA estar=E1 apagando TODOS =
+os arquivos=20
+  existentes nela!=20
+  <LI>A parti=E7=E3o do tipo <EM>Linux Native</EM> (Tipo 83) =E9 a usada =
+para=20
+  armazenar arquivos no <CODE>GNU/Linux</CODE>. Para detalhes veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-ext2">Parti=E7=E3o=20
+  EXT2 (Linux Native), Se=E7=E3o 5.3</A>.=20
+  <LI>A parti=E7=E3o do tipo <EM>Linux Swap</EM> (Tipo 82) =E9 usada =
+como mem=F3ria=20
+  virtual. Para detalhes veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-swap">Parti=E7=E3o=20
+  Linux Swap (Mem=F3ria Virtual), Se=E7=E3o 5.7</A>.=20
+  <LI>Em sistemas novos, =E9 comum encontrar o <CODE>Windows</CODE> =
+instalado em=20
+  uma parti=E7=E3o que consome TODO o espa=E7o do disco r=EDgido. Uma =
+solu=E7=E3o para=20
+  instalar o <CODE>GNU/Linux</CODE> =E9 apagar a parti=E7=E3o =
+<CODE>Windows</CODE> e=20
+  criar tr=EAs com tamanhos menores (uma para o <CODE>Windows</CODE>, =
+uma para o=20
+  <CODE>GNU/Linux</CODE> e outra para a <EM>Mem=F3ria Virtual do Linux=20
+  (SWAP)</EM>. Ou criar apenas 2 se voc=EA n=E3o quiser mais saber mais =
+do=20
+  <CODE>Windows</CODE> ;-)=20
+  <P>A outra =E9 usar o programa <CODE>FIPS</CODE> para diminuir o =
+tamanho da=20
+  parti=E7=E3o <CODE>Windows</CODE> (usando o espa=E7o livre existente) =
+e criar as 2=20
+  parti=E7=F5es requeridas pelo <CODE>GNU/Linux</CODE> no espa=E7o =
+restante, sem=20
+  apagar o <CODE>Windows</CODE>. Esta t=E9cnica tamb=E9m =E9 chamada de=20
+  <SAMP>Reparticionamento n=E3o destrutivo</SAMP> (e o outro obviamente=20
+  <SAMP>Reparticionamento destrutivo</SAMP>). Caso decida usar o=20
+  <CODE>FIPS</CODE>, pegue a vers=E3o 2.0 ou superior do programa, pois =
+funciona=20
+  nativamente com sistema de arquivos <SAMP>FAT32</SAMP> (voc=EA o =
+encontra no=20
+  site de sua distribui=E7=E3o <CODE>GNU/Linux</CODE>). </P></LI></UL>
+<P>Para mais detalhes sobre discos, parti=E7=F5es ou como particionar =
+seu disco,=20
+veja algum bom documento sobre particionamento (como a p=E1gina de =
+manual e=20
+documenta=E7=E3o do <CODE>fdisk</CODE>, <CODE>cfdisk</CODE> ou =
+<CODE>Disk=20
+Druid</CODE>).=20
+<HR>
+<A name=3Ds-disc-sistarq></A>
+<H2>5.2 Sistema de Arquivos</H2>
+<P>=C9 criado durante a "formata=E7=E3o" da parti=E7=E3o de disco =
+(quando se usa o comando=20
+<CODE>mkfs.ext2</CODE>). Ap=F3s a formata=E7=E3o toda a estrutura para=20
+leitura/grava=E7=E3o de arquivos e diret=F3rios pelo sistema operacional =
+estar=E1 pronta=20
+para ser usada. Normalmente este passo =E9 feito durante a =
+instala=E7=E3o de sua=20
+distribui=E7=E3o <CODE>GNU/Linux</CODE>.=20
+<P>Cada sistema de arquivos tem uma caracter=EDstica em particular mas =
+seu=20
+prop=F3sito =E9 o mesmo: Oferecer ao sistema operacional a estrutura =
+necess=E1ria para=20
+ler/gravar os arquivos/diret=F3rios.=20
+<P>Entre os sistemas de arquivos existentes posso citar:=20
+<UL>
+  <LI><SAMP>Ext2</SAMP> - Usado em parti=E7=F5es <EM>Linux Nativas</EM> =
+para o=20
+  armazenamento de arquivos. =C9 identificado pelo c=F3digo 83. Seu =
+tamanho deve ser=20
+  o suficiente para acomodar todo os arquivos e programas que deseja =
+instalar no=20
+  <CODE>GNU/Linux</CODE> (voc=EA encontra isto no manual de sua =
+distribui=E7=E3o).=20
+  Para detalhes veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-ext2">Parti=E7=E3o=20
+  EXT2 (Linux Native), Se=E7=E3o 5.3</A>.=20
+  <LI><SAMP>Ext3</SAMP> - Este sistema de arquivos possui melhorias em =
+rela=E7=E3o=20
+  ao ext2, como destaque o recurso de jornaling. Ele tamb=E9m =E9 =
+identificado pelo=20
+  tipo 83 e totalmente compat=EDvel com o ext2 em estrutura. O journal =
+mant=E9m um=20
+  log de todas as opera=E7=F5es no sistema de arquivos, caso aconte=E7a =
+uma queda de=20
+  energia el=E9trica (ou qualquer outra anormalidade que interrompa o=20
+  funcionamento do sistema), o <CODE>fsck</CODE> verifica o sistema de =
+arquivos=20
+  no ponto em que estava quando houve a interrup=E7=E3o, evitando a =
+demora para=20
+  checar todo um sistema de arquivos (que pode levar minutos em sistemas =
+de=20
+  arquivos muito grandes). Para detalhes veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-ext3">Parti=E7=E3o=20
+  EXT3 (Linux Native), Se=E7=E3o 5.5</A>.=20
+  <LI><SAMP>Swap</SAMP> - Usado em parti=E7=F5es <EM>Linux Swap</EM> =
+para oferecer=20
+  mem=F3ria virtual ao sistema. Note que =E9 altamente recomendado o uso =
+de uma=20
+  parti=E7=E3o Swap no sistema (principalmente se voc=EA tiver menos que =
+16MB de=20
+  mem=F3ria RAM). Este tipo de parti=E7=E3o =E9 identificado pelo =
+c=F3digo 82. Para=20
+  detalhes veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-swap">Parti=E7=E3o=20
+  Linux Swap (Mem=F3ria Virtual), Se=E7=E3o 5.7</A>.=20
+  <LI><SAMP>proc</SAMP> - Sistema de arquivos do kernel (veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-proc">O=20
+  sistema de arquivos <CODE>/proc</CODE>, Se=E7=E3o 5.8</A>).=20
+  <LI><SAMP>FAT12</SAMP> - Usado em disquetes no <CODE>DOS</CODE>=20
+  <LI><SAMP>FAT16</SAMP> - Usado no <CODE>DOS</CODE> e oferece suporte =
+at=E9=20
+  discos de 2GB=20
+  <LI><SAMP>FAT32</SAMP> - Tamb=E9m usado no <CODE>DOS</CODE> e oferece =
+suporte a=20
+  discos de at=E9 2 Terabytes </LI></UL>
+<HR>
+<A name=3Ds-disc-ext2></A>
+<H2>5.3 Parti=E7=E3o EXT2 (Linux Native)</H2>
+<P>A parti=E7=E3o <SAMP>EXT2</SAMP> =E9 o tipo usado para criar o =
+sistema de arquivos=20
+<CODE>Linux Native</CODE> usado para armazenar o sistema de arquivos=20
+<SAMP>EXT2</SAMP> (ap=F3s a formata=E7=E3o) e permitir o armazenamento =
+de dados. Para=20
+detalhes de como criar uma parti=E7=E3o EXT2 veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-ext2-criando-p">Criando=20
+um sistema de arquivos EXT2 em uma parti=E7=E3o, Se=E7=E3o 5.3.1</A>.=20
+<P>Este tipo de parti=E7=E3o =E9 normalmente identificado pelo c=F3digo =
+83 nos programas=20
+de particionamento de disco. Note que tamb=E9m =E9 poss=EDvel criar um =
+sistema de=20
+arquivos <SAMP>EXT2</SAMP> em um arquivo (ao inv=E9s de uma =
+parti=E7=E3o) que poder=E1=20
+ser montado e acessado normalmente pelo sistema de arquivos (veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-ext2-criando-a">Criando=20
+um sistema de arquivos EXT2 em um arquivo, Se=E7=E3o 5.3.2</A>.=20
+<P>Logo que foi inventado, o <CODE>GNU/Linux</CODE> utilizava o sistema =
+de=20
+arquivos <EM>Minix</EM> (e conseq=FCentemente uma parti=E7=E3o =
+<EM>Minix</EM>) para o=20
+armazenamento de arquivos. Com a evolu=E7=E3o do desenvolvimento, foi =
+criado o=20
+padr=E3o <EM>EXT</EM> (<EM>Extended Filesystem</EM>) e logo evoluiu para =
+o=20
+<EM>EXT2</EM> (<EM>Second Extended Filesystem</EM>) que =E9 o usado hoje =
+em dia.=20
+<P>Voc=EA deve escolher este tipo de parti=E7=E3o para armazenar seus =
+arquivos, =E9 o=20
+padr=E3o atualmente, =E9 o mais r=E1pido, n=E3o se fragmenta t=E3o =
+facilmente pois permite=20
+a localiza=E7=E3o do melhor lugar onde o arquivo se encaixa no disco, =
+etc. Isto =E9=20
+=FAtil para grandes ambientes multiusu=E1rio onde v=E1rias pessoas =
+gravam/apagam=20
+arquivos o tempo todo.=20
+<HR>
+<A name=3Ds-disc-ext2-criando-p></A>
+<H3>5.3.1 Criando um sistema de arquivos EXT2 em uma parti=E7=E3o</H3>
+<P>O utilit=E1rio usado para formatar uma parti=E7=E3o <SAMP>EXT2</SAMP> =
+=E9 o=20
+<CODE>mkfs.ext2</CODE>. Ap=F3s terminar este passo, seu sistema de =
+arquivos=20
+<SAMP>EXT2</SAMP> estar=E1 pronto para ser usado.=20
+<P>Ap=F3s particionar seu disco r=EDgido e criar uma (ou v=E1rias) =
+parti=E7=F5es=20
+<SAMP>EXT2</SAMP>, use o comando:=20
+<P><SAMP>mkfs.ext2 /dev/hda?</SAMP>=20
+<P>Onde a "?" em <SAMP>hda?</SAMP> significa o n=FAmero da parti=E7=E3o =
+que ser=E1=20
+formatada. A identifica=E7=E3o da parti=E7=E3o =E9 mostrada durante o =
+particionamento do=20
+disco, anote se for o caso. <SAMP>hda</SAMP> =E9 o primeiro disco =
+r=EDgido IDE,=20
+<SAMP>hdb</SAMP> =E9 o segundo disco r=EDgido IDE. Discos SCSI s=E3o =
+identificados por=20
+<SAMP>sda?</SAMP>, <SAMP>sdb?</SAMP>, etc. Para detalhes sobre a =
+identifica=E7=E3o=20
+de discos, veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-id">Identifica=E7=E3o=20
+de discos e parti=E7=F5es em sistemas Linux, Se=E7=E3o 5.12</A>.=20
+<P>Algumas op=E7=F5es s=E3o =FAteis ao <CODE>mkfs.ext2</CODE>:=20
+<UL>
+  <LI><SAMP>-c</SAMP> Procura blocos danificados na parti=E7=E3o antes =
+de criar o=20
+  sistema de arquivos. </LI></UL>
+<UL>
+  <LI><SAMP>-L NOME</SAMP> Coloca um nome (label) no sistema de =
+arquivos.=20
+</LI></UL>
+<UL>
+  <LI><SAMP>-b NUM</SAMP> Define o tamanho do bloco, em bytes. =
+</LI></UL>
+<UL>
+  <LI><SAMP>-m NUM</SAMP> Define a porcentagem de espa=E7o em disco =
+reservada para=20
+  manuten=E7=E3o (por padr=E3o reservado para o root, mas isto =E9 =
+alter=E1vel). </LI></UL>
+<P>Agora para acessar a parti=E7=E3o dever=E1 ser usado o comando: =
+<SAMP>mount=20
+/dev/hda? /mnt -t ext2</SAMP>=20
+<P>Para mais detalhes veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-montagem">Montando=20
+(acessando) uma parti=E7=E3o de disco, Se=E7=E3o 5.13</A>.=20
+<P>Note que =E9 poss=EDvel criar um sistema de arquivos no disco =
+r=EDgido sem criar=20
+uma parti=E7=E3o usando <CODE>/dev/hda</CODE>, <CODE>/dev/hdb</CODE>, =
+etc.=20
+<STRONG>EVITE FAZER ISSO!</STRONG> Como n=E3o estar=E1 criando uma =
+parti=E7=E3o, o disco=20
+estar=E1 divido de maneira incorreta, voc=EA n=E3o poder=E1 apagar o =
+sistema de arquivos=20
+completamente do disco caso precise (lembre-se que voc=EA n=E3o criou =
+uma parti=E7=E3o),=20
+e a parti=E7=E3o possui uma assinatura apropriada que identifica o =
+sistema de=20
+arquivos.=20
+<P>O espa=E7o padr=E3o reservado na parti=E7=E3o para o usu=E1rio root =
+=E9 de 5%. Em=20
+sistemas com parti=E7=F5es maiores que 3Gb, isso pode representar uma =
+grande=20
+quantidade de espa=E7o em disco n=E3o utilizada por outros usu=E1rios. =
+Veja a op=E7=E3o=20
+<SAMP>-m</SAMP> sobre como fazer esta modifica=E7=E3o. Caso j=E1 tenha =
+criado a=20
+parti=E7=E3o, isto pode ser feito no <CODE>tune2fs</CODE> com a =
+op=E7=E3o=20
+<SAMP>-m</SAMP>.=20
+<HR>
+<A name=3Ds-disc-ext2-criando-a></A>
+<H3>5.3.2 Criando um sistema de arquivos EXT2 em um arquivo</H3>
+<P>=C9 poss=EDvel criar um sistema de arquivos EXT2 em um arquivo que =
+poder=E1 ser=20
+montado e acessado normalmente como se fosse uma parti=E7=E3o normal. =
+Isto =E9=20
+poss=EDvel por causa do recurso <SAMP>loop</SAMP> oferecido pelo kernel =
+do=20
+<CODE>GNU/Linux</CODE>. Os dispositivos de <SAMP>loop</SAMP> est=E3o =
+dispon=EDveis=20
+no diret=F3rio <CODE>/dev</CODE> com o nome <CODE>loop?</CODE> =
+(normalmente est=E3o=20
+dispon=EDveis 8 dispositivos de <SAMP>loop</SAMP>).=20
+<P>Isto =E9 poss=EDvel usando o comando <CODE>dd</CODE> e o =
+<CODE>mkfs.ext2</CODE>.=20
+Veja passo a passo como criar o sistema de arquivos <SAMP>EXT2</SAMP> em =
+um=20
+arquivo:=20
+<OL type=3D1>
+  <LI>Use o comando <SAMP>dd if=3D/dev/zero of=3D/tmp/arquivo-ext2 =
+bs=3D1024=20
+  count=3D10000</SAMP> para criar um arquivo <CODE>arquivo-ext2</CODE> =
+vazio de=20
+  10Mb de tamanho em <CODE>/tmp</CODE>. Voc=EA pode modificar os =
+par=E2metros de=20
+  <SAMP>of</SAMP> para escolher onde o arquivo ser=E1 criado, o tamanho =
+do arquivo=20
+  poder=E1 ser modificado atrav=E9s de <SAMP>count</SAMP> </LI></OL>
+<OL type=3D1 start=3D2>
+  <LI>Formate o arquivo com <SAMP>mkfs.ext2 /tmp/arquivo-ext2</SAMP>. =
+Ele=20
+  primeiro dir=E1 que o arquivo <CODE>arquivo-ext2</CODE> n=E3o =E9 um =
+dispositivo de=20
+  bloco especial (uma parti=E7=E3o de disco) e perguntar=E1 se deve =
+continuar,=20
+  responda com <SAMP>y</SAMP>.=20
+  <P>O sistema de arquivos EXT2 ser=E1 criado em =
+<CODE>/tmp/arquivo-ext2</CODE> e=20
+  estar=E1 pronto para ser usado. </P></LI></OL>
+<OL type=3D1 start=3D3>
+  <LI>Monte o arquivo <CODE>arquivo-ext2</CODE> com o comando: =
+<SAMP>mount=20
+  /tmp/arquivo-ext2 /mnt -o loop=3D/dev/loop1</SAMP>. Note que foi usado =
+o=20
+  par=E2metro <SAMP>-o loop</SAMP> para dizer ao comando =
+<CODE>mount</CODE> para=20
+  usar os recursos de <SAMP>loop do kernel</SAMP> para montar o sistema =
+de=20
+  arquivos. </LI></OL>
+<OL type=3D1 start=3D4>
+  <LI>Confira se o sistema de arquivos <SAMP>EXT2</SAMP> em=20
+  <CODE>arquivo-ext2</CODE> foi realmente montado no sistema de arquivos =
+
+  digitando <SAMP>df -T</SAMP>. Para detalhes, veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-df">df,=20
+  Se=E7=E3o 10.3</A>. </LI></OL>
+<P>Pronto! o que voc=EA gravar para <CODE>/mnt</CODE> ser=E1 gravado =
+dentro do=20
+arquivo <CODE>/tmp/arquivo-ext2</CODE>. Como foi criado um sistema de =
+arquivos=20
+<SAMP>EXT2</SAMP> em <CODE>arquivo-ext2</CODE>, voc=EA poder=E1 usar =
+todos os=20
+recursos da parti=E7=E3o <SAMP>EXT2</SAMP> normal, como permiss=F5es de =
+arquivos e=20
+diret=F3rios, links simb=F3licos, etc.=20
+<P>O uso da op=E7=E3o <SAMP>loop=3D/dev/loop1</SAMP> permite que o =
+dispositivo=20
+<CODE>/dev/loop1</CODE> seja associado ao arquivo =
+<CODE>/arquivo-ext2</CODE> e=20
+assim permitir sua montagem e uso no sistema.=20
+<UL>
+  <LI>Voc=EA poder=E1 usar apenas <SAMP>-o loop</SAMP> com o comando=20
+  <CODE>mount</CODE>, assim o kernel gerenciar=E1 automaticamente os =
+dispositivos=20
+  de <SAMP>loop</SAMP>.=20
+  <LI>Caso fa=E7a isto manualmente, lembre-se de usar dispositivos=20
+  <SAMP>/dev/loop?</SAMP> diferentes para cada arquivo que montar no =
+sistema.=20
+  Pois cada um faz refer=EAncia a um =FAnico arquivo. </LI></UL>
+<HR>
+<A name=3Ds-disc-journal></A>
+<H2>5.4 Journaling</H2>
+<P>O sistema de journaling grava qualquer opera=E7=E3o que ser=E1 feita =
+no disco em=20
+uma =E1rea especial chamada "journal", assim se acontecer algum problema =
+durante a=20
+opera=E7=E3o de disco, ele pode voltar ao estado anterior do arquivo, ou =
+finalizar a=20
+opera=E7=E3o.=20
+<P>Desta forma, o journal acrescenta ao sistema de arquivos o suporte a =
+alta=20
+disponibilidade e maior toler=E2ncia a falhas. Ap=F3s uma falha de =
+energia, por=20
+exemplo, o journal =E9 analisado durante a montagem do sistema de =
+arquivos e todas=20
+as opera=E7=F5es que estavam sendo feitas no disco s=E3o verificadas. =
+Dependendo do=20
+estado da opera=E7=E3o, elas podem ser desfeitas ou finalizadas. O =
+retorno do=20
+servidor =E9 praticamente imediato (sem precisar a enorme espera da =
+execu=E7=E3o do=20
+fsck em parti=E7=F5es maiores que 10Gb), garantindo o r=E1pido retorno =
+dos servi=E7os da=20
+m=E1quina.=20
+<P>Outra situa=E7=E3o que pode ser evitada =E9 com inconsist=EAncias no =
+sistema de=20
+arquivos do servidor ap=F3s a situa=E7=E3o acima, fazendo o servidor =
+ficar em estado=20
+'single user' e esperando pela interven=E7=E3o do administrador. Este =
+cap=EDtulo do=20
+guia explica a utiliza=E7=E3o de journaling usando o sistema de arquivos =
+
+<EM>ext3</EM> (veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-ext3">Parti=E7=E3o=20
+EXT3 (Linux Native), Se=E7=E3o 5.5</A> para detalhes).=20
+<HR>
+<A name=3Ds-disc-ext3></A>
+<H2>5.5 Parti=E7=E3o EXT3 (Linux Native)</H2>
+<P>O sistema de arquivos <EM>ext3</EM> faz parte da nova gera=E7=E3o =
+extended file=20
+system do <CODE>Linux</CODE>, sendo que seu maior benef=EDcio =E9 o =
+suporte a=20
+journaling.=20
+<P>O uso deste sistema de arquivos comparado ao <EM>ext2</EM>, na =
+maioria dos=20
+casos, melhora o desempenho do sistema de arquivos atrav=E9s da =
+grava=E7=E3o=20
+seq=FCencial dos dados na =E1rea de metadados e acesso mhash a sua =
+=E1rvore de=20
+diret=F3rios.=20
+<P>A estrutura da parti=E7=E3o <CODE>ext3</CODE> =E9 semelhante a =
+<CODE>ext2</CODE>, o=20
+journaling =E9 feito em um arquivo chamado <CODE>.journal</CODE> que =
+fica oculto=20
+pelo c=F3digo <EM>ext3</EM> na parti=E7=E3o (desta forma ele n=E3o =
+poder=E1 ser apagado,=20
+comprometendo o funcionamento do sistema). A estrutura id=EAntica da =
+parti=E7=E3o=20
+<EM>ext3</EM> com a <EM>ext2</EM> torna mais f=E1cil a manuten=E7=E3o do =
+sistema, j=E1=20
+que todas as ferramentas para recupera=E7=E3o <EM>ext2</EM> =
+funcionar=E3o sem=20
+problemas.=20
+<HR>
+<A name=3Ds-disc-ext3-criando-p></A>
+<H3>5.5.1 Criando um sistema de arquivos EXT3 em uma parti=E7=E3o</H3>
+<P>Para criar uma parti=E7=E3o <EM>ext3</EM>, utilize o comando=20
+<CODE>mkfs.ext3</CODE> ou o <CODE>mkfs.ext2</CODE> junto com a op=E7=E3o =
+
+<EM>-j</EM>. As op=E7=F5es usadas pelo <CODE>mkfs.ext3</CODE> s=E3o =
+id=EAnticas a do=20
+<CODE>mkfs.ext2</CODE> (documentado em <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-ext2-criando-p">Criando=20
+um sistema de arquivos EXT2 em uma parti=E7=E3o, Se=E7=E3o 5.3.1</A>). A =
+=FAnica vantagem=20
+desta ferramenta comparada ao <CODE>mkfs.ext2</CODE> =E9 que a op=E7=E3o =
+<EM>-j</EM> =E9=20
+automaticamente adicionada a linha de comando para criar um sistema de =
+arquivos=20
+com journal. Se voc=EA =E9 daqueles que querem ter um controle maior =
+sobre o tamanho=20
+do arquivo de journal, use a op=E7=E3o <EM>-J [tam]</EM> (onde tamanho =
+=E9 o tamanho=20
+em Megabytes).=20
+<P>Quando uma parti=E7=E3o <EM>ext3</EM> =E9 criada, o arquivo =
+<CODE>.journal</CODE> =E9=20
+criado no ra=EDz da parti=E7=E3o, sendo usado para gravar os metadados =
+das transa=E7=F5es=20
+de journaling. A estrutura da parti=E7=E3o ext2 n=E3o difere em nada da =
+ext3, a n=E3o=20
+ser este arquivo e a op=E7=E3o "has_journal" que =E9 passada a =
+parti=E7=E3o.=20
+<P>Por exemplo, para criar uma parti=E7=E3o ext3 em =
+<CODE>/dev/hda1</CODE>: <PRE>      mkfs.ext3 /dev/hda1
+    =20
+     ou
+    =20
+      mkfs.ext2 -j /dev/hda1
+</PRE>
+<P>Basta agora montar a parti=E7=E3o com o comando <SAMP>mount /dev/hda1 =
+/teste -t=20
+ext3</SAMP> (para montar a parti=E7=E3o em <CODE>/teste</CODE>. Ap=F3s =
+isto, modifique=20
+o <CODE>/etc/fstab</CODE> para montar a parti=E7=E3o como <EM>ext3</EM> =
+quando o=20
+<CODE>Linux</CODE> for iniciado. Para mais detalhes veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-montagem">Montando=20
+(acessando) uma parti=E7=E3o de disco, Se=E7=E3o 5.13</A>. ). Caso o =
+suporte a=20
+<EM>ext3</EM> tenha sido compilado no kernel, ele tentar=E1 detectar e =
+montar a=20
+parti=E7=E3o como <EM>ext3</EM>, caso contr=E1rio, ele usar=E1 =
+<EM>ext2</EM>.=20
+<P>Sua parti=E7=E3o agora est=E1 montada como <EM>ext3</EM>, para =
+conferir digite:=20
+<SAMP>df -T</SAMP>.=20
+<P><STRONG>OBS:</STRONG> Quando criar um sistema de arquivos =
+<EM>ext3</EM> em=20
+uma parti=E7=E3o ra=EDz (<SAMP>/</SAMP>), tenha certeza de incluir o =
+suporte a=20
+<EM>ext3</EM> embutido no kernel, caso contr=E1rio a parti=E7=E3o ser=E1 =
+montada como=20
+<EM>ext2</EM>.=20
+<HR>
+<A name=3Ds-disc-ext3-criando-a></A>
+<H3>5.5.2 Criando um sistema de arquivos EXT3 em um arquivo</H3>
+<P>As instru=E7=F5es para criar um sistema de arquivos <SAMP>ext3</SAMP> =
+em um=20
+arquivo n=E3o difere muito das instru=E7=F5es de <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-ext2-criando-a">Criando=20
+um sistema de arquivos EXT2 em um arquivo, Se=E7=E3o 5.3.2</A>, apenas =
+utilize a=20
+op=E7=E3o <EM>-j</EM> ou <EM>-J [tamanho_em_mb]</EM> (como explicado em =
+<A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-ext3-criando-p">Criando=20
+um sistema de arquivos EXT3 em uma parti=E7=E3o, Se=E7=E3o 5.5.1</A>).=20
+<HR>
+<A name=3Ds-disc-ext3-conv2-3></A>
+<H3>5.5.3 Fazendo a convers=E3o do sistema de arquivos EXT2 para =
+EXT3</H3>
+<P>Se voc=EA j=E1 possui um uma parti=E7=E3o <EM>ext2</EM> e deseja =
+converte-la para=20
+<EM>ext3</EM> isto poder=E1 ser feito facilmente, de forma segura (sem =
+qualquer=20
+risco de perda de dados) e voc=EA poder=E1 voltar para o sistema ext2 =
+caso deseje=20
+(veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-ext3-conv3-2">Convertendo=
+=20
+de EXT3 para EXT2, Se=E7=E3o 5.5.4</A>).=20
+<P>Primeiro, execute o comando <CODE>tune2fs</CODE> na parti=E7=E3o que =
+deseja=20
+converter com a op=E7=E3o <EM>-j</EM> ou <EM>-J [tamanho_journal]</EM> =
+para=20
+adicionar o suporte a Journaling na parti=E7=E3o. Este comando poder=E1 =
+ser executado=20
+com seguran=E7a em uma parti=E7=E3o <EM>ext2</EM> montada, ap=F3s =
+converter remontar a=20
+parti=E7=E3o usando os comandos <SAMP>umount /particao</SAMP> e =
+<SAMP>mount=20
+/particao</SAMP>.=20
+<P>Ap=F3s a convers=E3o para <EM>ext3</EM> =E9 desnecess=E1ria a =
+checagem peri=F3dica do=20
+sistema de arquivos (que por padr=E3o =E9 ap=F3s 20 montagens e a cada =
+30 dias). Voc=EA=20
+pode desativar a checagem ap=F3s o n=FAmero m=E1ximo de montagens com a =
+op=E7=E3o <EM>-c=20
+[num_vezes]</EM>, e o n=FAmero de dias m=E1ximos antes de verificar =
+novamente com a=20
+op=E7=E3o <EM>-i [num_dias]</EM> (o uso de 0 desativa). Por exemplo: =
+<PRE>     tune2fs -c 0 -i 90 /dev/hda2
+</PRE>
+<P>Desativa a checagem ap=F3s n=FAmero m=E1ximo de montagens (<SAMP>-c =
+0</SAMP>) e diz=20
+para a parti=E7=E3o ser verificada a cada 90 dias (<SAMP>-i 90</SAMP>).=20
+<P>O =FAltimo passo =E9 modificar o <CODE>/etc/fstab</CODE> para que a =
+parti=E7=E3o seja=20
+montada como <EM>ext3</EM> na inicializa=E7=E3o e depois desmontar =
+(<SAMP>umount=20
+/dev/hda2</SAMP> e remonta-la (mount /dev/hda2) para usar o suporte=20
+<EM>ext3</EM>. Confira se ela est=E1 usando <EM>ext3</EM> usando o =
+comando=20
+<SAMP>df -T</SAMP>.=20
+<P><STRONG>OBS:</STRONG> Caso a parti=E7=E3o convertida para =
+<EM>ext3</EM> seja a=20
+ra=EDz (<SAMP>/</SAMP>), tenha certeza de incluir o suporte a =
+<EM>ext3</EM>=20
+embutido no kernel, caso contr=E1rio, a parti=E7=E3o ser=E1 montada como =
+<EM>ext2</EM>.=20
+<HR>
+<A name=3Ds-disc-ext3-conv3-2></A>
+<H3>5.5.4 Convertendo de EXT3 para EXT2</H3>
+<P>Remover o suporte a <EM>ext3</EM> de uma parti=E7=E3o =E9 simples, =
+r=E1pido e seguro.=20
+Execute os seguintes passos:=20
+<OL type=3D1>
+  <LI>Execute o comando <SAMP>tune2fs -O^has_journal /dev/hdxx</SAMP> na =
+
+  parti=E7=E3o que deseja remover o Journal. Este comando poder=E1 ser =
+executado em=20
+  uma parti=E7=E3o montada.=20
+  <LI>Modifique o <CODE>/etc/fstab</CODE> e altere a parti=E7=E3o para=20
+  <EM>ext2</EM>.=20
+  <LI>Desmonte e monte novamente a parti=E7=E3o com os comandos: =
+<SAMP>umount=20
+  /dev/hdxx</SAMP> e <SAMP>mount /dev/hdxx</SAMP>.=20
+  <LI>Pronto! a parti=E7=E3o agora =E9 novamente uma parti=E7=E3o =
+<EM>ext2</EM> normal,=20
+  confira digitando <SAMP>df -T</SAMP>. </LI></OL>
+<P>Pronto, o suporte a <EM>ext3</EM> foi removido do seu sistema e agora =
+poder=E1=20
+usar a parti=E7=E3o como <EM>ext2</EM> normalmente (confira digitando =
+<SAMP>df=20
+-T</SAMP>).=20
+<HR>
+<A name=3Ds-disc-reiserfs></A>
+<H2>5.6 Sistema de arquivos reiserfs</H2>
+<P>Este =E9 um sistema de arquivos alternativo ao <EM>ext2/3</EM> que =
+tamb=E9m=20
+possui suporte a journaling. Entre suas principais caracter=EDsticas, =
+est=E3o que=20
+ele possui tamanho de blocos vari=E1veis, suporte a arquivos maiores que =
+2=20
+Gigabytes (esta =E9 uma das limita=E7=F5es do <EM>ext3</EM>) e o acesso =
+mhash a =E1rvore=20
+de diret=F3rios =E9 um pouco mais r=E1pida que o <EM>ext3</EM>.=20
+<P>Para utilizar <CODE>reiserfs</CODE>, tenha certeza que seu kernel =
+possui o=20
+suporta habilitado (na se=E7=E3o <SAMP>File Systems</SAMP>) e instale o =
+pacote=20
+<CODE>reiserfsprogs</CODE> que cont=E9m utilit=E1rios para formatar, =
+verificar este=20
+tipo de parti=E7=E3o.=20
+<HR>
+<A name=3Ds-disc-reiserfs-criando-p></A>
+<H3>5.6.1 Criando um sistema de arquivos reiserfs em uma =
+parti=E7=E3o</H3>
+<P>Para criar uma parti=E7=E3o <EM>reiserfs</EM>, primeiro instale o =
+pacote=20
+<CODE>reiserfsprogs</CODE> (<SAMP>apt-get install reiserfsprogs</SAMP>). =
+
+<P>Para criar uma parti=E7=E3o <EM>reiserfs</EM>, primeiro crie uma =
+parti=E7=E3o=20
+<EM>ext2</EM> normal, e ent=E3o use o comando:=20
+<P><SAMP>mkreiserfs /dev/hda?</SAMP>=20
+<P>Onde a "?" em <SAMP>hda?</SAMP> significa o n=FAmero da parti=E7=E3o =
+que ser=E1=20
+formatada com o sistema de arquivos <EM>reiserfs</EM>. A =
+identifica=E7=E3o da=20
+parti=E7=E3o =E9 mostrada durante o particionamento do disco, anote se =
+for o caso.=20
+<SAMP>hda</SAMP> =E9 o primeiro disco r=EDgido IDE, <SAMP>hdb</SAMP> =E9 =
+o segundo=20
+disco r=EDgido IDE. Discos SCSI s=E3o identificados por =
+<SAMP>sda?</SAMP>,=20
+<SAMP>sdb?</SAMP>, etc. Para detalhes sobre a identifica=E7=E3o de =
+discos, veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-id">Identifica=E7=E3o=20
+de discos e parti=E7=F5es em sistemas Linux, Se=E7=E3o 5.12</A>.=20
+<P>Algumas op=E7=F5es s=E3o =FAteis ao <CODE>mkreiserfs</CODE>:=20
+<UL>
+  <LI><SAMP>-s [num]</SAMP> - Especifica o tamanho do arquivo de journal =
+em=20
+  blocos. O valor m=EDnimo =E9 513 e o m=E1ximo 32749. O valor padr=E3o =
+=E9 8193. </LI></UL>
+<UL>
+  <LI><SAMP>-l [NOME]</SAMP> - Coloca um nome (label) no sistema de =
+arquivos.=20
+  </LI></UL>
+<UL>
+  <LI><SAMP>-f</SAMP> - For=E7a a execu=E7=E3o do =
+<CODE>mkreiserfs</CODE>. </LI></UL>
+<UL>
+  <LI><SAMP>-d</SAMP> - Ativa a depura=E7=E3o durante a execu=E7=E3o do=20
+  <CODE>mkreiserfs</CODE>. </LI></UL>
+<P>Agora para acessar a parti=E7=E3o dever=E1 ser usado o comando: =
+<SAMP>mount=20
+/dev/hda? /mnt -t reiserfs</SAMP>=20
+<P>Para mais detalhes veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-montagem">Montando=20
+(acessando) uma parti=E7=E3o de disco, Se=E7=E3o 5.13</A>.=20
+<P>Note que =E9 poss=EDvel criar um sistema de arquivos no disco =
+r=EDgido sem criar=20
+uma parti=E7=E3o usando <CODE>/dev/hda</CODE>, <CODE>/dev/hdb</CODE>, =
+etc. usando a=20
+op=E7=E3o <SAMP>-f</SAMP> <STRONG>EVITE FAZER ISSO!</STRONG> Como n=E3o =
+estar=E1 criando=20
+uma parti=E7=E3o, o disco estar=E1 divido de maneira incorreta, voc=EA =
+n=E3o poder=E1 apagar=20
+o sistema de arquivos completamente do disco caso precise (lembre-se que =
+voc=EA=20
+n=E3o criou uma parti=E7=E3o), e a parti=E7=E3o possui uma assinatura =
+apropriada que=20
+identifica o sistema de arquivos.=20
+<HR>
+<A name=3Ds-disc-reiserfs-criando-a></A>
+<H3>5.6.2 Criando um sistema de arquivos reiserfs em um arquivo</H3>
+<P>O sistema de arquivos <CODE>reiserfs</CODE> tamb=E9m poder=E1 ser =
+criado em um=20
+arquivo, usando os mesmos benef=EDcios descritos em <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-ext2-criando-a">Criando=20
+um sistema de arquivos EXT2 em um arquivo, Se=E7=E3o 5.3.2</A>. Para =
+fazer isso=20
+execute os seguintes passos em seq=FC=EAncia:=20
+<OL type=3D1>
+  <LI>Use o comando <SAMP>dd if=3D/dev/zero of=3D/tmp/arquivo-reiserfs =
+bs=3D1024=20
+  count=3D33000</SAMP> para criar um arquivo =
+<CODE>arquivo-reiserfs</CODE> vazio=20
+  de 33Mb de tamanho em <CODE>/tmp</CODE>. Voc=EA pode modificar os =
+par=E2metros de=20
+  <SAMP>of</SAMP> para escolher onde o arquivo ser=E1 criado, o tamanho =
+do arquivo=20
+  poder=E1 ser modificado atrav=E9s de <SAMP>count</SAMP>. Note que o =
+tamanho m=EDnimo=20
+  do arquivo deve ser de 32Mb, devido aos requerimentos do=20
+  <CODE>reiserfs</CODE>. </LI></OL>
+<OL type=3D1 start=3D2>
+  <LI>Formate o arquivo com <SAMP>mkreiserfs -f =
+/tmp/arquivo-reiserfs</SAMP>.=20
+  Ele primeiro dir=E1 que o arquivo <CODE>arquivo-reiserfs</CODE> n=E3o =
+=E9 um=20
+  dispositivo de bloco especial (uma parti=E7=E3o de disco) e =
+perguntar=E1 se deve=20
+  continuar, responda com <SAMP>y</SAMP>.=20
+  <P>O sistema de arquivos ReiserFS ser=E1 criado em=20
+  <CODE>/tmp/arquivo-reiserfs</CODE> e estar=E1 pronto para ser usado.=20
+</P></LI></OL>
+<OL type=3D1 start=3D3>
+  <LI>Monte o arquivo <CODE>arquivo-reiserfs</CODE> com o comando: =
+<SAMP>mount=20
+  /tmp/arquivo-reiserfs /mnt -t reiserfs -o loop=3D/dev/loop1</SAMP>. =
+Note que foi=20
+  usado o par=E2metro <SAMP>-o loop</SAMP> para dizer ao comando=20
+  <CODE>mount</CODE> para usar os recursos de <SAMP>loop do =
+kernel</SAMP> para=20
+  montar o sistema de arquivos. O par=E2metro <SAMP>-t reiserfs</SAMP> =
+poder=E1 ser=20
+  omitido, se desejar. </LI></OL>
+<OL type=3D1 start=3D4>
+  <LI>Confira se o sistema de arquivos <SAMP>ReiserFS</SAMP> em=20
+  <CODE>arquivo-reiserfs</CODE> foi realmente montado no sistema de =
+arquivos=20
+  digitando <SAMP>df -T</SAMP>. Para detalhes, veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-df">df,=20
+  Se=E7=E3o 10.3</A>. </LI></OL>
+<P>Pronto! o que voc=EA gravar para <CODE>/mnt</CODE> ser=E1 gravado =
+dentro do=20
+arquivo <CODE>/tmp/arquivo-reiserfs</CODE>. Voc=EA poder=E1 usar todos =
+os recursos=20
+de um sistema de arquivos <SAMP>reiserfs</SAMP> como permiss=F5es de =
+arquivos e=20
+diret=F3rios, links simb=F3licos, etc.=20
+<P>O uso da op=E7=E3o <SAMP>loop=3D/dev/loop1</SAMP> permite que o =
+dispositivo=20
+<CODE>/dev/loop1</CODE> seja associado ao arquivo =
+<CODE>/arquivo-reiserfs</CODE>=20
+e assim permitir sua montagem e uso no sistema.=20
+<UL>
+  <LI>Voc=EA poder=E1 usar apenas <SAMP>-o loop</SAMP> com o comando=20
+  <CODE>mount</CODE>, assim o kernel gerenciar=E1 automaticamente os =
+dispositivos=20
+  de <SAMP>loop</SAMP>.=20
+  <LI>Caso fa=E7a isto manualmente, lembre-se de usar dispositivos=20
+  <SAMP>/dev/loop?</SAMP> diferentes para cada arquivo que montar no =
+sistema.=20
+  Pois cada um faz refer=EAncia a um =FAnico arquivo. </LI></UL>
+<HR>
+<A name=3Ds-disc-e2label></A>
+<H3>5.6.3 Nomeando uma parti=E7=E3o de disco</H3>
+<P>O comando <CODE>e2label</CODE> =E9 usado para esta fun=E7=E3o.=20
+<P><SAMP>e2label [<EM>dispositivo</EM>] [<EM>nome</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>dispositivo</EM>=20
+  <DD>Parti=E7=E3o que ter=E1 o nome modificado=20
+  <DT><EM>nome</EM>=20
+  <DD>Nome que ser=E1 dado a parti=E7=E3o (m=E1ximo de 16 caracteres). =
+Caso seja usado=20
+  um nome de volume com espa=E7os, ele dever=E1 ser colocado entre =
+"aspas". </DD></DL>
+<P>Se n=E3o for especificado um nome, o nome atual da parti=E7=E3o =
+ser=E1 mostrado. O=20
+nome da parti=E7=E3o tamb=E9m pode ser visualizado atrav=E9s do comando=20
+<CODE>dumpe2fs</CODE> (veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-dumpe2fs">dumpe2fs,=20
+Se=E7=E3o 5.6.5</A>).=20
+<P>Exemplo: <SAMP>e2label /dev/sda1 FocaLinux</SAMP>, <SAMP>e2label =
+/dev/sda1=20
+"Foca Linux"</SAMP>=20
+<HR>
+<A name=3Ds-disc-mklost+found></A>
+<H3>5.6.4 Criando o diret=F3rio especial <CODE>lost+found</CODE></H3>
+<P>O utilit=E1rio <CODE>mklost+found</CODE> cria o diret=F3rio especial=20
+<CODE>lost+found</CODE> no diret=F3rio atual. O diret=F3rio =
+<CODE>lost+found</CODE>=20
+=E9 criado automaticamente ap=F3s a formata=E7=E3o da parti=E7=E3o com o =
+
+<CODE>mkfs.ext2</CODE>, a fun=E7=E3o deste diret=F3rio =E9 pr=E9-alocar =
+os blocos de=20
+arquivos/diret=F3rio durante a execu=E7=E3o do programa =
+<CODE>fsck.ext2</CODE> na=20
+recupera=E7=E3o de um sistema de arquivos (veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm#s-manut-checagem">Checagem=20
+dos sistemas de arquivos, Se=E7=E3o 26.1</A>). Isto garante que os =
+blocos de disco=20
+n=E3o precisar=E3o ser diretamente alocados durante a checagem.=20
+<P><SAMP>mklost+found</SAMP>=20
+<P>OBS: Este comando s=F3 funciona em sistemas de arquivos ext2=20
+<P>Exemplo: <SAMP>cd /tmp;mklost+found;ls -a</SAMP>=20
+<HR>
+<A name=3Ds-disc-dumpe2fs></A>
+<H3>5.6.5 dumpe2fs</H3>
+<P>Mostra detalhes sobre uma parti=E7=E3o <CODE>Linux</CODE>.=20
+<P><SAMP>dumpe2fs [<EM>op=E7=F5es</EM>] [<EM>parti=E7=E3o</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>parti=E7=E3o</EM>=20
+  <DD>Identifica=E7=E3o da parti=E7=E3o que ser=E1 usada.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-b=20
+  <DD>Mostra somente os blocos marcado como defeituosos no sistema de =
+arquivos=20
+  especificado. </DD></DL>
+<P>Este comando lista diversas op=E7=F5es =FAteis do sistema de arquivos =
+como o tipo=20
+do sistema de arquivos, caracter=EDsticas especiais, n=FAmero de inodos, =
+blocos=20
+livres, tamanho do bloco, intervalo entre checagens autom=E1ticas, etc.=20
+<P>Exemplo: <SAMP>dumpe2fs /dev/sda1</SAMP>, <SAMP>dumpe2fs -b =
+/dev/sda1</SAMP>=20
+<HR>
+<A name=3Ds-disc-ext2xarquivo></A>
+<H3>5.6.6 Parti=E7=E3o EXT2 ou Arquivo?</H3>
+<P>Criar uma parti=E7=E3o <SAMP>EXT2</SAMP> ou um arquivo usando o=20
+<SAMP>loop</SAMP>? Abaixo est=E3o algumas considera=E7=F5es:=20
+<UL>
+  <LI>A parti=E7=E3o <SAMP>EXT2</SAMP> =E9 o m=E9todo recomendado para a =
+instala=E7=E3o do=20
+  <CODE>GNU/Linux</CODE>.=20
+  <LI>O desempenho da parti=E7=E3o <SAMP>EXT2</SAMP> =E9 bem melhor se =
+comparado ao=20
+  arquivo porque =E9 acessada diretamente pelo Kernel (SO).=20
+  <LI>O arquivo <SAMP>EXT2</SAMP> =E9 =FAtil para guardarmos dados =
+confidenciais em=20
+  disquetes ou em qualquer outro lugar no sistema. Voc=EA pode =
+perfeitamente=20
+  gravar seus arquivos confidenciais em um arquivo chamado=20
+  <CODE>libBlaBlaBla-2.0</CODE> no diret=F3rio <CODE>/lib</CODE> e =
+ningu=E9m nunca=20
+  suspeitar=E1 deste arquivo (acho que n=E3o...). Tamb=E9m =E9 =
+poss=EDvel criptografa-lo=20
+  para que mesmo algu=E9m descobrindo que aquilo n=E3o =E9 uma lib, =
+n=E3o poder abri-lo=20
+  a n=E3o ser que tenha a senha (isto =E9 coberto no documento=20
+  <CODE>Loopback-encripted-filesystem.HOWTO</CODE>).=20
+  <LI>O uso do arquivo <SAMP>EXT2</SAMP> =E9 =FAtil quando voc=EA est=E1 =
+perdendo espa=E7o=20
+  na sua parti=E7=E3o <SAMP>EXT2</SAMP> e n=E3o quer re-particionar seu =
+disco pois=20
+  teria que ser feita uma re-instala=E7=E3o completa e tem muito =
+espa=E7o em um=20
+  parti=E7=E3o de outro SO (como o Windows).=20
+  <P>Voc=EA poderia facilmente copiar o conte=FAdo de <CODE>/var</CODE>, =
+por=20
+  exemplo, para o arquivo <SAMP>EXT2</SAMP> <CODE>ext2-l</CODE> criado =
+no=20
+  diret=F3rio Ra=EDz do Windows, apagar o conte=FAdo de =
+<CODE>/var</CODE> (liberando=20
+  muito espa=E7o em disco) e ent=E3o montar <CODE>ext2-l</CODE> como=20
+  <CODE>/var</CODE>. A partir de agora, tudo o que for gravado em=20
+  <CODE>/var</CODE> ser=E1 na realidade gravado no arquivo =
+<CODE>ext2-l</CODE>.=20
+  <P>Para o sistema acessar o arquivo, deve passar pelo sistema de =
+arquivos=20
+  <SAMP>loop</SAMP> e <SAMP>FAT32</SAMP>, isto causa um desempenho =
+menor.=20
+  </P></LI></UL>
+<HR>
+<A name=3Ds-disc-swap></A>
+<H2>5.7 Parti=E7=E3o Linux Swap (Mem=F3ria Virtual)</H2>
+<P>Este tipo de parti=E7=E3o =E9 usado para oferecer o suporte a =
+<EM>mem=F3ria=20
+virtual</EM> ao <CODE>GNU/Linux</CODE> em adi=E7=E3o a <EM>mem=F3ria =
+RAM</EM>=20
+instalada no sistema. Este tipo de parti=E7=E3o =E9 identificado pelo =
+tipo 82 nos=20
+programas de particionamento de disco para <CODE>Linux</CODE>. Para =
+detalhes de=20
+como criar uma parti=E7=E3o <SAMP>Linux Swap</SAMP> veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-swap-criando-p">Criando=20
+sistema de arquivos Swap em uma parti=E7=E3o, Se=E7=E3o 5.7.1</A>.=20
+<P>Somente os dados na mem=F3ria RAM s=E3o processados pelo processador, =
+por ser=20
+mais r=E1pida. Desta forma quando voc=EA est=E1 executando um programa e =
+a mem=F3ria RAM=20
+come=E7a a encher, o <CODE>GNU/Linux</CODE> move automaticamente os =
+dados que n=E3o=20
+est=E3o sendo usados para a parti=E7=E3o Swap e libera a mem=F3ria RAM =
+para a continuar=20
+carregando os dados necess=E1rios pelo. Quando os dados movidos para a =
+parti=E7=E3o=20
+Swap s=E3o solicitados, o <CODE>GNU/Linux</CODE> move os dados da =
+parti=E7=E3o Swap=20
+para a Mem=F3ria. Por este motivo a parti=E7=E3o Swap tamb=E9m =E9 =
+chamada <SAMP>de=20
+Troca</SAMP> ou <SAMP>mem=F3ria virtual</SAMP>.=20
+<P>A velocidade em que os dados s=E3o movidos da mem=F3ria RAM para a =
+parti=E7=E3o =E9=20
+muito alta. Note tamb=E9m que =E9 poss=EDvel criar o sistema de arquivos =
+<EM>Swap</EM>=20
+em um arquivo ao inv=E9s de uma parti=E7=E3o (veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-swap-criando-a">Criando=20
+um sistema de arquivos Swap em um arquivo, Se=E7=E3o 5.7.2</A>).=20
+<HR>
+<A name=3Ds-disc-swap-criando-p></A>
+<H3>5.7.1 Criando sistema de arquivos Swap em uma parti=E7=E3o</H3>
+<P>O programa usado para formatar uma parti=E7=E3o Swap =E9 o =
+<CODE>mkswap</CODE>. Seu=20
+uso =E9 simples:=20
+<P><SAMP>mkswap /dev/hda?</SAMP>=20
+<P>Novamente veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-id">Identifica=E7=E3o=20
+de discos e parti=E7=F5es em sistemas Linux, Se=E7=E3o 5.12</A> caso =
+n=E3o souber=20
+identificar seus discos e parti=E7=F5es. O nome do dispositivo da =
+parti=E7=E3o=20
+<SAMP>Swap</SAMP> pode ser visualizado atrav=E9s de seu programa de=20
+particionamento, voc=EA pode usar o comando <SAMP>fdisk -l =
+/dev/hda</SAMP> para=20
+listar as parti=E7=F5es no primeiro disco r=EDgido e assim verificar =
+qual dispositivo=20
+corresponde a parti=E7=E3o Swap.=20
+<P>A op=E7=E3o <SAMP>-c</SAMP> tamb=E9m pode ser usada com o =
+<CODE>mkswap</CODE> para=20
+checar se existem agrupamentos danificados na parti=E7=E3o.=20
+<P>Com a parti=E7=E3o Swap formatada, use o comando: <SAMP>swapon =
+/dev/hda?</SAMP>=20
+para ativar a parti=E7=E3o Swap (lembre-se de substituir ? pelo n=FAmero =
+de sua=20
+parti=E7=E3o Swap).=20
+<P>Observa=E7=F5es:=20
+<P>Os Kernels do <CODE>GNU/Linux</CODE> 2.0.xx e anteriores somente =
+suportam=20
+parti=E7=F5es Swap de at=E9 128MB. Caso precise de mais que isso, crie =
+mais parti=E7=F5es=20
+Swap ou atualize seu sistema para trabalhar com o kernel 2.2.xx=20
+<P>Se utilizar mais que 1 parti=E7=E3o <SAMP>Swap</SAMP>, pode ser =
+=FAtil o uso da=20
+op=E7=E3o <SAMP>-p NUM</SAMP> que especifica a prioridade em que a =
+parti=E7=E3o Swap=20
+ser=E1 usada. Pode ser usado um valor de prioridade entre 0 e 32767, =
+parti=E7=F5es com=20
+n=FAmero maior ser=E3o usadas primeiro, sendo que na montagem =
+autom=E1tica atrav=E9s de=20
+"mount -a" podem ser designados n=FAmeros negativos.=20
+<P>Procure usar o n=FAmero maior para parti=E7=F5es mais r=E1pidas (elas =
+ser=E3o acessadas=20
+primeiro) e n=FAmeros maiores para parti=E7=F5es mais lentas. Caso =
+precise desativar a=20
+parti=E7=E3o Swap, use o comando: <SAMP>swapoff /dev/hda?</SAMP>.=20
+<HR>
+<A name=3Ds-disc-swap-criando-a></A>
+<H3>5.7.2 Criando um sistema de arquivos Swap em um arquivo</H3>
+<P>Tamb=E9m =E9 poss=EDvel criar um arquivo que poder=E1 ser usado como =
+mem=F3ria virtual.=20
+Veja passo a passo como fazer isso:=20
+<OL type=3D1>
+  <LI>Use o comando <SAMP>dd if=3D/dev/zero of=3D/tmp/troca bs=3D1024=20
+  count=3D16000</SAMP> para criar um arquivo chamado <CODE>troca</CODE> =
+vazio de=20
+  16Mb de tamanho em <CODE>/tmp</CODE>. Voc=EA pode modificar os =
+par=E2metros de=20
+  <SAMP>of</SAMP> para escolher onde o arquivo ser=E1 criado, o tamanho =
+do arquivo=20
+  poder=E1 ser modificado atrav=E9s de <SAMP>count</SAMP>. </LI></OL>
+<OL type=3D1 start=3D2>
+  <LI>Execute <SAMP>mkswap /tmp/troca</SAMP> para formatar o arquivo. =
+Ap=F3s=20
+  concluir este passo, o sistema de arquivos <SAMP>Swap</SAMP> estar=E1 =
+criado e=20
+  pronto para ser usado. </LI></OL>
+<OL type=3D1 start=3D3>
+  <LI>Digite <SAMP>sync</SAMP> para sincronizar os buffers para o disco, =
+assim=20
+  voc=EA n=E3o ter=E1 problemas em um servidor com muito I/O. </LI></OL>
+<OL type=3D1 start=3D4>
+  <LI>Ative o arquivo de troca com o comando <SAMP>swapon =
+/tmp/troca</SAMP>.=20
+  </LI></OL>
+<OL type=3D1 start=3D5>
+  <LI>Confira se o tamanho da mem=F3ria virtual foi modificado digitando =
+<SAMP>cat=20
+  /proc/meminfo</SAMP> ou <SAMP>free</SAMP>. </LI></OL>
+<P>Observa=E7=F5es:=20
+<UL>
+  <LI>Podem ser usadas parti=E7=F5es de troca e arquivos de troca =
+juntos, sem=20
+  problemas.=20
+  <LI>Caso seu sistema j=E1 tenha uma parti=E7=E3o de <SAMP>Swap</SAMP>, =
+=E9=20
+  recomend=E1vel deixar o acesso ao arquivo <SAMP>Swap</SAMP> com uma =
+prioridade=20
+  menor (usando a op=E7=E3o -p NUM com o comando <CODE>swapon</CODE>). =
+</LI></UL>
+<HR>
+<A name=3Ds-disc-swap-swapxarquivo></A>
+<H3>5.7.3 Parti=E7=E3o Swap ou Arquivo?</H3>
+<P>Criar uma parti=E7=E3o de Troca ou um arquivo de troca? Abaixo =
+algumas vantagens=20
+e desvantagens:=20
+<UL>
+  <LI>A parti=E7=E3o Swap =E9 mais r=E1pida que o arquivo Swap pois =E9 =
+acessada=20
+  diretamente pelo Kernel. Se o seu computador tem pouca mem=F3ria =
+(menos que=20
+  32Mb) ou voc=EA tem certeza que o sistema recorre freq=FCentemente a =
+mem=F3ria=20
+  virtual para executar seus programas, =E9 recomend=E1vel usar uma =
+parti=E7=E3o Swap.=20
+  </LI></UL>
+<UL>
+  <LI>O arquivo de troca permite que voc=EA crie somente uma =
+parti=E7=E3o <SAMP>Linux=20
+  Native</SAMP> e crie o arquivo de troca na parti=E7=E3o =
+<SAMP>EXT2</SAMP>.=20
+</LI></UL>
+<UL>
+  <LI>Voc=EA pode alterar o tamanho do arquivo de troca facilmente =
+apagando e=20
+  criando um novo arquivo como descrito em <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-swap-criando-a">Criando=20
+  um sistema de arquivos Swap em um arquivo, Se=E7=E3o 5.7.2</A>. =
+</LI></UL>
+<UL>
+  <LI>=C9 poss=EDvel criar um arquivo de troca em outros tipos de =
+parti=E7=F5es como=20
+  <SAMP>FAT16</SAMP>, <SAMP>FAT32</SAMP>, etc. </LI></UL>
+<UL>
+  <LI>O arquivo de troca estar=E1 dispon=EDvel somente ap=F3s o sistema =
+de arquivos=20
+  que o armazena (<SAMP>ext2</SAMP>, <SAMP>fat32</SAMP>, etc) estar =
+montado.=20
+  Isto =E9 um problema para sistemas com pouca mem=F3ria que dependem do =
+arquivo de=20
+  troca desde sua inicializa=E7=E3o. </LI></UL>
+<HR>
+<A name=3Ds-disc-proc></A>
+<H2>5.8 O sistema de arquivos <CODE>/proc</CODE></H2>
+<P>=C9 o sistema de arquivos do Kernel do <CODE>GNU/Linux</CODE>. Ele =
+oferece um=20
+m=E9todo de ler, gravar e modificar dinamicamente os par=E2metros do =
+kernel, muito=20
+=FAtil para curiosos (como eu) e programas de configura=E7=E3o. A =
+modifica=E7=E3o dos=20
+arquivos do diret=F3rio <CODE>/proc</CODE> =E9 o m=E9todo mais usado =
+para modificar a=20
+configura=E7=E3o do sistema e muitos programas tamb=E9m dependem deste =
+diret=F3rio para=20
+funcionar.=20
+<P>Nele voc=EA tem todo o controle do que o seus sistema operacional =
+est=E1 fazendo,=20
+a configura=E7=E3o dos hardwares, interrup=E7=F5es, sistema de arquivos =
+montado,=20
+execu=E7=E3o de programas, mem=F3ria do sistema, rede, etc.=20
+<P>Agora entre no diret=F3rio <CODE>/proc</CODE> digite <SAMP>ls</SAMP> =
+e veja a=20
+quantidade de arquivos e diret=F3rios que ele possui, d=EA uma passeada =
+por eles.=20
+Abaixo a descri=E7=E3o de alguns deles (todos podem ser visualizados =
+pelo comando=20
+<CODE>cat</CODE>):=20
+<UL>
+  <LI><SAMP>Diret=F3rios com n=FAmeros</SAMP> - Estes identificam os =
+par=E2metros de=20
+  um processo em execu=E7=E3o. Por exemplo, se o PID (identifica=E7=E3o =
+do processo) do=20
+  <CODE>inetd</CODE> for <SAMP>115</SAMP>, voc=EA pode entrar no =
+diret=F3rio=20
+  <SAMP>115</SAMP> e verificar as op=E7=F5es usadas para execu=E7=E3o =
+deste programa=20
+  atrav=E9s de cada arquivos existente dentro do diret=F3rio. Alguns =
+s=E3o:=20
+  <UL>
+    <LI><CODE>cmdline</CODE> - O que foi digitado para iniciar o =
+processo (pode=20
+    tamb=E9m ter sido iniciado atrav=E9s de um programa ou pelo kernel). =
+
+    <LI><CODE>environ</CODE> - Vari=E1veis de Ambiente existentes no =
+momento da=20
+    execu=E7=E3o do processo.=20
+    <LI><CODE>status</CODE> - Dados sobre a execu=E7=E3o do Processo =
+(PID, status da=20
+    execu=E7=E3o do programa, mem=F3ria consumida, mem=F3ria =
+execut=E1vel, UID, GID, etc).=20
+    </LI></UL>
+  <LI><CODE>apm</CODE> - Dados sobre o gerenciamento de energia=20
+  <LI><CODE>cmdline</CODE> - Linha de comando usada para inicializar o =
+Kernel=20
+  <CODE>GNU/Linux</CODE>. Os par=E2metros s=E3o passados atrav=E9s do =
+programa de=20
+  inicializa=E7=E3o, como o <CODE>LILO</CODE>, <CODE>LOADLIN</CODE>,=20
+  <CODE>SYSLINUX</CODE>.=20
+  <LI><CODE>cpuinfo</CODE> - Detalhes sobre a CPU do sistema=20
+  <LI><CODE>devices</CODE> - Dispositivos usados no sistema=20
+  <LI><CODE>dma</CODE> - Canais de DMA usados por dispositivos=20
+  <LI><CODE>filesystems</CODE> - Sistemas de arquivos em uso atualmente=20
+  <LI><CODE>interrupts</CODE> - Interrup=E7=F5es usadas por dispositivos =
+
+  <LI><CODE>ioports</CODE> - Portas de Entrada e Sa=EDda usadas pelos =
+dispositivos=20
+  do sistema=20
+  <LI><CODE>kcore</CODE> - Este arquivo corresponde a toda a mem=F3ria =
+RAM em seu=20
+  sistema. Seu tamanho =E9 correspondente a mem=F3ria RAM do micro=20
+  <LI><CODE>kmsg</CODE> - Permite visualizar mensagens do Kernel (use o =
+comando=20
+  <SAMP>cat &lt; kmsg</SAMP> para visualiza-lo e pressione CTRL+C para =
+cancelar=20
+  <LI><CODE>loadavg</CODE> - M=E9dia de Carga do sistema=20
+  <LI><CODE>meminfo</CODE> - Dados de utiliza=E7=E3o da mem=F3ria do =
+sistema=20
+  <LI><CODE>misc</CODE> - Outras configura=E7=F5es=20
+  <LI><CODE>modules</CODE> - M=F3dulos atualmente carregados no kernel=20
+  <LI><CODE>mounts</CODE> - Sistemas de Arquivos atualmente montados=20
+  <LI><CODE>pci</CODE> - Detalhes sobre dispositivos PCI do sistema=20
+  <LI><CODE>rtc</CODE> - Rel=F3gio em Tempo real do sistema=20
+  <LI><CODE>uptime</CODE> - Tempo de execu=E7=E3o do sistema=20
+  <LI><CODE>version</CODE> - Vers=E3o atual do Kernel, programa usado na =
+
+  compila=E7=E3o, etc=20
+  <LI>Diret=F3rio <CODE>net</CODE> - Dados sobre a rede do sistema=20
+  <LI>Diret=F3rio <CODE>sys</CODE> - Dados sobre outras =E1reas do =
+sistema=20
+  <LI>Diret=F3rio <CODE>scsi</CODE> - Detalhes sobre dispositivos SCSI =
+do sistema=20
+  </LI></UL>
+<P>Note que o diret=F3rio <CODE>proc</CODE> e os arquivos existentes =
+dentro dele=20
+est=E3o localizados no diret=F3rio raiz (<CODE>/</CODE>), mas n=E3o =
+ocupa nenhum=20
+espa=E7o no disco r=EDgido.=20
+<HR>
+<A name=3Ds-disc-lvm></A>
+<H2>5.9 LVM - Logical Volume Manager</H2>
+<P>O <CODE>lvm</CODE> (<EM>Logical Volume Manager</EM>) faz a =
+associa=E7=E3o entre=20
+dispositivos/parti=E7=F5es f=EDsicas (incluindo discos RAID, MO, mass =
+storages=20
+diversos, MD, e loop) e dispositivos l=F3gicos. O m=E9todo tradicional =
+faz a=20
+aloca=E7=E3o de todo espa=E7o f=EDsico ao tamanho da parti=E7=E3o do =
+disco (o m=E9todo=20
+tradicional), o que traz muito trabalho quando o espa=E7o esgota, =
+c=F3pia de dados=20
+ou planejamento de uso de m=E1quina (que pode mudar com o passar do =
+tempo). O=20
+sistema de <CODE>lvm</CODE> soluciona os seguintes problemas:=20
+<UL>
+  <LI>Uso eficaz de disco, principalmente quando h=E1 pouco espa=E7o =
+para cria=E7=E3o de=20
+  parti=E7=F5es independentes.=20
+  <LI>Permite aumentar/diminuir dinamicamente o tamanho das =
+parti=E7=F5es sem=20
+  reparticionamento do disco r=EDgido usando o espa=E7o livre em outras =
+parti=E7=F5es ou=20
+  utilizando o espa=E7o livre reservado para o uso do LVM.=20
+  <LI>Uma parti=E7=E3o de disco =E9 identificada por um nome de volume e =
+n=E3o pelo=20
+  dispositivo. Voc=EA pode ent=E3o se referir aos volumes como: =
+usu=E1rios, vendas,=20
+  diretoria, etc.=20
+  <LI>Sua divis=E3o em 3 camadas possibilita a adi=E7=E3o/remo=E7=E3o de =
+mais discos de um=20
+  conjunto caso seja necess=E1rio mais espa=E7o em volumes, etc.=20
+  <LI>Permite selecionar o tamanho do cluster de armazenamento e a forma =
+que=20
+  eles s=E3o acessados entre os discos, possibilitando garantir a =
+escolha da=20
+  melhor op=E7=E3o dependendo da forma que os dados ser=E3o manipulados =
+pelo servidor.=20
+
+  <LI>Permite snapshots dos volumes do disco r=EDgido. </LI></UL>
+<P>As 3 camadas do LVM s=E3o agrupadas da seguinte forma:=20
+<UL>
+  <LI><SAMP>PV (Phisical Volume)</SAMP> - Corresponde a todo o disco=20
+  r=EDgido/parti=E7=E3o ou dispositivo de bloco que ser=E1 adicionado ao =
+LVM. Os=20
+  aplicativos que manipulam o volume f=EDsico, come=E7am com as letras=20
+  <CODE>pv*</CODE>. O espa=E7o dispon=EDvel no PV =E9 dividido em PE =
+(Phisical=20
+  Extends, ou extens=F5es f=EDsicas). O valor padr=E3o do PE =E9 de 4MB, =
+possibilitando=20
+  a cria=E7=E3o de um VG de 256Gb.=20
+  <P>Por exemplo: <CODE>/dev/hda1</CODE> </P>
+  <LI><SAMP>VG (Volume Group)</SAMP> - Corresponde ao grupo de volumes =
+f=EDsicos=20
+  que fazem parte do LVM. Do grupo de volume s=E3o alocados os espa=E7os =
+para=20
+  cria=E7=E3o dos volumes l=F3gicos. Os aplicativos que manipulam o o =
+grupo de volume,=20
+  come=E7am com as letras <CODE>vg*</CODE>.=20
+  <P>Por exemplo: <CODE>/dev/lvmdisk0</CODE> <SAMP>LV (Logical =
+Volume)</SAMP> -=20
+  Corresponde a parti=E7=E3o l=F3gica criada pelo LVM para grava=E7=E3o =
+de dados. ao inv=E9s=20
+  de ser identificada por nomes de dispositivos, podem ser usados nomes =
+comuns=20
+  para se referir as parti=E7=F5es (tmp,usr,etc.). O Volume l=F3gico =E9 =
+a =E1rea onde o=20
+  sistema de arquivo =E9 criado para grava=E7=E3o de dados, seria =
+equivalente a=20
+  parti=E7=E3o em um sistema <EM>SEM LVM</EM> s=F3 que l=F3gica ao =
+inv=E9s de f=EDsica. O=20
+  volume l=F3gico tem seu espa=E7o dividido em LE (Logical Extends, ou =
+extens=F5es=20
+  l=F3gicas) que correspondem aos PE's alocados.=20
+  <P>Exemplos: <CODE>/dev/lvmdisk/usr</CODE>, =
+<CODE>/dev/lvmdisk/tmp</CODE>,=20
+  etc. </P></LI></UL>
+<HR>
+<A name=3Ds-disc-lvm-graph></A>
+<H3>5.9.1 Representa=E7=E3o gr=E1fica do LVM</H3>
+<P>Desenvolvi este desenho para representar a id=E9ia de organiza=E7=E3o =
+de um sistema=20
+LVM para o guia Foca GNU/Linux e apresentar a descri=E7=E3o pr=E1tica da =
+coisa: <PRE>     +------[ Grupo de Volume (VG) - lvmdsk ]------+
+     | +--[ PV - hda1 ]---+ +--[ PV - hdb1 ]--+    |
+     | | PE PE PE PE PE PE| | PE PE PE PE PE  |    |
+     | +------------------+ +-----------------+    |
+     |    |  |                   | 	     |        |
+     |    |  | +-----------------+        |        |
+     |    |  +----------------+           |        |
+     |    |    |              |           |        |
+     |  +-[ LV - var ]-+    +-[ LV - home ]-+      |
+     |  | LE LE LE LE  |    | LE LE LE LE   |      |
+     |  +--------------+    +---------------+      |
+     +---------------------------------------------+
+</PRE>
+<P>O gr=E1fico acima representa a seguinte situa=E7=E3o:=20
+<OL type=3D1>
+  <LI>N=F3s temos dois volumes f=EDsicos representados por =
+<CODE>hda1</CODE> e=20
+  <CODE>hdb1</CODE>. Cada um desses volumes f=EDsicos tem um Phisical =
+Extend (PE)=20
+  de 4M (o padr=E3o).=20
+  <LI>Estes dois volumes f=EDsicos acima representam o espa=E7o total do =
+grupo de=20
+  volume <EM>lvmdisk</EM> em <CODE>/dev/lvmdisk</CODE>.=20
+  <LI>Do grupo de volume <EM>lvmdisk</EM> s=E3o criados dois volumes =
+l=F3gicos=20
+  chamados <EM>var</EM> e <EM>home</EM>, estando dispon=EDveis para=20
+  particionamento atrav=E9s de <CODE>/dev/lvmdisk/var</CODE> e=20
+  <CODE>/var/lvmdisk/home</CODE>. </LI></OL>
+<P>Na pr=E1tica, o espa=E7o do volume l=F3gico =E9 definido alocando-se =
+alguns Phisical=20
+Extends (PE) dos volumes f=EDsicos como logical extends (LE) dos volumes =
+l=F3gicos.=20
+Desta forma, o tamanho de todos os PEs e LEs existentes dentro de um =
+mesmo grupo=20
+de volume devem ser iguais.=20
+<HR>
+<A name=3Ds-disc-lvm-perf></A>
+<H3>5.9.2 Performance do LVM</H3>
+<P>Um sistema com LVM tem sua performance um pouco reduzida quanto ao =
+acesso a=20
+disco, devido as camadas adicionais de acesso aos dados, sendo afetadas=20
+opera=E7=F5es em caracteres e inteligentes de acesso a dados.=20
+<P>Entretanto, a performance de leitura/grava=E7=E3o de blocos =E9 =
+melhorada=20
+consideravelmente ap=F3s a ado=E7=E3o do LVM. O LVM tamb=E9m garante que =
+o sistema n=E3o=20
+mostre sintomas de paradas durante o esvaziamento de cache de disco, =
+mantendo=20
+sempre uma certa const=E2ncia na transfer=EAncia de dados mesmo em =
+opera=E7=F5es pesadas=20
+de I/O no disco. Depende de voc=EA avaliar estes pontos e considerar sua =
+ado=E7=E3o.=20
+<HR>
+<A name=3Ds-disc-lvm-install></A>
+<H3>5.9.3 Colocando LVM em seu sistema</H3>
+<P>Nesta se=E7=E3o n=E3o tenho a inten=E7=E3o de cobrir todos os =
+detalhes t=E9cnicos da=20
+implanta=E7=E3o do LVM, a id=E9ia aqui =E9 fornecer uma refer=EAncia =
+b=E1sica e pr=E1tica para=20
+uso em qualquer sistema normal (desconsiderando usos cr=EDticos). A =
+id=E9ia aqui =E9=20
+mostrar de forma pr=E1tica como implantar LVM em sua m=E1quina e =
+preparar seu uso=20
+nos discos.=20
+<P>Antes de come=E7ar, retire QUALQUER CD que estiver inserido na =
+unidade de=20
+CD-ROM, pois eles podem causar erro no <CODE>pvscan</CODE>,=20
+<CODE>pvdisplay</CODE>, etc.=20
+<OL type=3D1>
+  <LI>No particionamento, defina as parti=E7=F5es do tipo 8E (Linux =
+LVM). A parti=E7=E3o=20
+  Linux LVM =E9 exatamente igual a Linux Native (82), a =FAnica vantagem =
+=E9 que o LVM=20
+  utilizar=E1 auto detec=E7=E3o para saber quais parti=E7=F5es ele deve =
+utilizar no=20
+  <CODE>pvscan</CODE>.=20
+  <LI>Instale o pacote <CODE>lvm10</CODE> e uma imagem de kernel 2.4 que =
+tenha=20
+  suporte a LVM, ou compile seu pr=F3prio kernel (caso goste de =
+m=E1quinas=20
+  turbinadas :-)=20
+  <LI>Execute o <CODE>pvscan</CODE> para detectar as parti=E7=F5es =
+marcadas como LVM=20
+  e criar sua configura=E7=E3o em <CODE>/etc/lvmtab.d</CODE>.=20
+  <P><STRONG>OBS:</STRONG> =C9 normal o sistema procurar dispositivos de =
+CD-ROM=20
+  durante a execu=E7=E3o do <CODE>pvscan</CODE>, apenas n=E3o deixe um =
+CD na unidade=20
+  para evitar grandes sustos se estiver desatento com os passos :-) </P>
+  <LI>Rode o <CODE>pvcreate</CODE> no disco ou parti=E7=E3o para dizer =
+que ela ser=E1=20
+  um volume f=EDsico do LVM: <SAMP>pvcreate /dev/hda1</SAMP> ou =
+<SAMP>pvcreate=20
+  /dev/hda</SAMP>=20
+  <P>Em caso de d=FAvida sobre qual =E9 a parti=E7=E3o LVM, digite: =
+<SAMP>fdisk -l=20
+  /dev/hda</SAMP> (supondo que <CODE>/dev/hda</CODE> =E9 o disco =
+r=EDgido que est=E1=20
+  configurando o LVM). </P>
+  <LI>Rode o pvdisplay /dev/hda1 para verificar se o volume f=EDsico foi =
+criado.=20
+  Recomendo que deixe a parti=E7=E3o ra=EDz (<SAMP>/</SAMP>) de fora do =
+LVM para n=E3o=20
+  ter futuros problemas com a manuten=E7=E3o do seu sistema, a menos que =
+tenha=20
+  muitas op=E7=F5es de inicializa=E7=E3o com suporte a LVM em m=E3os, ou =
+algo mais=20
+  complexo baseado em initrd :-)=20
+  <LI>Crie o grupo de volume na parti=E7=E3o <SAMP>vgcreate lvmdisk =
+/dev/hda1=20
+  /dev/hdb7</SAMP>... Note que parti=E7=F5es de discos diferentes podem =
+fazer parte=20
+  de um mesmo grupo de volume (VG) do LVM. Caso use o =
+<SAMP>devfs</SAMP>, ser=E1=20
+  preciso usar o caminho completo do dispositivo ao inv=E9s do link:=20
+  <SAMP>vgcreate lvmdisk /dev/ide/host0/bus0/target0/lun0/part1</SAMP>=20
+  <P>O valor padr=E3o do "Phisical Extend" =E9 de 4MB mas pode ser =
+alterado pelo=20
+  par=E2metro "-s tamanho", assim o tamanho m=E1ximo do grupo de volume =
+ser=E1 de=20
+  256GB (4MB * 64.000 extends que s=E3o suportados por volume l=F3gico). =
+Os valores=20
+  do Phisical Extend (PE) pode ser de 8k a 16GB. N=E3o =E9 poss=EDvel =
+modificar o=20
+  tamanho do PE ap=F3s ele ser definido. </P>
+  <LI>Verifique o grupo de volume (VG) rec=E9m criado com o comando:=20
+  <CODE>vgdisplay</CODE> ou <CODE>vgdisplay /dev/hda6</CODE>. Atente =
+para a=20
+  linha "Free PE / tamanho", que indica o espa=E7o livre restante para =
+criar os=20
+  volumes l=F3gicos (LV).=20
+  <LI>Crie o volume l=F3gico (LV) com o comando: <SAMP>lvcreate -L1500 =
+-ntmp=20
+  lvmdisk</SAMP> Que vai criar uma parti=E7=E3o LVM de 1500MB (1,5GB) =
+com o nome=20
+  <EM>tmp</EM> (acess=EDvel por <CODE>/var/lvmdisk/tmp</CODE>) dentro do =
+grupo=20
+  <EM>lvmdisk</EM>. Voc=EA dever=E1 fazer isso com as outra =
+parti=E7=F5es.=20
+  <LI>Agora resta criar um sistema de arquivos (<EM>ext3</EM>,=20
+  <EM>reiserfs</EM>, <EM>xfs</EM>, <EM>jfs</EM>, etc) como faria com =
+qualquer=20
+  parti=E7=E3o f=EDsica normal:=20
+  <P><SAMP>mkfs.ext3 /dev/lvmdisk/tmp</SAMP> <SAMP>mkfs.reiserfs=20
+  /dev/lvmdisk/tmp</SAMP> </P></LI></OL>
+<P><STRONG>OBS:</STRONG> Caso deseje montar automaticamente o volume =
+LVM,=20
+coloque o caminho completo do LVM ao inv=E9s do volume f=EDsico no=20
+<CODE>/etc/fstab</CODE>: <CODE>/dev/lvmdisk/tmp</CODE>.=20
+<HR>
+<A name=3Ds-disc-lvm-grow></A>
+<H3>5.9.4 Aumentando o tamanho de um volume l=F3gico</H3>
+<P>O processo para aumentar o tamanho do volume l=F3gico consiste em =
+primeiro=20
+aumentar o tamanho do VG com o <CODE>lvextend</CODE> e depois ajustar o =
+tamanho=20
+do sistema de arquivos: <PRE>     # Aumenta o espa=E7o do volume =
+l=F3gico tmp para 1G
+     lvextend -L1G /dev/lvmdisk/tmp
+    =20
+     # Aumenta em 200MB o espa=E7o no volume l=F3gico tmp
+     lvextend -L+200M /dev/lvmdisk/tmp
+</PRE>
+<P>As unidades <SAMP>Kk,Mm,Gg,Tt</SAMP> podem ser usadas para =
+especificar o=20
+espa=E7o. Ap=F3s modificar o volume l=F3gico, ser=E1 preciso aumentar o =
+tamanho do=20
+sistema de arquivos para ser exatamente igual ao tamanho do LV. Isto =
+depende do=20
+seu sistema de arquivos:=20
+<DL>
+  <DT>ext2/3=20
+  <DD>resize2fs /dev/lvmdisk/tmp=20
+  <P>O <EM>ext2/3</EM> ainda vem com o utilit=E1rio <CODE>e2fsadm</CODE> =
+que=20
+  executa os dois comandos (<CODE>lvextend</CODE> e =
+<CODE>resize2fs</CODE>) de=20
+  uma s=F3 vez: <SAMP>e2fsadm -L+1G /dev/lvmdisk/tmp</SAMP>=20
+  <P><STRONG>OBS:</STRONG> Voc=EA dever=E1 desmontar o sistema de =
+arquivos antes de=20
+  alterar o tamanho de um sistema de arquivos <EM>ext2</EM> ou =
+<EM>ext3</EM>.=20
+  Para alterar o tamanho durante a execu=E7=E3o do sistema operacional, =
+=E9 necess=E1ria=20
+  a aplica=E7=E3o do patch <EM>ext2online</EM> no kernel. </P>
+  <DT>reiserfs=20
+  <DD>resize_reiserfs -f /dev/lvmdisk/tmp=20
+  <P>O tamanho do sistema de arquivos <CODE>reiserfs</CODE> poder=E1 ser =
+
+  modificado on-line, assim n=E3o precisa parar seu servidor para esta =
+opera=E7=E3o.=20
+  </P>
+  <DT>xfs=20
+  <DD>xfs_growfs /tmp=20
+  <P>Note que deve ser especificado o ponto de montagem ao inv=E9s do =
+dispositivo.=20
+  O sistema de arquivos dever=E1 ser montado antes de ser modificado e =
+incluido no=20
+  <CODE>/etc/fstab</CODE>. </P></DD></DL>
+<HR>
+<A name=3Ds-disc-lvm-shrink></A>
+<H3>5.9.5 Diminuindo um volume l=F3gico</H3>
+<P>Para diminuir o tamanho de um volume l=F3gico, certifique-se de ter =
+calculado o=20
+espa=E7o corretamente para acomodar todos os dados que j=E1 existem na =
+parti=E7=E3o. A=20
+diferen=E7a para o processo de aumentar o LV =E9 que neste o sistema de =
+arquivos =E9=20
+reduzido primeiro e depois o LV:=20
+<DL>
+  <DT>ext2/3=20
+  <DD><SAMP>e2fsadm -L-1G /dev/lvmdisk/tmp</SAMP>=20
+  <P>Voc=EA tamb=E9m poder=E1 usar o <CODE>resize2fs</CODE> e depois o=20
+  <CODE>lvreduce</CODE>, mas dever=E1 dizer o tamanho em blocos para o=20
+  <CODE>resize2fs</CODE> que varia de acordo com o tamanho do sistema de =
+
+  arquivos: <PRE>      resize2fs /dev/lvmdisk/tmp 524288
+      lvreduce -L-1G /dev/lvmdisk/tmp
+</PRE>
+  <P><STRONG>OBS:</STRONG> Voc=EA dever=E1 desmontar o sistema de =
+arquivos antes de=20
+  alterar o tamanho do sistema de arquivos, a n=E3o ser que tenha o =
+patch=20
+  <EM>ext2online</EM> aplicado no kernel. </P>
+  <DT>reiserfs=20
+  <DD>resize_reiserfs -s-1G /dev/lvmdisk/tmp lvreduce -L-1G =
+/dev/lvmdisk/tmp=20
+  <P>O tamanho do sistema de arquivos <CODE>reiserfs</CODE> poder=E1 ser =
+
+  modificado on-line, assim n=E3o precisa parar seu servidor para a =
+modifica=E7=E3o.=20
+  </P>
+  <DT>xfs=20
+  <DD>N=E3o =E9 poss=EDvel diminuir o tamanho de um sistema de arquivos =
+XFS em sua=20
+  vers=E3o atual (12/2003). </DD></DL>
+<HR>
+<A name=3Ds-disc-formatando></A>
+<H2>5.10 Formatando disquetes</H2>
+<P>As subse=E7=F5es seguintes explicar=E3o maneiras de formatar seus =
+disquetes para=20
+serem usados no <CODE>GNU/Linux</CODE> e <CODE>DOS/Windows</CODE>.=20
+<HR>
+<A name=3Ds-disc-formatando-l></A>
+<H3>5.10.1 Formatando disquetes para serem usados no Linux</H3>
+<P>Para formatar disquetes para serem usados no <CODE>GNU/Linux</CODE> =
+use o=20
+comando:=20
+<P><SAMP>mkfs.ext2 [<EM>-c</EM>] [<EM>/dev/fd0</EM>]</SAMP>=20
+<P>Em alguns sistemas voc=EA deve usar <CODE>mke2fs</CODE> no lugar de=20
+<CODE>mkfs.ext2</CODE>. A op=E7=E3o <SAMP>-c</SAMP> faz com que o=20
+<CODE>mkfs.ext2</CODE> procure por blocos danificados no disquete e=20
+<CODE>/dev/fd0</CODE> especifica a primeira unidade de disquetes para =
+ser=20
+formatada (equivalente a <SAMP>A:</SAMP> no DOS). Mude para=20
+<CODE>/dev/fd1</CODE> para formatar um disquete da segunda unidade.=20
+<P>OBS: Este comando cria um sistema de arquivos <EM>ext2</EM> no =
+disquete que =E9=20
+nativo do <CODE>GNU/Linux</CODE> e permite usar caracter=EDsticas como =
+permiss=F5es=20
+de acesso e outras. Isto tamb=E9m faz com que o disquete N=C3O possa ser =
+lido pelo=20
+<CODE>DOS/Windows</CODE>. Para formatar um disquete no =
+<CODE>GNU/Linux</CODE>=20
+usando o <EM>FAT12</EM> (compat=EDvel com o DOS/Windows) veja pr=F3xima =
+se=E7=E3o.=20
+<P>Exemplo: <SAMP>mkfs.ext2 -c /dev/fd0</SAMP>=20
+<HR>
+<A name=3Ds-disc-formatando-d></A>
+<H3>5.10.2 Formatando disquetes compat=EDveis com o DOS/Windows</H3>
+<P>A formata=E7=E3o de disquetes <CODE>DOS</CODE> no =
+<CODE>GNU/Linux</CODE> =E9 feita=20
+usando o comando <CODE>superformat</CODE> que =E9 geralmente inclu=EDdo =
+no pacote=20
+<CODE>mtools</CODE>. O <CODE>superformat</CODE> formata (cria um sistema =
+de=20
+arquivos) um disquete para ser usado no <CODE>DOS</CODE> e tamb=E9m =
+possui op=E7=F5es=20
+avan=E7adas para a manipula=E7=E3o da unidade, formata=E7=E3o de =
+intervalos de cilindros=20
+espec=EDficos, formata=E7=E3o de discos em alta capacidade e =
+verifica=E7=E3o do disquete.=20
+<P><SAMP>superformat [op=E7=F5es] [<EM>dispositivo</EM>]</SAMP>=20
+<DL>
+  <DT><EM>dispositivo</EM>=20
+  <DD>Unidade de disquete que ser=E1 formatada. Normalmente =
+<CODE>/dev/fd0</CODE>=20
+  ou <CODE>/dev/fd1</CODE> especificando respectivamente a primeira e =
+segunda=20
+  unidade de disquetes.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-v [num]=20
+  <DD>Especifica o n=EDvel de detalhes que ser=E3o exibidos durante a =
+formata=E7=E3o do=20
+  disquete. O n=EDvel 1 especifica um ponto mostrado na tela para cada =
+trilha=20
+  formatada. Veja a p=E1gina de manual do <CODE>superformat</CODE> para =
+detalhes.=20
+  <DT>-superverify=20
+  <DD>Verifica primeiro se a trilha pode ser lida antes de formata-la. =
+Este =E9 o=20
+  padr=E3o.=20
+  <DT>--dosverify, -B=20
+  <DD>Verifica o disquete usando o utilit=E1rio <CODE>mbadblocks</CODE>. =
+Usando=20
+  esta op=E7=E3o, as trilhas defeituosas encontradas ser=E3o =
+automaticamente marcadas=20
+  para n=E3o serem utilizadas.=20
+  <DT>--verify_later, -V=20
+  <DD>Verifica todo o disquete no final da formata=E7=E3o.=20
+  <DT>--noverify, -f=20
+  <DD>N=E3o faz verifica=E7=E3o de leitura.=20
+  <DT>-b [trilha]=20
+  <DD>Especifica a trilha inicial que ser=E1 formatada. O padr=E3o =E9 =
+0.=20
+  <DT>-e [trilha]=20
+  <DD>Especifica a trilha final que ser=E1 formatada. </DD></DL>
+<P>Na primeira vez que o <CODE>superformat</CODE> =E9 executado, ele =
+verifica a=20
+velocidade de rota=E7=E3o da unidade e a comunica=E7=E3o com a placa =
+controladora, pois=20
+os discos de alta densidade s=E3o sens=EDveis a rota=E7=E3o da unidade. =
+Ap=F3s o teste=20
+inicial ele recomendar=E1 adicionar uma linha no arquivo=20
+<CODE>/etc/driveprm</CODE> como forma de evitar que este teste seja =
+sempre=20
+executado. OBS: Esta linha =E9 calculada de acordo com a rota=E7=E3o de =
+usa unidade de=20
+disquetes, transfer=EAncia de dados e comunica=E7=E3o com a placa =
+controladora de=20
+disquete. Desta forma ela varia de computador para computador Note que =
+n=E3o =E9=20
+necess=E1rio montar a unidade de disquetes para formata-la.=20
+<P>Segue abaixo exemplos de como formatar seus disquetes com o=20
+<CODE>superformat</CODE>:=20
+<UL>
+  <LI><SAMP>superformat /dev/fd0</SAMP> - Formata o disquete na primeira =
+unidade=20
+  de disquetes usando os valores padr=F5es.=20
+  <LI><SAMP>superformat /dev/fd0 dd</SAMP> - Faz a mesma coisa que o =
+acima, mas=20
+  assume que o disquete =E9 de Dupla Densidade (720Kb).=20
+  <LI><SAMP>superformat -v 1 /dev/fd0</SAMP> - Faz a formata=E7=E3o da =
+primeira=20
+  unidade de disquetes (<CODE>/dev/fd0</CODE>) e especifica o n=EDvel de =
+detalhes=20
+  para 1, exibindo um <SAMP>ponto</SAMP> ap=F3s cada trilha formatada. =
+</LI></UL>
+<HR>
+<A name=3Ds-disc-formatando-g></A>
+<H3>5.10.3 Programas de Formata=E7=E3o Gr=E1ficos</H3>
+<P>Al=E9m de programas de formata=E7=E3o em modo texto, existem outros =
+para ambiente=20
+gr=E1fico (X11) que permitem fazer a mesma tarefa.=20
+<P>Entre os diversos programas destaco o <CODE>gfloppy</CODE> que al=E9m =
+de=20
+permitir selecionar se o disquete ser=E1 formatado para o =
+<CODE>GNU/Linux</CODE>=20
+(ext2) ou <CODE>DOS</CODE> (FAT12), permite selecionar a capacidade da =
+unidade=20
+de disquetes e formata=E7=E3o r=E1pida do disco.=20
+<HR>
+<A name=3Ds-disc-pontomontagem></A>
+<H2>5.11 Pontos de Montagem</H2>
+<P>O <CODE>GNU/Linux</CODE> acessa as parti=E7=F5es existente em seus =
+discos r=EDgidos=20
+e disquetes atrav=E9s de diret=F3rios. Os diret=F3rios que s=E3o usados =
+para acessar=20
+(montar) parti=E7=F5es s=E3o chamados de <EM>Pontos de Montagem</EM>. =
+Para detalhes=20
+sobre montagem de parti=E7=F5es, veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-montagem">Montando=20
+(acessando) uma parti=E7=E3o de disco, Se=E7=E3o 5.13</A>.=20
+<P>No <CODE>DOS</CODE> cada letra de unidade (C:, D:, E:) identifica uma =
+
+parti=E7=E3o de disco, no <CODE>GNU/Linux</CODE> os pontos de montagem =
+fazem parte=20
+da grande estrutura do sistema de arquivos raiz.=20
+<P>Existem muitas vantagens de se usar <EM>pontos de montagem</EM> ao =
+inv=E9s de=20
+unidade de disco para identificar parti=E7=F5es (m=E9todo usado no =
+<CODE>DOS</CODE>):=20
+<UL>
+  <LI>Voc=EA pode montar a parti=E7=E3o no diret=F3rio que quiser.=20
+  <LI>Em caso de um sistema de arquivos cheio, voc=EA pode copiar o =
+conte=FAdo de um=20
+  grande diret=F3rio para um disco separado, apagar o conte=FAdo do =
+diret=F3rio=20
+  original e montar o disco onde foram copiados os arquivos naquele =
+local (caso=20
+  n=E3o use um sistema de LVM).=20
+  <LI>O uso de <EM>pontos de montagem</EM> torna o gerenciamento mais =
+flex=EDvel.=20
+  <LI>A adi=E7=E3o de novas parti=E7=F5es ou substitui=E7=E3o de discos =
+r=EDgidos n=E3o afeta a=20
+  ordem de identifica=E7=E3o dos discos e pontos de montagem (como n=E3o =
+acontece no=20
+  <CODE>DOS</CODE>). </LI></UL>
+<HR>
+<A name=3Ds-disc-id></A>
+<H2>5.12 Identifica=E7=E3o de discos e parti=E7=F5es em sistemas =
+Linux</H2>
+<P>No <CODE>GNU/Linux</CODE>, os dispositivos existentes em seu =
+computador (como=20
+discos r=EDgidos, disquetes, tela, portas de impressora, modem, etc) =
+s=E3o=20
+identificados por um arquivo referente a este dispositivo no diret=F3rio =
+
+<CODE>/dev</CODE>.=20
+<P>A identifica=E7=E3o de discos r=EDgidos no <CODE>GNU/Linux</CODE> =E9 =
+feita da=20
+seguinte forma: <PRE>     /dev/hda1
+     |    | ||
+     |    | ||_N=FAmero que identifica o n=FAmero da parti=E7=E3o no =
+disco r=EDgido.
+     |    | |
+     |    | |_Letra que identifica o disco r=EDgido (a=3Dprimeiro, =
+b=3Dsegundo, etc...).
+     |    |
+     |    |_Sigla que identifica o tipo do disco r=EDgido (hd=3Dide, =
+sd=3DSCSI, xt=3DXT).
+     |
+     |_Diret=F3rio onde s=E3o armazenados os dispositivos existentes no =
+sistema.
+</PRE>
+<P>Abaixo algumas identifica=E7=F5es de discos e parti=E7=F5es em =
+sistemas Linux:=20
+<UL>
+  <LI><EM>/dev/fd0</EM> - <SAMP>Primeira unidade de disquetes</SAMP>. =
+</LI></UL>
+<UL>
+  <LI><EM>/dev/fd1</EM> - <SAMP>Segunda unidade de disquetes</SAMP>. =
+</LI></UL>
+<UL>
+  <LI><EM>/dev/hda</EM> - <SAMP>Primeiro disco r=EDgido na primeira =
+controladora=20
+  IDE do micro (primary master)</SAMP>. </LI></UL>
+<UL>
+  <LI><EM>/dev/hda1</EM> - <SAMP>Primeira parti=E7=E3o do primeiro disco =
+r=EDgido=20
+  IDE</SAMP>. </LI></UL>
+<UL>
+  <LI><EM>/dev/hdb</EM> - <SAMP>Segundo disco r=EDgido na primeira =
+controladora=20
+  IDE do micro (primary slave)</SAMP>. </LI></UL>
+<UL>
+  <LI><EM>/dev/hdb1</EM> - <SAMP>Primeira parti=E7=E3o do segundo disco =
+r=EDgido=20
+  IDE</SAMP>. </LI></UL>
+<UL>
+  <LI><EM>/dev/sda</EM> - <SAMP>Primeiro disco r=EDgido na primeira =
+controladora=20
+  SCSI</SAMP>. </LI></UL>
+<UL>
+  <LI><EM>/dev/sda1</EM> - <SAMP>Primeira parti=E7=E3o do primeiro disco =
+r=EDgido=20
+  SCSI</SAMP>. </LI></UL>
+<UL>
+  <LI><EM>/dev/sdb</EM> - <SAMP>Segundo disco r=EDgido na primeira =
+controladora=20
+  SCSI</SAMP>. </LI></UL>
+<UL>
+  <LI><EM>/dev/sdb1</EM> - <SAMP>Primeira parti=E7=E3o do segundo disco =
+r=EDgido=20
+  SCSI</SAMP>. </LI></UL>
+<UL>
+  <LI><EM>/dev/sr0</EM> - <SAMP>Primeiro CD-ROM SCSI</SAMP>. </LI></UL>
+<UL>
+  <LI><EM>/dev/sr1</EM> - <SAMP>Segundo CD-ROM SCSI</SAMP>. </LI></UL>
+<UL>
+  <LI><EM>/dev/xda</EM> - <SAMP>Primeiro disco r=EDgido XT</SAMP>. =
+</LI></UL>
+<UL>
+  <LI><EM>/dev/xdb</EM> - <SAMP>Segundo disco r=EDgido XT</SAMP>. =
+</LI></UL>
+<P>As letras de identifica=E7=E3o de discos r=EDgidos podem ir al=E9m de =
+
+<SAMP>hdb</SAMP>, em meu micro, por exemplo, a unidade de CD-ROM est=E1 =
+localizada=20
+em <CODE>/dev/hdg</CODE> (Primeiro disco - quarta controladora IDE).=20
+<P>=C9 importante entender como os discos e parti=E7=F5es s=E3o =
+identificados no=20
+sistema, pois ser=E1 necess=E1rio usar os par=E2metros corretos para =
+monta-los.=20
+<HR>
+<A name=3Ds-disc-montagem></A>
+<H2>5.13 Montando (acessando) uma parti=E7=E3o de disco</H2>
+<P>Voc=EA pode acessar uma parti=E7=E3o de disco usando o comando =
+<CODE>mount</CODE>.=20
+<P><SAMP>mount [<EM>dispositivo</EM>] [<EM>ponto de montagem</EM>]=20
+[<EM>op=E7=F5es</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>dispositivo</EM>=20
+  <DD>Identifica=E7=E3o da unidade de disco/parti=E7=E3o que deseja =
+acessar (como=20
+  <SAMP>/dev/hda1</SAMP> (disco r=EDgido) ou <SAMP>/dev/fd0</SAMP> =
+(primeira=20
+  unidade de disquetes).=20
+  <DT><EM>ponto de montagem</EM>=20
+  <DD>Diret=F3rio de onde a <EM>unidade de disco/parti=E7=E3o</EM> =
+ser=E1 acessado. O=20
+  diret=F3rio deve estar vazio para montagem de um sistema de arquivo. =
+Normalmente=20
+  =E9 usado o diret=F3rio <CODE>/mnt</CODE> para armazenamento de pontos =
+de montagem=20
+  tempor=E1rios.=20
+  <DT>-t [tipo]=20
+  <DD>Tipo do sistema de arquivos usado pelo <EM>dispositivo</EM>. S=E3o =
+aceitos=20
+  os sistemas de arquivos:=20
+  <UL>
+    <LI><EM>ext2</EM> - Para parti=E7=F5es <CODE>GNU/Linux</CODE> usando =
+o Extended=20
+    File System vers=E3o 2 (a mais comum).=20
+    <LI><EM>ext3</EM> - Para parti=E7=F5es <CODE>GNU/Linux</CODE> usando =
+o Extended=20
+    File System vers=E3o 3, com suporte a journaling.=20
+    <LI><EM>reiserfs</EM> - Para parti=E7=F5es reiserfs, com suporte a =
+journaling.=20
+    <LI><EM>vfat</EM> - Para parti=E7=F5es <CODE>Windows 95</CODE> que =
+utilizam=20
+    nomes extensos de arquivos e diret=F3rios.=20
+    <LI><EM>msdos</EM> - Para parti=E7=F5es <CODE>DOS</CODE> normais.=20
+    <LI><EM>iso9660</EM> - Para montar unidades de <CODE>CD-ROM</CODE>. =
+=C9 o=20
+    padr=E3o.=20
+    <LI><EM>umsdos</EM> - Para montar uma parti=E7=E3o <CODE>DOS</CODE> =
+com recursos=20
+    de parti=E7=F5es <CODE>EXT2</CODE>, como permiss=F5es de acesso, =
+links, etc.=20
+  </LI></UL>
+  <P>Para mais detalhes sobre op=E7=F5es usadas com cada sistema de =
+arquivos, veja a=20
+  p=E1gina de manual <EM>mount</EM>. </P>
+  <DT>-r=20
+  <DD>Caso for especificada, monta a parti=E7=E3o somente para leitura.=20
+  <DT>-w=20
+  <DD>Caso for especificada, monta a parti=E7=E3o como =
+leitura/grava=E7=E3o. =C9 o padr=E3o.=20
+  </DD></DL>
+<P>Existem muitas outras op=E7=F5es que podem ser usadas com o comando=20
+<CODE>mount</CODE>, mas aqui procurei somente mostrar o b=E1sico para =
+"montar"=20
+seus discos e parti=E7=F5es no <CODE>GNU/Linux</CODE> (para mais =
+op=E7=F5es, veja a=20
+p=E1gina de manual do <SAMP>mount</SAMP>). Caso voc=EA digitar =
+<SAMP>mount</SAMP>=20
+sem par=E2metros, ser=E3o mostrados os sistemas de arquivos atualmente =
+montados no=20
+sistema. Esta mesma listagem pode ser vista em <CODE>/etc/mtab</CODE>. A =
+
+remontagem de parti=E7=E3o tamb=E9m =E9 muito =FAtil, especialmente =
+ap=F3s reparos nos=20
+sistema de arquivos do disco r=EDgido. Veja alguns exemplos de =
+remontagem abaixo.=20
+<P>=C9 necess=E1rio permiss=F5es de root para montar parti=E7=F5es, a =
+n=E3o ser que tenha=20
+especificado a op=E7=E3o <SAMP>user</SAMP> no arquivo =
+<CODE>/etc/fstab</CODE> (veja=20
+<A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-fstab">fstab,=20
+Se=E7=E3o 5.13.1</A>).=20
+<P>Exemplo de Montagem:=20
+<UL>
+  <LI>Montar uma parti=E7=E3o Windows (vfat) de <CODE>/dev/hda1</CODE> =
+em=20
+  <CODE>/mnt</CODE> somente para leitura: <SAMP>mount /dev/hda1 /mnt -r =
+-t=20
+  vfat</SAMP>=20
+  <LI>Montar a primeira unidade de disquetes <CODE>/dev/fd0</CODE> em=20
+  <CODE>/floppy</CODE>: <SAMP>mount /dev/fd0 /floppy -t vfat</SAMP>=20
+  <LI>Montar uma parti=E7=E3o DOS localizada em um segundo disco =
+r=EDgido=20
+  <CODE>/dev/hdb1</CODE> em <CODE>/mnt</CODE>: <SAMP>mount /dev/hdb1 =
+/mnt -t=20
+  msdos</SAMP>.=20
+  <LI>Remontar a parti=E7=E3o ra=EDz como somente leitura: <SAMP>mount =
+-o remount,rw=20
+  /</SAMP>=20
+  <LI>Remontar a parti=E7=E3o ra=EDz como <EM>leitura/grava=E7=E3o</EM> =
+(a op=E7=E3o -n =E9=20
+  usada porque o <CODE>mount</CODE> n=E3o conseguir=E1 atualizar o =
+arquivo=20
+  <CODE>/etc/mtab</CODE> devido ao sistema de arquivos <CODE>/</CODE> =
+estar=20
+  montado como somente leitura atualmente: <SAMP>mount -n -o remount,rw=20
+  /</SAMP>. </LI></UL>
+<HR>
+<A name=3Ds-disc-fstab></A>
+<H3>5.13.1 fstab</H3>
+<P>O arquivo <CODE>/etc/fstab</CODE> permite que as parti=E7=F5es do =
+sistema sejam=20
+montadas facilmente especificando somente o dispositivo ou o ponto de =
+montagem.=20
+Este arquivo cont=E9m par=E2metros sobre as parti=E7=F5es que s=E3o =
+lidos pelo comando=20
+<CODE>mount</CODE>. Cada linha deste arquivo cont=E9m a parti=E7=E3o que =
+desejamos=20
+montar, o ponto de montagem, o sistema de arquivos usado pela =
+parti=E7=E3o e outras=20
+op=E7=F5es. <CODE>fstab</CODE> tem a seguinte forma: <PRE>     =
+Sistema_de_arquivos Ponto_de_Montagem Tipo    Op=E7=F5es           dump =
+ordem
+     /dev/hda1           /                 ext2    defaults           0  =
+  1
+     /dev/hda2           /boot             ext2    defaults           0  =
+  2
+     /dev/hda3           /dos              msdos   defaults,noauto,rw 0  =
+  0
+     /dev/hdg            /cdrom            iso9660 defaults,noauto    0  =
+  0
+</PRE>
+<P>Onde:=20
+<DL>
+  <DT>Sistema de Arquivos=20
+  <DD>Parti=E7=E3o que deseja montar.=20
+  <DT>Ponto de montagem=20
+  <DD>Diret=F3rio do <CODE>GNU/Linux</CODE> onde a parti=E7=E3o montada =
+ser=E1 acessada.=20
+
+  <DT>Tipo=20
+  <DD>Tipo de sistema de arquivos usado na parti=E7=E3o que ser=E1 =
+montada. Para=20
+  parti=E7=F5es <CODE>GNU/Linux</CODE> use <EM>ext2</EM>, para =
+parti=E7=F5es=20
+  <CODE>DOS</CODE> (sem nomes extensos de arquivos) use <EM>msdos</EM>, =
+para=20
+  parti=E7=F5es <CODE>Win 95</CODE> (com suporte a nomes extensos de =
+arquivos) use=20
+  <EM>vfat</EM>, para unidades de CD-ROM use <EM>iso9660</EM>.=20
+  <DT>Op=E7=F5es=20
+  <DD>Especifica as op=E7=F5es usadas com o sistema de arquivos. Abaixo, =
+algumas=20
+  op=E7=F5es de montagem para ext2/3 (a lista completa pode ser =
+encontrada na p=E1gina=20
+  de manual do <CODE>mount</CODE>):=20
+  <UL>
+    <LI><SAMP>defaults</SAMP> - Utiliza valores padr=F5es de montagem.=20
+    <LI><SAMP>noauto</SAMP> - N=E3o monta os sistemas de arquivos =
+durante a=20
+    inicializa=E7=E3o (=FAtil para CD-ROMS e disquetes).=20
+    <LI><SAMP>ro</SAMP> - Monta como somente leitura.=20
+    <LI><SAMP>user</SAMP> - Permite que usu=E1rios montem o sistema de =
+arquivos=20
+    (n=E3o recomendado por motivos de seguran=E7a).=20
+    <LI><SAMP>sync</SAMP> =E9 recomendado para uso com discos =
+remov=EDveis=20
+    (disquetes, zip drives, etc) para que os dados sejam gravados =
+imediatamente=20
+    na unidade (caso n=E3o seja usada, voc=EA deve usar o comando <A=20
+    =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-sync">sync,=20
+    Se=E7=E3o 10.22</A> antes de retirar o disquete da unidade. =
+</LI></UL>
+  <DT>dump=20
+  <DD>Especifica a frequ=EAncia de backup feita com o programa =
+<CODE>dump</CODE>=20
+  no sistema de arquivos. 0 desativa o backup.=20
+  <DT>Ordem=20
+  <DD>Define a ordem que os sistemas de arquivos ser=E3o verificados na=20
+  inicializa=E7=E3o do sistema. Se usar 0, o sistema de arquivos n=E3o =
+=E9 verificado. O=20
+  sistema de arquivos ra=EDz que dever=E1 ser verificado primeiro =E9 o =
+ra=EDz "/" (a=20
+  n=E3o ser que voc=EA tenha um sistema de arquivos de outro tipo que =
+n=E3o =E9 montado=20
+  dentro do diret=F3rio ra=EDz e possui seu suporte embutido no kernel) =
+. </DD></DL>
+<P>Ap=F3s configurar o <CODE>/etc/fstab</CODE>, basta digitar o comando=20
+<SAMP>mount /dev/hdg</SAMP> ou <SAMP>mount /cdrom</SAMP> para que a =
+unidade de=20
+CD-ROM seja montada. Voc=EA deve ter notado que n=E3o =E9 necess=E1rio =
+especificar o=20
+sistema de arquivos da parti=E7=E3o pois o <CODE>mount</CODE> =
+verificar=E1 se ele j=E1=20
+existe no <CODE>/etc/fstab</CODE> e caso existir, usar=E1 as op=E7=F5es =
+especificadas=20
+neste arquivo. Para maiores detalhes veja as p=E1ginas de manual=20
+<CODE>fstab</CODE> e <CODE>mount</CODE>.=20
+<HR>
+<A name=3Ds-disc-desmontagem></A>
+<H2>5.14 Desmontando uma parti=E7=E3o de disco</H2>
+<P>Para desmontar um sistema de arquivos montado com o comando=20
+<CODE>umount</CODE>, use o comando <CODE>umount</CODE>. Voc=EA deve ter =
+permiss=F5es=20
+de root para desmontar uma parti=E7=E3o.=20
+<P><SAMP>umount [<EM>dispositivo</EM>/<EM>ponto de montagem</EM>]</SAMP> =
+
+<P>Voc=EA pode tanto usar <SAMP>umount /dev/hda1</SAMP> como =
+<SAMP>umount=20
+/mnt</SAMP> para desmontar um sistema de arquivos <CODE>/dev/hda1</CODE> =
+montado=20
+em <CODE>/mnt</CODE>.=20
+<P><EM>Observa=E7=E3o:</EM> O comando <CODE>umount</CODE> executa o=20
+<CODE>sync</CODE> automaticamente no momento da desmontagem para =
+garantir que=20
+todos os dados ainda n=E3o gravados ser=E3o salvos.=20
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ 5 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

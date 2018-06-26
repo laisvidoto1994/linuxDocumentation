@@ -1,0 +1,1073 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: =?iso-8859-1?Q?Guia_Foca_GNU/Linux_-_Manuten=E7=E3o_do_Sistema?=
+Date: Mon, 6 Aug 2007 11:33:03 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-manut.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Manuten=E7=E3o do =
+Sistema</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-manut></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ 26 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 26 - Manuten=E7=E3o do Sistema =
+</H1>
+<HR>
+
+<P>Este cap=EDtulo descreve como fazer a manuten=E7=E3o de seu sistema =
+de arquivos e=20
+os programas de manuten=E7=E3o autom=E1tica que s=E3o executados =
+periodicamente pelo=20
+sistema.=20
+<HR>
+<A name=3Ds-manut-checagem></A>
+<H2>26.1 Checagem dos sistemas de arquivos</H2>
+<P>A checagem do sistema de arquivos permite verificar se toda a =
+estrutura para=20
+armazenamento de arquivos, diret=F3rios, permiss=F5es, conectividade e =
+superf=EDcie do=20
+disco est=E3o funcionando corretamente. Caso algum problema exista, ele =
+poder=E1 ser=20
+corrigido com o uso da ferramenta de checagem apropriada. As ferramentas =
+de=20
+checagem de sistemas de arquivos costumam ter seu nome iniciado por=20
+<SAMP>fsck</SAMP> e terminados com o nome do sistema de arquivos que =
+verifica,=20
+separados por um ponto:=20
+<UL>
+  <LI><SAMP>fsck.ext2</SAMP> - Verifica o sistema de arquivos =
+<SAMP>EXT2</SAMP>=20
+  ou <SAMP>EXT3</SAMP>. Pode tamb=E9m ser encontrado com o nome=20
+  <CODE>e2fsck</CODE>. </LI></UL>
+<UL>
+  <LI><SAMP>fsck.ext3</SAMP> - Um alias para <CODE>fsck.ext3</CODE>. =
+</LI></UL>
+<UL>
+  <LI><SAMP>fsck.minix</SAMP> - Verifica o sistema de arquivos=20
+  <SAMP>Minix</SAMP>. </LI></UL>
+<UL>
+  <LI><SAMP>fsck.msdos</SAMP> - Verifica o sistema de arquivos=20
+  <SAMP>Msdos</SAMP>. Pode tamb=E9m ser encontrado com o nome=20
+  <CODE>dosfsck</CODE>. </LI></UL>
+<P>Para verificar um sistema de arquivos =E9 necess=E1rio que ele esteja =
+desmontado=20
+caso contr=E1rio poder=E1 ocorrer danos em sua estrutura. Para verificar =
+o sistema=20
+de arquivos ra=EDz (que n=E3o pode ser desmontado enquanto o sistema =
+estiver sendo=20
+executado) voc=EA precisar=E1 inicializar atrav=E9s de um disquete e =
+executar o=20
+<CODE>fsck.ext2</CODE>.=20
+<HR>
+<A name=3Ds-manut-checagem-ext2></A>
+<H3>26.1.1 fsck.ext2</H3>
+<P>Este utilit=E1rio permite verificar erros em sistemas de arquivos=20
+<SAMP>EXT2</SAMP> e <SAMP>EXT3</SAMP> (<EM>Linux Native</EM>).=20
+<P><SAMP>fsck.ext2 [<EM>op=E7=F5es</EM>] [<EM>dispositivo</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT>dispositivo=20
+  <DD>=C9 o local que cont=E9m o sistema de arquivos =
+<SAMP>EXT2/EXT3</SAMP> que ser=E1=20
+  verificado (parti=E7=F5es, disquetes, arquivos).=20
+  <DT>op=E7=F5es=20
+  <DT>-c=20
+  <DD>Faz o <CODE>fsck.ext2</CODE> verificar se existem agrupamentos =
+danificados=20
+  na unidade de disco durante a checagem.=20
+  <DT>-d=20
+  <DD>Debug - Mostra detalhes de processamento do =
+<CODE>fsck.ext2</CODE>.=20
+  <DT>-f=20
+  <DD>For=E7a a checagem mesmo se o sistema de arquivos aparenta estar =
+em bom=20
+  estado. Por padr=E3o, um sistema de arquivos que aparentar estar em =
+bom estado=20
+  n=E3o s=E3o verificados.=20
+  <DT>-F=20
+  <DD>Grava os dados do cache no disco antes de iniciar.=20
+  <DT>-l [arquivo]=20
+  <DD>Inclui os blocos listados no [arquivo] como blocos defeituosos no =
+sistema=20
+  de arquivos. O formato deste arquivo =E9 o mesmo gerado pelo programa=20
+  <CODE>badblocks</CODE>.=20
+  <DT>-L [arquivo]=20
+  <DD>Faz o mesmo que a op=E7=E3o <SAMP>-l</SAMP>, s=F3 que a lista de =
+blocos=20
+  defeituosos do dispositivo =E9 completamente limpa e depois a lista do =
+[arquivo]=20
+  =E9 adicionada.=20
+  <DT>-n=20
+  <DD>Faz uma verifica=E7=E3o de <SAMP>somente leitura</SAMP> no sistema =
+de=20
+  arquivos. Com esta op=E7=E3o =E9 poss=EDvel verificar o sistema de =
+arquivos montado.=20
+  Ser=E1 assumido <SAMP>n=E3o</SAMP> para todas as perguntas e nenhuma =
+modifica=E7=E3o=20
+  ser=E1 feita no sistema de arquivos.=20
+  <P>Caso a op=E7=E3o <SAMP>-c</SAMP> seja usada junto com =
+<SAMP>-n</SAMP>,=20
+  <SAMP>-l</SAMP> ou <SAMP>-L</SAMP>, o sistema de arquivos ser=E1 =
+verificado e=20
+  permitir=E1 somente a atualiza=E7=E3o dos setores danificados n=E3o =
+alterando qualquer=20
+  outra =E1rea. </P>
+  <DT>-p=20
+  <DD>Corrige automaticamente o sistema de arquivos sem perguntar. =C9=20
+  recomend=E1vel fazer isto manualmente para entender o que aconteceu, =
+em caso de=20
+  problemas com o sistema de arquivos.=20
+  <DT>-v=20
+  <DD>Ativa o modo verbose (mais mensagens s=E3o mostradas durante a =
+execu=E7=E3o do=20
+  programa).=20
+  <DT>-y=20
+  <DD>Assume <SAMP>sim</SAMP> para todas as quest=F5es. </DD></DL>
+<P>Caso sejam encontrados arquivos problem=E1ticos e estes n=E3o possam =
+ser=20
+recuperados, o <CODE>fsck.ext2</CODE> perguntar=E1 se deseja salva-los =
+no=20
+diret=F3rio <CODE>lost+found</CODE>. Este diret=F3rio =E9 encontrado em =
+todas as=20
+parti=E7=F5es <EM>ext2</EM>. N=E3o h=E1 risco de usar o =
+<CODE>fsck.ext3</CODE> em uma=20
+parti=E7=E3o <SAMP>EXT2</SAMP>.=20
+<P>Ap=F3s sua execu=E7=E3o =E9 mostrado detalhes sobre o sistema de =
+arquivos verificado=20
+como quantidade de blocos livres/ocupados e taxa de fragmenta=E7=E3o.=20
+<P>Exemplos: <SAMP>fsck.ext2 /dev/hda2</SAMP>, <SAMP>fsck.ext2 -f=20
+/dev/hda2</SAMP>, <SAMP>fsck.ext2 -vrf /dev/hda1</SAMP>.=20
+<HR>
+<A name=3Ds-manut-checagem-reiserfsck></A>
+<H2>26.2 reiserfsck</H2>
+<P>Verifica um sistema de arquivos <CODE>reiserfs</CODE> em sistema de =
+arquivos.=20
+
+<P><SAMP>reiserfsck [<EM>op=E7=F5es</EM>] [<EM>dispositivo</EM>]</SAMP>=20
+<DL>
+  <DT><EM>dispositivo</EM>=20
+  <DD>Dispositivo que cont=E9m o sistema de arquivos =
+<CODE>reiserfs</CODE> que=20
+  ser=E1 verificado.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-a=20
+  <DD>Mostra detalhes sobre o sistema de arquivos e sai=20
+  <DT>-j arquivo=20
+  <DD>Especifica um arquivo de Journal alternativo usado pelo sistema de =
+
+  arquivos.=20
+  <DT>-q quiet=20
+  <DD>N=E3o exibe mensagens sobre o status da checagem do sistema de =
+arquivos.=20
+  <DT>-S=20
+  <DD>Constr=F3i a =E1rvore de todos os blocos do dispositivo. =
+</DD></DL>
+<P>O <CODE>reiserfsck</CODE> possui outros modos de opera=E7=E3o al=E9m =
+de checagem (o=20
+padr=E3o), para detalhes veja a p=E1gina de manual do programa.=20
+<P>Exemplos: <SAMP>reiserfsck /dev/hda1</SAMP>, <SAMP>reiserfsck -S=20
+/tmp/arq-reiserfs</SAMP>.=20
+<HR>
+<A name=3Ds-manut-checagem-minix></A>
+<H2>26.3 fsck.minix</H2>
+<P>Verifica o sistema de arquivos <EM>minix</EM> em um dispositivo.=20
+<P><SAMP>fsck.minix [<EM>op=E7=F5es</EM>] [<EM>dispositivo</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT>dispositivo=20
+  <DD>Parti=E7=E3o, disquete ou arquivo que cont=E9m o sistema de =
+arquivos=20
+  <SAMP>Minix</SAMP> que ser=E1 verificado=20
+  <DT>op=E7=F5es=20
+  <DT>-f=20
+  <DD>Verifica o sistema de arquivos mesmo se ele estiver perfeito.=20
+  <DT>-r=20
+  <DD>Permite reparo manual do sistema de arquivos=20
+  <DT>-a=20
+  <DD>Permite um reparo autom=E1tico do sistema de arquivos. =C9 =
+recomendado fazer o=20
+  reparo manual.=20
+  <DT>-v=20
+  <DD>Verbose - Mostra detalhes durante a execu=E7=E3o do programa=20
+  <DT>-s=20
+  <DD>Exibe detalhes sobre os blocos de root. </DD></DL>
+<P>Exemplo: <SAMP>fsck.minix -f /dev/hda8</SAMP>, <SAMP>fsck.minix -vf=20
+/dev/hda8</SAMP>=20
+<HR>
+<A name=3Ds-manut-badblocks></A>
+<H2>26.4 badblocks</H2>
+<P>Procura blocos defeituosos em um dispositivo. Note que este=20
+<STRONG>apenas</STRONG> pesquisa por blocos defeituosos, sem alterar a=20
+configura=E7=E3o do disco. Para marcar os blocos defeituosos para n=E3o =
+serem mais=20
+usados, utilize a op=E7=E3o <SAMP>-l</SAMP> do <CODE>fsck</CODE> (veja =
+<A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm#s-manut-checagem-ext2">fsck.ext=
+2,=20
+Se=E7=E3o 26.1.1</A>).=20
+<P><SAMP>badblocks [<EM>op=E7=F5es</EM>] [<EM>dispositivo</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT>dispositivo=20
+  <DD>Parti=E7=E3o, disquete ou arquivo que cont=E9m o sistema de =
+arquivos que ser=E1=20
+  verificado.=20
+  <DT>op=E7=F5es=20
+  <DT>-b [tamanho]=20
+  <DD>Especifica o [tamanho] do bloco do dispositivo em bytes=20
+  <DT>-o [arquivo]=20
+  <DD>Gera uma lista dos blocos defeituosos do disco no [arquivo]. Este =
+lista=20
+  pode ser usada com o programa <CODE>fsck.ext2</CODE> junto com a =
+op=E7=E3o=20
+  <SAMP>-l</SAMP>.=20
+  <DT>-s=20
+  <DD>Mostra o n=FAmero de blocos checados durante a execu=E7=E3o do=20
+  <CODE>badblocks</CODE>.=20
+  <DT>-v=20
+  <DD>Modo verbose - S=E3o mostrados mais detalhes.=20
+  <DT>-w=20
+  <DD>Usa o modo leitura/grava=E7=E3o. Usando esta op=E7=E3o o =
+<CODE>badblocks</CODE>=20
+  procura por blocos defeituosos gravando alguns padr=F5es (0xaa, 0x55, =
+0xff,=20
+  0x00) em cada bloco do dispositivo e comparando seu conte=FAdo.=20
+  <P>Nunca use a op=E7=E3o <SAMP>-w</SAMP> em um dispositivo que =
+cont=E9m arquivos=20
+  pois eles ser=E3o apagados! </P></DD></DL>
+<P>Exemplo: <SAMP>badblocks -s /dev/hda6</SAMP>, <SAMP>badblocks -s -o =
+bad=20
+/dev/hda6</SAMP>=20
+<HR>
+<A name=3Ds-manut-defrag></A>
+<H2>26.5 defrag</H2>
+<P>Permite desfragmentar uma unidade de disco. A fragmenta=E7=E3o =E9 o =
+armazenamento=20
+de arquivos em =E1reas n=E3o seq=FCenciais (uma parte =E9 armazenada no =
+come=E7o a outra=20
+no final, etc), isto diminui o desempenho da unidade de disco porque a =
+leitura=20
+dever=E1 ser interrompida e feita a movimenta=E7=E3o da cabe=E7a para =
+outra regi=E3o do=20
+disco onde o arquivo continua, por este motivo discos fragmentados =
+tendem a=20
+fazer um grande barulho na leitura e o desempenho menor.=20
+<P>A desfragmenta=E7=E3o normalmente =E9 desnecess=E1ria no =
+<CODE>GNU/Linux</CODE>=20
+porque o sistema de arquivos <EM>ext2</EM> procura automaticamente o =
+melhor=20
+local para armazenar o arquivo. Mesmo assim, =E9 recomend=E1vel =
+desfragmentar um=20
+sistema de arquivos assim que sua taxa de fragmenta=E7=E3o subir acima =
+de 10%. A=20
+taxa de fragmenta=E7=E3o pode ser vista atrav=E9s do =
+<CODE>fsck.ext2</CODE>. Ap=F3s o=20
+<CODE>fsck.ext2</CODE> ser executado =E9 mostrada a taxa de =
+fragmenta=E7=E3o seguida=20
+de <SAMP>non-contiguos</SAMP>.=20
+<P>A ferramenta de desfragmenta=E7=E3o usada no <CODE>GNU/Linux</CODE> =
+=E9 o=20
+<CODE>defrag</CODE> que vem com os seguintes programas:=20
+<UL>
+  <LI><SAMP>e2defrag</SAMP> - Desfragmenta sistemas de arquivos =
+<EM>Ext2</EM>.=20
+  <LI><SAMP>defrag</SAMP> - Desfragmenta sistemas de arquivos =
+<EM>Minix</EM>.=20
+  <LI><SAMP>xdefrag</SAMP> - Desfragmenta sistemas de arquivos =
+<EM>Xia</EM>.=20
+  </LI></UL>
+<P>O sistema de arquivos deve estar desmontado ao fazer a =
+desfragmenta=E7=E3o. Se=20
+quiser desfragmentar o sistema de arquivos ra=EDz (<CODE>/</CODE>), =
+voc=EA precisar=E1=20
+inicializar atrav=E9s de um disquete e executar um dos programas de=20
+desfragmenta=E7=E3o apropriado ao seu sistema de arquivos. A checagem =
+individual de=20
+fragmenta=E7=E3o em arquivos pode ser feita com o programa =
+<CODE>frag</CODE>.=20
+<P>ATEN=C7=C3O: Retire c=F3pias de seguran=E7a de sua unidade antes de =
+fazer a=20
+desfragmenta=E7=E3o. Se por qualquer motivo o programa de =
+desfragmenta=E7=E3o n=E3o puder=20
+ser completado, voc=EA poder=E1 perder dados!=20
+<P><SAMP>e2defrag [<EM>op=E7=F5es</EM>] [<EM>dispositivo</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT>dispositivo=20
+  <DD>Parti=E7=E3o, arquivo, disquete que cont=E9m o sistema de arquivos =
+que ser=E1=20
+  desfragmentado.=20
+  <DT>-d=20
+  <DD>Debug - ser=E3o mostrados detalhes do funcionamento=20
+  <DT>-n=20
+  <DD>N=E3o mostra o mapa do disco na desfragmenta=E7=E3o. =C9 =FAtil =
+quando voc=EA=20
+  inicializa por disquetes e recebe a mensagem "Failed do open term =
+Linux" ao=20
+  tentar executar o <CODE>e2defrag</CODE>.=20
+  <DT>-r=20
+  <DD>Modo somente leitura. O defrag simular=E1 sua execu=E7=E3o no =
+sistema de=20
+  arquivos mas n=E3o far=E1 nenhuma grava=E7=E3o. Esta op=E7=E3o permite =
+que o defrag seja=20
+  usado com sistema de arquivos montado.=20
+  <DT>-s=20
+  <DD>Cria um sum=E1rio da fragmenta=E7=E3o do sistema de arquivos e =
+performance do=20
+  desfragmentador.=20
+  <DT>-v=20
+  <DD>Mostra detalhes durante a desfragmenta=E7=E3o do sistema de =
+arquivos. Caso=20
+  mais de uma op=E7=E3o -v seja usada, o n=EDvel de detalhes ser=E1 =
+maior.=20
+  <DT>-i [arquivo]=20
+  <DD>Permite definir uma lista de prioridades em que um arquivo ser=E1 =
+gravado no=20
+  disco, com isto =E9 poss=EDvel determinar se um arquivo ser=E1 gravado =
+no come=E7o ou=20
+  final da unidade de disco. Esta lista =E9 lida do [arquivo] e deve =
+conter uma=20
+  lista de prioridades de -100 a 100 para cada inodo do sistema de =
+arquivos.=20
+  Arquivos com prioridade alta ser=E3o gravados no come=E7o do disco.=20
+  <P>Todos os inodos ter=E3o prioridade igual a zero caso a op=E7=E3o =
+<SAMP>-i</SAMP>=20
+  n=E3o seja usada ou o inodo n=E3o seja especificado no [arquivo]. O =
+[arquivo]=20
+  dever=E1 conter uma s=E9rie de linhas com um n=FAmero (inodo) ou um =
+n=FAmero prefixado=20
+  por um sinal de igual seguido da prioridade. </P>
+  <DT>-p [numero]=20
+  <DD>Define o [numero] de buffers que ser=E3o usados pela ferramenta de =
+
+  desfragmenta=E7=E3o na realoca=E7=E3o de dados, quanto mais buffers =
+mais eficiente=20
+  ser=E1 o processo de realoca=E7=E3o. O n=FAmero depende de quantidade =
+mem=F3ria RAM e=20
+  Swap voc=EA possui. Por padr=E3o 512 buffers s=E3o usados =
+correspondendo a 512Kb de=20
+  buffer (em um sistema de arquivos de blocos com 1Kb). </DD></DL>
+<P>Exemplo: <SAMP>e2defrag -n -v /dev/hdb4</SAMP>, <SAMP>e2defrag -r=20
+/dev/hda1</SAMP>=20
+<HR>
+<A name=3Ds-manut-hdbadblocks></A>
+<H2>26.6 Verificando e marcando setores danificados em um HD</H2>
+<P>Um dos sintomas de um disco r=EDgido que cont=E9m setores danificados =
+(bad=20
+blocks) =E9 a mudan=E7a repentina do sistema de arquivos para o modo =
+somente=20
+leitura, o aparecimento de diversas mensagens no syslog indicando falha =
+de=20
+leitura do hd, uma pausa se segundos no sistema junto com o led de =
+atividade de=20
+disco ligado. Se isto acontece com voc=EA, uma forma de solucionar este=20
+inconveniente =E9 executar o teste na superf=EDcie f=EDsica do disco =
+para procurar e=20
+marcar os blocos problem=E1ticos como defeituosos.=20
+<P>Em alguns casos, os blocos defeituosos ocorrem isoladamente no disco =
+r=EDgido,=20
+n=E3o aumentando mais sua quantidade, entretanto, se o n=FAmero de =
+blocos=20
+danificados em seu disco est=E1 crescendo em um curto espa=E7o de tempo, =
+comece a=20
+pensar na troca do disco r=EDgido por um outro. Existem empresas que =
+recuperam HDs=20
+mas pelo valor cobrado por se tratar de um servi=E7o delicado, s=F3 =
+compensa caso=20
+voc=EA n=E3o tenha o backup e <STRONG>realmente</STRONG> precisa dos =
+dados do disco.=20
+
+<P>Para fazer uma checagem de HD no sistema de arquivos =
+<CODE>ext2</CODE> ou=20
+<CODE>ext3</CODE>, proceda da seguinte forma:=20
+<UL>
+  <LI>Se poss=EDvel, fa=E7a um backup de todos os dados ou dos dados =
+essenciais da=20
+  parti=E7=E3o ser=E1 checada.=20
+  <LI>Inicie o sistema por um disquete de boot ou CD de recupera=E7=E3o. =
+Este passo=20
+  =E9 =FAtil pois em alguns casos, pode ocorrer a perda de =
+interrup=E7=E3o do disco=20
+  r=EDgido e seu sistema ficar paralisado. S=F3 o m=E9todo de checar o =
+HD usando um=20
+  disquete de boot lhe far=E1 agendar uma parada no sistema e notificar =
+os=20
+  usu=E1rios, evitando s=E9rios problemas do que fazendo isto com um =
+sistema em=20
+  produ=E7=E3o.=20
+  <LI>Execute o <CODE>badblocks</CODE> usando a op=E7=E3o =
+<SAMP>-o</SAMP> para=20
+  gravar os poss=EDveis blocos defeituosos encontrados para um arquivo:=20
+  <SAMP>badblocks -v -o blocos-defeituosos.lista /dev/hd??</SAMP>.=20
+  <P>Substitua o dispositivo <CODE>/dev/hd??</CODE> pelo dispositivo que =
+deseja=20
+  verificar. A checagem do <CODE>badblocks</CODE> dever=E1 ser feita =
+para cada=20
+  parti=E7=E3o existente no disco r=EDgido. O tempo de checagem =
+depender=E1 da=20
+  velocidade do disco r=EDgido, velocidade do barramento, cabo de dados =
+utilizado,=20
+  velocidade de processamento e =E9 claro, do estado do disco r=EDgido =
+(quantos=20
+  setores defeituosos ele tem). </P>
+  <LI>Ap=F3s concluir o <CODE>badblocks</CODE>, veja se foram =
+encontrados blocos=20
+  defeituosos. Caso tenha encontrado, siga para o pr=F3ximo passo.=20
+  <LI>Para marcar os blocos encontrados pelo <CODE>badblocks</CODE> como =
+
+  defeituosos, execute o comando: <SAMP>fsck.ext3 -l =
+blocos-defeituosos.lista -f=20
+  /dev/hd??</SAMP>.=20
+  <P>Substitua o dispositivo, pelo dispositivo que verificou com o=20
+  <CODE>badblocks</CODE>. O arquivo <CODE>blocos-defeituosos.list</CODE> =
+cont=E9m=20
+  a lista de blocos gerada pelo <CODE>badblocks</CODE> que ser=E3o =
+marcados como=20
+  defeituosos. </P></LI></UL>
+<P>Para mais detalhes sobre as op=E7=F5es de checagem usada pelos =
+programas, veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm#s-manut-badblocks">badblocks,=20
+Se=E7=E3o 26.4</A> e <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm#s-manut-checagem-ext2">fsck.ext=
+2,=20
+Se=E7=E3o 26.1.1</A>.=20
+<HR>
+<A name=3Ds-manut-logs-l></A>
+<H2>26.7 Limpando arquivos de LOGS</H2>
+<P>Tudo que acontece em sistemas <CODE>GNU/Linux</CODE> pode ser =
+registrado em=20
+arquivos de log em <CODE>/var/log</CODE>, como vimos anteriormente. Eles =
+s=E3o=20
+muito =FAteis por diversos motivos, para o diagn=F3stico de problemas, =
+falhas de=20
+dispositivos, checagem da seguran=E7a, alerta de eventuais tentativas de =
+invas=E3o,=20
+etc.=20
+<P>O problema =E9 quando eles come=E7am a ocupar muito espa=E7o em seu =
+disco.=20
+Verifique quantos Megabytes seus arquivos de LOG est=E3o ocupando =
+atrav=E9s do=20
+comando <SAMP>cd /var/log;du -hc</SAMP>. Antes de fazer uma limpeza nos =
+arquivos=20
+de LOG, =E9 necess=E1rio verificar se eles s=E3o desnecess=E1rios e s=F3 =
+assim zerar os=20
+que forem dispens=E1veis.=20
+<P>N=E3o =E9 recomend=E1vel apagar um arquivo de log pois ele pode ser =
+criado com=20
+permiss=F5es de acesso indevidas (algumas distribui=E7=F5es fazem isso). =
+Voc=EA pode=20
+usar o comando: <SAMP>echo -n &gt;arquivo</SAMP> ou o seguinte shell =
+script para=20
+zerar todos os arquivos de LOG de uma s=F3 vez (as linhas iniciante com=20
+<SAMP>#</SAMP> s=E3o coment=E1rios): <PRE>     #! /bin/sh
+     cd /var/log
+     for l in `ls -p|grep '/'`; do
+      echo -n &gt;$l &amp;&gt;/dev/null
+      echo Zerando arquivo $l...
+     done
+     echo Limpeza dos arquivos de log conclu=EDda!
+</PRE>
+<P>Copie o conte=FAdo acima em um arquivo com a extens=E3o =
+<CODE>.sh</CODE>, d=EA=20
+permiss=E3o de execu=E7=E3o com o <CODE>chmod</CODE> e o execute como =
+usu=E1rio=20
+<SAMP>root</SAMP>. =C9 necess=E1rio executar este script para zerar =
+arquivos de log=20
+em subdiret=F3rios de <CODE>/var/log</CODE>, caso sejam usados em seu =
+sistema.=20
+<P>Algumas distribui=E7=F5es, como a <CODE>Debian</CODE> GNU/Linux, =
+fazem o=20
+arquivamento autom=E1tico de arquivos de LOGs em arquivos =
+<CODE>.gz</CODE> atrav=E9s=20
+de scripts disparados automaticamente pelo <CODE>cron</CODE>. =
+ATEN=C7=C3O: LEMBRE-SE=20
+QUE O SCRIPT ACIMA APAGAR=C1 TODOS OS ARQUIVOS DE LOGs DO SEU SISTEMA =
+SEM=20
+POSSIBILIDADE DE RECUPERA=C7=C3O. TENHA ABSOLUTA CERTEZA DO QUE N=C3O =
+PRECISAR=C1 DELES=20
+QUANDO EXECUTAR O SCRIPT ACIMA!=20
+<HR>
+<A name=3Ds-manut-recpart></A>
+<H2>26.8 Recuperando parti=E7=F5es apagadas</H2>
+<P>Caso tenha apagado uma parti=E7=E3o acidentalmente ou todas as =
+parti=E7=F5es do seu=20
+disco, uma forma simples de recuperar todos os seus dados =E9 =
+simplesmente recriar=20
+todas as parti=E7=F5es com o tamanho <STRONG>EXATAMENTE</STRONG> igual =
+ao existente=20
+anteriormente. Isto deve ser feito dando a partida com um disquete ou CD =
+de=20
+inicializa=E7=E3o. Ap=F3s recriar todas as parti=E7=F5es e seus tipos =
+(83, 82 8e, etc),=20
+execute novamente o lilo para recriar o setor de boot do HD e garantir =
+que a=20
+m=E1quina dar=E1 o boot.=20
+<P>A recupera=E7=E3o desta forma =E9 poss=EDvel porque quando se cria ou =
+apaga uma=20
+parti=E7=E3o, voc=EA est=E1 simplesmente delimitando espa=E7o onde cada =
+sistema de=20
+arquivos gravar=E1 seus dados, sem fazer nenhuma altera=E7=E3o dentro =
+dele. Assim, =E9=20
+tamb=E9m =FAtil manter uma c=F3pia dos tamanhos usados durante o =
+processo de cria=E7=E3o=20
+das parti=E7=F5es para ser usado como recupera=E7=E3o em uma poss=EDvel =
+emerg=EAncia.=20
+<HR>
+<A name=3Ds-manut-senhaperdida></A>
+<H2>26.9 Recuperando a senha de root perdida</H2>
+<P>Uma situa=E7=E3o que voc=EA deve ter se deparado (ou algum dia ainda =
+vai se=20
+deparar) =E9 precisar alterar a senha de root e n=E3o sabe ou n=E3o =
+lembra a senha=20
+atual. Esta situa=E7=E3o tamb=E9m pode ser encontrada quando ocorre uma =
+falha de=20
+disco, falha el=E9trica, reparos em uma m=E1quina que n=E3o det=E9m sua =
+manuten=E7=E3o, etc.=20
+A melhor not=EDcia =E9 que a altera=E7=E3o da senha de root =E9 =
+poss=EDvel e n=E3o apresenta=20
+problema qualquer para o sistema. Existem v=E1rias formas para se fazer =
+isto, a=20
+forma que descreverei abaixo assume que voc=EA tem acesso a um outro =
+dispositivo=20
+de partida que n=E3o seja o HD do Linux (<EM>CD-ROM</EM>, =
+<EM>disquetes</EM>,=20
+<EM>outro disco r=EDgido</EM>, etc). Assim, mesmo que encontre uma senha =
+de BIOS=20
+em uma m=E1quina, poder=E1 colocar o disco r=EDgido em outra m=E1quina e =
+executar estes=20
+procedimentos.=20
+<P><STRONG>OBS:</STRONG> Estes procedimentos tens fins did=E1ticos e=20
+administrativos, n=E3o sendo escritos com a inten=E7=E3o de fornecer mal =
+uso desta=20
+t=E9cnica. Entender a exposi=E7=E3o de riscos tamb=E9m ajuda a =
+desenvolver novas=20
+t=E9cnicas de defesa para sistemas cr=EDticos, e estas s=E3o totalmente =
+poss=EDveis e as=20
+mais usadas documentadas neste guia.=20
+<UL>
+  <LI>Como primeiro passo consiga um CD de partida ou disquete de uma=20
+  distribui=E7=E3o <CODE>Linux</CODE>. Normalmente os mesmos CDs que =
+usou para=20
+  instalar sua distribui=E7=E3o tamb=E9m s=E3o desenvolvidos para =
+permitir a manuten=E7=E3o=20
+  do sistema, contendo ferramentas diversas e um terminal virtual =
+dispon=EDvel=20
+  para trabalhos manuais (tanto de instala=E7=E3o como manuten=E7=E3o).=20
+  <LI>V=E1 at=E9 a BIOS da m=E1quina e altere a ordem de =
+inicializa=E7=E3o para que seu=20
+  sistema inicialize a partir do disquete ou CD-ROM (dependendo do =
+m=E9todo=20
+  escolhido no passo anterior).=20
+  <LI>Inicialize a partir do Disquete/CD-ROM.=20
+  <LI>Na maioria dos casos voc=EA provavelmente estar=E1 utilizando o =
+CD-ROM que=20
+  usou para instalar sua distribui=E7=E3o. Imediatamente quando o =
+programa de=20
+  instala=E7=E3o for iniciado, pressione <EM>ALT</EM>+<EM>F2</EM> para =
+alternar para=20
+  o segundo terminal virtual do sistema. O segundo terminal esta sempre=20
+  dispon=EDvel nas distribui=E7=F5es distribui=E7=F5es =
+<CODE>Debian</CODE>, <CODE>Red=20
+  Hat</CODE>, <CODE>Conectiva</CODE>, <CODE>Fedora</CODE>, etc.=20
+  <LI>O pr=F3ximo passo ser=E1 montar sua parti=E7=E3o ra=EDz para ser =
+poss=EDvel alterar=20
+  sua senha de root. Para isto, crie um diret=F3rio onde a parti=E7=E3o =
+ser=E1 montada=20
+  (por exemplo, <CODE>/target</CODE>) e execute o comando mount: =
+<SAMP>mount=20
+  /dev/hda1 /target</SAMP> (assumindo que <CODE>/dev/hda1</CODE> =E9 a =
+parti=E7=E3o=20
+  que cont=E9m seu sistema de arquivos ra=EDz (<CODE>/</CODE>).=20
+  <LI>Entre no diret=F3rio <CODE>/target</CODE> (<SAMP>cd =
+/target</SAMP>) e=20
+  torne-o seu diret=F3rio ra=EDz atual com o comando: <SAMP>chroot =
+.</SAMP>.=20
+  <LI>digite <SAMP>passwd</SAMP> e entre com a nova senha de =
+superusu=E1rio.=20
+  <LI>saia do <CODE>chroot</CODE> digitando <SAMP>exit</SAMP>=20
+  <LI>Digite <SAMP>sync</SAMP> para salvar todas as altera=E7=F5es =
+pendentes para o=20
+  disco e reinicie o sistema (pressionando-se as teclas=20
+  <SAMP>CTRL+ALT+DEL</SAMP>, <SAMP>init 6</SAMP>, <SAMP>reboot</SAMP>).=20
+  <LI>Retire o CD da unidade de discos e altere sua BIOS para dar a =
+partida a=20
+  partir do disco r=EDgido.=20
+  <LI>Teste e verifique se a senha de root foi alterada. </LI></UL>
+<P>Normalmente as distribui=E7=F5es seguem o padr=E3o FHS, mantendo =
+bin=E1rios de=20
+administra=E7=E3o necess=E1rios para recupera=E7=E3o do sistema em caso =
+de panes dentro da=20
+parti=E7=E3o <CODE>/</CODE>, se este n=E3o for o caso de sua =
+distribui=E7=E3o (hoje em dia=20
+=E9 raro), voc=EA ter=E1 que montar sistemas de arquivos adicionais =
+(como o=20
+<CODE>/usr</CODE>, <CODE>/var</CODE>) ou ent=E3o o comando =
+<CODE>passwd</CODE> n=E3o=20
+ser=E1 encontrado ou ter=E1 problemas durante sua execu=E7=E3o.=20
+<HR>
+<A name=3Ds-manut-tarefas></A>
+<H2>26.10 Tarefas autom=E1ticas de manuten=E7=E3o do sistema</H2>
+<P>Os arquivos respons=E1veis pela manuten=E7=E3o autom=E1tica do =
+sistema se encontram=20
+em arquivos individuais localizados nos diret=F3rios =
+<CODE>/etc/cron.daily</CODE>,=20
+<CODE>/etc/cron.weekly</CODE> e <CODE>/etc/cron.montly</CODE>. A =
+quantidade de=20
+arquivos depende da quantidade de pacotes instalado em seu sistema, =
+porque=20
+alguns programam tarefas nestes diret=F3rios e n=E3o =E9 poss=EDvel =
+descrever todas,=20
+para detalhes sobre o que cada arquivo faz veja o cabe=E7alho e o =
+c=F3digo de cada=20
+arquivo.=20
+<P>Estes arquivos s=E3o executados pelo <CODE>cron</CODE> atrav=E9s do =
+arquivo=20
+<CODE>/etc/crontab</CODE>. Voc=EA pode programar quantas tarefas =
+desejar, para=20
+detalhes veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm#s-manut-cron">cron,=20
+Se=E7=E3o 26.11</A> e <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm#s-manut-at">at,=20
+Se=E7=E3o 26.12</A>. Alguns programas mant=E9m arquivos do =
+<CODE>cron</CODE>=20
+individuais em <CODE>/var/spool/cron/crontabs</CODE> que executam =
+comandos=20
+periodicamente.=20
+<HR>
+<A name=3Ds-manut-cron></A>
+<H2>26.11 cron</H2>
+<P>O <CODE>cron</CODE> =E9 um daemon que permite o agendamento da =
+execu=E7=E3o de um=20
+comando/programa para um determinado dia/m=EAs/ano/hora. =C9 muito usado =
+em tarefas=20
+de arquivamento de logs, checagem da integridade do sistema e =
+execu=E7=E3o de=20
+programas/comandos em hor=E1rios determinados.=20
+<P>As tarefas s=E3o definidas no arquivo <CODE>/etc/crontab</CODE> e por =
+arquivos=20
+individuais de usu=E1rios em =
+<CODE>/var/spool/cron/crontabs/[usu=E1rio]</CODE>=20
+(criados atrav=E9s do programa <CODE>crontab</CODE>). Adicionalmente a=20
+distribui=E7=E3o <CODE>Debian</CODE> utiliza os arquivos no diret=F3rio=20
+<CODE>/etc/cron.d</CODE> como uma extens=E3o para o =
+<CODE>/etc/crontab</CODE>.=20
+<P>Para agendar uma nova tarefa, basta editar o arquivo=20
+<CODE>/etc/crontab</CODE> com qualquer editor de texto (como o =
+<CODE>ae</CODE> e=20
+o <CODE>vi</CODE>) e definir o m=EAs/dia/hora que a tarefa ser=E1 =
+executada. N=E3o =E9=20
+necess=E1rio reiniciar o daemon do <CODE>cron</CODE> porque ele verifica =
+seus=20
+arquivos a cada minuto. Veja a se=E7=E3o <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm#s-manut-cron-formato">O=20
+formato de um arquivo crontab, Se=E7=E3o 26.11.1</A> para entender o =
+formato de=20
+arquivo <CODE>cron</CODE> usado no agendamento de tarefas.=20
+<HR>
+<A name=3Ds-manut-cron-formato></A>
+<H3>26.11.1 O formato de um arquivo crontab</H3>
+<P>O arquivo <CODE>/etc/crontab</CODE> tem o seguinte formato: <PRE>     =
+52  18    1   *   *    root     run-parts --report /etc/cron.montly
+     |   |     |   |   |      |      |
+     |   |     |   |   |      |      \_Comando que ser=E1 executado
+     |   |     |   |   |      |     =20
+     |   |     |   |   |      \_ UID que executar=E1 o comando
+     |   |     |   |   |           =20
+     |   |     |   |   \_ Dia da semana (0-7)
+     |   |     |   |
+     |   |     |   \_ M=EAs (1-12)
+     |   |     |
+     |   |     \_ Dia do M=EAs (1-31)
+     |   |
+     |   \_ Hora
+     |
+     \_ Minuto
+</PRE>
+<P>Onde:=20
+<DL>
+  <DT>Minuto=20
+  <DD>Valor entre 0 e 59=20
+  <DT>Hora=20
+  <DD>Valor entre 0 e 23=20
+  <DT>Dia do M=EAs=20
+  <DD>Valor entre 0 e 31=20
+  <DT>M=EAs=20
+  <DD>Valor entre 0 e 12 (identificando os meses de Janeiro a Dezembro)=20
+  <DT>Dia da Semana=20
+  <DD>Valor entre 0 e 7 (identificando os dias de Domingo a S=E1bado). =
+Note que=20
+  tanto 0 e 7 equivalem a Domingo.=20
+  <DT>usu=E1rio=20
+  <DD>O usu=E1rio especificado ser=E1 usado para executar o comando (o =
+usu=E1rio=20
+  dever=E1 existir).=20
+  <DT>comando=20
+  <DD>Comando que ser=E1 executado. Podem ser usados par=E2metros =
+normais usados na=20
+  linha de comando. </DD></DL>
+<P>Os campos do arquivo s=E3o separados por um ou mais espa=E7os ou =
+tabula=E7=F5es. Um=20
+asterisco <SAMP>*</SAMP> pode ser usado nos campos de data e hora para=20
+especificar todo o intervalo dispon=EDvel. O h=EDfen <SAMP>-</SAMP> =
+serve para=20
+especificar per=EDodos de execu=E7=E3o (incluindo a o n=FAmero =
+inicial/final). A v=EDrgula=20
+serve para especificar lista de n=FAmeros. Passos podem ser =
+especificados atrav=E9s=20
+de uma <SAMP>/</SAMP>. Veja os exemplos no final desta se=E7=E3o.=20
+<P>O arquivo gerado em <CODE>/var/spool/cron/crontabs/[usu=E1rio]</CODE> =
+pelo=20
+<CODE>crontab</CODE> tem o mesmo formato do <CODE>/etc/crontab</CODE> =
+exceto por=20
+n=E3o possuir o campo <SAMP>usu=E1rio (UID)</SAMP>, pois o nome do =
+arquivo j=E1=20
+identifica o usu=E1rio no sistema.=20
+<P>Para editar um arquivo de usu=E1rio em =
+<CODE>/var/spool/cron/crontabs</CODE> ao=20
+inv=E9s de editar o <CODE>/etc/crontab</CODE> use <SAMP>crontab =
+-e</SAMP>, para=20
+listar as tarefas daquele usu=E1rio <SAMP>crontab -l</SAMP> e para =
+apagar o=20
+arquivo de tarefas do usu=E1rio <SAMP>crontab -r</SAMP> (adicionalmente =
+voc=EA pode=20
+remover somente uma tarefa atrav=E9s do <SAMP>crontab -e</SAMP> e =
+apagando a linha=20
+correspondente).=20
+<P>OBS: N=E3o esque=E7a de incluir uma linha em branco no final do =
+arquivo, caso=20
+contr=E1rio o =FAltimo comando n=E3o ser=E1 executado.=20
+<P>O <CODE>cron</CODE> define o valor de algumas vari=E1veis =
+automaticamente=20
+durante sua execu=E7=E3o; a vari=E1vel <CODE>SHELL</CODE> =E9 definida =
+como=20
+<SAMP>/bin/sh</SAMP>, <CODE>PATH</CODE> como <SAMP>/usr/bin:/bin</SAMP>, =
+
+<CODE>LOGNAME</CODE>, <CODE>MAILTO</CODE> e <CODE>HOME</CODE> s=E3o =
+definidas=20
+atrav=E9s do arquivo <CODE>/etc/passwd</CODE>. Os valores padr=F5es =
+destas vari=E1veis=20
+podem ser substitu=EDdos especificando um novo valor nos arquivos do=20
+<CODE>cron</CODE>.=20
+<P>Exemplos de um arquivo <CODE>/etc/crontab</CODE>: <PRE>     =
+SHELL=3D/bin/sh
+     PATH=3D/sbin:/bin:/usr/sbin:/usr/bin
+    =20
+     00 10  * * *  root sync
+     # Executa o comando sync todo o dia as 10:00
+     00 06  * * 1  root updatedb
+     # Executa o comando updatedb toda segunda-feira as 06:00.
+     10,20,40 *  * * *  root runq
+     # Executa o comando runq todos os dias e a toda a hora em 10, 20 e =
+40 minutos.=20
+     */10 *  * * *  root fetchmail
+     # Executa o comando fetchmail de 10 em 10 minutos todos os dias
+     15 0  25 12 * root echo "Feliz Natal"|mail john
+     # Envia um e-mail as 0:15 todo o dia 25/12 para john desejando um =
+feliz natal.=20
+     30 5  * * 1-6   root  poff
+     # Executa o comando poff automaticamente as 5:30 de segunda-feira a =
+s=E1bado.
+</PRE>
+<HR>
+<A name=3Ds-manut-at></A>
+<H2>26.12 at</H2>
+<P>O <CODE>at</CODE> agenda tarefas de forma semelhante ao =
+<CODE>cron</CODE> com=20
+uma interface que permite a utiliza=E7=E3o de linguagem natural nos =
+agendamentos.=20
+Sua principal aplica=E7=E3o =E9 no uso de tarefas que sejam disparadas =
+somente uma=20
+vez. Uma caracter=EDstica deste programa =E9 a execu=E7=E3o de =
+aplicativos que tenham=20
+passado de seu hor=E1rio de execu=E7=E3o, muito =FAtil se o computador =
+=E9 desligado com=20
+freq=FC=EAncia ou quando ocorre uma interrup=E7=E3o no fornecimento de =
+energia.=20
+<P>Para utilizar o <CODE>at</CODE>, instale-o com o comando: =
+<SAMP>apt-get=20
+install at</SAMP>. O pr=F3ximo passo =E9 criar os arquivos=20
+<CODE>/etc/at.allow</CODE> e <CODE>at.deny</CODE>. Estes arquivos s=E3o=20
+organizados no formato de um usu=E1rio por linha. Durante o agendamento, =
+=E9=20
+verificado primeiro o arquivo <CODE>at.allow</CODE> (lista de quem pode =
+executar=20
+comandos) e depois o <CODE>at.deny</CODE> (lista de quem N=C3O pode =
+executar=20
+comandos). Caso eles n=E3o existam, o agendamento de comandos =E9 =
+permitido a todos=20
+os usu=E1rios.=20
+<P>Abaixo seguem exemplos do agendamento atrav=E9s do comando =
+<CODE>at</CODE>:=20
+<DL>
+  <DT>echo ls | at 10am today=20
+  <DD>Executa as 10 da manha de hoje=20
+  <DT>echo ls | at 10:05 today=20
+  <DD>Executa as 10:05 da manha de hoje=20
+  <DT>echo ls | at 10:05pm today=20
+  <DD>Executa as 10:05 da noite de hoje=20
+  <DT>echo ls | at 22:05 today=20
+  <DD>Executa as 22:05 da noite de hoje=20
+  <DT>echo ls | at 14:50 tomorrow=20
+  <DD>Executa o comando amanh=E3 as 14:50 da tarde=20
+  <DT>echo ls | at midnight=20
+  <DD>Executa o comando a meia noite de hoje=20
+  <DT>echo ls | at midnight tomorrow=20
+  <DD>Executa o comando a meia noite de amanh=E3=20
+  <DT>echo ls | at noon=20
+  <DD>Executa o comando de tarde (meio dia).=20
+  <DT>at -f comandos.txt teatime=20
+  <DD>Executa os comandos especificados no arquivo "comandos.txt" no =
+hor=E1rio do=20
+  caf=E9 da tarde (as 16:00 horas).=20
+  <DT>at -f comandos.txt +3 minutes=20
+  <DD>Executa os comandos especificados no arquivo "comandos.txt" daqui =
+a 3=20
+  minutos. Tamb=E9m pode ser especificado "hours" ou "days".=20
+  <DT>at -f comandos.txt tomorrow +3 hours=20
+  <DD>Executa os comandos especificados no arquivo "comandos.txt" daqui =
+a 3=20
+  horas no dia de amanh=E3. (se agora s=E3o 10:00, ela ser=E1 executada =
+amanh=E3 as=20
+  13:00 da tarde). </DD></DL>
+<P>Todas as tarefas agendadas s=E3o armazenadas em arquivos dentro do =
+diret=F3rio=20
+<CODE>/var/spool/cron/atjobs</CODE>. A sintaxe de comandos para =
+gerenciar as=20
+tarefas =E9 semelhante aos utilit=E1rios do <CODE>lpd</CODE>: Para ver =
+as tarefas,=20
+digite <SAMP>atq</SAMP>. Para remover uma tarefa, use o comando=20
+<SAMP>atrm</SAMP> seguido do n=FAmero da tarefa obtida pelo =
+<SAMP>atq</SAMP>.=20
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ 26 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

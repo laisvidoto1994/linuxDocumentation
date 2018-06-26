@@ -1,0 +1,381 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Guia Foca GNU/Linux - Servidor telnet</title>
+
+</head>
+
+<body>
+
+<a name="ch-s-telnet"></a>
+<hr>
+
+[ <a href="ch-s-ident.html">anterior</a> ]
+[ <a href="index.html#contents">Conteúdo</a> ]
+[ <a href="ch-intro.html">1</a> ]
+[ <a href="ch-bas.html">2</a> ]
+[ <a href="ch-hardw.html">3</a> ]
+[ <a href="ch-rede.html">4</a> ]
+[ <a href="ch-cfgrede.html">5</a> ]
+[ <a href="ch-log.html">6</a> ]
+[ <a href="ch-deb.html">7</a> ]
+[ <a href="ch-pers.html">8</a> ]
+[ <a href="ch-impr.html">9</a> ]
+[ <a href="ch-fw-iptables.html">10</a> ]
+[ <a href="ch-d-contas.html">11</a> ]
+[ <a href="ch-s-apache.html">12</a> ]
+[ <a href="ch-s-ident.html">13</a> ]
+[ 14 ]
+[ <a href="ch-s-ssh.html">15</a> ]
+[ <a href="ch-s-pop3.html">16</a> ]
+[ <a href="ch-s-cvs.html">17</a> ]
+[ <a href="ch-s-samba.html">18</a> ]
+[ <a href="ch-d-restr.html">19</a> ]
+[ <a href="ch-d-cripto.html">20</a> ]
+[ <a href="ch-apend.html">21</a> ]
+[ <a href="ch-s-ssh.html">próximo</a> ]
+
+<hr>
+
+<h1>
+Guia Foca GNU/Linux
+<br>Capítulo 14 - Servidor telnet
+</h1>
+
+<hr>
+
+<p>
+Este capítulo ensina como instalar, configurar, usar e fazer restrições de
+acesso ao servidor telnet.  Também é explicada a utilização do cliente telnet e
+o suporte a criptografia (ssl).
+
+<hr>
+
+<a name="s-s-telnet-intro"></a>
+<h2>14.1 Introdução</h2>
+
+<p>
+O serviço telnet é oferece o login remoto em seu computador, que lhe permite
+trabalhar conectado a distância como se estivesse em frente a ela.  Ele
+substitui o <code>rlogin</code> e possui muitas melhorias em relação a ele,
+como o controle de acesso, personalização de seção e controle de terminal.
+
+<hr>
+
+<a name="s-s-telnet-versao"></a>
+<h3>14.1.1 Versão</h3>
+
+<p>
+É assumido que esteja usando a versão 0.17.16 do <code>telnet</code>.  As
+explicações contidas aqui podem funcionar para versões posteriores, mas é
+recomendável que leia a documentação sobre modificações no programa (changelog)
+em busca de mudanças que alterem o sentido das explicações fornecidas aqui.
+
+<hr>
+
+<a name="s-s-telnet-caracteristicas"></a>
+<h3>14.1.2 Características</h3>
+
+<ul>
+<li>
+Conexão rápida (não utiliza transmissão de dados criptografada), recomendado
+para ambientes seguros.
+</li>
+<li>
+Possui uma versão com suporte a criptografia via ssl.
+</li>
+<li>
+Possui controle de acesso tcpd (usando <code>/etc/hosts.allow</code> e
+<code>/etc/hosts.deny</code>).
+</li>
+<li>
+A maioria dos sistemas operacionais trazem este utilitário por padrão como
+sistema de acesso remoto a máquinas UNIX.
+</li>
+<li>
+Suporte a terminais ANSI (cores e códigos de escape especiais para o console) e
+uma grande variedade de outros terminais.
+</li>
+</ul>
+
+<hr>
+
+<a name="s-s-telnet-ficha"></a>
+<h3>14.1.3 Ficha técnica</h3>
+
+<p>
+Pacotes:
+<ul>
+<li>
+<code>telnet</code> - Cliente telnet com suporte a autenticação.
+</li>
+<li>
+<code>telnetd</code> - Servidor telnet com suporte a autenticação.
+</li>
+<li>
+<code>telnet-ssl</code> - Cliente telnet com suporte a autenticação e ssl.
+Também suporta conexão a servidores telnet padrão quando o servidor não suporta
+ssl.  Por padrão é tentada a conexão usando ssl, se esta falhar será assumida a
+transmissão em texto plano.
+</li>
+<li>
+<code>telnetd-ssl</code> - Servidor telnet com suporte a autenticação e ssl.
+Também suporta conexão de clientes telnet padrão (sem suporte a ssl).
+</li>
+</ul>
+
+<p>
+Utilitários:
+<ul>
+<li>
+<code>in.telnetd</code> - Servidor telnet
+</li>
+<li>
+<code>telnet</code> - Cliente telnet padrão (quando o pacote
+<code>telnet-ssl</code> está instalado, é simplesmente um link para
+<code>telnet-ssl</code>).
+</li>
+<li>
+<code>telnet-ssl</code> - Cliente telnet com suporte a ssl.
+</li>
+</ul>
+
+<hr>
+
+<a name="s-s-telnet-hwreq"></a>
+<h3>14.1.4 Requerimentos de Hardware</h3>
+
+<p>
+Normalmente o servidor telnet é carregado via inetd, o que permite sua
+utilização em uma máquina com a quantidade mínima de memória RAM requerida para
+o funcionamento do kernel: 2 MB para kernels da série 2.2 e 4MB para kernels da
+série 2.4.
+
+<hr>
+
+<a name="s-s-telnet-logs"></a>
+<h3>14.1.5 Arquivos de log criados pelo servidor telnet</h3>
+
+<p>
+Mensagens do servidor telnet relacionadas com seções são enviadas para
+<code>/var/log/daemon.log</code>.  Adicionalmente, as mensagens sobre
+autenticação (serviços de login) são registradas pelos módulos PAM em
+<code>/var/log/auth.log</code>.
+
+<hr>
+
+<a name="s-s-telnet-install"></a>
+<h3>14.1.6 Instalação</h3>
+
+<p>
+<samp>apt-get install telnet telnetd</samp> ou <samp>apt-get install telnet-ssl
+telnetd-ssl</samp>.
+
+<p>
+Os pacotes com o <samp>-ssl</samp> no final possuem suporte a criptografia ssl.
+Por padrão a porta usada para executar o serviço telnet é a 23 (ou outro número
+de porta definido no <code>/etc/services</code>).  A instalação do servidor
+telnet é feita via inetd (no arquivo <code>/etc/inetd.conf</code>) e o controle
+de acesso ao serviço é feito através dos arquivos <code>/etc/hosts.allow</code>
+e <code>/etc/hosts.deny</code> (veja <a
+href="ch-rede.html#s-rede-servicos-inetd">Serviços iniciados através do inetd,
+Seção 4.7.2</a> e <a href="ch-rede.html#s-rede-seg-tcpd">O mecanismo de
+controle de acessos tcpd, Seção 4.8.3</a>).
+
+<p>
+O servidor tem o nome <code>in.telnetd</code> e este deverá ser usado para
+ajustar o controle de acesso nos arquivos acima.
+
+<hr>
+
+<a name="s-s-telnet-rodando"></a>
+<h3>14.1.7 Iniciando o servidor/reiniciando/recarregando a configuração</h3>
+
+<p>
+O arquivo que controla o funcionamento do servidor <code>telnet</code> é o
+<code>/etc/inetd.conf</code> e o controle de acesso sendo feito pelos arquivos
+<code>/etc/hosts.allow</code> e <code>/etc/hosts.deny</code>.  Será necessário
+reiniciar o servidor <code>inetd</code> caso algum destes três arquivos seja
+modificado: <samp>killall -HUP inetd</samp>.  A porta de operação padrão é a 23
+e pode ser modificada no arquivo <code>/etc/services</code>.
+
+<hr>
+
+<a name="s-s-telnet-opcoescmd"></a>
+<h3>14.1.8 Opções de linha de comando</h3>
+
+<p>
+Opções de linha de comando do servidor <code>telnetd</code>:
+<ul>
+<li>
+<samp>-D nível_de_depuração</samp> - Permite especificar o que será registrado
+pelo servidor durante a conexão dos clientes telnet.  As seguintes opções são
+suportadas:
+<ul>
+<li>
+<samp>options</samp> - Mostra detalhes sobre a negociação das opções de
+conexão.
+</li>
+<li>
+<samp>report</samp> - Mostra detalhe de opções e o que está sendo feito.
+</li>
+<li>
+<samp>netdata</samp> - Mostra os dados transferidos na conexão telnetd.
+</li>
+<li>
+<samp>ptydata</samp> - Mostra os dados mostrados na pty.
+</li>
+</ul>
+</li>
+<li>
+<samp>-edebug</samp> - Ativa a depuração do código de criptografia apenas para
+o servidor telnet com suporte a ssl.
+</li>
+<li>
+<samp>-h</samp> - Somente mostra os detalhes de configuração do seu PC após o
+usuário fornecer um nome/senha válidos.
+</li>
+<li>
+<samp>-L [programa]</samp> - Utiliza o programa especificado para fazer o login
+do usuário (<code>/usr/sbin/telnetlogin</code> é o padrão).
+</li>
+<li>
+<samp>-n</samp> - Não envia pacotes keep alive para verificar o estado da
+conexão.  Desativando esta opção poderá fazer o servidor ficar rodando
+constantemente caso aconteça algum problema e o usuário não consiga se
+desconectar normalmente.
+</li>
+<li>
+<samp>-S TOS</samp> - Ajusta o tipo de serviço usado na conexão para o valor
+especificado (veja <a
+href="ch-fw-iptables.html#s-fw-iptables-mangle-TOS">Especificando o tipo de
+serviço, Seção 10.5.1</a> para maiores detalhes sobre esta opção e os valores
+aceitos).
+</li>
+</ul>
+
+<p>
+Estas opções deverão ser especificadas após o servidor <code>in.telnetd</code>
+no arquivo <code>/etc/inetd.conf</code>.
+
+<hr>
+
+<a name="s-s-telnet-access"></a>
+<h2>14.2 Controle de acesso</h2>
+
+<p>
+É feito pelos arquivos <code>hosts.allow</code> e <code>hosts.deny</code>.
+Veja <a href="ch-rede.html#s-rede-seg-tcpd">O mecanismo de controle de acessos
+tcpd, Seção 4.8.3</a>.
+
+<hr>
+
+<a name="s-s-telnet-recomend"></a>
+<h2>14.3 Recomendações</h2>
+
+<p>
+O serviço telnet utiliza texto plano para seção (exceto nas versões
+cliente/servidor &quot;-ssl&quot;).  Os dados transmitidos por serviços que
+utilizam texto plano podem ser capturados por sniffers e trazer perigo ao seu
+sistema (veja <a href="ch-d-cripto.html#s-d-cripto-sniffer">Sniffer, Seção
+20.2</a>).
+
+<p>
+É recomendável somente executar o servidor telnet padrão em ambientes seguros
+(como em uma rede interna) e a versão com suporte a ssl para fazer conexões via
+redes inseguras (como a Internet).  O serviço <code>ssh</code> (<a
+href="ch-s-ssh.html">Servidor ssh, Capítulo 15</a>) é uma excelente alternativa
+ao telnet, além de possuir outras características adicionais que justifiquem
+seu uso, além de programas cliente para <code>Linux</code> e
+<code>Windows</code>.
+
+<hr>
+
+<a name="s-s-telnet-telnet"></a>
+<h2>14.4 Fazendo conexões ao servidor telnet</h2>
+
+<p>
+Use o comando: <samp>telnet [endereço] [porta]</samp> para realizar conexões
+com uma máquina rodando o servidor telnet.
+
+<p>
+Adicionalmente as seguintes opções podem ser usadas:
+<ul>
+<li>
+<samp>-l [usuario]</samp> - Envia o nome de usuário ao computador remoto.
+Muito útil com o <code>telnet-ssl</code>.
+</li>
+<li>
+<samp>-E</samp> - Desativa o caracter de escape
+</li>
+<li>
+<samp>-a</samp> - Tenta fazer o login automático usando o nome de usuário
+local.  Se o login falhar, será solicitado o nome de usuário.  Esta opção é
+usada por padrão com o cliente <code>telnet-ssl</code>.
+</li>
+<li>
+<samp>-r</samp> - Emula o comportamento do programa <code>rlogin</code>.
+</li>
+</ul>
+
+<pre>
+     Exemplos:
+     
+     # Conecta-se ao servidor telnet rodando na porta 23 de sua própria máquina
+     telnet localhost
+     
+     # Conecta-se ao servidor telnet 200.200.200.200 operando na porta 53454 usando o 
+     # nome de usuário john
+     telnet -l john 200.200.200.200 53454
+</pre>
+
+<hr>
+
+[ <a href="ch-s-ident.html">anterior</a> ]
+[ <a href="index.html#contents">Conteúdo</a> ]
+[ <a href="ch-intro.html">1</a> ]
+[ <a href="ch-bas.html">2</a> ]
+[ <a href="ch-hardw.html">3</a> ]
+[ <a href="ch-rede.html">4</a> ]
+[ <a href="ch-cfgrede.html">5</a> ]
+[ <a href="ch-log.html">6</a> ]
+[ <a href="ch-deb.html">7</a> ]
+[ <a href="ch-pers.html">8</a> ]
+[ <a href="ch-impr.html">9</a> ]
+[ <a href="ch-fw-iptables.html">10</a> ]
+[ <a href="ch-d-contas.html">11</a> ]
+[ <a href="ch-s-apache.html">12</a> ]
+[ <a href="ch-s-ident.html">13</a> ]
+[ 14 ]
+[ <a href="ch-s-ssh.html">15</a> ]
+[ <a href="ch-s-pop3.html">16</a> ]
+[ <a href="ch-s-cvs.html">17</a> ]
+[ <a href="ch-s-samba.html">18</a> ]
+[ <a href="ch-d-restr.html">19</a> ]
+[ <a href="ch-d-cripto.html">20</a> ]
+[ <a href="ch-apend.html">21</a> ]
+[ <a href="ch-s-ssh.html">próximo</a> ]
+
+<hr>
+
+<p>
+Guia Foca GNU/Linux
+
+<address>
+Versão 6.40 - segunda, 30 de outubro de 2006<br>
+<br>
+Gleydson Mazioli da Silva <code><a href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</a></code><br>
+<br>
+</address>
+
+<hr>
+
+</body>
+
+</html>
+

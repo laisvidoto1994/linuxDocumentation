@@ -1,0 +1,1059 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: =?iso-8859-1?Q?Guia_Foca_GNU/Linux_-_Execu=E7=E3o_de_programas?=
+Date: Mon, 6 Aug 2007 11:34:03 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-run.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Execu=E7=E3o de =
+programas</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-run></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ 7 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 7 - Execu=E7=E3o de programas =
+</H1>
+<HR>
+
+<P>Este cap=EDtulo explica como executar programas no =
+<CODE>GNU/Linux</CODE> e o=20
+uso das ferramentas de controle de execu=E7=E3o dos programas.=20
+<HR>
+<A name=3Ds-run-tipos></A>
+<H2>7.1 Tipos de Execu=E7=E3o de comandos/programas</H2>
+<P>Um programa pode ser executado de duas formas:=20
+<OL type=3D1>
+  <LI><SAMP>Primeiro Plano</SAMP> - Tamb=E9m chamado de =
+<EM>foreground</EM>.=20
+  Quando voc=EA deve esperar o t=E9rmino da execu=E7=E3o de um programa =
+para executar um=20
+  novo comando. Somente =E9 mostrado o aviso de comando ap=F3s o =
+t=E9rmino de execu=E7=E3o=20
+  do comando/programa.=20
+  <LI><SAMP>Segundo Plano</SAMP> - Tamb=E9m chamado de =
+<EM>background</EM>. Quando=20
+  voc=EA n=E3o precisa esperar o t=E9rmino da execu=E7=E3o de um =
+programa para executar um=20
+  novo comando. Ap=F3s iniciar um programa em <EM>background</EM>, =E9 =
+mostrado um=20
+  n=FAmero PID (identifica=E7=E3o do Processo) e o aviso de comando =E9 =
+novamente=20
+  mostrado, permitindo o uso normal do sistema.=20
+  <P>O programa executado em background continua sendo executado =
+internamente.=20
+  Ap=F3s ser conclu=EDdo, o sistema retorna uma mensagem de pronto =
+acompanhado do=20
+  n=FAmero PID do processo que terminou. </P></LI></OL>
+<P>Para iniciar um programa em <SAMP>primeiro plano</SAMP>, basta =
+digitar seu=20
+nome normalmente. Para iniciar um programa em <SAMP>segundo =
+plano</SAMP>,=20
+acrescente o caracter <SAMP>"&amp;"</SAMP> ap=F3s o final do comando.=20
+<P>OBS: Mesmo que um usu=E1rio execute um programa em segundo plano e =
+saia do=20
+sistema, o programa continuar=E1 sendo executado at=E9 que seja =
+conclu=EDdo ou=20
+finalizado pelo usu=E1rio que iniciou a execu=E7=E3o (ou pelo usu=E1rio =
+root).=20
+<P>Exemplo: <SAMP>find / -name boot.b &amp;</SAMP>=20
+<P>O comando ser=E1 executado em segundo plano e deixar=E1 o sistema =
+livre para=20
+outras tarefas. Ap=F3s o comando <CODE>find</CODE> terminar, ser=E1 =
+mostrada uma=20
+mensagem.=20
+<HR>
+<A name=3Ds-run-seq></A>
+<H2>7.2 Executando programas em seq=FC=EAncia</H2>
+<P>Os comandos podem ser executados em seq=FC=EAncia (um ap=F3s o =
+t=E9rmino do outro) se=20
+os separarmos com ";". Por exemplo: <SAMP>echo primeiro;echo =
+segundo;echo=20
+terceiro</SAMP>=20
+<HR>
+<A name=3Ds-run-ps></A>
+<H2>7.3 ps</H2>
+<P>Algumas vezes =E9 =FAtil ver quais processos est=E3o sendo executados =
+no=20
+computador. O comando <CODE>ps</CODE> faz isto, e tamb=E9m nos mostra =
+qual usu=E1rio=20
+executou o programa, hora que o processo foi iniciado, etc.=20
+<P><SAMP>ps [<EM>op=E7=F5es</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>a=20
+  <DD>Mostra os processos criados por voc=EA e de outros usu=E1rios do =
+sistema.=20
+  <DT>x=20
+  <DD>Mostra processos que n=E3o s=E3o controlados pelo terminal.=20
+  <DT>u=20
+  <DD>Mostra o nome de usu=E1rio que iniciou o processo e hora em que o =
+processo=20
+  foi iniciado.=20
+  <DT>m=20
+  <DD>Mostra a mem=F3ria ocupada por cada processo em execu=E7=E3o.=20
+  <DT>f=20
+  <DD>Mostra a =E1rvore de execu=E7=E3o de comandos (comandos que s=E3o =
+chamados por=20
+  outros comandos).=20
+  <DT>e=20
+  <DD>Mostra vari=E1veis de ambiente no momento da inicializa=E7=E3o do =
+processo.=20
+  <DT>w=20
+  <DD>Mostra a continua=E7=E3o da linha atual na pr=F3xima linha ao =
+inv=E9s de cortar o=20
+  restante que n=E3o couber na tela.=20
+  <DT>--sort:<EM>[coluna]</EM>=20
+  <DD>Organiza a sa=EDda do comando <CODE>ps</CODE> de acordo com a =
+coluna=20
+  escolhida. Voc=EA pode usar as colunas <SAMP>pid, utime, ppid, rss, =
+size, user,=20
+  priority</SAMP>.=20
+  <P>Pode ser especificada uma listagem em ordem inversa especificando=20
+  <SAMP>--sort:[-coluna]</SAMP>. Para mais detalhes e outras op=E7=F5es, =
+veja a=20
+  p=E1gina de manual. </P></DD></DL>
+<P>As op=E7=F5es acima podem ser combinadas para resultar em uma =
+listagem mais=20
+completa. Voc=EA tamb=E9m pode usar pipes "|" para <SAMP>filtrar</SAMP> =
+a sa=EDda do=20
+comando <CODE>ps</CODE>. Para detalhes, veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm#s-redir-pipe">|=20
+(pipe), Se=E7=E3o 14.5</A>.=20
+<P>Ao contr=E1rio de outros comandos, o comando <CODE>ps</CODE> n=E3o =
+precisa do=20
+h=EDfen "-" para especificar os comandos. Isto porque ele n=E3o utiliza =
+op=E7=F5es=20
+longas e n=E3o usa par=E2metros.=20
+<P>Exemplos: <SAMP>ps</SAMP>, <SAMP>ps ax|grep inetd</SAMP>, <SAMP>ps=20
+auxf</SAMP>, <SAMP>ps auxw</SAMP>.=20
+<HR>
+<A name=3Ds-run-top></A>
+<H2>7.4 top</H2>
+<P>Mostra os programas em execu=E7=E3o ativos, parados, tempo usado na =
+CPU, detalhes=20
+sobre o uso da mem=F3ria RAM, Swap, disponibilidade para execu=E7=E3o de =
+programas no=20
+sistema, etc.=20
+<P><CODE>top</CODE> =E9 um programa que continua em execu=E7=E3o =
+mostrando=20
+continuamente os processos que est=E3o rodando em seu computador e os =
+recursos=20
+utilizados por eles. Para sair do <CODE>top</CODE>, pressione a tecla=20
+<SAMP>q</SAMP>.=20
+<P><SAMP>top [<EM>op=E7=F5es</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT>-d [tempo]=20
+  <DD>Atualiza a tela ap=F3s o [tempo] (em segundos).=20
+  <DT>-s=20
+  <DD>Diz ao <CODE>top</CODE> para ser executado em modo seguro.=20
+  <DT>-i=20
+  <DD>Inicia o <CODE>top</CODE> ignorando o tempo de processos zumbis.=20
+  <DT>-c=20
+  <DD>Mostra a linha de comando ao inv=E9s do nome do programa. =
+</DD></DL>
+<P>A ajuda sobre o <CODE>top</CODE> pode ser obtida dentro do programa=20
+pressionando a tecla <SAMP>h</SAMP> ou pela p=E1gina de manual =
+(<SAMP>man=20
+top</SAMP>).=20
+<P>Abaixo algumas teclas =FAteis:=20
+<UL>
+  <LI><SAMP>espa=E7o</SAMP> - Atualiza imediatamente a tela. </LI></UL>
+<UL>
+  <LI><SAMP>CTRL</SAMP>+<SAMP>L</SAMP> - Apaga e atualiza a tela. =
+</LI></UL>
+<UL>
+  <LI><SAMP>h</SAMP> - Mostra a tela de ajuda do programa. =C9 mostrado =
+todas as=20
+  teclas que podem ser usadas com o <CODE>top</CODE>. </LI></UL>
+<UL>
+  <LI><SAMP>i</SAMP> - Ignora o tempo ocioso de processos zumbis. =
+</LI></UL>
+<UL>
+  <LI><SAMP>q</SAMP> - Sai do programa. </LI></UL>
+<UL>
+  <LI><SAMP>k</SAMP> - Finaliza um processo - semelhante ao comando=20
+  <CODE>kill</CODE>. Voc=EA ser=E1 perguntado pelo n=FAmero de =
+identifica=E7=E3o do=20
+  processo (PID). Este comando n=E3o estar=E1 dispon=EDvel caso esteja =
+usando o=20
+  <CODE>top</CODE> com a op=E7=E3o <SAMP>-s</SAMP>. </LI></UL>
+<UL>
+  <LI><SAMP>n</SAMP> - Muda o n=FAmero de linhas mostradas na tela. Se 0 =
+for=20
+  especificado, ser=E1 usada toda a tela para listagem de processos. =
+</LI></UL>
+<HR>
+<A name=3Ds-run-controle></A>
+<H2>7.5 Controle de execu=E7=E3o de processos</H2>
+<P>Abaixo algumas comandos e m=E9todos =FAteis para o controle da =
+execu=E7=E3o de=20
+processos no <CODE>GNU/Linux</CODE>.=20
+<HR>
+<A name=3Ds-run-break></A>
+<H3>7.5.1 Interrompendo a execu=E7=E3o de um processo</H3>
+<P>Para cancelar a execu=E7=E3o de algum processo <SAMP>rodando em =
+primeiro=20
+plano</SAMP>, basta pressionar as teclas =
+<SAMP>CTRL</SAMP>+<SAMP>C</SAMP>. A=20
+execu=E7=E3o do programa ser=E1 cancelada e ser=E1 mostrado o aviso de =
+comando. Voc=EA=20
+tamb=E9m pode usar o comando <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-kill">kill,=20
+Se=E7=E3o 7.5.6</A> para interromper um processo sendo executado.=20
+<HR>
+<A name=3Ds-run-pausa></A>
+<H3>7.5.2 Parando momentaneamente a execu=E7=E3o de um processo</H3>
+<P>Para parar a execu=E7=E3o de um processo rodando em primeiro plano, =
+basta=20
+pressionar as teclas <SAMP>CTRL</SAMP>+<SAMP>Z</SAMP>. O programa em =
+execu=E7=E3o=20
+ser=E1 pausado e ser=E1 mostrado o n=FAmero de seu job e o aviso de =
+comando.=20
+<P>Para retornar a execu=E7=E3o de um comando pausado, use <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-fg">fg,=20
+Se=E7=E3o 7.5.4</A> ou <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-bg">bg,=20
+Se=E7=E3o 7.5.5</A>.=20
+<P>O programa permanece na mem=F3ria no ponto de processamento em que =
+parou quando=20
+ele =E9 interrompido. Voc=EA pode usar outros comandos ou rodar outros =
+programas=20
+enquanto o programa atual est=E1 interrompido.=20
+<HR>
+<A name=3Ds-run-ver-backgrounds></A>
+<H3>7.5.3 jobs</H3>
+<P>O comando <CODE>jobs</CODE> mostra os processos que est=E3o parados =
+ou rodando=20
+em <EM>segundo plano</EM>. Processos em segundo plano s=E3o iniciados =
+usando o=20
+s=EDmbolo <SAMP>"&amp;"</SAMP> no final da linha de comando (veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-tipos">Tipos=20
+de Execu=E7=E3o de comandos/programas, Se=E7=E3o 7.1</A>) ou atrav=E9s =
+do comando=20
+<CODE>bg</CODE>.=20
+<P><SAMP>jobs</SAMP>=20
+<P>O n=FAmero de identifica=E7=E3o de cada processo parado ou em segundo =
+plano (job),=20
+=E9 usado com os comandos <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-fg">fg,=20
+Se=E7=E3o 7.5.4</A> e <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-bg">bg,=20
+Se=E7=E3o 7.5.5</A>. Um processo interrompido pode ser finalizado =
+usando-se o=20
+comando <SAMP>kill %[num]</SAMP>, onde <SAMP>[num]</SAMP> =E9 o n=FAmero =
+do processo=20
+obtido pelo comando <CODE>jobs</CODE>.=20
+<HR>
+<A name=3Ds-run-fg></A>
+<H3>7.5.4 fg</H3>
+<P>Permite fazer um programa rodando em segundo plano ou parado, rodar =
+em=20
+primeiro plano. Voc=EA deve usar o comando <CODE>jobs</CODE> para pegar =
+o n=FAmero=20
+do processo rodando em segundo plano ou interrompida, este n=FAmero =
+ser=E1 passado=20
+ao comando <CODE>fg</CODE> para ativa-lo em primeiro plano.=20
+<P><SAMP>fg [<EM>n=FAmero</EM>]</SAMP>=20
+<P>Onde <EM>n=FAmero</EM> =E9 o n=FAmero obtido atrav=E9s do comando =
+<CODE>jobs</CODE>.=20
+<P>Caso seja usado sem par=E2metros, o <CODE>fg</CODE> utilizar=E1 o =
+=FAltimo programa=20
+interrompido (o maior n=FAmero obtido com o comando <CODE>jobs</CODE>).=20
+<P>Exemplo: <SAMP>fg 1</SAMP>.=20
+<HR>
+<A name=3Ds-run-bg></A>
+<H3>7.5.5 bg</H3>
+<P>Permite fazer um programa rodando em primeiro plano ou parado, rodar =
+em=20
+segundo plano. Para fazer um programa em primeiro plano rodar em =
+segundo, =E9=20
+necess=E1rio primeiro interromper a execu=E7=E3o do comando com =
+<SAMP>CTRL</SAMP>+=20
+<SAMP>Z</SAMP>, ser=E1 mostrado o n=FAmero da tarefa interrompida, use =
+este n=FAmero=20
+com o comando <CODE>bg</CODE> para iniciar a execu=E7=E3o do comando em =
+segundo=20
+plano.=20
+<P><SAMP>bg [<EM>n=FAmero</EM>]</SAMP>=20
+<P>Onde: <EM>n=FAmero</EM> n=FAmero do programa obtido com o =
+pressionamento das=20
+teclas <SAMP>CTRL</SAMP>+<SAMP>Z</SAMP> ou atrav=E9s do comando =
+<CODE>jobs</CODE>.=20
+
+<HR>
+<A name=3Ds-run-kill></A>
+<H3>7.5.6 kill</H3>
+<P>Permite enviar um sinal a um comando/programa. Caso seja usado sem=20
+par=E2metros, o <CODE>kill</CODE> enviar=E1 um sinal de t=E9rmino ao =
+processo sendo=20
+executado.=20
+<P><SAMP>kill [<EM>op=E7=F5es</EM>] [<EM>sinal</EM>] =
+[<EM>n=FAmero</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>n=FAmero</EM>=20
+  <DD>=C9 o n=FAmero de identifica=E7=E3o do processo obtido com o =
+comando <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-ps">ps,=20
+  Se=E7=E3o 7.3</A>. Tamb=E9m pode ser o n=FAmero ap=F3s o sinal de =
+<SAMP>%</SAMP> obtido=20
+  pelo comando <CODE>jobs</CODE> para matar uma tarefa interrompida. =
+Veja <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-ver-backgrounds">jobs,=20
+  Se=E7=E3o 7.5.3</A>.=20
+  <DT><EM>sinal</EM>=20
+  <DD>Sinal que ser=E1 enviado ao processo. Se omitido usa =
+<SAMP>-15</SAMP> como=20
+  padr=E3o.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-9=20
+  <DD>Envia um sinal de destrui=E7=E3o ao processo ou programa. Ele =E9 =
+terminado=20
+  imediatamente sem chances de salvar os dados ou apagar os arquivos =
+tempor=E1rios=20
+  criados por ele. </DD></DL>
+<P>Voc=EA precisa ser o dono do processo ou o usu=E1rio root para =
+termina-lo ou=20
+destru=ED-lo. Voc=EA pode verificar se o processo foi finalizado =
+atrav=E9s do comando=20
+<CODE>ps</CODE>. Os tipos de sinais aceitos pelo <CODE>GNU/Linux</CODE> =
+s=E3o=20
+explicados em detalhes em <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-sinais">Sinais=20
+do Sistema, Se=E7=E3o 7.5.9</A>.=20
+<P>Exemplo: <SAMP>kill 500</SAMP>, <SAMP>kill -9 500</SAMP>, <SAMP>kill=20
+%1</SAMP>.=20
+<HR>
+<A name=3Ds-run-killall></A>
+<H3>7.5.7 killall</H3>
+<P>Permite finalizar processos atrav=E9s do nome.=20
+<P><SAMP>killall [<EM>op=E7=F5es</EM>] [<EM>sinal</EM>] =
+[<EM>processo</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>processo</EM>=20
+  <DD>Nome do processo que deseja finalizar=20
+  <DT><EM>sinal</EM>=20
+  <DD>Sinal que ser=E1 enviado ao processo (pode ser obtido usando a =
+op=E7=E3o=20
+  <SAMP>-i</SAMP>).=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-i=20
+  <DD>Pede confirma=E7=E3o sobre a finaliza=E7=E3o do processo.=20
+  <DT>-l=20
+  <DD>Lista o nome de todos os sinais conhecidos.=20
+  <DT>-q=20
+  <DD>Ignora a exist=EAncia do processo.=20
+  <DT>-v=20
+  <DD>Retorna se o sinal foi enviado com sucesso ao processo.=20
+  <DT>-w=20
+  <DD>Finaliza a execu=E7=E3o do <CODE>killall</CODE> somente ap=F3s =
+finalizar todos=20
+  os processos. </DD></DL>
+<P>Os tipos de sinais aceitos pelo <CODE>GNU/Linux</CODE> s=E3o =
+explicados em=20
+detalhes na <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-sinais">Sinais=20
+do Sistema, Se=E7=E3o 7.5.9</A>.=20
+<P>Exemplo: <SAMP>killall -HUP inetd</SAMP>=20
+<HR>
+<A name=3Ds-run-killall5></A>
+<H3>7.5.8 killall5</H3>
+<P>Envia um sinal de finaliza=E7=E3o para todos os processos sendo =
+executados.=20
+<P><SAMP>killall5 [<EM>sinal</EM>]</SAMP>=20
+<HR>
+<A name=3Ds-run-sinais></A>
+<H3>7.5.9 Sinais do Sistema</H3>
+<P>Retirado da p=E1gina de manual <SAMP>signal</SAMP>. O =
+<CODE>GNU/Linux</CODE>=20
+suporta os sinais listados abaixo. Alguns n=FAmeros de sinais s=E3o =
+dependentes de=20
+arquitetura.=20
+<P>Primeiro, os sinais descritos no <EM>POSIX 1</EM>: <PRE>     Sinal   =
+Valor     A=E7=E3o    Coment=E1rio
+     =
+-------------------------------------------------------------------------=
+--
+     HUP        1        A      Travamento detectado no terminal de =
+controle ou=20
+                                finaliza=E7=E3o do processo controlado
+     INT        2        A      Interrup=E7=E3o atrav=E9s do teclado
+     QUIT       3        C      Sair atrav=E9s do teclado
+     ILL        4        C      Instru=E7=E3o Ilegal
+     ABRT       6        C      Sinal de abortar enviado pela fun=E7=E3o =
+abort
+     FPE        8        C      Exce=E7=E3o de ponto Flutuante
+     KILL       9       AEF     Sinal de destrui=E7=E3o do processo
+     SEGV      11        C      Refer=EAncia Inv=E1lida de mem=F3ria
+     PIPE      13        A      Pipe Quebrado: escreveu para o pipe sem =
+leitores
+     ALRM      14        A      Sinal do Temporizador da chamada do =
+sistema alarm
+     TERM      15        A      Sinal de T=E9rmino
+     USR1   30,10,16     A      Sinal definido pelo usu=E1rio 1
+     USR2   31,12,17     A      Sinal definido pelo usu=E1rio 2
+     CHLD   20,17,18     B      Processo filho parado ou terminado
+     CONT   19,18,25            Continuar a execu=E7=E3o, se =
+interrompido
+     STOP   17,19,23    DEF     Interromper processo
+     TSTP   18,20,24     D      Interromper digita=E7=E3o no terminal
+     TTIN   21,21,26     D      Entrada do terminal para o processo em =
+segundo plano
+     TTOU   22,22,27     D      Sa=EDda do terminal para o processo em =
+segundo plano
+</PRE>
+<P>As letras da coluna <SAMP>A=E7=E3o</SAMP> tem o seguinte significado: =
+
+<UL>
+  <LI><SAMP>A</SAMP> - A a=E7=E3o padr=E3o =E9 terminar o processo.=20
+  <LI><SAMP>B</SAMP> - A a=E7=E3o padr=E3o =E9 ignorar o sinal.=20
+  <LI><SAMP>C</SAMP> - A a=E7=E3o padr=E3o =E9 terminar o processo e =
+mostrar o core.=20
+  <LI><SAMP>D</SAMP> - A a=E7=E3o padr=E3o =E9 parar o processo.=20
+  <LI><SAMP>E</SAMP> - O sinal n=E3o pode ser pego.=20
+  <LI><SAMP>F</SAMP> - O sinal n=E3o pode ser ignorado. </LI></UL>
+<P>Sinais n=E3o descritos no <EM>POSIX 1</EM> mas descritos na =
+<EM>SUSv2</EM>: <PRE>     Sinal     Valor     A=E7=E3o     Coment=E1rio
+     =
+-------------------------------------------------------------------------=
+
+     BUS      10,7,10      C      Erro no Barramento (acesso incorreto =
+da mem=F3ria)
+     POLL                  A      Evento executado em Pool (Sys V). =
+Sin=F4nimo de IO
+     PROF     27,27,29     A      Tempo expirado do Profiling
+     SYS      12,-,12      C      Argumento inv=E1lido para a rotina =
+(SVID)
+     TRAP        5         C      Captura do tra=E7o/ponto de =
+interrup=E7=E3o
+     URG      16,23,21     B      Condi=E7=E3o Urgente no soquete (4.2 =
+BSD)
+     VTALRM   26,26,28     A      Alarme virtual do rel=F3gio (4.2 BSD)
+     XCPU     24,24,30     C      Tempo limite da CPU excedido (4.2 BSD)
+     XFSZ     25,25,31     C      Limite do tamanho de arquivo excedido =
+(4.2 BSD)
+</PRE>
+<P>(Para os casos SIGSYS, SIGXCPU, SIGXFSZ, e em algumas arquiteturas =
+tamb=E9m o=20
+SIGGUS, a a=E7=E3o padr=E3o do Linux para kernels 2.3.27 e superiores =
+=E9 A (terminar),=20
+enquanto SYSv2 descreve C (terminar e mostrar dump core).) Seguem =
+v=E1rios outros=20
+sinais: <PRE>     Sinal     Valor     A=E7=E3o     Coment=E1rio
+     =
+--------------------------------------------------------------------
+     IOT         6         C      Tra=E7o IOT. Um sin=F4nimo para ABRT
+     EMT       7,-,7
+     STKFLT    -,16,-      A      Falha na pilha do processador
+     IO       23,29,22     A      I/O agora poss=EDvel (4.2 BSD)
+     CLD       -,-,18             Um sin=F4nimo para CHLD
+     PWR      29,30,19     A      Falha de for=E7a (System V)
+     INFO      29,-,-             Um sin=F4nimo para SIGPWR
+     LOST      -,-,-       A      Perda do bloqueio do arquivo
+     WINCH    28,28,20     B      Sinal de redimensionamento da Janela =
+(4.3 BSD, Sun)
+     UNUSED    -,31,-      A      Sinal n=E3o usado (ser=E1 SYS)
+</PRE>
+<P>O "-" significa que o sinal n=E3o est=E1 presente. Onde tr=EAs =
+valores s=E3o=20
+listados, o primeiro =E9 normalmente v=E1lido para o Alpha e Sparc, o do =
+meio para=20
+i386, PowerPc e sh, o =FAltimo para o Mips. O sinal 29 =E9 =
+SIGINFO/SIGPWR em um=20
+Alpha mas SIGLOST em um Sparc.=20
+<HR>
+<A name=3Ds-run-nohup></A>
+<H2>7.6 nohup</H2>
+<P>Executa um comando ignorando os sinais de interrup=E7=E3o. O comando =
+poder=E1 ser=20
+executado at=E9 mesmo em segundo plano caso seja feito o logout do =
+sistema.=20
+<P><SAMP>nohup [<EM>comando que ser=E1 executado</EM>]</SAMP>=20
+<P>As mensagens de sa=EDda do <CODE>nohup</CODE> s=E3o direcionadas para =
+o arquivo=20
+<CODE>$HOME/nohup.out</CODE>.=20
+<P>Exemplo: <SAMP>nohup find / -uid 0 &gt;/tmp/rootfiles.txt =
+&amp;</SAMP>.=20
+<HR>
+<A name=3Ds-run-nice></A>
+<H2>7.7 nice</H2>
+<P>Configura a prioridade da execu=E7=E3o de um comando/programa.=20
+<P><SAMP>nice [<EM>op=E7=F5es</EM>] [<EM>comando/programa</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>comando/programa</EM>=20
+  <DD>Comando/programa que ter=E1 sua prioridade ajustada.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-n [numero]=20
+  <DD>Configura a prioridade que o programa ser=E1 executado. Se um =
+programa for=20
+  executado com maior prioridade, ele usar=E1 mais recursos do sistema =
+para seu=20
+  processamento, caso tenha uma prioridade baixa, ele permitir=E1 que =
+outros=20
+  programas tenham prefer=EAncia. A prioridade de execu=E7=E3o de um=20
+  <EM>programa/comando</EM> pode ser ajustada de -19 (a mais alta) at=E9 =
+19 (a=20
+  mais baixa). </DD></DL>
+<P>Exemplo: <SAMP>nice -n -19 find / -name apropos</SAMP>.=20
+<HR>
+<A name=3Ds-run-fuser></A>
+<H2>7.8 fuser</H2>
+<P>Permite identificar e fechar os processos que est=E3o utilizando =
+arquivos e=20
+soquetes no sistema.=20
+<P><SAMP>fuser [<EM>op=E7=F5es</EM>] [<EM>nome</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>nome</EM>=20
+  <DD>Especifica um nome de processo, diret=F3rio, arquivo, etc.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-k=20
+  <DD>Finaliza os processos acessando o arquivo especificado. O sinal =
+desejado=20
+  deve ser especificado com a op=E7=E3o <SAMP>-signal [num]</SAMP>, ou o =
+sinal -9=20
+  ser=E1 enviado como padr=E3o. N=E3o =E9 poss=EDvel matar o pr=F3prio =
+processo=20
+  <CODE>fuser</CODE>.=20
+  <DT>-i=20
+  <DD>Pergunta antes de destruir um processo. Ser=E1 ignorada caso a =
+op=E7=E3o=20
+  <SAMP>-k</SAMP> n=E3o seja especificada.=20
+  <DT>-l=20
+  <DD>Lista todos os nomes de sinais conhecidos.=20
+  <DT>-m [nome]=20
+  <DD>Especifica um arquivo em um sistema de arquivos montado ou =
+dispositivo de=20
+  bloco que est=E1 montado. Todos os processos acessando aquele sistema =
+de=20
+  arquivos ser=E3o listados. Diret=F3rios s=E3o mostrados seguidos de =
+uma=20
+  <SAMP>/</SAMP>=20
+  <DT>-signal [n=FAmero]=20
+  <DD>Usa o sinal especificado ao inv=E9s de -9 (SIGKILL) quando =
+finalizar=20
+  processos.=20
+  <DT>-u=20
+  <DD>Acrescenta o nome do dono de cada processo ao PID.=20
+  <DT>-v=20
+  <DD>Os processos s=E3o mostrados em um estilo id=EAntico ao =
+<CODE>ps</CODE>.=20
+</DD></DL>
+<HR>
+<A name=3Ds-run-tload></A>
+<H2>7.9 tload</H2>
+<P>Representa de forma gr=E1fica a carga do sistema.=20
+<P><SAMP>tload [<EM>op=E7=F5es</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-s [n=FAmero]=20
+  <DD>Mostra uma escala vertical com espa=E7amento especificado por =
+[n=FAmero]. =C9=20
+  recomend=E1vel o uso de n=FAmeros entre 1 e 10 para melhor =
+visualiza=E7=E3o da escala.=20
+
+  <DT>-d [n=FAmero]=20
+  <DD>Especifica o intervalo entre atualiza=E7=F5es, em segundos. =
+</DD></DL>
+<HR>
+<A name=3Ds-run-vmstat></A>
+<H2>7.10 vmstat</H2>
+<P>Mostra estat=EDsticas sobre o uso da mem=F3ria virtual do sistema.=20
+<P><SAMP>vmstat [<EM>intervalo</EM>] [<EM>contagem</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>intervalo</EM>=20
+  <DD>N=FAmero especificado em segundos entre atualiza=E7=F5es.=20
+  <DT><EM>contagem</EM>=20
+  <DD>N=FAmero de vezes que ser=E1 mostrado. </DD></DL>
+<P>Se n=E3o for especificado nenhum par=E2metro, o <CODE>vmstat</CODE> =
+mostra o=20
+status da mem=F3ria virtual e volta imediatamente para a linha de =
+comando. A=20
+descri=E7=E3o dos campos do <CODE>vmstat</CODE> s=E3o as seguintes:=20
+<DL>
+  <DT><EM>Processos</EM>=20
+  <DT>r=20
+  <DD>N=FAmero de processos aguardando execu=E7=E3o.=20
+  <DT>b=20
+  <DD>N=FAmero de processos em espera n=E3o interromp=EDveis.=20
+  <DT>w=20
+  <DD>N=FAmero de processos extra=EDdos do arquivo de troca ou caso =
+contr=E1rio em=20
+  execu=E7=E3o.=20
+  <DT>
+  <DT><EM>Mem=F3ria</EM>=20
+  <DT>swpd=20
+  <DD>A quantidade de mem=F3ria virtual usada em Kb.=20
+  <DT>free=20
+  <DD>Quantidade de mem=F3ria livre em Kb.=20
+  <DT>buff=20
+  <DD>Quantidade de mem=F3ria usada como buffer em Kb.=20
+  <DT>
+  <DT><EM>Mem=F3ria Virtual</EM>=20
+  <DT>si=20
+  <DD>Quantidade de mem=F3ria gravada para o disco Kb/s.=20
+  <DT>so=20
+  <DD>Quantidade de mem=F3ria retirada do disco em Kb/s.=20
+  <DT>
+  <DT><EM>Entrada/Sa=EDda</EM>=20
+  <DT>bi=20
+  <DD>Blocos enviados para um dispositivo de bloco (medido em blocos por =
+
+  segundo).=20
+  <DT>bo=20
+  <DD>Blocos recebidos de um dispositivo de bloco (em blocos por =
+segundo).=20
+  <DT>
+  <DT><EM>Sistema</EM>=20
+  <DT>in=20
+  <DD>N=FAmero de interrup=E7=F5es por segundo, incluindo o clock.=20
+  <DT>cs=20
+  <DD>N=FAmero de mudan=E7as de contexto por segundo.=20
+  <DT>
+  <DT><EM>Porcentagem do total de tempo da CPU</EM>=20
+  <DT>us=20
+  <DD>Tempo do usu=E1rio=20
+  <DT>sy=20
+  <DD>Tempo do sistema=20
+  <DT>id=20
+  <DD>Tempo ocioso </DD></DL>
+<HR>
+<A name=3Ds-run-pidof></A>
+<H2>7.11 pidof</H2>
+<P>Retorna o PID do processo especificado=20
+<P><SAMP>pidof [<EM>op=E7=F5es</EM>] [<EM>nome</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>nome</EM>=20
+  <DD>Nome do processo que seja obter o n=FAmero PID=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-s=20
+  <DD>Retorna somente o primeiro PID encontrado.=20
+  <DT>-x=20
+  <DD>Retorna o PID do do shell que est=E1 executando o script=20
+  <DT>-o [PID]=20
+  <DD>Ignora o processo com aquele PID. O PID especial %PPID pode ser =
+usado para=20
+  nomear o processo pai do programa <CODE>pidof</CODE>, em outras =
+palavras=20
+</DD></DL>
+<P>OBS: O programa <CODE>pidof</CODE> =E9 um link simb=F3lico ao =
+programa=20
+<CODE>killall5</CODE>. Cuidado ao executar o <CODE>killall5</CODE> as =
+fun=E7=F5es e=20
+op=E7=F5es s=E3o completamente diferentes dependendo da forma como =E9 =
+chamado na linha=20
+de comando! (veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm#s-run-killall5">killall5,=20
+Se=E7=E3o 7.5.8</A> para detalhes.)=20
+<P>Exemplo: <SAMP>pidof -s init</SAMP>=20
+<HR>
+<A name=3Ds-run-pstree></A>
+<H2>7.12 pstree</H2>
+<P>Mostra a estrutura de processos em execu=E7=E3o no sistema em forma =
+de =E1rvore.=20
+<P><SAMP>pstree [<EM>op=E7=F5es</EM>] [<EM>pid</EM>]</SAMP>=20
+<P>Onde:=20
+<DL>
+  <DT><EM>pid</EM>=20
+  <DD>N=FAmero do processo que ter=E1 sua =E1rvore listada. Se omitido, =
+lista todos os=20
+  processos.=20
+  <DT><EM>op=E7=F5es</EM>=20
+  <DT>-a=20
+  <DD>Mostra op=E7=F5es passadas na linha de comando.=20
+  <DT>-c=20
+  <DD>Mostra toda a estrutura (inclusive sub-processos do processo pai). =
+
+  <DT>-G=20
+  <DD>Usa caracteres gr=E1ficos no desenho da =E1rvore de processos.=20
+  <DT>-h=20
+  <DD>Destaca o processo atual e seus antecessores.=20
+  <DT>-H [pid]=20
+  <DD>Destaca o processo especificado.=20
+  <DT>-l=20
+  <DD>N=E3o faz quebra de linha=20
+  <DT>-n=20
+  <DD>Classifica pelo n=FAmero PID ao inv=E9s do nome.=20
+  <DT>-p=20
+  <DD>Mostra o n=FAmero PID entre par=EAnteses ap=F3s o nome do =
+processo.=20
+  <DT>-u=20
+  <DD>Mostra tamb=E9m o dono do processo.=20
+  <DT>-U=20
+  <DD>Usa o conjunto de caracteres Unicode para o desenho da =E1rvore. =
+</DD></DL>
+<HR>
+<A name=3Ds-run-fechando></A>
+<H2>7.13 Fechando um programa quando n=E3o se sabe como sair</H2>
+<P>Muitas vezes quando se esta iniciando no <CODE>GNU/Linux</CODE> =
+voc=EA pode=20
+executar um programa e talvez n=E3o saber como fecha-lo. Este cap=EDtulo =
+do guia=20
+pretende ajuda-lo a resolver este tipo de problema.=20
+<P>Isto pode tamb=E9m ocorrer com programadores que est=E3o construindo =
+seus=20
+programas e por algum motivo n=E3o implementam uma op=E7=E3o de sa=EDda, =
+ou ela n=E3o=20
+funciona!=20
+<P>Em nosso exemplo vou supor que executamos um programa em =
+desenvolvimento com=20
+o nome <CODE>contagem</CODE> que conta o tempo em segundos a partir do =
+momento=20
+que =E9 executado, mas que o programador esqueceu de colocar uma =
+op=E7=E3o de sa=EDda.=20
+Siga estas dicas para finaliza-lo:=20
+<OL type=3D1>
+  <LI>Normalmente todos os programas <CODE>UNIX</CODE> (o =
+<CODE>GNU/Linux</CODE>=20
+  tamb=E9m =E9 um Sistema Operacional baseado no <CODE>UNIX</CODE>) =
+podem ser=20
+  interrompidos com o pressionamento das teclas =
+<SAMP>&lt;CTRL&gt;</SAMP> e=20
+  <SAMP>&lt;C&gt;</SAMP>. Tente isto primeiro para finalizar um =
+programa. Isto=20
+  provavelmente n=E3o vai funcionar se estiver usando um Editor de Texto =
+(ele vai=20
+  entender como um comando de menu). Isto normalmente funciona para =
+comandos que=20
+  s=E3o executados e terminados sem a interven=E7=E3o do usu=E1rio.=20
+  <P>Caso isto n=E3o der certo, vamos partir para a for=E7a! ;-) =
+</P></LI></OL>
+<OL type=3D1 start=3D2>
+  <LI>Mude para um novo console (pressionando <SAMP>&lt;ALT&gt;</SAMP> e =
+
+  <SAMP>&lt;F2&gt;</SAMP>), e fa=E7a o <EM>login</EM> como usu=E1rio=20
+  <STRONG>root</STRONG>. </LI></OL>
+<OL type=3D1 start=3D3>
+  <LI>Localize o PID (n=FAmero de identifica=E7=E3o do processo) usando =
+o comando:=20
+  <SAMP>ps ax</SAMP>, aparecer=E3o v=E1rias linhas cada uma com o =
+n=FAmero do processo=20
+  na primeira coluna, e a linha de comando do programa na =FAltima =
+coluna. Caso=20
+  aparecerem v=E1rios processos voc=EA pode usar <SAMP>ps ax|grep =
+contagem</SAMP>,=20
+  neste caso o <CODE>grep</CODE> far=E1 uma filtragem da sa=EDda do =
+comando <SAMP>ps=20
+  ax</SAMP> mostrando somente as linhas que tem a palavra "contagem". =
+Para=20
+  maiores detalhes, veja o comando <A=20
+  =
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm#s-cmdv-grep">grep,=20
+  Se=E7=E3o 10.8</A>. </LI></OL>
+<OL type=3D1 start=3D4>
+  <LI>Feche o processo usando o comando <SAMP>kill <EM>PID</EM></SAMP>,=20
+  lembre-se de substituir PID pelo n=FAmero encontrado pelo comando =
+<CODE>ps=20
+  ax</CODE> acima.=20
+  <P>O comando acima envia um sinal de t=E9rmino de execu=E7=E3o para o =
+processo=20
+  (neste caso o programa <CODE>contagem</CODE>). O sinal de t=E9rmino =
+mant=E9m a=20
+  chance do programa salvar seus dados ou apagar os arquivos =
+tempor=E1rios que=20
+  criou e ent=E3o ser finalizado, isto depende do programa. =
+</P></LI></OL>
+<OL type=3D1 start=3D5>
+  <LI>Alterne para o console onde estava executando o programa=20
+  <CODE>contagem</CODE> e verifique se ele ainda est=E1 em execu=E7=E3o. =
+Se ele=20
+  estiver parado mas o aviso de comando n=E3o est=E1 dispon=EDvel, =
+pressione a tecla=20
+  &lt;ENTER&gt;. Freq=FCentemente acontece isto com o comando =
+<CODE>kill</CODE>,=20
+  voc=EA finaliza um programa mas o aviso de comando n=E3o =E9 mostrado =
+at=E9 que se=20
+  pressione &lt;ENTER&gt;. </LI></OL>
+<OL type=3D1 start=3D6>
+  <LI>Caso o programa ainda n=E3o foi finalizado, repita o comando=20
+  <CODE>kill</CODE> usando a op=E7=E3o -9: <SAMP>kill -9 PID</SAMP>. =
+Este comando=20
+  envia um sinal de DESTRUI=C7=C3O do processo, fazendo ele terminar "na =
+marra"!=20
+  </LI></OL>
+<P>Uma =FAltima dica: todos os programas est=E1veis (todos que =
+acompanham as boas=20
+distribui=E7=F5es <CODE>GNU/Linux</CODE>) tem sua op=E7=E3o de sa=EDda. =
+Lembre-se que=20
+quando finaliza um processo todos os dados do programa em execu=E7=E3o =
+podem ser=20
+perdidos (principalmente se estiver em um editor de textos), mesmo =
+usando o=20
+<CODE>kill</CODE> sem o par=E2metro <SAMP>-9</SAMP>.=20
+<P>Procure a op=E7=E3o de sa=EDda de um programa consultando o help on =
+line, as=20
+p=E1ginas de manual, a documenta=E7=E3o que acompanha o programa, info =
+pages. Para=20
+detalhes de como encontrar a ajuda dos programas, veja o <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">Como=20
+obter ajuda no sistema, Cap=EDtulo 31</A>=20
+<HR>
+<A name=3Ds-run-reset></A>
+<H2>7.14 Eliminando caracteres estranhos</H2>
+<P>As vezes quando um programa <SAMP>mal comportado</SAMP> =E9 =
+finalizado ou=20
+quando voc=EA visualiza um arquivo bin=E1rio atrav=E9s do comando =
+<SAMP>cat</SAMP>, =E9=20
+poss=EDvel que o aviso de comando (prompt) volte com caracteres =
+estranhos.=20
+<P>Para fazer tudo voltar ao normal, basta digitar <SAMP>reset</SAMP> e =
+teclar=20
+<SAMP>ENTER</SAMP>. N=E3o se preocupe, o comando <SAMP>reset</SAMP> =
+n=E3o reiniciar=E1=20
+seu computador (como o bot=E3o reset do seu computador faz), ele apenas =
+far=E1 tudo=20
+voltar ao normal.=20
+<P>Note que enquanto voc=EA digitar <SAMP>reset</SAMP> aparecer=E3o =
+caracteres=20
+estranhos ao inv=E9s das letras. N=E3o se preocupe! Basta digitar =
+corretamente e=20
+bater <SAMP>ENTER</SAMP> e o aviso de comando voltar=E1 ao normal.=20
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ 7 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-etc.htm">27</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

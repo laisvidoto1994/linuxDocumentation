@@ -1,0 +1,802 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux</TITLE>
+<META http-equiv=content-type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2900.3059" name=GENERATOR></HEAD>
+<BODY><A name=index></A>
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">próximo</A> 
+] 
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR></H1>
+<HR>
+<A name=abstract></A>
+<H2>Resumo</H2>
+<P>Este documento tem por objetivo ser uma referência ao aprendizado do usuário 
+e um guia de consulta, operação e configuração de sistemas Linux (e outros tipos 
+de *ix). A última versão deste guia pode ser encontrada na <CODE><A 
+href="http://www.guiafoca.org/">Página Oficial do Foca GNU/Linux</A></CODE>. 
+Novas versões são lançadas com uma freqüência mensal e você pode receber avisos 
+de novos lançamentos deste guia preenchendo um formulário na página Web. 
+<HR>
+<A name=copyright></A>
+<H2>Nota de Copyright</H2>
+<P>Copyright © 1999-2006 - Gleydson Mazioli da Silva. 
+<P>Permission is granted to copy, distribute and/or modify this document under 
+the terms of the GNU Free Documentation License, Version 1.1 or any later 
+version published by the Free Software Foundation; A copy of the license is 
+included in the section entitled "GNU Free Documentation License". 
+<HR>
+<A name=contents></A>
+<H2>Conteúdo</H2>
+<UL>
+  <LI><A 
+  href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1 
+  Introdução</A> 
+  <UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-palavras">1.1 
+    Antes de começar</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-requisitos">1.2 
+    Pré-requisitos para a utilização deste guia</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-so">1.3 
+    Sistema Operacional</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-linux">1.4 
+    O Linux</A> 
+    <UL>
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-linux-carac">1.4.1 
+      Algumas Características do Linux</A> </LI></UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-distrib">1.5 
+    Distribuições do Linux</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-software-livre">1.6 
+    Software Livre</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-processamento">1.7 
+    Processamento de Dados</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-computador">1.8 
+    O Computador</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-conhecendo">1.9 
+    Conhecendo o Computador</A> 
+    <UL>
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-conhecendo-tipo">1.9.1 
+      Tipos de Gabinete</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-conhecendo-painel">1.9.2 
+      Painel Frontal</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-conhecendo-monitor">1.9.3 
+      Monitor de Vídeo</A> </LI></UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-placamae">1.10 
+    Placa Mãe</A> 
+    <UL>
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-placamae-outros">1.10.1 
+      Alguns componentes da placa mãe</A> </LI></UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-memoria">1.11 
+    Memória do Computador</A> 
+    <UL>
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-memoria-principal">1.11.1 
+      Memória Principal</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-memoria-auxiliar">1.11.2 
+      Memória Auxiliar</A> </LI></UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-discos">1.12 
+    Discos</A> 
+    <UL>
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-discos-flexiveis">1.12.1 
+      Discos Flexíveis</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-discos-rigidos">1.12.2 
+      Disco Rígido</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-discos-cd">1.12.3 
+      CD</A> </LI></UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-cuidados">1.13 
+    Cuidados Básicos com o Computador e Disquetes</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-disp-e-s">1.14 
+    Dispositivos de Entrada e Saída</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-ligando">1.15 
+    Ligando o computador</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-desligando">1.16 
+    Desligando o computador</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html#s-introducao-reiniciando">1.17 
+    Reiniciando o computador</A> </LI></UL>
+  <LI><A 
+  href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2 
+  Explicações Básicas</A> 
+  <UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-hardsoft">2.1 
+    Hardware e Software</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-arquivo">2.2 
+    Arquivos</A> 
+    <UL>
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-arquivo-tipos">2.2.1 
+      Extensão de arquivos</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-arquivo-tamanho">2.2.2 
+      Tamanho de arquivos</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-arquivo-bintext">2.2.3 
+      Arquivo texto e binário</A> </LI></UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-diretorio">2.3 
+    Diretório</A> 
+    <UL>
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-diretorio-raiz">2.3.1 
+      Diretório Raíz</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-diretorio-atual">2.3.2 
+      Diretório atual</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-diretorio-home">2.3.3 
+      Diretório home</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-diretorio-superior">2.3.4 
+      Diretório Superior</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-diretorio-anterior">2.3.5 
+      Diretório Anterior</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-diretorio-caminho">2.3.6 
+      Caminho na estrutura de diretórios</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-diretorio-exemplo">2.3.7 
+      Exemplo de diretório</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-diretorio-estrutura">2.3.8 
+      Estrutura básica de diretórios do Sistema Linux</A> </LI></UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-nomeando">2.4 
+    Nomeando Arquivos e Diretórios</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-comandos">2.5 
+    Comandos</A> 
+    <UL>
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-comandos-internos">2.5.1 
+      Comandos Internos</A> </LI></UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-comandos-externos">2.6 
+    Comandos Externos</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-avisocmd">2.7 
+    Aviso de comando (Prompt)</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-interpcmd">2.8 
+    Interpretador de comandos</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-terminal">2.9 
+    Terminal Virtual (console)</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-login">2.10 
+    Login</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-logout">2.11 
+    Logout</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html#s-basico-curingas">2.12 
+    Curingas</A> </LI></UL>
+  <LI><A 
+  href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3 
+  Para quem esta migrando (ou pensando em migrar) do DOS/Windows para o 
+  Linux</A> 
+  <UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html#s-d-l-compar">3.1 
+    Quais as diferenças iniciais</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html#s-d-l-comandos">3.2 
+    Comandos equivalentes entre DOS e Linux</A> 
+    <UL>
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html#s3.2.1">3.2.1 
+      Arquivos de configuração</A> </LI></UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html#s-d-l-mtools">3.3 
+    Usando a sintaxe de comandos DOS no Linux</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html#s-d-l-programas">3.4 
+    Programas equivalentes entre Windows/DOS e o Linux</A> </LI></UL>
+  <LI><A 
+  href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4 
+  Discos e Partições</A> 
+  <UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html#s-disc-particoes">4.1 
+    Partições</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html#s-disc-formatando">4.2 
+    Formatando disquetes</A> 
+    <UL>
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html#s-disc-formatando-l">4.2.1 
+      Formatando disquetes para serem usados no Linux</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html#s-disc-formatando-d">4.2.2 
+      Formatando disquetes compatíveis com o DOS/Windows</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html#s-disc-formatando-g">4.2.3 
+      Programas de Formatação Gráficos</A> </LI></UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html#s-disc-pontomontagem">4.3 
+    Pontos de Montagem</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html#s-disc-id">4.4 
+    Identificação de discos e partições em sistemas Linux</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html#s-disc-montagem">4.5 
+    Montando (acessando) uma partição de disco</A> 
+    <UL>
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html#s-disc-fstab">4.5.1 
+      fstab</A> </LI></UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html#s-disc-desmontagem">4.6 
+    Desmontando uma partição de disco</A> </LI></UL>
+  <LI><A 
+  href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5 
+  Execução de programas</A> 
+  <UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html#s-run-prgn">5.1 
+    Executando um comando/programa</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html#s-run-path">5.2 
+    path</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html#s-run-tipos">5.3 
+    Tipos de Execução de comandos/programas</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html#s-run-seq">5.4 
+    Executando programas em seqüência</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html#s-run-ps">5.5 
+    ps</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html#s-run-top">5.6 
+    top</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html#s-run-controle">5.7 
+    Controle de execução de processos</A> 
+    <UL>
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html#s-run-break">5.7.1 
+      Interrompendo a execução de um processo</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html#s-run-pausa">5.7.2 
+      Parando momentaneamente a execução de um processo</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html#s-run-ver-backgrounds">5.7.3 
+      jobs</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html#s-run-fg">5.7.4 
+      fg</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html#s-run-bg">5.7.5 
+      bg</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html#s-run-kill">5.7.6 
+      kill</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html#s-run-killall">5.7.7 
+      killall</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html#s-run-killall5">5.7.8 
+      killall5</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html#s-run-sinais">5.7.9 
+      Sinais do Sistema</A> </LI></UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html#s-run-fechando">5.8 
+    Fechando um programa quando não se sabe como sair</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html#s-run-reset">5.9 
+    Eliminando caracteres estranhos</A> </LI></UL>
+  <LI><A 
+  href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6 
+  Comandos para manipulação de diretório</A> 
+  <UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html#s-comando-ls">6.1 
+    ls</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html#s-comando-cd">6.2 
+    cd</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html#s-comando-pwd">6.3 
+    pwd</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html#s-comando-mkdir">6.4 
+    mkdir</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html#s-comando-rmdir">6.5 
+    rmdir</A> </LI></UL>
+  <LI><A 
+  href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7 
+  Comandos para manipulação de Arquivos</A> 
+  <UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html#s-comandos-cat">7.1 
+    cat</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html#s-comando-tac">7.2 
+    tac</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html#s-comando-rm">7.3 
+    rm</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html#s-comando-cp">7.4 
+    cp</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html#s-comando-mv">7.5 
+    mv</A> </LI></UL>
+  <LI><A 
+  href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8 
+  Comandos Diversos</A> 
+  <UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-clear">8.1 
+    clear</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-date">8.2 
+    date</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-df">8.3 
+    df</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-ln">8.4 
+    ln</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-du">8.5 
+    du</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-find">8.6 
+    find</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-free">8.7 
+    free</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-grep">8.8 
+    grep</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-head">8.9 
+    head</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-nl">8.10 
+    nl</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-more">8.11 
+    more</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-less">8.12 
+    less</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-sort">8.13 
+    sort</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-tail">8.14 
+    tail</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-time">8.15 
+    time</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-touch">8.16 
+    touch</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-uptime">8.17 
+    uptime</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-dmesg">8.18 
+    dmesg</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-mesg">8.19 
+    mesg</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-echo">8.20 
+    echo</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-su">8.21 
+    su</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-sync">8.22 
+    sync</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-uname">8.23 
+    uname</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-reboot">8.24 
+    reboot</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-shutdown">8.25 
+    shutdown</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-wc">8.26 
+    wc</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html#s-cmdv-seq">8.27 
+    seq</A> </LI></UL>
+  <LI><A 
+  href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9 
+  Comandos de rede</A> 
+  <UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html#s-cmdn-who">9.1 
+    who</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html#s-cmdn-telnet">9.2 
+    Telnet</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html#s-cmdn-finger">9.3 
+    finger</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html#s-cmdn-ftp">9.4 
+    ftp</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html#s-cmdn-whoami">9.5 
+    whoami</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html#s-cmdn-dnsdomainname">9.6 
+    dnsdomainname</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html#s-cmdn-hostname">9.7 
+    hostname</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html#s-cmdn-talk">9.8 
+    talk</A> </LI></UL>
+  <LI><A 
+  href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10 
+  Comandos para manipulação de contas</A> 
+  <UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html#s-cmdc-adduser">10.1 
+    adduser</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html#s-cmdc-addgroup">10.2 
+    addgroup</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html#s-cmdc-passwd">10.3 
+    passwd</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html#s-cmdc-newgrp">10.4 
+    newgrp</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html#s-cmdc-userdel">10.5 
+    userdel</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html#s-cmdc-groupdel">10.6 
+    groupdel</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html#s-cmdc-sg">10.7 
+    sg</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html#s-cmdc-incluirgrupo">10.8 
+    Adicionando o usuário a um grupo extra</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html#s-cmdc-chfn">10.9 
+    chfn</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html#s-cmdc-id">10.10 
+    id</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html#s-cmdc-logname">10.11 
+    logname</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html#s-cmdc-users">10.12 
+    users</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html#s-cmdc-groups">10.13 
+    groups</A> </LI></UL>
+  <LI><A 
+  href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11 
+  Permissões de acesso a arquivos e diretórios</A> 
+  <UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html#s-perm-user-group">11.1 
+    Donos, grupos e outros usuários</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html#s-perm-tipos">11.2 
+    Tipos de Permissões de acesso</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html#s-perm-acessando">11.3 
+    Etapas para acesso a um arquivo/diretório</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html#s-perm-exemplo">11.4 
+    Exemplos práticos de permissões de acesso</A> 
+    <UL>
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html#s-perm-exemplo-a">11.4.1 
+      Exemplo de acesso a um arquivo</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html#s-perm-exemplo-d">11.4.2 
+      Exemplo de acesso a um diretório</A> </LI></UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html#s-perm-especiais">11.5 
+    Permissões de Acesso Especiais</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html#s-perm-root">11.6 
+    A conta root</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html#s-perm-chmod">11.7 
+    chmod</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html#s-perm-chgrp">11.8 
+    chgrp</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html#s-perm-chown">11.9 
+    chown</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html#s-perm-octal">11.10 
+    Modo de permissão octal</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html#s-perm-umask">11.11 
+    umask</A> </LI></UL>
+  <LI><A 
+  href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12 
+  Redirecionamentos e Pipe</A> 
+  <UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html#s-redir-maior">12.1 
+    &gt;</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html#s-redir-maior2">12.2 
+    &gt;&gt;</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html#s-redir-menor">12.3 
+    &lt;</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html#s-redir-menor2">12.4 
+    &lt;&lt;</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html#s-redir-pipe">12.5 
+    | (pipe)</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html#s12.6">12.6 
+    Diferença entre o "|" e o "&gt;"</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html#s-redir-tee">12.7 
+    tee</A> </LI></UL>
+  <LI><A 
+  href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13 
+  Impressão</A> 
+  <UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html#s-impr-portas">13.1 
+    Portas de impressora</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html#s-impr-direta">13.2 
+    Imprimindo diretamente para a porta de impressora</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html#s-impr-spool">13.3 
+    Imprimindo via spool</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html#s-impr-graficos">13.4 
+    Impressão em modo gráfico</A> 
+    <UL>
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html#s-impr-ghostscript">13.4.1 
+      Ghost Script</A> </LI></UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html#s-impr-magicfilter">13.5 
+    Magic Filter</A> 
+    <UL>
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html#s-impr-magicfilter-i">13.5.1 
+      Instalação e configuração do Magic Filter</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html#s-impr-magicfilter-c">13.5.2 
+      Outros detalhes técnicos sobre o Magic Filter</A> </LI></UL></LI></UL>
+  <LI><A 
+  href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14 
+  X Window (ambiente gráfico)</A> 
+  <UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html#s-x11-descricao">14.1 
+    O que é X Window?</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html#s-x11-estrutura">14.2 
+    A organização do ambiente gráfico X Window</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html#s-x11-iniciando">14.3 
+    Iniciando o X</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html#s-x11-servidor">14.4 
+    Servidor X</A> </LI></UL>
+  <LI><A 
+  href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15 
+  Como obter ajuda no sistema</A> 
+  <UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html#s-ajuda-man">15.1 
+    Páginas de Manual</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html#s-ajuda-info">15.2 
+    Info Pages</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html#s-ajuda-helponline">15.3 
+    Help on line</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html#s-ajuda-help">15.4 
+    help</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html#s-ajuda-apropos">15.5 
+    apropos/whatis</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html#s-ajuda-locate">15.6 
+    locate</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html#s-ajuda-which">15.7 
+    which</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html#s-ajuda-howto">15.8 
+    Documentos HOWTO's</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html#s-ajuda-docs">15.9 
+    Documentação de Programas</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html#s-ajuda-faq">15.10 
+    FAQ</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html#s-ajuda-internet">15.11 
+    Internet</A> 
+    <UL>
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html#s-ajuda-paginas">15.11.1 
+      Páginas Internet de Referência</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html#s-ajuda-listas">15.11.2 
+      Listas de discussão</A> </LI></UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html#s-ajuda-netiqueta">15.12 
+    Netiqueta</A> 
+    <UL>
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html#s-ajuda-netiqueta-geral">15.12.1 
+      Recomendações Gerais sobre a Comunicação Eletrônica</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html#s-ajuda-netiqueta-email">15.12.2 
+      Email</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html#s-ajuda-netiqueta-talk">15.12.3 
+      Talk</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html#s-ajuda-netiqueta-icq">15.12.4 
+      ICQ</A> 
+      <LI><A 
+      href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html#s-ajuda-netiqueta-listas">15.12.5 
+      Listas de Discussão via Email</A> </LI></UL></LI></UL>
+  <LI><A 
+  href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16 
+  Apêndice</A> 
+  <UL>
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html#s-apend-sobre">16.1 
+    Sobre este guia</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html#s-apend-autor">16.2 
+    Sobre o Autor</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html#s-apend-ref">16.3 
+    Referências de auxílio ao desenvolvimento do guia</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html#s-apend-homepage">16.4 
+    Onde encontrar a versão mais nova do guia?</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html#s-apend-colaboradores">16.5 
+    Colaboradores do Guia</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html#s-apend-mr">16.6 
+    Marcas Registradas</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html#s-apend-new">16.7 
+    Futuras versões</A> 
+    <LI><A 
+    href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html#s-apend-pgp">16.8 
+    Chave Pública PGP</A> </LI></UL></LI></UL>
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-x11.html">14</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">próximo</A> 
+] 
+<HR>
+
+<P>Guia Foca GNU/Linux 
+<ADDRESS>Versão 3.99 - segunda, 30 de outubro de 2006<BR><BR>Gleydson Mazioli da 
+Silva <CODE><A 
+href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR><BR></ADDRESS>
+<HR>
+</BODY></HTML>

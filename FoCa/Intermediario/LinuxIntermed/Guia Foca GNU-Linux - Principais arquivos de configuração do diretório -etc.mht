@@ -1,0 +1,907 @@
+From: <Salvo pelo Microsoft Internet Explorer 7>
+Subject: =?iso-8859-1?Q?Guia_Foca_GNU/Linux_-_Principais_arquivos_de_configura?=
+	=?iso-8859-1?Q?=E7=E3o_do_diret=F3rio_/etc?=
+Date: Mon, 6 Aug 2007 11:23:22 -0300
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: =?iso-8859-1?Q?file://C:\Documents_and_Settings\marcosrosendo.ESCRECIFE\C?=
+	=?iso-8859-1?Q?onfigura=E7=F5es_locais\Temp\ch-etc.htm?=
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3028
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - Principais arquivos de =
+configura=E7=E3o do diret=F3rio /etc</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.6000.16414" name=3DGENERATOR></HEAD>
+<BODY><A name=3Dch-etc></A>
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ 27 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Cap=EDtulo 27 - Principais arquivos de =
+configura=E7=E3o do=20
+diret=F3rio <CODE>/etc</CODE> </H1>
+<HR>
+
+<P>Este cap=EDtulo descreve a fun=E7=E3o, par=E2metros e exemplos de =
+utiliza=E7=E3o de=20
+alguns arquivos/diret=F3rios de configura=E7=E3o em <CODE>/etc</CODE>. =
+Estes arquivos=20
+est=E3o dispon=EDveis por padr=E3o na instala=E7=E3o b=E1sica do =
+<CODE>GNU/Linux</CODE>, o=20
+que assegura um m=E1ximo de aproveitamento deste cap=EDtulo. N=E3o =
+ser=E3o descritos=20
+aqui arquivos de configura=E7=E3o espec=EDficos de servidores ou daemons =
+(com exce=E7=E3o=20
+do <CODE>inetd</CODE>).=20
+<HR>
+<A name=3Ds-etc-alternatives></A>
+<H2>27.1 Diret=F3rio <CODE>/etc/alternatives</CODE></H2>
+<P>Este diret=F3rio cont=E9m links para diversos aplicativos padr=F5es =
+utilizados pelo=20
+sistema. Dentre eles s=E3o encontrados links para o <CODE>editor</CODE> =
+do sistema=20
+e o <CODE>xterm</CODE> padr=E3o usado pelo sistema.=20
+<P>Por exemplo, se voc=EA quiser usar o editor <CODE>jed</CODE> ao =
+inv=E9s do=20
+<CODE>ae</CODE> ou <CODE>vi</CODE>, remova o link <CODE>editor</CODE> =
+com o=20
+comando <SAMP>rm editor</SAMP>, localize o arquivo execut=E1vel do=20
+<CODE>jed</CODE> com <SAMP>which jed</SAMP> e crie um link para ele =
+<SAMP>ln -s=20
+/usr/bin/jed editor</SAMP>. De agora em diante o editor padr=E3o usado =
+pela=20
+maioria dos aplicativos ser=E1 o <CODE>jed</CODE>.=20
+<HR>
+<A name=3Ds-etc-devpts></A>
+<H2>27.2 Arquivo <CODE>/etc/default/devpts</CODE></H2>
+<P>Este arquivo cont=E9m algumas configura=E7=F5es para os pseudo =
+terminais em=20
+<CODE>/dev/pts</CODE>.=20
+<HR>
+<A name=3Ds-etc-rcs></A>
+<H2>27.3 Arquivo <CODE>/etc/default/rcs</CODE></H2>
+<P>Cont=E9m vari=E1veis padr=F5es que alteram o comportamento de =
+inicializa=E7=E3o dos=20
+scripts em <CODE>/etc/rcS.d</CODE>=20
+<P>Por exemplo, se quiser menos mensagens na inicializa=E7=E3o do =
+sistema, ajuste o=20
+valor da vari=E1vel <CODE>VERBOSE</CODE> para <SAMP>no</SAMP>.=20
+<P>OBS: Somente modifique aquilo que tem certeza do que est=E1 fazendo, =
+um valor=20
+modificado incorretamente poder=E1 causar falhas na seguran=E7a de sua =
+rede ou no=20
+sistemas de arquivos do disco.=20
+<HR>
+<A name=3Ds-etc-config></A>
+<H2>27.4 Arquivo <CODE>/etc/kbd/config</CODE></H2>
+<P>Este arquivo cont=E9m configura=E7=F5es padr=F5es do pacote =
+<CODE>kbd</CODE> para as=20
+fontes de tela e mapas de teclado usados pelo sistema. A fonte de tela =
+=E9=20
+especificada neste arquivo (as fontes dispon=EDveis no sistema est=E3o =
+localizadas=20
+em <CODE>/usr/share/consolefonts</CODE>).=20
+<P>O arquivo do mapa de teclados pode ser copiado para o diret=F3rio=20
+<CODE>/etc/kbd</CODE> com o nome <CODE>default.kmap</CODE> para que seja =
+
+utilizado na inicializa=E7=E3o do sistema ou escolhido interativamente =
+atrav=E9s do=20
+utilit=E1rio <CODE>kbdconfig</CODE>.=20
+<HR>
+<A name=3Ds-etc-menu-methods></A>
+<H2>27.5 Diret=F3rio <CODE>/etc/menu-methods</CODE></H2>
+<P>Este diret=F3rio cont=E9m uma lista de arquivos que s=E3o executados =
+pelo programa=20
+<CODE>update-menu</CODE> para criar os menus dos programas.=20
+<HR>
+<A name=3Ds-etc-menu-translate></A>
+<H2>27.6 Arquivo <CODE>/etc/menu-methods/menu-translate</CODE></H2>
+<P>Este arquivo permite fazer a tradu=E7=E3o de nomes de menus, =
+identifica=E7=E3o ou=20
+t=EDtulos usados no ambiente gr=E1fico.=20
+<HR>
+<A name=3Ds-etc-networks></A>
+<H2>27.7 Arquivo <CODE>/etc/networks</CODE></H2>
+<P>Este local cont=E9m as configura=E7=F5es das interfaces (placas) de =
+rede do sistema=20
+e outras op=E7=F5es =FAteis para a configura=E7=E3o/seguran=E7a da rede. =
+
+<HR>
+<A name=3Ds-etc-network-interfaces></A>
+<H2>27.8 Arquivo <CODE>/etc/network/interfaces</CODE></H2>
+<P>Este =E9 o arquivo de configura=E7=E3o usado pelos programas =
+<CODE>ifup</CODE> e=20
+<CODE>ifdown</CODE>, respectivamente para ativar e desativas as =
+interfaces de=20
+rede.=20
+<P>O que estes utilit=E1rios fazem na realidade =E9 carregar os =
+utilit=E1rios=20
+<CODE>ifconfig</CODE> e <CODE>route</CODE> atrav=E9s dos argumentos =
+passados do=20
+arquivo <CODE>/etc/network/interfaces</CODE>, permitindo que o usu=E1rio =
+iniciante=20
+configure uma interface de rede com mais facilidade.=20
+<P>Abaixo um exemplo do arquivo <CODE>interfaces</CODE> =E9 o seguinte: =
+<PRE>     iface eth0 inet static
+        address 192.168.1.1
+        netmask 255.255.255.0=20
+        network 192.168.1.0
+        broadcast 192.168.1.255
+</PRE>
+<P>As interfaces e roteamentos s=E3o configurados na ordem que aparecem =
+neste=20
+arquivo. Cada configura=E7=E3o de interface inicia com a palavra chave=20
+<SAMP>iface</SAMP>. A pr=F3xima palavra =E9 o nome da interface que =
+deseja=20
+configurar (da mesma forma que =E9 utilizada pelos comandos =
+<CODE>ifconfig</CODE>=20
+e <CODE>route</CODE>). Voc=EA pode tamb=E9m usar <SAMP>IP aliases</SAMP> =
+
+especificando <CODE>eth0:0</CODE> mas tenha certeza que a interface real =
+
+(<CODE>eth0</CODE>) =E9 inicializada antes.=20
+<P>A pr=F3xima palavra especifica a familia de endere=E7os da interface; =
+Escolha=20
+<SAMP>inet</SAMP> para a rede TCP/IP, <SAMP>ipx</SAMP> para interfaces =
+IPX e=20
+<SAMP>IPv6</SAMP> para interfaces configuradas com o protocolo IPV6.=20
+<P>A palavra <SAMP>static</SAMP> especifica o m=E9todo que a interface =
+ser=E1=20
+configurada, neste caso =E9 uma interface com endere=E7o est=E1tico =
+(fixo).=20
+<P>Outros m=E9todos e seus par=E2metros s=E3o especificados abaixo =
+(traduzido da=20
+p=E1gina do arquivo <CODE>interfaces</CODE>):=20
+<DL>
+  <DT>O m=E9todo <EM>loopback</EM>=20
+  <DD>=C9 usado para configurar a interface <EM>loopback</EM> (lo) IPv4. =
+</DD></DL>
+<DL>
+  <DT>O m=E9todo <EM>static</EM>=20
+  <DD>=C9 usado para configurar um endere=E7o IPv4 fixo para a =
+interface. As op=E7=F5es=20
+  que podem ser usadas com o m=E9todos <EM>static</EM> s=E3o as =
+seguintes (op=E7=F5es=20
+  marcadas com * no final s=E3o requeridas na configura=E7=E3o):=20
+  <DL>
+    <DT>address <EM>endere=E7o</EM> *=20
+    <DD>Endere=E7o IP da Interface de rede (por exemplo, 192.168.1.1).=20
+    <DT>netmask <EM>m=E1scara</EM> *=20
+    <DD>M=E1scara de rede da Interface de rede (por exemplo, =
+255.255.255.0).=20
+    <DT>broadcast <EM>endere=E7o</EM>=20
+    <DD>Endere=E7o de Broadcast da interface (por exemplo, =
+192.168.1.255).=20
+    <DT>network <EM>endere=E7o</EM>=20
+    <DD>Endere=E7o da rede (por exemplo, 192.168.0.0).=20
+    <DT>gateway <EM>endere=E7o</EM>=20
+    <DD>Endere=E7o do gateway padr=E3o (por exemplo, 192.168.1.10). O =
+gateway =E9 o=20
+    endere=E7o do computador respons=E1vel por conectar o seu computador =
+a outra=20
+    rede. Use somente se for necess=E1rio em sua rede. =
+</DD></DL></DD></DL>
+<DL>
+  <DT>O m=E9todo <EM>dhcp</EM>=20
+  <DD>Este m=E9todo =E9 usado para obter os par=E2metros de =
+configura=E7=E3o atrav=E9s de um=20
+  servidor DHCP da rede atrav=E9s das ferramentas: =
+<CODE>dhclient</CODE>,=20
+  <CODE>pump</CODE> (somente Kernels 2.2.x) ou <CODE>dpcpcp</CODE> =
+(somente=20
+  kernels 2.0.x e 2.2.x)=20
+  <DL>
+    <DT>hostname <EM>nome</EM>=20
+    <DD>Nome da esta=E7=E3o de trabalho que ser=E1 requisitado. (pump, =
+dhcpcd)=20
+    <DT>leasehours <EM>leasttime</EM>=20
+    <DD>Lease time preferida em horas (pump)=20
+    <DT>leasetime <EM>leasetime</EM>=20
+    <DD>Lease time preferida em segundos (dhcpcd)=20
+    <DT>vendor <EM>vendedor</EM>=20
+    <DD>Identificador do vendedor (dhcpcd)=20
+    <DT>cliente <EM>identifica=E7=E3o</EM>=20
+    <DD>Identifica=E7=E3o do cliente (dhcpcd) </DD></DL></DD></DL>
+<DL>
+  <DT>O m=E9todo <EM>bootp</EM>=20
+  <DD>Este m=E9todo pode ser usado para obter um endere=E7o via =
+<CODE>bootp</CODE>:=20
+  <DL>
+    <DT>bootfile <CODE>arquivo</CODE>=20
+    <DD>Diz ao servidor para utilizar <CODE>arquivo</CODE> como arquivo =
+de=20
+    inicializa=E7=E3o=20
+    <DT>server <EM>endere=E7o</EM>=20
+    <DD>Especifica o endere=E7o do servidor <CODE>bootp</CODE>.=20
+    <DT>hwaddr <EM>endere=E7o</EM>=20
+    <DD>Usa <EM>endere=E7o</EM> como endere=E7o de hardware no lugar do =
+endere=E7o=20
+    original. </DD></DL></DD></DL>
+<P>Algumas op=E7=F5es se aplicam a todas as interfaces e s=E3o as =
+seguintes:=20
+<DL>
+  <DT>noauto=20
+  <DD>N=E3o configura automaticamente a interface quando o =
+<CODE>ifup</CODE> ou=20
+  <CODE>ifdown</CODE> s=E3o executados com a op=E7=E3o <SAMP>-a</SAMP> =
+(normalmente=20
+  usada durante a inicializa=E7=E3o ou desligamento do sistema).=20
+  <DT>pre-up <SAMP>comando</SAMP>=20
+  <DD>Executa o <SAMP>comando</SAMP> antes da inicializa=E7=E3o da =
+interface.=20
+  <DT>up <SAMP>comando</SAMP>=20
+  <DD>Executa o <SAMP>comando</SAMP> ap=F3s a interface ser iniciada.=20
+  <DT>down <SAMP>comando</SAMP>=20
+  <DD>Executa o <SAMP>comando</SAMP> antes de desativar a interface.=20
+  <DT>pre-down <SAMP>comando</SAMP>=20
+  <DD>Executa o <SAMP>comando</SAMP> ap=F3s desativar a interface. =
+</DD></DL>
+<P>Os comandos que s=E3o executados atrav=E9s das op=E7=F5es =
+<EM>up</EM>,=20
+<EM>pre-up</EM> e <EM>down</EM> podem aparecer v=E1rias vezes na mesma =
+interface,=20
+eles s=E3o executados na seq=FC=EAncia que aparecem. Note que se um dos =
+comandos=20
+falharem, nenhum dos outros ser=E1 executado. Voc=EA pode ter certeza =
+que os=20
+pr=F3ximos comandos ser=E3o executados adicionando <SAMP>|| true</SAMP> =
+ao final da=20
+linha de comando.=20
+<HR>
+<A name=3Ds-etc-networks-options></A>
+<H2>27.9 Arquivo <CODE>/etc/networks/options</CODE></H2>
+<P>Este arquivo cont=E9m op=E7=F5es que ser=E3o aplicadas as interfaces =
+de rede durante=20
+a inicializa=E7=E3o do sistema. Este arquivo =E9 lido pelo script de =
+inicializa=E7=E3o=20
+<CODE>/etc/init.d/network</CODE> que verifica os valores e aplica as=20
+modifica=E7=F5es apropriadas no kernel.=20
+<HR>
+<A name=3Ds-etc-spoof-protect></A>
+<H2>27.10 Arquivo <CODE>/etc/networks/spoof-protect</CODE></H2>
+<P>Permite especificar os endere=E7os IPs locais e interfaces de rede =
+que ser=E3o=20
+protegidas contra a t=E9cnica de IP spoofing (falsifica=E7=E3o de =
+endere=E7o IP).=20
+<HR>
+<A name=3Ds-etc-pam></A>
+<H2>27.11 Diret=F3rio <CODE>/etc/pam.d</CODE></H2>
+<P>Este diret=F3rio possui arquivos de configura=E7=E3o de diversos =
+m=F3dulos PAM=20
+existentes em seu sistema.=20
+<HR>
+<A name=3Ds-etc-ppp></A>
+<H2>27.12 Diret=F3rio <CODE>/etc/ppp</CODE></H2>
+<P>Cont=E9m arquivos de configura=E7=E3o usados pelo daemon pppd para =
+fazer uma=20
+conex=E3o com uma rede PPP externa, criados manualmente ou atrav=E9s do=20
+<CODE>pppconfig</CODE>.=20
+<HR>
+<A name=3Ds-etc-security></A>
+<H2>27.13 Diret=F3rio <CODE>/etc/security</CODE></H2>
+<P>Este diret=F3rio cont=E9m arquivos para controle de seguran=E7a e =
+limites que ser=E3o=20
+aplicados aos usu=E1rios do sistema. O funcionamento de muitos dos =
+arquivos deste=20
+diret=F3rio depende de modifica=E7=F5es nos arquivos em =
+<CODE>/etc/pam.d</CODE> para=20
+habilitar as fun=E7=F5es de controle, acesso e restri=E7=F5es.=20
+<HR>
+<A name=3Ds-etc-security-access></A>
+<H2>27.14 Arquivo <CODE>/etc/security/access.conf</CODE></H2>
+<P>=C9 lido no momento do login do usu=E1rio e permite definir quem =
+ter=E1 acesso ao=20
+sistema e de onde tem permiss=E3o de acessar sua conta. O formato deste =
+arquivo=20
+s=E3o 3 campos separados por <SAMP>:</SAMP>, cada linha contendo uma =
+regra de=20
+acesso.=20
+<P>O primeiro campo deve conter o caracter <SAMP>+</SAMP> ou =
+<SAMP>-</SAMP> para=20
+definir se aquela regra permitir=E1 (+) ou bloquear=E1(-) o acesso do =
+usu=E1rio.=20
+<P>O segundo campo deve conter uma lista de logins, grupos, =
+usu=E1rio@computador=20
+ou a palavra <SAMP>ALL</SAMP> (confere com tudo) e <SAMP>EXCEPT</SAMP>=20
+(excess=E3o).=20
+<P>O terceiro campo deve conter uma lista de terminais tty (para logins =
+locais),=20
+nomes de computadores, nomes de dom=EDnios (iniciando com um =
+<SAMP>.</SAMP>),=20
+endere=E7o IP de computadores ou endere=E7o IP de redes (finalizando com =
+
+<SAMP>.</SAMP>). Tamb=E9m pode ser usada a palavra <SAMP>ALL</SAMP>,=20
+<SAMP>LOCAL</SAMP> e <SAMP>EXCEPT</SAMP> (atinge somente m=E1quinas =
+locais=20
+conhecidas pelo sistema).=20
+<P>Abaixo um exemplo do <CODE>access.conf</CODE> <PRE>     # Somente =
+permite o root entrar em tty1
+     #
+     -:ALL EXCEPT root:tty1
+    =20
+     # bloqueia o logins do console a todos exceto whell, shutdown e =
+sync.
+     #
+     -:ALL EXCEPT wheel shutdown sync:console
+    =20
+     # Bloqueia logins remotos de contas privilegiadas (grupo wheel).
+     #
+     -:wheel:ALL EXCEPT LOCAL .win.tue.nl
+    =20
+     # Algumas contas n=E3o tem permiss=E3o de acessar o sistema de =
+nenhum lugar:
+     #
+     -:wsbscaro wsbsecr wsbspac wsbsym wscosor wstaiwde:ALL
+    =20
+     # Todas as outras contas que n=E3o se encaixam nas regras acima, =
+podem acessar de=20
+     # qualquer lugar
+</PRE>
+<HR>
+<A name=3Ds-etc-securith-limits></A>
+<H2>27.15 Arquivo <CODE>/etc/security/limits.conf</CODE></H2>
+<P>Defini limites de uso dos recursos do sistema para cada usu=E1rio ou =
+grupos de=20
+usu=E1rios. Os recursos s=E3o descritos em linhas da seguinte forma: =
+<PRE>     #&lt;dominio&gt;          &lt;tipo&gt;  &lt;item&gt;  =
+&lt;valor&gt;
+</PRE>
+<P>O <SAMP>dom=EDnio</SAMP> pode ser um nome de usu=E1rio, um grupo =
+(especificado=20
+como <SAMP>@grupo</SAMP>) ou o curinga <SAMP>*</SAMP>.=20
+<P>O <SAMP>tipo</SAMP> pode ser <SAMP>soft</SAMP> para o limite =
+m=EDnimos e=20
+<SAMP>hard</SAMP> para o limite m=E1ximo. O campo <SAMP>item</SAMP> pode =
+ser um=20
+dos seguintes:=20
+<UL>
+  <LI><SAMP>core</SAMP> - limita o tamanho do arquivo core (KB)=20
+  <LI><SAMP>data</SAMP> - tamanho m=E1ximo de dados (KB)=20
+  <LI><SAMP>fsize</SAMP> - Tamanho m=E1ximo de arquivo (KB)=20
+  <LI><SAMP>memlock</SAMP> - Espa=E7o m=E1ximo de endere=E7os bloqueados =
+na mem=F3ria=20
+  (KB)=20
+  <LI><SAMP>nofile</SAMP> - N=FAmero m=E1ximo de arquivos abertos=20
+  <LI><SAMP>rss</SAMP> - Tamanho m=E1ximo dos programas residentes (KB)=20
+  <LI><SAMP>stack</SAMP> - Tamanho m=E1ximo de pilha (KB)=20
+  <LI><SAMP>cpu</SAMP> - Tempo m=E1ximo usado na CPU (MIN)=20
+  <LI><SAMP>nproc</SAMP> - N=FAmero m=E1ximo de processos=20
+  <LI><SAMP>as</SAMP> - Limite de espa=E7o de endere=E7os=20
+  <LI><SAMP>maxlogins</SAMP> - N=FAmero m=E1ximo de logins deste =
+usu=E1rio=20
+  <LI><SAMP>priority</SAMP> - Prioridade que os programas deste =
+usu=E1rio ser=E3o=20
+  executados </LI></UL>
+<P>Abaixo um exemplo de arquivo <CODE>/etc/security/limits.conf</CODE>: =
+<PRE>     =20
+     #&lt;dominio&gt;      &lt;tipo&gt;  &lt;item&gt;         =
+&lt;valor&gt;
+    =20
+     *               soft    core            0
+     *               hard    rss             10000
+     @student        hard    nproc           20
+     @faculty        soft    nproc           20
+     @faculty        hard    nproc           50
+     ftp             hard    nproc           0
+     @student        -       maxlogins       4
+</PRE>
+<HR>
+<A name=3Ds-etc-crontab></A>
+<H2>27.16 Arquivo <CODE>/etc/crontab</CODE></H2>
+<P>Arquivo que cont=E9m a programa=E7=E3o de programas que ser=E3o =
+executados em=20
+hor=E1rios/datas programadas.=20
+<P>Veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm#s-manut-cron">cron,=20
+Se=E7=E3o 26.11</A> para mais detalhes sobre o formato deste arquivo e =
+outras=20
+op=E7=F5es.=20
+<HR>
+<A name=3Ds27.17></A>
+<H2>27.17 Arquivo <CODE>/etc/fstab</CODE></H2>
+<P>Cont=E9m detalhes para a montagem dos sistemas de arquivos do =
+sistema. Veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm#s-disc-fstab">fstab,=20
+Se=E7=E3o 5.13.1</A> para detalhes sobre o formato deste arquivo.=20
+<HR>
+<A name=3Ds27.18></A>
+<H2>27.18 Arquivo <CODE>/etc/group</CODE></H2>
+<P>Lista de grupos existentes no sistema. Veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm#s-cmdc-incluirgrupo">Adicionando=
+=20
+o usu=E1rio a um grupo extra, Se=E7=E3o 12.10</A> para mais detalhes =
+sobre o formato=20
+deste arquivo.=20
+<HR>
+<A name=3Ds-etc-gshadow></A>
+<H2>27.19 Arquivo <CODE>/etc/gshadow</CODE></H2>
+<P>Senhas ocultas dos grupos existentes no sistema (somente o usu=E1rio=20
+<SAMP>root</SAMP> pode ter acesso a elas). Use o utilit=E1rio=20
+<CODE>shadowconfig</CODE> para ativar/desativar o suporte a senhas =
+ocultas.=20
+<HR>
+<A name=3Ds27.20></A>
+<H2>27.20 Arquivo <CODE>/etc/host.conf</CODE></H2>
+<P>Veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-dns-a-hostconf">/etc/host=
+.conf,=20
+Se=E7=E3o 15.6.2.2</A>.=20
+<HR>
+<A name=3Ds27.21></A>
+<H2>27.21 Arquivo <CODE>/etc/hostname</CODE></H2>
+<P>Arquivo lido pelo utilit=E1rio <CODE>hostname</CODE> para definir o =
+nome de sua=20
+esta=E7=E3o de trabalho.=20
+<HR>
+<A name=3Ds27.22></A>
+<H2>27.22 Arquivo <CODE>/etc/hosts</CODE></H2>
+<P>Banco de dados DNS est=E1tico que mapeia o nome ao endere=E7o IP da =
+esta=E7=E3o de=20
+trabalho (ou vice versa). Veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-dns-a-hosts">/etc/hosts, =
+
+Se=E7=E3o 15.6.2.3</A> para mais detalhes sobre o formato deste arquivo. =
+
+<HR>
+<A name=3Ds27.23></A>
+<H2>27.23 Arquivo <CODE>/etc/hosts.allow</CODE></H2>
+<P>Controle de acesso do wrapper TCPD que permite o acesso de =
+determinadas de=20
+determinados endere=E7os/grupos aos servi=E7os da rede. Veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-seg-tcpd-a">/etc/hosts.al=
+low,=20
+Se=E7=E3o 15.8.3.1</A> para detalhes sobre o formato deste arquivo.=20
+<HR>
+<A name=3Ds27.24></A>
+<H2>27.24 Arquivo <CODE>/etc/hosts.deny</CODE></H2>
+<P>Controle de acesso do wrapper TCPD que bloqueia o acesso de =
+determinados=20
+endere=E7os/grupos aos servi=E7os da rede. Este arquivo =E9 somente lido =
+caso o=20
+<CODE>/etc/hosts.allow</CODE> n=E3o tenha permitido acesso aos =
+servi=E7os que=20
+cont=E9m. Um valor padr=E3o razoavelmente seguro que pode ser usado =
+neste arquivo=20
+que serve para a maioria dos usu=E1rios dom=E9sticos =E9: <PRE>     ALL: =
+ALL
+</PRE>
+<P>caso o acesso ao servi=E7o n=E3o tenha sido bloqueado no =
+<CODE>hosts.deny</CODE>,=20
+o acesso ao servi=E7o =E9 permitido.=20
+<P>Veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-seg-tcpd-d">/etc/hosts.de=
+ny,=20
+Se=E7=E3o 15.8.3.2</A> para detalhes sobre o formato deste arquivo.=20
+<HR>
+<A name=3Ds27.25></A>
+<H2>27.25 Arquivo <CODE>/etc/hosts.equiv</CODE></H2>
+<P>Veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-seg-tcpd-e">/etc/hosts.eq=
+uiv=20
+e /etc/shosts.equiv, Se=E7=E3o 15.8.3.3</A>.=20
+<HR>
+<A name=3Ds27.26></A>
+<H2>27.26 Arquivo <CODE>/etc/inetd.conf</CODE></H2>
+<P>Veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-servicos-inetd-c">/etc/in=
+etd.conf,=20
+Se=E7=E3o 15.7.2.1</A>.=20
+<HR>
+<A name=3Ds-etc-inittab></A>
+<H2>27.27 Arquivo <CODE>/etc/inittab</CODE></H2>
+<P>Este =E9 o arquivo de configura=E7=E3o utilizado pelo programa =
+<CODE>init</CODE>=20
+para a inicializa=E7=E3o do sistema. Para mais detalhes sobre o formato =
+deste=20
+arquivo, consulte a p=E1gina de manual do <EM>inittab</EM>.=20
+<HR>
+<A name=3Ds-etc-inputrc></A>
+<H2>27.28 Arquivo <CODE>/etc/inputrc</CODE></H2>
+<P>Este arquivo cont=E9m par=E2metros para a configura=E7=E3o do =
+teclado. Veja o final=20
+da se=E7=E3o <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm#s-cfg-acentuacao-t">Acentua=E7=E3=
+o=20
+em modo Texto, Se=E7=E3o 23.1.1</A> e a p=E1gina de manual do =
+<EM>inputrc</EM> para=20
+mais detalhes.=20
+<HR>
+<A name=3Ds-etc-isapnp-c></A>
+<H2>27.29 Arquivo <CODE>/etc/isapnp.conf</CODE></H2>
+<P>Gerado pelo utilit=E1rio <CODE>pnpdump</CODE> e utilizado pelo =
+utilit=E1rio=20
+<CODE>isapnp</CODE> para configurar os recursos de hardware dos =
+dispositivos=20
+Plug-and-Play no <CODE>GNU/Linux</CODE>.=20
+<HR>
+<A name=3Ds-etc-isapnp-g></A>
+<H2>27.30 Arquivo <CODE>/etc/isapnp.gone</CODE></H2>
+<P>Cont=E9m uma lista de endere=E7os reservados que n=E3o dever=E3o ser =
+usados pelo=20
+<CODE>isapnp</CODE>.=20
+<HR>
+<A name=3Ds-etc-issue></A>
+<H2>27.31 Arquivo <CODE>/etc/issue</CODE></H2>
+<P>Cont=E9m um texto ou mensagem que ser=E1 mostrada antes do login do =
+sistema.=20
+<HR>
+<A name=3Ds-etc-issue-n></A>
+<H2>27.32 Arquivo <CODE>/etc/issue.net</CODE></H2>
+<P>Mesma utilidade do <CODE>/etc/issue</CODE> mas =E9 mostrado antes do =
+login de=20
+uma se=E7=E3o <CODE>telnet</CODE>. Outra diferen=E7a =E9 que este =
+arquivo aceita os=20
+seguintes tipos de vari=E1veis:=20
+<UL>
+  <LI><SAMP>%t</SAMP> - Mostra o terminal tty atual.=20
+  <LI><SAMP>%h</SAMP> - Mostra o nome de dom=EDnio completamente =
+qualificado=20
+  (FQDN).=20
+  <LI><SAMP>%D</SAMP> - Mostra o nome do dom=EDnio NIS.=20
+  <LI><SAMP>%d</SAMP> - Mostra a data e hora atual.=20
+  <LI><SAMP>%s</SAMP> - Mostra o nome do Sistema Operacional.=20
+  <LI><SAMP>%m</SAMP> - Mostra o tipo de hardware do computador.=20
+  <LI><SAMP>%r</SAMP> - Mostra a revis=E3o do Sistema Operacional.=20
+  <LI><SAMP>%v</SAMP> - Mostra a vers=E3o do Sistema Operacional.=20
+  <LI><SAMP>%%</SAMP> - Mostra um simples sinal de porcentagem (%). =
+</LI></UL>
+<HR>
+<A name=3Ds27.33></A>
+<H2>27.33 Arquivo <CODE>/etc/lilo.conf</CODE></H2>
+<P>Arquivo de configura=E7=E3o do gerenciador de partida =
+<CODE>lilo</CODE>. Veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-lilo">LILO,=20
+Se=E7=E3o 6.1</A> e <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm#s-boot-lilo-exemplo">Um=20
+exemplo do arquivo de configura=E7=E3o lilo.conf, Se=E7=E3o 6.1.3</A>.=20
+<HR>
+<A name=3Ds-etc-login-d></A>
+<H2>27.34 Arquivo <CODE>/etc/login.defs</CODE></H2>
+<P>Defini=E7=F5es de configura=E7=E3o para o pacote login=20
+<HR>
+<A name=3Ds27.35></A>
+<H2>27.35 Arquivo <CODE>/etc/modules</CODE></H2>
+<P>Veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-arquivos-modules">/etc/mo=
+dules,=20
+Se=E7=E3o 16.12.1</A>.=20
+<HR>
+<A name=3Ds27.36></A>
+<H2>27.36 Arquivo <CODE>/etc/modules.conf</CODE></H2>
+<P>Veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm#s-kern-arquivos-modulesconf">mod=
+ules.conf,=20
+Se=E7=E3o 16.12.2</A>.=20
+<HR>
+<A name=3Ds-etc-motd></A>
+<H2>27.37 Arquivo <CODE>/etc/motd</CODE></H2>
+<P>Mostra um texto ou mensagem ap=F3s o usu=E1rio se logar com sucesso =
+no sistema.=20
+Tamb=E9m =E9 usado pelo telnet, ftp, e outros servidores que requerem =
+autentica=E7=E3o=20
+do usu=E1rio (nome e senha).=20
+<HR>
+<A name=3Ds-etc-mtab></A>
+<H2>27.38 Arquivo <CODE>/etc/mtab</CODE></H2>
+<P>Lista os sistemas de arquivos montados atualmente no sistema. Sua =
+fun=E7=E3o =E9=20
+id=EAntica ao <CODE>/proc/mounts</CODE>.=20
+<HR>
+<A name=3Ds27.39></A>
+<H2>27.39 Arquivo <CODE>/etc/networks</CODE></H2>
+<P>Veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-dns-a-networks">/etc/netw=
+orks,=20
+Se=E7=E3o 15.6.2.4</A>.=20
+<HR>
+<A name=3Ds-etc-passwd></A>
+<H2>27.40 Arquivo <CODE>/etc/passwd</CODE></H2>
+<P>=C9 o arquivo mais cobi=E7ado por Hackers porque cont=E9m os dados =
+pessoais do=20
+usu=E1rio como o login, uid, telefone e senha (caso seu sistema esteja =
+usando=20
+senhas ocultas, a senha ter=E1 um <SAMP>*</SAMP> no lugar e as senhas =
+reais=20
+estar=E3o armazenadas no arquivo <CODE>/etc/shadow</CODE>).=20
+<HR>
+<A name=3Ds-etc-printcap></A>
+<H2>27.41 Arquivo <CODE>/etc/printcap</CODE></H2>
+<P>Banco de dados de configura=E7=E3o da impressora, usado por daemons =
+de impress=E3o=20
+como o <CODE>lpr</CODE> e <CODE>lprng</CODE>.=20
+<HR>
+<A name=3Ds27.42></A>
+<H2>27.42 Arquivo <CODE>/etc/protocols</CODE></H2>
+<P>Veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-outros-protocols">/etc/pr=
+otocols,=20
+Se=E7=E3o 15.9.2</A>.=20
+<HR>
+<A name=3Ds27.43></A>
+<H2>27.43 Arquivo <CODE>/etc/resolv.conf</CODE></H2>
+<P>Veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-dns-a-resolv">/etc/resolv=
+.conf,=20
+Se=E7=E3o 15.6.2.1</A>.=20
+<HR>
+<A name=3Ds-serial-c></A>
+<H2>27.44 Arquivo <CODE>/etc/serial.conf</CODE></H2>
+<P>Configura=E7=F5es das portas seriais do sistema. Veja a p=E1gina de =
+manual do=20
+<EM>serial.conf</EM> e a p=E1gina de manual do utilit=E1rio =
+<CODE>setserial</CODE>=20
+para detalhes de como configurar adequadamente a taxa de transmiss=E3o =
+serial=20
+conforme seu dispositivo.=20
+<HR>
+<A name=3Ds27.45></A>
+<H2>27.45 Arquivo <CODE>/etc/services</CODE></H2>
+<P>Veja <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm#s-rede-outros-services">/etc/ser=
+vices,=20
+Se=E7=E3o 15.9.1</A>.=20
+<HR>
+<A name=3Ds-etc-shadow></A>
+<H2>27.46 Arquivo <CODE>/etc/shadow</CODE></H2>
+<P>Este arquivo armazena as senhas criptografadas caso estiver usando o =
+recurso=20
+de senhas ocultas. Este arquivo somente pode ser lido pelo usu=E1rio=20
+<SAMP>root</SAMP>.=20
+<HR>
+<A name=3Ds-etc-shells></A>
+<H2>27.47 Arquivo <CODE>/etc/shells</CODE></H2>
+<P>Cont=E9m uma lista de interpretadores de comando (shells) v=E1lidos =
+no sistema.=20
+<HR>
+<A name=3Ds-etc-syslog-c></A>
+<H2>27.48 Arquivo <CODE>/etc/syslog.conf</CODE></H2>
+<P>Cont=E9m configura=E7=F5es para definir o que ser=E1 registrado nos =
+arquivos de log=20
+em <CODE>/var/log</CODE> do sistema. Veja a p=E1gina de manual=20
+<EM>syslog.conf</EM> e dos programas <CODE>klog</CODE> e =
+<CODE>syslogd</CODE>=20
+para entender o formato usado neste arquivo.=20
+<HR>
+<A name=3Ds-etc-timezones></A>
+<H2>27.49 Arquivo <CODE>/etc/timezone</CODE></H2>
+<P>Cont=E9m a sua localiza=E7=E3o para c=E1lculo correto do seu =
+fuso-hor=E1rio local.=20
+<HR>
+[ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">anterior</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/index.htm#contents">Conte=FAdo</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-intro.htm">1</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-bas.htm">2</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-hardw.htm">3</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-d-l.htm">4</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-disc.htm">5</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-boot.htm">6</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-run.htm">7</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdd.htm">8</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmd.htm">9</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdv.htm">10</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdn.htm">11</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cmdc.htm">12</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-perm.htm">13</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-redir.htm">14</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-rede.htm">15</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-kern.htm">16</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-log.htm">17</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cpctd.htm">18</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-deb.htm">19</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-dpkg.htm">20</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-pers.htm">21</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-impr.htm">22</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-cfg.htm">23</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-tasks.htm">24</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-compil.htm">25</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-manut.htm">26</A>=20
+] [ 27 ] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">28</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-x11.htm">29</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-aplic.htm">30</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-ajuda.htm">31</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-apend.htm">32</A>=20
+] [ <A=20
+href=3D"file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Con=
+figura=E7=F5es%20locais/Temp/ch-inter.htm">pr=F3ximo</A>=20
+]=20
+<HR>
+
+<P>Guia Foca GNU/Linux=20
+<ADDRESS>Vers=E3o 5.45 - segunda, 30 de outubro de 2006<BR><BR>Gleydson =
+Mazioli da=20
+Silva <CODE><A=20
+href=3D"mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR=
+><BR></ADDRESS>
+<HR>
+</BODY></HTML>

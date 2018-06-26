@@ -1,0 +1,517 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Guia Foca GNU/Linux - Servidor ident</title>
+
+</head>
+
+<body>
+
+<a name="ch-s-ident"></a>
+<hr>
+
+[ <a href="ch-s-apache.html">anterior</a> ]
+[ <a href="index.html#contents">Conteúdo</a> ]
+[ <a href="ch-intro.html">1</a> ]
+[ <a href="ch-bas.html">2</a> ]
+[ <a href="ch-hardw.html">3</a> ]
+[ <a href="ch-rede.html">4</a> ]
+[ <a href="ch-cfgrede.html">5</a> ]
+[ <a href="ch-log.html">6</a> ]
+[ <a href="ch-deb.html">7</a> ]
+[ <a href="ch-pers.html">8</a> ]
+[ <a href="ch-impr.html">9</a> ]
+[ <a href="ch-fw-iptables.html">10</a> ]
+[ <a href="ch-d-contas.html">11</a> ]
+[ <a href="ch-s-apache.html">12</a> ]
+[ 13 ]
+[ <a href="ch-s-telnet.html">14</a> ]
+[ <a href="ch-s-ssh.html">15</a> ]
+[ <a href="ch-s-pop3.html">16</a> ]
+[ <a href="ch-s-cvs.html">17</a> ]
+[ <a href="ch-s-samba.html">18</a> ]
+[ <a href="ch-d-restr.html">19</a> ]
+[ <a href="ch-d-cripto.html">20</a> ]
+[ <a href="ch-apend.html">21</a> ]
+[ <a href="ch-s-telnet.html">próximo</a> ]
+
+<hr>
+
+<h1>
+Guia Foca GNU/Linux
+<br>Capítulo 13 - Servidor ident
+</h1>
+
+<hr>
+
+<p>
+Este capítulo documenta o uso, benefícios, configuração, utilização e exemplos
+do servidor identd.  Também são explicados alguns pontos positivos/negativos de
+sua utilização para aumentar a segurança quando usado junto com o mecanismo de
+controle de acesso.
+
+<p>
+O servidor identd escolhido para ser descrito nesta seção do guia foi o
+<code>oidentd</code>.
+
+<hr>
+
+<a name="s-s-ident-intro"></a>
+<h2>13.1 Introdução</h2>
+
+<p>
+O ident (identidade) é um servidor que permite identificar qual o usuário
+efetuou determinada conexão e o sistema operacional usado.  Ele opera na porta
+<samp>113</samp> por padrão e retorna nomes de usuários localmente válidos, e é
+consultado por serviços conhecidos como <samp>IRC</samp>, alguns servidores
+<samp>ftp</samp>, <samp>smtp</samp> e outros.  Outro benefício é a utilização
+de mecanismos de restrições de acesso baseadas em usuários/endereçoIP (o
+<code>tcpd</code> é um exemplo de serviço que permite esta característica).  A
+sintaxe usada para fazer tal restrição é universal: <em>usuário@endereçoIP</em>
+onde normalmente aparece o <em>endereçoIP</em> que é usado para
+bloquear/permitir o acesso.
+
+<p>
+No momento da conexão, o endereço IP é checado pra ver se confere, e o servidor
+Ident da máquina que está efetuando a conexão é consultado para checar se o
+usuário que tem acesso é o mesmo especificado no controle de acesso.  Isso
+aumenta um pouco a segurança do sistema, mas existem algumas implicações e
+pontos frágeis do <code>identd</code> que serão explicados no decorrer deste
+capítulo.
+
+<hr>
+
+<a name="s-s-ident-versao"></a>
+<h3>13.1.1 Versão</h3>
+
+<p>
+É assumido que esteja usando a versão 1.7 do <code>oidentd</code>.  As
+explicações contidas aqui podem funcionar para versões posteriores, mas é
+recomendável que leia a documentação sobre modificações no programa (changelog)
+em busca de mudanças que alterem o sentido das explicações fornecidas aqui.
+
+<hr>
+
+<a name="s-s-ident-contribuindo"></a>
+<h3>13.1.2 Contribuindo</h3>
+
+<p>
+A Home page do projeto <code>oidentd</code> é
+<code>http://ojnk.sourceforge.net</code> Sugestões, críticas, comentários,
+etc., podem ser enviados para <code><a
+href="mailto:odin@numb.org">odin@numb.org</a></code>.
+
+<hr>
+
+<a name="s-s-ident-caracteristicas"></a>
+<h3>13.1.3 Características</h3>
+
+<p>
+Características do <code>oidentd</code>:
+<ul>
+<li>
+Pode ser executado tanto como <em>daemon</em> quanto via <em>inetd</em> (este
+último é indicado para sistemas com pouca memória onde o serviço é pouco
+solicitado).
+</li>
+<li>
+Pode mapear identificações de usuário via IP Masquerading, tornando este
+servidor muito versátil podendo ser usado tanto em máquina individuais como em
+servidores proxy/roteadores.
+</li>
+<li>
+Pode fazer forwarding de conexões para outras máquinas da rede local, quando
+não é executado no proxy/roteador.
+</li>
+<li>
+Spoofing de nomes: é possível mapear um nome de usuário para outra
+identificação; por exemplo, o usuário <samp>root</samp> poderá ser mapeado para
+outra conta de usuário antes da identificação ser enviada.
+</li>
+</ul>
+
+<hr>
+
+<a name="s-s-ident-ficha"></a>
+<h3>13.1.4 Ficha técnica</h3>
+
+<p>
+Pacote: <code>oidentd</code>
+
+<p>
+Utilitários:
+<ul>
+<li>
+<samp>oidentd</samp> - Servidor identd
+</li>
+</ul>
+
+<p>
+Arquivos de configuração do <code>oidentd</code>:
+<dl>
+<dt>identd.spoof</dt>
+<dd>
+Controla o spoof (falsificação) de nomes de usuários.  O formato deste arquivo
+são dois campos separados por &quot;:&quot;, o primeiro contendo a
+identificação original do usuário e o segundo o nome que será enviado pelo
+<code>identd</code>.  O segundo campo pode ser omitido, neste caso a resposta
+de identificação é lida através do arquivo <code>~/.ispoof</code>.
+<p>
+Este arquivo deve ter como dono o usuário do primeiro campo do
+<code>identd.spoof</code> e a identificação retornada será a contida no
+arquivo.  Esteja certo que o daemon <code>oidentd</code> tem permissões para
+acessar este arquivo, caso contrário nenhum spoof de identidade será realizado.
+<p>
+Para o spoof ser habilitado, o serviço <code>oidentd</code> deverá ser iniciado
+com a opção <em>-s</em> ou <em>-S</em> (veja mais detalhes <a
+href="#s-s-ident-opcoescmd">Opções de linha de comando, Seção 13.1.11</a>).
+<p>
+<strong>OBS:</strong> Certifique-se de colocar as permissões adequadas para que
+somente o daemon <em>oidentd</em> tenha acesso a este arquivo (de acordo com o
+<em>usuário</em> e <em>grupo</em> usado para executar o <code>oidentd</code>),
+os detalhes de mapeamento de nomes podem ser perigosos em mãos erradas, e
+garantir o sucesso de uma conexão indesejável.
+</dd>
+<dt>oidentd.users</dt>
+<dd>
+Mapeamento de nomes de usuários efetuando conexões via Masquerading.  O formato
+deste arquivo é o seguinte:
+<pre>
+     #EndereçoIP/máscara            Usuário    Sistema
+     192.168.1.1                    john        WINDOWS
+     192.168.1.2                    usuario1    WINDOWS
+     192.168.1.1/32                 usuario2    UNIX
+     192.168.1.0/24                 usuario3    UNIX
+     192.168.1.0/16                 usuario4    UNIX
+</pre>
+<p>
+As conexões vindas dos endereços da primeira coluna são mapeados para o
+nome/sistema da segunda/terceira coluna e enviados a máquina que requisitou a
+identificação.  Para o suporta a mapeamento de usuários via Masquerading
+funcionar, o daemon <code>oidentd</code> deverá ser iniciado com a opção
+<em>-m</em>.
+</dd>
+</dl>
+
+<hr>
+
+<a name="s-s-ident-hwreq"></a>
+<h3>13.1.5 Requerimentos de Hardware</h3>
+
+<p>
+O <code>oidentd</code> requer pouca memória e pode ser executado sem problemas
+em um sistema com o mínimo de memória necessária para rodar o kernel do
+<code>Linux</code> (2 MB para 2.2 e 4MB para as séries 2.4 do kernel).  Mesmo
+assim é interessante considerar 1 MB a mais que o mínimo requerido pelo kernel
+para uma folga na execução do serviço de identificação junto a outros do
+sistema.
+
+<hr>
+
+<a name="s-s-ident-logs"></a>
+<h3>13.1.6 Arquivos de log criados pelo Ident</h3>
+
+<p>
+Mensagens informativas, erros, e outras sobre execuções do serviço
+<code>oidentd</code> são enviadas ao <code>syslog</code> do sistema.
+
+<hr>
+
+<a name="s-s-ident-install"></a>
+<h3>13.1.7 Instalação</h3>
+
+<p>
+Para instalar o daemon do <code>oidentd</code> digite:
+
+<pre>
+     apt-get install oidentd
+</pre>
+
+<p>
+Por padrão o serviço é instalado para ser executado como daemon, para
+executa-lo através do <code>inetd</code> siga os passos em <a
+href="#s-s-ident-install-inetd">Instalação via Inetd, Seção 13.1.8</a>.  O
+serviço será executado sob o usuário <samp>nobody</samp> e grupo
+<samp>nogroup</samp> por motivos de segurança, alterações de nome/grupo que
+executará o <code>oidentd</code> podem ser feitas no arquivo
+<code>/etc/defaults/oidentd</code> ou <code>/etc/init.d/oidentd</code>.
+
+<hr>
+
+<a name="s-s-ident-install-inetd"></a>
+<h3>13.1.8 Instalação via Inetd</h3>
+
+<p>
+Siga os procedimentos de instalação em <a href="#s-s-ident-install">Instalação,
+Seção 13.1.7</a> e os seguintes passos:
+<ol type="1" start="1" >
+<li>
+Edite o arquivo <code>/etc/inetd.conf</code> e adicione a seguinte linha:
+<pre>
+     #:INFO: Info services
+     auth		stream	tcp	nowait.40	nobody.nogroup	/usr/sbin/oidentd oidentd -q -i -t 40
+</pre>
+<p>
+A opção <em>-i</em> permite o <code>oidentd</code> aceitar requisições via
+<code>inetd</code> (sem ela ele será executado no modo daemon).  As opções
+<em>-s</em> e <em>-m</em> devem também ser especificadas caso desejar os
+recursos de falsificação de identificação (mapeamento de nomes) e masquerading
+(veja <a href="#s-s-ident-opcoescmd">Opções de linha de comando, Seção
+13.1.11</a>).  Aqui foi definido um parâmetro máximo de 40 requisições por
+minuto (típico de um serviço poucos usado no sistema), caso este limite seja
+ultrapassado o serviço será desativado na seção atual do <code>inetd</code>).
+Os outros campos são descritos em <a
+href="ch-rede.html#s-rede-servicos-inetd-c">/etc/inetd.conf, Seção 4.7.2.1</a>.
+</li>
+<li>
+Interrompa a execução do daemon do <code>oidentd</code> atual dando um
+<samp>./etc/init.d/oidentd stop</samp>.
+</li>
+<li>
+Remova os links dos runlevels em <code>/etc/rc?.d</code> que
+iniciam/interrompem a execução do daemon com o comando: <samp>update-rc.d -f
+oidentd remove</samp>.  Neste ponto o daemon <code>oidentd</code> não será mais
+iniciado.  Para reverter esta ação, execute o comando: <samp>udpate-rc.d
+oidentd defaults</samp>.
+</li>
+<li>
+De um comando <samp>killall -HUP inetd</samp> para fazer o serviço
+<code>inetd</code> recarregar o arquivo de configuração
+<code>/etc/inetd.conf</code>.  O serviço de identd já estará funcionando.
+</li>
+</ol>
+
+<p>
+<strong>OBS:</strong> A configuração da distribuição <code>Debian</code>
+permite detectar quando o serviço ident (auth) está sendo executado no
+<code>/etc/inetd.conf</code> através de seus scripts de inicialização.  Você
+poderá fazer as coisas manualmente baseado nisso se desejar.
+
+<hr>
+
+<a name="s-s-ident-tcpwrappers"></a>
+<h3>13.1.9 Usando tcpwrappers com oidentd</h3>
+
+<p>
+Especifique a opção <em>-W</em> para fazer o <code>oidentd</code> utilizar o
+mecanismo de acesso em <code>hosts.allow</code> e <code>hosts.deny</code> para
+garantir/bloquear ao serviço de acordo com endereços/hosts especificados.
+
+<p>
+<strong>OBS</strong> O <code>oidentd</code> é somente executado após a
+conferência de todos os parâmetros de endereços nestes arquivos de acesso, não
+utilize a sintaxe &quot;usuário@endereço&quot; como endereço na linha de acesso
+do serviço <code>oidentd</code> (por motivos óbvios).
+
+<hr>
+
+<a name="s-s-ident-rodando"></a>
+<h3>13.1.10 Iniciando o servidor/reiniciando/recarregando a configuração</h3>
+
+<p>
+O arquivo que controla o funcionamento do daemon do <code>oidentd</code> é
+controlado pelo arquivo <code>/etc/init.d/oidentd</code>.
+
+<p>
+A execução do <code>oidentd</code> através de <code>inetd</code> é automática
+quando é feita uma requisição para a porta <em>113</em>.
+
+<hr>
+
+<a name="s-s-ident-opcoescmd"></a>
+<h3>13.1.11 Opções de linha de comando</h3>
+
+<p>
+Opções de linha de comando do <code>oidentd</code>:
+<ul>
+<li>
+<samp>-a [endereçoIP]</samp> - Espera por requisições somente no nome ou
+endereço IP da interface especificada.
+</li>
+<li>
+<samp>-A</samp> Quando o spoofing esta ativado, permite os usuários
+falsificaram o ident em conexões para portas privilegiadas.
+</li>
+<li>
+<samp>-c [páginacodigo]</samp> - Especifica uma página de código alternativa.
+O padrão é &quot;US-ASCII&quot;.
+</li>
+<li>
+<samp>-d</samp> - Ativa o modo de depuração, mais detalhes serão exibidos.
+</li>
+<li>
+<samp>-e</samp> - Retorna &quot;UNKNOWN-ERROR&quot; (erro desconhecido) para
+qualquer tipo de erro.
+</li>
+<li>
+<samp>-f [porta]</samp> - Redireciona requisições de máquinas usando MASQUERADE
+para o computador na porta especificada.
+</li>
+<li>
+<samp>-F</samp> - O mesmo que <em>-f</em>, mas usa a porta 113 como padrão.
+</li>
+<li>
+<samp>-g [gid]</samp> - Executa o daemon do <code>oidentd</code> no grupo
+especificado.
+</li>
+<li>
+<samp>-i</samp> - Permite ser executado através do <code>inetd</code>.
+</li>
+<li>
+<samp>-m</samp> - Ativa o suporta a IP Masquerading.
+</li>
+<li>
+<samp>-n</samp> - Retorna números UID ao invés de nomes de usuários.
+</li>
+<li>
+<samp>-N</samp> - Permite ocultar a identificação de determinados usuários
+através de arquivos <code>~/.noident</code>.
+</li>
+<li>
+<samp>-o</samp> - Retorna &quot;OTHER&quot; (outro qualquer) ao invés do
+sistema operacional especificado.
+</li>
+<li>
+<samp>-p [porta]</samp> - Espera por conexões na porta especificadas (a padrão
+é a 113 - serviço auth).
+</li>
+<li>
+<samp>-q</samp> - Oculta o logging normal.
+</li>
+<li>
+<samp>-P [proxy]</samp> - O proxy especificado (endereço IP) faz
+redirecionamento de conexões para a máquina executando o <code>oidentd</code>.
+</li>
+<li>
+<samp>-r</samp> - Retorna respostas aleatórias de identd.  As opções
+<em>-n</em> e <em>-r</em> não podem ser usadas juntas.
+</li>
+<li>
+<samp>-s</samp> - Permite utilizar os mecanismos de spoofing (falsificação) do
+<code>oidentd</code>.
+</li>
+<li>
+<samp>-S</samp> - O mesmo que <em>-s</em> mas permitem todos os usuários EXCETO
+os especificados em <code>/etc/identd.spoof</code> falsificarem suas respostas.
+</li>
+<li>
+<samp>-t [segundos]</samp> - Espera o tempo especificado antes de ser
+encerrado.
+</li>
+<li>
+<samp>-T [segundos]</samp> - O <code>oidentd</code> permanecerá aceitando
+conexões quando é executado com a opção <em>-w</em> pelo número de segundos
+especificado.
+</li>
+<li>
+<samp>-u [uid]</samp> - Executa o servidor <code>oidentd</code> com a uid
+especificada.
+</li>
+<li>
+<samp>-v/-V</samp> - Mostra detalhes sobre a versão do servidor.
+</li>
+<li>
+<samp>-w</samp> - Modo de espera de conexões.
+</li>
+<li>
+<samp>-x [texto]</samp> - Se uma requisição falha, o texto especificado é
+retornado.
+</li>
+<li>
+<samp>-W</samp> - Utiliza os mecanismos de acesso <code>hosts.allow</code> e
+<code>hosts.deny</code> do <code>tcpd</code>.
+</li>
+<li>
+<samp>-h</samp> - Mostra as opções de linha de comando do <code>oidentd</code>.
+</li>
+</ul>
+
+<hr>
+
+<a name="s-s-ident-exemplo"></a>
+<h3>13.1.12 Exemplos</h3>
+
+<p>
+Não faz muito sentido exemplos de arquivo de configuração do
+<code>oidentd</code> por estes serem muito simples e estarem bem explicados em
+<a href="#s-s-ident-ficha">Ficha técnica, Seção 13.1.4</a>.  No entanto acho
+interessante mostrar alguns exemplos de configurações do
+<code>hosts.allow</code> e <code>hosts.deny</code> fazendo uso dos recursos de
+restrições baseadas em usuário@endereço :
+
+<pre>
+     # Arquivo hosts.allow
+     #
+     # Permite requisições talk de qualquer lugar
+     in.ntalkd: ALL
+     in.talkd: ALL
+     #
+     # Permite que o usuário john acesse os serviços de ftp de qualquer máquina da 
+     # rede 191.168.1.*
+     in.ftpd: john@192.168.1.
+     #
+     # O serviço telnet está permitido somente para john conectando de 192.168.1.1
+     in.telnetd: john@192.168.1.1
+     # Todos podem acessar os serviços samba (nomes e compartilhamentos) exceto 
+     # o usuário evil conectando de qualquer host com o endereço cracker.com.*
+     smbd, nmbd: ALL EXCEPT evil@cracker.com.
+     
+     
+     # Arquivo hosts.deny
+     # Qualquer finger é bloqueado exceto vindos do usuário admin feitos em qualquer 
+     # máquina da rede 192.168.1.*
+     in.fingerd: ALL EXCEPT admin@192.168.1.
+     # Qualquer outra coisa é bloqueada
+     ALL: ALL
+</pre>
+
+<hr>
+
+[ <a href="ch-s-apache.html">anterior</a> ]
+[ <a href="index.html#contents">Conteúdo</a> ]
+[ <a href="ch-intro.html">1</a> ]
+[ <a href="ch-bas.html">2</a> ]
+[ <a href="ch-hardw.html">3</a> ]
+[ <a href="ch-rede.html">4</a> ]
+[ <a href="ch-cfgrede.html">5</a> ]
+[ <a href="ch-log.html">6</a> ]
+[ <a href="ch-deb.html">7</a> ]
+[ <a href="ch-pers.html">8</a> ]
+[ <a href="ch-impr.html">9</a> ]
+[ <a href="ch-fw-iptables.html">10</a> ]
+[ <a href="ch-d-contas.html">11</a> ]
+[ <a href="ch-s-apache.html">12</a> ]
+[ 13 ]
+[ <a href="ch-s-telnet.html">14</a> ]
+[ <a href="ch-s-ssh.html">15</a> ]
+[ <a href="ch-s-pop3.html">16</a> ]
+[ <a href="ch-s-cvs.html">17</a> ]
+[ <a href="ch-s-samba.html">18</a> ]
+[ <a href="ch-d-restr.html">19</a> ]
+[ <a href="ch-d-cripto.html">20</a> ]
+[ <a href="ch-apend.html">21</a> ]
+[ <a href="ch-s-telnet.html">próximo</a> ]
+
+<hr>
+
+<p>
+Guia Foca GNU/Linux
+
+<address>
+Versão 6.40 - segunda, 30 de outubro de 2006<br>
+<br>
+Gleydson Mazioli da Silva <code><a href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</a></code><br>
+<br>
+</address>
+
+<hr>
+
+</body>
+
+</html>
+

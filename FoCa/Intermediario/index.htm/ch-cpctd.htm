@@ -1,0 +1,1219 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Guia Foca GNU/Linux - Compactadores</title>
+
+</head>
+
+<body>
+
+<a name="ch-cpctd"></a>
+<hr>
+
+[ <a href="ch-log.htm">anterior</a> ]
+[ <a href="index.htm#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ <a href="ch-hardw.htm">3</a> ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ <a href="ch-cmdd.htm">8</a> ]
+[ <a href="ch-cmd.htm">9</a> ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ <a href="ch-cmdc.htm">12</a> ]
+[ <a href="ch-perm.htm">13</a> ]
+[ <a href="ch-redir.htm">14</a> ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ 18 ]
+[ <a href="ch-deb.htm">19</a> ]
+[ <a href="ch-dpkg.htm">20</a> ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ <a href="ch-cfg.htm">23</a> ]
+[ <a href="ch-tasks.htm">24</a> ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ <a href="ch-etc.htm">27</a> ]
+[ <a href="ch-inter.htm">28</a> ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ <a href="ch-apend.htm">32</a> ]
+[ <a href="ch-deb.htm">próximo</a> ]
+
+<hr>
+
+<h1>
+Guia Foca GNU/Linux
+<br>Capítulo 18 - Compactadores
+</h1>
+
+<hr>
+
+<p>
+Esta seção explica o que são e como usar programas compactadores no
+<code>GNU/Linux</code>, as características de cada um, como identificar um
+arquivo compactado e como descompactar um arquivo compactado usando o programa
+correspondente.
+
+<p>
+A utilização de arquivos compactados é método útil principalmente para reduzir
+o consumo de espaço em disco ou permitir grandes quantidades de texto serem
+transferidas para outro computador através de disquetes.
+
+<hr>
+
+<a name="s-cpctd-oque"></a>
+<h2>18.1 O que fazem os compactadores/descompactadores?</h2>
+
+<p>
+Compactadores são programas que diminuem o tamanho de um arquivo (ou arquivos)
+através da substituição de caracteres repetidos.  Para entender melhor como
+eles funcionam, veja o próximo exemplo:
+
+<pre>
+     compactadores compactam e deixam arquivos compactados.
+     
+     -- após a compactação da frase --
+     
+     %dores %m e deixam arquivos %dos
+</pre>
+
+<p>
+O que aconteceu realmente foi que a palavra <samp>compacta</samp> se encontrava
+3 vezes na frase acima, e foi substituída por um sinal de <samp>%</samp>.  Para
+descompactar o processo seria o contrário: Ele substituiria % por
+<samp>compacta</samp> e nós temos a frase novamente restaurada.
+
+<p>
+Você deve ter notado que o tamanho da frase <samp>compactada</samp> caiu quase
+pela metade.  A quantidade de compactação de um arquivo é chamada de <em>taxa
+de compactação</em>.  Assim se o tamanho do arquivo for diminuído a metade após
+a compactação, dizemos que conseguiu uma <em>taxa de compactação</em> de 2:1
+(lê-se dois para um), se o arquivo diminuiu 4 vezes, dizemos que conseguiu uma
+compactação de 4:1 (quatro para um) e assim por diante.
+
+<p>
+Para controle dos caracteres que são usados nas substituições, os programas de
+compactação mantém cabeçalhos com todas as substituições usadas durante a
+compactação.  O tamanho do cabeçalho pode ser fixo ou definido pelo usuário,
+depende do programa usado na compactação.
+
+<p>
+Este é um exemplo bem simples para entender o que acontece durante a
+compactação, os programas de compactação executam instruções muito avançadas e
+códigos complexos para atingir um alta taxa de compactação.
+
+<p>
+Observações:
+<ul>
+<li>
+Não é possível trabalhar diretamente com arquivos compactados!  É necessário
+descompactar o arquivo para usa-lo.  Note que alguns programas atualmente
+suportam a abertura de arquivos compactados, mas na realidade eles apenas
+simplificam a tarefa descompactando o arquivo, abrindo e o recompactando assim
+que o trabalho estiver concluído.
+</li>
+<li>
+Arquivos de texto tem uma taxa de compactação muito melhor que arquivos
+binários, porque possuem mais caracteres repetidos.  É normal atingir taxas de
+compactação de 10 para 1 ou mais quando se compacta um arquivo texto.  Arquivos
+binários, como programas, possuem uma taxa de compactação média de 2:1.
+</li>
+<li>
+Note que também existem programas compactadores especialmente desenvolvidos
+para compactação de músicas, arquivos binários, imagens, textos.
+</li>
+</ul>
+
+<hr>
+
+<a name="s-cpctd-tipos"></a>
+<h3>18.1.1 Tipos de compactação</h3>
+
+<p>
+Existem basicamente dois tipos de compactação, a compactação <em>sem
+perdas</em> e a compactação <em>com perdas</em>.
+
+<p>
+Os exemplos a seguir tentam explicar de forma simples os conceitos envolvidos.
+
+<p>
+A compactação sem perdas, como o próprio nome diz não causa nenhuma perda nas
+informações contidas no arquivo.  Quando você compacta e descompacta um
+arquivo, o conteúdo é o mesmo do original.
+
+<p>
+A compactação com perdas é um tipo específico de compactação desenvolvido para
+atingir altas taxas, porém com perdas parciais dos dados.  É aplicada a tipos
+de arquivos especiais, como músicas e imagens ou arquivos que envolvam a
+percepção humana.
+
+<p>
+Sabe-se que o ouvido humano não é tão sensível a determinados sons e
+freqüências, então a compactação de um arquivo de música poderia deixar de
+gravar os sons que seriam pouco percebidos, resultando em um arquivo menor.
+Uma compactação do tipo <em>ogg</em> ou <em>mp3</em> utiliza-se destes
+recursos.  O arquivo resultante é muito menor que o original, porém alguns
+dados sonoros são perdidos.  Você só notaria se estivesse reproduzindo a música
+em um equipamento de alta qualidade e se tivesse um ouvido bem aguçado.  Para
+efeitos práticos, você está ouvindo a mesma música e economizando muito espaço
+em disco.
+
+<p>
+Outro exemplo de compactação com perdas são as imagens <em>jpg</em>.  Imagine
+que você tem uma imagem com 60000 tons de cor diferentes, mas alguns tons são
+muito próximos de outros, então o compactador resume para 20000 tons de cor e a
+imagem terá 1/3 do tamanho original e o nosso olho conseguirá entender a imagem
+sem problemas e quase não perceberá a diferença.  Exemplos de extensões
+utilizadas em imagens compactadas são <em>jpg</em>, <em>png</em>, <em>gif</em>.
+
+<p>
+Apesar das vantagens da grande taxa de compactação conseguida nos processos com
+perdas, nem sempre podemos utilizá-lo.  Quando compactamos um texto ou um
+programa, não podemos ter perdas, senão o nosso texto sofre alterações ou o
+programa não executa.  Nem mesmo podemos tem perdas quando compactamos imagens
+ou musicas que serão utilizadas em processos posteriores de masterização,
+mixagem ou impressão em alta qualidade.
+
+<hr>
+
+<a name="s-cpctd-extensoes"></a>
+<h2>18.2 Extensões de arquivos compactados</h2>
+
+<p>
+As extensões identificam o tipo de um arquivo e assim o programa o programa
+necessário para trabalhar com aquele tipo de arquivo.  Existem dezenas de
+extensões que identificam arquivos compactados.  Quando um arquivo (ou
+arquivos) é compactado, uma extensão correspondente ao programa usado é
+adicionada ao nome do arquivo (caso o arquivo seja compactado pelo
+<code>gzip</code> receberá a extensão <code>.gz</code>, por exemplo).  Ao
+descompactar acontece o contrário: a extensão é retirada do arquivo.  Abaixo
+segue uma listagem de extensões mais usadas e os programas correspondentes:
+<ul>
+<li>
+<code>.gz</code> - Arquivo compactado pelo <code>gzip</code>.  Use o programa
+<code>gzip</code> para descompacta-lo (para detalhes veja <a
+href="#s-cpctd-gzip">gzip, Seção 18.3</a>).  <code>.bz2</code> - Arquivo
+compactado pelo <code>bzip2</code>.  Use o programa <code>bzip2</code> para
+descompacta-lo (para detalhes veja <a href="#s-cpctd-bzip2">bzip2, Seção
+18.7</a>).
+</li>
+</ul>
+<ul>
+<li>
+<code>.Z</code> - Arquivo compactado pelo programa <code>compress</code>.  Use
+o programa <code>uncompress</code> para descompacta-lo.
+</li>
+</ul>
+<ul>
+<li>
+<code>.zip</code> - Arquivo compactado pelo programa <code>zip</code>.  Use o
+programa <code>unzip</code> para descompacta-lo.
+</li>
+</ul>
+<ul>
+<li>
+<code>.rar</code> - Arquivo compactado pelo programa <code>rar</code>.  Use o
+programa <code>rar</code> para descompacta-lo.
+</li>
+</ul>
+<ul>
+<li>
+<code>.tar.gz</code> - Arquivo compactado pelo programa <code>gzip</code> no
+utilitário de arquivamento <code>tar</code>.  Para descompacta-lo, você pode
+usar o <code>gzip</code> e depois o <code>tar</code> ou somente o programa
+<code>tar</code> usando a opção <samp>-z</samp>.  Para detalhes veja <a
+href="#s-cpctd-gzip">gzip, Seção 18.3</a> e <a href="#s-cpctd-tar">tar, Seção
+18.6</a>.
+</li>
+</ul>
+<ul>
+<li>
+<code>.tgz</code> - Abreviação de <code>.tar.gz</code>.
+</li>
+</ul>
+<ul>
+<li>
+<code>.tar.bz2</code> - Arquivo compactado pelo programa <code>bzip2</code> no
+utilitário de arquivamento <code>tar</code>.  Para descompacta-lo, você pode
+usar o <code>bzip2</code> e depois o <code>tar</code> ou somente o programa
+<code>tar</code> usando a opção <samp>-j</samp>.  Para detalhes veja <a
+href="#s-cpctd-bzip2">bzip2, Seção 18.7</a> e <a href="#s-cpctd-tar">tar, Seção
+18.6</a>.
+</li>
+</ul>
+<ul>
+<li>
+<code>.tar.Z</code> - Arquivo compactado pelo programa <code>compress</code> no
+utilitário de arquivamento <code>tar</code>.  Para descompacta-lo, você pode
+usar o <code>uncompress</code> e depois o <code>tar</code> ou somente o
+programa <code>tar</code> usando a opção <samp>-Z</samp>.  Para detalhes veja
+<a href="#s-cpctd-tar">tar, Seção 18.6</a>.
+</li>
+</ul>
+
+<hr>
+
+<a name="s-cpctd-gzip"></a>
+<h2>18.3 gzip</h2>
+
+<p>
+É praticamente o compactador padrão do <code>GNU/Linux</code>, possui uma ótima
+taxa de compactação e velocidade.  A extensão dos arquivos compactados pelo
+<code>gzip</code> é a <code>.gz</code>, na versão para <code>DOS</code>,
+<code>Windows NT</code> é usada a extensão <code>.z</code>.
+
+<p>
+<samp>gzip [<em>opções</em>] [<em>arquivos</em>]</samp>
+
+<p>
+Onde:
+<dl>
+<dt>arquivos</dt>
+<dd>
+Especifica quais arquivos serão compactados pelo <code>gzip</code>.  Caso seja
+usado um <samp>-</samp>, será assumido a entrada padrão.  Curingas podem ser
+usados para especificar vários arquivos de uma só vez (veja <a
+href="ch-bas.htm#s-basico-curingas">Curingas, Seção 2.12</a>).
+</dd>
+<dt>Opções</dt>
+<dt>-d, --decompress [arquivo]</dt>
+<dd>
+Descompacta um arquivo.
+</dd>
+<dt>-f</dt>
+<dd>
+Força a compactação, compactando até mesmo links.
+</dd>
+<dt>-l [arquivo]</dt>
+<dd>
+Lista o conteúdo de um arquivo compactado pelo <code>gzip</code>.
+</dd>
+<dt>-r</dt>
+<dd>
+Compacta diretórios e sub-diretórios.
+</dd>
+<dt>-c [arquivo]</dt>
+<dd>
+Descompacta o arquivo para a saída padrão.
+</dd>
+<dt>-t [arquivo]</dt>
+<dd>
+Testa o arquivo compactado pelo <code>gzip</code>.
+</dd>
+<dt>-[num], --fast, --best</dt>
+<dd>
+Ajustam a taxa de compactação/velocidade da compactação.  Quanto melhor a taxa
+menor é a velocidade de compactação e vice versa.  A opção <samp>--fast</samp>
+permite uma compactação rápida e tamanho do arquivo maior.  A opção
+<samp>--best</samp> permite uma melhor compactação e uma velocidade menor.
+<p>
+O uso da opção <samp>-[número]</samp> permite especificar uma compactação
+individualmente usando números entre 1 (menor compactação) e 9 (melhor
+compactação).  É útil para buscar um bom equilibro entre taxa de
+compactação/velocidade (especialmente em computadores muito lentos).
+</dd>
+</dl>
+
+<p>
+Quando um arquivo é compactado pelo <code>gzip</code>, é automaticamente
+acrescentada a extensão <code>.gz</code> ao seu nome.
+
+<p>
+O <code>gzip</code> também reconhece arquivos compactados pelos programas
+<code>zip</code>, <code>compress</code>, <code>compress -H</code> e
+<code>pack</code>.  As permissões de acesso dos arquivos são também armazenadas
+no arquivo compactado.
+
+<p>
+Exemplos:
+<ul>
+<li>
+<samp>gzip -9 texto.txt</samp> - Compacta o arquivo <code>texto.txt</code>
+usando a compactação máxima (compare o tamanho do arquivo compactado usando o
+comando <samp>ls -la</samp>).
+</li>
+<li>
+<samp>gzip -d texto.txt.gz</samp> - Descompacta o arquivo
+<code>texto.txt</code>
+</li>
+<li>
+<samp>gzip -c texto.txt.gz</samp> - Descompacta o arquivo
+<code>texto.txt</code> para a tela
+</li>
+<li>
+<samp>gzip -9 *.txt</samp> - Compacta todos os arquivos que terminam com
+<code>.txt</code>
+</li>
+<li>
+<samp>gzip -t texto.txt.gz</samp> - Verifica o arquivo
+<code>texto.txt.gz</code>.
+</li>
+</ul>
+
+<hr>
+
+<a name="s-cpctd-zip"></a>
+<h2>18.4 zip</h2>
+
+<p>
+Utilitário de compactação compatível com <code>pkzip</code> (do
+<code>DOS</code>) e trabalha com arquivos de extensão <code>.zip</code>.
+Possui uma ótima taxa de compactação e velocidade no processamento dos arquivos
+compactados (comparando-se ao <code>gzip</code>).
+
+<p>
+<samp>zip [<em>opções</em>] [<em>arquivo-destino</em>]
+[<em>arquivos-origem</em>]</samp>
+
+<p>
+Onde:
+<dl>
+<dt>arquivo-destino</dt>
+<dd>
+Nome do arquivo compactado que será gerado.
+</dd>
+<dt>arquivos-origem</dt>
+<dd>
+Arquivos/Diretórios que serão compactados.  Podem ser usados curingas para
+especificar mais de um arquivo de uma só vez (veja <a
+href="ch-bas.htm#s-basico-curingas">Curingas, Seção 2.12</a>).
+</dd>
+<dt>opções</dt>
+<dt>-r</dt>
+<dd>
+Compacta arquivos e sub-diretórios.
+</dd>
+<dt>-e</dt>
+<dd>
+Permite encriptar o conteúdo de um arquivo <code>.zip</code> através de senha.
+A senha será pedida no momento da compactação.
+</dd>
+<dt>-f</dt>
+<dd>
+Somente substitui um arquivo compactado existente dentro do arquivo
+<code>.zip</code> somente se a versão é mais nova que a atual.  Não acrescenta
+arquivos ao arquivo compactado.  Deve ser executado no mesmo diretório onde o
+programa <code>zip</code> foi executado anteriormente.
+</dd>
+<dt>-F</dt>
+<dd>
+Repara um arquivo <code>.zip</code> danificado.
+</dd>
+<dt>-[NUM]</dt>
+<dd>
+Ajusta a qualidade/velocidade da compactação.  Pode ser especificado um número
+de 1 a 9.  O 1 permite mínima compactação e máxima velocidade, 9 permite uma
+melhor compactação e menor velocidade.
+</dd>
+<dt>-i [arquivos]</dt>
+<dd>
+Compacta somente os [arquivos] especificados.
+</dd>
+<dt>-j</dt>
+<dd>
+Se especificado, não armazena caminhos de diretórios.
+</dd>
+<dt>-m</dt>
+<dd>
+Apaga os arquivos originais após a compactação.
+</dd>
+<dt>-T [arquivo]</dt>
+<dd>
+Procura por erros em um arquivo <code>.zip</code>.  Caso sejam detectados
+problemas, utilize a opção <samp>-F</samp> para corrigi-los.
+</dd>
+<dt>-y</dt>
+<dd>
+Armazena links simbólicos no arquivo <code>.zip</code>.  Por padrão, os links
+simbólicos são ignorados durante a compactação.
+</dd>
+<dt>-k [arquivo]</dt>
+<dd>
+Modifica o [arquivo] para ter compatibilidade total com o <code>pkzip</code> do
+<code>DOS</code>.
+</dd>
+<dt>-l</dt>
+<dd>
+Converte saltos de linha <code>UNIX</code> (LF) para o formato CR+LF (usados
+pelo <code>DOS</code>).  Use esta opção com arquivos Texto.
+</dd>
+<dt>-ll</dt>
+<dd>
+Converte saltos de linha <code>DOS</code> (CR+LF) para o formato
+<code>UNIX</code> (LF).  Use esta opção com arquivos texto.
+</dd>
+<dt>-n [extensão]</dt>
+<dd>
+Não compacta arquivos identificados por [extensão].  Ele é armazenado sem
+compactação no arquivo <code>.zip</code>, muito útil para uso com arquivos já
+compactados.
+<p>
+Caso sejam especificados diversas extensões de arquivos, elas devem ser
+separadas por <samp>:</samp> - Por exemplo, <samp>zip -n .zip:.tgz arquivo.zip
+*.txt</samp>.
+</dd>
+<dt>-q</dt>
+<dd>
+Não mostra mensagens durante a compactação do arquivo.
+</dd>
+<dt>-u</dt>
+<dd>
+Atualiza/adiciona arquivos ao arquivo <code>.zip</code>
+</dd>
+<dt>-X</dt>
+<dd>
+Não armazena detalhes de permissões, UID, GID e datas dos arquivos.
+</dd>
+<dt>-z</dt>
+<dd>
+Permite incluir um comentário no arquivo <code>.zip</code>.
+</dd>
+</dl>
+
+<p>
+Caso o nome de arquivo de destino não termine com <code>.zip</code>, esta
+extensão será automaticamente adicionada.  Para a descompactação de arquivos
+<code>.zip</code> no <code>GNU/Linux</code>, é necessário o uso do utilitário
+<code>unzip</code>.  Exemplos:
+
+<ul>
+<li>
+<samp>zip textos.zip *.txt</samp> - Compacta todos os arquivos com a extensão
+<code>.txt</code> para o arquivo <code>textos.zip</code> (compare o tamanho do
+arquivo compactado digitando <samp>ls -la</samp>).
+</li>
+<li>
+<samp>zip -r textos.zip /usr/*.txt</samp> - Compacta todos os arquivos com a
+extensão <code>.txt</code> do diretório <code>/usr</code> e sub-diretórios para
+o arquivo <code>textos.zip</code>.
+</li>
+<li>
+<samp>zip -9 textos.zip *</samp> - Compacta todos os arquivos do diretório
+atual usando a compactação máxima para o arquivo <code>textos.zip</code>.
+</li>
+<li>
+<samp>zip -T textos.zip</samp> - Verifica se o arquivo <code>textos.zip</code>
+contém erros.
+</li>
+</ul>
+
+<hr>
+
+<a name="s-cpctd-unzip"></a>
+<h2>18.5 unzip</h2>
+
+<p>
+Descompacta arquivos <code>.zip</code> criados com o programa <code>zip</code>.
+Este programa também é compatível com arquivos compactados pelo
+<code>pkzip</code> do <code>DOS</code>.
+
+<p>
+<samp>unzip [<em>opções</em>] [<em>arquivo.zip</em>]
+[<em>arquivos-extrair</em>] [<em>-d diretório</em>]</samp>
+
+<p>
+Onde:
+<dl>
+<dt>arquivo.zip</dt>
+<dd>
+Nome do arquivo que deseja descompactar.  Podem ser usados curingas para
+especificar mais de um arquivo para ser descompactado.
+</dd>
+<dt>arquivos-extrair</dt>
+<dd>
+Nome dos arquivos (separados por espaço) que serão descompactados do arquivo
+<code>.zip</code>.  Caso não seja especificado, é assumido <samp>*</samp>
+(todos os arquivos serão descompactados).
+<p>
+Se for usado <samp>-x arquivos</samp>, os arquivos especificados não serão
+descompactados.  O uso de curingas é permitido.
+</dd>
+<dt>-d diretório</dt>
+<dd>
+Diretório onde os arquivos serão descompactados.  Caso não for especificado, os
+arquivos serão descompactados no diretório atual.
+</dd>
+<dt>opções</dt>
+<dt>-c</dt>
+<dd>
+Descompacta os arquivos para stdout (saída padrão) ao invés de criar arquivos.
+Os nomes dos arquivos também são mostrados (veja a opção <samp>-p</samp>).
+</dd>
+<dt>-f</dt>
+<dd>
+Descompacta somente arquivos que existam no disco e mais novos que os atuais.
+</dd>
+<dt>-l</dt>
+<dd>
+Lista os arquivos existentes dentro do arquivo <code>.zip</code>.
+</dd>
+<dt>-M</dt>
+<dd>
+Efetua uma pausa a cada tela de dados durante o processamento (a mesma função
+do comando <code>more</code>).
+</dd>
+<dt>-n</dt>
+<dd>
+Nunca substitui arquivos já existentes.  Se um arquivo existe ele é pulado.
+</dd>
+<dt>-o</dt>
+<dd>
+Substitui arquivos existentes sem perguntar.  Tem a função contrária a opção
+<samp>-n</samp>.
+</dd>
+<dt>-P [SENHA]</dt>
+<dd>
+Permite descompactar arquivos <code>.zip</code> usando a [SENHA].  CUIDADO!
+qualquer usuário conectado em seu sistema pode ver a senha digitada na linha de
+comando digitada.
+</dd>
+<dt>-p</dt>
+<dd>
+Descompacta os arquivos para stdout (saída padrão) ao invés de criar arquivos.
+Os nomes dos arquivos não são mostrados (veja a opção <samp>-c</samp>).
+</dd>
+<dt>-q</dt>
+<dd>
+Não mostra mensagens.
+</dd>
+<dt>-t</dt>
+<dd>
+Verifica o arquivo <code>.zip</code> em busca de erros.
+</dd>
+<dt>-u</dt>
+<dd>
+Idêntico a opção <samp>-f</samp> só que também cria arquivos que não existem no
+diretório.
+</dd>
+<dt>-v</dt>
+<dd>
+Mostra mais detalhes sobre o processamento do <code>unzip</code>.
+</dd>
+<dt>-z</dt>
+<dd>
+Mostra somente o comentário existente no arquivo.
+</dd>
+</dl>
+
+<p>
+Por padrão o <code>unzip</code> também descompacta sub-diretórios caso o
+arquivo <code>.zip</code> tenha sido gerado com <code>zip -r</code>.
+
+<p>
+Exemplos:
+<ul>
+<li>
+<samp>unzip texto.zip</samp> - Descompacta o conteúdo do arquivo
+<code>texto.zip</code> no diretório atual.
+</li>
+<li>
+<samp>unzip texto.zip carta.txt</samp> - Descompacta somente o arquivo
+<code>carta.txt</code> do arquivo <code>texto.zip</code>.
+</li>
+<li>
+<samp>unzip texto.zip -d /tmp/texto</samp> - Descompacta o conteúdo do arquivo
+<code>texto.zip</code> para o diretório <code>/tmp/texto</code>.
+</li>
+<li>
+<samp>unzip -l texto.zip</samp> - Lista o conteúdo do arquivo
+<code>texto.zip</code>.
+</li>
+<li>
+<samp>unzip -t texto.zip</samp> - Verifica o arquivo <code>texto.zip</code>.
+</li>
+</ul>
+
+<hr>
+
+<a name="s-cpctd-tar"></a>
+<h2>18.6 tar</h2>
+
+<p>
+Na verdade o <code>tar</code> não é um compactador e sim um
+&quot;arquivador&quot; (ele junta vários arquivos em um só), mas pode ser usado
+em conjunto com um compactar (como o <code>gzip</code> ou <code>zip</code>)
+para armazena-los compactados.  O <code>tar</code> também é muito usado para
+cópias de arquivos especiais ou dispositivos do sistema.  É comum encontrar
+arquivos com a extensão <code>.tar</code>, <code>.tar.gz</code>,
+<code>.tgz</code>, <code>.tar.bz2</code>, <code>.tar.Z</code>,
+<code>.tgZ</code>, o primeiro é um arquivo normal gerado pelo <code>tar</code>
+e todos os outros são arquivos gerados através <code>tar</code> junto com um
+programa de compactação (<code>gzip</code> (<code>.gz</code>),
+<code>bzip2</code> (<code>.bz2</code>) e <code>compress</code>
+(<code>.Z</code>).
+
+<p>
+<samp>tar [<em>opções</em>] [<em>arquivo-destino</em>]
+[<em>arquivos-origem</em>]</samp>
+
+<p>
+Onde:
+<dl>
+<dt>arquivo-destino</dt>
+<dd>
+É o nome do arquivo de destino.  Normalmente especificado com a extensão
+<code>.tar</code> caso seja usado somente o arquivamento ou
+<code>.tar.gz</code>/<code>.tgz</code> caso seja usada a compactação (usando a
+opção <samp>-z</samp>).
+</dd>
+<dt>arquivos-origem</dt>
+<dd>
+Especifica quais arquivos/diretórios serão compactados.
+</dd>
+<dt>opções</dt>
+<dt>-c, --create</dt>
+<dd>
+Cria um novo arquivo <code>.tar</code>
+</dd>
+<dt>-t, --list</dt>
+<dd>
+Lista o conteúdo de um arquivo <code>.tar</code>
+</dd>
+<dt>-u, --update</dt>
+<dd>
+Atualiza arquivos compactados no arquivo <code>.tar</code>
+</dd>
+<dt>-f, --file [HOST:]F</dt>
+<dd>
+Usa o arquivo especificado para gravação ou o dispositivo
+<code>/dev/rmt0</code>.
+</dd>
+<dt>-j, --bzip2</dt>
+<dd>
+Usa o programa <code>bzip2</code> para processar os arquivos do
+<code>tar</code>
+</dd>
+<dt>-l, --one-file-system</dt>
+<dd>
+Não processa arquivos em um sistema de arquivos diferentes de onde o
+<code>tar</code> foi executado.
+</dd>
+<dt>-M, --multi-volume</dt>
+<dd>
+Cria/lista/descompacta arquivos em múltiplos volumes.  O uso de arquivos em
+múltiplos volumes permite que uma grande cópia de arquivos que não cabe em um
+disquete, por exemplo, seja feita em mais de um disquete.
+</dd>
+<dt>-o</dt>
+<dd>
+Grava o arquivo no formato VT7 ao invés do ANSI.
+</dd>
+<dt>-O, --to-stdout</dt>
+<dd>
+Descompacta arquivos para a saída padrão ao invés de gravar em um arquivo.
+</dd>
+<dt>--remove-files</dt>
+<dd>
+Apaga os arquivos de origem após serem processados pelo <code>tar</code>.
+</dd>
+<dt>-R, --record-number</dt>
+<dd>
+Mostra o número de registros dentro de um arquivo <code>tar</code> em cada
+mensagem.
+</dd>
+<dt>--totals</dt>
+<dd>
+Mostra o total de bytes gravados com a opção <samp>--create</samp>.
+</dd>
+<dt>-v</dt>
+<dd>
+Mostra os nomes dos arquivos enquanto são processados.
+</dd>
+<dt>-V [NOME]</dt>
+<dd>
+Inclui um [NOME] no arquivo <code>tar</code>.
+</dd>
+<dt>-W, --verify</dt>
+<dd>
+Tenta verificar o arquivo gerado pelo <code>tar</code> após grava-lo.
+</dd>
+<dt>x</dt>
+<dd>
+Extrai arquivos gerados pelo <code>tar</code>
+</dd>
+<dt>-X [ARQUIVO]</dt>
+<dd>
+Tenta apagar o [ARQUIVO] dentro de um arquivo compactado <code>.tar</code>.
+</dd>
+<dt>-Z</dt>
+<dd>
+Usa o programa <code>compress</code> durante o processamento dos arquivos.
+</dd>
+<dt>-z</dt>
+<dd>
+Usa o programa <code>gzip</code> durante o processamento dos arquivos.
+</dd>
+<dt>--use-compress-program [PROGRAMA]</dt>
+<dd>
+Usa o [PROGRAMA] durante o processamento dos arquivos.  Ele deve aceitar a
+opção <samp>-d</samp>.
+</dd>
+<dt>-[0-7][lmh]</dt>
+<dd>
+Especifica a unidade e sua densidade.
+</dd>
+</dl>
+
+<p>
+A extensão precisa ser especificada no arquivo de destino para a identificação
+correta:
+<ul>
+<li>
+Arquivos gerados pelo <code>tar</code> precisam ter a extensão
+<code>.tar</code>
+</li>
+<li>
+Caso seja usada a opção <samp>-j</samp> para compactação, a extensão deverá ser
+<code>.tar.bz2</code>
+</li>
+<li>
+Caso seja usada a opção <samp>-z</samp> para compactação, a extensão deverá ser
+<code>.tar.gz</code> ou <code>.tgz</code>
+</li>
+<li>
+Caso seja usada a opção <samp>-Z</samp> para a compactação, a extensão deverá
+ser <code>.tar.Z</code> ou <code>.tgZ</code>
+</li>
+</ul>
+
+<p>
+É importante saber qual qual o tipo de compactador usado durante a geração do
+arquivo <code>.tar</code> pois será necessário especificar a opção apropriada
+para descompacta-lo (para detalhes veja <a href="#s-cpctd-extensoes">Extensões
+de arquivos compactados, Seção 18.2</a>).
+
+<p>
+Exemplos:
+<ul>
+<li>
+<samp>tar -cf index.txt.tar index.txt</samp> - Cria um arquivo chamado
+<code>index.txt.tar</code> que armazenará o arquivo <code>index.txt</code>.
+Você pode notar digitando <samp>ls -la</samp> que o arquivo
+<code>index.txt</code> foi somente arquivado (sem compactação), isto é útil
+para juntar diversos arquivos em um só.
+</li>
+<li>
+<samp>tar -xf index.txt.tar</samp> - Desarquiva o arquivo
+<code>index.txt</code> criado pelo comando acima.
+</li>
+<li>
+<samp>tar -czf index.txt.tar.gz index.txt</samp> - O mesmo que o exemplo de
+arquivamento anterior, só que agora é usado a opção <samp>-z</samp>
+(compactação através do programa <code>gzip</code>).  Você agora pode notar
+digitando <samp>ls -la</samp> que o arquivo <code>index.txt</code> foi
+compactado e depois arquivado no arquivo <code>index.txt.tar.gz</code> (você
+também pode chama-lo de <code>index.txt.tgz</code> que também identifica um
+arquivo <code>.tar</code> compactado pelo <code>gzip</code>)
+</li>
+<li>
+<samp>tar -xzf index.txt.tar.gz</samp> - Descompacta e desarquiva o arquivo
+<code>index.txt.tar.gz</code> criado com o comando acima.
+</li>
+<li>
+<samp>gzip -dc index.tar.gz | tar -xf -</samp> - Faz o mesmo que o comando
+acima só que de uma forma diferente: Primeiro descompacta o arquivo
+<code>index.txt.tar.gz</code> e envia a saída do arquivo descompactado para o
+<code>tar</code> que desarquivará o arquivo <code>index.txt</code>.
+</li>
+<li>
+<samp>tar -cjf index.txt.tar.bz2 index.txt</samp> - Arquiva o arquivo
+<code>index.txt</code> em <code>index.txt.tar.bz2</code> compactando através do
+<code>bzip2</code> (opção -j).
+</li>
+<li>
+<samp>tar -xjf index.txt.tar.bz2</samp> - Descompacta e desarquiva o arquivo
+<code>index.txt.tar.bz2</code> criado com o comando acima.
+</li>
+<li>
+<samp>bzip2 -dc index.txt.tar.bz2 | tar -xf -</samp> - Faz o mesmo que o
+comando acima só que de uma forma diferente: Primeiro descompacta o arquivo
+<code>index.txt.tar.bz2</code> e envia a saída do arquivo descompactado para o
+<code>tar</code> que desarquivará o arquivo <code>index.txt</code>.
+</li>
+<li>
+<samp>tar -t index.txt.tar</samp> - Lista o conteúdo de um arquivo
+<code>.tar</code>.
+</li>
+<li>
+<samp>tar -tz index.txt.tar.gz</samp> - Lista o conteúdo de um arquivo
+<code>.tar.gz</code>.
+</li>
+</ul>
+
+<hr>
+
+<a name="s-cpctd-bzip2"></a>
+<h2>18.7 bzip2</h2>
+
+<p>
+É um novo compactador que vem sendo cada vez mais usado porque consegue atingir
+a melhor compactação em arquivos texto se comparado aos já existentes (em
+conseqüência sua velocidade de compactação também é menor; quase duas vezes
+mais lento que o <code>gzip</code>).  Suas opções são praticamente as mesmas
+usadas no <code>gzip</code> e você também pode usa-lo da mesma forma.  A
+extensão dos arquivos compactados pelo <code>bzip2</code> é a <code>.bz2</code>
+
+<p>
+<samp>bzip2 [<em>opções</em>] [<em>arquivos</em>]</samp>
+
+<p>
+Onde:
+<dl>
+<dt>arquivos</dt>
+<dd>
+Especifica quais arquivos serão compactados pelo <code>bzip2</code>.  Caso seja
+usado um <samp>-</samp>, será assumido a entrada padrão.  Curingas podem ser
+usados para especificar vários arquivos de uma só vez (veja <a
+href="ch-bas.htm#s-basico-curingas">Curingas, Seção 2.12</a>).
+</dd>
+<dt>Opções</dt>
+<dt>-d, --decompress [arquivo]</dt>
+<dd>
+Descompacta um arquivo.
+</dd>
+<dt>-f</dt>
+<dd>
+Força a compactação, compactando até mesmo links.
+</dd>
+<dt>-l [arquivo]</dt>
+<dd>
+Lista o conteúdo de um arquivo compactado pelo <code>bzip2</code>.
+</dd>
+<dt>-r</dt>
+<dd>
+Compacta diretórios e sub-diretórios.
+</dd>
+<dt>-c [arquivo]</dt>
+<dd>
+Descompacta o arquivo para a saída padrão.
+</dd>
+<dt>-t [arquivo]</dt>
+<dd>
+Testa o arquivo compactado pelo <code>bzip2</code>.
+</dd>
+<dt>-[num], --fast, --best</dt>
+<dd>
+Ajustam a taxa de compactação/velocidade da compactação.  Quanto melhor a taxa
+menor é a velocidade de compactação e vice versa.  A opção <samp>--fast</samp>
+permite uma compactação rápida e tamanho do arquivo maior.  A opção
+<samp>--best</samp> permite uma melhor compactação e uma velocidade menor.
+<p>
+O uso da opção <samp>-[número]</samp> permite especificar uma compactação
+individualmente usando números entre 1 (menor compactação) e 9 (melhor
+compactação).  É útil para buscar um bom equilibro entre taxa de
+compactação/velocidade (especialmente em computadores muito lentos).
+</dd>
+</dl>
+
+<p>
+Quando um arquivo é compactado pelo <code>bzip2</code>, é automaticamente
+acrescentada a extensão <code>.bz2</code> ao seu nome.  As permissões de acesso
+dos arquivos são também armazenadas no arquivo compactado.
+
+<p>
+Exemplos:
+<ul>
+<li>
+<samp>bzip2 -9 texto.txt</samp> - Compacta o arquivo <code>texto.txt</code>
+usando a compactação máxima (compare o tamanho do arquivo compactado usando o
+comando <samp>ls -la</samp>).
+</li>
+<li>
+<samp>bzip2 -d texto.txt.bz2</samp> - Descompacta o arquivo
+<code>texto.txt</code>
+</li>
+<li>
+<samp>bzip2 -c texto.txt.bz2</samp> - Descompacta o arquivo
+<code>texto.txt</code> para a saída padrão (tela)
+</li>
+<li>
+<samp>bzip2 -9 *.txt</samp> - Compacta todos os arquivos que terminam com
+<code>.txt</code>
+</li>
+<li>
+<samp>bzip2 -t texto.txt.bz2</samp> - Verifica o arquivo
+<code>texto.txt.bz2</code>.
+</li>
+</ul>
+
+<hr>
+
+<a name="s-cpctd-rar"></a>
+<h2>18.8 rar</h2>
+
+<p>
+<code>rar</code> é um compactador desenvolvido por <samp>Eugene Roshal</samp> e
+possui versões para <code>GNU/Linux</code>, <code>DOS</code>,
+<code>Windows</code>, <code>OS/2</code> e <code>Macintosh</code>.  Trabalha com
+arquivos de extensão <code>.rar</code> e permite armazenar arquivos compactados
+em vários disquetes (múltiplos volumes).  Se trata de um produto comercial, mas
+decidi coloca-lo aqui porque possui boas versões Shareware e pode ser muito
+útil em algumas situações.
+
+<p>
+<samp>rar [<em>ações</em>] [<em>opções</em>] [<em>arquivo-destino.rar</em>]
+[<em>arquivos-origem</em>]</samp>
+
+<p>
+Onde:
+<dl>
+<dt>arquivo-destino.rar</dt>
+<dd>
+É o nome do arquivo de destino
+</dd>
+<dt>arquivos-origem</dt>
+<dd>
+Arquivos que serão compactados.  Podem ser usados curingas para especificar
+mais de um arquivo.
+</dd>
+<dt>ações</dt>
+<dt>a</dt>
+<dd>
+Compacta arquivos
+</dd>
+<dt>x</dt>
+<dd>
+Descompacta arquivos
+</dd>
+<dt>d</dt>
+<dd>
+Apaga arquivos especificados
+</dd>
+<dt>t</dt>
+<dd>
+Verifica o arquivo compactado em busca de erros.
+</dd>
+<dt>c</dt>
+<dd>
+Inclui comentário no arquivo compactado
+</dd>
+<dt>r</dt>
+<dd>
+Repara um arquivo <code>.rar</code> danificado
+</dd>
+<dt>l</dt>
+<dd>
+Lista arquivos armazenados no arquivo compactado
+</dd>
+<dt>u</dt>
+<dd>
+Atualiza arquivos existentes no arquivo compactado.
+</dd>
+<dt>m</dt>
+<dd>
+Compacta e apaga os arquivos de origem (move).
+</dd>
+<dt>e</dt>
+<dd>
+Descompacta arquivos para o diretório atual
+</dd>
+<dt>p</dt>
+<dd>
+Mostra o conteúdo do arquivo na saída padrão
+</dd>
+<dt>rr</dt>
+<dd>
+Adiciona um registro de verificação no arquivo
+</dd>
+<dt>s</dt>
+<dd>
+Converte um arquivo <code>.rar</code> normal em arquivo auto-extráctil.
+Arquivos auto-extrácteis são úteis para enviar arquivos a pessoas que não tem o
+programa <code>rar</code>.  Basta executar o arquivo e ele será automaticamente
+descompactado (usando o sistema operacional que foi criado).  Note que esta
+opção requer que o arquivo <code>default.sfx</code> esteja presente no
+diretório home do usuário.  Use o comando <code>find</code> para localiza-lo em
+seu sistema.
+</dd>
+<dt>opções</dt>
+<dt>o+</dt>
+<dd>
+Substitui arquivos já existentes sem perguntar
+</dd>
+<dt>o-</dt>
+<dd>
+Não substitui arquivos existentes
+</dd>
+<dt>sfx</dt>
+<dd>
+Cria arquivos auto-extrácteis.  Arquivos auto-extrácteis são úteis para enviar
+arquivos a pessoas que não tem o programa <code>rar</code>.  Basta executar o
+arquivo e ele será automaticamente descompactado.  Note que este processo
+requer que o arquivo <code>default.sfx</code> esteja presente no diretório home
+do usuário.  Use o comando <code>find</code> para localiza-lo em seu sistema.
+</dd>
+<dt>y</dt>
+<dd>
+Assume <samp>sim</samp> para todas as perguntas
+</dd>
+<dt>r</dt>
+<dd>
+Inclui sub-diretórios no arquivo compactado
+</dd>
+<dt>x [ARQUIVO]</dt>
+<dd>
+Processa tudo menos o [ARQUIVO].  Pode ser usados curingas
+</dd>
+<dt>v[TAMANHO]</dt>
+<dd>
+Cria arquivos com um limite de tamanho.  Por padrão, o tamanho é especificado
+em bytes, mas o número pode ser seguido de <samp>k</samp> (kilobytes) ou
+<samp>m</samp>(megabytes).
+<p>
+Exemplo: <samp>rar a -v1440k ...</samp> ou <samp>rar a -v10m ...</samp>
+</dd>
+<dt>p [SENHA]</dt>
+<dd>
+Inclui senha no arquivo.  CUIDADO, pessoas conectadas em seu sistema podem
+capturar a linha de comando facilmente e descobrir sua senha.
+</dd>
+<dt>m [0-5]</dt>
+<dd>
+Ajusta a taxa de compactação/velocidade de compactação.  0 não faz compactação
+alguma (mais rápido) somente armazena os arquivos, 5 é o nível que usa mais
+compactação (mais lento).
+</dd>
+<dt>ed</dt>
+<dd>
+Não inclui diretórios vazios no arquivo
+</dd>
+<dt>isnd</dt>
+<dd>
+Ativa emissão de sons de alerta pelo programa
+</dd>
+<dt>ierr</dt>
+<dd>
+Envia mensagens de erro para stderr
+</dd>
+<dt>inul</dt>
+<dd>
+Desativa todas as mensagens
+</dd>
+<dt>ow</dt>
+<dd>
+Salva o dono e grupo dos arquivos.
+</dd>
+<dt>ol</dt>
+<dd>
+Salva links simbólicos no arquivo ao invés do arquivo físico que o link faz
+referência.
+</dd>
+<dt>mm[f]</dt>
+<dd>
+Usa um método especial de compactação para arquivos multimídia (sons, vídeos,
+etc).  Caso for usado <samp>mmf</samp>, força o uso do método multimídia mesmo
+que o arquivo compactado não seja deste tipo.
+</dd>
+</dl>
+
+<p>
+Os arquivos gerados pelo <code>rar</code> do <code>GNU/Linux</code> podem ser
+usados em outros sistemas operacionais, basta ter o <code>rar</code> instalado.
+Quando é usada a opção <samp>-v</samp> para a criação de múltiplos volumes, a
+numeração dos arquivos é feita na forma: <code>arquivo.rar</code>,
+<code>arquivo.r00</code>, <code>arquivo.r01</code>, etc, durante a
+descompactação os arquivos serão pedidos em ordem.  Se você receber a mensagem
+<samp>cannot modify volume</samp> durante a criação de um arquivo
+<code>.rar</code>, provavelmente o arquivo já existe.  Apague o arquivo
+existente e tente novamente.
+
+<p>
+Exemplos:
+<ul>
+<li>
+<samp>rar a texto.rar texto.txt</samp> - Compacta o arquivo
+<code>texto.txt</code> em um arquivo com o nome <code>texto.rar</code>
+</li>
+<li>
+<samp>rar x texto.rar</samp> - Descompacta o arquivo <code>texto.rar</code>
+</li>
+<li>
+<samp>rar a -m5 -v1400k textos.rar *</samp> - Compacta todos os arquivos do
+diretório atual, usando a compactação máxima no arquivo
+<code>textos.rar</code>.  Note que o tamanho máximo de cada arquivo é 1440 para
+ser possível grava-lo em partes para disquetes.
+</li>
+<li>
+<samp>rar x -v -y textos.rar</samp> - Restaura os arquivos em múltiplos volumes
+criados com o processo anterior.  Todos os arquivos devem ter sido copiados dos
+disquetes para o diretório atual antes de prosseguir.  A opção <samp>-y</samp>
+é útil para não precisar-mos responder <samp>yes</samp> a toda pergunta que o
+<code>rar</code> fizer.
+</li>
+<li>
+<samp>rar t textos.rar</samp> - Verifica se o arquivo <code>textos.rar</code>
+possui erros.
+</li>
+<li>
+<samp>rar r textos.rar</samp> - Repara um arquivo <code>.rar</code> danificado.
+</li>
+</ul>
+
+<hr>
+
+[ <a href="ch-log.htm">anterior</a> ]
+[ <a href="index.htm#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ <a href="ch-hardw.htm">3</a> ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ <a href="ch-cmdd.htm">8</a> ]
+[ <a href="ch-cmd.htm">9</a> ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ <a href="ch-cmdc.htm">12</a> ]
+[ <a href="ch-perm.htm">13</a> ]
+[ <a href="ch-redir.htm">14</a> ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ 18 ]
+[ <a href="ch-deb.htm">19</a> ]
+[ <a href="ch-dpkg.htm">20</a> ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ <a href="ch-cfg.htm">23</a> ]
+[ <a href="ch-tasks.htm">24</a> ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ <a href="ch-etc.htm">27</a> ]
+[ <a href="ch-inter.htm">28</a> ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ <a href="ch-apend.htm">32</a> ]
+[ <a href="ch-deb.htm">próximo</a> ]
+
+<hr>
+
+<p>
+Guia Foca GNU/Linux
+
+<address>
+Versão 5.45 - segunda, 30 de outubro de 2006<br>
+<br>
+Gleydson Mazioli da Silva <code><a href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</a></code><br>
+<br>
+</address>
+
+<hr>
+
+</body>
+
+</html>
+

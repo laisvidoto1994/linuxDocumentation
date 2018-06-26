@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Guia Foca GNU/Linux - X Window (ambiente gráfico)</TITLE>
+<META http-equiv=content-type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2900.3059" name=GENERATOR></HEAD>
+<BODY><A name=ch-x11></A>
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13</A> 
+] [ 14 ] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">próximo</A> 
+] 
+<HR>
+
+<H1>Guia Foca GNU/Linux <BR>Capítulo 14 - X Window (ambiente gráfico) </H1>
+<HR>
+
+<P>Este capítulo do guia traz explicações sobre o ambiente gráfico X Window 
+System. 
+<HR>
+<A name=s-x11-descricao></A>
+<H2>14.1 O que é X Window?</H2>
+<P>É um sistema gráfico de janelas que roda em uma grande faixa de computadores, 
+máquinas gráficas e diferentes tipos de máquinas e plataformas Unix. Pode tanto 
+ser executado em máquinas locais como remotas através de conexão em rede. 
+<HR>
+<A name=s-x11-estrutura></A>
+<H2>14.2 A organização do ambiente gráfico X Window</H2>
+<P>Em geral o ambiente gráfico X Window é dividido da seguinte forma: 
+<UL>
+  <LI><SAMP>O Servidor X</SAMP> - É o programa que controla a exibição dos 
+  gráficos na tela, mouse e teclado. Ele se comunica com os programas cliente 
+  através de diversos métodos de comunicação. 
+  <P>O servidor X pode ser executado na mesma máquina que o programa cliente 
+  esta sendo executado de forma transparente ou através de uma máquina remota na 
+  rede. </P></LI></UL>
+<UL>
+  <LI><SAMP>O gerenciador de Janelas</SAMP> - É o programa que controla a 
+  aparência da aplicação. Os gerenciadores de janelas (window managers) são 
+  programas que atuam entre o servidor X e a aplicação. Você pode alternar de um 
+  gerenciador para outro sem fechar seus aplicativos. 
+  <P>Existem vários tipos de gerenciadores de janelas disponíveis no mercado 
+  entre os mais conhecidos posso citar o <CODE>Window Maker (feito por um 
+  Brasileiro)</CODE>, o <CODE>After Step</CODE>, <CODE>Gnome</CODE>, 
+  <CODE>KDE</CODE>, <CODE>twm</CODE> (este vem por padrão quando o servidor X é 
+  instalado), <CODE>Enlightenment</CODE>, <CODE>IceWm</CODE>, etc. 
+  <P>A escolha do seu gerenciador de janelas é pessoal, depende muito do gosto 
+  de cada pessoa e dos recursos que deseja utilizar. </P></LI></UL>
+<UL>
+  <LI><SAMP>A aplicação cliente</SAMP> - É o programa sendo executado. </LI></UL>
+<P>Esta organização do ambiente gráfico X traz grandes vantagens de 
+gerenciamento e recursos no ambiente gráfico UNIX, uma vez que tem estes 
+recursos você pode executar seus programas em computadores remotos, mudar 
+totalmente a aparência de um programa sem ter que fecha-lo (através da mudança 
+do gerenciador de janelas), etc. 
+<HR>
+<A name=s-x11-iniciando></A>
+<H2>14.3 Iniciando o X</H2>
+<P>O sistema gráfico X pode ser iniciado de duas maneiras: 
+<UL>
+  <LI><SAMP>Automática</SAMP> - Usando o programa <CODE>xdm</CODE> que é um 
+  programa que roda no ambiente gráfico X e apresenta uma tela pedindo nome e 
+  senha para entrar no sistema (login). Após entrar no sistema, o X executará um 
+  dos gerenciadores de janelas configurados. </LI></UL>
+<UL>
+  <LI><SAMP>Manual</SAMP> - Através do comando <CODE>startx</CODE>, ou 
+  <CODE>xinit</CODE> . Neste caso o usuário deve entrar com seu nome e senha 
+  para entrar no modo texto e então executar um dos comandos acima. Após 
+  executar um dos comandos acima, o servidor X será iniciado e executará um dos 
+  gerenciadores de janelas configurados no sistema. </LI></UL>
+<HR>
+<A name=s-x11-servidor></A>
+<H2>14.4 Servidor X</H2>
+<P>Como dito acima, o servidor X controla o teclado, mouse e a exibição dos 
+gráficos em sua tela. Para ser executado, precisa ser configurado através do 
+arquivo <CODE>/etc/X11/XF86Config</CODE> ou usando o utilitário 
+<CODE>xf86config</CODE> (modo texto). 
+<P>A finalização do servidor X é feita através do pressionamento simultâneo das 
+teclas <SAMP>CTRL</SAMP>, <SAMP>ALT</SAMP>, <SAMP>Back Space</SAMP>. O servidor 
+X é imediatamente terminado e todos os gerenciadores de janelas e programas 
+clientes são fechados. 
+<P>CUIDADO: Sempre utilize a opção de saída de seu gerenciador de janelas para 
+encerrar normalmente uma seção X11 e salve os trabalhos que estiver fazendo 
+antes de finalizar uma seção X11. A finalização do servidor X deve ser feita em 
+caso de emergência quando não se sabe o que fazer para sair de um gerenciador de 
+janelas ou de um programa mal comportado. 
+<P>Recomendo fazer a leitura de <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html#s-run-fechando">Fechando 
+um programa quando não se sabe como sair, Seção 5.8</A> caso estiver em dúvidas 
+de como finalizar um programa mal comportado ou que não sabe como sair. 
+<HR>
+[ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">anterior</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/index.html#contents">Conteúdo</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-intro.html">1</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-bas.html">2</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-d-l.html">3</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-disc.html">4</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-run.html">5</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdd.html">6</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmd.html">7</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdv.html">8</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdn.html">9</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-cmdc.html">10</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-perm.html">11</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-redir.html">12</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-impr.html">13</A> 
+] [ 14 ] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">15</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-apend.html">16</A> 
+] [ <A 
+href="file:///C:/Documents%20and%20Settings/marcosrosendo.ESCRECIFE/Configurações%20locais/Temp/ch-ajuda.html">próximo</A> 
+] 
+<HR>
+
+<P>Guia Foca GNU/Linux 
+<ADDRESS>Versão 3.99 - segunda, 30 de outubro de 2006<BR><BR>Gleydson Mazioli da 
+Silva <CODE><A 
+href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</A></CODE><BR><BR></ADDRESS>
+<HR>
+</BODY></HTML>

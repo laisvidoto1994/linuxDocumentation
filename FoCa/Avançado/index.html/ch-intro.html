@@ -1,0 +1,623 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Guia Foca GNU/Linux - Introdução</title>
+
+</head>
+
+<body>
+
+<a name="ch-intro"></a>
+<hr>
+
+[ <a href="index.html">anterior</a> ]
+[ <a href="index.html#contents">Conteúdo</a> ]
+[ 1 ]
+[ <a href="ch-bas.html">2</a> ]
+[ <a href="ch-hardw.html">3</a> ]
+[ <a href="ch-rede.html">4</a> ]
+[ <a href="ch-cfgrede.html">5</a> ]
+[ <a href="ch-log.html">6</a> ]
+[ <a href="ch-deb.html">7</a> ]
+[ <a href="ch-pers.html">8</a> ]
+[ <a href="ch-impr.html">9</a> ]
+[ <a href="ch-fw-iptables.html">10</a> ]
+[ <a href="ch-d-contas.html">11</a> ]
+[ <a href="ch-s-apache.html">12</a> ]
+[ <a href="ch-s-ident.html">13</a> ]
+[ <a href="ch-s-telnet.html">14</a> ]
+[ <a href="ch-s-ssh.html">15</a> ]
+[ <a href="ch-s-pop3.html">16</a> ]
+[ <a href="ch-s-cvs.html">17</a> ]
+[ <a href="ch-s-samba.html">18</a> ]
+[ <a href="ch-d-restr.html">19</a> ]
+[ <a href="ch-d-cripto.html">20</a> ]
+[ <a href="ch-apend.html">21</a> ]
+[ <a href="ch-bas.html">próximo</a> ]
+
+<hr>
+
+<h1>
+Guia Foca GNU/Linux
+<br>Capítulo 1 - Introdução
+</h1>
+
+<hr>
+
+<p>
+Bem vindo ao guia <em>Foca GNU/Linux</em>.  O nome <em>FOCA</em> significa
+<em>FO</em>nte de <em>C</em>onsulta e <em>A</em>prendizado.  Este guia é
+dividido em 3 níveis de aprendizado e versão que esta lendo agora contém o(s)
+nível(is) de aprendizado:
+<ul>
+<li>
+Avançado
+</li>
+</ul>
+
+<p>
+Entre o conteúdo do guia, você encontrará:
+<ul>
+<li>
+Análise de logs do sistema GNU/Linux e aplicação para a solução de problemas
+(<a href="ch-log.html">Arquivos e daemons de Log, Capítulo 6</a>).
+</li>
+</ul>
+<ul>
+<li>
+Gerenciamento de contas de usuários, definição de período automático para troca
+de senha periódica, políticas de segurança, etc (<a
+href="ch-d-contas.html">Gerenciamento de contas e cuidados para a proteção de
+senhas, Capítulo 11</a>).
+</li>
+</ul>
+<ul>
+<li>
+Principais tipos de ataques para descoberta de senhas e alguns métodos de como
+evita-las (<a href="ch-d-contas.html#s-d-contas-cms-senhas">Senhas fáceis de
+adivinhar e escolha de boas senhas, Seção 11.2.2</a>).
+</li>
+</ul>
+<ul>
+<li>
+Integrar máquinas <code>Windows</code> e <code>Linux</code> em uma mesma rede
+compartilhando dados entre si e impressão (<a href="ch-s-samba.html">SAMBA,
+Capítulo 18</a>).
+</li>
+</ul>
+<ul>
+<li>
+Sistemas de proteção de senhas do sistema (<a
+href="ch-d-contas.html#s-d-contas-segsenhas">Melhorando a segurança das senhas
+armazenadas em seu sistema, Seção 11.4</a>).
+</li>
+</ul>
+<ul>
+<li>
+Criptografia e segurança na transmissão de dados, usando exemplos práticos do
+uso de sniffers para entender o porque da uso de criptografia para transmissão
+segura de dados (<a href="ch-d-cripto.html">Introdução ao uso de criptografia
+para transmissão/armazenamento de dados, Capítulo 20</a>).
+</li>
+</ul>
+<ul>
+<li>
+Uso de serviços alternativos criptográficos (<a
+href="ch-d-cripto.html#s-d-cripto-alt">Alternativas seguras a serviços sem
+criptografia, Seção 20.3</a>).
+</li>
+</ul>
+<ul>
+<li>
+Criptografia usando <code>gnupgp</code> (<a
+href="ch-d-cripto.html#s-d-cripto-gpg">Usando pgp (<code>gpg</code>)para
+criptografia de arquivos, Seção 20.5</a>).
+</li>
+</ul>
+<ul>
+<li>
+Uso de sistema de arquivos criptográficos para armazenamento de dados (<a
+href="ch-d-cripto.html#s-d-cripto-criptofs">Sistemas de arquivos criptográfico,
+Seção 20.4</a>).
+</li>
+</ul>
+<ul>
+<li>
+Otimização de performance na transferência de dados do disco rígido através de
+particionamento e <code>hdparm</code>, uso de spindles para criação de swap (<a
+href="ch-hardw.html#s-hard-perf">Melhoria de performance, Seção 3.15</a>).
+</li>
+</ul>
+<ul>
+<li>
+O que são descargas estáticas e a importância do aterramento da instalação
+elétrica do computador (dirigido a usuários domésticos e de pequenas
+instalações) (<a href="ch-hardw.html#s-hard-descestat">Descargas estáticas,
+Seção 3.14</a>).
+</li>
+</ul>
+<ul>
+<li>
+Maiores considerações a segurança de sistema e a problemas de segurança
+relativos a falhas de configuração (distribuída entre os capítulos de daemons e
+servidores).
+</li>
+</ul>
+<ul>
+<li>
+Montagem de um servidor Web usando o <code>Apache</code> (<a
+href="ch-s-apache.html">Apache, Capítulo 12</a>).
+</li>
+</ul>
+<ul>
+<li>
+Montagem de um firewall para proteção do sistema (filtragem de pacotes) usando
+o <code>iptables</code>, redirecionamento de pacotes, nat, masquerading,
+balanceamento de carga, marcação de pacotes, logging (<a
+href="ch-fw-iptables.html">Firewall iptables, Capítulo 10</a>).
+</li>
+</ul>
+<ul>
+<li>
+Servidor de acesso para permitir o acesso a distância ao seu computador usando
+o <code>telnetd</code> (<a href="ch-s-telnet.html">Servidor telnet, Capítulo
+14</a>).
+</li>
+</ul>
+<ul>
+<li>
+Servidor de acesso para permitir o acesso a distância a seu computador com
+criptografia usando o <code>ssh</code> (<a href="ch-s-ssh.html">Servidor ssh,
+Capítulo 15</a>).
+</li>
+</ul>
+<ul>
+<li>
+Servidor de identificação usando o <code>oidentd</code> (<a
+href="ch-s-ident.html">Servidor ident, Capítulo 13</a>).
+</li>
+</ul>
+<ul>
+<li>
+Montagem de um servidor pop3 para que suas estações de rede possam acessar o
+email na máquina servidor <code>Linux</code> usando programas como
+<code>Outlook</code>, <code>Communicator</code>, <code>Mutt</code>,
+<code>sylpheed</code> e outros que utilizem o protocolo <code>pop3</code> (<a
+href="ch-s-pop3.html">Servidor pop3, Capítulo 16</a>).
+</li>
+</ul>
+<ul>
+<li>
+Restrições de acesso a instalação do computador, acesso a grupos do sistema,
+restrições de login usando <em>PAM</em> (<a href="ch-d-restr.html">Restrições
+de acesso, recursos e serviços, Capítulo 19</a>).
+</li>
+</ul>
+<ul>
+<li>
+Restrições de espaço usado em disco por usuários/grupos usando o sistema de
+quotas (<a href="ch-d-restr.html#s-d-restr-quotas">Limitando o uso de espaço em
+disco (quotas), Seção 19.12</a>).
+</li>
+</ul>
+<ul>
+<li>
+Uso de grupos dos sistema para restrições de acesso (<a
+href="ch-d-restr.html#s-d-restr-grupos">Restrições de acesso a
+programas/diretórios/arquivos usando grupos, Seção 19.3</a>).
+</li>
+</ul>
+<ul>
+<li>
+Restrições de acesso via hardware: BIOS, disquete, placa com boot via rede,
+LILO, disco rígido (<a href="ch-d-restr.html#s-d-restr-sudo">Dando poderes de
+root para executar determinados programas, Seção 19.4</a>).
+</li>
+</ul>
+<ul>
+<li>
+Manipulações de variáveis no bash (<var>TMOUT</var>, <var>PS1</var>,
+<var>PS2</var>, <var>PS3</var>, <var>PS4</var>, <var>HISTORY</var>, etc).
+</li>
+</ul>
+<ul>
+<li>
+Montagem de shell básico restrito (<a
+href="ch-d-restr.html#s-d-restr-bash-restricted">Restrições básicas do shell
+bash com bash -r/--restricted, rbash, Seção 19.1.3</a>).
+</li>
+</ul>
+<ul>
+<li>
+Uso do <code>sudo</code> para dar privilégio de execução de programas como root
+a determinados usuários (<a href="ch-d-restr.html#s-d-restr-sudo">Dando poderes
+de root para executar determinados programas, Seção 19.4</a>).
+</li>
+</ul>
+
+<p>
+Para melhor organização, dividi o guia em 3 versões: <em>Iniciante</em>,
+<em>Intermediário</em> e <em>Avançado</em>.  Sendo que a versão
+<em>Iniciante</em> é voltada para o usuário que não tem <samp>nenhuma</samp>
+experiência no <code>GNU/Linux</code>.  A última versão deste guia pode ser
+encontrada em: <code><a href="http://www.guiafoca.org">Página Oficial do guia
+Foca GNU/Linux</a></code>.
+
+<p>
+Caso tiver alguma sugestão, correção, crítica para a melhoria deste guia, envie
+um e-mail para <code><a
+href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</a></code>.
+
+<p>
+O <em>Foca GNU/Linux</em> é atualizado freqüentemente, por este motivo
+recomendo que preencha a ficha do aviso de atualizações na página web em
+<code><a href="http://www.guiafoca.org">Página Oficial do guia Foca
+GNU/Linux</a></code> no fim da página principal.  Após preencher a ficha do
+aviso de atualizações, você receberá um e-mail sobre o lançamento de novas
+versões do guia e o que foi modificado, desta forma você poderá decidir em
+copia-la caso a nova versão contenha modificações que considera importantes.
+
+<p>
+Venho recebendo muitos elegios de pessoas do Brasil (e de paises de fora
+também) elogiando o trabalho e a qualidade da documentação.  Agradeço a todos
+pelo apoio, tenham certeza que este trabalho é desenvolvido pensando em
+repassar um pouco do conhecimento que adquiri ao começar o uso do Linux.
+
+<p>
+Também venho recebendo muitos e-mails de pessoas que passaram na prova LPI
+nível 1 e 2 após estudar usando o guia Foca GNU/Linux.  Fico bastante feliz por
+saber disso, pois nunca tive a intenção de tornar o guia uma referência livre
+para estudo da LPI e hoje é usado para estudo desta difícil certificação que
+aborda comandos, serviços, configurações, segurança, empacotamento,
+criptografia, etc.
+
+<hr>
+
+<a name="s-introducao-avisoADV"></a>
+<h2>1.1 Considerações sobre o nível Avançado</h2>
+
+<p>
+Este guia foi compilado incluindo o nível <em>Avançado</em> do guia FOCA
+GNU/Linux, ele não tem a intenção de oferecer detalhes completos sobre a
+configuração de serviços, servidores, aplicativos, nem garantia que ele
+atenderá a determinada finalidade específica do usuário (principalmente de uma
+rede, que depende de uma perfeita compreensão para adaptação de acordo com os
+requisitos de uma instalação local).  Seu foco principal é a instalação do
+serviço, considerações voltadas a segurança, e exemplos de configuração e seu
+funcionamento.
+
+<p>
+Com relação a capítulos sobre servidores, é importante observar qual versão é
+documentada no guia e se confere com a instalada em seu sistema, a fim de que
+tudo funcione corretamente.  Entretanto, na maioria dos casos, as explicações
+relacionadas a uma versão de um programa são inteiramente válidas em uma nova
+versão.
+
+<hr>
+
+<a name="s-introducao-requisitos"></a>
+<h2>1.2 Pré-requisitos para a utilização deste guia</h2>
+
+<p>
+É assumido que você ja tenha experiência na configuração de sistemas
+<code>Linux</code>, conheça boa parte dos comandos e sua utilização, tenha
+noções de rede e saiba como procurar documentação para complementar o que vem
+aprendendo.  Enfim, requer que se tiver interesse em se aprofundar em
+determinada área, que utilize os métodos de busca de documentação sugeridos no
+guia para complementação do aprendizado.  O guia não contém todos os materiais
+para que a pessoa se torne um <samp>expert</samp> no assunto, mas contém as
+referências para documentações mais específicas sobre determinadas áreas do
+sistema.
+
+<p>
+Este guia não cobre a instalação do sistema.  Para detalhes sobre instalação,
+consulte a documentação que acompanha sua distribuição <code>GNU/Linux</code>.
+
+<hr>
+
+<a name="s-introducao-linux"></a>
+<h2>1.3 O Linux</h2>
+
+<p>
+O <code>Linux</code> é um sistema operacional criado em 1991 por <em>Linus
+Torvalds</em> na universidade de Helsinki na Finlândia.  É um sistema
+Operacional de código aberto distribuído gratuitamente pela Internet.  Seu
+código fonte é liberado como <em>Free Software</em> (software livre) o aviso de
+copyright do kernel feito por Linus descreve detalhadamente isto e mesmo ele
+não pode fechar o sistema para que seja usado apenas comercialmente.
+
+<p>
+Isto quer dizer que você não precisa pagar nada para usar o Linux, e não é
+crime fazer cópias para instalar em outros computadores, nós inclusive
+incentivamos você a fazer isto.  Ser um sistema de código aberto pode explicar
+a performance, estabilidade e velocidade em que novos recursos são adicionados
+ao sistema.
+
+<p>
+Para rodar o <code>Linux</code> você precisa, no mínimo, de um computador 386
+SX com 2 MB de memória (para um kernel até a série 2.2.x) ou 4MB (para kernels
+2.4 e superiores) e 40MB disponíveis em seu disco rígido para uma instalação
+básica e funcional.
+
+<p>
+O sistema segue o padrão <em>POSIX</em> que é o mesmo usado por sistemas
+<em>UNIX</em> e suas variantes.  Assim, aprendendo o <code>Linux</code> você
+não encontrará muita dificuldade em operar um sistema do tipo <code>UNIX,
+FreeBSD, HPUX, SunOS,</code> etc., bastando apenas aprender alguns detalhes
+encontrados em cada sistema.
+
+<p>
+O código fonte aberto permite que qualquer pessoa veja como o sistema funciona
+(útil para aprendizado), corrija alguma problema ou faça alguma sugestão sobre
+sua melhoria, esse é um dos motivos de seu rápido crescimento, do aumento da
+compatibilidade de periféricos (como novas placas sendo suportadas logo após
+seu lançamento) e de sua estabilidade.
+
+<p>
+Outro ponto em que ele se destaca é o suporte que oferece a placas, CD-Roms e
+outros tipos de dispositivos de última geração e mais antigos (a maioria deles
+já ultrapassados e sendo completamente suportados pelo sistema operacional).
+Este é um ponto forte para empresas que desejam manter seus micros em
+funcionamento e pretendem investir em avanços tecnológicos com as máquinas que
+possui.
+
+<p>
+Hoje o <code>Linux</code> é desenvolvido por milhares de pessoas espalhadas
+pelo mundo, cada uma fazendo sua contribuição ou mantendo alguma parte do
+kernel gratuitamente.  <em>Linus Torvalds</em> ainda trabalha em seu
+desenvolvimento e também ajuda na coordenação entre os desenvolvedores.
+
+<p>
+O suporte ao sistema também se destaca como sendo o mais eficiente e rápido do
+que qualquer programa comercial disponível no mercado.  Existem centenas de
+consultores especializados espalhados ao redor do mundo.  Você pode se
+inscrever em uma lista de discussão e relatar sua dúvida ou alguma falha, e sua
+mensagem será vista por centenas de usuários na Internet e algum irá te ajudar
+ou avisará as pessoas responsáveis sobre a falha encontrada para devida
+correção.
+
+<hr>
+
+<a name="s-introducao-linux-carac"></a>
+<h3>1.3.1 Algumas Características do Linux</h3>
+
+<ul>
+<li>
+É livre e desenvolvido voluntariamente por programadores experientes, hackers,
+e contribuidores espalhados ao redor do mundo que tem como objetivo a
+contribuição para a melhoria e crescimento deste sistema operacional.
+<p>
+Muitos deles estavam cansados do excesso de propaganda (Marketing) e baixa
+qualidade de sistemas comerciais existentes
+</li>
+<li>
+Convivem sem nenhum tipo de conflito com outros sistemas operacionais (com o
+<code>DOS</code>, <code>Windows</code>, <code>OS/2</code>) no mesmo computador.
+</li>
+<li>
+Multitarefa real
+</li>
+<li>
+Multiusuário
+</li>
+<li>
+Suporte a nomes extensos de arquivos e diretórios (255 caracteres)
+</li>
+<li>
+Conectividade com outros tipos de plataformas como <em>Apple, Sun, Macintosh,
+Sparc, Alpha, PowerPc, ARM, Unix, Windows, DOS, etc</em>.
+</li>
+<li>
+Proteção entre processos executados na memória RAM
+</li>
+<li>
+Suporte a mais de 63 terminais virtuais (consoles)
+</li>
+<li>
+Modularização - O <code>GNU/Linux</code> somente carrega para a memória o que é
+usado durante o processamento, liberando totalmente a memória assim que o
+programa/dispositivo é finalizado
+</li>
+<li>
+Devido a modularização, os drivers dos periféricos e recursos do sistema podem
+ser carregados e removidos completamente da memória RAM a qualquer momento.  Os
+drivers (módulos) ocupam pouco espaço quando carregados na memória RAM (cerca
+de 6Kb para a Placa de rede NE 2000, por exemplo)
+</li>
+<li>
+Não há a necessidade de se reiniciar o sistema após a modificar a configuração
+de qualquer periférico ou parâmetros de rede.  Somente é necessário reiniciar o
+sistema no caso de uma instalação interna de um novo periférico, falha em algum
+hardware (queima do processador, placa mãe, etc.).
+</li>
+<li>
+Não precisa de um processador potente para funcionar.  O sistema roda bem em
+computadores 386Sx 25 com 4MB de memória RAM (sem rodar o sistema gráfico X,
+que é recomendado 8MB de RAM).  Já pensou no seu desempenho em um 486 ou
+Pentium ;-)
+</li>
+<li>
+O crescimento e novas versões do sistema não provocam lentidão, pelo contrário,
+a cada nova versão os desenvolvedores procuram buscar maior compatibilidade,
+acrescentar recursos úteis e melhor desempenho do sistema (como o que aconteceu
+na passagem do kernel 2.0.x para 2.2.x).
+</li>
+<li>
+Não é requerida uma licença para seu uso.  O <code>GNU/Linux</code> é
+licenciado de acordo com os termos da GPL.
+</li>
+<li>
+Acessa corretamente discos formatados pelo <code>DOS, Windows, Novell, OS/2,
+NTFS, SunOS, Amiga, Atari, Mac,</code> etc.
+</li>
+<li>
+Utiliza permissões de acesso a arquivos, diretórios e programas em execução na
+memória RAM.
+</li>
+<li>
+O LINUX NÃO É VULNERÁVEL A VÍRUS!  Devido a separação de privilégios entre
+processos e respeitadas as recomendações padrão de política de segurança e uso
+de contas privilegiadas (como a de root, como veremos adiante), programas como
+vírus tornam-se inúteis pois tem sua ação limitada pelas restrições de acesso
+do sistema de arquivos e execução.
+<p>
+Frequentemente são criados exploits que tentam se aproveitar de falhas
+existentes em sistemas desatualizados e usa-las para danificar o sistema.
+<em>Erroneamente</em> este tipo de ataque é classificado como vírus por pessoas
+mal informadas e são resolvidas com sistemas bem mantidos.  Em geral, usando
+uma boa distribuição que tenha um bom sistema de atualização resolve em 99.9%
+os problemas com exploits.  Qualquer programa (nocivo ou não) poderá alterar
+partes do sistema que possui permissões (será abordado como alterar permissões
+e tornar seu sistema mais restrito no decorrer do guia).
+</li>
+<li>
+Rede TCP/IP mais rápida que no Windows e tem sua pilha constantemente
+melhorada.  O <code>GNU/Linux</code> tem suporte nativo a redes TCP/IP e não
+depende de uma camada intermediária como o WinSock.  Em acessos via modem a
+Internet, a velocidade de transmissão é 10% maior.
+<p>
+Jogadores do <code>Quake</code> ou qualquer outro tipo de jogo via Internet
+preferem o <code>GNU/Linux</code> por causa da maior velocidade do Jogo em
+rede.  É fácil rodar um servidor <code>Quake</code> em seu computador e assim
+jogar contra vários adversários via Internet.
+</li>
+<li>
+Roda aplicações <em>DOS</em> através do <code>DOSEMU</code>, <code>QEMU</code>,
+<code>BOCHS</code>.  Para se ter uma idéia, é possível dar o boot em um sistema
+<em>DOS</em> qualquer dentro dele e ao mesmo tempo usar a multitarefa deste
+sistema.
+</li>
+<li>
+Roda aplicações <em>Windows</em> através do <code>WINE</code>.
+</li>
+<li>
+Suporte a dispositivos infravermelho.
+</li>
+<li>
+Suporte a rede via rádio amador.
+</li>
+<li>
+Suporte a dispositivos Plug-and-Play.
+</li>
+<li>
+Suporte a dispositivos USB.
+</li>
+<li>
+Suporte a Fireware.
+</li>
+<li>
+Dispositivos Wireless.
+</li>
+<li>
+Vários tipos de firewalls de alta qualidade e com grande poder de segurança de
+graça.
+</li>
+<li>
+Roteamento estático e dinâmico de pacotes.
+</li>
+<li>
+Ponte entre Redes.
+</li>
+<li>
+Proxy Tradicional e Transparente.
+</li>
+<li>
+Possui recursos para atender a mais de um endereço IP na mesma placa de rede,
+sendo muito útil para situações de manutenção em servidores de redes ou para a
+emulação de &quot;mais computadores&quot; virtualmente.
+<p>
+O servidor WEB e FTP podem estar localizados no mesmo computador, mas o usuário
+que se conecta tem a impressão que a rede possui servidores diferentes.
+</li>
+<li>
+O sistema de arquivos usado pelo <code>GNU/Linux</code> (<samp>Ext2</samp>)
+organiza os arquivos de forma inteligente evitando a fragmentação e fazendo-o
+um poderoso sistema para aplicações multi-usuárias exigentes e gravações
+intensivas.
+</li>
+<li>
+Permite a montagem de um servidor Web, E-mail, News, etc.  com um baixo custo e
+alta performance.  O melhor servidor Web do mercado, o <code>Apache</code>, é
+distribuído gratuitamente junto com a maioria das distribuições Linux.  O mesmo
+acontece com o <code>Sendmail</code>.
+</li>
+<li>
+Por ser um sistema operacional de código aberto, você pode ver o que o código
+fonte (instruções digitadadas pelo programador) faz e adapta-lo as suas
+necessidades ou de sua empresa.  Esta característica é uma segurança a mais
+para empresas sérias e outros que não querem ter seus dados roubados (você não
+sabe o que um sistema sem código fonte faz na realidade enquanto esta
+processando o programa).
+</li>
+<li>
+Suporte a diversos dispositivos e periféricos disponíveis no mercado, tanto os
+novos como obsoletos.
+</li>
+<li>
+Pode ser executado em 10 arquiteturas diferentes (Intel, Macintosh, Alpha, Arm,
+etc.).
+</li>
+<li>
+Consultores técnicos especializados no suporte ao sistema espalhados por todo o
+mundo.
+</li>
+<li>
+Entre muitas outras características que você descobrirá durante o uso do
+sistema.
+</li>
+</ul>
+
+<p>
+TODOS OS ÍTENS DESCRITOS ACIMA SÃO VERDADEIROS E TESTADOS PARA QUE TIVESSE
+PLENA CERTEZA DE SEU FUNCIONAMENTO.
+
+<hr>
+
+[ <a href="index.html">anterior</a> ]
+[ <a href="index.html#contents">Conteúdo</a> ]
+[ 1 ]
+[ <a href="ch-bas.html">2</a> ]
+[ <a href="ch-hardw.html">3</a> ]
+[ <a href="ch-rede.html">4</a> ]
+[ <a href="ch-cfgrede.html">5</a> ]
+[ <a href="ch-log.html">6</a> ]
+[ <a href="ch-deb.html">7</a> ]
+[ <a href="ch-pers.html">8</a> ]
+[ <a href="ch-impr.html">9</a> ]
+[ <a href="ch-fw-iptables.html">10</a> ]
+[ <a href="ch-d-contas.html">11</a> ]
+[ <a href="ch-s-apache.html">12</a> ]
+[ <a href="ch-s-ident.html">13</a> ]
+[ <a href="ch-s-telnet.html">14</a> ]
+[ <a href="ch-s-ssh.html">15</a> ]
+[ <a href="ch-s-pop3.html">16</a> ]
+[ <a href="ch-s-cvs.html">17</a> ]
+[ <a href="ch-s-samba.html">18</a> ]
+[ <a href="ch-d-restr.html">19</a> ]
+[ <a href="ch-d-cripto.html">20</a> ]
+[ <a href="ch-apend.html">21</a> ]
+[ <a href="ch-bas.html">próximo</a> ]
+
+<hr>
+
+<p>
+Guia Foca GNU/Linux
+
+<address>
+Versão 6.40 - segunda, 30 de outubro de 2006<br>
+<br>
+Gleydson Mazioli da Silva <code><a href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</a></code><br>
+<br>
+</address>
+
+<hr>
+
+</body>
+
+</html>
+

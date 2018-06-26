@@ -1,0 +1,1788 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Guia Foca GNU/Linux - Hardware</title>
+
+</head>
+
+<body>
+
+<a name="ch-hardw"></a>
+<hr>
+
+[ <a href="ch-bas.htm">anterior</a> ]
+[ <a href="index.htm#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ 3 ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ <a href="ch-cmdd.htm">8</a> ]
+[ <a href="ch-cmd.htm">9</a> ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ <a href="ch-cmdc.htm">12</a> ]
+[ <a href="ch-perm.htm">13</a> ]
+[ <a href="ch-redir.htm">14</a> ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ <a href="ch-cpctd.htm">18</a> ]
+[ <a href="ch-deb.htm">19</a> ]
+[ <a href="ch-dpkg.htm">20</a> ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ <a href="ch-cfg.htm">23</a> ]
+[ <a href="ch-tasks.htm">24</a> ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ <a href="ch-etc.htm">27</a> ]
+[ <a href="ch-inter.htm">28</a> ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ <a href="ch-apend.htm">32</a> ]
+[ <a href="ch-d-l.htm">próximo</a> ]
+
+<hr>
+
+<h1>
+Guia Foca GNU/Linux
+<br>Capítulo 3 - Hardware
+</h1>
+
+<hr>
+
+<p>
+Hardware é tudo que diz respeito a parte física do computador.  Nesta seção
+serão abordados assuntos relacionados com a configuração de hardwares, escolha
+de bons hardwares, dispositivos for Windows, etc.
+
+<hr>
+
+<a name="s-hardw-placas"></a>
+<h2>3.1 Placa de expansão</h2>
+
+<p>
+É um circuito eletrônico encaixado na placa mãe que tem por objetivo adicionar
+novas funcionalidades ao computador.  Esta placa pode ser uma:
+<ul>
+<li>
+<samp>placa de som</samp> - para fazer o computador emitir sons, músicas, ligar
+um joystick, etc.
+</li>
+</ul>
+<ul>
+<li>
+<samp>fax-modem</samp> - para enviar/receber fax, conectar-se a internet, BBS,
+acesso remoto, bina, etc.
+</li>
+</ul>
+<ul>
+<li>
+<samp>rede</samp> - para permitir a comunicação com outros computadores em uma
+rede interna
+</li>
+</ul>
+<ul>
+<li>
+<samp>controladora de periféricos</samp> - Para ligar discos rígidos, unidades
+de disquete, impressora, mouse, joystick, etc.
+</li>
+</ul>
+<ul>
+<li>
+<samp>SCSI</samp> - Para ligar unidades de disco rígidos e periféricos de alto
+desempenho.
+</li>
+</ul>
+<ul>
+<li>
+<samp>Controladora de Scanner</samp> - Para ligar um Scanner externo ao micro
+computador.
+</li>
+</ul>
+
+<p>
+O encaixe da placa mãe que recebe as placas de expansão são chamados de
+<em>Slots</em>.
+
+<hr>
+
+<a name="s-hardw-nomesdisp"></a>
+<h2>3.2 Nomes de dispositivos</h2>
+
+<p>
+Seria terrível se ao configurar CADA programa que utilize o mouse ou o modem
+precisássemos nos se referir a ele pela IRQ, I/O, etc...  para evitar isso são
+usados os <em>nomes de dispositivos</em>.
+
+<p>
+Os <em>nomes de dispositivos</em> no sistema <code>GNU/Linux</code> são
+acessados através do diretório <code>/dev</code>.  Após configurar corretamente
+o modem, com sua porta I/O 0x2F8 e IRQ 3, ele é identificado automaticamente
+por <code>/dev/ttyS1</code> (equivalente a <code>COM2</code> no
+<code>DOS</code>).  Daqui para frente basta se referir a
+<code>/dev/ttyS1</code> para fazer alguma coisa com o modem.
+
+<p>
+Você também pode fazer um link de <code>/dev/ttyS1</code> para um arquivo
+chamado <code>/dev/modem</code> usando: <samp>ln -s /dev/ttyS1
+/dev/modem</samp>, faça a configuração dos seus programas usando
+<code>/dev/modem</code> ao invés de <code>/dev/ttyS1</code> e se precisar
+reconfigurar o seu modem e a porta serial mudar para <code>/dev/ttyS3</code>,
+será necessário somente apagar o link <code>/dev/modem</code> antigo e criar um
+novo apontando para a porta serial <code>/dev/ttyS3</code>.
+
+<p>
+Não será necessário reconfigurar os programas que usam o modem pois eles estão
+usando <code>/dev/modem</code> que está apontando para a localização correta.
+Isto é muito útil para um bom gerenciamento do sistema.
+
+<p>
+Abaixo uma tabela com o nome do dispositivo no <code>GNU/Linux</code>, portas
+I/O, IRQ, DMA e nome do dispositivo no <code>DOS</code> (os nomes de
+dispositivos estão localizados no diretório <code>/dev</code>):
+
+<pre>
+     Dispos.   Dispos.
+      Linux     DOS       IRQ     DMA     I/O
+     
+     ttyS0      COM1       4       -      0x3F8
+     ttyS1      COM2       3       -      0x2F8
+     ttyS2      COM3       4       -      0x3E8
+     ttyS3      COM4       3       -      0x2E8
+     lp0        LPT1       7      3(ECP)  0x378
+     lp1        LPT2       5      3(ECP)  0x278
+     /dev/hda1  C:        14       -      0x1F0,0x3F6
+     /dev/hda2  D: *      14       -      0x1F0,0x3F6
+     /dev/hdb1  D: *      15       -      0x170,0x376
+</pre>
+
+<p>
+* A designação de letras de unidade do <code>DOS</code> não é padrão como no
+<code>GNU/Linux</code> e depende da existência de outras unidades
+físicas/lógicas no computador.
+
+<hr>
+
+<a name="s-hardw-cfg"></a>
+<h2>3.3 Configuração de Hardware</h2>
+
+<p>
+A configuração consiste em ajustar as opções de funcionamento dos dispositivos
+(periféricos) para comunicação com a placa mãe.  Um sistema bem configurado
+consiste em cada dispositivo funcionando com suas portas I/O, IRQ, DMA bem
+definidas, não existindo conflitos com outros dispositivos.  Isto também
+permitirá a adição de novos dispositivos ao sistema sem problemas.
+
+<p>
+É importante conhecer bem a configuração dos dispositivos do sistema para saber
+identificar e corrigir possíveis problemas de conflitos e o que deve ser
+modificado, caso seja necessário.
+
+<p>
+Os parâmetros usados para configurar dispositivos de hardware são a
+<em>IRQ</em>, <em>DMA</em> e <em>I/O</em>.  Nem todo dispositivo usam estes
+três parâmetros, alguns apenas a <em>I/O</em> e <em>IRQ</em>, outros apenas a
+<em>I/O</em>, etc.
+
+<hr>
+
+<a name="s-hardw-cfg-irq"></a>
+<h3>3.3.1 IRQ - Requisição de Interrupção</h3>
+
+<p>
+Existem dois tipos básicos de interrupções: as usadas por dispositivos (para a
+comunicação com a placa mãe) e programas (para obter a atenção do processador).
+As <em>interrupções de software</em> são mais usadas por programas, incluindo o
+sistema operacional e <em>interrupções de hardware</em> mais usado por
+periféricos.  Daqui para frente será explicado somente detalhes sobre
+interrupções de hardware.
+
+<p>
+Os antigos computadores 8086/8088 (XT) usavam somente <samp>8</samp>
+interrupções de hardware operando a 8 bits.  Com o surgimento do AT foram
+incluídas 8 novas interrupções, operando a 16 bits.  Os computadores 286 e
+superiores tem <samp>16</samp> interrupções de hardware numeradas de 0 a 15.
+Estas interrupções oferecem ao dispositivo associado a capacidade de
+interromper o que o processador estiver fazendo, pedindo atenção imediata.
+
+<p>
+As interrupções do sistema podem ser visualizadas no kernel com o comando
+<samp>cat /proc/interrupts</samp>.  Abaixo um resumo do uso mais comum das 16
+interrupções de hardware:
+
+<pre>
+     0     Timer do Sistema  - Fixa
+     
+     01    Teclado - Fixa
+     
+     02    Controlador de Interrupção Programável - Fixa. 
+           Esta interrupção é usada como ponte para a IRQ 9 e vem dos 
+           antigos processadores 8086/8088 que somente tinham 8 IRQs. 
+           Assim, pera tornar processadores 8088 e 80286 comunicáveis, 
+           a IRQ 2 é usada como um redirecionador quando se utiliza uma
+           interrupção acima da 8. 
+     
+     03    Normalmente usado por /dev/ttyS1 mas seu uso depende dos 
+           dispositivos instalados em seu sistema (como fax-modem,  
+           placas de rede 8 bits, etc). 
+     
+     04    Normalmente usado por /dev/ttyS0 e quase sempre usada pelo mouse 
+           serial a não ser que um mouse PS2 esteja instalado no sistema. 
+     
+     05    Normalmente a segunda porta paralela. Muitos micros não tem a segunda 
+           porta paralela, assim é comum encontrar placas de som e outros 
+           dispositivos usando esta IRQ. 
+     
+     06    Controlador de Disquete - Esta interrupção pode ser compartilhada 
+           com placas aceleradoras de disquete usadas em tapes (unidades de fita). 
+     
+     07    Primeira porta de impressora. Pessoas tiveram sucesso compartilhando 
+           esta porta de impressora com a segunda porta de impressora. 
+           Muitas impressoras não usam IRQs. 
+     
+     08    Relógio em tempo real do CMOS - Não pode ser usado por nenhum 
+           outro dispositivo.
+     
+     09    Esta é uma ponte para IRQ2 e deve ser a última IRQ a ser 
+           utilizada. No entanto pode ser usada por dispositivos. 
+     
+     10   Interrupção normalmente livre para dispositivos. O controlador
+          USB utiliza essa interrupção quando presente, mas não é regra.
+     
+     11   Interrupção livre para dispositivos
+     
+     12   Interrupção normalmente livre para dispositivos. O mouse PS/2, 
+          quando presente, utiliza esta interrupção. 
+     
+     13   Processador de dados numéricos - Não pode ser usada ou compartilhada 
+     
+     14  Esta interrupção é usada pela primeira controladora de discos 
+         rígidos e não pode ser compartilhada. 
+     
+     15  Esta é a interrupção usada pela segunda controladora de discos 
+         e não pode ser compartilhada. Pode ser usada caso a segunda 
+         controladora esteja desativada.
+</pre>
+
+<p>
+Dispositivos ISA, VESA, EISA, SCSI não permitem o compartilhamento de uma mesma
+IRQ, talvez isto ainda seja possível caso não haja outras opções disponíveis
+e/ou os dois dispositivos não acessem a IRQ ao mesmo tempo, mas isto é uma
+solução precária.
+
+<p>
+Conflitos de IRQ ocorrem quando dois dispositivos disputam uma mesma IRQ, e
+normalmente ocasionam a parada ou mal funcionamento de um dispositivo e/ou de
+todo o sistema.  Para resolver um conflito de IRQs, deve-se conhecer quais IRQs
+estão sendo usadas por quais dispositivos (usando <samp>cat
+/proc/interrupts</samp>) e configurar as interrupções de forma que uma não
+entre em conflito com outra.  Isto normalmente é feito através dos jumpers de
+placas ou através de software (no caso de dispositivos jumperless ou
+plug-and-play).
+
+<p>
+Dispositivos PCI são projetados para permitir o compartilhamento de uma mesma
+IRQ pois as manipulam de forma diferente.  Se for necessário usar uma
+interrupção normal, o chipset (ou BIOS) mapeará a interrupção para uma
+interrupção normal do sistema (normalmente usando alguma interrupção entre a
+IRQ 9 e IRQ 12).
+
+<hr>
+
+<a name="s3.3.1.1"></a>
+<h4>3.3.1.1 Prioridade das Interrupções</h4>
+
+<p>
+Cada IRQ no sistema tem um número que identifica a prioridade que será atendida
+pelo processador.  Nos antigos sistemas XT as prioridades eram identificadas em
+seqüência de acordo com as interrupções existentes:
+
+<pre>
+     IRQ 0 1 2 3 4 5 6 7 8 
+     PRI 1 2 3 4 5 6 7 8 9
+</pre>
+
+<p>
+Com o surgimento do barramento AT (16 bits), as interrupções passaram a ser
+identificadas da seguinte forma:
+
+<pre>
+     IRQ 0  1  2  (9  10  11  12  13  14  15)  3  4  5  6  7  8 
+     PRI 1  2  3   4   5   6   7   8   9  10  11 12 13 14 15 16
+</pre>
+
+<p>
+Note que a prioridade segue em seqüência através da <samp>ponte</samp> da IRQ 2
+para IRQ 9.  Os dispositivos com prioridade mais baixa são atendidos primeiro,
+mas é uma diferença de desempenho praticamente imperceptível de ser notada nos
+sistemas atuais.
+
+<hr>
+
+<a name="s-hardw-cfg-dma"></a>
+<h3>3.3.2 DMA - Acesso Direto a Memória</h3>
+
+<p>
+A <em>DMA</em> é usada para permitir a transferência de dados entre
+dispositivos I/O e a memória sem precisar do processador faze-lo.  Ele livra
+esta carga do processador e resulta em uma rápida transferência de dados.
+
+<p>
+O PC padrão tem dois controladores de DMA.  O primeiro controla os canais
+<samp>0, 1, 2, 3</samp> e o segundo os canais <samp>4, 5, 6, 7,</samp> assim
+temos <samp>8</samp> canais.  No entanto, o canal <samp>4</samp> é perdido
+porque é usado pelo <em>controlador de acesso direto a memória</em>.  Os canais
+0-3 são chamados de canais baixos porque podem somente mover um byte (<em>8
+bits</em>) por transferência enquanto canais altos movem 2 bytes (<em>16
+bits</em>) por transferência.
+
+<p>
+Os dados movidos usando a DMA <strong>não</strong> são movidos através do
+controlador de DMA.  Isto oferece uma limitação porque a DMA somente podem
+mover dados entre os dispositivos (portas I/O) e a memória.  Não é possível
+mover dados entre as portas ou entre a memória.
+
+<p>
+Existem dois controladores de DMA nos computadores AT e superiores.  Ao
+contrário do que acontece com os dois controladores de IRQ, o primeiro
+controlador é ligado ao segundo e não o segundo ao primeiro.  Os canais de DMA
+altos (5 ao 7) somente podem ser acessados por dispositivos de 16 bits (aqueles
+que utilizam a segunda parte do slot AT).  Como resultado temos 8 canais de
+DMA, de 0 a 7, sendo que a DMA 4 é usada como ligação entre eles.
+
+<p>
+Os canais de DMA em uso no sistema podem ser visualizados com <samp>cat
+/proc/dma</samp>.  Abaixo uma listagem de uso mais comum dos canais de DMA.
+
+<pre>
+     DMA    Barram.    Uso
+     0        -        Usada pelo circuito de refresh da memória DRAM
+     1     8/16 bits   Normalmente usado por placas de som (canal 8 bits), 
+                       porta paralela ECP, adaptadoras SCSI, placas de rede ou 
+                       controladora de scanner. 
+     2     8/16 bits   Normalmente usado pela controladora de disquetes ou 
+                       controladoras de tapes. 
+     3     8/6 bits    Usado pela porta paralela ECP, placa de som, 
+                       controladoras de tapes, controladoras SCSI ou 
+                       controladora de scanner antiga. 
+     4        -        Usada como ponte para a outra controladora de DMA (0-3)
+     5     16 bits     Normalmente usada pela placa de som (canal 16 bits), 
+                       placas controladoras SCSI, placas de rede ou 
+                       controladora de scanner. 
+     6     16 bits     Placa de som (canal 16 bits), controladora de scanner  
+                       ou placa de rede. 
+     7     16 bits     Placa de som (canal 16 bits), controladora de scanner 
+                       ou placa de rede.
+</pre>
+
+<p>
+Somente dispositivos ISA e derivados dele, como o EISA e VESA, usam os canais
+de DMA padrão.  Os atuais dispositivos de alta taxa de transferência
+(normalmente PCI) possuem seu próprio controlador de DMA embutido, muito mais
+rápido do que a DMA padrão.  Este controlador de DMA é chamado de <em>Bus
+Mastering</em> e muito usado nos discos rígidos atuais e pode atingir taxas de
+33,3MB/s (no modo 2) e 66MB/s (no modo 4 - requer um cabo IDE com aterramento
+para evitar interferências de ruídos externos).
+
+<hr>
+
+<a name="s3.3.2.1"></a>
+<h4>3.3.2.1 Conflitos de DMA</h4>
+
+<p>
+Um canal de DMA não pode ser compartilhado entre dispositivos.  Ainda é
+possível configurar dois dispositivos para usarem um mesmo canal de DMA, desde
+que ele não seja usado ao mesmo tempo.  Isto acontece com Scanners paralelos
+que compartilham a mesma porta paralela com a impressora.  Se você for uma
+pessoa que explora os recursos de multitarefa de seu Linux e seu desempenho,
+evite estes tipos de dispositivos, prefira aqueles que utilizam seus próprios
+recursos.
+
+<p>
+Quando ocorre um conflito de DMA, os dados podem ser misturados e ocorrerem
+coisas estranhas até o travamento total do sistema.  Este tipo de conflito é
+difícil de se diagnosticar, a não ser que o técnico seja experiente o bastante
+e tenha desconfiado do que o problema se trata...
+
+<hr>
+
+<a name="s-hardw-cfg-io"></a>
+<h3>3.3.3 I/O - Porta de Entrada/Saída</h3>
+
+<p>
+Cada dispositivo possui um endereço de porta.  O endereço é uma localização da
+memória usada pelo computador para enviar dados ao dispositivo e onde o
+dispositivo envia dados ao computador.  Ao contrários da IRQ e DMA, o
+dispositivo pode usar mais de uma porta de Entrada/Saída ou uma faixa de
+endereços.  Por exemplo, uma placa de som padrão usa as portas 0x220, 0x330 e
+0x388, respectivamente <samp>audio digital</samp>, <samp>midi</samp> e
+<samp>opl3</samp>.
+
+<p>
+As placas de rede normalmente transferem grandes quantidades de dados, assim
+ocupam uma faixa de endereços.  Minha NE2000, por exemplo, ocupa a faixa de
+endereços 0x260 a 0x27F (0x260-0x27F).  O tamanho da faixa de endereços varia
+de acordo com o tipo de dispositivo.
+
+<p>
+Os endereços de <em>I/O</em> em uso no sistema podem ser visualizados com o
+comando <samp>cat /proc/ioports</samp>.
+
+<p>
+Endereços das portas de entrada/saída não podem ser compartilhados
+
+<hr>
+
+<a name="s-hardw-metodoscfg"></a>
+<h2>3.4 Hardwares configuráveis por jumpers, dip-switches, jumperless e Plug-and-Play.</h2>
+
+<hr>
+
+<a name="s-hardw-metodoscfg-jumpers"></a>
+<h3>3.4.1 Jumpers</h3>
+
+<p>
+Hardwares configuráveis por <em>jumpers</em> (pinos metálicos protegidos por
+uma capa plástica) tem sua configuração alterada através da colocação, retirada
+ou mudança de posição.  Hardwares configuráveis por jumpers são os preferidos
+por técnicos de informática muito experientes.
+
+<p>
+Estes hardwares possuem a característica de somente terem seus parâmetros
+modificados através da mudança da posição dos jumpers da placa, desta forma se
+obtém uma configuração fixa (não podendo ser modificada por qualquer tipo de
+programa) e o dispositivo estará sempre pronto para ser ativado após a
+inicialização de qualquer sistema operacional.
+
+<p>
+O único inconveniente é a necessidade de se retirar a placa do computador para
+se ter acesso aos jumpers de configuração, a não ser que estejam manualmente
+acessíveis.  Alguns hardwares configuráveis através de jumpers podem também
+funcionar como Plug-and-Play, através de um ajuste da posição dos jumpers para
+Plug-and-Play.
+
+<p>
+Normalmente as placas controladoras SIDE, rede, bons modelos de fax-modens,
+placas de som, SCSI, etc., são configuradas por jumpers e possuem um mapa de
+configuração gravado em seu circuito impresso que explica as posições de como
+os jumpers devem ser posicionados para operar na configuração desejada.
+Normalmente é possível escolher uma entre vários tipos de configuração, mas é
+recomendado optar por valores padrões (para detalhes veja <a
+href="#s-hardw-cfg-irq">IRQ - Requisição de Interrupção, Seção 3.3.1</a>, <a
+href="#s-hardw-cfg-dma">DMA - Acesso Direto a Memória, Seção 3.3.2</a> e <a
+href="#s-hardw-cfg-io">I/O - Porta de Entrada/Saída, Seção 3.3.3</a>).
+
+<p>
+As disposição dos jumpers são normalmente definidas em <em>fechado/aberto</em>
+e <em>multi-posição</em>.  Na disposição <em>fechado/aberto</em>, o jumper pode
+ou não ser colocado, definindo a configuração do dispositivo:
+
+<pre>
+     ::|::
+</pre>
+
+<p>
+Esta disposição é facilmente encontrada na seleção de IRQ e I/O em placas de
+fax-modem.
+
+<p>
+Na disposição <em>multi-posição</em>, os pinos de encaixe são numerados de 1 a
+3 (ou 1 a 4, 1 a 5, etc) e os pinos podem ou não ser colocados na placa e a
+posição que são colocados também influencia os valores escolhidos para o
+funcionamento do dispositivo (a posição 1-2 especificam um valor enquanto 2-3
+especificam outro).  A associação entre a posição dos jumpers e a configuração
+desejada é feita consultando o mapa desenhado no circuito impresso da placa ou
+o manual de instruções da placa.
+
+<p>
+A configuração de jumper através de multi-posição é normalmente usada em placas
+mãe para definir a <em>freqüência de operação do barramento</em>, a
+<em>freqüência de multiplicação</em> ou o <em>tipo do processador</em>.
+
+<p>
+Se não possuir o mapa de configuração de sua placa e/ou o manual de instruções,
+será necessário fazer um mapeamento manual da placa, mas para isto você
+precisará conhecer detalhadamente a configuração de portas I/O, DMA, IRQ usadas
+na máquina que será usada e anotar as diferenças obtidas através da modificação
+da pinagem do dispositivo.  Isto não é fácil, mas técnicos de informática
+experientes conhecerão as <samp>armadilhas</samp> encontradas pelo mapeamento
+manual de placas e farão o esquema de configuração completo do dispositivo,
+obtendo um excelente manual de instruções.  Nesta hora a experiência conta mais
+que o uso de programas de diagnóstico.
+
+<p>
+Outra característica de hardwares configurados através de jumpers é que
+raramente apresentam problemas de funcionamento, a não ser que seus parâmetros
+como IRQ, DMA, ou I/O estejam em conflitos com outro dispositivo, mas isso não
+é culpa do fabricante e nem mesmo do dispositivo...
+
+<hr>
+
+<a name="s-hardw-metodoscfg-dipswitche"></a>
+<h3>3.4.2 Dip-Switches</h3>
+
+<p>
+É a mesma coisa que os hardwares configuráveis por jumpers exceto que são
+usados <em>dip-switches</em> no lugar de jumpers.  O <em>dip-switches</em> é um
+conjunto de chaves numeradas que podem ser colocadas para cima ou para baixo
+(como um disjuntor ou vários interruptores <em>LIGA/DESLIGA</em> colocados um
+ao lado do outro) para se modificar a configuração do dispositivo.
+
+<p>
+Normalmente as chaves estão acessíveis na parte metálica da placa (onde os
+hardwares são conectados) para permitir a fácil mudança de configuração sem
+retirar a placa.  É ainda comum encontrar isto em algumas placas de fax-modem.
+
+<hr>
+
+<a name="s-hardw-metodoscfg-jumperless"></a>
+<h3>3.4.3 Jumperless (sem jumper)</h3>
+
+<p>
+Os hardwares <em>jumperless</em> não possuem jumpers e são configurados através
+de um programa que acompanha a própria placa.  Neste programa é escolhida a
+IRQ, DMA, I/O e a configuração é salva na própria placa ou restaurada após cada
+inicialização por um programa carregado na memória.  Devido a configuração via
+software, se obtém uma configuração fixa com muito mais facilidade do que via
+jumpers (por não haver a necessidade de se retirar a placa).
+
+<p>
+A maioria das placas jumperless podem funcionar também como Plug-and-Play.
+Existem muitas placas de rede, fax-modem, scanner jumperless no mercado.
+
+<hr>
+
+<a name="s-hardw-metodoscfg-plug-and-play"></a>
+<h3>3.4.4 Plug-and-Play</h3>
+
+<p>
+O <em>Plug-and-Play</em> é um protocolo que lê os valores de operação
+disponíveis para a placa e permitem que o usuário possa especificar facilmente
+qual será sua IRQ, DMA, I/O.
+
+<p>
+A diferença em relação ao modo jumperless é que o mesmo programa de
+configuração Plug-and-Play permite configurar todas as placas Plug-and-Play e a
+placa somente recebe os valores de IRQ, DMA e I/O após ser ativada por este
+programa, normalmente o <code>isapnp</code> no Linux.  Isto significa que a
+placa não tem nenhum parâmetro de IRQ, DMA e I/O na partida do sistema.
+
+<p>
+Desta forma, somente sistemas operacionais que possuem suporte ao Plug-and-Play
+(como o <code>GNU/Linux</code>, <code>Windows</code>) ou programas acionadores
+PnP (como o <code>ICU</code> para o <code>DOS</code>) podem ativar e usar estes
+tipos de placas.
+
+<p>
+Placas Plug-and-Play permitem muita flexibilidade de configuração de
+dispositivos.  O programa usado para a configuração de placas Plug-and-Play no
+<code>GNU/Linux</code> é o <code>isapnp</code> e a configuração de todas as
+placas Plug-and-Play são definidas no arquivo <code>/etc/isapnp.conf</code>.
+
+<p>
+Veja a próxima seção para entender como funciona o arquivo de configuração
+<code>isapnp.conf</code> e assim poder ativar seu dispositivo Plug-and-Play.
+
+<hr>
+
+<a name="s-hardw-metodoscfg-plug-and-play-e"></a>
+<h4>3.4.4.1 Entendendo o arquivo de configuração <code>isapnp.conf</code></h4>
+
+<p>
+Segue abaixo um exemplo de arquivo <code>/etc/isapnp.conf</code> gerado através
+do <code>pnpdump</code> para a configuração de uma placa de Som <samp>Sound
+Blaster</samp> com porta IDE embutida no <code>GNU/Linux</code>.
+
+<p>
+O objetivo é configurar a placa Sound Blaster para operar na configuração:
+<ul>
+<li>
+<samp>IO=0x220</samp>
+</li>
+<li>
+<samp>IRQ=5</samp>
+</li>
+<li>
+<samp>DMA=1</samp>
+</li>
+<li>
+<samp>DMA16=5</samp>
+</li>
+<li>
+<samp>MIDI=0x330</samp>
+</li>
+<li>
+<samp>OPL=0x388</samp>
+</li>
+<li>
+<samp>IDE operando como placa controladora quartenária na porta
+0x168/0x36e</samp> - Nós queremos ligar um HD na placa de som,
+<strong>SIM</strong> o <code>GNU/Linux</code> permite isso, e ele será
+configurado como <code>/dev/hdg1</code>
+</li>
+<li>
+<samp>JOYSTICK na porta 0x220</samp> - É bom para jogos e controle do
+<code>xmms</code>
+</li>
+</ul>
+
+<p>
+Observe que as linhas iniciando com <samp>#</samp> são apenas comentários e não
+serão interpretadas pelo <code>isapnp</code>:
+
+<pre>
+     # $Id: pnpdump.c,v 1.21 1999/12/09 22:28:33 fox Exp $
+     # Release isapnptools-1.21 (library isapnptools-1.21)
+     # 
+     # Para detalhes do formato do arquivo de saída, veja a página de 
+     # manual do isapnp.conf
+     # 
+     
+     # A seção abaixo faz o isolamento da placa através da BIOS (normalmente não 
+     # precisa ser alterado). Com a configuração abaixo, os dados sobre 
+     # dispositivos serão obtidos diretamente da BIOS. 
+     # Em placas mãe que não suportam Plug-and-Play, é necessário apenas o 
+     # parâmetro (ISOLATE) para que o isapnp possa assumir totalmente o controle 
+     # para identificação dos dispositivos Plug-and-Play
+     (READPORT 0x0273)
+     (ISOLATE PRESERVE)
+     (IDENTIFY *)
+     (VERBOSITY 2)
+     (CONFLICT (IO FATAL)(IRQ FATAL)(DMA FATAL)(MEM FATAL)) # ou WARNING
+     
+     # Card 1: (serial identifier fc 10 01 fb 5d 28 00 8c 0e)
+     # Vendor Id CTL0028, Serial Number 268565341, checksum 0xFC.
+     # Version 1.0, Vendor version 1.0
+     # ANSI string --&gt;Creative SB16 PnP&lt;--
+     #
+     # Descomente os valores desejados abaixo, selecionando a configuração requerida. 
+     # Note que o valor padrão equivale ao primeiro parâmetro disponível (Minimum)
+     # &quot;(CONFIGURE&quot; inicia um bloco de configuração e finaliza com &quot;(ACT Y)&quot;
+     # Para ativar as configurações selecionadas, basta descomentar a linha 
+     # &quot;#(ACT Y)&quot; no final do bloco de configuração. 
+     
+     (CONFIGURE CTL0028/268565341 (LD 0
+     #     ANSI string --&gt;Audio&lt;--
+     # Pela string acima, esta é a configuração de Audio da Sound Blaster
+     # Hora de múltiplas escolhas, escolha apenas uma!
+     
+     #     Inicia funções dependentes, classificada por prioridade aceitável 
+     #
+     #       IRQ 5, 7 ou 10.
+     (INT 0 (IRQ 5 (MODE +E)))
+     # Foi especificada a IRQ 5 na configuração acima
+     
+     #       Primeiro canal DMA 0, 1 ou 3.
+     #             Somente DMA de 8 bits 
+     #             Dispositivo lógico não é um bus master
+     #             DMA may execute in count by byte mode
+     #             DMA may not execute in count by word mode
+     #             DMA channel speed in compatible mode
+     (DMA 0 (CHANNEL 1))
+     # O valor da DMA 8 bits padrão é 0 (o mais baixo), mas este não é o valor 
+     # que desejamos. Ajustamos o valor para 1. 
+     
+     #       Next DMA channel 5, 6 or 7.
+     #             16 bit DMA only
+     #             Logical device is a bus master
+     #             DMA may not execute in count by byte mode
+     #             DMA may execute in count by word mode
+     #             DMA channel speed in compatible mode
+     (DMA 1 (CHANNEL 5))
+     # O canal DMA 16 bits desejado para a Sound Blaster é o 5. Apenas 
+     # descomentamos a linha acima. 
+     
+     #       Logical device decodes 16 bit IO address lines
+     #             Minimum IO base address 0x0220
+     #             Maximum IO base address 0x0280
+     #             IO base alignment 32 bytes
+     #             Number of IO addresses required: 16
+     (IO 0 (SIZE 16) (BASE 0x0220))
+     # Apenas descomentamos a linha.
+     
+     #       Logical device decodes 16 bit IO address lines
+     #             Minimum IO base address 0x0300
+     #             Maximum IO base address 0x0330
+     #             IO base alignment 48 bytes
+     #             Number of IO addresses required: 2
+     (IO 1 (SIZE 2) (BASE 0x0330))
+     # O valor padrão é 0x0300 para a porta MIDI, mas nós desejamos usar o 
+     # valor 0x0330. Descomentamos a linha e alteramos o valor da I/O. 
+     
+     #       Logical device decodes 16 bit IO address lines
+     #             Minimum IO base address 0x0388
+     #             Maximum IO base address 0x0388
+     #             IO base alignment 1 bytes
+     #             Number of IO addresses required: 4
+     (IO 2 (SIZE 4) (BASE 0x0388))
+     # Apenas descomentamos a linha. 0x0388 é um valor padrão para OPL
+     
+     #     Fim de funções dependentes
+      (NAME &quot;CTL0028/268565341[0]{Audio               }&quot;)
+     (ACT Y) #Descomentamos para ativar este bloco de configuração acima
+     ))
+     
+     
+     ########################################
+     # Logical device id CTL2011
+     #
+     # Descomente os valores desejados abaixo, selecionando a configuração requerida. 
+     # Note que o valor padrão equivale ao primeiro parâmetro disponível (Minimum)
+     # &quot;(CONFIGURE&quot; inicia um bloco de configuração e finaliza com &quot;(ACT Y)&quot;
+     # Para ativar as configurações selecionadas, basta descomentar a linha 
+     # &quot;#(ACT Y)&quot; no final do bloco de configuração. 
+     
+     (CONFIGURE CTL0028/268565341 (LD 1
+     #     Compatible device id PNP0600
+     #     ANSI string --&gt;IDE&lt;--
+     # Pela string acima sabemos que esta é a configuração da IDE embutida na SB
+     
+     # Hora de múltiplas escolhas, escolha apenas uma!
+     
+     #     Inicia funções dependentes: Prioridade Preferida
+     #       IRQ 10.
+     (INT 0 (IRQ 10 (MODE +E)))
+     # Descomentamos e aceitamos o valor acima, pois não entra em conflito com 
+     # nenhum outro dispositivo do sistema. 
+     
+     #       Logical device decodes 16 bit IO address lines
+     #             Minimum IO base address 0x0168
+     #             Maximum IO base address 0x0168
+     (IO 0 (SIZE 8) (BASE 0x0168))
+     # Descomentamos e aceitamos o valor acima, pois não entra em conflito com 
+     # nenhum outro dispositivo do sistema. 
+     
+     #       Logical device decodes 16 bit IO address lines
+     #             Minimum IO base address 0x036e
+     #             Maximum IO base address 0x036e
+     #             IO base alignment 1 bytes
+     #             Number of IO addresses required: 2
+     (IO 1 (SIZE 2) (BASE 0x036e))
+     # Descomentamos e aceitamos o valor acima, pois não entra em conflito com 
+     # nenhum outro dispositivo do sistema.
+     
+     #     End dependent functions
+      (NAME &quot;CTL0028/268565341[1]{IDE                 }&quot;)
+      (ACT Y) # Descomentando esta linha, a placa IDE da Sound Blaster passará a 
+              # funcionar como IDE quartenária (de acordo com os recursos passados)
+     ))
+     
+     
+     #######################################
+     # Logical device id CTL7001
+     #
+     # Descomente os valores desejados abaixo, selecionando a configuração requerida. 
+     # Note que o valor padrão equivale ao primeiro parâmetro disponível (Minimum)
+     # &quot;(CONFIGURE&quot; inicia um bloco de configuração e finaliza com &quot;(ACT Y)&quot;
+     # Para ativar as configurações selecionadas, basta descomentar a linha 
+     # &quot;#(ACT Y)&quot; no final do bloco de configuração. 
+     
+     (CONFIGURE CTL0028/268565341 (LD 3
+     #     Compatible device id PNPb02f
+     #     ANSI string --&gt;Game&lt;--
+     # Pela string acima sabemos que é a Entrada para Joystick
+     
+     #     Logical device decodes 16 bit IO address lines
+     #         Minimum IO base address 0x0200
+     #         Maximum IO base address 0x0200
+     #         IO base alignment 1 bytes
+     #         Number of IO addresses required: 8
+      (IO 0 (SIZE 8) (BASE 0x0200))
+      (NAME &quot;CTL0028/268565341[3]{Jogo                }&quot;)
+      (ACT Y) # Sem muitos comentários... descomentamos a linha IO acima e 
+              # ativamos a configuração (descomentando (ACT Y)). A diferença 
+     	 # é que especificamos o nome GAME para o recurso através da 
+     	 # linha (NAME &quot;CTL0028/268565341[3]{Jogo              }&quot;)
+              # Este nome será mostrado quando o Joystick for ativado
+     ))
+     
+     # Returns all cards to the 'Wait for Key' state
+     (WAITFORKEY)
+</pre>
+
+<p>
+Note ainda que o <code>isapnp.conf</code> gerado através do
+<code>pnpdump</code> contém vários tipos de prioridades de configuração para o
+mesmo bloco de configuração e a prioridade que usamos acima foi <samp>priority
+acceptable</samp> para o bloco de audio da Sound Blaster e <samp>priority
+preferred</samp> para a porta IDE e Joystick.  Os tipos de prioridades
+disponíveis são:
+<ul>
+<li>
+<samp>priority preferred</samp> - Configuração preferida para o funcionamento
+do hardware.  É a recomendada pelo fabricante do hardware e também recomendável
+se você não tem muita experiência na configuração de hardwares, pois lista
+somente uma configuração por recurso.  Se a placa entrar em conflito com outras
+placas usando <samp>priority preferred</samp>, tente a <samp>priority
+acceptable</samp>.
+</li>
+</ul>
+<ul>
+<li>
+<samp>priority acceptable</samp> - Lista todas as configurações aceitas pelo
+seu hardware.  Ela é minha opção preferida, pois permite analisar dinamicamente
+todas as configurações permitidas pelo hardware e escolher qual é a mais
+adequada para funcionar sem problemas no sistema.
+</li>
+</ul>
+<ul>
+<li>
+<samp>priority functional</samp> - Pode conter 1 ou mais blocos de
+<samp>prioriade funcional</samp> por hardware.  Note que alguns recursos do
+hardware podem não estar disponível neste tipo de prioridade.  É útil para uso
+em casos de conflito, quando o hardware pode ser colocado em funcionamento de
+forma alternativa ou parcial.
+</li>
+</ul>
+
+<p>
+Após a gravação do arquivo <code>/etc/isapnp.conf</code>, basta você digitar
+<samp>isapnp /etc/isapnp.conf</samp> para ativar a configuração dos
+dispositivos listados com as configurações que você escolheu.  Se o
+<code>isapnp</code> lhe mostrar mensagens de conflito ou qualquer outro
+problema, verifique as configurações do hardware e modifique, se necessário.
+Depois execute novamente o <code>/etc/isapnp.conf</code>.  Para detalhes sobre
+outros parâmetros não explicados aqui, veja a página de manual do
+<code>isapnp.conf</code>.
+
+<p>
+A maioria das distribuições <code>GNU/Linux</code> configura os dispositivos
+Plug-and-Play existentes neste arquivo automaticamente na inicialização (como é
+o caso da <code>Debian</code> e a <code>Red Hat</code>).  Se este não for o seu
+caso, coloque a linha <samp>isapnp /etc/isapnp.conf</samp> em um dos scripts de
+inicialização de sua distribuição.
+
+<hr>
+
+<a name="s-hardw-findhw"></a>
+<h2>3.5 Listando as placas e outros hardwares em um computador</h2>
+
+<p>
+Administradores e técnicos ao configurar uma máquina precisarão saber quais os
+hardwares ela possui, periféricos e até mesmo a revisão de dispositivos e clock
+para configurar as coisas e ver a necessidade de atualizações de dispositivos
+atuais.
+
+<p>
+Dispositivos PCI/AMR/CNR podem ser listados executando o comando <samp>cat
+/proc/pci</samp>.  Outra forma de listar tais dispositivos é usando o
+<code>lspci</code>, se você precisa de mais detalhes como o mapeamento de
+memória, use <samp>lspci -vv</samp>.
+
+<p>
+O mapeamento de memória de dispositivos podem ser mostrados com o comando
+<samp>cat /proc/ioports</samp>, ou usando o comando <code>lsdev</code>.
+
+<p>
+O barramento USB e dispositivos conectados a ele podem ser listados com o
+comando <code>lsusb</code> ou com <samp>cat /proc/bus/usb/devices</samp>.
+
+<p>
+Hardwares disponíveis na máquina, como placa mãe, clock multiplicador, discos,
+placas diversas, versões e números seriais de dispositivos podem ser mostrados
+através do comando <code>lshw</code>.  Use <samp>lshw -html</samp> para
+produzir a listagem em formato HTML, bem interessante para relatórios :-)
+
+<hr>
+
+<a name="s-hardw-conflitos"></a>
+<h2>3.6 Conflitos de hardware</h2>
+
+<p>
+Ocorre quando um ou mais dispositivos usam a mesma <em>IRQ</em>, <em>I/O</em>
+ou <em>DMA</em>.  Um sistema com configurações de hardware em conflito tem seu
+funcionamento instável, travamentos constantes, mal funcionamento de um ou mais
+dispositivos e até mesmo, em casos mais graves, a perda de dados.
+
+<p>
+Sempre que possível conheça e utilize os valores padrões para a configuração de
+periféricos, isto pode te livrar de conflitos com outros dispositivos e mal
+funcionamento do sistema.  Alguns programas de diagnóstico ou de auto-detecção
+podem não localizar seu dispositivo caso ele esteja usando um valor muito
+diferente do padrão.
+
+<p>
+Para resolver conflitos de hardware será necessário conhecer a configuração de
+cada dispositivo em seu sistema.  Os comandos <samp>cat
+/proc/interrupts</samp>, <samp>cat /proc/dma</samp> e <samp>cat
+/proc/ioports</samp> podem ser úteis para se verificar as configurações usadas.
+
+<p>
+Lembre-se que o barramento PCI permite o compartilhamento de IRQs entre placas
+PCI.
+
+<hr>
+
+<a name="s-hard-barramento"></a>
+<h2>3.7 Barramento</h2>
+
+<p>
+O tipo de <em>slot</em> varia de acordo com o barramento usado no sistema, que
+pode ser um(s) do(s) seguinte(s):
+<dl>
+<dt>ISA 8 Bits</dt>
+<dd>
+<samp>Industry Standard Architecture</samp> - É o padrão mais antigo,
+encontrado em computadores PC/XT.
+</dd>
+<dt>ISA 16 Bits</dt>
+<dd>
+Evolução do padrão ISA 8 Bits, possui um conector maior e permite a conexão de
+placas de 8 bits.  Sua taxa de transferência chega a 2MB/s.
+</dd>
+<dt>VESA</dt>
+<dd>
+<samp>Video Electronics Standard Association</samp> - É uma interface feita
+inicialmente para placas de vídeo rápidas.  O barramento VESA é basicamente um
+ISA com um encaixe extra no final.  Sua taxa de transferência pode chegar a
+132MB/s.
+</dd>
+<dt>EISA</dt>
+<dd>
+<samp>Enhanced Industry Standard Architecture</samp> - É um barramento mais
+encontrado em servidores.  Tem a capacidade de bus mastering, que possibilita a
+comunicação das placas sem a interferência da CPU.
+</dd>
+<dt>MCA</dt>
+<dd>
+<samp>Micro Channel Architecture</samp> - Barramento 32 bits proprietário da
+IBM.  Você não pode usar placas ISA nele, possui a característica de bus
+mastering, mas pode procurar por dispositivos conectados a ele, procurando
+configuração automática.
+<p>
+Este barramento estava presente no PS/1 e PS/2, hoje não é mais usado.
+</dd>
+<dt>PCI</dt>
+<dd>
+<samp>Peripheral Component Interconnect</samp> - É outro barramento rápido
+produzido pela Intel com a mesma velocidade que o VESA.  O barramento possui um
+chipset de controle que faz a comunicação entre os slots PCI e o processador.
+O barramento se configura automaticamente (através do Plug-and-Play).  O PCI é
+o barramento mais usado por Pentiums e está se tornando uma padrão no PC.
+</dd>
+<dt>AGP</dt>
+<dd>
+<samp>Accelerated Graphics Port</samp> - É um novo barramento criado
+exclusivamente para a ligação de placas de video.  É um slot marrom (em sua
+maioria) que fica mais separado do ponto de fixação das placas no chassis
+(comparado ao PCI).  Estas placas permitem obter um desempenho elevado de vídeo
+se comparado as placas onboards com memória compartilhada e mesmo PCI externas.
+O consumo de potência em placas AGP x4 podem chegar até a 100W, portanto é
+importante dimensionar bem o sistema e ter certeza que a fonte de alimentação
+pode trabalhar com folga.
+</dd>
+<dt>PCMCIA</dt>
+<dd>
+<samp>Personal Computer Memory Card International Association</samp> - É um
+slot especial usado para conexões de placas externas (normalmente revestivas de
+plástico) e chamadas de <em>cartões PCMCIA</em>.  Estes cartões podem adicionar
+mais memória ao sistema, conter um fax-modem, placa de rede, disco rígido, etc.
+<p>
+Os cartões PCMCIA são divididos em 3 tipos:
+<dl>
+<dt><samp>Tipo 1</samp></dt>
+<dd>
+Tem a espessura de 3.3 milímetros, e podem conter mais memória RAM ou memória
+Flash.
+</dd>
+<dt><samp>Tipo 2</samp></dt>
+<dd>
+Tem a espessura de 5 milímetros e capacidade de operações I/O.  É um tipo usado
+para placas de fax-modem, rede, som.  Computadores que aceitam cartões PCMCIA
+do tipo 2, mantém a compatibilidade com o tipo 1.
+</dd>
+<dt><samp>Tipo 3</samp></dt>
+<dd>
+Tem a espessura de 10.5 milímetros e normalmente usado para discos rígidos
+PCMCIA.  Slots PCMCIA do tipo 3 mantém a compatibilidade com o tipo 2 e 1.
+</dd>
+</dl>
+</dd>
+<dt>AMR</dt>
+<dd>
+<samp>Audio Modem Raise</samp> - Pequeno barramento criado pela Intel para a
+conexão de placas de som e modem.  Placas de som e modem AMR usam o HSP (host
+signal processor) e são como as Placas on-board e todo o processamento é feito
+pela CPU do computador (veja detalhes em <a href="#s-hard-onoffboard">Placas
+on-board / off-board, Seção 3.8</a> e <a href="#s-hard-forwindows">Hardwares
+específicos ou &quot;For Windows&quot;, Seção 3.9</a>.
+<p>
+Sua vantagem é o preço: um modem ou placa de som AMR custa em torno de R$
+25,00.
+</dd>
+<dt>CNR</dt>
+<dd>
+<samp>Communication and Networking Rise</samp> - Pequeno barramento criado pela
+Intel para a conexão de placas de som, modens e placas de rede.  Este é um
+pequenino slot marrom que é localizado no ponto de fixação das placas no
+chassis do gabinete.  Elas são como as Placas on-board e todo o processamento é
+feito pela CPU do computador (veja detalhes em <a
+href="#s-hard-onoffboard">Placas on-board / off-board, Seção 3.8</a> e <a
+href="#s-hard-forwindows">Hardwares específicos ou &quot;For Windows&quot;,
+Seção 3.9</a>.
+</dd>
+</dl>
+
+<hr>
+
+<a name="s-hard-onoffboard"></a>
+<h2>3.8 Placas on-board / off-board</h2>
+
+<p>
+Placas <em>on-board</em> são embutidas na placa mãe (<em>motherboard</em>).
+Placas <em>off-board</em> são placas externas encaixadas nos slots de expansão
+da placa mãe.
+
+<p>
+No inicio da era do PC/XT todos as placas eram embutidas na placa mãe (na época
+eram somente a placa de vídeo e controladora).  Com o surgimento do padrão AT,
+diversas empresas de informática desenvolveram dispositivos concorrentes e
+assim o usuário tinha a liberdade de escolha de qual dispositivo colocar em sua
+placa mãe (ou o mais barato ou o de melhor qualidade e desempenho), isto
+permitiu a adição de periféricos de qualidade sem romper com seu orçamento
+pessoal (comprando uma placa de som, depois uma de fax-modem, placa de vídeo
+melhor, etc).
+
+<p>
+Atualmente parece que voltamos ao ponto de partida e tudo vem embutido na placa
+mãe (<em>on-board</em>) e o usuário não tem como escolher qual dispositivo usar
+em seu computador.  É muito difícil (praticamente impossível) encontrar uma
+placa mãe que satisfaça completamente as necessidades do usuário ou
+recomendações de um bom técnico de informática (a não ser que seja um técnico
+experiente e encontre alguma alternativa).
+
+<p>
+Certamente o único dispositivo que funciona melhor se embutido na placa mãe é a
+<em>placa controladora de periféricos</em>.  Esta placa é usada para se
+conectar unidades de disquete, discos rígidos, CD-ROM, portas seriais,
+paralelas, joystick ao computador.  Os HDs conectados em uma controladora
+embutida conseguem ter um desempenho muito maior do que em placas conectadas
+externamente, sem causar nenhum tipo de problema.  Felizmente os últimos
+modelos de placas mãe 486 e os Pentium já trazem a placa controladora de
+periféricos embutida.
+
+<p>
+Hardwares embutidos na placa mãe (como fax-modem, vídeo, som) são em média 30%
+mais baratos que os vendidos separadamente mas quase sempre são usados
+dispositivos de baixo desempenho e qualidade para reduzir o preço da placa mãe
+e quase sempre usados hardwares <samp>For Windows</samp>.
+
+<p>
+Hoje em dia por causa do preço da placa mãe, é comum encontrar pessoas que
+verificam somente o preço e sequer procuram saber ou conhecem a qualidade das
+placas embutidas na placa mãe.  Pior ainda é encontrar vendedores despreparados
+que sequer sabem explicar o porque que uma placa de som Sound Blaster 64 é mais
+cara que uma de modelo genérico...
+
+<p>
+Certa vez fiz um teste de desempenho em um jogo chamado <em>Network Rally</em>
+do <em>DOS</em> com minha máquina Pentium 120 MHz (só com a <em>placa
+controladora</em> embutida), 16 MB RAM, placa de som Sound Blaster 16, placa de
+vídeo Trident 9680 com 1MB <em>versus</em> um computador Pentium 200 MMX, 32 MB
+RAM, placa de vídeo embutida (usando 2 MB de memória compartilhada), fax modem
+Rockwell embutido, e som CMI 8330 também embutido.
+
+<p>
+O resultado foi que o jogo rodava perfeito em meu pentium 120MHZ e no outro
+computador com o som pipocando e imagem apresentando paradas.  O problema é que
+em dispositivos de baixa qualidade e baratos, sua carga de processamento é
+jogada para o processador, resultando em menos potência para executar os
+programas (veja <a href="#s-hard-forwindows">Hardwares específicos ou &quot;For
+Windows&quot;, Seção 3.9</a> para maiores detalhes sobre o problema).  A
+memória de vídeo compartilhada quer dizer que parte da memória RAM é usada para
+memória de vídeo ao invés de uma memória DRAM específica e desenvolvida
+exclusivamente para aceleração de vídeo.  Isto traz mais lentidão pois a
+memória de vídeo (RAM) também será acessada pelo barramento do computador,
+envolvendo mais carga para o processador, etc.  A técnica de memória
+compartilhada é exclusiva de placas de vídeo embutidas.
+
+<p>
+Outro periférico que traz problemas e muita carga para o processador é o
+fax-modem for Windows, HSP, AMR, micromodem, etc.  A maioria destes periféricos
+se recusam a funcionar em computadores inferiores ao Pentium 150, não trazem
+seu chip de processamento e o pior: o chip UART.  Isto faz com que o
+periférico, mesmo marcando conexão a 57.600 ou mais tenha um desempenho de até
+duas vezes menor que um fax-modem inteligente com chip de processamento próprio
+e UART (sem contar com os controles internos do modem, como os protocolos de
+correção de erros, e sua extensa interface de programação via comandos).  A
+economia, neste caso, será paga em sua conta telefônica.
+
+<p>
+Outra vantagem de fax-modens inteligentes é que os modelos atuais vem com
+<em>FlashBios</em> o que significa que podem ser reprogramados facilmente para
+passar de 33.600 para 57.600 sem trocar a placa, ou aceitarem novas tendências
+de tecnologia.  Para detalhes veja <a href="#s-hard-forwindows">Hardwares
+específicos ou &quot;For Windows&quot;, Seção 3.9</a>.
+
+<p>
+Se você estiver em uma situação destas, certamente os computadores de menor
+potência e com hardwares inteligentes (que possuem seus próprios chips de
+controle e processamento) terão um desempenho muito melhor.  Mas também existem
+placas embutidas que tem a mesma qualidade de placas separadas (como alguns
+modelos de placas mãe que trazem a <em>Sound Blaster</em> embutida).  O preço
+pode ser maior mas você estará pagando por um dispositivo de melhor qualidade e
+que certamente trará benefícios a você e ao seu sistema.
+
+<p>
+Consulte um técnico em informática experiente para te indicar uma placa mãe de
+bom preço e de qualidade.  É muito comum encontrar falta de profissionalismo em
+pessoas que não sabem distinguir as características, funções e vantagens entre
+uma placa de boa qualidade e um hardware for Windows a não ser o preço mais
+barato.
+
+<hr>
+
+<a name="s-hard-forwindows"></a>
+<h2>3.9 Hardwares específicos ou &quot;For Windows&quot;</h2>
+
+<p>
+Esta seção foi retirada do manual de instalação da Debian GNU/Linux.  Uma
+tendência que perturba é a proliferação de Modens e impressoras específicos
+para Windows.  Em muitos casos estes são especialmente fabricados para operar
+com o Sistema Operacional Microsoft Windows e costumam ter a legenda
+<samp>WinModem</samp>, <samp>for Windows</samp>, ou <samp>Feito especialmente
+para computadores baseados no Windows</samp>.
+
+<p>
+Geralmente estes dispositivos são feitos retirando os processadores embutidos
+daquele hardware e o trabalho deles são feitos por drivers do Windows que são
+executados pelo processador principal do computador.  Esta estratégia torna o
+hardware menos caro, mas o que é poupado não é passado para o usuário e este
+hardware pode até mesmo ser mais caro quanto dispositivos equivalentes que
+possuem inteligência embutida.
+
+<p>
+Você deve evitar o hardware baseado no Windows por duas razões:
+<ol type="1" start="1" >
+<li>
+O primeiro é que aqueles fabricantes não tornam os recursos disponíveis para
+criar um driver para Linux.  Geralmente, o hardware e a interface de software
+para o dispositivo é proprietária, e a documentação não é disponível sem o
+acordo de não revelação, se ele estiver disponível.  Isto impede seu uso como
+software livre, desde que os escritores de software grátis descubram o código
+fonte destes programas.
+</li>
+</ol>
+<ol type="1" start="2" >
+<li>
+A segunda razão é que quando estes dispositivos tem os processadores embutidos
+removidos, o sistema operacional deve fazer o trabalho dos processadores
+embutidos, freqüentemente em prioridade de tempo real, e assim a CPU não esta
+disponível para executar programas enquanto ela esta controlando estes
+dispositivos.  Um exemplo típico disso são os Modens for Windows; Além da carga
+jogada na CPU, o dispositivo não possui o chip UART 16550, que é essencial para
+uma boa taxa de transferência do modem.  O que alguns destes dispositivos fazem
+é a emulação deste chip exigindo no mínimo uma CPU Pentium de 166 MHZ para
+operar adequadamente nesta taxa de transmissão.  Mesmo assim, devido a falta do
+chip UART, um modem destes inicia uma transmissão de um arquivo a 57.600, a
+tendência é sua taxa de transferência ir caindo na medida que um arquivo é
+transferido (até se estabilizar em 21/25 Kbps).
+
+<p>
+Assim o usuário típico do Windows não obtém um multi-processamento tão
+intensivo como um usuário do Linux, o fabricante espera que aquele usuário do
+Windows simplesmente não note a carga de trabalho que este hardware põe naquela
+CPU.  No entanto, qualquer sistema operacional de multi-processamento, até
+mesmo Windows 95 / 98 ou NT, são prejudicados quando fabricantes de periféricos
+retiram o processador embutido de suas placas e colocam o processamento do
+hardware na CPU.
+</li>
+</ol>
+
+<p>
+Você pode ajudar a reverter esta situação encorajando estes fabricantes a
+lançarem a documentação e outros recursos necessários para nós desenvolvermos
+drivers para estes hardwares, mas a melhor estratégia é simplesmente evitar
+estes tipos de hardwares até que ele esteja listado no HOWTO de hardwares
+compatíveis com Linux.
+
+<p>
+Note que hoje já existem muitos drivers para WinModems e outros hardwares for
+Windows para o Linux.  Veja a lista de hardwares compatíveis no HARDWARE-HOWTO
+ou procure o driver no site do fabricante de seu dispositivo.  Mesmo assim a
+dica é evitar hardwares for Windows e comprar hardwares inteligentes onde cada
+um faz sua função sem carregar a CPU.
+
+<hr>
+
+<a name="s3.10"></a>
+<h2>3.10 Dispositivos específicos para GNU/Linux</h2>
+
+<p>
+Esta seção foi retirada do manual de instalação da Debian GNU/Linux.  Existem
+diversos vendedores, agora, que vendem sistemas com a <code>Debian</code> ou
+outra distribuição do GNU/Linux pré-instaladas.  Você pode pagar mais para ter
+este privilégio, mas compra um nível de paz de mente, desde então você pode ter
+certeza que seu hardware é bem compatível com GNU/Linux.  Praticamente todas as
+placas que possuem processadores próprios funcionam sem nenhum problema no
+Linux (algumas placas da <samp>Turtle Beach</samp> e <samp>mwave</samp> tem
+suporte de som limitado).
+
+<p>
+Se você tiver que comprar uma máquina com Windows instalado, leia
+cuidadosamente a licença que acompanha o Windows; você pode rejeitar a licença
+e obter um desconto de seu vendedor.
+
+<p>
+Se não estiver comprando um computador com <code>GNU/Linux</code> instalado, ou
+até mesmo um computador usado, é importante verificar se os hardwares
+existentes são suportados pelo kernel do <code>GNU/Linux</code>.  Verifique se
+seu hardware é listado no <em>Hardware Compatibility HOWTO</em>, na
+documentação do código fonte do kernel no diretório
+<code>Documentation/sound</code> ou consulte um técnico de
+<code>GNU/Linux</code> experiente.
+
+<p>
+Deixe seu vendedor (se conhecer) saber que o que está comprando é para um
+sistema <code>GNU/Linux</code>.  Desta forma isto servirá de experiência para
+que ele poderá recomendar o mesmo dispositivo a outras pessoas que procuram
+bons dispositivos para sistemas <code>GNU/Linux</code>.  Apóie vendedores de
+hardwares amigos do <code>GNU/Linux</code>.
+
+<hr>
+
+<a name="s-hardw-cfgdisp"></a>
+<h2>3.11 Configurações de Dispositivos</h2>
+
+<p>
+As seções abaixo explicam como fazer configurações em dispositivos diversos no
+sistema <code>Linux</code> como placas de rede, som, gravador de CD entre
+outras.
+
+<hr>
+
+<a name="s-hardw-cfgdisp-rede"></a>
+<h3>3.11.1 Configurando uma placa de rede</h3>
+
+<p>
+Para configurar sua placa de rede no <code>Linux</code> siga os passos a
+seguir:
+<ol type="1" start="1" >
+<li>
+Identifique se sua placa de rede é ISA ou PCI.  Caso seja ISA, pode ser preciso
+alterar a configuração de jumpers ou plug-and-play, evitando conflitos de
+hardware ou o não funcionamento da placa (veja como configura-la em <a
+href="#s-hardw-metodoscfg">Hardwares configuráveis por jumpers, dip-switches,
+jumperless e Plug-and-Play., Seção 3.4</a>.
+</li>
+<li>
+Identifique a marca/modelo de sua placa.  O programa <code>lshw</code> é útil
+para isto.  Caso sua placa seja PCI ou CNR, execute o comando
+<code>lspci</code> e veja a linha &quot;Ethernet&quot;.
+<p>
+Em último caso, abra a máquina e procure a marca na própria placa.  Quase todos
+os fabricantes colocam a marca da placa no próprio circuito impresso ou no CI
+principal da placa (normalmente é o maior).
+</li>
+<li>
+Depois de identificar a placa, será preciso carregar o módulo correspondente
+para ser usada no <code>Linux</code>.  Em algumas instalações padrões o suporte
+já pode estar embutido no kernel, neste caso, você poderá pular este passo.
+<p>
+Para carregar um módulo, digite o comando <samp>modprobe modulo</samp> (Veja <a
+href="ch-kern.htm#s-kern-modprobe">modprobe, Seção 16.8</a>) .  Em placas ISA,
+geralmente é preciso passar a IRQ e porta de I/O como argumentos para alocar os
+recursos corretamente.  O <code>modprobe</code> tentará auto-detectar a
+configuração em placas ISA, mas ela poderá falhar por algum motivo.  Por
+exemplo, para uma NE 2000: <samp>modprobe ne io=0x300 irq=10</samp>.
+<p>
+Para evitar a digitação destes parâmetros toda vez que a máquina for iniciada é
+recomendável coloca-lo no arquivo <code>/etc/modules.conf</code> da seguinte
+forma:
+<pre>
+     options ne io=0x300 irq=10
+</pre>
+<p>
+A partir de agora, você pode carregar o módulo de sua placa NE 2000 apenas com
+o comando <samp>modprobe ne</samp>.  O parâmetro <samp>io=0x300 irq=10</samp>
+será automaticamente adicionado.  Em sistemas <code>Debian</code>, o local
+correto para colocar as opções de um módulo é em arquivos separados localizados
+dentro de <code>/etc/modutils</code>.  Crie um arquivo chamado
+<code>/etc/modutils/ne</code> e coloque a linha:
+<pre>
+     options ne io=0x300 irq=10
+</pre>
+<p>
+Depois disso, execute o comando <samp>update-modules</samp> para o sistema
+gerar um novo arquivo <code>/etc/modules.conf</code> com todos os módulos de
+<code>/etc/modutils</code> e substituir o anterior.
+</li>
+<li>
+Após carregar o módulo de sua placa de rede, resta apenas configurar seus
+parâmetros de rede para coloca-la em rede.  Veja <a
+href="ch-rede.htm#s-rede-interfaces-c">Atribuindo um endereço de rede a uma
+interface (ifconfig), Seção 15.4.2</a>.
+</li>
+</ol>
+
+<hr>
+
+<a name="s-hardw-cfgdisp-som"></a>
+<h3>3.11.2 Configurando uma placa de SOM no Linux</h3>
+
+<p>
+A configuração de dispositivos de audio no Linux não é uma coisa complicada, se
+resumindo na configuração de recursos de IRQ (caso a placa seja ISA), carregar
+o seu respectivo módulo com seus parâmetros e ajustar o mixer.  Atualmente
+existem 2 padrões de som no sistema Linux: OSS (Open Sound System) e ALSA
+(Advanced Linux Sound Architecture).
+
+<p>
+O OSS é o primeiro padrão existente no sistema Linux e embutido por padrão no
+kernel.  O ALSA é mais novo, suporta full duplex e outros recursos adicionais,
+além de manter a compatibilidade com OSS.  O ALSA é um padrão mais moderno e
+garante mais performance para a CPU da máquina, principalmente para a exibição
+de vídeos, etc.
+
+<hr>
+
+<a name="s-hardw-cfgdisp-som-hwreq"></a>
+<h4>3.11.2.1 Reservando os recursos de hardware para sua placa de som</h4>
+
+<p>
+Caso esteja usando uma placa ISA jumpeada, jumperless ou Plug-and-Play, é
+preciso selecionar que recursos de hardware sua placa está usando e como estes
+serão configurados.
+
+<p>
+O padrão é a utilização da IRQ 5, DMA1, DMA16, I/O 0x220, 0x330, 0x388 para PCM
+e MIDI.  A configuração de uma placa Plug-and-Play é descrita em <a
+href="#s-hardw-metodoscfg-plug-and-play">Plug-and-Play, Seção 3.4.4</a> e de
+uma placa jumpeada em <a href="#s-hardw-metodoscfg-jumpers">Jumpers, Seção
+3.4.1</a>.  Como referência, veja a tabela padrão de uso de interrupções em <a
+href="#s-hardw-cfg-irq">IRQ - Requisição de Interrupção, Seção 3.3.1</a>.
+
+<hr>
+
+<a name="s-hardw-cfgdisp-som-oss"></a>
+<h4>3.11.2.2 Configurando uma placa de som usando o padrão OSS</h4>
+
+<p>
+O padrão OSS é o presente por padrão desde que o suporte a som foi incluído no
+kernel.  Para configurar uma placa de som para usar este sistema de som,
+primeiro compile seu kernel com o suporte ao módulo de sua placa de som.  Caso
+seja uma placa ISA, você provavelmente terá que habilitar a seção &quot;Open
+Sound System&quot; para ver as opções disponíveis (entre elas, a Sound Blaster
+e compatíveis).  Uma olhada na ajuda de cada módulo deve ajuda-lo a identificar
+quais placas cada opção do kernel suporta.
+
+<p>
+Caso seu kernel seja o padrão de uma distribuição <code>Linux</code>,
+provavelmente terá o suporte a todas as placas de som possíveis.  Siga o passo
+a passo abaixo para configurar sua placa de som no sistema:
+<ol type="1" start="1" >
+<li>
+Primeiro descubra se sua placa de som é ISA.  Caso seja, verifique se os seus
+recursos estão alocados corretamente (veja <a
+href="#s-hardw-conflitos">Conflitos de hardware, Seção 3.6</a>).  Caso seja
+PCI, AMR, execute o comando <code>lspci</code>, procure pela linha
+&quot;Multimedia&quot; e veja o nome da placa.  Você também poderá executar o
+comando <code>lshw</code> para descobrir qual placa você possui (veja <a
+href="#s-hardw-findhw">Listando as placas e outros hardwares em um computador,
+Seção 3.5</a>) para detalhes.
+</li>
+<li>
+Carregue o módulo da placa de som com o comando <samp>modprobe módulo</samp>
+(veja <a href="ch-kern.htm#s-kern-modprobe">modprobe, Seção 16.8</a>).  Na
+<code>Debian</code>, você pode executar o comando <code>modconf</code> para
+navegar visualmente entre os módulos disponíveis e carregar os módulos
+necessários.
+<p>
+Algumas placas (principalmente ISA) requerem que seja especificado o recurso de
+hardware sejam passados para seu módulo, ou simplesmente você quer especificar
+isto para manter o uso de hardware sobre seu controle.  Alguns dos parâmetros
+mais usados em placas Sound Blaster são os seguintes:
+<pre>
+     modprobe sb io=0x220 irq=5 dma=1 dma16=5 mpu_io=0x330
+</pre>
+<p>
+Para evitar ter que passar estes parâmetros todas as vezes para o módulo, você
+poderá coloca-los no arquivo <code>/etc/modules.conf</code> da seguinte forma:
+<pre>
+     options sb io=0x220 irq=5 dma=1 dma16=5 mpu_io=0x330
+</pre>
+<p>
+Assim, quando der o comando <code>modprobe sb</code> ele será carregado com as
+opções acima.  Na distribuição <code>Debian</code>, você deverá criar um
+arquivo chamado <code>/etc/modutils/sb</code> contendo a linha acima, depois
+execute o <code>update-modules</code> para &quot;juntar&quot; todos os arquivos
+do <code>/etc/modutils</code> e criar o <code>/etc/modules.conf</code>.
+</li>
+<li>
+Após carregar o módulo correto de sua placa de som, seu sistema de som deverá
+estar funcionando.  Se você utiliza uma distribuição <code>Linux</code>, os
+dispositivos de som como <code>/dev/audio</code>, <code>/dev/dsp</code>,
+<code>/dev/mixer</code> estarão criados e então poderá passar para o próximo
+passo.  Caso não existam, entre no diretório <code>/dev</code> e execute o
+comando <samp>MAKEDEV audio</samp>.
+</li>
+<li>
+O próximo passo consiste em instalar um programa para controle de volume,
+tonalidade e outros recursos de sua placa de som.  O recomendado é o
+<code>aumix</code> por ser simples, pequeno e funcional, e permitindo restaurar
+os valores dos níveis de volumes na inicialização (isso evita que tenha que
+ajustar o volume toda vez que iniciar o sistema).
+<p>
+Caso o <code>aumix</code> apareça na tela, sua placa de som já está
+funcionando!  Caso acesse o sistema como usuário, não se esqueça de adicionar
+seu usuário ao grupo audio para ter permissão de usar os dispositivos de som:
+<samp>adduser usuario audio</samp> .
+</li>
+</ol>
+
+<hr>
+
+<a name="s-hardw-cfgdisp-cdwritter"></a>
+<h3>3.11.3 Configurando um gravador de CD no Linux</h3>
+
+<p>
+Configurar um gravador de CD no <code>Linux</code> não tem mistérios, apenas é
+preciso que sejam seguidos passos para que a coisa funcione direito, pois
+sempre funciona.  Se algo não funcionou, ou é porque os passos não foram
+seguidos corretamente, algum problema no hardware, alguma falha no kernel
+específica que afeta seu gravador, ou o autor deste guia deu mancada em algo
+(por favor, relate a falha) :-)
+
+<p>
+O tipo mais complicado de gravador, se tratando de configuração, é o IDE, pois
+seu funcionamento é baseado na emulação SCSI.  Para usar esta interface, ele
+precisa ser identificado como um dispositivo SCSI usando emulação SCSI do
+kernel, isto é necessário porque o módulo padrão ATAPI do kernel para unidades
+de CD (<code>ide-cd</code>) não contém todos os comandos necessários para
+permitir que uma unidade funcione como gravadora de CD.  No
+<code>Windows</code> a coisa também funciona desta forma, a unidade é emulada
+como SCSI para fazer a gravação, se você não sabia disso, tenho certeza que
+esta gostando da forma como as coisas ficam claras quando se usa
+<code>Linux</code> :-)
+
+<p>
+Caso seu gravador seja IDE, veja <a
+href="#s-hardw-cfgdisp-cdwritter-ide">Configurando o suporte a um gravador IDE,
+Seção 3.11.3.1</a> caso seja um autêntico gravador com barramento SCSI, vá até
+<a href="#s-hardw-cfgdisp-cdwritter-scsi">Configurando o suporte a um gravador
+SCSI, Seção 3.11.3.2</a>.
+
+<hr>
+
+<a name="s-hardw-cfgdisp-cdwritter-ide"></a>
+<h4>3.11.3.1 Configurando o suporte a um gravador IDE</h4>
+
+<p>
+Para configurar seu gravador de CD IDE para ser usado no <code>Linux</code>,
+siga os seguintes passos:
+<ol type="1" start="1" >
+<li>
+Tenha certeza que compilou o suporte as seguintes características no kernel:
+<pre>
+     Em &quot;ATA/IDE/MFM/RLL support&quot; marque as opções:
+     * Include IDE/ATAPI CDROM support
+     * SCSI emulation support
+     
+     Depois em &quot;SCSI support&quot; marque as opções:
+     * SCSI support
+     M SCSI CD-ROM Support
+     M SCSI Generic Support
+</pre>
+<p>
+As opções marcadas como &quot;*&quot; serão embutidas no kernel e as
+&quot;M&quot; como módulos.  Note que ambas as opções &quot;IDE/ATAPI
+CDROM&quot; e &quot;SCSI Emulation&quot; foram marcadas como embutidas.  Isto
+faz com que o driver ATAPI tenha prioridade em cima do SCSI, mas vou explicar
+mais adiante como dizer para o kernel para carregar o suporte a SCSI para
+determinada unidade.  Isto é útil quando temos mais de 1 unidade de CD IDE no
+sistema e queremos configurar somente o gravador para SCSI, pois alguns
+aplicativos antigos não se comunicam direito tanto com gravadores SCSI como
+emulados.
+<p>
+Você também pode marcar somente a opção &quot;SCSI Emulation&quot; para que
+sua(s) unidade(s) seja(m) automaticamente emulada(s) como SCSI.  Caso tenha
+usado esta técnica, vá até a seção <a
+href="#s-hardw-cfgdisp-cdwritter-teste">Testando o funcionamento, Seção
+3.11.3.3</a>.
+</li>
+<li>
+O próximo passo é identificar o dispositivo de CD-Rom atual.  Isto é feito
+através do comando <samp>dmesg</samp>.  Supondo que sua unidade de CD é
+&quot;hdc&quot; (primeiro disco na segunda controladora IDE) e que compilou
+ambos o suporte a &quot;IDE ATAPI&quot; e &quot;SCSI emulation&quot; no kernel,
+adicione o argumento &quot;hdc=ide-scsi&quot; no <code>/etc/lilo.conf</code> ou
+no <code>grub</code>:
+<pre>
+     # Lilo
+     vmlinuz=/vmlinuz
+     append=&quot;hdc=ide-scsi&quot;
+</pre>
+</li>
+</ol>
+
+<p>
+Isto diz para o kernel que a unidade &quot;hdc&quot; usará emulação
+&quot;ide-scsi&quot;.  Caso tenha outras unidades de CD no sistema, estas ainda
+utilização ATAPI como protocolo de comunicação padrão.  Execute o
+<code>lilo</code> para gerar novamente o setor de inicialização com as
+modificações e reinicie o computador.
+
+<p>
+<strong>OBS:</strong> Cuidado ao colocar um disco rígido IDE como
+<code>hdc</code>!  A linha <samp>hdc=ide-scsi</samp> deverá ser retirada, caso
+contrário, seu disco rígido não será detectado.
+
+<p>
+Agora, siga até <a href="#s-hardw-cfgdisp-cdwritter-teste">Testando o
+funcionamento, Seção 3.11.3.3</a>.
+
+<hr>
+
+<a name="s-hardw-cfgdisp-cdwritter-scsi"></a>
+<h4>3.11.3.2 Configurando o suporte a um gravador SCSI</h4>
+
+<p>
+Caso tenha um autentico gravador SCSI, não será preciso fazer qualquer
+configuração de emulação, a unidade estará pronta para ser usada, desde que seu
+suporte esteja no kernel.  As seguintes opções do kernel são necessárias para
+funcionamento de gravadores SCSI:
+
+<pre>
+     Depois em &quot;SCSI support&quot; marque as opções:
+     * SCSI support
+     M SCSI CD-ROM Support
+     M SCSI Generic Support
+</pre>
+
+<p>
+Além disso, deve ser adicionado o suporte EMBUTIDO no kernel a sua controladora
+SCSI.  Se o seu disco rígido também é SCSI, e seu CD está ligado na mesma
+controladora SCSI, ela já está funcionando e você poderá seguir para o passo <a
+href="#s-hardw-cfgdisp-cdwritter-teste">Testando o funcionamento, Seção
+3.11.3.3</a>.  Caso contrário carregue o suporte da sua placa adaptadora SCSI
+antes de seguir para este passo.
+
+<hr>
+
+<a name="s-hardw-cfgdisp-cdwritter-teste"></a>
+<h4>3.11.3.3 Testando o funcionamento</h4>
+
+<p>
+Para testar se o seu gravador, instale o pacote <code>cdrecord</code> e execute
+o comando: <samp>cdrecord -scanbus</samp> para verificar se sua unidade de
+CD-ROM é detectada.
+
+<p>
+Você deverá ver uma linha como:
+
+<pre>
+     scsibus0:
+         0,0,0     0) 'CREATIVE' 'CD-RW RWXXXX   ' '1.00' Removable CD-ROM
+         0,1,0     1) *
+         0,2,0     2) *
+</pre>
+
+<p>
+O que significa que sua unidade foi reconhecida perfeitamente pelo sistema e já
+pode ser usada para gravação.  Vá até a seção <a
+href="ch-tasks.htm#s-tasks-cdwriting">Gravando CDs no Linux, Seção 24.1</a>
+para aprender como gravar CDs no <code>Linux</code>.
+
+<hr>
+
+<a name="s-hardw-cfgdisp-apm"></a>
+<h3>3.11.4 Configurando o gerenciamento de energia usando o APM</h3>
+
+<p>
+O APM (<em>Advanced Power Management</em> - <em>Gerenciamento Avançado de
+Energia</em>) permite que sistemas gerenciem características relacionadas com o
+uso e consumo de energia do computador.  Ele opera a nível de BIOS e tenta
+reduzir o consumo de energia de várias formas quando o sistema não estiver em
+uso (como reduzindo o clock da CPU, desligar o HD, desligar o monitor, etc.).
+
+<p>
+O uso de advanced power management também permite que computadores com fonte de
+alimentação ATX sejam desligados automaticamente quando você executa o comando
+<code>halt</code>.  Caso sua máquina tenha suporte a <em>ACPI</em>, este deverá
+ser usado como preferência ao invés do APM por ter recursos mais sofisticados
+(veja <a href="#s-hardw-cfgdisp-acpi">Configurando o gerenciamento de energia
+usando ACPI, Seção 3.11.5</a>).
+
+<p>
+Para ativar o suporte a APM no <code>Linux</code>, compile seu kernel com o
+suporte embutido a APM e também a &quot;Advanced Power Management&quot; (senão
+sua máquina não desligará sozinha no halt).  Caso deseje compilar como módulo,
+basta depois carregar o módulo <code>apm</code> adicionando no arquivo
+<code>/etc/modules</code>.  Depois disso instale o daemon <code>apmd</code>
+para gerenciar as características deste recurso no sistema.
+
+<p>
+Você pode desativar o uso de APM de 3 formas: removendo seu suporte do kernel,
+passando o argumento <samp>apm=off</samp> (quando compilado estaticamente no
+kernel) ou removendo o nome do módulo do arquivo <code>/etc/modules</code>
+(quando compilado como módulo).  Depois disso remova o daemon
+<code>apmd</code>.
+
+<hr>
+
+<a name="s-hardw-cfgdisp-acpi"></a>
+<h3>3.11.5 Configurando o gerenciamento de energia usando ACPI</h3>
+
+<p>
+O ACPI (<em>Advanced Configuration and Power Interface</em> - <em>Interface de
+Configuração e Gerenciamento de Energia Avançado</em>) é uma camada de
+gerenciamento de energia que opera a nível de sistema operacional.  Apresenta
+os mesmos recursos que o APM, e outros como o desligamento da máquina por
+teclas especiais de teclado, controle de brilho e contraste de notebooks,
+suspend para RAM, suspend para disco, redução de velocidade de CPU manualmente,
+monitoramento de periféricos, temperatura, hardwares, etc.
+
+<p>
+Desta forma, o ACPI varia de sistema para sistema em questões relacionadas com
+suporte a recursos especiais, estes dados são armazenados em tabelas chamadas
+DSDT.  O <code>Linux</code> inclui suporte a recursos ACPI genéricos entre
+placas mãe, recursos específicos devem ser extraídos diretamente da BIOS e
+disassemblados manualmente para a construção de um kernel com suporte
+específico a tabela DSDT do hardware (não falarei das formas de se fazer disso
+aqui, somente do suporte genérico).
+
+<p>
+É recomendável pelo menos o uso do kernel 2.4.21 para suporte a ACPI.  Para
+compilar estaticamente, marque com <samp>Y</samp> a opção ACPI, depois marque
+os módulos que você quer que ele monitore: <samp>button</samp> (botão power),
+<samp>fan</samp> (ventoinhas), etc.  Se compilou como módulo, adicione o nome
+do módulo <samp>acpi</samp> no arquivo <code>/etc/modules</code>.  Não há
+problema em compilar também o suporte a APM, pois não causará problemas com um
+kernel com ACPI também compilado.
+
+<p>
+Caso não saiba quais módulos ACPI seu sistema aceita, marque o suporte a todos
+e carregue-os.  Após isto, entre no diretório <code>/proc/acpi</code> e de um
+<samp>ls</samp> entrando nos diretórios e vendo se existem arquivos dentro
+deles.  Remova o módulo correspondente daqueles que não tiver conteúdo.
+
+<p>
+Após isto, instale o daemon <code>acpid</code> e configure-o para monitorar
+algumas características do seu sistema.  Por padrão o <code>acpid</code>
+monitora o botão POWER, assim se você pressionar o power, seu sistema entrará
+automaticamente em run-level 0, fechando todos os processos e desligando sua
+máquina.
+
+<p>
+O suporte a ACPI pode ser desativado de 3 formas: Removendo seu suporte do
+kernel, passando o argumento <samp>acpi=off</samp> ao kernel (caso esteja
+compilado estaticamente) ou removendo o módulo de <code>/etc/modules</code>
+(caso tenha compilado como módulo.  Após isto, remova o daemon
+<code>acpid</code> do seu sistema.
+
+<hr>
+
+<a name="s-hardw-cfgdisp-wol"></a>
+<h3>3.11.6 Ativando WakeUP on Lan</h3>
+
+<p>
+Algumas placas mãe ATX possuem suporte a este interessante recurso, que permite
+sua máquina ser ligada através de uma rede.  Isto é feito enviando-se uma
+seqüência especial de pacotes diretamente para o MAC (endereço físico) da placa
+de rede usando um programa especial.
+
+<p>
+Para usar este recurso, seu sistema deverá ter as seguintes características:
+<ul>
+<li>
+Placa mãe ATX
+</li>
+<li>
+Fonte de alimentação ATX compatível com o padrão 2.0, com fornecimento de pelo
+menos 720ma de corrente na saída +3v.
+</li>
+<li>
+Placa de rede com suporte a WakeUP-on-Lan (WOL), você poderá confirmar isto
+vendo um conector branco de 3 terminais instalado na placa que é o local onde o
+cabo wake-up é conectado.
+</li>
+<li>
+Suporte na BIOS também deverá ter a opção para WakeUP-on-Lan.
+</li>
+</ul>
+
+<p>
+Com todos esses ítens existentes, instale em uma máquina da rede o pacote
+<code>etherwake</code>.  Depois disso, pegue o MAC address a placa de rede da
+máquina que tem o wakeup on lan e na máquina da rede onde instalou o pacote
+execute o seguinte comando:
+
+<pre>
+     ether-wake AA:BB:CC:DD:EE:FF
+</pre>
+
+<p>
+Onde <samp>AA:BB:CC:DD:EE:FF</samp> é o endereço MAC da placa de rede.  A
+máquina deverá ligar e realizar o procedimento padrão de POST normalmente.
+
+<p>
+Algumas das situações onde o WOL não funciona é quando sua rede é controlada
+por Switches (devido a natureza de funcionamento deste equipamentos) ou caso
+esteja atrás de um roteador que não faz proxy arp.
+
+<hr>
+
+[ <a href="ch-bas.htm">anterior</a> ]
+[ <a href="index.htm#contents">Conteúdo</a> ]
+[ <a href="ch-intro.htm">1</a> ]
+[ <a href="ch-bas.htm">2</a> ]
+[ 3 ]
+[ <a href="ch-d-l.htm">4</a> ]
+[ <a href="ch-disc.htm">5</a> ]
+[ <a href="ch-boot.htm">6</a> ]
+[ <a href="ch-run.htm">7</a> ]
+[ <a href="ch-cmdd.htm">8</a> ]
+[ <a href="ch-cmd.htm">9</a> ]
+[ <a href="ch-cmdv.htm">10</a> ]
+[ <a href="ch-cmdn.htm">11</a> ]
+[ <a href="ch-cmdc.htm">12</a> ]
+[ <a href="ch-perm.htm">13</a> ]
+[ <a href="ch-redir.htm">14</a> ]
+[ <a href="ch-rede.htm">15</a> ]
+[ <a href="ch-kern.htm">16</a> ]
+[ <a href="ch-log.htm">17</a> ]
+[ <a href="ch-cpctd.htm">18</a> ]
+[ <a href="ch-deb.htm">19</a> ]
+[ <a href="ch-dpkg.htm">20</a> ]
+[ <a href="ch-pers.htm">21</a> ]
+[ <a href="ch-impr.htm">22</a> ]
+[ <a href="ch-cfg.htm">23</a> ]
+[ <a href="ch-tasks.htm">24</a> ]
+[ <a href="ch-compil.htm">25</a> ]
+[ <a href="ch-manut.htm">26</a> ]
+[ <a href="ch-etc.htm">27</a> ]
+[ <a href="ch-inter.htm">28</a> ]
+[ <a href="ch-x11.htm">29</a> ]
+[ <a href="ch-aplic.htm">30</a> ]
+[ <a href="ch-ajuda.htm">31</a> ]
+[ <a href="ch-apend.htm">32</a> ]
+[ <a href="ch-d-l.htm">próximo</a> ]
+
+<hr>
+
+<p>
+Guia Foca GNU/Linux
+
+<address>
+Versão 5.45 - segunda, 30 de outubro de 2006<br>
+<br>
+Gleydson Mazioli da Silva <code><a href="mailto:gleydson@guiafoca.org">gleydson@guiafoca.org</a></code><br>
+<br>
+</address>
+
+<hr>
+
+</body>
+
+</html>
+
